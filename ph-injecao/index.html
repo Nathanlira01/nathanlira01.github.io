@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>PH Injeção Eletrônica</title>
+<meta name="description" content="Prévia do site de PH Injeção Eletrônica, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PH Injeção Eletrônica – prévia do site">
+<meta property="og:description" content="Prévia do site de PH Injeção Eletrônica, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:image" content="https://nathanlira01.github.io/ph-injecao/capa.png">
+<meta property="og:url" content="https://nathanlira01.github.io/ph-injecao/">
+</head>
+<body>
+<meta name="description" content="Oficina multimarcas em Mangabeira, João Pessoa: injeção eletrônica, alinhamento 3D e mecânica geral. Nota 4,8 no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#0b0b0c;
+  --bg-2:#121214;
+  --panel:#18181b;
+  --panel-2:#1f1f23;
+  --line:#2c2c31;
+  --line-2:#3a3a40;
+  --text:#f3efe8;
+  --muted:#a9a49c;
+  --dim:#857f78;
+  --red:#e1251b;
+  --red-hi:#ff4a3d;
+  --red-ink:#ffffff;
+  --red-soft:rgba(225,37,27,.14);
+  --blue:#2f6fe0;
+  --amber:#ffae1a;
+  --wa:#1fae5b;
+  --f-title:'Barlow Condensed','Arial Narrow',Impact,sans-serif;
+  --f-body:'Barlow','Segoe UI',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+  --pad-x: max(16px, env(safe-area-inset-left, 0px));
+  --pad-x-r: max(16px, env(safe-area-inset-right, 0px));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--f-body);font-size:17px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+/* textura: grade de garagem + ruído */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+  background-size:44px 44px;
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.06;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+main,header,footer{position:relative;z-index:1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--f-title);font-weight:800;line-height:.95;letter-spacing:.005em;text-wrap:balance;overflow-wrap:break-word;margin:0;text-transform:uppercase}
+p{margin:0}
+.num,.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x-r)}
+.kicker{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red-hi);display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--red)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;font-family:var(--f-title);font-weight:700;font-size:20px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .18s ease, background-color .18s ease, border-color .18s ease;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);line-height:1.1}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-red{background:var(--red);color:var(--red-ink)}
+.btn-red:hover{background:var(--red-hi);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--text);transform:translateY(-2px)}
+
+/* topo */
+.top{position:sticky;top:0;z-index:20;background:rgba(11,11,12,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand-ph{font-family:var(--f-title);font-weight:800;font-size:34px;line-height:1;color:var(--red);letter-spacing:-.01em;position:relative;padding-right:9px}
+.brand-ph::after{content:"";position:absolute;right:0;top:4px;width:3px;height:26px;background:var(--blue);transform:skewX(-12deg)}
+.brand-name{font-family:var(--f-title);font-weight:700;font-size:17px;line-height:1.05;text-transform:uppercase;letter-spacing:.06em;min-width:0}
+.brand-name small{display:block;font-family:var(--f-mono);font-size:10.5px;font-weight:500;color:var(--muted);letter-spacing:.12em}
+.top nav{display:flex;gap:22px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--text)}
+.top .btn{min-height:44px;font-size:17px;padding:0 16px}
+@media (max-width:900px){.top nav{display:none}}
+@media (max-width:420px){.top .btn span{display:none}.top .btn{padding:0 12px}.brand-name small{display:none}}
+
+/* hero */
+.hero{padding-block:56px 72px;border-bottom:1px solid var(--line);overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;right:-10%;top:-20%;width:70%;height:140%;background:radial-gradient(closest-side, rgba(225,37,27,.16), transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;position:relative}
+.hero-grid > *{min-width:0}
+.hero-tag{display:flex;gap:8px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.hero-tag b{color:var(--text);font-weight:500;border:1px solid var(--line-2);padding:5px 10px}
+.hero h1{font-size:clamp(42px, 8.6vw, 100px);line-height:.88}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero-lead{margin-top:22px;font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:34em}
+.hero-lead strong{color:var(--text);font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.rating{display:flex;align-items:center;gap:16px;margin-top:34px;padding-top:22px;border-top:1px dashed var(--line-2);flex-wrap:wrap}
+.rating-n{font-family:var(--f-title);font-weight:800;font-size:60px;line-height:.8;color:var(--text)}
+.stars{display:flex;gap:3px;color:var(--amber)}
+.stars svg{width:18px;height:18px}
+.rating small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.hero-art{position:relative;margin:0}
+.hero-art svg{display:block;width:100%;height:auto}
+.hero-art figcaption{font-family:var(--f-mono);font-size:11.5px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-top:10px;text-align:right}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero{padding-block:36px 56px}}
+
+/* animações */
+.needle{transform-origin:200px 200px;transform:rotate(165deg)}
+@media (prefers-reduced-motion:no-preference){
+  .needle{animation:idle 2.6s ease-in-out infinite}
+  .cel-glow{animation:glow 2.2s ease-in-out infinite}
+  .hero-copy > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .hero-copy > *:nth-child(2){animation-delay:.06s}
+  .hero-copy > *:nth-child(3){animation-delay:.12s}
+  .hero-copy > *:nth-child(4){animation-delay:.18s}
+  .hero-copy > *:nth-child(5){animation-delay:.24s}
+}
+@keyframes idle{0%,100%{transform:rotate(163deg)}40%{transform:rotate(169deg)}70%{transform:rotate(161deg)}}
+@keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+
+/* seções */
+section{padding-block:84px}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:44px}
+.sec-head > *{min-width:0}
+.sec-head h2{font-size:clamp(36px,6vw,68px);margin-top:12px}
+.sec-head p{color:var(--muted);max-width:32em}
+@media (max-width:800px){.sec-head{grid-template-columns:1fr;gap:16px}section{padding-block:64px}}
+
+/* sintomas (interativo) */
+.sintomas{background:var(--bg-2);border-block:1px solid var(--line)}
+.sx-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:28px;align-items:start}
+.sx-grid > *{min-width:0}
+.sx-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0;padding:0;border:0;min-width:0}
+.sx-list legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.sx-item{position:relative;display:block;cursor:pointer;min-width:0}
+.sx-item input{position:absolute;opacity:0;width:1px;height:1px}
+.sx-card{display:flex;gap:14px;align-items:center;min-height:76px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);transition:border-color .15s, background-color .15s}
+.sx-card svg{width:30px;height:30px;flex:none;color:var(--dim);transition:color .15s}
+.sx-card > span{font-weight:600;font-size:16px;line-height:1.25;min-width:0}
+.sx-box{margin-left:auto;width:22px;height:22px;flex:none;border:2px solid var(--line-2);display:grid;place-items:center}
+.sx-box::after{content:"";width:10px;height:6px;border-left:3px solid var(--red-ink);border-bottom:3px solid var(--red-ink);transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.sx-item:hover .sx-card{border-color:var(--line-2)}
+.sx-item input:checked + .sx-card{border-color:var(--red);background:linear-gradient(90deg,var(--red-soft),var(--panel) 70%)}
+.sx-item input:checked + .sx-card svg{color:var(--amber)}
+.sx-item input:checked + .sx-card .sx-box{background:var(--red);border-color:var(--red)}
+.sx-item input:checked + .sx-card .sx-box::after{opacity:1}
+.sx-item input:focus-visible + .sx-card{outline:3px solid var(--amber);outline-offset:2px}
+.sx-extra{grid-column:1/-1;display:grid;gap:6px;margin-top:6px}
+.sx-extra label{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sx-extra input{width:100%;min-height:50px;padding:0 14px;background:var(--panel);border:1px solid var(--line-2);color:var(--text);font:inherit;font-size:16px;border-radius:0}
+.sx-extra input::placeholder{color:var(--dim)}
+.sx-out{background:var(--panel-2);border:1px solid var(--line-2);position:sticky;top:92px}
+.sx-out-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line-2);font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sx-count{color:var(--text)}
+.sx-count b{color:var(--red-hi);font-weight:700}
+.sx-msg{margin:0;padding:18px 16px;font-family:var(--f-body);font-size:15.5px;line-height:1.5;white-space:pre-wrap;overflow-wrap:break-word;min-height:170px;color:var(--text)}
+.sx-actions{padding:0 16px 16px;display:grid;gap:10px}
+.sx-actions .btn{justify-content:center;width:100%}
+.sx-clear{background:none;border:0;color:var(--muted);font:inherit;font-size:14.5px;text-decoration:underline;cursor:pointer;padding:6px;justify-self:center}
+.sx-clear:hover{color:var(--text)}
+.sx-note{margin-top:16px;display:flex;gap:10px;font-size:14.5px;color:var(--muted);padding:14px 16px;border-left:3px solid var(--amber);background:rgba(255,174,26,.06)}
+.sx-note svg{width:20px;height:20px;flex:none;color:var(--amber);margin-top:2px}
+@media (max-width:900px){.sx-grid{grid-template-columns:1fr}.sx-out{position:static}}
+@media (max-width:560px){.sx-list{grid-template-columns:1fr}}
+
+/* serviços */
+.svc-grid{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto auto;gap:14px}
+.svc-grid > *{min-width:0}
+.svc{background:var(--panel);border:1px solid var(--line);padding:26px 24px;position:relative;transition:border-color .2s, transform .2s}
+.svc:hover{border-color:var(--line-2);transform:translateY(-3px)}
+.svc h3{font-size:clamp(26px,3.2vw,34px);padding-right:30px}
+.svc p{color:var(--muted);margin-top:10px;font-size:16px}
+.svc-ico{width:44px;height:44px;color:var(--red);margin-bottom:18px;display:block}
+.svc-main{grid-row:1/4;background:linear-gradient(160deg,#1d0d0c 0%, var(--panel) 55%);border-color:#4a1a16;padding:34px 30px;display:flex;flex-direction:column}
+.svc-main h3{font-size:clamp(38px,5.4vw,64px);padding-right:0}
+.svc-main .svc-ico{width:72px;height:48px}
+.svc-main p{font-size:17.5px;color:#cfc9c0;max-width:30em}
+.svc-main ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:10px}
+.svc-main li{display:flex;gap:12px;align-items:baseline;font-weight:500}
+.svc-main li::before{content:"";width:8px;height:8px;background:var(--red);flex:none;transform:translateY(-2px)}
+.svc-main .tag{margin-top:auto;padding-top:28px;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-hi)}
+.svc-num{position:absolute;top:18px;right:20px;font-family:var(--f-mono);font-size:12px;color:var(--dim)}
+@media (max-width:800px){.svc-grid{grid-template-columns:1fr}.svc-main{grid-row:auto;padding:28px 20px}}
+
+/* sinais (faixa vermelha) */
+.sinais{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.sinais::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg, rgba(0,0,0,.07) 0 14px, transparent 14px 28px);pointer-events:none}
+.sinais .wrap{position:relative}
+.sinais .kicker{color:#fff}
+.sinais .kicker::before{background:#fff}
+.sinais .sec-head p{color:rgba(255,255,255,.92)}
+.sinais-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid rgba(0,0,0,.35)}
+.sinais-grid > *{min-width:0}
+.sinal{padding:24px 22px 26px;border-bottom:1px solid rgba(0,0,0,.25);border-left:1px solid rgba(0,0,0,.25)}
+.sinal:nth-child(3n+1){padding-left:0;border-left:0}
+.sinal b{display:block;font-family:var(--f-title);font-size:26px;font-weight:800;text-transform:uppercase;line-height:1;margin-bottom:8px}
+.sinal p{color:rgba(255,255,255,.94);font-size:16px}
+.sinais-foot{margin-top:28px;font-size:15.5px;font-weight:600;color:#fff;max-width:46em}
+@media (max-width:860px){.sinais-grid{grid-template-columns:1fr 1fr}.sinal,.sinal:nth-child(3n+1){padding:20px 0 20px 16px;border-left:1px solid rgba(0,0,0,.25)}.sinal:nth-child(odd){padding-left:0;padding-right:16px;border-left:0}}
+@media (max-width:520px){.sinais-grid{grid-template-columns:1fr}.sinal,.sinal:nth-child(3n+1),.sinal:nth-child(odd){padding:18px 0;border-left:0}}
+
+/* como funciona */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.steps > li{min-width:0;position:relative;padding:0 28px 0 0}
+.steps > li + li{padding-left:28px;border-left:1px solid var(--line)}
+.step-n{font-family:var(--f-title);font-weight:800;font-size:96px;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--red);display:block;margin-bottom:18px}
+.steps h3{font-size:30px}
+.steps p{color:var(--muted);margin-top:10px}
+@media (max-width:800px){.steps{grid-template-columns:1fr;gap:30px}.steps > li,.steps > li + li{padding:0;border-left:0}.steps > li + li{padding-top:30px;border-top:1px solid var(--line)}.step-n{font-size:72px}}
+
+/* reputação */
+.rep{background:var(--bg-2);border-block:1px solid var(--line)}
+.rep-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.rep-grid > *{min-width:0}
+.big-score{font-family:var(--f-title);font-weight:800;font-size:clamp(120px,20vw,220px);line-height:.78;color:var(--text);display:flex;align-items:flex-start;gap:6px;margin-top:18px}
+.big-score sup{font-size:.22em;color:var(--muted);line-height:1;margin-top:.3em;font-weight:700}
+.rep-meta{margin-top:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.rep-meta .stars svg{width:22px;height:22px}
+.rep-meta span{color:var(--muted)}
+.rep-meta b{color:var(--text)}
+.rep h2.rep-title{font-size:clamp(30px,4.5vw,48px);margin-bottom:28px}
+.bars{display:grid;gap:22px}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;gap:12px}
+.bar-top b{font-family:var(--f-title);font-size:28px;text-transform:uppercase;font-weight:800}
+.bar-top span{font-family:var(--f-mono);font-size:14.5px;color:var(--muted)}
+.bar-track{height:14px;background:var(--panel-2);border:1px solid var(--line);position:relative;overflow:hidden}
+.bar-fill{position:absolute;inset:0 auto 0 0;background:var(--red);background-image:repeating-linear-gradient(90deg, transparent 0 9px, rgba(0,0,0,.28) 9px 11px)}
+.rep-note{margin-top:24px;font-size:13px;color:var(--dim);font-family:var(--f-mono);line-height:1.5}
+@media (max-width:860px){.rep-grid{grid-template-columns:1fr;gap:36px}}
+
+/* onde estamos */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line)}
+.loc-grid > *{min-width:0}
+.loc-info{padding:34px 30px;display:grid;gap:26px;background:var(--panel)}
+.loc-row{display:grid;grid-template-columns:28px 1fr;gap:14px}
+.loc-row > *{min-width:0}
+.loc-row > svg{width:24px;height:24px;color:var(--red);margin-top:2px}
+.loc-row h3{font-size:13px;font-family:var(--f-mono);font-weight:500;letter-spacing:.12em;color:var(--muted);margin-bottom:6px}
+.loc-row p{font-size:17.5px}
+.phone{font-family:var(--f-mono);font-size:22px;font-weight:700;user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums}
+.loc-row small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.loc-actions{display:flex;flex-wrap:wrap;gap:12px}
+.loc-map{position:relative;min-height:380px;background:#101012;overflow:hidden}
+.loc-map svg{position:absolute;inset:0;width:100%;height:100%}
+.loc-map .pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%, 30px);background:var(--red);color:#fff;font-family:var(--f-title);font-weight:800;text-transform:uppercase;font-size:18px;padding:6px 12px;white-space:nowrap}
+.loc-map .map-note{position:absolute;left:12px;bottom:10px;font-family:var(--f-mono);font-size:11px;color:var(--dim);letter-spacing:.06em}
+@media (max-width:860px){.loc-grid{grid-template-columns:1fr}.loc-map{min-height:260px}.loc-info{padding:26px 18px}}
+
+/* faixa final */
+.final{padding-block:90px;position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.final::before{content:"";position:absolute;left:50%;bottom:-60%;width:120%;height:140%;transform:translateX(-50%);background:radial-gradient(closest-side, rgba(225,37,27,.22), transparent 70%);pointer-events:none}
+.final .wrap{position:relative;display:grid;grid-template-columns:1.4fr auto;gap:32px;align-items:end}
+.final .wrap > *{min-width:0}
+.final h2{font-size:clamp(40px,7.5vw,92px)}
+.final h2 em{font-style:normal;color:var(--red)}
+.final p{margin-top:16px;color:var(--muted);font-size:18px}
+.final-cta{display:grid;gap:12px}
+@media (max-width:800px){.final .wrap{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding-block:28px 100px;color:var(--dim);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer .wrap > *{min-width:0}
+.selo{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--dim)}
+
+/* flutuante */
+.wa-float{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.5);transition:transform .18s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.47 15.02L2.5 21.5l4.6-1.05A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.03l-.3-.18-2.73.62.64-2.64-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.880 1.22 3.08.15.2 2.06 3.3 5.1 4.5 2.53 1 3.04.8 3.6.75.55-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.260-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.66-1.63-.92-2.22-.23-.55-.47-.56-.68-.57h-.57Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+    <symbol id="i-engine" viewBox="0 0 48 32"><path fill="currentColor" d="M13 4h14v3h-5v3h9l4 4h4v-4h3v14h-3v-4h-4v6l-3 3H17l-4-4H9v5H6V12h3v4h4v-6h6V7h-6Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M12 7v6h5l2 6M12 10h5M9.5 10.5A5.5 5.5 0 1 0 16 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="PH Injeção Eletrônica – início">
+      <span class="brand-ph">PH</span>
+      <span class="brand-name">Injeção Eletrônica<small>Mangabeira · João Pessoa</small></span>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#sintomas">Sintomas</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <a class="btn btn-red" href="https://wa.me/5583991785674?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PH%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-tag"><b>Mangabeira</b><b>Multimarcas</b><b>Alinhamento 3D</b></div>
+      <h1>Injeção eletrônica com <em>diagnóstico honesto</em></h1>
+      <p class="hero-lead">Oficina mecânica em Mangabeira, João Pessoa. A gente avalia o carro, <strong>explica o que ele tem</strong> e só depois faz o serviço. Honestidade é o tema que os clientes mais citam nas avaliações do Google.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="https://wa.me/5583991785674?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PH%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=PH+Inje%C3%A7%C3%A3o+Eletr%C3%B4nica+R.+Comerciante+Ant%C3%B4nio+de+Souza+Lima%2C+95+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+      </div>
+      <div class="rating">
+        <span class="rating-n num">4,8</span>
+        <div>
+          <div class="stars" role="img" aria-label="Nota 4,8 de 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          <small><span class="num">581</span> avaliações no Google</small>
+        </div>
+      </div>
+    </div>
+
+    <figure class="hero-art">
+      <svg viewBox="0 0 640 430" role="img" aria-label="Ilustração de um painel de carro com conta-giros e a luz da injeção eletrônica acesa">
+        <defs>
+          <linearGradient id="g-bezel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d2d33"/><stop offset=".5" stop-color="#141417"/><stop offset="1" stop-color="#26262b"/></linearGradient>
+          <radialGradient id="g-face" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="#1b1b1f"/><stop offset="1" stop-color="#070708"/></radialGradient>
+          <radialGradient id="g-cel" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffae1a" stop-opacity=".75"/><stop offset="1" stop-color="#ffae1a" stop-opacity="0"/></radialGradient>
+          <linearGradient id="g-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".07"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          <filter id="f-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+        </defs>
+        <!-- moldura do painel -->
+        <path d="M24 70 Q24 30 64 26 L576 26 Q616 30 616 70 L616 340 Q616 404 552 404 L88 404 Q24 404 24 340 Z" fill="url(#g-bezel)" stroke="#3a3a40" stroke-width="2"/>
+        <path d="M44 84 Q44 48 80 46 L560 46 Q596 48 596 84 L596 330 Q596 384 540 384 L100 384 Q44 384 44 330 Z" fill="#09090a"/>
+        <!-- conta-giros -->
+        <g transform="translate(16 15)">
+          <circle cx="200" cy="200" r="158" fill="#1c1c20" stroke="#34343a" stroke-width="3"/>
+          <circle cx="200" cy="200" r="150" fill="url(#g-face)"/>
+          <circle cx="200" cy="200" r="130" fill="none" stroke="#e9e4dc" stroke-width="12" stroke-dasharray="2 23.53" stroke-dashoffset="1"/>
+          <circle cx="200" cy="200" r="138" fill="none" stroke="#e9e4dc" stroke-opacity=".35" stroke-width="1.5"/>
+          <!-- cobre a parte de baixo (fora da escala) -->
+          <path d="M200 200 L320 320 A170 170 0 0 1 80 320 Z" fill="#0a0a0b"/>
+          <!-- faixa vermelha -->
+          <path d="M339.3 186.3 A140 140 0 0 1 299 299" fill="none" stroke="#e1251b" stroke-width="7"/>
+          <g font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="24" fill="#e9e4dc" text-anchor="middle" dominant-baseline="central">
+            <text x="129.3" y="270.7">0</text><text x="101.9" y="219.5">1</text><text x="107.6" y="161.7">2</text>
+            <text x="144.4" y="116.9">3</text><text x="200" y="100">4</text><text x="255.6" y="116.9">5</text>
+            <text x="292.4" y="161.7">6</text><text x="298.1" y="219.5" fill="#ff4a3d">7</text><text x="270.7" y="270.7" fill="#ff4a3d">8</text>
+          </g>
+          <text x="200" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#857f78" letter-spacing="2">RPM x1000</text>
+          <!-- display -->
+          <rect x="158" y="246" width="84" height="34" rx="3" fill="#050506" stroke="#2c2c31"/>
+          <text x="200" y="268" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#e9e4dc" letter-spacing="1">0850</text>
+          <text x="200" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#857f78" letter-spacing="2">MARCHA LENTA</text>
+          <!-- ponteiro -->
+          <g class="needle">
+            <path d="M188 197 L330 200 L188 203 Z" fill="#e1251b"/>
+            <path d="M200 196 L330 200 L200 200 Z" fill="#ff4a3d" opacity=".6"/>
+          </g>
+          <circle cx="200" cy="200" r="16" fill="#1f1f23" stroke="#3a3a40" stroke-width="2"/>
+          <circle cx="200" cy="200" r="5" fill="#e1251b"/>
+          <circle cx="200" cy="200" r="150" fill="url(#g-glass)"/>
+        </g>
+        <!-- painel de luzes à direita -->
+        <g transform="translate(398 76)">
+          <rect x="0" y="0" width="176" height="276" rx="10" fill="#0e0e10" stroke="#2c2c31" stroke-width="2"/>
+          <!-- luz da injeção acesa -->
+          <circle class="cel-glow" cx="88" cy="74" r="58" fill="url(#g-cel)"/>
+          <g color="#ffae1a">
+            <use href="#i-engine" x="40" y="42" width="96" height="64" filter="url(#f-blur)" class="cel-glow"/>
+            <use href="#i-engine" x="40" y="42" width="96" height="64"/>
+          </g>
+          <text x="88" y="132" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#ffae1a" letter-spacing="2">CHECK ENGINE</text>
+          <line x1="16" y1="150" x2="160" y2="150" stroke="#2c2c31"/>
+          <!-- luzes apagadas -->
+          <g fill="none" stroke="#3a3a40" stroke-width="2.5" stroke-linecap="round">
+            <circle cx="40" cy="186" r="14"/><path d="M40 178v9M40 192v1"/>
+            <rect x="74" y="174" width="28" height="22" rx="3"/><path d="M80 174v-4M96 174v-4M82 185h5M91 185h5"/>
+            <path d="M126 196c0-12 6-20 10-24 4 4 10 12 10 24a10 10 0 0 1-20 0Z"/>
+          </g>
+          <!-- combustível -->
+          <text x="16" y="232" font-family="JetBrains Mono, monospace" font-size="9" fill="#857f78" letter-spacing="2">COMBUSTÍVEL</text>
+          <rect x="16" y="242" width="144" height="12" fill="#18181b" stroke="#2c2c31"/>
+          <rect x="18" y="244" width="86" height="8" fill="#e9e4dc"/>
+          <path d="M34 242v12M52 242v12M70 242v12M88 242v12M106 242v12M124 242v12M142 242v12" stroke="#0e0e10" stroke-width="2"/>
+        </g>
+        <!-- parafusos -->
+        <g fill="#3a3a40"><circle cx="40" cy="44" r="4"/><circle cx="600" cy="44" r="4"/><circle cx="40" cy="388" r="4"/><circle cx="600" cy="388" r="4"/></g>
+      </svg>
+      <figcaption>Luz da injeção acesa? Comece logo abaixo</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SINTOMAS (interativo) -->
+<section class="sintomas" id="sintomas">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Antes de chamar</div>
+        <h2>O que o seu carro está fazendo?</h2>
+      </div>
+      <p>Marque o que você percebeu. A mensagem fica pronta para você mandar no WhatsApp da oficina, sem precisar digitar tudo.</p>
+    </div>
+
+    <div class="sx-grid">
+      <form id="sx-form" autocomplete="off">
+        <fieldset class="sx-list">
+          <legend>Sintomas do carro</legend>
+          <label class="sx-item"><input type="checkbox" value="luz da injeção acesa no painel"><span class="sx-card"><svg viewBox="0 0 48 32" aria-hidden="true"><use href="#i-engine"/></svg><span>Luz da injeção acesa</span><i class="sx-box"></i></span></label>
+          <label class="sx-item"><input type="checkbox" value="marcha lenta irregular"><span class="sx-card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h3l2-5 3 10 2-7 2 4h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Marcha lenta irregular</span><i class="sx-box"></i></span></label>
+          <label class="sx-item"><input type="checkbox" value="carro falhando ao acelerar"><span class="sx-card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18a8 8 0 1 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 18l4-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M18 3l-1.5 2.5L19 6l-2 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Falhando ao acelerar</span><i class="sx-box"></i></span></label>
+          <label class="sx-item"><input type="checkbox" value="consumo de combustível alto"><span class="sx-card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M3 21h14M15 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0V8l-3-3M8 7h4v4H8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Consumo de combustível alto</span><i class="sx-box"></i></span></label>
+          <label class="sx-item"><input type="checkbox" value="dificuldade para dar partida"><span class="sx-card"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.5 12H21M18 12v3M21 12v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Dificuldade para dar partida</span><i class="sx-box"></i></span></label>
+          <label class="sx-item"><input type="checkbox" value="carro puxando para um lado / volante torto"><span class="sx-card"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/><path d="M4.5 9.5 10 11.5M19.5 9.5 14 11.5M12 14.2V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" transform="rotate(-14 12 12)"/></svg><span>Puxando para um lado / volante torto</span><i class="sx-box"></i></span></label>
+          <div class="sx-extra">
+            <label for="sx-carro">Carro e ano (opcional)</label>
+            <input id="sx-carro" type="text" maxlength="60" placeholder="Ex.: modelo e ano do carro">
+          </div>
+        </fieldset>
+      </form>
+
+      <aside class="sx-out" aria-live="polite">
+        <div class="sx-out-head"><span>Sua mensagem</span><span class="sx-count"><b id="sx-n">0</b> marcados</span></div>
+        <p class="sx-msg" id="sx-msg">Olá! Vim pelo site da PH Injeção Eletrônica e queria um orçamento.</p>
+        <div class="sx-actions">
+          <a class="btn btn-red" id="sx-send" href="https://wa.me/5583991785674?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PH%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar no WhatsApp</a>
+          <button type="button" class="sx-clear" id="sx-clear">Limpar seleção</button>
+        </div>
+      </aside>
+    </div>
+    <p class="sx-note"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Isso não é um diagnóstico: só serve para agilizar o contato. O que o carro tem de verdade só dá para saber com a avaliação na oficina.</span></p>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Serviços</div>
+        <h2>O que a PH faz pelo seu carro</h2>
+      </div>
+      <p>Injeção eletrônica é a especialidade (está até no nome). Além dela, alinhamento 3D e mecânica geral, para carros de várias marcas.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc svc-main">
+        <svg class="svc-ico" viewBox="0 0 48 32" aria-hidden="true"><use href="#i-engine"/></svg>
+        <h3>Injeção eletrônica</h3>
+        <p>A especialidade da casa. Quando o motor falha, a marcha lenta oscila ou a luz acende no painel, é aqui que começa a investigação.</p>
+        <ul>
+          <li>Avaliação do problema antes do serviço</li>
+          <li>Explicação clara do que o carro tem</li>
+          <li>Carros de várias marcas</li>
+        </ul>
+        <span class="tag">Especialidade · está no nome</span>
+      </article>
+      <article class="svc">
+        <span class="svc-num">02</span>
+        <svg class="svc-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3>Alinhamento 3D</h3>
+        <p>Para o carro que puxa para um lado ou está com o volante torto.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-num">03</span>
+        <svg class="svc-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5a4 4 0 0 0-5.3 5.1L3.5 16.3a1.8 1.8 0 0 0 2.5 2.5l5.7-5.7a4 4 0 0 0 5.1-5.3l-2.4 2.4-2.2-.4-.4-2.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <h3>Mecânica geral e reparos</h3>
+        <p>Os consertos do dia a dia, com a explicação do que vai ser feito.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-num">04</span>
+        <svg class="svc-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 15v-3l2-5h9l4 5h2a1 1 0 0 1 1 1v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7" cy="16" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="16" r="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 16h6M3 15h2M19 15h2" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Multimarcas</h3>
+        <p>Atende carros de várias marcas. Pergunte pelo WhatsApp sobre o seu.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SINAIS -->
+<section class="sinais" id="sinais">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Fique de olho</div>
+        <h2>Sinais comuns de problema na injeção</h2>
+      </div>
+      <p>Dicas gerais para quem dirige. Nenhum desses sinais mostra sozinho a causa, mas todos merecem uma avaliação.</p>
+    </div>
+    <div class="sinais-grid">
+      <div class="sinal"><b>Luz no painel</b><p>A luz da injeção (o desenho do motor) acendeu e não apagou, ou fica piscando.</p></div>
+      <div class="sinal"><b>Lenta oscilando</b><p>Parado no sinal, o giro sobe e desce sozinho ou o carro treme mais que o normal.</p></div>
+      <div class="sinal"><b>Trancos ao acelerar</b><p>O carro engasga, perde força ou dá solavancos quando você pisa no acelerador.</p></div>
+      <div class="sinal"><b>Gastando mais</b><p>Você passou a abastecer com mais frequência fazendo os mesmos trajetos.</p></div>
+      <div class="sinal"><b>Partida difícil</b><p>Precisa insistir na chave ou no botão para o motor pegar.</p></div>
+      <div class="sinal"><b>Cheiro de combustível</b><p>Cheiro forte de gasolina ou álcool perto do carro ou dentro dele.</p></div>
+    </div>
+    <p class="sinais-foot">Percebeu algum? Não deixe para depois: chame a oficina e leve o carro para avaliar.</p>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Como funciona</div>
+        <h2>Três passos, sem surpresa</h2>
+      </div>
+      <p>A boa comunicação sobre os serviços aparece nas avaliações. É assim que funciona por aqui.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="step-n num">01</span><h3>Chame no WhatsApp</h3><p>Conte o que o carro está fazendo. Se quiser, use a lista de sintomas acima para montar a mensagem.</p></li>
+      <li><span class="step-n num">02</span><h3>Traga o carro</h3><p>Leve até a oficina em Mangabeira, na R. Comerciante Antônio de Souza Lima, 95.</p></li>
+      <li><span class="step-n num">03</span><h3>Entenda antes do serviço</h3><p>Você recebe a explicação do que o carro tem antes de o serviço ser feito.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- REPUTAÇÃO -->
+<section class="rep" id="avaliacoes">
+  <div class="wrap rep-grid">
+    <div>
+      <div class="kicker">Avaliações no Google</div>
+      <div class="big-score num">4,8<sup>/5</sup></div>
+      <div class="rep-meta">
+        <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <span><b class="num">581</b> avaliações</span>
+      </div>
+    </div>
+    <div>
+      <h2 class="rep-title">O que mais aparece nas avaliações</h2>
+      <div class="bars">
+        <div class="bar">
+          <div class="bar-top"><b>Honestidade</b><span class="num">53 avaliações</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="bar">
+          <div class="bar-top"><b>Equipe</b><span class="num">35 avaliações</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:66%"></div></div>
+        </div>
+        <div class="bar">
+          <div class="bar-top"><b>Confiança</b><span class="num">31 avaliações</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:58.5%"></div></div>
+        </div>
+      </div>
+      <p class="rep-note">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 16/11/2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ONDE ESTAMOS -->
+<section id="onde">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Onde estamos</div>
+        <h2>Em Mangabeira, João Pessoa</h2>
+      </div>
+      <p>Oficina com entrada acessível para cadeirantes. Antes de ir, chame no WhatsApp e conte o que o carro tem.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-info">
+        <div class="loc-row"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h3>Endereço</h3><p>R. Comerciante Antônio de Souza Lima, 95<br>Mangabeira, João Pessoa – PB<br><span class="num">58055-060</span></p></div></div>
+        <div class="loc-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><h3>Horário</h3><p>Segunda-feira: até <span class="num">17h30</span></p><small>Demais dias: pergunte pelo WhatsApp antes de ir.</small></div></div>
+        <div class="loc-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><div><h3>Telefone</h3><p class="phone">(83) 3238-4374</p><small>Toque no número para selecionar e copiar.</small></div></div>
+        <div class="loc-row"><svg aria-hidden="true"><use href="#i-access"/></svg><div><h3>Acessibilidade</h3><p>Entrada acessível para cadeirantes.</p></div></div>
+        <div class="loc-actions">
+          <a class="btn btn-red" href="https://wa.me/5583991785674?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PH%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=PH+Inje%C3%A7%C3%A3o+Eletr%C3%B4nica+R.+Comerciante+Ant%C3%B4nio+de+Souza+Lima%2C+95+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+        </div>
+      </div>
+      <div class="loc-map" aria-hidden="true">
+        <svg viewBox="0 0 400 380" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="380" fill="#101012"/>
+          <g fill="#17171a">
+            <rect x="20" y="20" width="110" height="80"/><rect x="150" y="20" width="90" height="80"/><rect x="260" y="20" width="130" height="80"/>
+            <rect x="20" y="130" width="110" height="100"/><rect x="260" y="130" width="130" height="100"/>
+            <rect x="20" y="260" width="110" height="110"/><rect x="150" y="260" width="90" height="110"/><rect x="260" y="260" width="130" height="110"/>
+            <rect x="150" y="130" width="90" height="38"/><rect x="150" y="196" width="90" height="34"/>
+          </g>
+          <path d="M0 115 H400 M0 245 H400 M140 0 V380 M250 0 V380" stroke="#26262b" stroke-width="18" fill="none"/>
+          <path d="M0 115 H400 M0 245 H400 M140 0 V380 M250 0 V380" stroke="#3a3a40" stroke-width="1" stroke-dasharray="6 8" fill="none"/>
+          <path d="M140 182 H250" stroke="#e1251b" stroke-width="6" stroke-dasharray="10 6"/>
+          <g transform="translate(200 190)">
+            <circle r="34" fill="#e1251b" opacity=".15"/>
+            <circle r="18" fill="#e1251b" opacity=".25"/>
+            <path d="M0 0 C-12 0 -14 -16 -14 -20 A14 14 0 0 1 14 -20 C14 -16 12 0 0 0Z" fill="#e1251b"/>
+            <circle cy="-20" r="5" fill="#0b0b0c"/>
+          </g>
+        </svg>
+        <span class="pin-label">PH · Nº 95</span>
+        <span class="map-note">Ilustração. Use "Como chegar" para a rota.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>A luz acendeu? <em>Chama a PH.</em></h2>
+      <p>Conte o que está acontecendo e traga o carro para avaliar em Mangabeira.</p>
+    </div>
+    <div class="final-cta">
+      <a class="btn btn-red" href="https://wa.me/5583991785674?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PH%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento pelo WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=PH+Inje%C3%A7%C3%A3o+Eletr%C3%B4nica+R.+Comerciante+Ant%C3%B4nio+de+Souza+Lima%2C+95+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>PH Injeção Eletrônica · R. Comerciante Antônio de Souza Lima, 95 – Mangabeira, João Pessoa – PB · <span class="num" style="user-select:all;-webkit-user-select:all">(83) 3238-4374</span></span>
+    <span class="selo">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5583991785674?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20PH%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a PH Injeção Eletrônica no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script>
+(function(){
+  var BASE = 'Olá! Vim pelo site da PH Injeção Eletrônica e queria um orçamento.';
+  var form = document.getElementById('sx-form');
+  var boxes = form.querySelectorAll('input[type=checkbox]');
+  var carro = document.getElementById('sx-carro');
+  var out = document.getElementById('sx-msg');
+  var n = document.getElementById('sx-n');
+  var send = document.getElementById('sx-send');
+  function build(){
+    var marcados = [];
+    for (var i = 0; i < boxes.length; i++) { if (boxes[i].checked) marcados.push(boxes[i].value); }
+    var msg = BASE;
+    var c = carro.value.trim();
+    if (c) msg += '\nCarro: ' + c + '.';
+    if (marcados.length) {
+      msg += '\n\nO que o carro está fazendo:';
+      marcados.forEach(function(m){ msg += '\n- ' + m.charAt(0).toUpperCase() + m.slice(1); });
+    }
+    out.textContent = msg;
+    n.textContent = marcados.length;
+    send.href = 'https://wa.me/5583991785674?text=' + encodeURIComponent(msg);
+  }
+  form.addEventListener('change', build);
+  carro.addEventListener('input', build);
+  form.addEventListener('submit', function(e){ e.preventDefault(); });
+  document.getElementById('sx-clear').addEventListener('click', function(){
+    for (var i = 0; i < boxes.length; i++) boxes[i].checked = false;
+    carro.value = '';
+    build();
+  });
+  build();
+})();
+</script>
+</body>
+</html>

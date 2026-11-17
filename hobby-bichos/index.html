@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Hobby Bichos Pet Shop</title>
+<meta name="description" content="Prévia do site de Hobby Bichos, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hobby Bichos – prévia do site">
+<meta property="og:description" content="Prévia do site de Hobby Bichos, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:image" content="https://nathanlira01.github.io/hobby-bichos/capa.png">
+<meta property="og:url" content="https://nathanlira01.github.io/hobby-bichos/">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<style>
+:root{
+  --bg:#f7f9fd;
+  --bg-2:#ffffff;
+  --bg-tint:#e9f0fd;
+  --ink:#16191f;
+  --ink-2:#4a5262;
+  --line:#d8e0ee;
+  --blue:#1d5fd0;
+  --blue-deep:#123f93;
+  --blue-soft:#cfe0fb;
+  --on-blue:#ffffff;
+  --red:#e0302a;
+  --red-soft:#fde3e1;
+  --paw:#16191f;
+  --cream:#fff6e6;
+  --wa:#1a8f4c;
+  --on-wa:#ffffff;
+  --shadow:0 1px 0 rgba(22,25,31,.06), 0 10px 26px -14px rgba(18,63,147,.35);
+  --r:18px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1630; --bg-2:#111f40; --bg-tint:#15284f; --ink:#eef3ff; --ink-2:#aab7d3; --line:#24396a;
+    --blue:#6fa0ff; --blue-deep:#9cbcff; --blue-soft:#1d356a; --on-blue:#0b1630;
+    --red:#ff6b62; --red-soft:#3a1f2c; --paw:#e6ecfa; --cream:#16264a; --wa:#3ccf7d; --on-wa:#06210f;
+    --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 28px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1630; --bg-2:#111f40; --bg-tint:#15284f; --ink:#eef3ff; --ink-2:#aab7d3; --line:#24396a;
+  --blue:#6fa0ff; --blue-deep:#9cbcff; --blue-soft:#1d356a; --on-blue:#0b1630;
+  --red:#ff6b62; --red-soft:#3a1f2c; --paw:#e6ecfa; --cream:#16264a; --wa:#3ccf7d; --on-wa:#06210f;
+  --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 28px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito Sans',system-ui,'Segoe UI',sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:'Baloo 2','Trebuchet MS',system-ui,sans-serif;line-height:1.02;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.paw-ico{fill:var(--paw)}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;gap:.55em;font-weight:800;font-size:1rem;text-decoration:none;padding:.85em 1.25em;border-radius:999px;border:2px solid transparent;transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease;cursor:pointer;line-height:1.1}
+.btn svg{width:1.25em;height:1.25em;flex:none}
+.btn-wa{background:var(--wa);color:var(--on-wa);box-shadow:0 6px 0 -1px color-mix(in srgb, var(--wa) 55%, #000)}
+.btn-wa:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+.btn-small{padding:.6em 1em;font-size:.93rem}
+
+/* Topo */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:baseline;gap:.4em;text-decoration:none;min-width:0}
+.brand b{font-family:'Baloo 2','Trebuchet MS',sans-serif;font-weight:800;font-size:1.65rem;color:var(--blue);line-height:1;-webkit-text-stroke:0;text-shadow:2px 2px 0 var(--bg-2), 3px 3px 0 var(--blue-soft)}
+.brand small{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--red);font-size:.95rem;letter-spacing:.04em}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a.l{font-weight:700;text-decoration:none;color:var(--ink-2);font-size:.95rem}
+.nav a.l:hover{color:var(--blue)}
+@media (max-width:820px){.nav a.l{display:none}}
+@media (max-width:400px){.top .btn-small span{display:none}.brand b{font-size:1.45rem}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(36px,6vw,80px) clamp(40px,6vw,72px)}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% 35%;height:120%;background:radial-gradient(closest-side, var(--bg-tint), transparent 70%);z-index:0}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);align-items:center}
+.hero-grid > *{min-width:0}
+.badge{display:inline-flex;align-items:center;gap:.5em;background:var(--red-soft);color:var(--red);font-weight:800;font-size:.85rem;padding:.4em .85em;border-radius:999px;letter-spacing:.01em}
+.badge svg{width:1.1em;height:1.1em;fill:currentColor}
+.hero h1{font-size:clamp(2.35rem,6.4vw,4.5rem);font-weight:800;margin-top:18px;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero h1 .r{color:var(--red)}
+.hero .lead{margin-top:18px;font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--ink-2);max-width:34ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.stars-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:26px;padding-top:20px;border-top:2px dashed var(--line)}
+.score{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:2.4rem;line-height:1;color:var(--ink)}
+.stars{display:flex;gap:2px}
+.stars svg{width:20px;height:20px;fill:var(--red)}
+.stars-row p{color:var(--ink-2);font-size:.95rem;line-height:1.3}
+.stars-row p b{color:var(--ink)}
+.art{position:relative;aspect-ratio:1/1;max-width:520px;width:100%;justify-self:center}
+.art svg.main{width:100%;height:100%;display:block;overflow:visible}
+.s-blue{fill:var(--blue)} .s-deep{fill:var(--blue-deep)} .s-soft{fill:var(--blue-soft)} .s-red{fill:var(--red)} .s-ink{fill:var(--paw)} .s-bg{fill:var(--bg-2)} .s-cream{fill:var(--cream)} .s-line{fill:none;stroke:var(--paw);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.sign{position:absolute;left:-2%;bottom:6%;background:var(--bg-2);border:2px solid var(--ink);border-radius:14px;padding:10px 14px;box-shadow:5px 5px 0 var(--blue);font-weight:800;font-size:.9rem;line-height:1.25;transform:rotate(-3deg);max-width:220px}
+.sign span{display:block;font-weight:600;color:var(--ink-2);font-size:.82rem}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .art{max-width:380px;order:-1}
+  .sign{left:0;bottom:2%}
+}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+@keyframes wag{0%,100%{transform:rotate(0)}50%{transform:rotate(14deg)}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.hero-copy{animation:rise .6s ease-out both}
+.tail{transform-origin:388px 392px;animation:wag 1.6s ease-in-out infinite}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+
+/* Trilha de patas */
+.trail{display:flex;gap:28px;justify-content:center;padding-block:4px;opacity:.9}
+.trail svg{width:22px;height:22px}
+.trail svg:nth-child(odd){transform:translateY(-8px) rotate(-12deg)}
+.trail svg:nth-child(even){transform:translateY(6px) rotate(10deg)}
+
+/* Seções */
+section{padding-block:clamp(56px,8vw,96px)}
+.kicker{font-family:'Baloo 2',sans-serif;font-weight:700;color:var(--red);font-size:1rem;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:.5em}
+.kicker svg{width:18px;height:18px}
+.h2{font-size:clamp(2rem,4.6vw,3.2rem);font-weight:800;margin-top:8px}
+.sub{color:var(--ink-2);margin-top:12px;max-width:52ch}
+
+/* Unidades */
+.units{background:var(--blue);color:var(--on-blue);position:relative;overflow:hidden}
+.units .kicker{color:var(--on-blue);opacity:.85}
+.units .sub{color:var(--on-blue);opacity:.85}
+.units .paw-ico{fill:var(--on-blue);opacity:.12}
+.units-deco{position:absolute;right:-30px;top:20px;width:260px;height:260px;pointer-events:none}
+.tabs{display:inline-flex;gap:6px;background:color-mix(in srgb, var(--on-blue) 14%, transparent);padding:6px;border-radius:999px;margin-top:26px;flex-wrap:wrap}
+.tab{font:inherit;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.15rem;border:0;background:transparent;color:var(--on-blue);padding:.45em 1.3em;border-radius:999px;cursor:pointer;transition:background-color .18s ease,color .18s ease}
+.tab[aria-selected="true"]{background:var(--bg-2);color:var(--ink)}
+.tab:focus-visible{outline-color:var(--bg-2)}
+.unit-card{margin-top:22px;background:var(--bg-2);color:var(--ink);border-radius:24px;display:grid;grid-template-columns:1.3fr 1fr;overflow:hidden;box-shadow:0 18px 40px -20px rgba(0,0,0,.45);position:relative;z-index:1}
+.unit-card > *{min-width:0}
+.unit-main{padding:clamp(22px,3.5vw,38px)}
+.unit-main h3{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800}
+.unit-main h3 small{display:block;font-family:'Nunito Sans',sans-serif;font-size:.95rem;font-weight:700;color:var(--red);letter-spacing:.02em;margin-bottom:4px}
+.facts{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:14px}
+.facts li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.facts li > *{min-width:0}
+.facts .ic{width:34px;height:34px;border-radius:10px;background:var(--bg-tint);display:grid;place-items:center}
+.facts .ic svg{width:18px;height:18px;fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.facts b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.facts .v{font-weight:700;user-select:all;-webkit-user-select:all;overflow-wrap:anywhere}
+.unit-main .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.unit-side{background:var(--cream);padding:clamp(22px,3.5vw,38px);display:flex;flex-direction:column;justify-content:space-between;gap:20px;border-left:2px dashed var(--line)}
+.unit-side .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:4rem;line-height:.9;color:var(--blue)}
+.unit-side .big span{font-size:1.4rem;color:var(--ink-2)}
+.unit-side p{color:var(--ink-2);font-size:.95rem}
+.unit-side .note{font-size:.85rem;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:760px){.unit-card{grid-template-columns:1fr}.unit-side{border-left:0;border-top:2px dashed var(--line)}}
+.fade{animation:rise .35s ease-out}
+
+/* Serviços */
+.svc-grid{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:18px;margin-top:34px}
+.svc-grid > *{min-width:0}
+.svc{position:relative;border-radius:var(--r);padding:clamp(22px,3vw,32px);background:var(--bg-2);border:2px solid var(--line);overflow:hidden}
+.svc h3{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:800}
+.svc p{color:var(--ink-2);margin-top:10px;max-width:40ch}
+.svc .tag{display:inline-block;font-weight:800;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;padding:.3em .7em;border-radius:6px;background:var(--bg-tint);color:var(--blue);margin-bottom:14px}
+.svc-vet{grid-row:span 2;background:var(--blue-deep);border-color:var(--blue-deep);color:var(--on-blue);display:flex;flex-direction:column;justify-content:space-between;gap:26px;min-height:420px}
+.svc-vet h3{font-size:clamp(2rem,4.2vw,3rem)}
+.svc-vet p{color:var(--on-blue);opacity:.88}
+.svc-vet .tag{background:var(--red);color:#fff}
+.svc-vet svg.cross{width:clamp(110px,16vw,160px);height:auto;align-self:flex-end}
+.svc-vet .btn-wa{align-self:flex-start}
+.svc-row{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+.svc-row > *{min-width:0}
+.svc-row .ill{width:86px;height:86px}
+.svc:not(.svc-vet):hover{border-color:var(--blue)}
+.svc{transition:border-color .2s ease, transform .2s ease}
+@media (max-width:820px){.svc-grid{grid-template-columns:1fr}.svc-vet{grid-row:auto;min-height:0}}
+@media (max-width:420px){.svc-row{grid-template-columns:1fr}.svc-row .ill{width:64px;height:64px}}
+
+/* Corredores */
+.aisles{background:var(--bg-tint)}
+.aisles-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px}
+.aisles-head > *{min-width:0}
+.hint{font-size:.88rem;color:var(--ink-2);display:flex;align-items:center;gap:.4em}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 2px 18px;margin-top:8px;scrollbar-width:thin;scrollbar-color:var(--blue) transparent;overscroll-behavior-x:contain}
+.strip:focus-visible{outline-offset:-3px}
+.aisle{flex:0 0 clamp(220px,26vw,260px);scroll-snap-align:start;background:var(--bg-2);border-radius:var(--r);border:2px solid var(--line);padding:0 0 20px;position:relative;transition:transform .2s ease,border-color .2s ease;display:flex;flex-direction:column}
+.aisle:hover{transform:translateY(-4px);border-color:var(--blue)}
+.aisle-sign{display:flex;justify-content:space-between;align-items:center;background:var(--blue);color:var(--on-blue);font-family:'Baloo 2',sans-serif;font-weight:800;padding:8px 16px;border-radius:15px 15px 0 0;font-size:.95rem}
+.aisle-sign span{background:var(--on-blue);color:var(--blue);border-radius:6px;padding:0 .45em;font-size:.82rem}
+.aisle svg.pic{width:100%;height:120px;display:block;margin-top:10px}
+.aisle h3{font-size:1.5rem;font-weight:800;padding:6px 18px 0}
+.aisle p{color:var(--ink-2);font-size:.95rem;padding:6px 18px 0;flex:1}
+.aisle a{margin:14px 18px 0;font-weight:800;color:var(--blue);text-decoration:none;font-size:.95rem;display:inline-flex;gap:.35em;align-items:center}
+.aisle a:hover{text-decoration:underline}
+.ask{margin-top:18px;display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;background:var(--bg-2);border-radius:var(--r);padding:18px 22px;border:2px dashed var(--blue)}
+.ask p{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.3rem;line-height:1.15;flex:1 1 260px;min-width:0}
+
+/* Reputação */
+.rep-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,64px);align-items:center;margin-top:30px}
+.rep-grid > *{min-width:0}
+.rep-score{background:var(--bg-2);border:2px solid var(--ink);border-radius:24px;padding:28px;box-shadow:8px 8px 0 var(--red);position:relative}
+.rep-score .big{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(4.5rem,11vw,6.5rem);line-height:.85;color:var(--blue)}
+.rep-score .stars{margin-top:10px}
+.rep-score .stars svg{width:26px;height:26px}
+.rep-score p{margin-top:12px;color:var(--ink-2)}
+.rep-score p b{color:var(--ink)}
+.rep-score .twin{margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);font-size:.95rem}
+.bars{list-style:none;padding:0;margin:0;display:grid;gap:18px}
+.bar-top{display:flex;justify-content:space-between;font-weight:800;gap:12px}
+.bar-top span:last-child{color:var(--ink-2);font-weight:700}
+.track{height:18px;background:var(--bg-tint);border-radius:999px;margin-top:6px;overflow:hidden}
+.fill{height:100%;background:var(--blue);border-radius:999px;position:relative;transform-origin:left;animation:grow 1s .2s cubic-bezier(.2,.8,.2,1) both}
+.bars li:first-child .fill{background:var(--red)}
+@keyframes grow{from{transform:scaleX(.05)}to{transform:scaleX(1)}}
+.source{font-size:.82rem;color:var(--ink-2);margin-top:22px}
+@media (max-width:760px){.rep-grid{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{background:var(--bg-2);border-block:1px solid var(--line)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,64px)}
+.faq-grid > *{min-width:0}
+details{border-bottom:2px solid var(--line);padding:18px 0}
+details:first-of-type{border-top:2px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.3rem;line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:32px;height:32px;border-radius:50%;background:var(--bg-tint);display:grid;place-items:center;transition:transform .2s ease,background-color .2s ease}
+summary .pm svg{width:14px;height:14px;stroke:var(--blue);stroke-width:3;fill:none;stroke-linecap:round}
+details[open] summary .pm{transform:rotate(45deg);background:var(--red-soft)}
+details[open] summary .pm svg{stroke:var(--red)}
+details p{margin-top:10px;color:var(--ink-2);max-width:56ch}
+@media (max-width:760px){.faq-grid{grid-template-columns:1fr}}
+
+/* Final */
+.final{background:var(--blue-deep);color:var(--on-blue);position:relative;overflow:hidden}
+.final .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center}
+.final .wrap > *{min-width:0}
+.final h2{font-size:clamp(2.1rem,5.4vw,3.8rem);font-weight:800}
+.final p{margin-top:12px;opacity:.88;max-width:44ch}
+.final .ctas{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.final .btn-ghost{border-color:var(--on-blue);color:var(--on-blue)}
+.final .btn-ghost:hover{background:var(--on-blue);color:var(--blue-deep)}
+.final .paw-ico{fill:var(--on-blue);opacity:.1}
+.final-deco{position:absolute;inset:0;pointer-events:none}
+@media (max-width:760px){.final .wrap{grid-template-columns:1fr}}
+
+footer{padding-block:34px calc(90px + env(safe-area-inset-bottom, 0px))}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;font-size:.92rem;color:var(--ink-2)}
+footer .wrap > *{min-width:0}
+footer .brand b{font-size:1.3rem}
+.addr{user-select:all;-webkit-user-select:all}
+.credit{width:100%;border-top:1px solid var(--line);padding-top:16px;font-size:.8rem;opacity:.8}
+
+/* Flutuante */
+.float{position:fixed;right:calc(18px + env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);color:var(--on-wa);display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:transform .2s ease}
+.float:hover{transform:scale(1.07)}
+.float svg{width:30px;height:30px}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="paw" viewBox="0 0 64 64">
+      <ellipse cx="32" cy="42" rx="15" ry="13"/>
+      <ellipse cx="14" cy="26" rx="6.5" ry="8.5" transform="rotate(-18 14 26)"/>
+      <ellipse cx="25.5" cy="15" rx="6.5" ry="8.5" transform="rotate(-6 25.5 15)"/>
+      <ellipse cx="38.5" cy="15" rx="6.5" ry="8.5" transform="rotate(6 38.5 15)"/>
+      <ellipse cx="50" cy="26" rx="6.5" ry="8.5" transform="rotate(18 50 26)"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.1zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Hobby Bichos, início"><b>Hobby Bichos</b><small>pet shop</small></a>
+    <nav class="nav" aria-label="Seções">
+      <a class="l" href="#lojas">Lojas</a>
+      <a class="l" href="#servicos">Serviços</a>
+      <a class="l" href="#corredores">Produtos</a>
+      <a class="l" href="#duvidas">Dúvidas</a>
+      <a class="btn btn-wa btn-small js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span>WhatsApp</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-labelledby="t-hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="badge"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 17l.9-5.4L4.2 7.7l5.4-.8z"/></svg>Empresa de mulheres empreendedoras</span>
+        <h1 id="t-hero">Ração, banho e <em>veterinário</em> num lugar <span class="r">só</span>.</h1>
+        <p class="lead">Duas lojas em João Pessoa, no Miramar e em Tambaú, com muita variedade de rações e acessórios e preço que cabe no bolso.</p>
+        <div class="ctas">
+          <a class="btn btn-wa js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Chamar no WhatsApp</a>
+          <a class="btn btn-ghost" href="#lojas"><svg aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:2.2"><use href="#pin"/></svg>Ver as duas lojas</a>
+        </div>
+        <div class="stars-row">
+          <span class="score num">4,7</span>
+          <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+          <p><b class="num">935 avaliações</b> no Google<br>unidade Epitácio</p>
+        </div>
+      </div>
+
+      <div class="art">
+        <svg class="main" viewBox="0 0 520 520" role="img" aria-label="Ilustração de um cachorro e um gato lado a lado">
+          <!-- fundo -->
+          <circle class="s-soft" cx="270" cy="270" r="220"/>
+          <circle class="s-bg" cx="270" cy="270" r="170" opacity=".55"/>
+          <!-- patas decorativas -->
+          <g class="paw-ico"><use href="#paw" x="40" y="40" width="44" height="44" transform="rotate(-20 62 62)"/><use href="#paw" x="438" y="96" width="36" height="36" transform="rotate(18 456 114)"/><use href="#paw" x="452" y="420" width="40" height="40" transform="rotate(30 472 440)"/></g>
+          <!-- osso -->
+          <g transform="rotate(-24 120 440)">
+            <rect class="s-red" x="70" y="428" width="100" height="24" rx="12"/>
+            <circle class="s-red" cx="70" cy="428" r="16"/><circle class="s-red" cx="70" cy="452" r="16"/>
+            <circle class="s-red" cx="170" cy="428" r="16"/><circle class="s-red" cx="170" cy="452" r="16"/>
+          </g>
+
+          <!-- CACHORRO -->
+          <path class="s-blue tail" d="M388 392 q60 -30 52 -96 q-4 -20 -18 -10 q4 60 -40 82z"/>
+          <path class="s-blue" d="M236 470 V350 q0 -60 70 -60 h40 q60 0 60 70 V470z"/>
+          <rect class="s-deep" x="256" y="430" width="34" height="44" rx="14"/>
+          <rect class="s-deep" x="350" y="430" width="34" height="44" rx="14"/>
+          <!-- coleira -->
+          <rect class="s-red" x="250" y="300" width="120" height="20" rx="10"/>
+          <circle class="s-cream" cx="312" cy="330" r="12"/>
+          <!-- cabeça -->
+          <path class="s-blue" d="M230 210 q0 -82 80 -82 q80 0 80 82 q0 80 -80 80 q-80 0 -80 -80z"/>
+          <!-- orelhas caídas -->
+          <path class="s-deep" d="M240 160 q-46 -6 -44 60 q2 40 30 44 q14 -50 14 -104z"/>
+          <path class="s-deep" d="M380 160 q46 -6 44 60 q-2 40 -30 44 q-14 -50 -14 -104z"/>
+          <!-- focinho -->
+          <ellipse class="s-cream" cx="310" cy="242" rx="46" ry="36"/>
+          <ellipse class="s-ink" cx="310" cy="222" rx="16" ry="11"/>
+          <path class="s-line" d="M310 233 v14 q-12 14 -24 4 M310 247 q12 14 24 4"/>
+          <!-- olhos -->
+          <circle class="s-ink eye" cx="278" cy="190" r="9"/>
+          <circle class="s-ink eye" cx="342" cy="190" r="9"/>
+          <circle class="s-bg" cx="281" cy="187" r="2.6"/><circle class="s-bg" cx="345" cy="187" r="2.6"/>
+
+          <!-- GATO -->
+          <path class="s-ink" d="M118 470 q-14 -110 40 -140 q54 -30 80 20 q26 50 6 120z"/>
+          <path class="s-ink" d="M124 470 q-70 -6 -70 -60 q0 -30 22 -30 q-6 50 52 64z"/>
+          <!-- cabeça -->
+          <path class="s-ink" d="M126 262 L118 190 L160 222 Q180 216 200 222 L242 190 L234 262 Q234 316 180 316 Q126 316 126 262z"/>
+          <path class="s-red" d="M128 206 l6 30 l18 -12z"/>
+          <path class="s-red" d="M232 206 l-6 30 l-18 -12z"/>
+          <!-- olhos -->
+          <ellipse class="s-cream eye" cx="158" cy="262" rx="12" ry="13"/>
+          <ellipse class="s-cream eye" cx="202" cy="262" rx="12" ry="13"/>
+          <rect class="s-ink" x="155" y="252" width="6" height="20" rx="3"/>
+          <rect class="s-ink" x="199" y="252" width="6" height="20" rx="3"/>
+          <path class="s-red" d="M172 284 h16 l-8 9z"/>
+          <path d="M150 290 h-40 M150 298 l-36 8 M210 290 h40 M210 298 l36 8" stroke="var(--cream)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+        </svg>
+        <div class="sign">Veterinário na loja<span>e banho para o seu pet</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trail paw-ico" aria-hidden="true">
+    <svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg>
+  </div>
+
+  <!-- UNIDADES -->
+  <section class="units" id="lojas" aria-labelledby="t-lojas">
+    <svg class="units-deco paw-ico" viewBox="0 0 260 260" aria-hidden="true"><use href="#paw" x="20" y="10" width="120" height="120" transform="rotate(20 80 70)"/><use href="#paw" x="130" y="130" width="100" height="100" transform="rotate(-15 180 180)"/></svg>
+    <div class="wrap">
+      <p class="kicker">Nossas lojas</p>
+      <h2 class="h2" id="t-lojas">Escolha a loja mais perto de você</h2>
+      <p class="sub">As informações e o botão de WhatsApp abaixo mudam conforme a unidade escolhida.</p>
+
+      <div class="tabs" role="tablist" aria-label="Unidades da Hobby Bichos">
+        <button class="tab" role="tab" id="tab-epitacio" aria-selected="true" aria-controls="painel-unidade" data-unit="epitacio">Epitácio</button>
+        <button class="tab" role="tab" id="tab-tambau" aria-selected="false" aria-controls="painel-unidade" data-unit="tambau" tabindex="-1">Tambaú</button>
+      </div>
+
+      <div class="unit-card" id="painel-unidade" role="tabpanel" aria-labelledby="tab-epitacio" tabindex="0">
+        <div class="unit-main" id="unit-main">
+          <h3><small id="u-bairro">Miramar</small><span id="u-nome">Unidade Epitácio</span></h3>
+          <ul class="facts">
+            <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#pin"/></svg></span><div><b>Endereço</b><span class="v" id="u-end">Av. Pres. Epitácio Pessoa, 4129 – Miramar, João Pessoa – PB, 58032-000</span></div></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b id="u-tel-label">WhatsApp</b><span class="v num" id="u-tel">(83) 99984-2360</span></div></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Horário</b><span class="v" id="u-hora">Segunda-feira: aberta até 19h. Outros dias: pergunte pelo WhatsApp.</span></div></li>
+          </ul>
+          <div class="ctas">
+            <a class="btn btn-wa" id="u-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span id="u-wa-txt">WhatsApp da Epitácio</span></a>
+            <a class="btn btn-ghost" id="u-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Hobby+Bichos+-+Epit%C3%A1cio+Av.+Pres.+Epit%C3%A1cio+Pessoa%2C+4129+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:2.2"><use href="#pin"/></svg>Como chegar</a>
+          </div>
+        </div>
+        <div class="unit-side">
+          <div>
+            <div class="big num" id="u-nota">4,7<span>/5</span></div>
+            <p><b class="num" id="u-aval">935 avaliações</b> no Google para esta unidade.</p>
+          </div>
+          <p class="note">Dica: antes de sair de casa, mande uma mensagem e confirme se a ração do seu pet está na loja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" aria-labelledby="t-serv">
+    <div class="wrap">
+      <p class="kicker"><svg class="paw-ico" aria-hidden="true"><use href="#paw"/></svg>Cuidados na loja</p>
+      <h2 class="h2" id="t-serv">Enquanto você escolhe a ração, o seu pet é bem cuidado</h2>
+
+      <div class="svc-grid">
+        <article class="svc svc-vet">
+          <div>
+            <span class="tag">Na própria loja</span>
+            <h3>Veterinário</h3>
+            <p>Tem veterinário dentro do pet shop. Pergunte pelo WhatsApp os dias e horários de atendimento na sua unidade.</p>
+          </div>
+          <svg class="cross" viewBox="0 0 160 160" aria-hidden="true">
+            <circle cx="80" cy="80" r="74" fill="var(--blue)" opacity=".45"/>
+            <rect x="58" y="30" width="44" height="100" rx="12" fill="var(--red)"/>
+            <rect x="30" y="58" width="100" height="44" rx="12" fill="var(--red)"/>
+            <path d="M58 140 q-26 0 -26 -26" stroke="var(--on-blue)" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <circle cx="32" cy="108" r="9" fill="var(--on-blue)"/>
+          </svg>
+          <a class="btn btn-wa js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Perguntar sobre consulta</a>
+        </article>
+
+        <article class="svc svc-row">
+          <svg class="ill" viewBox="0 0 90 90" aria-hidden="true">
+            <rect x="8" y="44" width="74" height="34" rx="12" fill="var(--blue)"/>
+            <rect x="4" y="38" width="82" height="12" rx="6" fill="var(--blue-deep)"/>
+            <circle cx="28" cy="26" r="10" fill="none" stroke="var(--blue)" stroke-width="4"/>
+            <circle cx="50" cy="16" r="7" fill="none" stroke="var(--red)" stroke-width="4"/>
+            <circle cx="66" cy="28" r="5" fill="none" stroke="var(--blue)" stroke-width="3"/>
+          </svg>
+          <div>
+            <span class="tag">Higiene</span>
+            <h3>Banho</h3>
+            <p>Banho para o seu pet na própria loja. Chame no WhatsApp para saber valores e horários.</p>
+          </div>
+        </article>
+
+        <article class="svc svc-row">
+          <svg class="ill" viewBox="0 0 90 90" aria-hidden="true">
+            <g fill="var(--paw)"><use href="#paw" x="18" y="22" width="54" height="54"/></g>
+            <path d="M24 18 l18 18 M42 18 l-18 18" stroke="var(--red)" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="20" cy="14" r="6" fill="none" stroke="var(--red)" stroke-width="4"/>
+            <circle cx="46" cy="14" r="6" fill="none" stroke="var(--red)" stroke-width="4"/>
+          </svg>
+          <div>
+            <span class="tag">Cuidado</span>
+            <h3>Corte de unhas</h3>
+            <p>Unha grande machuca e escorrega no piso. Aproveite a ida à loja e peça o corte.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORREDORES -->
+  <section class="aisles" id="corredores" aria-labelledby="t-corr">
+    <div class="wrap">
+      <div class="aisles-head">
+        <div>
+          <p class="kicker">Corredores da loja</p>
+          <h2 class="h2" id="t-corr">Muita variedade de rações e acessórios</h2>
+        </div>
+        <p class="hint"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Arraste para o lado</p>
+      </div>
+
+      <div class="strip" tabindex="0" role="region" aria-label="Categorias de produtos">
+        <article class="aisle">
+          <div class="aisle-sign">Corredor <span class="num">1</span></div>
+          <svg class="pic" viewBox="0 0 240 120" aria-hidden="true">
+            <path d="M78 22 h84 l10 90 h-104z" fill="var(--blue)"/>
+            <rect x="78" y="14" width="84" height="14" rx="4" fill="var(--blue-deep)"/>
+            <circle cx="120" cy="66" r="20" fill="var(--bg-2)"/>
+            <g fill="var(--paw)"><use href="#paw" x="106" y="52" width="28" height="28"/></g>
+            <circle cx="186" cy="104" r="7" fill="var(--red)"/><circle cx="200" cy="100" r="6" fill="var(--red)" opacity=".7"/><circle cx="194" cy="90" r="5" fill="var(--red)" opacity=".5"/>
+          </svg>
+          <h3>Rações</h3>
+          <p>Grande variedade de rações. Diga qual o seu pet come e a loja confere.</p>
+          <a class="js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">Perguntar pela marca →</a>
+        </article>
+        <article class="aisle">
+          <div class="aisle-sign">Corredor <span class="num">2</span></div>
+          <svg class="pic" viewBox="0 0 240 120" aria-hidden="true">
+            <g transform="rotate(-14 120 60)">
+              <rect x="80" y="50" width="80" height="20" rx="10" fill="var(--red)"/>
+              <circle cx="80" cy="50" r="14" fill="var(--red)"/><circle cx="80" cy="70" r="14" fill="var(--red)"/>
+              <circle cx="160" cy="50" r="14" fill="var(--red)"/><circle cx="160" cy="70" r="14" fill="var(--red)"/>
+            </g>
+            <rect x="40" y="86" width="22" height="22" rx="5" fill="var(--blue)" transform="rotate(12 51 97)"/>
+            <rect x="178" y="84" width="20" height="20" rx="5" fill="var(--blue-deep)" transform="rotate(-10 188 94)"/>
+          </svg>
+          <h3>Petiscos</h3>
+          <p>Para agradar, treinar e recompensar o bom comportamento.</p>
+          <a class="js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">Perguntar o que tem →</a>
+        </article>
+        <article class="aisle">
+          <div class="aisle-sign">Corredor <span class="num">3</span></div>
+          <svg class="pic" viewBox="0 0 240 120" aria-hidden="true">
+            <circle cx="90" cy="64" r="36" fill="var(--blue)"/>
+            <path d="M58 48 q32 20 64 0 M58 80 q32 -20 64 0" stroke="var(--bg-2)" stroke-width="5" fill="none"/>
+            <path d="M150 104 q20 -60 50 -70" stroke="var(--paw)" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M196 30 l14 -6 -4 14 10 4 -12 8" fill="var(--red)"/>
+          </svg>
+          <h3>Brinquedos</h3>
+          <p>Para gastar energia e passar o tempo. Pergunte o que tem na loja.</p>
+          <a class="js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">Perguntar o que tem →</a>
+        </article>
+        <article class="aisle">
+          <div class="aisle-sign">Corredor <span class="num">4</span></div>
+          <svg class="pic" viewBox="0 0 240 120" aria-hidden="true">
+            <ellipse cx="96" cy="92" rx="52" ry="14" fill="var(--blue-deep)"/>
+            <path d="M44 74 h104 l-8 22 h-88z" fill="var(--blue)"/>
+            <path d="M160 30 a26 26 0 1 1 0 52 a26 26 0 1 1 0 -52" fill="none" stroke="var(--red)" stroke-width="10"/>
+            <circle cx="160" cy="88" r="8" fill="var(--paw)"/>
+          </svg>
+          <h3>Acessórios</h3>
+          <p>Variedade de acessórios para a rotina do seu pet.</p>
+          <a class="js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">Perguntar o que tem →</a>
+        </article>
+        <article class="aisle">
+          <div class="aisle-sign">Corredor <span class="num">5</span></div>
+          <svg class="pic" viewBox="0 0 240 120" aria-hidden="true">
+            <rect x="86" y="34" width="44" height="78" rx="12" fill="var(--blue)"/>
+            <rect x="96" y="18" width="24" height="20" rx="4" fill="var(--blue-deep)"/>
+            <path d="M120 22 h22" stroke="var(--blue-deep)" stroke-width="6" stroke-linecap="round"/>
+            <rect x="94" y="58" width="28" height="28" rx="6" fill="var(--bg-2)"/>
+            <rect x="146" y="72" width="44" height="40" rx="8" fill="var(--red)"/>
+            <path d="M152 72 v-10 h32 v10" fill="none" stroke="var(--red)" stroke-width="5"/>
+          </svg>
+          <h3>Higiene</h3>
+          <p>Itens de limpeza e cuidado do dia a dia do seu pet.</p>
+          <a class="js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">Perguntar o que tem →</a>
+        </article>
+      </div>
+
+      <div class="ask">
+        <p>Pergunte pelo WhatsApp se tem a marca do seu pet.</p>
+        <a class="btn btn-wa js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Perguntar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPUTAÇÃO -->
+  <section id="avaliacoes" aria-labelledby="t-rep">
+    <div class="wrap">
+      <p class="kicker"><svg class="paw-ico" aria-hidden="true"><use href="#paw"/></svg>No Google</p>
+      <h2 class="h2" id="t-rep">O que os clientes mais comentam</h2>
+      <div class="rep-grid">
+        <div class="rep-score">
+          <div class="big num">4,7</div>
+          <span class="stars" aria-label="Nota 4,7 de 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+          <p><b class="num">935 avaliações</b> na unidade Epitácio.</p>
+          <p class="twin">Unidade Tambaú: nota <b class="num">4,7</b> com <b class="num">114 avaliações</b>.</p>
+        </div>
+        <div>
+          <ul class="bars">
+            <li><div class="bar-top"><span>Preços</span><span class="num">48 avaliações</span></div><div class="track"><div class="fill" style="width:100%"></div></div></li>
+            <li><div class="bar-top"><span>Veterinário</span><span class="num">23 avaliações</span></div><div class="track"><div class="fill" style="width:47.9%"></div></div></li>
+            <li><div class="bar-top"><span>Ração</span><span class="num">18 avaliações</span></div><div class="track"><div class="fill" style="width:37.5%"></div></div></li>
+            <li><div class="bar-top"><span>Banho</span><span class="num">15 avaliações</span></div><div class="track"><div class="fill" style="width:31.25%"></div></div></li>
+          </ul>
+          <p class="source">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 16/11/2026 (unidade Epitácio).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="duvidas" aria-labelledby="t-faq">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="kicker">Dúvidas</p>
+        <h2 class="h2" id="t-faq">Perguntas frequentes</h2>
+        <p class="sub">Não achou a resposta? Mande sua pergunta no WhatsApp.</p>
+      </div>
+      <div>
+        <details>
+          <summary>Tem veterinário na loja?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Sim. Para saber dias e horários de atendimento, chame a unidade pelo WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Vocês fazem banho?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Sim, e também corte de unhas. Pergunte pelo WhatsApp os valores e o melhor horário para levar seu pet.</p>
+        </details>
+        <details>
+          <summary>Quais são as unidades?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>São duas lojas em João Pessoa: <b>Epitácio</b>, na Av. Pres. Epitácio Pessoa, 4129, Miramar; e <b>Tambaú</b>, na R. Nossa Sra. dos Navegantes, 952.</p>
+        </details>
+        <details>
+          <summary>Como saber se tem a ração que eu uso?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 1v12M1 7h12"/></svg></span></summary>
+          <p>Mande o nome da marca e o tamanho do pacote pelo WhatsApp para conferir antes de sair de casa.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final" aria-labelledby="t-final">
+    <svg class="final-deco paw-ico" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <use href="#paw" x="40" y="260" width="70" height="70" transform="rotate(-20 75 295)"/>
+      <use href="#paw" x="150" y="190" width="60" height="60" transform="rotate(10 180 220)"/>
+      <use href="#paw" x="1000" y="40" width="90" height="90" transform="rotate(25 1045 85)"/>
+      <use href="#paw" x="1090" y="150" width="70" height="70" transform="rotate(-10 1125 185)"/>
+    </svg>
+    <div class="wrap">
+      <div>
+        <h2 id="t-final">Seu pet merece. O seu bolso agradece.</h2>
+        <p>Ração, banho, corte de unhas e veterinário em duas lojas de João Pessoa. Fale com a gente pelo WhatsApp.</p>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-wa js-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Chamar no WhatsApp</a>
+        <a class="btn btn-ghost js-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Hobby+Bichos+-+Epit%C3%A1cio+Av.+Pres.+Epit%C3%A1cio+Pessoa%2C+4129+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:2.2"><use href="#pin"/></svg>Como chegar</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#inicio"><b>Hobby Bichos</b><small>pet shop</small></a>
+      <p style="margin-top:6px">Empresa de mulheres empreendedoras · João Pessoa – PB</p>
+    </div>
+    <div>
+      <p><b>Epitácio</b> · <span class="addr">Av. Pres. Epitácio Pessoa, 4129 – Miramar</span></p>
+      <p>WhatsApp: <span class="addr num">(83) 99984-2360</span></p>
+    </div>
+    <div>
+      <p><b>Tambaú</b> · <span class="addr">R. Nossa Sra. dos Navegantes, 952 – Tambaú</span></p>
+      <p>Telefone: <span class="addr num">(83) 98781-5450</span></p>
+    </div>
+    <p class="credit">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</p>
+  </div>
+</footer>
+
+<a class="float js-wa" id="float-wa" href="https://wa.me/5583999842360?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Chamar a Hobby Bichos no WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg></a>
+
+<script>
+(function(){
+  var MSG = 'Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hobby%20Bichos%20e%20queria%20uma%20informa%C3%A7%C3%A3o.';
+  var UNITS = {
+    epitacio:{
+      bairro:'Miramar', nome:'Unidade Epitácio',
+      end:'Av. Pres. Epitácio Pessoa, 4129 – Miramar, João Pessoa – PB, 58032-000',
+      telLabel:'WhatsApp', tel:'(83) 99984-2360', wa:'5583999842360',
+      hora:'Segunda-feira: aberta até 19h. Outros dias: pergunte pelo WhatsApp.',
+      maps:'https://www.google.com/maps/search/?api=1&query=Hobby+Bichos+-+Epit%C3%A1cio+Av.+Pres.+Epit%C3%A1cio+Pessoa%2C+4129+Jo%C3%A3o+Pessoa',
+      nota:'4,7', aval:'935 avaliações', waTxt:'WhatsApp da Epitácio'
+    },
+    tambau:{
+      bairro:'Tambaú', nome:'Unidade Tambaú',
+      end:'R. Nossa Sra. dos Navegantes, 952 – Tambaú, João Pessoa – PB',
+      telLabel:'Telefone', tel:'(83) 98781-5450', wa:'5583987815450',
+      hora:'Pergunte o horário de funcionamento pelo WhatsApp.',
+      maps:'https://www.google.com/maps/search/?api=1&query=Hobby+Bichos+Tamba%C3%BA+R.+Nossa+Sra.+dos+Navegantes%2C+952+Jo%C3%A3o+Pessoa',
+      nota:'4,7', aval:'114 avaliações', waTxt:'WhatsApp da Tambaú'
+    }
+  };
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panel = document.getElementById('painel-unidade');
+  var main = document.getElementById('unit-main');
+  function $(id){return document.getElementById(id);}
+  function select(tab, focus){
+    var u = UNITS[tab.getAttribute('data-unit')];
+    tabs.forEach(function(t){
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+    });
+    panel.setAttribute('aria-labelledby', tab.id);
+    $('u-bairro').textContent = u.bairro;
+    $('u-nome').textContent = u.nome;
+    $('u-end').textContent = u.end;
+    $('u-tel-label').textContent = u.telLabel;
+    $('u-tel').textContent = u.tel;
+    $('u-hora').textContent = u.hora;
+    $('u-wa').href = 'https://wa.me/' + u.wa + '?text=' + MSG;
+    $('u-wa-txt').textContent = u.waTxt;
+    $('u-maps').href = u.maps;
+    $('u-nota').innerHTML = u.nota + '<span>/5</span>';
+    $('u-aval').textContent = u.aval;
+    /* botão flutuante e "Como chegar" do final seguem a loja escolhida */
+    $('float-wa').href = 'https://wa.me/' + u.wa + '?text=' + MSG;
+    $('float-wa').setAttribute('aria-label', 'Chamar a Hobby Bichos ' + u.bairro + ' no WhatsApp');
+    var fm = document.querySelector('.js-maps'); if (fm) fm.href = u.maps;
+    main.classList.remove('fade'); void main.offsetWidth; main.classList.add('fade');
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(t, false); });
+    t.addEventListener('keydown', function(e){
+      var n = null;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') n = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') n = tabs[0];
+      else if (e.key === 'End') n = tabs[tabs.length - 1];
+      if (n){ e.preventDefault(); select(n, true); }
+    });
+  });
+})();
+</script>
+</body>
+</html>

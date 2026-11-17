@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Minha Cria Cabo Branco</title>
+<meta name="description" content="Prévia do site de Minha Cria, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Minha Cria – prévia do site">
+<meta property="og:description" content="Prévia do site de Minha Cria, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:image" content="https://nathanlira01.github.io/minha-cria/capa.png">
+<meta property="og:url" content="https://nathanlira01.github.io/minha-cria/">
+</head>
+<body>
+<meta name="description" content="Minha Cria: clínica veterinária 24 horas, exames de imagem 24h, farmácia veterinária e pet shop no Cabo Branco, João Pessoa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#f5f7fc; --bg2:#eaf0fb; --surface:#ffffff; --ink:#0f1f48; --muted:#4a5778; --line:#d6def0;
+  --blue:#1f4fbf; --blue-text:#1f4fbf; --blue-ink:#ffffff; --blue-soft:#dfe8fb;
+  --orange:#f2552c; --orange-text:#c23c15; --orange-soft:#fde5dc;
+  --deep:#16367f; --deep-2:#1f4fbf; --on-deep:#ffffff; --on-deep-muted:#c8d5f5; --deep-accent:#ff8a63;
+  --day:#fff1d6; --sun:#f6a623; --night:#1b2f6b; --moon:#f4f1e6; --star:#ffffff;
+  --wa:#1d8a4b; --wa-ink:#ffffff; --final-bg:#e2471f;
+  --shadow:0 18px 40px -26px rgba(15,31,72,.45);
+  --f-display:'Bricolage Grotesque', 'Trebuchet MS', Georgia, sans-serif;
+  --f-body:'Figtree', 'Segoe UI', system-ui, sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#07112a; --bg2:#0b1838; --surface:#0f1e44; --ink:#e9eefc; --muted:#a6b3d6; --line:#22335f;
+  --blue:#5b86f0; --blue-text:#8eabff; --blue-ink:#07112a; --blue-soft:#14275a;
+  --orange:#ff6f45; --orange-text:#ff8f6b; --orange-soft:#3a1d1a;
+  --deep:#0f2257; --deep-2:#1b3a8f; --on-deep:#ffffff; --on-deep-muted:#b9c7ee; --deep-accent:#ff8f6b;
+  --day:#25366b; --sun:#f2b544; --night:#0a1534; --moon:#f4f1e6; --star:#dfe7ff;
+  --wa:#25a85c; --wa-ink:#ffffff; --final-bg:#c94320;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.7);
+  color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#07112a; --bg2:#0b1838; --surface:#0f1e44; --ink:#e9eefc; --muted:#a6b3d6; --line:#22335f;
+  --blue:#5b86f0; --blue-text:#8eabff; --blue-ink:#07112a; --blue-soft:#14275a;
+  --orange:#ff6f45; --orange-text:#ff8f6b; --orange-soft:#3a1d1a;
+  --deep:#0f2257; --deep-2:#1b3a8f; --on-deep:#ffffff; --on-deep-muted:#b9c7ee; --deep-accent:#ff8f6b;
+  --day:#25366b; --sun:#f2b544; --night:#0a1534; --moon:#f4f1e6; --star:#dfe7ff;
+  --wa:#25a85c; --wa-ink:#ffffff; --final-bg:#c94320;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.7);
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--f-display);line-height:1.05;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.num,time,.tab{font-variant-numeric:tabular-nums}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-text)}
+.eyebrow::before{content:"";width:18px;height:2px;background:currentColor;border-radius:2px}
+.sec{padding-block:clamp(56px,8vw,96px)}
+.sec h2{font-size:clamp(1.9rem,4.4vw,3rem);margin-top:12px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:56ch;margin-top:14px}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;text-decoration:none;border-radius:14px;padding:14px 20px;border:0;cursor:pointer;font-family:inherit;transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:var(--wa-ink);box-shadow:0 10px 22px -12px rgba(29,138,75,.8)}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.btn-line:hover{box-shadow:inset 0 0 0 2px var(--blue)}
+.btn-sm{padding:10px 14px;font-size:.92rem;border-radius:12px}
+.btn-on-deep{background:transparent;color:var(--on-deep);box-shadow:inset 0 0 0 2px rgba(255,255,255,.4)}
+.btn-on-deep:hover{box-shadow:inset 0 0 0 2px #fff}
+
+/* topo */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1;min-width:0}
+.brand-name{font-family:var(--f-display);font-weight:800;font-size:1.55rem;letter-spacing:-.03em}
+.brand-name .m{color:var(--blue-text)} .brand-name .c{color:var(--orange)}
+.brand-sub{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.top nav{display:flex;gap:22px;font-weight:600;font-size:.95rem}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+@media (max-width:860px){ .top nav{display:none} }
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--blue) 16%, transparent) 1px, transparent 1.5px) 0 0/22px 22px,
+  linear-gradient(180deg, var(--bg2), var(--bg))}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(40px,7vw,88px)}
+.hero-text{min-width:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.open-pill{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 10px;font-weight:700;font-size:.9rem}
+.open-pill .dot{width:10px;height:10px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 color-mix(in srgb, var(--wa) 60%, transparent);animation:pulse 2s infinite}
+.open-pill span.sep{color:var(--muted);font-weight:500}
+.hero h1{font-size:clamp(2.5rem,7vw,5rem);margin-top:22px;font-weight:800}
+.hero h1 .hl{color:var(--orange-text);white-space:nowrap}
+.hero .lead{margin-top:20px;font-size:clamp(1.05rem,1.6vw,1.2rem)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rating{display:flex;align-items:center;gap:14px;margin-top:28px;flex-wrap:wrap}
+.rating .big{font-family:var(--f-display);font-weight:800;font-size:2rem;line-height:1}
+.rating small{display:block;color:var(--muted);font-size:.9rem}
+.stars{position:relative;display:inline-block;width:110px;height:20px}
+.stars svg{width:110px;height:20px;display:block}
+.stars .fill{position:absolute;inset:0;width:86%;overflow:hidden}
+.hero-art{min-width:0;animation:rise .9s .1s cubic-bezier(.2,.7,.2,1) both}
+.hero-art svg{width:100%;height:auto;display:block;max-width:520px;margin-inline:auto}
+.sun-g{animation:bob 6s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+.moon-g{animation:bob 7s 1s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+.twinkle{animation:tw 3s ease-in-out infinite}
+.twinkle:nth-of-type(2n){animation-delay:1.2s}
+.twinkle:nth-of-type(3n){animation-delay:.6s}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-art{order:-1;max-width:360px;margin-inline:auto;width:100%}
+}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb, var(--wa) 55%, transparent)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* plantão (relógio) */
+.plantao{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden}
+.plantao::after{content:"24";position:absolute;right:-2vw;bottom:-8vw;font-family:var(--f-display);font-weight:800;font-size:clamp(14rem,34vw,26rem);line-height:.8;color:rgba(255,255,255,.04);pointer-events:none}
+.plantao .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:center;position:relative;z-index:1}
+.plantao .eyebrow{color:var(--deep-accent)}
+.plantao h2{color:var(--on-deep)}
+.plantao .lead{color:var(--on-deep-muted)}
+.clock-card{min-width:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:24px;padding:clamp(18px,3vw,28px);display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,3vw,28px);align-items:center}
+.dial{width:clamp(150px,22vw,200px);height:auto;display:block}
+.dial .ring{stroke:var(--deep-accent)}
+.dial .ring-bg{stroke:rgba(255,255,255,.12)}
+.dial text{fill:var(--on-deep-muted);font-family:var(--f-body);font-size:11px;font-weight:600}
+.dial .center-big{fill:var(--on-deep);font-family:var(--f-display);font-size:34px;font-weight:800}
+.dial .center-small{fill:var(--on-deep-muted);font-size:11px;letter-spacing:.14em}
+#hand{transition:transform .6s cubic-bezier(.2,.7,.2,1);transform-origin:100px 100px}
+.clock-read{min-width:0}
+.clock-status{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:#bff0d2}
+.clock-status .dot{width:9px;height:9px;border-radius:50%;background:#3ddc84;animation:pulse 2s infinite}
+.clock-time{font-family:var(--f-display);font-weight:800;font-size:clamp(2.6rem,7vw,4.2rem);line-height:1;margin-top:8px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.clock-day{color:var(--on-deep-muted);font-size:.95rem;margin-top:6px}
+.clock-msg{margin-top:14px;font-size:1.05rem;line-height:1.5}
+.sim{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);padding-top:16px;display:grid;gap:10px}
+.sim label{font-weight:600;font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.sim input[type=range]{width:100%;accent-color:var(--deep-accent);height:28px}
+.sim-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.sim-out{color:var(--on-deep-muted);font-size:.95rem}
+.sim-out b{color:var(--on-deep)}
+.link-btn{background:none;border:0;color:var(--deep-accent);font:inherit;font-weight:700;cursor:pointer;padding:4px 0;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:860px){ .plantao .wrap{grid-template-columns:1fr} }
+@media (max-width:480px){ .clock-card{grid-template-columns:1fr;justify-items:start} .dial{width:150px} }
+
+/* serviços */
+.svc-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:auto auto;gap:16px;margin-top:40px}
+.svc{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;position:relative;overflow:hidden;transition:transform .2s ease, border-color .2s ease}
+.svc:hover{transform:translateY(-3px);border-color:var(--blue)}
+.svc h3{font-size:1.45rem;margin-top:14px}
+.svc p{color:var(--muted);margin-top:8px}
+.svc .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue-text)}
+.svc .ico svg{width:26px;height:26px}
+.svc .tag{display:inline-block;margin-top:14px;font-size:.8rem;font-weight:700;color:var(--orange-text);background:var(--orange-soft);padding:4px 10px;border-radius:999px}
+.svc-main{grid-row:span 2;background:linear-gradient(160deg,var(--deep-2),var(--deep));color:var(--on-deep);border-color:transparent;display:flex;flex-direction:column;justify-content:space-between;min-height:360px}
+.svc-main:hover{border-color:transparent}
+.svc-main .big24{font-family:var(--f-display);font-weight:800;font-size:clamp(5rem,12vw,8.5rem);line-height:.85;letter-spacing:-.05em;color:var(--deep-accent)}
+.svc-main .big24 small{font-size:.32em;letter-spacing:0;color:var(--on-deep);margin-left:6px}
+.svc-main h3{font-size:clamp(1.6rem,3vw,2.1rem)}
+.svc-main p{color:var(--on-deep-muted)}
+.svc-main .ask{margin-top:18px;font-size:.95rem;color:var(--on-deep);border-top:1px solid rgba(255,255,255,.18);padding-top:14px}
+.svc-wide{grid-column:span 2;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.svc-wide h3{margin-top:0}
+@media (max-width:900px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc-main{grid-column:1/-1;grid-row:auto;min-height:0}
+  .svc-wide{grid-column:1/-1}
+}
+@media (max-width:560px){
+  .svc-grid{grid-template-columns:1fr}
+  .svc-wide{grid-template-columns:1fr}
+}
+
+/* antes de sair */
+.prep{background:var(--bg2);border-block:1px solid var(--line)}
+.prep .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,64px);align-items:start}
+.prep-head{min-width:0;position:sticky;top:96px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:18px;padding-block:22px;border-bottom:1px dashed var(--line);min-width:0}
+.steps li:first-child{padding-top:0}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--f-display);font-weight:800;font-size:2.4rem;line-height:1;color:var(--orange);font-variant-numeric:tabular-nums}
+.steps h3{font-size:1.3rem}
+.steps p{color:var(--muted);margin-top:6px}
+.steps a{color:var(--blue-text);font-weight:700}
+.note{margin-top:20px;font-size:.9rem;color:var(--muted)}
+@media (max-width:860px){ .prep .wrap{grid-template-columns:1fr} .prep-head{position:static} }
+@media (max-width:420px){ .steps li{grid-template-columns:48px 1fr;gap:12px} .steps li::before{font-size:1.9rem} }
+
+/* reputação */
+.rep .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,6vw,80px);align-items:center}
+.score{min-width:0}
+.score .n{font-family:var(--f-display);font-weight:800;font-size:clamp(6rem,16vw,10rem);line-height:.85;color:var(--blue-text);letter-spacing:-.05em}
+.score .n span{color:var(--orange)}
+.score .stars{margin-top:14px;width:150px;height:27px}
+.score .stars svg{width:150px;height:27px}
+.score p{color:var(--muted);margin-top:10px}
+.score p b{color:var(--ink)}
+.bars{min-width:0}
+.bars h2{margin-top:10px}
+.bar-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:16px}
+.bar-list li{display:grid;grid-template-columns:110px 1fr 44px;gap:14px;align-items:center;min-width:0}
+.bar-list .lbl{font-weight:700}
+.bar-list .track{height:14px;background:var(--blue-soft);border-radius:999px;overflow:hidden}
+.bar-list .fill{display:block;height:100%;background:var(--blue);border-radius:999px;transform-origin:left;animation:grow 1s .2s cubic-bezier(.2,.7,.2,1) both}
+.bar-list li:first-child .fill{background:var(--orange)}
+.bar-list .v{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.src{font-size:.85rem;color:var(--muted);margin-top:18px}
+@keyframes grow{from{transform:scaleX(.15)}to{transform:none}}
+@media (max-width:760px){ .rep .wrap{grid-template-columns:1fr} }
+@media (max-width:400px){ .bar-list li{grid-template-columns:84px 1fr 34px;gap:10px} }
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,64px);align-items:start}
+.faq-list{min-width:0;border-top:2px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 2px;font-family:var(--f-display);font-weight:700;font-size:clamp(1.1rem,2.2vw,1.35rem);line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:32px;height:32px;border-radius:50%;background:var(--blue-soft);color:var(--blue-text);display:grid;place-items:center;transition:transform .2s ease, background-color .2s ease}
+.faq summary .pm svg{width:16px;height:16px}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--orange);color:#fff}
+.faq details p{padding:0 2px 22px;color:var(--muted);max-width:60ch}
+@media (max-width:860px){ .faq .wrap{grid-template-columns:1fr} }
+
+/* onde estamos */
+.where{padding-top:0}
+.where-card{display:grid;grid-template-columns:1.1fr .9fr;background:var(--surface);border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.where-info{min-width:0;padding:clamp(24px,4vw,48px)}
+.where-info h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-top:10px}
+.facts{display:grid;gap:18px;margin:28px 0 0;padding:0}
+.facts div{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;min-width:0}
+.facts dt{width:40px;height:40px;border-radius:12px;background:var(--blue-soft);color:var(--blue-text);display:grid;place-items:center}
+.facts dt svg{width:20px;height:20px}
+.facts dd{margin:0;min-width:0}
+.facts dd b{display:block;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.facts .phone{font-family:var(--f-display);font-weight:700;font-size:1.35rem;user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums}
+.where-art{min-width:0;background:var(--bg2);position:relative;display:grid;place-items:center;padding:24px;border-left:1px solid var(--line)}
+.where-art svg{width:100%;max-width:340px;height:auto}
+@media (max-width:820px){ .where-card{grid-template-columns:1fr} .where-art{border-left:0;border-top:1px solid var(--line)} }
+
+/* faixa final */
+.final{background:var(--final-bg);color:#fff;position:relative;overflow:hidden}
+.final .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;padding-block:clamp(44px,7vw,72px);position:relative;z-index:1}
+.final h2{font-size:clamp(1.9rem,4.6vw,3.2rem);max-width:18ch;color:#fff}
+.final p{margin-top:10px;font-size:1.08rem;color:#fff;opacity:.92}
+.final .btn-wa{background:#0f1f48;color:#fff;box-shadow:none}
+.final .btn-wa:hover{background:#000}
+.final svg.paws{position:absolute;right:-30px;top:-20px;width:260px;opacity:.14;pointer-events:none}
+
+/* rodapé */
+footer{padding-block:36px 100px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end}
+footer .brand-name{font-size:1.3rem}
+footer p{color:var(--muted);font-size:.92rem;margin-top:6px}
+.seal{font-size:.8rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+
+/* flutuante */
+.float-wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 14px 28px -10px rgba(0,0,0,.5);transition:transform .18s ease}
+.float-wa:hover{transform:scale(1.07)}
+.float-wa svg{width:28px;height:28px}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 19.5 5.3 15A8 8 0 1 1 9 18.6L4 19.5Z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 10.5h6M9 13.5h4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 4h3.5l1.5 4-2 1.3a11 11 0 0 0 6.7 6.7L16 14l4 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 22 20"><path d="M11 1.2l2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L11 16l-5.8 3 1.1-6.4L1.6 8l6.5-.9L11 1.2z"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 40 40"><ellipse cx="20" cy="27" rx="9" ry="7.5"/><ellipse cx="9" cy="17" rx="3.6" ry="4.6"/><ellipse cx="15.5" cy="10" rx="3.6" ry="4.8"/><ellipse cx="24.5" cy="10" rx="3.6" ry="4.8"/><ellipse cx="31" cy="17" rx="3.6" ry="4.6"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Minha Cria – início">
+      <span class="brand-name"><span class="m">Minha</span> <span class="c">Cria</span></span>
+      <span class="brand-sub">Clínica • Petshop</span>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#servicos">Serviços</a>
+      <a href="#antes">Antes de sair</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" href="https://wa.me/5583996247823?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Minha%20Cria%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="open-pill"><span class="dot" aria-hidden="true"></span>Aberto agora <span class="sep">· 24 horas, todos os dias</span></span>
+        <h1>Veterinário 24&nbsp;horas no <span class="hl">Cabo Branco</span>.</h1>
+        <p class="lead">Clínica veterinária, exames de imagem, farmácia veterinária e pet shop no mesmo endereço, na Rua Dr. Frutuoso Dantas. De dia, de noite ou de madrugada, a porta está aberta.</p>
+        <div class="cta-row">
+          <a class="btn btn-wa" href="https://wa.me/5583996247823?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Minha%20Cria%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Chamar no WhatsApp</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Minha+Cria+R.+Dr.+Frutuoso+Dantas%2C+63+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+        </div>
+        <div class="rating">
+          <span class="big num">4,3</span>
+          <span>
+            <span class="stars" role="img" aria-label="Nota 4,3 de 5">
+              <svg viewBox="0 0 110 20" aria-hidden="true" style="color:var(--line)"><use href="#i-star" x="0" width="22" height="20" fill="currentColor"/><use href="#i-star" x="22" width="22" height="20" fill="currentColor"/><use href="#i-star" x="44" width="22" height="20" fill="currentColor"/><use href="#i-star" x="66" width="22" height="20" fill="currentColor"/><use href="#i-star" x="88" width="22" height="20" fill="currentColor"/></svg>
+              <span class="fill"><svg viewBox="0 0 110 20" aria-hidden="true" style="color:var(--orange)"><use href="#i-star" x="0" width="22" height="20" fill="currentColor"/><use href="#i-star" x="22" width="22" height="20" fill="currentColor"/><use href="#i-star" x="44" width="22" height="20" fill="currentColor"/><use href="#i-star" x="66" width="22" height="20" fill="currentColor"/><use href="#i-star" x="88" width="22" height="20" fill="currentColor"/></svg></span>
+            </span>
+            <small><span class="num">1.003</span> avaliações no Google</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 440 440" role="presentation">
+          <defs>
+            <clipPath id="disc"><circle cx="220" cy="220" r="196"/></clipPath>
+            <mask id="crescent"><rect x="290" y="70" width="90" height="90" fill="#fff"/><circle cx="346" cy="104" r="24" fill="#000"/></mask>
+          </defs>
+          <g clip-path="url(#disc)">
+            <rect x="0" y="0" width="220" height="440" style="fill:var(--day)"/>
+            <rect x="220" y="0" width="220" height="440" style="fill:var(--night)"/>
+            <!-- estrelas -->
+            <g style="fill:var(--star)">
+              <circle class="twinkle" cx="262" cy="70" r="2.2"/>
+              <circle class="twinkle" cx="388" cy="168" r="1.8"/>
+              <circle class="twinkle" cx="300" cy="190" r="1.6"/>
+              <circle class="twinkle" cx="402" cy="230" r="2"/>
+              <circle class="twinkle" cx="252" cy="140" r="1.5"/>
+              <circle class="twinkle" cx="370" cy="60" r="1.4"/>
+            </g>
+            <!-- sol -->
+            <g class="sun-g">
+              <circle cx="96" cy="118" r="44" fill="none" style="stroke:var(--sun)" stroke-width="6" stroke-dasharray="4 10.1" stroke-linecap="round"/>
+              <circle cx="96" cy="118" r="28" style="fill:var(--sun)"/>
+            </g>
+            <!-- lua -->
+            <g class="moon-g"><circle cx="330" cy="115" r="30" mask="url(#crescent)" style="fill:var(--moon)"/></g>
+            <!-- chão -->
+            <path d="M0 352 C 110 334, 330 334, 440 352 L440 440 L0 440Z" style="fill:var(--blue)" opacity=".18"/>
+            <!-- cachorro (lado dia) -->
+            <g transform="translate(66 250)">
+              <path d="M18 110 C 14 70, 30 46, 60 44 C 88 42, 104 64, 104 110 Z" style="fill:var(--blue)"/>
+              <circle cx="66" cy="34" r="30" style="fill:var(--blue)"/>
+              <path d="M40 22 C 30 30, 28 54, 38 66 C 46 56, 48 36, 46 24 Z" style="fill:var(--deep)"/>
+              <ellipse cx="94" cy="44" rx="14" ry="10" style="fill:var(--blue)"/>
+              <circle cx="104" cy="41" r="4.5" style="fill:var(--ink)"/>
+              <circle cx="76" cy="28" r="3.6" style="fill:var(--blue-ink)"/>
+              <path d="M104 92 C 120 86, 126 70, 122 58" fill="none" style="stroke:var(--blue)" stroke-width="9" stroke-linecap="round"/>
+              <rect x="54" y="74" width="24" height="8" rx="4" style="fill:var(--orange)"/>
+            </g>
+            <!-- gato (lado noite) -->
+            <g transform="translate(262 256)">
+              <path d="M20 98 C 16 64, 30 46, 54 46 C 78 46, 90 64, 86 98 Z" style="fill:var(--orange)"/>
+              <circle cx="52" cy="36" r="24" style="fill:var(--orange)"/>
+              <path d="M32 24 L30 0 L48 15 Z" style="fill:var(--orange)"/>
+              <path d="M72 24 L74 0 L56 15 Z" style="fill:var(--orange)"/>
+              <path d="M86 90 C 112 92, 118 66, 104 52" fill="none" style="stroke:var(--orange)" stroke-width="8" stroke-linecap="round"/>
+              <path d="M42 34 q4 -4 8 0 M56 34 q4 -4 8 0" fill="none" style="stroke:var(--night)" stroke-width="2.6" stroke-linecap="round"/>
+            </g>
+          </g>
+          <!-- marcas de hora (24) -->
+          <circle cx="220" cy="220" r="206" fill="none" style="stroke:var(--blue)" stroke-width="10" stroke-dasharray="3 50.93" transform="rotate(-90.4 220 220)" opacity=".55"/>
+          <circle cx="220" cy="220" r="196" fill="none" style="stroke:var(--line)" stroke-width="2"/>
+          <!-- cruz veterinária com pata -->
+          <g transform="translate(220 196)">
+            <g style="filter:drop-shadow(0 10px 14px rgba(10,25,70,.35))">
+              <path d="M-22 -66 h44 a10 10 0 0 1 10 10 v34 h34 a10 10 0 0 1 10 10 v44 a10 10 0 0 1 -10 10 h-34 v34 a10 10 0 0 1 -10 10 h-44 a10 10 0 0 1 -10 -10 v-34 h-34 a10 10 0 0 1 -10 -10 v-44 a10 10 0 0 1 10 -10 h34 v-34 a10 10 0 0 1 10 -10z" style="fill:var(--blue)"/>
+            </g>
+            <use href="#i-paw" x="-25" y="-15" width="50" height="50" fill="#fff"/>
+          </g>
+          <!-- selo 24h -->
+          <g transform="translate(386 384)">
+            <circle r="36" style="fill:var(--surface);stroke:var(--orange)" stroke-width="3"/>
+            <text text-anchor="middle" y="6" style="fill:var(--orange-text);font-family:var(--f-display);font-weight:800;font-size:28px">24h</text>
+            <text text-anchor="middle" y="24" style="fill:var(--muted);font-family:var(--f-body);font-weight:700;font-size:9px;letter-spacing:1.5px">ABERTO</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELÓGIO PLANTÃO -->
+  <section class="plantao sec" aria-labelledby="t-plantao">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Agora em João Pessoa</span>
+        <h2 id="t-plantao">Que horas são? Tanto faz: estamos abertos.</h2>
+        <p class="lead">A Minha Cria funciona 24 horas, todos os dias. O relógio ao lado mostra a hora de agora em João Pessoa. Se quiser, arraste a barra para conferir qualquer outro horário.</p>
+      </div>
+
+      <div class="clock-card" role="group" aria-label="Relógio da clínica">
+        <svg class="dial" viewBox="0 0 200 200" aria-hidden="true">
+          <circle class="ring-bg" cx="100" cy="100" r="80" fill="none" stroke-width="16"/>
+          <circle class="ring" cx="100" cy="100" r="80" fill="none" stroke-width="16" stroke-dasharray="18.4 2.544" transform="rotate(-90 100 100)"/>
+          <text x="100" y="12" text-anchor="middle">12h</text>
+          <text x="194" y="104" text-anchor="end">18h</text>
+          <text x="100" y="197" text-anchor="middle">0h</text>
+          <text x="6" y="104" text-anchor="start">6h</text>
+          <g id="hand">
+            <line x1="100" y1="100" x2="100" y2="34" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="100" cy="20" r="8" fill="#fff"/>
+          </g>
+          <circle cx="100" cy="100" r="44" style="fill:var(--deep)"/>
+          <text class="center-big" x="100" y="104" text-anchor="middle">24h</text>
+          <text class="center-small" x="100" y="122" text-anchor="middle">ABERTO</text>
+        </svg>
+
+        <div class="clock-read" aria-live="polite">
+          <span class="clock-status"><span class="dot" aria-hidden="true"></span>Aberto agora</span>
+          <div class="clock-time" id="clk-time">--:--</div>
+          <div class="clock-day" id="clk-day">Horário de João Pessoa</div>
+          <p class="clock-msg" id="clk-msg">A clínica está aberta. Atendemos 24 horas.</p>
+        </div>
+
+        <div class="sim">
+          <label for="sim-h"><span>E se fosse outro horário?</span><span class="sim-out"><b id="sim-label">--h</b></span></label>
+          <input type="range" id="sim-h" min="0" max="23" step="1" value="12" aria-describedby="sim-res">
+          <div class="sim-row">
+            <span class="sim-out" id="sim-res">Arraste para testar.</span>
+            <button type="button" class="link-btn" id="sim-reset">Voltar para agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="sec" id="servicos" aria-labelledby="t-serv">
+    <div class="wrap">
+      <span class="eyebrow">O que tem na Minha Cria</span>
+      <h2 id="t-serv">Cuidado, exame, remédio e loja num endereço só.</h2>
+      <p class="lead">Do atendimento clínico ao pacote de ração, tudo resolvido na mesma ida ao Cabo Branco.</p>
+
+      <div class="svc-grid">
+        <article class="svc svc-main">
+          <div>
+            <div class="big24 num">24<small>horas</small></div>
+            <h3 style="margin-top:22px">Clínica veterinária aberta dia e noite</h3>
+            <p>Atendimento clínico para o seu pet a qualquer hora, inclusive de madrugada, nos fins de semana e quando tudo mais já fechou.</p>
+          </div>
+          <p class="ask">Procura um especialista? Pergunte pelas especialidades no WhatsApp.</p>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 13l3-4 2.5 3L14 8l4 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Exames de imagem</h3>
+          <p>Feitos ali mesmo, sem precisar levar o pet para outro lugar.</p>
+          <span class="tag">Também 24h</span>
+        </article>
+
+        <article class="svc">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 8V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3M12 11.5v6M9 14.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Farmácia veterinária</h3>
+          <p>Farmácia veterinária completa: saiu da consulta, já leva o que precisa.</p>
+        </article>
+
+        <article class="svc svc-wide">
+          <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.3 11a2 2 0 0 1-2 1.8H7.3a2 2 0 0 1-2-1.8L4 8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8" fill="none" stroke="currentColor" stroke-width="2"/><use href="#i-paw" x="8.5" y="11" width="7" height="7" fill="currentColor"/></svg></div>
+          <div>
+            <h3>Pet shop</h3>
+            <p>Variedade de produtos para cães e gatos, na mesma loja da clínica. Quer saber se tem a ração ou o acessório que você usa? Mande a foto no WhatsApp. Pergunte também pelo banho.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTES DE SAIR -->
+  <section class="prep sec" id="antes" aria-labelledby="t-antes">
+    <div class="wrap">
+      <div class="prep-head">
+        <span class="eyebrow">Antes de sair de casa</span>
+        <h2 id="t-antes">Quatro coisas que ajudam no atendimento.</h2>
+        <p class="lead">Dicas simples para quando o pet precisar de veterinário, principalmente fora de hora.</p>
+      </div>
+      <div>
+        <ol class="steps">
+          <li><div><h3>Avise pelo WhatsApp que está indo</h3><p>Uma mensagem rápida com o que está acontecendo ajuda a equipe a se preparar. <a href="https://wa.me/5583996247823?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Minha%20Cria%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener">Mandar mensagem agora</a></p></div></li>
+          <li><div><h3>Leve a carteira de vacinação e exames anteriores</h3><p>Papel ou foto no celular, tanto faz. O histórico do pet economiza tempo e perguntas.</p></div></li>
+          <li><div><h3>Use a caixa de transporte</h3><p>Gatos e cães pequenos viajam mais seguros e calmos dentro da caixa,.</p></div></li>
+          <li><div><h3>Anote quando os sintomas começaram</h3><p>Horário, o que ele comeu, se vomitou, se mancou. Esses detalhes fazem diferença na consulta.</p></div></li>
+        </ol>
+        <p class="note">São orientações gerais. Em caso de dúvida, fale com a clínica.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPUTAÇÃO -->
+  <section class="rep sec" aria-labelledby="t-rep">
+    <div class="wrap">
+      <div class="score">
+        <div class="n num">4<span>,</span>3</div>
+        <span class="stars" role="img" aria-label="Nota 4,3 de 5">
+          <svg viewBox="0 0 110 20" aria-hidden="true" style="color:var(--line)"><use href="#i-star" x="0" width="22" height="20" fill="currentColor"/><use href="#i-star" x="22" width="22" height="20" fill="currentColor"/><use href="#i-star" x="44" width="22" height="20" fill="currentColor"/><use href="#i-star" x="66" width="22" height="20" fill="currentColor"/><use href="#i-star" x="88" width="22" height="20" fill="currentColor"/></svg>
+          <span class="fill"><svg viewBox="0 0 110 20" aria-hidden="true" style="color:var(--orange)"><use href="#i-star" x="0" width="22" height="20" fill="currentColor"/><use href="#i-star" x="22" width="22" height="20" fill="currentColor"/><use href="#i-star" x="44" width="22" height="20" fill="currentColor"/><use href="#i-star" x="66" width="22" height="20" fill="currentColor"/><use href="#i-star" x="88" width="22" height="20" fill="currentColor"/></svg></span>
+        </span>
+        <p><b class="num">1.003</b> avaliações no Google</p>
+      </div>
+      <div class="bars">
+        <span class="eyebrow">Reputação no Google</span>
+        <h2 id="t-rep">Mais de mil tutores já avaliaram.</h2>
+        <p class="lead">Os assuntos que mais aparecem nas avaliações:</p>
+        <ul class="bar-list">
+          <li><span class="lbl">Clínica</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v">39</span></li>
+          <li><span class="lbl">Produtos</span><span class="track"><span class="fill" style="width:38.5%"></span></span><span class="v">15</span></li>
+          <li><span class="lbl">Pet shop</span><span class="track"><span class="fill" style="width:25.6%"></span></span><span class="v">10</span></li>
+          <li><span class="lbl">Ambiente</span><span class="track"><span class="fill" style="width:17.9%"></span></span><span class="v">7</span></li>
+        </ul>
+        <p class="src">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 16/11/2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq sec" id="duvidas" aria-labelledby="t-faq" style="padding-top:0">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2 id="t-faq">Respostas rápidas.</h2>
+        <p class="lead">Não achou o que procura? Chame no WhatsApp.</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Vocês atendem de madrugada?<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Sim. A Minha Cria funciona 24 horas, todos os dias, inclusive de madrugada.</p>
+        </details>
+        <details>
+          <summary>Fazem exames de imagem à noite?<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Sim. Os exames de imagem também funcionam 24 horas.</p>
+        </details>
+        <details>
+          <summary>Tem farmácia veterinária?<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Sim, uma farmácia veterinária completa, no mesmo endereço da clínica e do pet shop.</p>
+        </details>
+        <details>
+          <summary>Onde fica?<span class="pm"><svg aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <p>Na R. Dr. Frutuoso Dantas, 63, Cabo Branco, João Pessoa – PB, CEP 58045-170. <a href="https://www.google.com/maps/search/?api=1&amp;query=Minha+Cria+R.+Dr.+Frutuoso+Dantas%2C+63+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener" style="color:var(--blue-text);font-weight:700">Abrir no Google Maps</a></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONDE ESTAMOS -->
+  <section class="where sec" id="onde" aria-labelledby="t-onde">
+    <div class="wrap">
+      <div class="where-card">
+        <div class="where-info">
+          <span class="eyebrow">Onde estamos</span>
+          <h2 id="t-onde">No Cabo Branco, a qualquer hora.</h2>
+          <dl class="facts">
+            <div><dt><svg aria-hidden="true"><use href="#i-pin"/></svg></dt><dd><b>Endereço</b>R. Dr. Frutuoso Dantas, 63 – Cabo Branco<br>João Pessoa – PB, 58045-170</dd></div>
+            <div><dt><svg aria-hidden="true"><use href="#i-clock"/></svg></dt><dd><b>Horário</b>Aberto 24 horas, todos os dias</dd></div>
+            <div><dt><svg aria-hidden="true"><use href="#i-phone"/></svg></dt><dd><b>WhatsApp e telefone</b><span class="phone">(83) 99624-7823</span></dd></div>
+          </dl>
+          <div class="cta-row">
+            <a class="btn btn-wa" href="https://wa.me/5583996247823?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Minha%20Cria%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Chamar no WhatsApp</a>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Minha+Cria+R.+Dr.+Frutuoso+Dantas%2C+63+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+          </div>
+        </div>
+        <div class="where-art" aria-hidden="true">
+          <svg viewBox="0 0 320 300">
+            <g fill="none" style="stroke:var(--line)" stroke-width="10" stroke-linecap="round">
+              <path d="M-10 70 C 80 60, 160 90, 330 70"/>
+              <path d="M-10 190 C 90 200, 200 170, 330 200"/>
+              <path d="M90 -10 C 100 90, 80 200, 100 310"/>
+              <path d="M230 -10 C 220 100, 240 200, 225 310"/>
+            </g>
+            <g fill="none" style="stroke:var(--blue)" stroke-width="3" stroke-linecap="round" opacity=".45">
+              <path d="M10 262 q 15 -10 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0"/>
+              <path d="M10 282 q 15 -10 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0"/>
+            </g>
+            <ellipse cx="162" cy="182" rx="34" ry="9" style="fill:var(--ink)" opacity=".12"/>
+            <path d="M162 180 C 150 160, 118 138, 118 104 a44 44 0 0 1 88 0 C 206 138, 174 160, 162 180Z" style="fill:var(--orange)"/>
+            <circle cx="162" cy="104" r="26" fill="#fff"/>
+            <use href="#i-paw" x="146" y="88" width="32" height="32" style="fill:var(--blue)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA FINAL -->
+  <section class="final" aria-labelledby="t-final">
+    <svg class="paws" viewBox="0 0 120 120" aria-hidden="true"><use href="#i-paw" x="0" y="40" width="50" height="50" fill="#fff"/><use href="#i-paw" x="50" y="0" width="50" height="50" fill="#fff"/><use href="#i-paw" x="64" y="66" width="50" height="50" fill="#fff"/></svg>
+    <div class="wrap">
+      <div>
+        <h2 id="t-final">Seu pet precisa de cuidado agora? Estamos abertos.</h2>
+        <p>Clínica, exames de imagem, farmácia e pet shop. 24 horas, no Cabo Branco.</p>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/5583996247823?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Minha%20Cria%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Chamar no WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <span class="brand-name"><span class="m">Minha</span> <span class="c">Cria</span></span>
+      <p>Clínica veterinária e pet shop · Aberto 24 horas<br>R. Dr. Frutuoso Dantas, 63 – Cabo Branco, João Pessoa – PB · <span class="num">(83) 99624-7823</span></p>
+    </div>
+    <span class="seal">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/5583996247823?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Minha%20Cria%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Chamar a Minha Cria no WhatsApp"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
+<script>
+(function(){
+  var tEl = document.getElementById('clk-time'),
+      dEl = document.getElementById('clk-day'),
+      mEl = document.getElementById('clk-msg'),
+      hand = document.getElementById('hand'),
+      sim = document.getElementById('sim-h'),
+      simLabel = document.getElementById('sim-label'),
+      simRes = document.getElementById('sim-res'),
+      reset = document.getElementById('sim-reset');
+  var simulating = false;
+  var fmt = null;
+  try {
+    fmt = new Intl.DateTimeFormat('pt-BR', {timeZone:'America/Fortaleza', hour:'2-digit', minute:'2-digit', second:'2-digit', hourCycle:'h23', weekday:'long'});
+  } catch(e) { fmt = null; }
+
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function nowJP(){
+    if (fmt) {
+      var o = {};
+      fmt.formatToParts(new Date()).forEach(function(p){ o[p.type] = p.value; });
+      var h = parseInt(o.hour, 10) % 24;
+      return {h:h, m:parseInt(o.minute,10), s:parseInt(o.second,10), wd:o.weekday || ''};
+    }
+    var d = new Date(Date.now() - 3*3600*1000); // João Pessoa: UTC-3, sem horário de verão
+    var dias = ['domingo','segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
+    return {h:d.getUTCHours(), m:d.getUTCMinutes(), s:d.getUTCSeconds(), wd:dias[d.getUTCDay()]};
+  }
+  function periodMsg(h, hhmm){
+    if (h < 5)  return 'São ' + hhmm + ' da madrugada e a Minha Cria está aberta. Se o seu pet não está bem, não precisa esperar amanhecer.';
+    if (h < 12) return 'Bom dia! São ' + hhmm + ' e a clínica está aberta. Dá para vir agora ou avisar no WhatsApp antes.';
+    if (h < 18) return 'Boa tarde! São ' + hhmm + ' e a clínica está aberta, como em qualquer outro horário.';
+    return 'Boa noite! São ' + hhmm + '. Quando quase tudo já fechou, a Minha Cria continua aberta.';
+  }
+  function periodName(h){ return h < 5 ? 'madrugada' : h < 12 ? 'manhã' : h < 18 ? 'tarde' : 'noite'; }
+  function setHand(h, m){
+    var deg = ((h + m/60) / 24) * 360 + 180; // 12h no topo, 0h embaixo
+    hand.style.transform = 'rotate(' + deg + 'deg)';
+  }
+  function tick(){
+    var t = nowJP();
+    var hhmm = pad(t.h) + ':' + pad(t.m);
+    tEl.textContent = hhmm + ':' + pad(t.s);
+    dEl.textContent = (t.wd ? t.wd.charAt(0).toUpperCase() + t.wd.slice(1) + ', ' : '') + periodName(t.h) + ' em João Pessoa';
+    mEl.textContent = periodMsg(t.h, hhmm);
+    if (!simulating) {
+      setHand(t.h, t.m);
+      if (document.activeElement !== sim) { sim.value = t.h; simLabel.textContent = pad(t.h) + 'h'; }
+    }
+  }
+  function onSim(){
+    simulating = true;
+    var h = parseInt(sim.value, 10);
+    simLabel.textContent = pad(h) + 'h';
+    simRes.innerHTML = 'Às <b>' + pad(h) + 'h00</b> (' + periodName(h) + '): <b>aberto</b>. Atendemos 24 horas.';
+    setHand(h, 0);
+  }
+  sim.addEventListener('input', onSim);
+  reset.addEventListener('click', function(){
+    simulating = false;
+    simRes.textContent = 'Mostrando a hora de agora. Arraste para testar.';
+    tick();
+  });
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>

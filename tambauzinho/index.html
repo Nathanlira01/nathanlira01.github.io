@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Tambauzinho Pet Shop</title>
+<meta name="description" content="Prévia do site de Tambauzinho Pet Shop, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tambauzinho Pet Shop – prévia do site">
+<meta property="og:description" content="Prévia do site de Tambauzinho Pet Shop, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:image" content="https://nathanlira01.github.io/tambauzinho/capa.png">
+<meta property="og:url" content="https://nathanlira01.github.io/tambauzinho/">
+</head>
+<body>
+<meta name="description" content="Tambauzinho Pet Shop: pet shop de bairro em João Pessoa, com rações, petiscos, higiene e acessórios. Nota 4,8 no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#fbfaf5;
+  --bg-2:#f1f5ec;
+  --surface:#ffffff;
+  --ink:#16261a;
+  --muted:#4f6153;
+  --line:#dbe4d6;
+  --green:#2e8b3e;
+  --green-ink:#1f6b2d;
+  --green-soft:#e2f0e1;
+  --green-deep:#18492a;
+  --on-green:#ffffff;
+  --red:#d8312a;
+  --red-soft:#fbe5e3;
+  --cream:#fff6e4;
+  --sand:#efe3c8;
+  --fur:#ffffff;
+  --fur-line:#16261a;
+  --cat:#e9a65a;
+  --shadow:0 1px 0 rgba(22,38,26,.06), 0 10px 30px -18px rgba(22,38,26,.35);
+  --stripe:rgba(46,139,62,.07);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1a12;
+    --bg-2:#13231a;
+    --surface:#172a1e;
+    --ink:#eaf3e6;
+    --muted:#a9bda9;
+    --line:#2a4231;
+    --green:#5cc26c;
+    --green-ink:#7fd68c;
+    --green-soft:#1d3a26;
+    --green-deep:#0a2614;
+    --on-green:#0b1a10;
+    --red:#ff6a5f;
+    --red-soft:#3a1d1b;
+    --cream:#1d2b1f;
+    --sand:#2a3a2b;
+    --fur:#f4f1ea;
+    --fur-line:#0e1a12;
+    --cat:#e9a65a;
+    --shadow:0 1px 0 rgba(0,0,0,.3), 0 14px 30px -18px rgba(0,0,0,.7);
+    --stripe:rgba(92,194,108,.06);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1a12;
+  --bg-2:#13231a;
+  --surface:#172a1e;
+  --ink:#eaf3e6;
+  --muted:#a9bda9;
+  --line:#2a4231;
+  --green:#5cc26c;
+  --green-ink:#7fd68c;
+  --green-soft:#1d3a26;
+  --green-deep:#0a2614;
+  --on-green:#0b1a10;
+  --red:#ff6a5f;
+  --red-soft:#3a1d1b;
+  --cream:#1d2b1f;
+  --sand:#2a3a2b;
+  --fur:#f4f1ea;
+  --fur-line:#0e1a12;
+  --cat:#e9a65a;
+  --shadow:0 1px 0 rgba(0,0,0,.3), 0 14px 30px -18px rgba(0,0,0,.7);
+  --stripe:rgba(92,194,108,.06);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:'Young Serif',Georgia,'Times New Roman',serif;font-weight:400;line-height:1.12;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,label:focus-within{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+section{padding-block:clamp(56px,8vw,96px)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green-ink)}
+.eyebrow::before{content:"";width:22px;height:12px;border:2.5px solid var(--red);border-radius:50%}
+.h2{font-size:clamp(1.8rem,4.2vw,2.8rem);margin-top:12px}
+.lead{color:var(--muted);font-size:1.06rem;max-width:56ch;margin-top:14px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:700;font-size:1rem;text-decoration:none;border-radius:999px;padding:14px 22px;border:2px solid transparent;cursor:pointer;transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease;min-height:50px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--green);color:var(--on-green);box-shadow:0 8px 20px -10px var(--green)}
+.btn-wa:hover{transform:translateY(-2px);background:var(--green-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-ghost:hover{transform:translateY(-2px);background:var(--surface)}
+
+/* Topo */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand-oval{flex:none;width:46px;height:32px;border-radius:50%;background:var(--green);border:3px solid var(--red);display:grid;place-items:center}
+.brand-oval svg{width:18px;height:18px}
+.brand-name{font-family:'Young Serif',Georgia,serif;font-size:1.12rem;line-height:1.1;min-width:0}
+.brand-name small{display:block;font-family:'Figtree',sans-serif;font-size:.72rem;color:var(--muted);letter-spacing:.04em}
+.top .btn{padding:10px 16px;min-height:44px;font-size:.94rem}
+.top-nav{display:flex;gap:22px;font-weight:600;font-size:.95rem}
+.top-nav a{text-decoration:none;color:var(--muted)}
+.top-nav a:hover{color:var(--ink)}
+@media (max-width:860px){.top-nav{display:none}}
+@media (max-width:420px){.top .btn span{display:none}.top .btn{padding:10px 12px}}
+
+/* Hero */
+.hero{position:relative;padding-block:clamp(36px,6vw,72px) clamp(48px,7vw,88px);background:
+  radial-gradient(ellipse 60% 70% at 85% 40%, var(--green-soft), transparent 70%),
+  repeating-linear-gradient(135deg, var(--stripe) 0 2px, transparent 2px 14px), var(--bg);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.hero-grid > *{min-width:0}
+.rating-chip{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 6px;font-weight:600;font-size:.92rem;box-shadow:var(--shadow)}
+.rating-chip b{background:var(--green);color:var(--on-green);border-radius:999px;padding:3px 10px;font-weight:800}
+.stars{display:inline-flex;gap:2px;color:var(--red)}
+.stars svg{width:15px;height:15px}
+.hero h1{font-size:clamp(2.2rem,6.2vw,4.3rem);margin-top:18px}
+.hero h1 em{font-style:normal;color:var(--green-ink);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:-4%;right:-4%;bottom:-.06em;height:.5em;border:3px solid var(--red);border-radius:50%;border-top-color:transparent;transform:rotate(-2deg);pointer-events:none}
+.hero .lead{font-size:clamp(1.05rem,1.6vw,1.2rem)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;color:var(--muted);font-size:.93rem}
+.hero-facts span{display:inline-flex;align-items:center;gap:8px}
+.hero-facts svg{width:18px;height:18px;color:var(--green-ink);flex:none}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:520px;margin:0 auto;width:100%}}
+@media (max-width:400px){.hero h1 em{white-space:normal}}
+
+/* Animações */
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+@keyframes wag{0%,100%{transform:rotate(0)}50%{transform:rotate(16deg)}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes sway{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.hero-copy{animation:rise .7s ease-out both}
+.tail{transform-origin:12px 40px;transform-box:fill-box;animation:wag 1.1s ease-in-out infinite}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 5s infinite}
+.sign-swing{transform-box:fill-box;transform-origin:50% 0;animation:sway 6s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* Lista de compras */
+.shop{background:var(--green-deep);color:#f1f8ee;position:relative;overflow:hidden}
+.shop::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 10% 20%, rgba(255,255,255,.06) 0 2px, transparent 3px) 0 0/28px 28px;pointer-events:none}
+.shop .eyebrow{color:#a9e3b2}
+.shop .lead{color:#c5dcc4}
+.shop-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(24px,4vw,56px);align-items:start;position:relative}
+.shop-grid > *{min-width:0}
+.note-card{background:var(--cream);color:var(--ink);border-radius:18px;padding:clamp(20px,3vw,32px);box-shadow:0 30px 50px -30px rgba(0,0,0,.6);position:relative;transform:rotate(.6deg)}
+.note-card::before{content:"";position:absolute;top:-12px;left:50%;width:110px;height:26px;transform:translateX(-50%) rotate(-3deg);background:color-mix(in srgb, var(--red) 55%, transparent);border-radius:3px}
+.note-card h3{font-size:1.5rem}
+.note-card .small{color:var(--muted);font-size:.9rem;margin-top:4px}
+.items{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.items li{min-width:0}
+.item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;border:1.5px dashed var(--line);background:var(--surface);cursor:pointer;font-weight:600;font-size:.95rem;line-height:1.25;transition:border-color .15s, background-color .15s}
+.item:hover{border-color:var(--green)}
+.item input{position:absolute;opacity:0;width:1px;height:1px}
+.box{flex:none;width:22px;height:22px;border-radius:6px;border:2px solid var(--green-ink);display:grid;place-items:center;background:var(--surface)}
+.box svg{width:14px;height:14px;opacity:0;color:var(--on-green)}
+.item:has(input:checked){border-style:solid;border-color:var(--green);background:var(--green-soft)}
+.item:has(input:checked) .box{background:var(--green);border-color:var(--green)}
+.item:has(input:checked) .box svg{opacity:1}
+.item:has(input:focus-visible){outline:3px solid var(--red);outline-offset:2px}
+.field{margin-top:16px}
+.field label{display:block;font-weight:700;font-size:.92rem}
+.field label span{font-weight:500;color:var(--muted)}
+.field input{width:100%;margin-top:6px;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+.field input:focus{border-color:var(--green);outline:none}
+.preview{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:.92rem;white-space:pre-wrap;color:var(--muted);min-height:64px;overflow-wrap:anywhere}
+.preview strong{color:var(--ink)}
+.shop-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px}
+.shop-actions .btn-wa[aria-disabled="true"]{opacity:.5;pointer-events:none;box-shadow:none}
+.linkbtn{background:none;border:0;font:inherit;color:var(--muted);text-decoration:underline;cursor:pointer;padding:6px}
+.disclaimer{display:flex;gap:10px;margin-top:16px;font-size:.88rem;color:var(--muted);background:var(--red-soft);border-radius:12px;padding:10px 12px}
+.disclaimer svg{flex:none;width:18px;height:18px;color:var(--red);margin-top:2px}
+.steps{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);width:44px;height:30px;border-radius:50%;border:2.5px solid #ff8a80;display:grid;place-items:center;font-family:'Young Serif',Georgia,serif;font-size:1rem;color:#fff}
+.steps b{display:block;color:#fff}
+.steps span{color:#c5dcc4;font-size:.95rem}
+@media (max-width:860px){.shop-grid{grid-template-columns:1fr}}
+@media (max-width:440px){.items{grid-template-columns:1fr}}
+
+/* O que tem na loja */
+.aisles{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:36px}
+.aisle{min-width:0;border-radius:22px;padding:clamp(20px,3vw,30px);position:relative;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.aisle h3{font-size:1.45rem}
+.aisle p{color:var(--muted);margin-top:8px}
+.aisle .tag{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.aisle ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.aisle li{font-size:.85rem;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--green-soft);color:var(--green-ink)}
+.aisle-big{grid-column:span 7;grid-row:span 2;background:var(--green);color:var(--on-green);border:0;display:flex;flex-direction:column;justify-content:space-between;min-height:380px}
+.aisle-big p{color:inherit;opacity:.9;max-width:40ch}
+.aisle-big .tag{color:inherit;opacity:.85}
+.aisle-big li{background:color-mix(in srgb, var(--on-green) 18%, transparent);color:var(--on-green)}
+.aisle-big h3{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.aisle-big .bag{position:absolute;right:-20px;bottom:-14px;width:min(46%,240px);opacity:.95;pointer-events:none}
+.aisle-big .content{position:relative;max-width:62%}
+.aisle-sm{grid-column:span 5}
+.aisle-sm .ico{width:52px;height:52px;border-radius:50%;background:var(--green-soft);display:grid;place-items:center;float:right;margin:0 0 8px 12px}
+.aisle-sm .ico svg{width:28px;height:28px;color:var(--green-ink)}
+.aisle:hover{transform:translateY(-3px)}
+.aisle{transition:transform .2s ease}
+@media (max-width:860px){.aisle-big,.aisle-sm{grid-column:1 / -1;grid-row:auto}.aisle-big{min-height:0}.aisle-big .content{max-width:100%}.aisle-big .bag{position:static;width:150px;margin:18px 0 -10px auto;display:block}}
+
+/* Por que voltam */
+.why{background:var(--bg-2)}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,5vw,72px);align-items:start}
+.why-grid > *{min-width:0}
+.reasons{display:grid;gap:0;border-top:2px solid var(--ink)}
+.reason{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.reason > *{min-width:0}
+.reason .mark{width:58px;height:40px;border-radius:50%;border:2.5px solid var(--red);display:grid;place-items:center;color:var(--green-ink)}
+.reason .mark svg{width:22px;height:22px}
+.reason h3{font-size:1.35rem}
+.reason p{color:var(--muted);margin-top:6px}
+.why-aside{position:sticky;top:96px}
+.why-aside .big{font-family:'Young Serif',Georgia,serif;font-size:clamp(4rem,11vw,7.5rem);line-height:.9;color:var(--green-ink)}
+.why-aside .big small{font-size:.32em;color:var(--muted);font-family:'Figtree',sans-serif;font-weight:700;display:block;margin-top:12px;letter-spacing:.02em;line-height:1.3}
+@media (max-width:860px){.why-grid{grid-template-columns:1fr}.why-aside{position:static}}
+
+/* Reputação */
+.rep{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,64px);align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,4vw,44px);box-shadow:var(--shadow)}
+.rep > *{min-width:0}
+.score-oval{width:min(240px,62vw);aspect-ratio:1.45;border-radius:50%;background:var(--green);border:6px solid var(--red);color:var(--on-green);display:grid;place-items:center;text-align:center;margin:0 auto}
+.score-oval .n{font-family:'Young Serif',Georgia,serif;font-size:clamp(3rem,8vw,4.4rem);line-height:1}
+.score-oval .s{display:flex;justify-content:center;gap:3px;margin-top:4px}
+.score-oval .s svg{width:16px;height:16px;color:var(--on-green)}
+.score-oval .t{font-size:.85rem;font-weight:700;margin-top:4px}
+.bars{display:grid;gap:14px;margin-top:20px}
+.bar{display:grid;grid-template-columns:110px 1fr 36px;gap:12px;align-items:center;font-weight:600;font-size:.95rem}
+.bar > *{min-width:0}
+.track{height:14px;border-radius:999px;background:var(--green-soft);overflow:hidden}
+.fill{height:100%;border-radius:999px;background:var(--green)}
+.bar:first-child .fill{background:var(--red)}
+.bar .v{text-align:right;color:var(--muted)}
+.source{font-size:.82rem;color:var(--muted);margin-top:18px}
+@media (max-width:700px){.rep{grid-template-columns:1fr}.bar{grid-template-columns:92px 1fr 30px;gap:8px}}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,64px)}
+.faq-grid > *{min-width:0}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-family:'Young Serif',Georgia,serif;font-size:1.25rem;line-height:1.25}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:36px;height:26px;border-radius:50%;border:2px solid var(--green);display:grid;place-items:center;color:var(--green-ink);transition:transform .2s}
+summary .pm svg{width:14px;height:14px}
+details[open] summary .pm{transform:rotate(45deg);border-color:var(--red);color:var(--red)}
+details p{color:var(--muted);padding:0 0 20px;max-width:60ch}
+details p a{color:var(--green-ink);font-weight:700}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+/* Onde estamos */
+.where{background:var(--bg-2)}
+.where-card{display:grid;grid-template-columns:1.1fr 1fr;border-radius:28px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.where-card > *{min-width:0}
+.where-info{padding:clamp(22px,4vw,44px)}
+.info-list{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:18px}
+.info-list li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.info-list li > *{min-width:0}
+.info-list .ic{width:40px;height:40px;border-radius:12px;background:var(--green-soft);display:grid;place-items:center;color:var(--green-ink)}
+.info-list .ic svg{width:20px;height:20px}
+.info-list b{display:block;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.info-list .val{font-size:1.05rem;font-weight:600}
+.phone{user-select:all;-webkit-user-select:all;font-size:1.25rem;font-weight:800;letter-spacing:.01em}
+.where-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.where-map{position:relative;background:var(--green-soft);min-height:300px}
+.where-map svg{position:absolute;inset:0;width:100%;height:100%}
+@media (max-width:860px){.where-card{grid-template-columns:1fr}.where-map{min-height:240px}}
+
+/* Faixa final */
+.final{background:var(--green);color:var(--on-green);position:relative;overflow:hidden}
+.final::after{content:"";position:absolute;right:-80px;top:50%;width:360px;height:240px;transform:translateY(-50%);border-radius:50%;border:14px solid var(--red);opacity:.9;pointer-events:none}
+.final .wrap{position:relative;z-index:1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.final h2{font-size:clamp(1.8rem,4.6vw,3rem);max-width:18ch}
+.final p{opacity:.9;margin-top:10px;max-width:46ch}
+.final .btn-wa{background:var(--on-green);color:var(--green-deep)}
+.final .btn-wa:hover{background:var(--cream);color:var(--ink)}
+.final .btn-ghost{color:var(--on-green);border-color:var(--on-green)}
+.final .btn-ghost:hover{background:color-mix(in srgb, var(--on-green) 14%, transparent)}
+.final-cta{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:700px){.final::after{width:220px;height:150px;right:-90px;top:auto;bottom:-40px;transform:none;border-width:10px;opacity:.5}}
+
+footer{padding-block:32px 96px;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center}
+.seal{font-size:.8rem;opacity:.85;border:1px dashed var(--line);border-radius:999px;padding:6px 14px}
+
+/* Flutuante */
+.fab{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);border:3px solid var(--red);transition:transform .18s}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:28px;height:28px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.7L2.3 21.7l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.2Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2" fill="currentColor"/><path d="M7 9h10M12 9v5l-3 7M12 14l3 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9Z"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 24 24"><g fill="currentColor"><ellipse cx="6" cy="10" rx="2.1" ry="2.7"/><ellipse cx="10" cy="6" rx="2.1" ry="2.8"/><ellipse cx="14.4" cy="6" rx="2.1" ry="2.8"/><ellipse cx="18.3" cy="10" rx="2.1" ry="2.7"/><path d="M12.2 11.2c-3 0-6 3.6-6 6.3 0 2 1.6 2.7 3.2 2.3 1.2-.3 1.9-.7 2.8-.7s1.6.4 2.8.7c1.6.4 3.2-.3 3.2-2.3 0-2.7-3-6.3-6-6.3Z"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.1" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7.5" cy="7.5" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 9.5h8M8 12.5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-shelf" viewBox="0 0 24 24"><path d="M3 20h18M3 13h18M5 13V6h4v7M10 13V4h4v9M15 13V8h4v5M6 20v-4h3v4M14 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-bone" viewBox="0 0 24 24"><path d="M7.5 4.5a2.5 2.5 0 0 0-2.4 3.2A2.5 2.5 0 1 0 7.7 11L13 16.3a2.5 2.5 0 1 0 3.3 2.6 2.5 2.5 0 1 0 2.6-3.3L13.6 10.3a2.5 2.5 0 1 0-2.6-3.3 2.5 2.5 0 0 0-3.5-2.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Tambauzinho Pet Shop, início">
+      <span class="brand-oval" aria-hidden="true"><svg style="color:var(--on-green)"><use href="#i-paw"/></svg></span>
+      <span class="brand-name">Tambauzinho Pet Shop<small>João Pessoa · PB</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Seções">
+      <a href="#lista">Lista do pet</a>
+      <a href="#loja">Na loja</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5583987301238?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Tambauzinho%20Pet%20Shop%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span><span class="sr">Falar pelo WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="rating-chip"><b class="num">4,8</b><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="num">212 avaliações no Google</span></span>
+        <h1>O pet shop do <em>Tambauzinho</em>, nota 4,8.</h1>
+        <p class="lead">Rações e itens para o seu pet com preço justo, aqui pertinho de casa. E uma equipe que para, escuta e tira suas dúvidas sobre cada produto antes de você levar.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa" href="https://wa.me/5583987301238?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Tambauzinho%20Pet%20Shop%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Tambauzinho+Pet+Shop+R.+Vandick+Pinto+Filgueiras%2C+94+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+        </div>
+        <div class="hero-facts">
+          <span><svg aria-hidden="true"><use href="#i-pin"/></svg>R. Vandick Pinto Filgueiras, 94</span>
+          <span><svg aria-hidden="true"><use href="#i-access"/></svg>Entrada acessível</span>
+          <span class="num"><svg aria-hidden="true"><use href="#i-phone"/></svg>(83) 3244-0853</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <svg viewBox="0 0 520 470" role="img" aria-label="Ilustração: fachada de uma lojinha de bairro com toldo listrado verde e branco e placa oval verde com borda vermelha, com um cachorro branco e um gato sentados na calçada.">
+          <!-- chão / sombra -->
+          <ellipse cx="260" cy="440" rx="240" ry="20" fill="var(--green-soft)"/>
+          <!-- prédio -->
+          <rect x="60" y="92" width="400" height="340" rx="10" fill="var(--surface)" stroke="var(--ink)" stroke-width="4"/>
+          <rect x="60" y="92" width="400" height="26" rx="8" fill="var(--sand)" stroke="var(--ink)" stroke-width="4"/>
+          <!-- placa oval -->
+          <g class="sign-swing">
+            <line x1="200" y1="46" x2="200" y2="96" stroke="var(--ink)" stroke-width="3"/>
+            <line x1="320" y1="46" x2="320" y2="96" stroke="var(--ink)" stroke-width="3"/>
+            <ellipse cx="260" cy="58" rx="96" ry="50" fill="var(--red)" stroke="var(--ink)" stroke-width="4"/>
+            <ellipse cx="260" cy="58" rx="82" ry="38" fill="#2e8b3e"/>
+            <!-- cachorrinho branco na placa -->
+            <g transform="translate(232 30)">
+              <path d="M10 46c0-14 8-24 18-24s18 10 18 24Z" fill="#fff"/>
+              <circle cx="28" cy="20" r="14" fill="#fff"/>
+              <path d="M15 12c-6 0-9 10-6 16 3-2 6-6 7-12ZM41 12c6 0 9 10 6 16-3-2-6-6-7-12Z" fill="#fff" stroke="#2e8b3e" stroke-width="1.5"/>
+              <circle cx="23" cy="19" r="2" fill="#16261a"/><circle cx="33" cy="19" r="2" fill="#16261a"/>
+              <ellipse cx="28" cy="25" rx="3" ry="2.2" fill="#16261a"/>
+            </g>
+          </g>
+          <!-- toldo -->
+          <g>
+            <path d="M48 150h424l-16 52H64Z" fill="var(--surface)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M48 150h53l-4 52H64ZM154 150h53l-1 52h-50ZM260 150h53l3 52h-50ZM366 150h53l9 52h-50Z" fill="var(--green)"/>
+            <path d="M64 202q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0q16.5 16 33 0" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M48 150h424" stroke="var(--ink)" stroke-width="4"/>
+          </g>
+          <!-- vitrine -->
+          <rect x="88" y="232" width="190" height="140" rx="6" fill="var(--green-soft)" stroke="var(--ink)" stroke-width="4"/>
+          <line x1="88" y1="300" x2="278" y2="300" stroke="var(--ink)" stroke-width="3"/>
+          <!-- sacos de ração na vitrine -->
+          <g stroke="var(--ink)" stroke-width="3" stroke-linejoin="round">
+            <path d="M102 298v-46l6-6h34l6 6v46Z" fill="var(--red)"/>
+            <ellipse cx="125" cy="272" rx="13" ry="9" fill="#fff" stroke-width="2"/>
+            <path d="M156 298v-38l5-5h28l5 5v38Z" fill="var(--sand)"/>
+            <path d="M204 298v-30h22v30Z" fill="var(--surface)"/>
+            <path d="M232 298v-40h34v40Z" fill="var(--green)"/>
+          </g>
+          <g fill="var(--ink)"><use href="#i-paw" x="116" y="264" width="18" height="18" style="color:var(--green)"/></g>
+          <!-- brinquedos prateleira de baixo -->
+          <circle cx="118" cy="350" r="14" fill="var(--red)" stroke="var(--ink)" stroke-width="3"/>
+          <path d="M106 344q12 8 24 0" fill="none" stroke="#fff" stroke-width="2.5"/>
+          <path d="M150 352h34M150 352a6 6 0 1 1 0-10M150 352a6 6 0 1 0 0 10M184 352a6 6 0 1 0 0-10M184 352a6 6 0 1 1 0 10" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+          <rect x="200" y="330" width="62" height="32" rx="6" fill="var(--sand)" stroke="var(--ink)" stroke-width="3"/>
+          <!-- porta -->
+          <rect x="310" y="232" width="120" height="200" rx="6" fill="var(--sand)" stroke="var(--ink)" stroke-width="4"/>
+          <rect x="324" y="248" width="92" height="96" rx="4" fill="var(--green-soft)" stroke="var(--ink)" stroke-width="3"/>
+          <circle cx="414" cy="370" r="5" fill="var(--ink)"/>
+          <!-- placa aberto -->
+          <g transform="translate(336 270)">
+            <rect width="54" height="26" rx="4" fill="var(--surface)" stroke="var(--ink)" stroke-width="2.5"/>
+            <text x="27" y="18" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="12" fill="var(--green-ink)">ABERTO</text>
+          </g>
+          <!-- rampa acessível -->
+          <path d="M296 432l14-10h120v10Z" fill="var(--line)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+          <!-- planta -->
+          <g>
+            <path d="M448 432v-20h26v20Z" fill="var(--red)" stroke="var(--ink)" stroke-width="3"/>
+            <path d="M461 412c-14-12-14-30-4-40 2 14 6 24 4 40ZM461 412c10-14 26-16 32-10-10 4-20 6-32 10ZM461 412c-6-18 4-34 18-38-6 12-10 26-18 38Z" fill="var(--green)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/>
+          </g>
+
+          <!-- cachorro branco sentado -->
+          <g transform="translate(120 330)">
+            <g class="tail"><path d="M108 88c22-6 30-26 26-40" fill="none" stroke="var(--fur-line)" stroke-width="10" stroke-linecap="round"/><path d="M108 88c22-6 30-26 26-40" fill="none" stroke="var(--fur)" stroke-width="5" stroke-linecap="round"/></g>
+            <path d="M30 104c-6-30 4-62 34-66 30 4 42 34 38 66Z" fill="var(--fur)" stroke="var(--fur-line)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M44 104v-20M76 104v-20" stroke="var(--fur-line)" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="64" cy="22" r="30" fill="var(--fur)" stroke="var(--fur-line)" stroke-width="4"/>
+            <path d="M36 6c-14 2-20 24-12 38 10-4 16-18 16-30ZM92 6c14 2 20 24 12 38-10-4-16-18-16-30Z" fill="var(--sand)" stroke="var(--fur-line)" stroke-width="4" stroke-linejoin="round"/>
+            <g class="eye"><circle cx="53" cy="18" r="4" fill="var(--fur-line)"/></g>
+            <g class="eye"><circle cx="75" cy="18" r="4" fill="var(--fur-line)"/></g>
+            <ellipse cx="64" cy="31" rx="6.5" ry="4.5" fill="var(--fur-line)"/>
+            <path d="M56 38q8 8 16 0" fill="none" stroke="var(--fur-line)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M62 42q2 10 8 6" fill="#e86a6a" stroke="var(--fur-line)" stroke-width="2"/>
+            <!-- coleira vermelha -->
+            <path d="M40 48q24 12 48 0" fill="none" stroke="var(--red)" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="64" cy="60" r="5" fill="#f2c94c" stroke="var(--fur-line)" stroke-width="2"/>
+          </g>
+
+          <!-- gato -->
+          <g transform="translate(14 360)">
+            <path d="M18 74c-14-4-18-20-10-28" fill="none" stroke="var(--fur-line)" stroke-width="9" stroke-linecap="round"/>
+            <path d="M18 74c-14-4-18-20-10-28" fill="none" stroke="var(--cat)" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M24 74c-4-22 4-40 22-42 18 2 26 20 22 42Z" fill="var(--cat)" stroke="var(--fur-line)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M28 18l-2-22 14 12ZM64 18l2-22-14 12Z" fill="var(--cat)" stroke="var(--fur-line)" stroke-width="4" stroke-linejoin="round"/>
+            <circle cx="46" cy="20" r="20" fill="var(--cat)" stroke="var(--fur-line)" stroke-width="4"/>
+            <path d="M34 8l4 4M58 8l-4 4" stroke="var(--fur-line)" stroke-width="2.5" stroke-linecap="round"/>
+            <g class="eye"><ellipse cx="39" cy="20" rx="2.6" ry="3.6" fill="var(--fur-line)"/></g>
+            <g class="eye"><ellipse cx="53" cy="20" rx="2.6" ry="3.6" fill="var(--fur-line)"/></g>
+            <path d="M44 27h4l-2 2.5Z" fill="#e86a6a"/>
+            <path d="M30 28h-12M30 31l-11 3M62 28h12M62 31l11 3" stroke="var(--fur-line)" stroke-width="1.6" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA DE COMPRAS -->
+  <section class="shop" id="lista">
+    <div class="wrap shop-grid">
+      <div>
+        <span class="eyebrow">Antes de sair de casa</span>
+        <h2 class="h2">Monte a lista do seu pet e pergunte se tem.</h2>
+        <p class="lead">Marque o que você precisa, escreva a marca se já tiver uma preferida, e mande tudo de uma vez pelo WhatsApp. A equipe responde se tem na loja.</p>
+        <ol class="steps">
+          <li><div><b>Marque os itens</b><span>Ração, areia, petisco, o que faltar aí.</span></div></li>
+          <li><div><b>Diga a marca, se quiser</b><span>Ajuda a equipe a conferir o produto certo.</span></div></li>
+          <li><div><b>Toque em “Perguntar se tem”</b><span>O WhatsApp abre com a mensagem pronta. Você só confere e envia.</span></div></li>
+        </ol>
+      </div>
+
+      <form class="note-card" id="lista-form" aria-labelledby="lista-titulo">
+        <h3 id="lista-titulo">Lista do meu pet</h3>
+        <p class="small">Toque para marcar.</p>
+        <ul class="items">
+          <li><label class="item"><input type="checkbox" value="Ração para cães"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Ração para cães</label></li>
+          <li><label class="item"><input type="checkbox" value="Ração para gatos"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Ração para gatos</label></li>
+          <li><label class="item"><input type="checkbox" value="Petiscos"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Petiscos</label></li>
+          <li><label class="item"><input type="checkbox" value="Areia sanitária"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Areia sanitária</label></li>
+          <li><label class="item"><input type="checkbox" value="Tapete higiênico"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Tapete higiênico</label></li>
+          <li><label class="item"><input type="checkbox" value="Shampoo"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Shampoo</label></li>
+          <li><label class="item"><input type="checkbox" value="Brinquedo"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Brinquedo</label></li>
+          <li><label class="item"><input type="checkbox" value="Coleira ou guia"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Coleira ou guia</label></li>
+          <li><label class="item"><input type="checkbox" value="Comedouro"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Comedouro</label></li>
+        </ul>
+        <div class="field">
+          <label for="marca">Marca ou detalhe <span>(opcional)</span></label>
+          <input id="marca" type="text" maxlength="120" placeholder="Ex.: a ração que meu cão já come, pacote de 10 kg" autocomplete="off">
+        </div>
+        <div class="preview" id="preview" aria-live="polite">Marque pelo menos um item para ver a mensagem aqui.</div>
+        <div class="shop-actions">
+          <a class="btn btn-wa" id="perguntar" href="https://wa.me/5583987301238" target="_blank" rel="noopener" aria-disabled="true"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar se tem</a>
+          <button type="button" class="linkbtn" id="limpar">Limpar lista</button>
+        </div>
+        <p class="disclaimer"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Isto é só uma consulta, não um pedido. Nada é reservado nem cobrado: a equipe responde se tem e você decide depois.</span></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- O QUE TEM NA LOJA -->
+  <section id="loja">
+    <div class="wrap">
+      <span class="eyebrow">Corredores da loja</span>
+      <h2 class="h2">O que você encontra por aqui</h2>
+      <p class="lead">Uma boa variedade de itens para o dia a dia de cães e gatos. Procurando algo específico? Pergunte pelo WhatsApp antes de vir.</p>
+
+      <div class="aisles">
+        <article class="aisle aisle-big">
+          <div class="content">
+            <span class="tag">Corredor 1</span>
+            <h3>Rações</h3>
+            <p>O item que mais pesa no mês do seu pet. Aqui você compra com preço justo e ainda tira dúvida sobre qual faz mais sentido para o seu cão ou gato.</p>
+            <ul><li>Para cães</li><li>Para gatos</li><li>Pergunte pela sua marca</li></ul>
+          </div>
+          <svg class="bag" viewBox="0 0 200 220" aria-hidden="true">
+            <path d="M30 210V50l18-26h104l18 26v160Z" fill="var(--surface)" stroke="var(--fur-line)" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M48 24l10 26h84l10-26" fill="none" stroke="var(--fur-line)" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M30 50h140" stroke="var(--fur-line)" stroke-width="5"/>
+            <ellipse cx="100" cy="122" rx="52" ry="36" fill="var(--red)" stroke="var(--fur-line)" stroke-width="4"/>
+            <ellipse cx="100" cy="122" rx="42" ry="27" fill="#2e8b3e"/>
+            <use href="#i-paw" x="84" y="106" width="32" height="32" style="color:#fff"/>
+            <g fill="var(--sand)" stroke="var(--fur-line)" stroke-width="3"><circle cx="66" cy="186" r="8"/><circle cx="90" cy="192" r="8"/><circle cx="116" cy="186" r="8"/><circle cx="138" cy="193" r="8"/></g>
+          </svg>
+        </article>
+
+        <article class="aisle aisle-sm">
+          <span class="ico" aria-hidden="true"><svg><use href="#i-bone"/></svg></span>
+          <span class="tag">Corredor 2</span>
+          <h3>Petiscos e acessórios</h3>
+          <p>Para agradar, passear e brincar.</p>
+          <ul><li>Petiscos</li><li>Brinquedos</li><li>Coleiras e guias</li><li>Comedouros</li></ul>
+        </article>
+
+        <article class="aisle aisle-sm">
+          <span class="ico" aria-hidden="true"><svg><use href="#i-drop"/></svg></span>
+          <span class="tag">Corredor 3</span>
+          <h3>Higiene</h3>
+          <p>O básico para a casa e o pet ficarem limpos.</p>
+          <ul><li>Areia sanitária</li><li>Tapete higiênico</li><li>Shampoo</li></ul>
+        </article>
+      </div>
+
+      <div class="aisle" style="margin-top:20px">
+        <div class="content">
+          <span class="tag">Serviços</span>
+          <h3>Também cuidamos do seu pet</h3>
+          <p>Além da loja, o Tambauzinho tem serviços para o dia a dia do seu cão ou gato. Chame no WhatsApp para marcar.</p>
+          <ul><li>Banho e tosa</li><li>Atendimento veterinário</li><li>Medicamentos</li><li>Táxi Dog</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE VOLTAM -->
+  <section class="why">
+    <div class="wrap why-grid">
+      <div class="why-aside">
+        <span class="eyebrow">Por que os vizinhos voltam</span>
+        <h2 class="h2">Loja de bairro, do jeito que tem que ser.</h2>
+        <p class="big num">14<small>vezes “preço” foi o tema citado nas avaliações do Google, mais que qualquer outro.</small></p>
+      </div>
+      <div class="reasons">
+        <div class="reason">
+          <span class="mark" aria-hidden="true"><svg><use href="#i-tag"/></svg></span>
+          <div><h3>Preço que cabe no mês</h3><p>Ração e itens do dia a dia com preço justo. É o assunto que mais aparece quando os clientes falam da loja.</p></div>
+        </div>
+        <div class="reason">
+          <span class="mark" aria-hidden="true"><svg><use href="#i-chat"/></svg></span>
+          <div><h3>Atendimento que tira dúvidas</h3><p>Ficou na dúvida entre dois produtos? A equipe explica e tira suas dúvidas sobre os produtos, com simpatia.</p></div>
+        </div>
+        <div class="reason">
+          <span class="mark" aria-hidden="true"><svg><use href="#i-shelf"/></svg></span>
+          <div><h3>Variedade sem ir longe</h3><p>Boa variedade de itens pet numa loja perto de casa, no Tambauzinho. Dá para resolver a compra do pet sem atravessar a cidade.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPUTAÇÃO -->
+  <section id="avaliacoes">
+    <div class="wrap">
+      <div class="rep">
+        <div class="score-oval" role="img" aria-label="Nota 4,8 de 5 no Google, 212 avaliações">
+          <div>
+            <div class="n num">4,8</div>
+            <div class="s" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <div class="t num">212 avaliações</div>
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow">O que dizem no Google</span>
+          <h2 class="h2">Do que os clientes mais falam</h2>
+          <div class="bars" role="list">
+            <div class="bar" role="listitem"><span>Preços</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v num">14</span></div>
+            <div class="bar" role="listitem"><span>Rações</span><span class="track"><span class="fill" style="width:36%"></span></span><span class="v num">5</span></div>
+            <div class="bar" role="listitem"><span>Ambiente</span><span class="track"><span class="fill" style="width:14%"></span></span><span class="v num">2</span></div>
+          </div>
+          <p class="source">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 16/11/2026.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap faq-grid">
+      <div>
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2 class="h2">Antes de vir até a loja</h2>
+        <p class="lead">Não achou sua resposta? Mande uma mensagem que a equipe explica.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>Tem a ração que eu uso?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+          <p>O jeito mais rápido de saber é perguntar pelo WhatsApp com o nome da marca e o tamanho do pacote. Você também pode usar a <a href="#lista">lista do pet</a> aqui em cima para perguntar vários itens de uma vez.</p>
+        </details>
+        <details>
+          <summary>Onde fica a loja?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+          <p>Na R. Vandick Pinto Filgueiras, 94, no Tambauzinho, em João Pessoa (CEP 58042-110). A entrada é acessível. <a href="https://www.google.com/maps/search/?api=1&amp;query=Tambauzinho+Pet+Shop+R.+Vandick+Pinto+Filgueiras%2C+94+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener">Abrir no Google Maps</a>.</p>
+        </details>
+        <details>
+          <summary>Qual o horário?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
+          <p>Na segunda-feira a loja funciona até 17h30. Para os outros dias, confirme o horário pelo WhatsApp antes de sair de casa.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONDE ESTAMOS -->
+  <section class="where" id="onde">
+    <div class="wrap">
+      <div class="where-card">
+        <div class="where-info">
+          <span class="eyebrow">Onde estamos</span>
+          <h2 class="h2">Aqui no Tambauzinho</h2>
+          <ul class="info-list">
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-pin"/></svg></span><div><b>Endereço</b><span class="val">R. Vandick Pinto Filgueiras, 94 – Tambauzinho, João Pessoa – PB, <span class="num">58042-110</span></span></div></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-clock"/></svg></span><div><b>Horário</b><span class="val">Segunda até <span class="num">17h30</span>. Outros dias: pergunte pelo WhatsApp.</span></div></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><div><b>Telefone</b><span class="val phone num">(83) 3244-0853</span></div></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-access"/></svg></span><div><b>Acessibilidade</b><span class="val">Entrada acessível</span></div></li>
+          </ul>
+          <div class="where-cta">
+            <a class="btn btn-wa" href="https://wa.me/5583987301238?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Tambauzinho%20Pet%20Shop%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Tambauzinho+Pet+Shop+R.+Vandick+Pinto+Filgueiras%2C+94+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+          </div>
+        </div>
+        <div class="where-map" aria-hidden="true">
+          <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="320" fill="var(--green-soft)"/>
+            <g fill="var(--surface)" opacity=".85">
+              <rect x="20" y="20" width="110" height="80" rx="8"/><rect x="160" y="20" width="90" height="80" rx="8"/><rect x="280" y="20" width="110" height="80" rx="8"/>
+              <rect x="20" y="140" width="110" height="70" rx="8"/><rect x="280" y="140" width="110" height="70" rx="8"/>
+              <rect x="20" y="245" width="110" height="70" rx="8"/><rect x="160" y="245" width="90" height="70" rx="8"/><rect x="280" y="245" width="110" height="70" rx="8"/>
+            </g>
+            <g stroke="var(--line)" stroke-width="18" fill="none" stroke-linecap="round">
+              <path d="M0 120h400M0 228h400M145 0v320M265 0v320"/>
+            </g>
+            <path d="M0 120h400" stroke="var(--surface)" stroke-width="2" stroke-dasharray="10 10"/>
+            <rect x="160" y="140" width="90" height="70" rx="8" fill="var(--surface)" stroke="var(--green)" stroke-width="3"/>
+            <g transform="translate(205 168)">
+              <ellipse cx="0" cy="44" rx="18" ry="6" fill="var(--ink)" opacity=".15"/>
+              <path d="M0 42S-26 14-26-4a26 26 0 0 1 52 0C26 14 0 42 0 42Z" fill="var(--red)" stroke="var(--ink)" stroke-width="3"/>
+              <ellipse cx="0" cy="-4" rx="15" ry="11" fill="#2e8b3e" stroke="#fff" stroke-width="2.5"/>
+              <use href="#i-paw" x="-8" y="-12" width="16" height="16" style="color:#fff"/>
+            </g>
+            <text x="20" y="114" font-family="Figtree, sans-serif" font-size="11" font-weight="700" fill="var(--muted)">R. Vandick Pinto Filgueiras</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <div>
+        <h2>Acabou a ração? Pergunte antes de sair de casa.</h2>
+        <p>Mande o nome do produto pelo WhatsApp e a equipe do Tambauzinho Pet Shop responde se tem.</p>
+      </div>
+      <div class="final-cta">
+        <a class="btn btn-wa" href="https://wa.me/5583987301238?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Tambauzinho%20Pet%20Shop%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Tambauzinho+Pet+Shop+R.+Vandick+Pinto+Filgueiras%2C+94+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Tambauzinho Pet Shop · R. Vandick Pinto Filgueiras, 94 – Tambauzinho, João Pessoa – PB · <span class="num">(83) 3244-0853</span></span>
+    <span class="seal">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5583987301238?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Tambauzinho%20Pet%20Shop%20e%20queria%20uma%20informa%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar com o Tambauzinho Pet Shop pelo WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script>
+(function(){
+  var form = document.getElementById('lista-form');
+  var boxes = form.querySelectorAll('input[type="checkbox"]');
+  var marca = document.getElementById('marca');
+  var preview = document.getElementById('preview');
+  var btn = document.getElementById('perguntar');
+  var limpar = document.getElementById('limpar');
+  var base = 'https://wa.me/5583987301238';
+
+  function montar(){
+    var itens = [];
+    boxes.forEach(function(b){ if (b.checked) itens.push(b.value); });
+    var extra = marca.value.trim();
+    if (!itens.length){
+      preview.textContent = 'Marque pelo menos um item para ver a mensagem aqui.';
+      btn.setAttribute('aria-disabled','true');
+      btn.href = base;
+      return;
+    }
+    var msg = 'Olá! Vim pelo site do Tambauzinho Pet Shop e queria saber se vocês têm:\n' +
+      itens.map(function(i){ return '- ' + i; }).join('\n') +
+      (extra ? '\nMarca/detalhe: ' + extra : '') +
+      '\nÉ só uma consulta, obrigado!';
+    preview.textContent = msg;
+    btn.removeAttribute('aria-disabled');
+    btn.href = base + '?text=' + encodeURIComponent(msg);
+  }
+  boxes.forEach(function(b){ b.addEventListener('change', montar); });
+  marca.addEventListener('input', montar);
+  form.addEventListener('submit', function(e){ e.preventDefault(); });
+  limpar.addEventListener('click', function(){
+    boxes.forEach(function(b){ b.checked = false; });
+    marca.value = '';
+    montar();
+  });
+  btn.addEventListener('click', function(e){
+    if (btn.getAttribute('aria-disabled') === 'true') e.preventDefault();
+  });
+  montar();
+})();
+</script>
+</body>
+</html>
