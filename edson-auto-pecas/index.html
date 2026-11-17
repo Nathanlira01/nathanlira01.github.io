@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Edson Auto Peças</title>
+<meta name="description" content="Prévia do site de Edson Auto Peças, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Edson Auto Peças – prévia do site">
+<meta property="og:description" content="Prévia do site de Edson Auto Peças, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:image" content="https://nathanlira01.github.io/edson-auto-pecas/capa.png">
+<meta property="og:url" content="https://nathanlira01.github.io/edson-auto-pecas/">
+</head>
+<body>
+<meta name="description" content="Edson Auto Peças: manutenção, peças e serviços em Mangabeira, João Pessoa. Freios, troca de óleo e filtro e serviços de motor. Nota 4,7 no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,600..900&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f8f5ec;
+  --bg-2:#efeadc;
+  --panel:#ffffff;
+  --panel-2:#f3efe4;
+  --line:#ddd6c4;
+  --line-2:#c6bea8;
+  --text:#1b1e23;
+  --muted:#545a63;
+  --dim:#767b83;
+  --yellow:#ffc20e;
+  --yellow-hi:#ffd23f;
+  --yellow-soft:rgba(255,194,14,.18);
+  --on-yellow:#16181c;
+  --blue:#1f46c8;
+  --blue-deep:#16349b;
+  --blue-text:#1f46c8;
+  --on-blue:#ffffff;
+  --blue-soft:rgba(31,70,200,.09);
+  --ok:#15803d;
+  --warn:#b45309;
+  --bad:#c2281d;
+  --wa:#1fae5b;
+  --shadow:0 18px 40px -24px rgba(22,52,155,.35);
+  --f-title:'Archivo','Arial Narrow',Impact,sans-serif;
+  --f-body:'Figtree','Segoe UI',system-ui,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111317;--bg-2:#171a20;--panel:#1c2027;--panel-2:#232831;--line:#2d333d;--line-2:#3d4450;
+    --text:#f1eee6;--muted:#aeb3bb;--dim:#8a9099;
+    --yellow:#ffc933;--yellow-hi:#ffd95e;--yellow-soft:rgba(255,201,51,.12);
+    --blue:#2a54e0;--blue-deep:#1a3aa8;--blue-text:#86a6ff;--blue-soft:rgba(110,145,255,.12);
+    --ok:#4ade80;--warn:#fbbf24;--bad:#ff7a6e;
+    --shadow:0 18px 40px -24px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111317;--bg-2:#171a20;--panel:#1c2027;--panel-2:#232831;--line:#2d333d;--line-2:#3d4450;
+  --text:#f1eee6;--muted:#aeb3bb;--dim:#8a9099;
+  --yellow:#ffc933;--yellow-hi:#ffd95e;--yellow-soft:rgba(255,201,51,.12);
+  --blue:#2a54e0;--blue-deep:#1a3aa8;--blue-text:#86a6ff;--blue-soft:rgba(110,145,255,.12);
+  --ok:#4ade80;--warn:#fbbf24;--bad:#ff7a6e;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue-text);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--f-title);font-stretch:78%;font-weight:900;line-height:.95;letter-spacing:-.005em;text-wrap:balance;overflow-wrap:break-word;margin:0}
+p{margin:0}
+.num,.mono{font-variant-numeric:tabular-nums}
+.mono{font-family:var(--f-mono)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--blue-text)}
+.kicker::before{content:"";width:18px;height:10px;background:var(--yellow);box-shadow:inset 0 -3px 0 var(--blue)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font-family:var(--f-body);font-weight:700;font-size:16.5px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .18s ease, background-color .18s ease, border-color .18s ease;line-height:1.15;text-align:center}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-wa{background:var(--blue);color:var(--on-blue)}
+.btn-wa:hover{background:var(--blue-deep);transform:translateY(-2px)}
+.btn-yellow{background:var(--yellow);color:var(--on-yellow)}
+.btn-yellow:hover{background:var(--yellow-hi);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--text);transform:translateY(-2px)}
+
+/* topo */
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:5px;background:linear-gradient(90deg,var(--yellow) 0 38%,var(--blue) 38% 62%,var(--yellow) 62%)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:66px}
+.brand{display:flex;flex-direction:column;text-decoration:none;min-width:0;line-height:1}
+.brand b{font-family:var(--f-title);font-stretch:75%;font-weight:900;font-size:27px;text-transform:uppercase;letter-spacing:.01em}
+.brand b span{background:var(--blue);color:var(--on-blue);padding:0 6px;margin-left:4px}
+.brand small{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.top nav{display:flex;gap:22px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--text)}
+.top .btn{min-height:44px;padding:0 16px;font-size:15px}
+@media (max-width:940px){.top nav{display:none}}
+@media (max-width:420px){.top .btn span{display:none}.top .btn{padding:0 12px}.brand b{font-size:23px}.brand small{font-size:9.5px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:52px 70px}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--line) 1.2px, transparent 1.3px);background-size:22px 22px;opacity:.7;pointer-events:none;-webkit-mask-image:linear-gradient(100deg,transparent 30%,#000 75%);mask-image:linear-gradient(100deg,transparent 30%,#000 75%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero-grid > *{min-width:0}
+.facade{display:inline-flex;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:22px;border:2px solid var(--text)}
+.facade span{padding:6px 10px;background:var(--yellow);color:var(--on-yellow)}
+.facade span:nth-child(2){background:var(--blue);color:var(--on-blue)}
+.hero h1{font-size:clamp(44px,8.4vw,96px);text-transform:uppercase}
+.hero h1 .hl{position:relative;display:inline-block;z-index:0}
+.hero h1 .hl::after{content:"";position:absolute;left:-4px;right:-4px;bottom:.06em;height:.34em;background:var(--yellow);z-index:-1}
+.hero-lead{margin-top:22px;font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:33em}
+.hero-lead strong{color:var(--text);font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.rating{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:32px;padding:16px 18px;background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--yellow);max-width:440px;box-shadow:var(--shadow)}
+.rating-n{font-family:var(--f-title);font-stretch:75%;font-weight:900;font-size:54px;line-height:.8}
+.stars{display:flex;gap:3px;color:var(--yellow)}
+.stars svg{width:18px;height:18px}
+.stars .half{color:var(--line-2)}
+.rating small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
+.hero-art{margin:0;position:relative}
+.hero-art svg{display:block;width:100%;height:auto;max-width:560px;margin-left:auto}
+.hero-art figcaption{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);text-align:right;margin-top:8px}
+.disc{transform-origin:270px 250px}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:30px}.hero{padding-block:34px 56px}.hero-art svg{margin:0 auto;max-width:440px}.hero-art figcaption{text-align:center}}
+@media (prefers-reduced-motion:no-preference){
+  .disc{animation:spin 14s linear infinite}
+  .hero-copy > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .hero-copy > *:nth-child(2){animation-delay:.05s}
+  .hero-copy > *:nth-child(3){animation-delay:.1s}
+  .hero-copy > *:nth-child(4){animation-delay:.15s}
+  .hero-copy > *:nth-child(5){animation-delay:.2s}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+
+/* seções */
+section{padding-block:84px}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:42px}
+.sec-head > *{min-width:0}
+.sec-head h2{font-size:clamp(34px,5.6vw,62px);margin-top:12px;text-transform:uppercase}
+.sec-head p{color:var(--muted);max-width:32em}
+@media (max-width:800px){.sec-head{grid-template-columns:1fr;gap:14px}section{padding-block:62px}}
+
+/* serviços */
+.svc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.svc-grid > *{min-width:0}
+.svc{grid-column:span 2;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px 24px;position:relative;transition:transform .2s, border-color .2s}
+.svc:hover{transform:translateY(-3px);border-color:var(--line-2)}
+.svc h3{font-size:clamp(26px,3vw,32px);text-transform:uppercase}
+.svc p{color:var(--muted);margin-top:10px;font-size:16px}
+.svc-ico{width:46px;height:46px;color:var(--blue-text);margin-bottom:16px;display:block}
+.svc-big{grid-column:span 4;grid-row:span 2;background:var(--blue);border-color:var(--blue);color:var(--on-blue);padding:34px 32px;display:flex;flex-direction:column;overflow:hidden}
+.svc-big::after{content:"";position:absolute;right:-70px;bottom:-70px;width:260px;height:260px;border-radius:50%;border:34px solid rgba(255,255,255,.08);box-shadow:0 0 0 30px rgba(255,255,255,.04)}
+.svc-big .svc-ico{color:var(--yellow);width:64px;height:64px}
+.svc-big h3{font-size:clamp(40px,5.6vw,68px)}
+.svc-big p{color:rgba(255,255,255,.9);font-size:17.5px;max-width:30em}
+.svc-big ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px;position:relative;z-index:1}
+.svc-big li{display:flex;gap:12px;align-items:baseline;font-weight:600}
+.svc-big li::before{content:"";width:10px;height:10px;background:var(--yellow);flex:none;border-radius:2px;transform:translateY(-1px)}
+.svc-big .tag{margin-top:auto;padding-top:26px;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);position:relative;z-index:1}
+.svc-more{grid-column:span 6;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:var(--yellow-soft);border:2px dashed var(--line-2);border-radius:18px;padding:20px 24px}
+.svc-more p{font-weight:600;font-size:18px;min-width:0}
+@media (max-width:900px){.svc,.svc-big{grid-column:span 3;grid-row:auto}.svc-big{grid-column:span 6}}
+@media (max-width:600px){.svc,.svc-big,.svc-more{grid-column:span 6}.svc-big{padding:28px 22px}}
+
+/* transparência (faixa azul) */
+.transp{background:var(--blue-deep);color:var(--on-blue);position:relative;overflow:hidden}
+.transp::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg, rgba(255,255,255,.035) 0 16px, transparent 16px 32px);pointer-events:none}
+.transp .wrap{position:relative}
+.transp .kicker{color:var(--yellow)}
+.transp .kicker::before{box-shadow:none}
+.transp .sec-head p{color:rgba(255,255,255,.88)}
+.quote-ig{font-family:var(--f-title);font-stretch:75%;font-weight:900;font-size:clamp(36px,6.4vw,78px);line-height:.95;text-transform:uppercase;margin:12px 0 0;text-wrap:balance;overflow-wrap:break-word}
+.quote-ig em{font-style:normal;color:var(--yellow)}
+.quote-src{display:block;margin-top:14px;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.steps{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid rgba(255,255,255,.25)}
+.steps > li{min-width:0;padding:26px 26px 0 0}
+.steps > li + li{padding-left:26px;border-left:1px solid rgba(255,255,255,.2)}
+.step-n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--on-yellow);font-family:var(--f-mono);font-weight:600;font-size:16px;margin-bottom:16px}
+.steps h3{font-size:28px;text-transform:uppercase}
+.steps p{color:rgba(255,255,255,.88);margin-top:8px}
+@media (max-width:800px){.steps{grid-template-columns:1fr}.steps > li,.steps > li + li{padding:22px 0 0;border-left:0}.steps > li + li{margin-top:22px;border-top:1px solid rgba(255,255,255,.2)}}
+
+/* temas das avaliações */
+.rep-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.rep-grid > *{min-width:0}
+.score-card{background:var(--yellow);color:var(--on-yellow);border-radius:22px;padding:30px 28px;position:relative;overflow:hidden}
+.score-card::after{content:"";position:absolute;left:0;right:0;top:56%;height:34px;background:var(--blue)}
+.score-card .kicker{color:var(--on-yellow)}
+.score-card .kicker::before{background:var(--on-yellow);box-shadow:none}
+.big-score{position:relative;z-index:1;font-family:var(--f-title);font-stretch:75%;font-weight:900;font-size:clamp(120px,19vw,200px);line-height:.8;margin-top:16px;display:flex;align-items:flex-start;gap:6px}
+.big-score sup{font-size:.2em;line-height:1;margin-top:.35em}
+.score-meta{position:relative;z-index:1;margin-top:26px;font-weight:600}
+.score-meta b{font-family:var(--f-title);font-stretch:75%;font-size:28px}
+.bars{display:grid;gap:18px}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:7px}
+.bar-top b{font-family:var(--f-title);font-stretch:78%;font-weight:900;font-size:26px;text-transform:uppercase}
+.bar-top span{font-family:var(--f-mono);font-size:14px;color:var(--muted)}
+.bar-track{height:14px;background:var(--panel-2);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.bar-fill{height:100%;background:var(--blue);border-radius:99px}
+.bar:first-child .bar-fill{background:linear-gradient(90deg,var(--blue) 0 80%,var(--yellow) 80%)}
+.rep-sub{color:var(--muted);margin:-14px 0 26px}
+.rep-note{margin-top:22px;font-family:var(--f-mono);font-size:12.5px;line-height:1.5;color:var(--dim)}
+@media (max-width:860px){.rep-grid{grid-template-columns:1fr;gap:34px}}
+
+/* sinais (faixa amarela) */
+.sinais{background:var(--yellow);color:var(--on-yellow)}
+.sinais .kicker{color:var(--on-yellow)}
+.sinais .kicker::before{background:var(--on-yellow);box-shadow:none}
+.sinais .sec-head p{color:rgba(22,24,28,.82)}
+.sinais-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sinais-cols > *{min-width:0}
+.sig-box{background:rgba(255,255,255,.55);border:2px solid var(--on-yellow);border-radius:18px;padding:26px 24px}
+.sig-box h3{display:flex;align-items:center;gap:12px;font-size:30px;text-transform:uppercase}
+.sig-box h3 svg{width:38px;height:38px;flex:none;color:var(--on-yellow)}
+.sig-box ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:0}
+.sig-box li{padding:13px 0;border-top:1px solid rgba(22,24,28,.22);display:grid;gap:2px}
+.sig-box li b{font-weight:700;font-size:16.5px}
+.sig-box li span{font-size:15.5px;color:rgba(22,24,28,.8)}
+.sinais-foot{margin-top:24px;font-weight:700;max-width:48em}
+@media (max-width:800px){.sinais-cols{grid-template-columns:1fr}.sig-box{padding:22px 18px}}
+
+/* lembrete de óleo */
+.oleo-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.oleo-grid > *{min-width:0}
+.oleo-form{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px 26px;display:grid;gap:20px;align-content:start}
+.field{display:grid;gap:7px;min-width:0}
+.field > label,.field legend{font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.km-in{position:relative}
+.km-in input{width:100%;min-height:56px;padding:0 54px 0 16px;border:2px solid var(--line-2);border-radius:12px;background:var(--bg);color:var(--text);font-family:var(--f-mono);font-size:20px;font-weight:600;font-variant-numeric:tabular-nums}
+.km-in input:focus{border-color:var(--blue-text);outline:none;box-shadow:0 0 0 3px var(--blue-soft)}
+.km-in span{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:var(--f-mono);color:var(--dim);font-size:14px;pointer-events:none}
+fieldset.field{border:0;padding:0;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:2px solid var(--line-2);font-weight:600;cursor:pointer;font-variant-numeric:tabular-nums;transition:background-color .15s,border-color .15s}
+.chip input:checked + span{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
+.chip input:focus-visible + span{outline:3px solid var(--blue-text);outline-offset:2px}
+.chip:hover span{border-color:var(--text)}
+#custom-wrap[hidden]{display:none}
+.hint{font-size:14px;color:var(--muted)}
+.oleo-out{background:var(--panel-2);border:1px solid var(--line);border-radius:22px;padding:28px 26px;display:flex;flex-direction:column;gap:18px}
+.out-label{font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.out-big{font-family:var(--f-title);font-stretch:75%;font-weight:900;font-size:clamp(52px,8vw,84px);line-height:.9;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.out-big small{font-size:.38em;margin-left:6px;color:var(--muted)}
+.out-status{display:inline-flex;align-items:center;gap:8px;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line);width:fit-content;max-width:100%}
+.out-status::before{content:"";width:10px;height:10px;border-radius:50%;background:currentColor;flex:none}
+.out-status[data-s="ok"]{color:var(--ok)}
+.out-status[data-s="perto"]{color:var(--warn)}
+.out-status[data-s="passou"]{color:var(--bad)}
+.out-status[data-s="vazio"]{color:var(--dim)}
+.gauge{position:relative;height:22px;border-radius:99px;background:var(--panel);border:1px solid var(--line);overflow:hidden}
+.gauge-fill{position:absolute;inset:0 auto 0 0;width:0;background:repeating-linear-gradient(90deg,var(--yellow) 0 12px,var(--yellow-hi) 12px 14px);transition:width .35s ease}
+.gauge-fill[data-s="passou"]{background:var(--bad)}
+.gauge-marks{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--dim);margin-top:6px;font-variant-numeric:tabular-nums}
+.out-detail{color:var(--muted);font-size:15.5px}
+.out-detail b{color:var(--text)}
+.oleo-out .btn{width:100%;margin-top:auto}
+.manual{margin-top:18px;display:flex;gap:12px;padding:14px 16px;border-left:4px solid var(--blue);background:var(--blue-soft);border-radius:0 12px 12px 0;font-size:15px;color:var(--muted)}
+.manual svg{width:20px;height:20px;flex:none;color:var(--blue-text);margin-top:2px}
+.manual b{color:var(--text)}
+@media (max-width:860px){.oleo-grid{grid-template-columns:1fr}.oleo-form,.oleo-out{padding:22px 18px}}
+
+/* horário + local */
+.visit{background:var(--bg-2);border-block:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:22px}
+.visit-grid > *{min-width:0}
+.hours{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:26px 24px}
+.hours-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.hours h3{font-size:30px;text-transform:uppercase}
+.now{font-size:14px;font-weight:700;padding:5px 12px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:var(--muted)}
+.now[data-open="1"]{color:var(--ok)}
+.now[data-open="0"]{color:var(--bad)}
+.hours table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:12px 4px;border-top:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-family:var(--f-mono);font-weight:600}
+.hours tr.today td{background:var(--yellow-soft)}
+.hours tr.today td:first-child{font-weight:700;box-shadow:inset 4px 0 0 var(--yellow)}
+.hours tr.today td:first-child::after{content:" · hoje";font-weight:500;color:var(--muted);font-size:14px}
+.hours small{display:block;margin-top:14px;color:var(--dim);font-size:13.5px}
+.loc{display:grid;grid-template-rows:auto 1fr;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.loc-map{position:relative;min-height:230px;background:var(--panel-2)}
+.loc-map svg{position:absolute;inset:0;width:100%;height:100%}
+.loc-map .pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%,18px);background:var(--blue);color:var(--on-blue);font-family:var(--f-title);font-stretch:78%;font-weight:900;font-size:17px;text-transform:uppercase;padding:5px 12px;white-space:nowrap;border-radius:6px}
+.loc-map .map-note{position:absolute;left:12px;bottom:10px;font-family:var(--f-mono);font-size:11px;color:var(--dim)}
+.loc-info{padding:24px;display:grid;gap:18px}
+.loc-row{display:grid;grid-template-columns:26px 1fr;gap:12px}
+.loc-row > *{min-width:0}
+.loc-row > svg{width:24px;height:24px;color:var(--blue-text);margin-top:2px}
+.loc-row h4{margin:0 0 4px;font-family:var(--f-mono);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.phone{font-family:var(--f-mono);font-weight:600;font-size:19px;user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums}
+.loc-row small{display:block;color:var(--dim);font-size:13.5px;margin-top:3px}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line-2);background:var(--panel-2)}
+.badge i{width:14px;height:10px;border-radius:2px;flex:none;background:linear-gradient(180deg,#e40303 0 17%,#ff8c00 17% 34%,#ffed00 34% 50%,#008026 50% 67%,#004dff 67% 84%,#750787 84%)}
+.badge i.f{background:var(--yellow);box-shadow:inset 0 -4px 0 var(--blue)}
+.loc-actions{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}.hours,.loc-info{padding:22px 18px}}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}
+.faq-grid > *{min-width:0}
+.faq-grid h2{font-size:clamp(34px,5.6vw,62px);margin-top:12px;text-transform:uppercase}
+.faq-grid > div > p{color:var(--muted);margin-top:16px;max-width:26em}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 2px;font-weight:700;font-size:18px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:14px;height:14px;flex:none;background:linear-gradient(var(--blue-text),var(--blue-text)) center/14px 3px no-repeat,linear-gradient(var(--blue-text),var(--blue-text)) center/3px 14px no-repeat;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 2px 20px;color:var(--muted);max-width:40em}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:20px}}
+
+/* final */
+.final{background:var(--blue);color:var(--on-blue);position:relative;overflow:hidden;padding-block:84px}
+.final::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:var(--yellow)}
+.final .wrap{display:grid;grid-template-columns:1.4fr auto;gap:30px;align-items:end;position:relative}
+.final .wrap > *{min-width:0}
+.final h2{font-size:clamp(40px,7vw,88px);text-transform:uppercase}
+.final h2 em{font-style:normal;color:var(--yellow)}
+.final p{margin-top:14px;font-size:18px;color:rgba(255,255,255,.9)}
+.final-cta{display:grid;gap:12px}
+.final .btn-ghost{color:var(--on-blue);border-color:rgba(255,255,255,.55)}
+.final .btn-ghost:hover{border-color:#fff}
+@media (max-width:800px){.final .wrap{grid-template-columns:1fr}}
+
+footer{padding-block:28px 104px;color:var(--dim);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer .wrap > *{min-width:0}
+.selo{font-family:var(--f-mono);font-size:12px}
+
+.wa-float{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:transform .18s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.47 15.02L2.5 21.5l4.6-1.05A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.03l-.3-.18-2.73.62.64-2.64-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.06 3.3 5.1 4.5 2.53 1 3.04.8 3.6.75.55-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.66-1.63-.92-2.22-.23-.55-.47-.56-.68-.57h-.57Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-brake" viewBox="0 0 48 48"><circle cx="22" cy="26" r="17" fill="none" stroke="currentColor" stroke-width="3.2"/><circle cx="22" cy="26" r="6" fill="none" stroke="currentColor" stroke-width="3"/><g fill="currentColor"><circle cx="22" cy="14.5" r="1.8"/><circle cx="33.5" cy="26" r="1.8"/><circle cx="22" cy="37.5" r="1.8"/><circle cx="10.5" cy="26" r="1.8"/></g><path d="M30 6.5a21 21 0 0 1 12.5 13" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></symbol>
+    <symbol id="i-oil" viewBox="0 0 48 48"><path d="M6 20h9l3-4h10l4 4h6l7-4-9 14H12l-6-4Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 16v-4h8v4M14 12h16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M42 31c0 0-3 4-3 6a3 3 0 0 0 6 0c0-2-3-6-3-6Z" fill="currentColor"/></symbol>
+    <symbol id="i-engine" viewBox="0 0 48 32"><path fill="currentColor" d="M13 4h14v3h-5v3h9l4 4h4v-4h3v14h-3v-4h-4v6l-3 3H17l-4-4H9v5H6V12h3v4h4v-6h6V7h-6Z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M10.3 2.8h3.4l.5 2.6 1.9.8 2.2-1.5 2.4 2.4-1.5 2.2.8 1.9 2.6.5v3.4l-2.6.5-.8 1.9 1.5 2.2-2.4 2.4-2.2-1.5-1.9.8-.5 2.6h-3.4l-.5-2.6-1.9-.8-2.2 1.5-2.4-2.4 1.5-2.2-.8-1.9-2.6-.5v-3.4l2.6-.5.8-1.9-1.5-2.2 2.4-2.4 2.2 1.5 1.9-.8Z"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 5.5a4 4 0 0 0-5.3 5.1L3.5 16.3a1.8 1.8 0 0 0 2.5 2.5l5.7-5.7a4 4 0 0 0 5.1-5.3l-2.4 2.4-2.2-.4-.4-2.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Edson Auto Peças – início">
+      <b>Edson<span>Auto Peças</span></b>
+      <small>Mangabeira · João Pessoa</small>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#servicos">Serviços</a>
+      <a href="#transparencia">Como trabalhamos</a>
+      <a href="#oleo">Lembrete do óleo</a>
+      <a href="#visita">Horário e endereço</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Chamar a Edson Auto Peças no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="facade"><span>Manutenção</span><span>Peças</span><span>Serviços</span></div>
+      <h1>Serviço com <span class="hl">transparência</span> e qualidade é aqui</h1>
+      <p class="hero-lead">Oficina mecânica com venda de peças em Mangabeira, João Pessoa. <strong>Freios, troca de óleo e filtro e serviços de motor</strong>, com o orçamento explicado antes de mexer no seu carro.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Edson+Auto+Pe%C3%A7as+R.+Francisco+Porf%C3%ADrio+Ribeiro+1097+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+      </div>
+      <div class="rating">
+        <span class="rating-n num">4,7</span>
+        <div>
+          <div class="stars" role="img" aria-label="Nota 4,7 de 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          <small><span class="num">92</span> avaliações no Google · preço e mecânicos são os temas mais citados</small>
+        </div>
+      </div>
+    </div>
+
+    <figure class="hero-art">
+      <svg viewBox="0 0 540 500" role="img" aria-label="Ilustração de um disco de freio com pinça azul, uma chave de boca e uma gota de óleo">
+        <defs>
+          <radialGradient id="g-disc" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#c9ccd1"/><stop offset=".8" stop-color="#9ea3aa"/><stop offset="1" stop-color="#7d828a"/></radialGradient>
+          <radialGradient id="g-hat" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#5d636c"/><stop offset="1" stop-color="#2b2f35"/></radialGradient>
+          <linearGradient id="g-cal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a63e8"/><stop offset="1" stop-color="#16349b"/></linearGradient>
+          <linearGradient id="g-wr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef0f3"/><stop offset=".5" stop-color="#b7bcc4"/><stop offset="1" stop-color="#8a9099"/></linearGradient>
+          <linearGradient id="g-sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        </defs>
+        <circle cx="270" cy="250" r="236" fill="#ffc20e"/>
+        <path d="M34 206 H506 A236 236 0 0 1 506 294 H34 A236 236 0 0 1 34 206Z" fill="#1f46c8"/>
+        <circle cx="270" cy="250" r="236" fill="none" stroke="#16181c" stroke-width="3" stroke-dasharray="4 10" opacity=".35"/>
+        <ellipse cx="282" cy="452" rx="150" ry="16" fill="#16181c" opacity=".18"/>
+        <g class="disc">
+          <circle cx="270" cy="250" r="176" fill="url(#g-disc)" stroke="#5d636c" stroke-width="3"/>
+          <circle cx="270" cy="250" r="168" fill="none" stroke="#e7e9ec" stroke-width="2" opacity=".7"/>
+          <circle cx="270" cy="250" r="150" fill="none" stroke="#3c4148" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 26.2" opacity=".85"/>
+          <circle cx="270" cy="250" r="128" fill="none" stroke="#3c4148" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 26.8" stroke-dashoffset="13" opacity=".85"/>
+          <g fill="none" stroke="#6b7078" stroke-width="3" stroke-linecap="round" opacity=".8">
+            <path d="M270 92 q22 30 14 62" />
+            <path d="M270 92 q22 30 14 62" transform="rotate(60 270 250)"/>
+            <path d="M270 92 q22 30 14 62" transform="rotate(120 270 250)"/>
+            <path d="M270 92 q22 30 14 62" transform="rotate(180 270 250)"/>
+            <path d="M270 92 q22 30 14 62" transform="rotate(240 270 250)"/>
+            <path d="M270 92 q22 30 14 62" transform="rotate(300 270 250)"/>
+          </g>
+          <circle cx="270" cy="250" r="96" fill="#3c4148"/>
+          <circle cx="270" cy="250" r="88" fill="url(#g-hat)"/>
+          <g fill="#16181c" stroke="#7d828a" stroke-width="2">
+            <circle cx="270" cy="194" r="11"/>
+            <circle cx="323.3" cy="232.7" r="11"/>
+            <circle cx="302.9" cy="295.3" r="11"/>
+            <circle cx="237.1" cy="295.3" r="11"/>
+            <circle cx="216.7" cy="232.7" r="11"/>
+          </g>
+          <circle cx="270" cy="250" r="30" fill="#16181c" stroke="#7d828a" stroke-width="3"/>
+          <circle cx="270" cy="250" r="176" fill="url(#g-sheen)"/>
+        </g>
+        <g transform="rotate(-38 270 250)">
+          <path d="M210 52 Q270 34 330 52 L340 96 Q270 80 200 96 Z" fill="url(#g-cal)" stroke="#0e1f63" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="226" y="58" width="88" height="16" rx="8" fill="#ffffff" opacity=".92"/>
+          <circle cx="214" cy="84" r="6" fill="#ffc20e" stroke="#0e1f63" stroke-width="2"/>
+          <circle cx="326" cy="84" r="6" fill="#ffc20e" stroke="#0e1f63" stroke-width="2"/>
+          <path d="M218 60 Q270 46 322 60" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(58 384) rotate(-28)">
+          <rect x="34" y="-11" width="200" height="22" rx="11" fill="url(#g-wr)" stroke="#5d636c" stroke-width="2"/>
+          <path d="M0 -26 a28 28 0 1 1 0 52 l14 -16 h14 v-20 h-14 Z" fill="url(#g-wr)" stroke="#5d636c" stroke-width="2" transform="translate(16 0)"/>
+          <circle cx="240" cy="0" r="22" fill="url(#g-wr)" stroke="#5d636c" stroke-width="2"/>
+          <path d="M240 -11 l9.5 5.5 v11 l-9.5 5.5 l-9.5 -5.5 v-11 Z" fill="#5d636c"/>
+          <rect x="80" y="-4" width="110" height="8" rx="4" fill="#fff" opacity=".45"/>
+        </g>
+        <g transform="translate(440 342)">
+          <circle r="46" fill="#16181c"/>
+          <path d="M0 -28 C0 -28 -20 -2 -20 12 a20 20 0 0 0 40 0 C20 -2 0 -28 0 -28Z" fill="#ffc20e"/>
+          <path d="M-9 8 a10 10 0 0 0 8 12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+        </g>
+      </svg>
+      <figcaption>Freio, óleo, motor e peças no mesmo lugar</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Serviços</div>
+        <h2>Manutenção, peças e serviços</h2>
+      </div>
+      <p>Está escrito na fachada e é o que a Edson faz no dia a dia: cuida do carro e tem peça para trocar. Estes são os serviços mais lembrados por quem já passou por lá.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc svc-big">
+        <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-brake"/></svg>
+        <h3>Freios</h3>
+        <p>Freio é segurança. Se o pedal mudou, o carro chia ao frear ou demora para parar, traga para avaliar.</p>
+        <ul>
+          <li>Troca de discos de freio</li>
+          <li>Troca de pastilhas de freio</li>
+          <li>Avaliação antes da troca</li>
+        </ul>
+        <span class="tag">Freou diferente? Não deixe para depois</span>
+      </article>
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-oil"/></svg>
+        <h3>Troca de óleo e filtro</h3>
+        <p>A manutenção mais simples e uma das mais importantes para o motor. Use o lembrete abaixo para ver quando é a próxima.</p>
+      </article>
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 48 32" aria-hidden="true"><use href="#i-engine"/></svg>
+        <h3>Serviços de motor</h3>
+        <p>Do reparo da tampa do motor a outros serviços: conte o que está acontecendo e peça o orçamento.</p>
+      </article>
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gear"/></svg>
+        <h3>Peças</h3>
+        <p>Venda de peças no mesmo endereço da oficina. Mande o modelo e o ano do carro para saber da peça que você precisa.</p>
+      </article>
+      <article class="svc">
+        <svg class="svc-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tool"/></svg>
+        <h3>Manutenção</h3>
+        <p>“Mecânicos” é um dos temas mais citados nas avaliações do Google, que também falam em rapidez.</p>
+      </article>
+      <div class="svc-more">
+        <p>Precisa de outro serviço? Pergunte pelo WhatsApp.</p>
+        <a class="btn btn-wa" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="transp" id="transparencia">
+  <div class="wrap">
+    <div class="kicker">Como trabalhamos</div>
+    <p class="quote-ig">Serviço com <em>transparência</em> e qualidade é aqui!</p>
+    <span class="quote-src">Frase da Edson Auto Peças no Instagram</span>
+    <ol class="steps">
+      <li><span class="step-n">01</span><h3>Fale com a gente</h3><p>Chame no WhatsApp e conte o que o carro está fazendo, ou passe direto na oficina em Mangabeira.</p></li>
+      <li><span class="step-n">02</span><h3>O carro é avaliado</h3><p>Antes de qualquer troca, o mecânico olha o carro para entender o problema.</p></li>
+      <li><span class="step-n">03</span><h3>Você aprova o orçamento</h3><p>O orçamento é passado antes do serviço. Você decide com calma, sabendo o que vai ser feito.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="avaliacoes">
+  <div class="wrap rep-grid">
+    <div class="score-card">
+      <div class="kicker">Nota no Google</div>
+      <div class="big-score num">4,7<sup>/5</sup></div>
+      <p class="score-meta"><b class="num">92</b> avaliações de clientes</p>
+    </div>
+    <div>
+      <div class="kicker">O que os clientes destacam</div>
+      <h2 style="font-size:clamp(32px,4.6vw,50px);margin:12px 0 22px;text-transform:uppercase">Preço justo, bons mecânicos e honestidade</h2>
+      <p class="rep-sub">As avaliações falam de preço justo, promoções, rapidez e confiança.</p>
+      <div class="bars">
+        <div class="bar"><div class="bar-top"><b>Preço</b><span class="num">9 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>Mecânicos</b><span class="num">8 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:88.9%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>Honestos</b><span class="num">6 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:66.7%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>Confiança</b><span class="num">3 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:33.3%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>Motor</b><span class="num">2 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:22.2%"></div></div></div>
+      </div>
+      <p class="rep-note">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sinais" id="sinais">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Fique de olho</div>
+        <h2>Sinais de que está na hora</h2>
+      </div>
+      <p>Dicas gerais para quem dirige. Nenhum sinal mostra sozinho a causa do problema, mas todos pedem uma avaliação.</p>
+    </div>
+    <div class="sinais-cols">
+      <div class="sig-box">
+        <h3><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-brake"/></svg>Revisar o freio</h3>
+        <ul>
+          <li><b>Chiado ou rangido ao frear</b><span>Barulho metálico quando você pisa no pedal.</span></li>
+          <li><b>Pedal mole ou que vai muito fundo</b><span>Você precisa pisar mais do que antes para o carro parar.</span></li>
+          <li><b>Volante ou pedal tremendo</b><span>Vibração na hora da frenagem, principalmente em velocidade.</span></li>
+          <li><b>Carro puxando para um lado ao frear</b><span>Ele desvia sozinho quando você freia.</span></li>
+          <li><b>Luz do freio acesa no painel</b><span>Não ignore: chame para avaliar.</span></li>
+        </ul>
+      </div>
+      <div class="sig-box">
+        <h3><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-oil"/></svg>Trocar o óleo</h3>
+        <ul>
+          <li><b>Chegou a quilometragem ou o prazo</b><span>O manual do carro diz de quanto em quanto tempo trocar.</span></li>
+          <li><b>Luz do óleo acesa no painel</b><span>Pare em local seguro e verifique antes de seguir viagem.</span></li>
+          <li><b>Óleo escuro e grosso na vareta</b><span>Ou o nível abaixo da marca mínima.</span></li>
+          <li><b>Motor mais barulhento que o normal</b><span>Batidas ou ruído diferente ao ligar e acelerar.</span></li>
+          <li><b>Manchas de óleo onde o carro fica parado</b><span>Pode ser vazamento: vale avaliar.</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="sinais-foot">Percebeu algum desses sinais? Chame a Edson no WhatsApp e leve o carro para avaliar.</p>
+  </div>
+</section>
+
+<section id="oleo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Lembrete da troca de óleo</div>
+        <h2>Quanto falta para a próxima troca?</h2>
+      </div>
+      <p>Coloque a quilometragem que aparece no painel agora e a da última troca. A conta é feita aqui na página e a mensagem para agendar fica pronta.</p>
+    </div>
+    <div class="oleo-grid">
+      <form class="oleo-form" id="oleo-form" autocomplete="off" novalidate>
+        <div class="field">
+          <label for="km-atual">Quilometragem atual</label>
+          <div class="km-in"><input id="km-atual" type="text" inputmode="numeric" placeholder="Ex.: 48.300"><span>km</span></div>
+        </div>
+        <div class="field">
+          <label for="km-ultima">Quilometragem na última troca</label>
+          <div class="km-in"><input id="km-ultima" type="text" inputmode="numeric" placeholder="Ex.: 42.000"><span>km</span></div>
+          <span class="hint">Costuma estar na etiqueta colada no para-brisa ou na porta.</span>
+        </div>
+        <fieldset class="field">
+          <legend>Intervalo de troca</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="int" value="5000" checked><span>5.000 km</span></label>
+            <label class="chip"><input type="radio" name="int" value="10000"><span>10.000 km</span></label>
+            <label class="chip"><input type="radio" name="int" value="outro"><span>Outro</span></label>
+          </div>
+          <div class="km-in" id="custom-wrap" hidden><input id="km-int" type="text" inputmode="numeric" placeholder="Intervalo do manual" aria-label="Intervalo do manual, em km"><span>km</span></div>
+          <span class="hint">5.000 e 10.000 km são intervalos comuns, mas o certo é o que está no manual do seu carro.</span>
+        </fieldset>
+      </form>
+
+      <div class="oleo-out" aria-live="polite">
+        <div>
+          <div class="out-label" id="out-label">Faltam</div>
+          <div class="out-big" id="out-big">—<small>km</small></div>
+        </div>
+        <span class="out-status" id="out-status" data-s="vazio">Preencha as duas quilometragens</span>
+        <div>
+          <div class="gauge"><div class="gauge-fill" id="gauge-fill"></div></div>
+          <div class="gauge-marks"><span>última troca</span><span id="gauge-end">+5.000 km</span></div>
+        </div>
+        <p class="out-detail" id="out-detail">Com os números preenchidos, você vê aqui por volta de qual quilometragem fazer a próxima troca.</p>
+        <a class="btn btn-wa" id="oleo-send" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20agendar%20a%20troca%20de%20%C3%B3leo%20e%20filtro." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar a troca pelo WhatsApp</a>
+      </div>
+    </div>
+    <p class="manual"><svg aria-hidden="true"><use href="#i-info"/></svg><span><b>É só uma estimativa.</b> O intervalo certo depende do manual do carro, do tipo de óleo e de como você usa o carro (muito trânsito, poeira e trajetos curtos costumam pedir trocas mais cedo). Na dúvida, pergunte na oficina.</span></p>
+  </div>
+</section>
+
+<section class="visit" id="visita">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Horário e endereço</div>
+        <h2>Em Mangabeira, de segunda a sábado</h2>
+      </div>
+      <p>Antes de ir, chame no WhatsApp e conte o que o carro tem. Assim a oficina já sabe o que esperar.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="hours">
+        <div class="hours-head">
+          <h3>Horário</h3>
+          <span class="now" id="now">Horário de João Pessoa</span>
+        </div>
+        <table>
+          <tbody>
+            <tr data-d="1"><td>Segunda-feira</td><td>8h – 18h</td></tr>
+            <tr data-d="2"><td>Terça-feira</td><td>8h – 18h</td></tr>
+            <tr data-d="3"><td>Quarta-feira</td><td>8h – 18h</td></tr>
+            <tr data-d="4"><td>Quinta-feira</td><td>8h – 18h</td></tr>
+            <tr data-d="5"><td>Sexta-feira</td><td>8h – 18h</td></tr>
+            <tr data-d="6"><td>Sábado</td><td>8h – 12h</td></tr>
+          </tbody>
+        </table>
+        <small>Horário informado no Instagram da Edson. Em feriados, confirme pelo WhatsApp.</small>
+      </div>
+      <div class="loc">
+        <div class="loc-map" aria-hidden="true">
+          <svg viewBox="0 0 400 230" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="230" style="fill:var(--panel-2)"/>
+            <g style="fill:var(--line)" opacity=".55">
+              <rect x="10" y="10" width="110" height="70"/><rect x="150" y="10" width="90" height="70"/><rect x="270" y="10" width="120" height="70"/>
+              <rect x="10" y="150" width="110" height="70"/><rect x="150" y="150" width="90" height="70"/><rect x="270" y="150" width="120" height="70"/>
+              <rect x="10" y="98" width="110" height="34"/><rect x="270" y="98" width="120" height="34"/>
+            </g>
+            <path d="M0 89 H400 M0 141 H400 M135 0 V230 M255 0 V230" style="stroke:var(--bg)" stroke-width="14" fill="none"/>
+            <path d="M0 115 H400" style="stroke:var(--yellow)" stroke-width="10" fill="none"/>
+            <path d="M0 115 H400" style="stroke:var(--on-yellow)" stroke-width="1" stroke-dasharray="8 8" fill="none" opacity=".5"/>
+            <g transform="translate(200 112)">
+              <circle r="30" style="fill:var(--blue)" opacity=".15"/>
+              <path d="M0 0 C-12 0 -14 -16 -14 -20 A14 14 0 0 1 14 -20 C14 -16 12 0 0 0Z" style="fill:var(--blue)"/>
+              <circle cy="-20" r="5" style="fill:var(--yellow)"/>
+            </g>
+          </svg>
+          <span class="pin-label">Edson · Nº 1097</span>
+          <span class="map-note">Ilustração. Use "Como chegar" para a rota.</span>
+        </div>
+        <div class="loc-info">
+          <div class="loc-row"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h4>Endereço</h4><p>R. Francisco Porfírio Ribeiro, 1097<br>Mangabeira, João Pessoa – PB<br><span class="num">58057-100</span></p></div></div>
+          <div class="loc-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><div><h4>Telefone e WhatsApp</h4><p class="phone">(83) 98670-2940</p><small>WhatsApp</small><p class="phone" style="margin-top:8px">(83) 3236-4246</p><small>Telefone fixo. Toque no número para selecionar e copiar.</small></div></div>
+          <div class="badges" aria-label="Informações da ficha do Google">
+            <span class="badge"><i aria-hidden="true"></i>Acolhe a comunidade LGBTQ+</span>
+            <span class="badge"><i class="f" aria-hidden="true"></i>Empresa de empreendedoras</span>
+          </div>
+          <div class="loc-actions">
+            <a class="btn btn-wa" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Edson+Auto+Pe%C3%A7as+R.+Francisco+Porf%C3%ADrio+Ribeiro+1097+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap faq-grid">
+    <div>
+      <div class="kicker">Dúvidas comuns</div>
+      <h2>Antes de levar o carro</h2>
+      <p>Não achou sua pergunta? Mande no WhatsApp que a oficina responde.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Como faço para pedir um orçamento?</summary>
+        <p>Chame no WhatsApp (83) 98670-2940 contando o modelo e o ano do carro e o que ele está fazendo. Para saber o que o carro precisa de verdade, o mecânico avalia na oficina e passa o orçamento antes do serviço.</p>
+      </details>
+      <details>
+        <summary>Vocês também vendem peças?</summary>
+        <p>Sim, a Edson trabalha com manutenção, peças e serviços. Mande o modelo, o ano do carro e a peça que você procura para saber se tem.</p>
+      </details>
+      <details>
+        <summary>De quanto em quanto tempo devo trocar o óleo?</summary>
+        <p>Depende do carro e do óleo usado. O intervalo certo está no manual do fabricante. Muita gente troca a cada 5.000 ou 10.000 km, mas siga o que o manual indica e troque o filtro junto quando for recomendado.</p>
+      </details>
+      <details>
+        <summary>Abre no sábado?</summary>
+        <p>Sim, no sábado o horário é das 8h às 12h. De segunda a sexta, das 8h às 18h.</p>
+      </details>
+      <details>
+        <summary>Quais são as formas de pagamento?</summary>
+        <p>Pergunte pelas condições de pagamento e pelas promoções do momento no WhatsApp.</p>
+      </details>
+      <details>
+        <summary>O freio está chiando. Posso continuar rodando?</summary>
+        <p>Freio é item de segurança. Se o barulho apareceu ou o pedal mudou, o melhor é levar o carro para avaliar o quanto antes, em vez de esperar piorar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>Freio, óleo ou motor? <em>Fala com a Edson.</em></h2>
+      <p>Conte o que o carro está fazendo e peça o orçamento. A oficina fica na R. Francisco Porfírio Ribeiro, 1097, em Mangabeira.</p>
+    </div>
+    <div class="final-cta">
+      <a class="btn btn-yellow" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento pelo WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Edson+Auto+Pe%C3%A7as+R.+Francisco+Porf%C3%ADrio+Ribeiro+1097+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Edson Auto Peças · R. Francisco Porfírio Ribeiro, 1097 – Mangabeira, João Pessoa – PB · WhatsApp <span class="num" style="user-select:all;-webkit-user-select:all">(83) 98670-2940</span> · Fixo <span class="num" style="user-select:all;-webkit-user-select:all">(83) 3236-4246</span></span>
+    <span class="selo">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5583986702940?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Edson%20Auto%20Pe%C3%A7as%20e%20queria%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a Edson Auto Peças no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script>
+(function(){
+  var WA = 'https://wa.me/5583986702940?text=';
+  var form = document.getElementById('oleo-form');
+  var atual = document.getElementById('km-atual');
+  var ultima = document.getElementById('km-ultima');
+  var custom = document.getElementById('km-int');
+  var customWrap = document.getElementById('custom-wrap');
+  var big = document.getElementById('out-big');
+  var label = document.getElementById('out-label');
+  var status = document.getElementById('out-status');
+  var fill = document.getElementById('gauge-fill');
+  var gEnd = document.getElementById('gauge-end');
+  var detail = document.getElementById('out-detail');
+  var send = document.getElementById('oleo-send');
+  var BASE = 'Olá! Vim pelo site da Edson Auto Peças e queria agendar a troca de óleo e filtro.';
+
+  function num(v){ var d = String(v || '').replace(/\D/g, ''); return d ? parseInt(d, 10) : NaN; }
+  function fmt(n){ return Math.round(n).toLocaleString('pt-BR'); }
+  function mask(el){
+    var n = num(el.value);
+    el.value = isNaN(n) ? '' : fmt(n);
+  }
+  function intervalo(){
+    var r = form.querySelector('input[name=int]:checked').value;
+    if (r === 'outro') { customWrap.hidden = false; return num(custom.value); }
+    customWrap.hidden = true;
+    return parseInt(r, 10);
+  }
+  function setBig(text){ big.innerHTML = ''; big.appendChild(document.createTextNode(text)); var s = document.createElement('small'); s.textContent = 'km'; big.appendChild(s); }
+
+  function calc(){
+    var a = num(atual.value), u = num(ultima.value), it = intervalo();
+    gEnd.textContent = isNaN(it) ? '+? km' : '+' + fmt(it) + ' km';
+    var msg = BASE;
+    if (isNaN(a) || isNaN(u) || isNaN(it) || it <= 0) {
+      label.textContent = 'Faltam'; setBig('—');
+      status.dataset.s = 'vazio'; status.textContent = isNaN(it) || it <= 0 ? 'Informe o intervalo do manual' : 'Preencha as duas quilometragens';
+      fill.style.width = '0'; fill.dataset.s = '';
+      detail.textContent = 'Com os números preenchidos, você vê aqui por volta de qual quilometragem fazer a próxima troca.';
+      if (!isNaN(a)) msg += '\nMeu carro está com ' + fmt(a) + ' km.';
+    } else if (a < u) {
+      label.textContent = 'Confira os números'; setBig('—');
+      status.dataset.s = 'vazio'; status.textContent = 'A quilometragem atual está menor que a da última troca';
+      fill.style.width = '0'; fill.dataset.s = '';
+      detail.textContent = 'Verifique se não trocou os campos de lugar.';
+    } else {
+      var rodado = a - u, resta = it - rodado, prox = u + it;
+      var pct = Math.min(rodado / it, 1) * 100;
+      fill.style.width = pct.toFixed(1) + '%';
+      if (resta > 0) {
+        label.textContent = 'Faltam'; setBig(fmt(resta));
+        fill.dataset.s = '';
+        if (resta <= Math.max(500, it * 0.15)) { status.dataset.s = 'perto'; status.textContent = 'Está chegando a hora: já dá para agendar'; }
+        else { status.dataset.s = 'ok'; status.textContent = 'Ainda dentro do intervalo escolhido'; }
+      } else {
+        label.textContent = 'Passou'; setBig(fmt(-resta));
+        fill.dataset.s = 'passou';
+        status.dataset.s = 'passou'; status.textContent = resta === 0 ? 'Chegou a hora da troca' : 'Passou do intervalo: agende a troca';
+      }
+      detail.innerHTML = '';
+      detail.appendChild(document.createTextNode('Você já rodou '));
+      var b1 = document.createElement('b'); b1.textContent = fmt(rodado) + ' km'; detail.appendChild(b1);
+      detail.appendChild(document.createTextNode(' desde a última troca. Próxima troca por volta de '));
+      var b2 = document.createElement('b'); b2.textContent = fmt(prox) + ' km'; detail.appendChild(b2);
+      detail.appendChild(document.createTextNode(' no painel.'));
+      msg += '\nMeu carro está com ' + fmt(a) + ' km e a última troca foi com ' + fmt(u) + ' km.';
+    }
+    send.href = WA + encodeURIComponent(msg);
+  }
+
+  [atual, ultima, custom].forEach(function(el){
+    el.addEventListener('input', function(){ mask(el); calc(); });
+  });
+  form.addEventListener('change', calc);
+  form.addEventListener('submit', function(e){ e.preventDefault(); });
+  calc();
+
+  /* horário de hoje (fuso de João Pessoa) */
+  try {
+    var parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Recife', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
+    var get = function(t){ for (var i = 0; i < parts.length; i++) if (parts[i].type === t) return parts[i].value; return ''; };
+    var dias = { Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6 };
+    var d = dias[get('weekday')], h = parseInt(get('hour'), 10) % 24, m = parseInt(get('minute'), 10);
+    var min = h * 60 + m;
+    var row = document.querySelector('.hours tr[data-d="' + d + '"]');
+    if (row) row.className = 'today';
+    var aberto = (d >= 1 && d <= 5 && min >= 480 && min < 1080) || (d === 6 && min >= 480 && min < 720);
+    var now = document.getElementById('now');
+    now.dataset.open = aberto ? '1' : '0';
+    now.textContent = aberto ? 'Aberto agora' : 'Fechado agora';
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
