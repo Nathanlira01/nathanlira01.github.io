@@ -13,923 +13,875 @@
 <meta property="og:url" content="https://nathanlira01.github.io/dayanna-queiroz/">
 </head>
 <body>
-<meta name="description" content="Dra. Dayanna Queiroz, nutricionista materno infantil, PhD. Gestação, pós-parto e introdução alimentar responsiva. Consulta presencial no Liv Mall, em João Pessoa, ou on-line.">
+<meta name="description" content="Dra. Dayanna Queiroz, nutricionista materno-infantil, PhD. Gestação, pós-parto e introdução alimentar responsiva. Consulta presencial no Liv Mall, em João Pessoa, ou on-line.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,700&family=Figtree:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
 <style>
 :root{
-  --bg:#fff6f9;
-  --bg-2:#ffe9f2;
-  --surface:#ffffff;
-  --ink:#3b1029;
-  --muted:#7a4a63;
-  --line:#f5cfe0;
-  --pink:#e5177b;
-  --pink-ink:#b50b5d;
-  --pink-soft:#ffdcea;
-  --btn:#c80f6a;
-  --btn-hover:#a50b57;
-  --on-btn:#ffffff;
-  --leaf:#6fa86a;
-  --leaf-ink:#3d7a3a;
-  --leaf-soft:#e4f2dd;
-  --deep:#4a0f30;
-  --on-deep:#ffeef6;
-  --on-deep-muted:#f2bcd5;
-  --deep-pink:#ff7ab6;
-  --skin:#f0c2a4;
-  --skin-2:#d99a7a;
-  --hair:#5b2b2e;
-  --blanket:#fff7fb;
-  --line-art:#3b1029;
-  --food-orange:#f59a3a;
-  --food-red:#e2474b;
-  --food-yellow:#f5c84a;
-  --food-green:#58a14f;
-  --shadow:0 1px 0 rgba(59,16,41,.05), 0 18px 34px -24px rgba(59,16,41,.45);
-  --dots:rgba(229,23,123,.11);
+  --bg:#fbf6f2;
+  --bg-2:#f4e8e3;
+  --surface:#fffbf8;
+  --ink:#2b1520;
+  --muted:#6f5762;
+  --line:#e7d5d3;
+  --rose:#ecd3d2;
+  --nude:#e9d6c8;
+  --accent:#b8135f;
+  --accent-ink:#a1104f;
+  --accent-soft:#f6dde6;
+  --on-accent:#fffaf7;
+  --deep:#2a1120;
+  --on-deep:#f8eaf0;
+  --on-deep-muted:#d4b4c3;
+  --deep-accent:#f07fb0;
+  --deep-line:rgba(248,234,240,.16);
+  --final:#9d1554;
+  --shadow:0 1px 0 rgba(43,21,32,.04),0 30px 60px -40px rgba(43,21,32,.45);
+  --grain:.05;
+  --ease:cubic-bezier(.2,.7,.2,1);
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#1d0c16;
-    --bg-2:#26101e;
-    --surface:#2e1426;
-    --ink:#ffeef6;
-    --muted:#e1b4ca;
-    --line:#4d2240;
-    --pink:#ff5aa5;
-    --pink-ink:#ff8ec2;
-    --pink-soft:#46172f;
-    --btn:#ff6fb0;
-    --btn-hover:#ff96c6;
-    --on-btn:#2a0a1c;
-    --leaf:#8cc884;
-    --leaf-ink:#a9dda1;
-    --leaf-soft:#22351f;
-    --deep:#12060d;
-    --on-deep:#ffeef6;
-    --on-deep-muted:#e1b4ca;
-    --deep-pink:#ff7ab6;
-    --skin:#eab899;
-    --skin-2:#c98a6b;
-    --hair:#3a1a1c;
-    --blanket:#fff1f7;
-    --line-art:#1d0c16;
-    --food-orange:#f59a3a;
-    --food-red:#ea5a5e;
-    --food-yellow:#f5c84a;
-    --food-green:#6cb862;
-    --shadow:0 1px 0 rgba(0,0,0,.3), 0 18px 34px -20px rgba(0,0,0,.8);
-    --dots:rgba(255,90,165,.08);
+    --bg:#170e12;
+    --bg-2:#20141a;
+    --surface:#261820;
+    --ink:#f6e9ee;
+    --muted:#c6aab6;
+    --line:#3c2a33;
+    --rose:#3e2630;
+    --nude:#3a2b28;
+    --accent:#ee6aa4;
+    --accent-ink:#f490bd;
+    --accent-soft:#3d1c2c;
+    --on-accent:#1e0d15;
+    --deep:#0e080b;
+    --on-deep:#f8eaf0;
+    --on-deep-muted:#c8a9b7;
+    --deep-accent:#f07fb0;
+    --deep-line:rgba(248,234,240,.12);
+    --final:#5e0c33;
+    --shadow:0 1px 0 rgba(0,0,0,.3),0 30px 60px -36px rgba(0,0,0,.8);
+    --grain:.07;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#1d0c16;
-  --bg-2:#26101e;
-  --surface:#2e1426;
-  --ink:#ffeef6;
-  --muted:#e1b4ca;
-  --line:#4d2240;
-  --pink:#ff5aa5;
-  --pink-ink:#ff8ec2;
-  --pink-soft:#46172f;
-  --btn:#ff6fb0;
-  --btn-hover:#ff96c6;
-  --on-btn:#2a0a1c;
-  --leaf:#8cc884;
-  --leaf-ink:#a9dda1;
-  --leaf-soft:#22351f;
-  --deep:#12060d;
-  --on-deep:#ffeef6;
-  --on-deep-muted:#e1b4ca;
-  --deep-pink:#ff7ab6;
-  --skin:#eab899;
-  --skin-2:#c98a6b;
-  --hair:#3a1a1c;
-  --blanket:#fff1f7;
-  --line-art:#1d0c16;
-  --food-orange:#f59a3a;
-  --food-red:#ea5a5e;
-  --food-yellow:#f5c84a;
-  --food-green:#6cb862;
-  --shadow:0 1px 0 rgba(0,0,0,.3), 0 18px 34px -20px rgba(0,0,0,.8);
-  --dots:rgba(255,90,165,.08);
+  --bg:#170e12;
+  --bg-2:#20141a;
+  --surface:#261820;
+  --ink:#f6e9ee;
+  --muted:#c6aab6;
+  --line:#3c2a33;
+  --rose:#3e2630;
+  --nude:#3a2b28;
+  --accent:#ee6aa4;
+  --accent-ink:#f490bd;
+  --accent-soft:#3d1c2c;
+  --on-accent:#1e0d15;
+  --deep:#0e080b;
+  --on-deep:#f8eaf0;
+  --on-deep-muted:#c8a9b7;
+  --deep-accent:#f07fb0;
+  --deep-line:rgba(248,234,240,.12);
+  --final:#5e0c33;
+  --shadow:0 1px 0 rgba(0,0,0,.3),0 30px 60px -36px rgba(0,0,0,.8);
+  --grain:.07;
   color-scheme:dark;
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-variation-settings:"SOFT" 100,"WONK" 0;font-weight:700;line-height:1.08;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.015em}
-h1 em,h2 em{font-style:italic;font-weight:500;color:var(--pink-ink)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3{font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-weight:400;line-height:1.04;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.01em}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--accent-ink)}
 p{margin:0}
 a{color:inherit}
-a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:10px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
 .num{font-variant-numeric:tabular-nums}
-.hand{font-family:'Caveat','Segoe Print',cursive;font-weight:700}
-.wrap{max-width:1140px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
-section{padding-block:clamp(56px,8vw,100px)}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--pink-ink)}
-.eyebrow svg{width:18px;height:18px;color:var(--leaf)}
-.h2{font-size:clamp(1.85rem,4.4vw,3rem);margin-top:12px}
-.lead{color:var(--muted);font-size:1.07rem;max-width:58ch;margin-top:14px}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+section{padding-block:clamp(72px,10vw,136px)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent)}
+.h2{font-size:clamp(2.3rem,5.6vw,4.2rem);margin-top:18px}
+.lead{color:var(--muted);font-size:1.06rem;max-width:56ch;margin-top:18px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:800;font-size:1rem;text-decoration:none;border-radius:999px;padding:14px 24px;border:2px solid transparent;cursor:pointer;transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease;min-height:50px;text-align:center}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-wa{background:var(--btn);color:var(--on-btn);box-shadow:0 10px 22px -12px var(--btn)}
-.btn-wa:hover{transform:translateY(-2px);background:var(--btn-hover)}
+.btn{--tx:0px;--ty:0px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:600;font-size:.98rem;text-decoration:none;border-radius:999px;padding:15px 26px;min-height:52px;border:1px solid transparent;cursor:pointer;text-align:center;transform:translate(var(--tx),var(--ty));transition:transform .5s var(--ease),background-color .3s,border-color .3s,color .3s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--accent);color:var(--on-accent)}
+.btn-wa:hover{background:var(--accent-ink)}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn-ghost:hover{transform:translateY(-2px);border-color:var(--pink);background:var(--surface)}
-.btn-soft{background:var(--pink-soft);color:var(--pink-ink)}
-.btn-soft:hover{transform:translateY(-2px);background:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.go{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--accent-ink);text-decoration:none;font-size:.96rem}
+.go svg{width:18px;height:18px;transition:transform .5s var(--ease)}
+.go:hover svg{transform:translateX(5px)}
 
-/* topo */
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
-.brand{display:flex;flex-direction:column;text-decoration:none;min-width:0;line-height:1}
-.brand-name{font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100;font-weight:700;font-size:1.45rem;letter-spacing:-.02em;white-space:nowrap}
-.brand-name i{font-weight:500;color:var(--pink-ink)}
-.brand small{font-size:.66rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:4px}
-.top .btn{padding:10px 18px;min-height:44px;font-size:.94rem}
-.top-nav{display:flex;gap:22px;font-weight:600;font-size:.95rem}
-.top-nav a{text-decoration:none;color:var(--muted)}
-.top-nav a:hover{color:var(--pink-ink)}
-@media (max-width:960px){.top-nav{display:none}}
-@media (max-width:440px){.top .btn span{display:none}.top .btn{padding:10px 12px}.brand-name{font-size:1.25rem}.brand small{font-size:.58rem;letter-spacing:.1em}}
+.progress{position:fixed;top:0;left:0;right:0;height:2px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:40;pointer-events:none}
+
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb, var(--bg) 84%, transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1;min-width:0}
+.brand-name{font-family:'Instrument Serif',Georgia,serif;font-size:1.6rem;white-space:nowrap}
+.brand-name i{color:var(--accent-ink)}
+.brand small{font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.top-nav{display:flex;gap:28px;font-size:.92rem}
+.top-nav a{text-decoration:none;color:var(--muted);transition:color .3s}
+.top-nav a:hover{color:var(--ink)}
+.top .btn{padding:10px 18px;min-height:44px;font-size:.92rem}
+@media (max-width:980px){.top-nav{display:none}}
+@media (max-width:440px){.top .btn span{display:none}.top .btn{padding:10px 13px}.brand-name{font-size:1.38rem}.brand small{font-size:.56rem;letter-spacing:.14em}}
 
 /* hero */
-.hero{position:relative;padding-block:clamp(32px,6vw,72px) clamp(52px,7vw,92px);background:radial-gradient(circle, var(--dots) 2px, transparent 2.5px) 0 0/24px 24px, linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:clamp(24px,4vw,52px);align-items:center}
+.hero{position:relative;padding-block:clamp(40px,7vw,96px) clamp(56px,8vw,110px);overflow:hidden}
+.hero::before{content:"";position:absolute;width:min(900px,140vw);aspect-ratio:1;right:-30%;top:-40%;border-radius:50%;background:radial-gradient(closest-side,var(--rose),transparent);opacity:.7;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,64px);align-items:center}
 .hero-grid > *{min-width:0}
-.rating-chip{display:inline-flex;flex-wrap:wrap;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 16px 5px 5px;font-weight:600;font-size:.92rem;max-width:100%;box-shadow:var(--shadow)}
-.rating-chip b{background:var(--pink);color:var(--on-btn);border-radius:999px;padding:3px 12px;font-weight:800}
-.stars{display:inline-flex;gap:2px;color:var(--pink)}
-.stars svg{width:15px;height:15px}
-.hero h1{font-size:clamp(2.6rem,7vw,5rem);margin-top:22px;font-weight:700}
-.hero h1 em{display:inline-block}
-.hero .who{margin-top:16px;font-weight:700;font-size:1.02rem}
-.hero .who span{color:var(--muted);font-weight:500}
-.hero .lead{font-size:clamp(1.05rem,1.6vw,1.18rem)}
-.phase-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.phase-pills span{display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border-radius:999px;background:var(--pink-soft);color:var(--pink-ink);font-weight:700;font-size:.88rem}
-.phase-pills span:nth-child(3){background:var(--leaf-soft);color:var(--leaf-ink)}
-.phase-pills svg{width:15px;height:15px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-.hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;color:var(--muted);font-size:.93rem;font-weight:600}
-.hero-facts span{display:inline-flex;align-items:center;gap:8px;min-width:0}
-.hero-facts svg{width:18px;height:18px;color:var(--pink-ink);flex:none}
-.hero-art svg{width:100%;height:auto;display:block;overflow:visible}
-@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:560px;margin:0 auto;width:100%}}
+.hero h1{font-size:clamp(3.6rem,13vw,8rem);line-height:.92;margin-top:26px;letter-spacing:-.02em}
+.mask{display:block;overflow:hidden;padding:0 .1em .14em;margin:0 -.1em -.14em}
+.mask > span{display:inline-block;animation:wordUp 1.2s var(--ease) both}
+.mask:nth-child(2) > span{animation-delay:.14s}
+.who{margin-top:26px;font-size:1.05rem}
+.who b{font-weight:600}
+.who span{color:var(--muted)}
+.hero .lead{font-size:clamp(1.05rem,1.5vw,1.16rem)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.chip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 12px;border:1px solid var(--line);background:color-mix(in srgb, var(--surface) 70%, transparent);border-radius:999px;padding:7px 16px 7px 8px;font-size:.88rem;color:var(--muted);max-width:100%}
+.chip b{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--bg);border-radius:999px;padding:3px 11px;font-weight:600}
+.chip b svg{width:13px;height:13px;color:var(--deep-accent)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.facts span{display:inline-flex;align-items:center;gap:8px;min-width:0}
+.facts svg{width:16px;height:16px;color:var(--accent-ink);flex:none}
+.phone{user-select:all;-webkit-user-select:all;color:var(--ink);font-weight:600}
+.seq{animation:fadeUp 1s var(--ease) both}
+.hero-art{position:relative}
+.hero-art svg{display:block;width:100%;height:auto;overflow:visible}
+.ring{transform-box:fill-box;transform-origin:center;animation:spin 60s linear infinite}
+.ring.r2{animation-duration:80s;animation-direction:reverse}
+.dr{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.8s var(--ease) both;animation-delay:var(--d,0s)}
+.lbl-art{animation:fadeIn 1s var(--ease) both;animation-delay:var(--d,0s)}
+.floaty{animation:floaty 7s ease-in-out infinite}
+.floaty.f2{animation-delay:-2.3s}.floaty.f3{animation-delay:-4.6s}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:540px;width:100%;margin:8px auto 0}}
 
-@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
-@keyframes sway{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes draw{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}
-.hero-copy{animation:rise .7s ease-out both}
-.vine{stroke-dasharray:900;animation:draw 2.2s ease-out both}
-.leafy{transform-box:fill-box;transform-origin:0% 100%;animation:sway 4s ease-in-out infinite}
-.leafy.l2{animation-delay:-1.3s}.leafy.l3{animation-delay:-2.4s}.leafy.l4{animation-delay:-.7s}
-.float{animation:floaty 4.5s ease-in-out infinite}
-.float.f2{animation-delay:-1.5s}.float.f3{animation-delay:-3s}
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-}
+@keyframes wordUp{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes wave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@keyframes swapIn{from{opacity:0;transform:translateY(16px);clip-path:inset(0 0 30% 0)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0)}}
 
-/* fases */
-.phases-head{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end}
-.phases-head > *{min-width:0}
-.phases-head .hand{font-size:1.6rem;color:var(--leaf-ink);transform:rotate(-3deg);text-align:right}
-.phases{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-.phase{min-width:0;position:relative;background:var(--surface);border:1px solid var(--line);border-radius:30px;padding:clamp(22px,3vw,34px);box-shadow:var(--shadow);overflow:hidden}
-.phase .n{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:3.6rem;line-height:.8;color:var(--pink);opacity:.9}
-.phase h3{font-size:clamp(1.45rem,2.6vw,1.9rem);margin-top:14px}
-.phase .sub{color:var(--muted);margin-top:8px}
-.phase ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
-.phase li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;font-size:.97rem}
-.phase li > *{min-width:0}
-.phase li svg{width:20px;height:20px;color:var(--leaf);margin-top:3px}
-.phase-1{grid-column:span 5;border-radius:30px 30px 30px 8px}
-.phase-2{grid-column:span 7;background:var(--pink-soft);border-color:transparent}
-.phase-3{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(20px,4vw,48px);align-items:center;background:var(--leaf-soft);border-color:transparent;border-radius:8px 30px 30px 30px}
-.phase-3 > *{min-width:0}
-.phase-3 .n{color:var(--leaf-ink)}
-.phase-3 li svg{color:var(--pink)}
-.phase-3 .resp{background:var(--surface);border-radius:22px;padding:20px 22px;border:1px dashed var(--leaf)}
-.phase-3 .resp b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.2rem}
-.phase-3 .resp p{color:var(--muted);margin-top:6px;font-size:.96rem}
-.phase .mini{position:absolute;right:-8px;top:-8px;width:120px;opacity:.95;pointer-events:none}
-@media (max-width:860px){.phase-1,.phase-2{grid-column:1 / -1}.phase-3{grid-template-columns:1fr}}
-@media (max-width:560px){.phases-head{grid-template-columns:1fr}.phases-head .hand{text-align:left}.phase .mini{width:90px}}
+/* marquee */
+.marquee{border-block:1px solid var(--line);padding-block:20px;overflow:hidden;background:var(--bg)}
+.mq-track{display:flex;width:max-content;animation:marquee 60s linear infinite}
+.mq-track span{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);white-space:nowrap;padding-right:28px;display:inline-flex;align-items:center;gap:28px}
+.mq-track span i{color:var(--accent-ink)}
+.mq-track span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);opacity:.7}
 
-/* interativo */
-.quiz{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden}
-.quiz::before{content:"";position:absolute;inset:0;background:radial-gradient(circle, rgba(255,122,182,.13) 2px, transparent 2.5px) 0 0/28px 28px;pointer-events:none}
-.quiz .eyebrow{color:var(--deep-pink)}
-.quiz .eyebrow svg{color:var(--deep-pink)}
-.quiz .lead{color:var(--on-deep-muted)}
-.quiz h2 em{color:var(--deep-pink)}
-.quiz-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,56px);align-items:start;position:relative}
-.quiz-grid > *{min-width:0}
-.card{background:var(--bg);color:var(--ink);border-radius:30px;padding:clamp(18px,3vw,32px);box-shadow:0 30px 50px -30px rgba(0,0,0,.75)}
-.card h3{font-size:1.5rem}
-.fs{border:0;margin:18px 0 0;padding:0;min-width:0}
-.fs legend,.lbl{display:block;font-weight:800;font-size:.95rem;margin-bottom:8px;padding:0}
-.fs legend span,.lbl span{font-weight:500;color:var(--muted)}
-.big-choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.big-choices label{position:relative;display:flex;min-width:0}
-.big-choices input{position:absolute;opacity:0;width:1px;height:1px}
-.big-choices .opt{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:14px;border-radius:20px;border:2px solid var(--line);background:var(--surface);cursor:pointer;font-weight:800;line-height:1.2;transition:border-color .15s, background-color .15s, transform .15s;min-width:0}
-.big-choices .opt small{font-weight:500;color:var(--muted);font-size:.82rem}
-.big-choices .opt svg{width:30px;height:30px;color:var(--pink-ink)}
-.big-choices .opt:hover{border-color:var(--pink);transform:translateY(-2px)}
-.big-choices input:checked + .opt{border-color:var(--pink);background:var(--pink-soft)}
-.big-choices input:focus-visible + .opt{outline:3px solid var(--pink);outline-offset:2px}
-@media (max-width:520px){.big-choices{grid-template-columns:1fr}.big-choices .opt{flex-direction:row;align-items:center}}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{position:relative;display:inline-flex}
-.chip input{position:absolute;opacity:0;width:1px;height:1px}
-.chip span{display:inline-flex;align-items:center;padding:9px 15px;border-radius:999px;border:2px solid var(--line);background:var(--surface);font-weight:700;font-size:.94rem;cursor:pointer;line-height:1.2;transition:border-color .15s, background-color .15s}
-.chip span:hover{border-color:var(--pink)}
-.chip input:checked + span{background:var(--pink);border-color:var(--pink);color:var(--on-btn)}
-.chip input:focus-visible + span{outline:3px solid var(--pink-ink);outline-offset:2px}
-.txt{width:100%;font:inherit;padding:12px 14px;border-radius:14px;border:2px solid var(--line);background:var(--surface);color:var(--ink)}
-.txt:focus{border-color:var(--pink);outline:none}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--i,0) * 110ms)}
+.js .rv.in{opacity:1;transform:none}
+
+/* fases + fio */
+.fases-head{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
+.fases-head > *{min-width:0}
+.thread-wrap{position:relative;margin-top:64px}
+.thread{position:absolute;left:0;top:0;width:80px;height:100%;overflow:visible}
+.thread path{fill:none;vector-effect:non-scaling-stroke}
+.thread .t-bg{stroke:var(--line);stroke-width:1}
+.thread .t-fg{stroke:var(--accent);stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:0;stroke-linecap:round}
+.fase-list{list-style:none;margin:0;padding:0 0 0 120px;display:grid;gap:clamp(56px,8vw,110px)}
+.fase{position:relative;display:grid;grid-template-columns:auto 1fr 180px;gap:clamp(18px,3vw,44px);align-items:start}
+.fase > *{min-width:0}
+.node{position:absolute;left:-88px;top:22px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:1px solid var(--accent);transition:background-color .8s var(--ease) .3s}
+.fase.in .node{background:var(--accent)}
+.fase-num{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(3.4rem,7vw,5.6rem);line-height:.8;color:var(--accent-ink)}
+.fase h3{font-size:clamp(2rem,4vw,3rem)}
+.fase .sub{color:var(--muted);margin-top:10px;max-width:46ch}
+.fase ul{list-style:none;padding:0;margin:22px 0 0;display:grid}
+.fase li{padding:12px 0;border-top:1px solid var(--line);font-size:.98rem;display:grid;grid-template-columns:18px 1fr;gap:12px}
+.fase li > *{min-width:0}
+.fase li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:10px}
+.fase-art{width:100%;color:var(--ink)}
+.fase-art svg{display:block;width:100%;height:auto}
+.resp{margin-top:22px;border-left:1px solid var(--accent);padding:4px 0 4px 20px}
+.resp b{display:block;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-style:italic;font-size:1.5rem;color:var(--accent-ink)}
+.resp p{color:var(--muted);margin-top:6px;font-size:.97rem;max-width:56ch}
+@media (max-width:900px){.fases-head{grid-template-columns:1fr}.fase{grid-template-columns:1fr}.fase-art{max-width:150px;order:-1}.fase-num{font-size:3.2rem}}
+@media (max-width:640px){.thread{width:36px}.fase-list{padding-left:50px}.node{left:-42px;top:16px;width:13px;height:13px}}
+
+/* seletor */
+.sel{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden}
+.sel::before{content:"";position:absolute;width:900px;aspect-ratio:1;left:-300px;bottom:-500px;border-radius:50%;background:radial-gradient(closest-side,rgba(240,127,176,.16),transparent);pointer-events:none}
+.sel .eyebrow{color:var(--on-deep-muted)}
+.sel .eyebrow::before{background:var(--deep-accent)}
+.sel h2 em{color:var(--deep-accent)}
+.sel .lead{color:var(--on-deep-muted)}
+.sel-grid{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,72px);align-items:start}
+.sel-grid > *{min-width:0}
+.side{list-style:none;padding:0;margin:36px 0 0;display:grid}
+.side li{padding:16px 0;border-top:1px solid var(--deep-line)}
+.side b{display:block;font-weight:600}
+.side span{color:var(--on-deep-muted);font-size:.95rem}
+.card{background:var(--bg);color:var(--ink);border-radius:28px;padding:clamp(18px,3vw,34px);box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.seg{--idx:0;position:relative;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;padding:4px;background:var(--bg-2)}
+.seg::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc((100% - 8px) / 3);border-radius:14px;background:var(--surface);box-shadow:0 8px 20px -12px rgba(43,21,32,.4);transform:translateX(calc(var(--idx) * 100%));transition:transform .7s var(--ease)}
+.seg label{position:relative;display:flex;min-width:0}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg span{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;min-height:62px;padding:8px 6px;border-radius:14px;cursor:pointer;font-weight:600;font-size:.92rem;line-height:1.15;color:var(--muted);transition:color .4s}
+.seg span small{font-weight:500;font-size:.74rem;opacity:.85}
+.seg input:checked + span{color:var(--accent-ink)}
+.seg input:focus-visible + span{outline:2px solid var(--accent);outline-offset:-2px}
+.panel{margin-top:24px}
+.panel.play{animation:swapIn .8s var(--ease) both}
+.p-head{display:grid;grid-template-columns:1fr 92px;gap:16px;align-items:center}
+.p-head > *{min-width:0}
+.p-head h3{font-size:clamp(1.6rem,3vw,2.1rem)}
+.p-head p{color:var(--muted);font-size:.95rem;margin-top:4px}
+.p-head svg{width:92px;height:92px;color:var(--ink)}
+.panel ul{list-style:none;padding:0;margin:16px 0 0;display:grid}
+.panel li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:.95rem}
+.panel li > *{min-width:0}
+.panel li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:9px}
+.fld{margin-top:16px;min-width:0}
+.fld-l{display:block;font-weight:600;font-size:.88rem;margin-bottom:8px}
+.fld-l span{font-weight:400;color:var(--muted)}
+.txt{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.txt:focus{border-color:var(--accent);outline:none}
+.tri{display:inline-block;margin-top:10px;font-size:.84rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:3px 12px}
+.tri:empty,.tip:empty{display:none}
+.tip{margin-top:10px;font-size:.9rem;color:var(--muted);background:var(--bg-2);border-radius:12px;padding:10px 12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
 .row2 > *{min-width:0}
-@media (max-width:520px){.row2{grid-template-columns:1fr}}
-.extra[hidden]{display:none}
-.result{margin-top:20px;border-radius:22px;background:var(--surface);border:1px solid var(--line);padding:18px 20px}
-.result h4{margin:0;font-family:'Fraunces',Georgia,serif;font-size:1.15rem}
-.result .tri{display:inline-block;margin-top:6px;font-size:.85rem;font-weight:800;color:var(--leaf-ink);background:var(--leaf-soft);border-radius:999px;padding:3px 11px}
-.result .tri:empty{display:none}
-.result ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
-.result li{display:grid;grid-template-columns:20px 1fr;gap:10px;font-size:.95rem}
-.result li > *{min-width:0}
-.result li svg{width:18px;height:18px;color:var(--leaf);margin-top:3px}
-.result .tip{margin-top:12px;font-size:.9rem;color:var(--muted);background:var(--pink-soft);border-radius:12px;padding:10px 12px}
-.result .tip:empty{display:none}
-.result.empty{color:var(--muted);text-align:left;border-style:dashed}
-.preview{margin-top:16px;background:var(--bg-2);border-radius:16px;padding:14px 16px;font-size:.92rem;white-space:pre-wrap;color:var(--muted);overflow-wrap:anywhere}
-.preview b{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-ink);margin-bottom:6px;white-space:normal}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{position:relative;display:inline-flex}
+.pill input{position:absolute;opacity:0;width:1px;height:1px}
+.pill span{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.9rem;font-weight:500;cursor:pointer;transition:background-color .3s,border-color .3s,color .3s}
+.pill span:hover{border-color:var(--accent)}
+.pill input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.pill input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
+.preview{margin-top:18px;background:var(--bg-2);border-radius:16px;padding:14px 16px;font-size:.9rem;white-space:pre-wrap;color:var(--muted);overflow-wrap:anywhere}
+.preview b{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:6px;white-space:normal;font-weight:600}
 .card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px}
 .linkbtn{background:none;border:0;font:inherit;color:var(--muted);text-decoration:underline;cursor:pointer;padding:6px}
-.disclaimer{margin-top:14px;font-size:.84rem;color:var(--muted)}
-.quiz-side{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:16px}
-.quiz-side li{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start}
-.quiz-side li > *{min-width:0}
-.quiz-side .ic{width:42px;height:42px;border-radius:50%;background:rgba(255,122,182,.16);display:grid;place-items:center;color:var(--deep-pink)}
-.quiz-side .ic svg{width:20px;height:20px}
-.quiz-side b{display:block;color:var(--on-deep)}
-.quiz-side span{color:var(--on-deep-muted);font-size:.95rem}
-@media (max-width:900px){.quiz-grid{grid-template-columns:1fr}}
+.disc{margin-top:12px;font-size:.82rem;color:var(--muted)}
+@media (max-width:920px){.sel-grid{grid-template-columns:1fr}}
+@media (max-width:520px){.row2{grid-template-columns:1fr}.p-head{grid-template-columns:1fr 70px}.p-head svg{width:70px;height:70px}.seg span{font-size:.84rem;min-height:58px;padding:6px 4px}}
 
 /* consulta */
-.modes{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:38px}
-.modes > *{min-width:0}
-.mode{border-radius:30px;padding:clamp(22px,3vw,34px);position:relative;overflow:hidden;min-width:0}
-.mode h3{font-size:clamp(1.5rem,2.6vw,2rem)}
-.mode p{margin-top:10px}
-.mode .tag{display:inline-block;font-size:.74rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin-bottom:14px}
-.mode-in{background:var(--pink);color:var(--on-btn)}
-.mode-in .tag{background:var(--on-btn);color:var(--pink-ink)}
-.mode-in p{opacity:.95}
-.mode-in .addr{margin-top:16px;font-weight:700;font-size:1.02rem;line-height:1.4}
-.mode-in .btn{margin-top:22px;background:var(--on-btn);color:var(--pink-ink)}
-.mode-in .btn:hover{background:var(--bg-2)}
-.mode-in .deco{position:absolute;right:-20px;bottom:-24px;width:190px;opacity:.22;pointer-events:none;color:var(--on-btn)}
-.mode-on{background:var(--surface);border:1px solid var(--line)}
-.mode-on .tag{background:var(--leaf-soft);color:var(--leaf-ink)}
-.mode-on p{color:var(--muted)}
-.mode-on .screen{margin-top:20px;width:100%;max-width:300px}
-.how{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;list-style:none;padding:0;counter-reset:h}
-.how li{min-width:0;position:relative;padding:0 22px 0 0}
-.how li::before{counter-increment:h;content:counter(h);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--bg-2);border:2px solid var(--pink);color:var(--pink-ink);font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:1.2rem;margin-bottom:12px;position:relative;z-index:1}
-.how li::after{content:"";position:absolute;left:44px;right:0;top:21px;border-top:2px dashed var(--line)}
-.how li:last-child::after{display:none}
-.how h3{font-size:1.2rem}
-.how p{color:var(--muted);margin-top:4px;font-size:.96rem}
-@media (max-width:820px){.modes{grid-template-columns:1fr}.how{grid-template-columns:1fr;gap:20px}.how li{padding:0 0 0 60px}.how li::before{position:absolute;left:0;top:-4px}.how li::after{display:none}}
+.cons-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.cons-grid > *{min-width:0}
+.steps{list-style:none;padding:0;margin:40px 0 0;position:relative;display:grid;gap:30px}
+.steps::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:1px;background:var(--accent);transform-origin:top;transform:scaleY(var(--s,1));transition:transform 1.6s var(--ease) .2s}
+.js .steps.rv:not(.in){--s:0}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:18px;position:relative}
+.steps li > *{min-width:0}
+.steps .n{width:44px;height:44px;border-radius:50%;border:1px solid var(--accent);background:var(--bg);display:grid;place-items:center;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.3rem;color:var(--accent-ink)}
+.steps h3{font-size:1.6rem;margin-top:6px}
+.steps p{color:var(--muted);margin-top:4px;font-size:.97rem}
+.note{margin-top:28px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.5rem;color:var(--accent-ink)}
+.modes{display:grid;gap:14px}
+.mode{border:1px solid var(--line);border-radius:24px;padding:clamp(20px,3vw,30px);background:var(--surface)}
+.mode .tag{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.mode h3{font-size:1.9rem;margin-top:8px}
+.mode p{color:var(--muted);margin-top:8px;font-size:.97rem}
+.mode .addr{color:var(--ink);font-weight:500}
+.mode .go{margin-top:16px}
+.when{margin-top:14px;border-radius:24px;padding:clamp(20px,3vw,30px);background:var(--bg-2)}
+.when h3{font-size:1.7rem}
+.when ul{list-style:none;padding:0;margin:14px 0 0;display:grid}
+.when li{padding:10px 0;border-top:1px solid var(--line);font-size:.96rem;display:grid;grid-template-columns:18px 1fr;gap:10px}
+.when li > *{min-width:0}
+.when li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:9px}
+@media (max-width:900px){.cons-grid{grid-template-columns:1fr}}
 
-/* nutrir geracoes */
-.ng{background:var(--bg-2);position:relative;overflow:hidden}
-.ng-head{display:grid;grid-template-columns:1fr .8fr;gap:24px;align-items:end}
-.ng-head > *{min-width:0}
-.ng-head .hand{font-size:clamp(1.5rem,3vw,2rem);color:var(--pink-ink);transform:rotate(-2deg)}
-.ng-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:38px}
-.ng-card{min-width:0;background:var(--surface);border-radius:28px;padding:clamp(20px,3vw,30px);border:1px solid var(--line);display:flex;flex-direction:column;gap:10px;transition:transform .2s}
-.ng-card:hover{transform:translateY(-3px)}
-.ng-card h3{font-size:1.4rem}
-.ng-card p{color:var(--muted);font-size:.97rem}
-.ng-card .ico{width:52px;height:52px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;color:var(--pink-ink)}
-.ng-card .ico svg{width:26px;height:26px}
-.ng-card .go{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--pink-ink);text-decoration:none}
-.ng-card .go svg{width:18px;height:18px}
-.ng-card .go:hover{text-decoration:underline}
-.ng-ebook{grid-column:span 4;grid-row:span 2;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(18px,3vw,32px);align-items:center;background:var(--pink-soft);border-color:transparent}
-.ng-ebook > *{min-width:0}
-.ng-ebook h3{font-size:clamp(1.6rem,3vw,2.2rem)}
-.ng-ebook .book{width:100%;max-width:240px;justify-self:center}
-.ng-ebook .txt-col{display:flex;flex-direction:column;gap:12px}
-.ng-ebook .btn{align-self:flex-start;margin-top:6px}
-.ng-com{grid-column:span 2}
-.ng-pod{grid-column:span 2;background:var(--deep);color:var(--on-deep);border-color:transparent}
-.ng-pod p{color:var(--on-deep-muted)}
-.ng-pod .ico{background:rgba(255,122,182,.18);color:var(--deep-pink)}
-.ng-pod .go{color:var(--deep-pink)}
-.ng-pod .wave{display:flex;gap:4px;align-items:center;height:30px}
-.ng-pod .wave i{display:block;width:5px;border-radius:3px;background:var(--deep-pink);opacity:.85}
-.ng-shop{grid-column:span 3}
-.ng-insta{grid-column:span 3;background:var(--leaf-soft);border-color:transparent}
-.ng-insta .ico{background:var(--surface);color:var(--leaf-ink)}
-.ng-insta .go{color:var(--leaf-ink)}
-.ng-insta .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
-.ng-insta .tags span{font-size:.82rem;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--surface);color:var(--leaf-ink)}
-@media (max-width:900px){.ng-ebook,.ng-com,.ng-pod,.ng-shop,.ng-insta{grid-column:1 / -1;grid-row:auto}.ng-head{grid-template-columns:1fr}}
-@media (max-width:560px){.ng-ebook{grid-template-columns:1fr}.ng-ebook .book{max-width:190px}}
-
-/* profissionais */
-.pro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,5vw,72px);align-items:start}
-.pro-grid > *{min-width:0}
-.titles{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.titles span{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.15rem;padding:6px 16px;border-radius:999px;border:1.5px solid var(--pink);color:var(--pink-ink)}
-.pro-list{list-style:none;padding:0;margin:0;display:grid;gap:0}
-.pro-list li{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
-.pro-list li:first-child{border-top:3px solid var(--ink)}
-.pro-list li > *{min-width:0}
-.pro-list .ic{width:56px;height:56px;border-radius:18px;background:var(--pink-soft);display:grid;place-items:center;color:var(--pink-ink)}
-.pro-list li:nth-child(even) .ic{background:var(--leaf-soft);color:var(--leaf-ink)}
-.pro-list .ic svg{width:26px;height:26px}
-.pro-list h3{font-size:1.3rem}
-.pro-list p{color:var(--muted);margin-top:4px;font-size:.97rem}
-.pro-list a{color:var(--pink-ink);font-weight:800}
-@media (max-width:860px){.pro-grid{grid-template-columns:1fr}}
+/* ecossistema */
+.eco{background:var(--bg-2);position:relative;overflow:hidden}
+.eco-head{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
+.eco-head > *{min-width:0}
+.eco-link{display:block;width:100%;height:60px;margin-top:48px;overflow:visible}
+.eco-link path{fill:none;stroke:var(--accent);stroke-width:1.2;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 2s var(--ease)}
+.js .eco-link.rv:not(.in) path{stroke-dashoffset:1}
+.eco-link circle{fill:var(--bg-2);stroke:var(--accent);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.eco-grid > *{min-width:0}
+.tilt{--rx:0deg;--ry:0deg;--mx:50%;--my:50%;position:relative;height:100%;display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3vw,32px);transform:perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));transition:transform .6s var(--ease);overflow:hidden;will-change:transform}
+.tilt::after{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at var(--mx) var(--my),color-mix(in srgb, var(--accent) 12%, transparent),transparent 60%);opacity:0;transition:opacity .5s;pointer-events:none}
+.tilt:hover::after{opacity:1}
+.tilt .tag{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.tilt h3{font-size:clamp(1.8rem,2.6vw,2.2rem)}
+.tilt p{color:var(--muted);font-size:.97rem}
+.tilt .go{margin-top:auto;padding-top:10px}
+.tilt .art{height:120px;display:flex;align-items:center;color:var(--ink)}
+.tilt .art svg{height:100%;width:auto}
+.tilt.dark{background:var(--deep);color:var(--on-deep);border-color:transparent}
+.tilt.dark .tag,.tilt.dark p{color:var(--on-deep-muted)}
+.tilt.dark h3 em{color:var(--deep-accent)}
+.tilt.dark .go{color:var(--deep-accent)}
+.bars-w{display:flex;align-items:center;gap:5px;height:120px}
+.bars-w i{display:block;width:4px;height:64px;border-radius:2px;background:var(--deep-accent);transform-origin:center;animation:wave 1.6s ease-in-out infinite}
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.more > *{min-width:0;padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.more h4{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:1.45rem}
+.more p{color:var(--muted);font-size:.93rem;margin:4px 0 10px}
+.pro{margin-top:44px;display:grid;grid-template-columns:auto 1fr;gap:20px 40px;align-items:start}
+.pro > *{min-width:0}
+.titles{display:flex;flex-wrap:wrap;gap:8px}
+.titles span{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.3rem;padding:4px 16px;border-radius:999px;border:1px solid var(--accent);color:var(--accent-ink)}
+.pro p{color:var(--muted);max-width:60ch}
+.pro p a{color:var(--accent-ink);font-weight:600}
+@media (max-width:900px){.eco-head{grid-template-columns:1fr}.eco-grid{grid-template-columns:1fr}.eco-link{display:none}.eco-grid{margin-top:40px}.more{grid-template-columns:1fr}.pro{grid-template-columns:1fr}}
 
 /* avaliacoes */
-.rev{background:var(--surface);border-block:1px solid var(--line)}
-.rev-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(24px,5vw,72px);align-items:start}
+.rev-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,6vw,96px);align-items:center}
 .rev-grid > *{min-width:0}
-.score{display:flex;align-items:flex-end;gap:16px;margin-top:22px;flex-wrap:wrap}
-.score .n{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:clamp(4.6rem,12vw,7.8rem);line-height:.85;color:var(--pink-ink)}
-.score .t{font-weight:700;color:var(--muted);padding-bottom:6px}
-.score .t .stars{display:flex;margin-bottom:4px}
-.quote-sum{margin-top:22px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.3rem;line-height:1.35;border-left:4px solid var(--leaf);padding-left:16px}
-.bars{display:grid;gap:16px}
-.bar{display:grid;grid-template-columns:96px 1fr 34px;gap:12px;align-items:center;font-weight:700;font-size:1rem}
+.score{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:26px}
+.score .big{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(6rem,18vw,11rem);line-height:.8;color:var(--accent-ink);letter-spacing:-.03em}
+.score .t{padding-bottom:10px;color:var(--muted)}
+.score .t b{display:block;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:2rem;color:var(--ink);line-height:1}
+.stars{display:flex;gap:3px;color:var(--accent);margin-bottom:8px}
+.stars svg{width:16px;height:16px}
+.quote-sum{margin-top:30px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.6rem;line-height:1.25;border-left:1px solid var(--accent);padding-left:20px;max-width:30ch}
+.bars{display:grid;gap:18px;margin-top:22px}
+.bar{display:grid;grid-template-columns:90px 1fr 34px;gap:14px;align-items:center;font-size:.98rem}
 .bar > *{min-width:0}
-.track{height:20px;border-radius:999px;background:var(--pink-soft);overflow:hidden}
-.fill{height:100%;border-radius:999px;background:var(--pink)}
-.bar:nth-child(even) .fill{background:var(--leaf)}
-.bar:nth-child(even) .track{background:var(--leaf-soft)}
+.track{height:6px;border-radius:999px;background:var(--line);overflow:hidden}
+.fill{display:block;height:100%;border-radius:999px;background:var(--accent);transform-origin:left;transform:scaleX(var(--w));transition:transform 1.4s var(--ease);transition-delay:calc(var(--i,0) * 120ms + .2s)}
+.js .rv:not(.in) .fill{transform:scaleX(0)}
 .bar .v{text-align:right;color:var(--muted)}
-.source{font-size:.82rem;color:var(--muted);margin-top:18px}
-.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.badge{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.88rem;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--muted)}
-.badge svg{width:17px;height:17px;color:var(--pink-ink);flex:none}
+.bars-t{font-size:1.6rem}
+.source{font-size:.8rem;color:var(--muted);margin-top:18px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.badge{font-size:.86rem;padding:6px 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
 @media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
 
 /* onde */
-.where-card{display:grid;grid-template-columns:1.1fr 1fr;border-radius:32px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
-.where-card > *{min-width:0}
-.where-info{padding:clamp(22px,4vw,44px)}
-.info-list{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:18px}
-.info-list li{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start}
-.info-list li > *{min-width:0}
-.info-list .ic{width:42px;height:42px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;color:var(--pink-ink)}
-.info-list .ic svg{width:20px;height:20px}
-.info-list b{display:block;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-.info-list .val{font-size:1.04rem;font-weight:700;line-height:1.45}
-.info-list .val small{display:block;font-weight:500;color:var(--muted);font-size:.9rem}
-.phone{user-select:all;-webkit-user-select:all;font-size:1.3rem;font-weight:800}
-.where-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-.where-art{position:relative;background:var(--pink-soft);min-height:320px}
-.where-art svg{position:absolute;inset:0;width:100%;height:100%}
-@media (max-width:860px){.where-card{grid-template-columns:1fr}.where-art{min-height:260px}}
+.where{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line);border-radius:32px;overflow:hidden;background:var(--surface)}
+.where > *{min-width:0}
+.where-info{padding:clamp(22px,4vw,48px)}
+.info{list-style:none;padding:0;margin:26px 0 0;display:grid}
+.info li{padding:14px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:110px 1fr;gap:12px}
+.info li > *{min-width:0}
+.info b{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.info small{display:block;color:var(--muted);font-size:.88rem}
+.where-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.where-art{background:var(--rose);display:grid;place-items:center;padding:24px;min-height:300px;color:var(--ink)}
+.where-art svg{width:100%;max-width:340px;height:auto}
+@media (max-width:860px){.where{grid-template-columns:1fr}.where-art{min-height:240px}}
+@media (max-width:420px){.info li{grid-template-columns:1fr;gap:2px}}
 
 /* faq */
-.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,64px)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px)}
 .faq-grid > *{min-width:0}
 details{border-bottom:1px solid var(--line)}
-details:first-of-type{border-top:3px solid var(--ink)}
-summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100;font-weight:700;font-size:1.18rem;line-height:1.28}
+details:first-of-type{border-top:1px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Instrument Serif',Georgia,serif;font-size:1.45rem;line-height:1.2}
 summary::-webkit-details-marker{display:none}
-summary .pm{flex:none;width:34px;height:34px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;color:var(--pink-ink);transition:transform .2s}
-summary .pm svg{width:14px;height:14px}
-details[open] summary .pm{transform:rotate(45deg);background:var(--pink);color:var(--on-btn)}
-details p{color:var(--muted);padding:0 0 20px;max-width:60ch}
-details p a{color:var(--pink-ink);font-weight:800}
+summary .pm{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--accent-ink);transition:transform .5s var(--ease),background-color .3s}
+summary .pm svg{width:13px;height:13px}
+details[open] summary .pm{transform:rotate(45deg);background:var(--accent-soft)}
+details p{color:var(--muted);padding:0 0 22px;max-width:60ch}
+details[open] p{animation:fadeUp .6s var(--ease) both}
+details p a{color:var(--accent-ink);font-weight:600}
 
 /* final */
-.final{background:var(--pink);color:var(--on-btn);position:relative;overflow:hidden}
-.final .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr auto;align-items:center;gap:28px}
+.final{background:var(--final);color:#fff6f9;position:relative;overflow:hidden}
+.final .wrap{position:relative;display:grid;grid-template-columns:1.2fr auto;gap:32px;align-items:end}
 .final .wrap > *{min-width:0}
-.final h2{font-size:clamp(2rem,5.4vw,3.6rem)}
-.final h2 em{color:var(--on-btn)}
-.final p{margin-top:12px;max-width:48ch;opacity:.95}
-.final-cta{display:flex;flex-wrap:wrap;gap:14px}
-.final .btn-wa{background:var(--on-btn);color:var(--pink-ink);box-shadow:0 10px 24px -12px rgba(0,0,0,.5)}
-.final .btn-wa:hover{background:var(--bg-2)}
-.final .btn-ghost{color:var(--on-btn);border-color:var(--on-btn)}
-.final .btn-ghost:hover{background:rgba(255,255,255,.12)}
-.final .deco{position:absolute;right:-40px;bottom:-50px;width:300px;opacity:.16;color:var(--on-btn);pointer-events:none}
-@media (max-width:760px){.final .wrap{grid-template-columns:1fr}}
+.final h2{font-size:clamp(2.6rem,7vw,5.2rem)}
+.final h2 em{color:#ffc7de}
+.final p{margin-top:16px;max-width:46ch;color:#f6d6e3}
+.final-cta{display:flex;flex-wrap:wrap;gap:12px}
+.final .btn-wa{background:#fff6f9;color:#8a1149}
+.final .btn-wa:hover{background:#ffe3ee}
+.final .btn-ghost{color:#fff6f9;border-color:rgba(255,246,249,.45)}
+.final .btn-ghost:hover{border-color:#fff6f9}
+.final-art{position:absolute;right:-60px;top:-40px;width:420px;opacity:.22;pointer-events:none;color:#fff6f9}
+@media (max-width:760px){.final .wrap{grid-template-columns:1fr}.final-art{width:280px;right:-80px}}
 
-footer{padding-block:32px 104px;font-size:.9rem;color:var(--muted)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center}
-footer .fbrand{font-family:'Fraunces',Georgia,serif;font-weight:700;color:var(--ink);font-size:1.12rem}
-footer .fbrand i{color:var(--pink-ink);font-weight:500}
-.seal{font-size:.8rem;opacity:.85;border:1px dashed var(--line);border-radius:999px;padding:6px 14px}
+footer{padding-block:36px 110px;font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-between;align-items:center}
+.fbrand{font-family:'Instrument Serif',Georgia,serif;font-size:1.4rem;color:var(--ink)}
+.fbrand i{color:var(--accent-ink)}
+.seal{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:6px 14px}
 
-.fab{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--btn);color:var(--on-btn);display:grid;place-items:center;box-shadow:0 14px 26px -10px rgba(0,0,0,.5);transition:transform .18s}
-.fab:hover{transform:translateY(-2px) scale(1.04)}
-.fab svg{width:30px;height:30px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.fab{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:35;width:58px;height:58px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;box-shadow:0 16px 30px -12px rgba(43,21,32,.55);transition:transform .5s var(--ease)}
+.fab:hover{transform:translateY(-3px)}
+.fab svg{width:28px;height:28px}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+  .js .rv:not(.in) .fill{transform:scaleX(var(--w))}
+  .js .steps.rv:not(.in){--s:1}
+  .js .eco-link.rv:not(.in) path{stroke-dashoffset:0}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.7L2.3 21.7l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.2Z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="4" y="5" width="16" height="10" rx="1.5"/><path d="M2 19h20"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9Z"/></symbol>
-    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
-    <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15Z"/><path d="M5 19l8-8"/></g></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.6"/></g></symbol>
-    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
-    <symbol id="i-heart-f" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z" fill="currentColor"/></symbol>
-    <symbol id="i-belly" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4.5" r="2"/><path d="M9.5 8c-1 4-1.3 8-1.5 13M12 8.5c4 1 6 3.5 6 6.3 0 2.7-2.4 3.7-5.5 3.7"/></g></symbol>
-    <symbol id="i-mom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="4.5" r="2"/><path d="M6.5 21c0-5 .5-9 2.5-12.5"/><path d="M8 11c2 3 6 3.5 9 1.5"/><circle cx="16.5" cy="9.5" r="2.2"/></g></symbol>
-    <symbol id="i-bowl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18a9 9 0 0 1-18 0Z"/><path d="M9 8c0-2 2-2 2-4M14 8c0-2 2-2 2-4"/></g></symbol>
-    <symbol id="i-video" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10.5 5-3v9l-5-3Z"/></g></symbol>
-    <symbol id="i-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></g></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14c3 0 5 2.2 5 5"/></g></symbol>
-    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 8h14l-1 13H6Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></g></symbol>
-    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></g></symbol>
-    <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/><path d="M6.5 11v4.5c1.5 1.5 3.5 2.3 5.5 2.3s4-.8 5.5-2.3V11M21.5 9v5"/></g></symbol>
-    <symbol id="i-board" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20l4-4 4 4M7 9h6M7 12h9"/></g></symbol>
-    <symbol id="i-speak" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3.5 20c0-3.6 2.5-6 5.5-6s5.5 2.4 5.5 6"/><path d="M17 6.5a4 4 0 0 1 0 5M19.5 4a7.5 7.5 0 0 1 0 10"/></g></symbol>
-    <symbol id="i-compass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></g></symbol>
-    <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="4" y="5" width="16" height="10" rx="1.5"/><path d="M2 19h20"/></g></symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-rainbow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 18a9.5 9.5 0 0 1 19 0"/><path d="M6 18a6 6 0 0 1 12 0"/><path d="M9.5 18a2.5 2.5 0 0 1 5 0"/></g></symbol>
-    <symbol id="i-sprout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 12C12 7 9 5 4 5c0 5 3 7 8 7Z"/><path d="M12 14c0-4 2.5-6 7-6 0 4-2.5 6-7 6Z"/></g></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="v-gest" viewBox="-70 -78 140 150"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="-2" cy="-52" r="12"/><path d="M-13 -57C-14 -70 4 -73 9 -62"/><circle cx="-15" cy="-63" r="5.5"/><path d="M-10 -40C-16 -20-20 6-14 30C-10 46-12 56-14 66"/><path d="M5 -41C6 -34 10 -28 14 -22C10 -16 8 -12 10 -6C30 2 38 24 30 40C24 50 12 52 6 54C6 58 6 62 6 66"/><path d="M-8 -30C-4 -10 2 4 18 14"/><path d="M24 22c-3-4-9-1-5 4l5 4 5-4c4-5-2-8-5-4Z" stroke="var(--accent)"/></g></symbol>
+    <symbol id="v-pos" viewBox="-70 -78 140 150"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="-16" cy="-50" r="12"/><path d="M-28 -50C-30 -66-6 -70-4 -54C-2 -44-2 -34 4 -28"/><path d="M-30 -38C-38 -10-38 30-32 66"/><path d="M-6 -36C2 -30 6 -22 6 -14"/><circle cx="14" cy="-14" r="9" stroke="var(--accent)"/><path d="M6 -6C18 -4 34 2 34 14C34 26 14 30 -4 24"/><path d="M-30 -24C-26 6-6 26 18 26C28 26 36 20 38 12"/><path d="M-4 24C0 40 4 54 6 66"/></g></symbol>
+    <symbol id="v-prato" viewBox="-70 -78 140 150"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="8" r="48"/><circle cx="0" cy="8" r="34" stroke="var(--accent)" stroke-dasharray="2 5"/><path d="M-16 6C-16 -6-4 -10 2 -8C2 4-8 10-16 6Z"/><path d="M-16 6L-4 -4"/><circle cx="12" cy="16" r="6"/><circle cx="-4" cy="24" r="5"/><circle cx="16" cy="0" r="4" stroke="var(--accent)"/><path d="M48 -30L28 -8"/><ellipse cx="52" cy="-36" rx="6" ry="9" transform="rotate(40 52 -36)"/></g></symbol>
   </defs>
 </svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Dayanna Queiroz, início">
       <span class="brand-name">Dayanna <i>Queiroz</i></span>
-      <small>Nutricionista materno infantil · PhD</small>
+      <small>Nutrição materno-infantil · PhD</small>
     </a>
     <nav class="top-nav" aria-label="Seções">
       <a href="#fases">Fases</a>
       <a href="#sua-fase">Sua fase</a>
+      <a href="#consulta">Consulta</a>
       <a href="#nutrir-geracoes">Nutrir Gerações</a>
-      <a href="#profissionais">Profissionais</a>
       <a href="#onde">Onde fica</a>
     </nav>
-    <a class="btn btn-wa" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar consulta</span><span class="sr">Agendar consulta pelo WhatsApp</span></a>
+    <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar consulta</span><span class="sr">Agendar consulta pelo WhatsApp</span></a>
   </div>
 </header>
 
 <main id="inicio">
   <section class="hero">
     <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <span class="rating-chip"><b class="num">5,0</b><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="num">191 avaliações no Google</span></span>
-        <h1>Nutrindo <em>gerações</em>.</h1>
-        <p class="who">Dra. Dayanna Queiroz <span>· Nutricionista materno infantil, PhD</span></p>
-        <p class="lead">Cuido da alimentação da mulher e do bebê nos momentos que mais pedem acolhimento: da barriga crescendo ao primeiro pratinho. Consulta presencial no Liv Mall, em João Pessoa, ou on-line, de onde você estiver.</p>
-        <div class="phase-pills" aria-label="Fases atendidas">
-          <span><svg aria-hidden="true"><use href="#i-belly"/></svg>Gestação</span>
-          <span><svg aria-hidden="true"><use href="#i-mom"/></svg>Pós-parto</span>
-          <span><svg aria-hidden="true"><use href="#i-bowl"/></svg>Introdução alimentar responsiva</span>
-        </div>
-        <div class="hero-cta">
-          <a class="btn btn-wa" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+      <div>
+        <span class="chip seq" style="animation-delay:.1s"><b><svg aria-hidden="true"><use href="#i-star"/></svg><span class="num" data-count="5" data-dec="1">5,0</span></b><span><span class="num" data-count="191">191</span> avaliações no Google</span></span>
+        <h1><span class="mask"><span>Nutrindo</span></span><span class="mask"><span><em>gerações.</em></span></span></h1>
+        <p class="who seq" style="animation-delay:.5s"><b>Dra. Dayanna Queiroz</b> <span>· nutricionista materno-infantil, PhD</span></p>
+        <p class="lead seq" style="animation-delay:.65s">Cuido da alimentação da mulher e do bebê nos momentos que mais pedem acolhimento: da barriga crescendo ao primeiro pratinho. Presencial no Liv Mall, em João Pessoa, ou on-line, de onde você estiver.</p>
+        <div class="hero-cta seq" style="animation-delay:.8s">
+          <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
           <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
         </div>
-        <div class="hero-facts">
+        <div class="facts seq" style="animation-delay:.95s">
           <span><svg aria-hidden="true"><use href="#i-pin"/></svg>Liv Mall · sala 421 · Jardim Oceania</span>
           <span><svg aria-hidden="true"><use href="#i-laptop"/></svg>Presencial ou on-line</span>
-          <span class="num"><svg aria-hidden="true"><use href="#i-phone"/></svg>(83) 99629-6511</span>
+          <span><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="phone num">(83) 99629-6511</span></span>
         </div>
       </div>
 
       <div class="hero-art">
-        <svg viewBox="0 0 560 470" role="img" aria-label="Ilustração: uma linha da vida em forma de ramo com folhas verdes liga três momentos. Uma gestante com a mão na barriga, uma mãe com o bebê no colo e um bebê na cadeirinha com um prato colorido.">
-          <path d="M40 250C40 120 160 40 300 50s230 90 230 200-90 200-250 200S40 380 40 250Z" fill="var(--pink-soft)"/>
-          <path class="vine" d="M30 430C90 420 70 330 120 300S230 300 250 230 300 110 360 130s60 120 110 150 70 40 70 40" fill="none" stroke="var(--leaf)" stroke-width="4" stroke-linecap="round"/>
-          <g fill="var(--leaf)">
-            <path class="leafy" d="M86 372c-14-4-22-16-20-30 14 2 24 14 20 30Z"/>
-            <path class="leafy l2" d="M206 276c4-14 18-22 32-18-4 14-18 22-32 18Z"/>
-            <path class="leafy l3" d="M318 118c-8-12-6-26 4-34 8 12 6 26-4 34Z"/>
-            <path class="leafy l4" d="M432 238c-14 2-26-6-30-20 14-2 26 6 30 20Z"/>
-            <path class="leafy" d="M512 300c-4-14 2-26 16-30 4 14-2 26-16 30Z"/>
-          </g>
-          <g fill="var(--pink)">
-            <use href="#i-heart-f" x="472" y="64" width="22" height="22" class="float"/>
-            <use href="#i-heart-f" x="40" y="140" width="16" height="16" class="float f2"/>
-            <use href="#i-heart-f" x="236" y="410" width="14" height="14" class="float f3"/>
-          </g>
-          <circle cx="182" cy="70" r="5" fill="var(--leaf)" opacity=".7"/>
-          <circle cx="520" cy="170" r="4" fill="var(--pink)" opacity=".6"/>
-          <g transform="translate(118 300)">
-            <circle r="86" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <circle r="74" fill="none" stroke="var(--pink)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
-            <path d="M-17 -30C-24 -8 -24 22 -28 60H30C27 40 40 30 40 8 40-8 27-14 15-18L12-30Z" fill="var(--pink)" stroke="var(--line-art)" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M-12 -12c18 2 34 8 40 20" fill="none" stroke="var(--on-btn)" stroke-width="2.5" stroke-linecap="round" opacity=".55"/>
-            <path d="M-3 -32v-8" stroke="var(--skin)" stroke-width="9" stroke-linecap="round"/>
-            <circle cx="-3" cy="-50" r="15" fill="var(--skin)" stroke="var(--line-art)" stroke-width="3"/>
-            <path d="M-18 -50a15 15 0 0 1 28-8c-6 2-14 2-20 6-2 4-4 6-8 2Z" fill="var(--hair)"/>
-            <circle cx="-20" cy="-60" r="8" fill="var(--hair)" stroke="var(--line-art)" stroke-width="2.5"/>
-            <path d="M2 -24C-2 -4 8 8 26 6" fill="none" stroke="var(--line-art)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M2 -24C-2 -4 8 8 26 6" fill="none" stroke="var(--skin)" stroke-width="7" stroke-linecap="round"/>
-            <use href="#i-heart-f" x="40" y="-40" width="18" height="18" style="color:var(--pink)"/>
-          </g>
-          <text x="118" y="420" text-anchor="middle" font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="28" fill="var(--pink-ink)">gestação</text>
-          <g transform="translate(286 176)">
-            <circle r="92" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <circle r="80" fill="none" stroke="var(--leaf)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
-            <path d="M-30 -28Q-12 -36 8 -30L24 22Q32 56 50 64H-52Q-42 30 -30 -28Z" fill="var(--leaf)" stroke="var(--line-art)" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M-12 -32v-8" stroke="var(--skin)" stroke-width="9" stroke-linecap="round"/>
-            <path d="M-30 -52c0-14 10-22 20-22s20 8 18 24c-2 10-2 22 4 30-14 0-22-8-24-16" fill="var(--hair)" stroke="var(--line-art)" stroke-width="2.5" stroke-linejoin="round"/>
-            <circle cx="-12" cy="-52" r="15" fill="var(--skin)" stroke="var(--line-art)" stroke-width="3"/>
-            <path d="M-27 -54a15 15 0 0 1 26-10c-4 6-14 8-22 10Z" fill="var(--hair)"/>
-            <g transform="rotate(-18 6 4)">
-              <ellipse cx="10" cy="6" rx="30" ry="17" fill="var(--blanket)" stroke="var(--line-art)" stroke-width="3"/>
-              <path d="M-6 0c10 8 26 10 40 6" fill="none" stroke="var(--pink)" stroke-width="2.5" stroke-linecap="round"/>
+        <svg viewBox="0 0 560 490" role="img" aria-label="Ilustração em traço fino: um fio contínuo liga três momentos, uma gestante, uma mãe com o bebê no colo e o primeiro pratinho do bebê.">
+          <path class="dr" style="--d:.2s" pathLength="1" d="M6 440C60 446 50 330 128 318S200 160 290 150S380 330 448 322S540 230 556 190" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-linecap="round"/>
+          <g transform="translate(128 318)">
+            <circle r="92" fill="var(--bg-2)" stroke="var(--line)"/>
+            <circle class="ring" r="80" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="1 9" stroke-linecap="round" opacity=".7"/>
+            <g transform="scale(1.12)" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle class="dr" style="--d:.7s" pathLength="1" cx="-2" cy="-52" r="12"/>
+              <path class="dr" style="--d:.8s" pathLength="1" d="M-13 -57C-14 -70 4 -73 9 -62"/>
+              <circle class="dr" style="--d:.8s" pathLength="1" cx="-15" cy="-63" r="5.5"/>
+              <path class="dr" style="--d:.9s" pathLength="1" d="M-10 -40C-16 -20-20 6-14 30C-10 46-12 56-14 66"/>
+              <path class="dr" style="--d:.9s" pathLength="1" d="M5 -41C6 -34 10 -28 14 -22C10 -16 8 -12 10 -6C30 2 38 24 30 40C24 50 12 52 6 54C6 58 6 62 6 66"/>
+              <path class="dr" style="--d:1.1s" pathLength="1" d="M-8 -30C-4 -10 2 4 18 14"/>
+              <path class="dr" style="--d:1.4s" pathLength="1" d="M24 22c-3-4-9-1-5 4l5 4 5-4c4-5-2-8-5-4Z" stroke="var(--accent)"/>
             </g>
-            <circle cx="-14" cy="-10" r="11" fill="var(--skin)" stroke="var(--line-art)" stroke-width="2.5"/>
-            <path d="M-20 -19c4-3 9-3 12 0" fill="none" stroke="var(--hair)" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M-26 -24C-40 10 4 30 36 8" fill="none" stroke="var(--line-art)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M-26 -24C-40 10 4 30 36 8" fill="none" stroke="var(--skin)" stroke-width="7" stroke-linecap="round"/>
-            <use href="#i-heart-f" x="34" y="-56" width="20" height="20" style="color:var(--pink)"/>
           </g>
-          <text x="286" y="300" text-anchor="middle" font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="28" fill="var(--leaf-ink)">pós-parto</text>
-          <g transform="translate(450 330)">
-            <circle r="86" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <circle r="74" fill="none" stroke="var(--pink)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
-            <path d="M-30 10L-42 62M30 10L42 62M-36 42H36" stroke="var(--line-art)" stroke-width="5" stroke-linecap="round"/>
-            <rect x="-32" y="-52" width="64" height="66" rx="20" fill="var(--leaf-soft)" stroke="var(--line-art)" stroke-width="3"/>
-            <circle cx="0" cy="-30" r="15" fill="var(--skin)" stroke="var(--line-art)" stroke-width="3"/>
-            <path d="M-4 -45c2-6 8-6 10-2" fill="none" stroke="var(--hair)" stroke-width="3" stroke-linecap="round"/>
-            <rect x="-15" y="-16" width="30" height="24" rx="10" fill="var(--pink)" stroke="var(--line-art)" stroke-width="3"/>
-            <path d="M-8 -14q8 8 16 0" fill="none" stroke="var(--on-btn)" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-            <path d="M-22 -2l-8 -16" stroke="var(--skin-2)" stroke-width="3" stroke-linecap="round"/>
-            <ellipse cx="-31" cy="-21" rx="4" ry="5" fill="var(--food-orange)"/>
-            <rect x="-50" y="2" width="100" height="11" rx="5.5" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3"/>
-            <ellipse cx="18" cy="0" rx="24" ry="7" fill="var(--blanket)" stroke="var(--line-art)" stroke-width="2.5"/>
-            <circle cx="8" cy="-3" r="5" fill="var(--food-orange)"/>
-            <circle cx="17" cy="-5" r="4" fill="var(--food-green)"/>
-            <circle cx="21" cy="-8" r="3" fill="var(--food-green)"/>
-            <circle cx="27" cy="-3" r="4" fill="var(--food-red)"/>
-            <circle cx="33" cy="-2" r="3" fill="var(--food-yellow)"/>
+          <g transform="translate(290 150)">
+            <circle r="100" fill="var(--bg-2)" stroke="var(--line)"/>
+            <circle class="ring r2" r="88" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="1 9" stroke-linecap="round" opacity=".7"/>
+            <g transform="scale(1.2)" fill="none" stroke="var(--ink)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <circle class="dr" style="--d:1.1s" pathLength="1" cx="-16" cy="-50" r="12"/>
+              <path class="dr" style="--d:1.2s" pathLength="1" d="M-28 -50C-30 -66-6 -70-4 -54C-2 -44-2 -34 4 -28"/>
+              <path class="dr" style="--d:1.3s" pathLength="1" d="M-30 -38C-38 -10-38 30-32 66"/>
+              <path class="dr" style="--d:1.3s" pathLength="1" d="M-6 -36C2 -30 6 -22 6 -14"/>
+              <circle class="dr" style="--d:1.5s" pathLength="1" cx="14" cy="-14" r="9" stroke="var(--accent)"/>
+              <path class="dr" style="--d:1.5s" pathLength="1" d="M6 -6C18 -4 34 2 34 14C34 26 14 30 -4 24"/>
+              <path class="dr" style="--d:1.6s" pathLength="1" d="M-30 -24C-26 6-6 26 18 26C28 26 36 20 38 12"/>
+              <path class="dr" style="--d:1.7s" pathLength="1" d="M-4 24C0 40 4 54 6 66"/>
+            </g>
           </g>
-          <text x="440" y="452" text-anchor="middle" font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="26" fill="var(--pink-ink)">primeiro pratinho</text>
+          <g transform="translate(448 322)">
+            <circle r="92" fill="var(--bg-2)" stroke="var(--line)"/>
+            <circle class="ring" r="80" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="1 9" stroke-linecap="round" opacity=".7"/>
+            <g transform="scale(1.08)" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle class="dr" style="--d:1.5s" pathLength="1" cx="0" cy="8" r="48"/>
+              <circle class="dr" style="--d:1.7s" pathLength="1" cx="0" cy="8" r="34" stroke="var(--accent)" stroke-dasharray="2 5"/>
+              <path class="dr" style="--d:1.8s" pathLength="1" d="M-16 6C-16 -6-4 -10 2 -8C2 4-8 10-16 6Z"/>
+              <path class="dr" style="--d:1.9s" pathLength="1" d="M-16 6L-4 -4"/>
+              <circle class="dr" style="--d:1.9s" pathLength="1" cx="12" cy="16" r="6"/>
+              <circle class="dr" style="--d:2s" pathLength="1" cx="-4" cy="24" r="5"/>
+              <circle class="dr" style="--d:2s" pathLength="1" cx="16" cy="0" r="4" stroke="var(--accent)"/>
+              <path class="dr" style="--d:2.1s" pathLength="1" d="M48 -30L28 -8"/>
+              <ellipse class="dr" style="--d:2.1s" pathLength="1" cx="52" cy="-36" rx="6" ry="9" transform="rotate(40 52 -36)"/>
+            </g>
+          </g>
+          <g font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="25" fill="var(--accent-ink)" text-anchor="middle">
+            <text class="lbl-art" style="--d:1.6s" x="128" y="440">gestação</text>
+            <text class="lbl-art" style="--d:1.9s" x="290" y="282">pós-parto</text>
+            <text class="lbl-art" style="--d:2.3s" x="448" y="444">primeiro pratinho</text>
+          </g>
+          <g fill="var(--accent)">
+            <circle class="floaty" cx="470" cy="80" r="4" opacity=".6"/>
+            <circle class="floaty f2" cx="60" cy="150" r="3" opacity=".5"/>
+            <circle class="floaty f3" cx="230" cy="420" r="3.5" opacity=".5"/>
+          </g>
         </svg>
       </div>
     </div>
   </section>
 
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-track">
+      <span>Gestação</span><span><i>Pós-parto</i></span><span>Introdução alimentar responsiva</span><span><i>Pós-graduação</i></span><span>Podcast Nutrir Gerações</span><span><i>E-book de receitas</i></span>
+      <span>Gestação</span><span><i>Pós-parto</i></span><span>Introdução alimentar responsiva</span><span><i>Pós-graduação</i></span><span>Podcast Nutrir Gerações</span><span><i>E-book de receitas</i></span>
+    </div>
+  </div>
+
   <section id="fases">
     <div class="wrap">
-      <div class="phases-head">
-        <div>
-          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-leaf"/></svg>Gestação · Pós-parto · Introdução alimentar</span>
-          <h2 class="h2">Uma linha da vida, <em>três momentos</em> de cuidado</h2>
-          <p class="lead">Cada fase tem perguntas próprias. Na consulta, a gente olha para a sua rotina, o seu momento e o seu bebê, e monta junto um caminho possível para a sua família.</p>
+      <div class="fases-head">
+        <div class="rv">
+          <span class="eyebrow">Três momentos, um fio</span>
+          <h2 class="h2">Da barriga ao <em>primeiro pratinho</em></h2>
         </div>
-        <p class="hand" aria-hidden="true">da barriga ao pratinho</p>
+        <p class="lead rv" style="--i:1">Cada fase tem perguntas próprias. Na consulta, a gente olha para a sua rotina, o seu momento e o seu bebê, e monta junto um caminho possível para a sua família.</p>
       </div>
 
-      <ol class="phases">
-        <li class="phase phase-1">
-          <span class="n">1</span>
-          <h3>Gestação</h3>
-          <p class="sub">Comer bem enquanto o bebê cresce, com orientação clara para cada etapa.</p>
-          <ul>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alimentação ao longo dos trimestres, adaptada à sua rotina</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Orientação alimentar quando há diabetes na gravidez, junto com o seu pré-natal</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Enjoos, azia e outros desconfortos comuns da fase</span></li>
-          </ul>
-        </li>
-        <li class="phase phase-2">
-          <span class="n">2</span>
-          <h3>Pós-parto</h3>
-          <p class="sub">O bebê chegou e a sua alimentação também merece cuidado. Sem cobrança, sem dieta da moda.</p>
-          <ul>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alimentação que cabe na rotina com um recém-nascido</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nutrição durante a amamentação</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Energia e bem-estar no puerpério</span></li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Retomar a sua alimentação com calma, respeitando o seu tempo</span></li>
-          </ul>
-        </li>
-        <li class="phase phase-3">
-          <div>
-            <span class="n">3</span>
-            <h3>Introdução alimentar responsiva</h3>
-            <p class="sub">A partir dos 6 meses, o bebê começa a descobrir a comida. A família aprende junto.</p>
-            <ul>
-              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Como começar e o que oferecer nos primeiros pratinhos</span></li>
-              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Variedade de alimentos, cores e texturas</span></li>
-              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Receitinhas práticas para o dia a dia da família</span></li>
-              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Momento da refeição mais tranquilo para todo mundo</span></li>
-            </ul>
-          </div>
-          <div class="resp">
-            <b>O que é ser “responsiva”?</b>
-            <p>É olhar para os sinais do bebê: perceber quando ele tem fome e quando está satisfeito, sem forçar e sem pressa. A refeição vira um momento de descoberta e de vínculo, e não uma briga à mesa.</p>
-          </div>
-        </li>
-      </ol>
+      <div class="thread-wrap" id="fio-wrap">
+        <svg class="thread" viewBox="0 0 80 1000" preserveAspectRatio="none" aria-hidden="true">
+          <path class="t-bg" d="M40 0C52 120 28 220 40 340S52 560 40 680S28 900 40 1000"/>
+          <path class="t-fg" id="fio" pathLength="1" d="M40 0C52 120 28 220 40 340S52 560 40 680S28 900 40 1000"/>
+        </svg>
+        <ol class="fase-list">
+          <li class="fase rv">
+            <span class="node" aria-hidden="true"></span>
+            <span class="fase-num">01</span>
+            <div>
+              <h3>Gestação</h3>
+              <p class="sub">Comer bem enquanto o bebê cresce, com orientação clara para cada etapa.</p>
+              <ul>
+                <li><span>Alimentação ao longo dos trimestres, adaptada à sua rotina</span></li>
+                <li><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
+                <li><span>Orientação alimentar quando há diabetes na gravidez, junto com o seu pré-natal</span></li>
+                <li><span>Enjoos, azia e outros desconfortos comuns da fase</span></li>
+              </ul>
+            </div>
+            <div class="fase-art" aria-hidden="true"><svg viewBox="0 0 140 150"><use href="#v-gest"/></svg></div>
+          </li>
+          <li class="fase rv">
+            <span class="node" aria-hidden="true"></span>
+            <span class="fase-num">02</span>
+            <div>
+              <h3>Pós-parto</h3>
+              <p class="sub">O bebê chegou e a sua alimentação também merece cuidado. Sem cobrança, sem dieta da moda.</p>
+              <ul>
+                <li><span>Alimentação que cabe na rotina com um recém-nascido</span></li>
+                <li><span>Nutrição durante a amamentação</span></li>
+                <li><span>Energia e bem-estar no puerpério</span></li>
+                <li><span>Retomar a sua alimentação com calma, respeitando o seu tempo</span></li>
+              </ul>
+            </div>
+            <div class="fase-art" aria-hidden="true"><svg viewBox="0 0 140 150"><use href="#v-pos"/></svg></div>
+          </li>
+          <li class="fase rv">
+            <span class="node" aria-hidden="true"></span>
+            <span class="fase-num">03</span>
+            <div>
+              <h3>Introdução alimentar <em>responsiva</em></h3>
+              <p class="sub">A partir dos 6 meses, o bebê começa a descobrir a comida. A família aprende junto.</p>
+              <ul>
+                <li><span>Como começar e o que oferecer nos primeiros pratinhos</span></li>
+                <li><span>Variedade de alimentos, cores e texturas</span></li>
+                <li><span>Receitinhas práticas para o dia a dia da família</span></li>
+                <li><span>Momento da refeição mais tranquilo para todo mundo</span></li>
+              </ul>
+              <div class="resp">
+                <b>O que é ser “responsiva”?</b>
+                <p>É olhar para os sinais do bebê: perceber quando ele tem fome e quando está satisfeito, sem forçar e sem pressa. A refeição vira um momento de descoberta e de vínculo, e não uma briga à mesa.</p>
+              </div>
+            </div>
+            <div class="fase-art" aria-hidden="true"><svg viewBox="0 0 140 150"><use href="#v-prato"/></svg></div>
+          </li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <section class="quiz" id="sua-fase">
-    <div class="wrap quiz-grid">
-      <div>
-        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-compass"/></svg>Em que fase você está?</span>
-        <h2 class="h2">Conte o seu momento e <em>a mensagem sai pronta</em>.</h2>
-        <p class="lead">Escolha a sua fase e veja o que a consulta costuma abordar nela. Depois é só conferir o texto e enviar pelo WhatsApp.</p>
-        <ul class="quiz-side">
-          <li><span class="ic" aria-hidden="true"><svg><use href="#i-heart"/></svg></span><div><b>Sem cadastro</b><span>Nada fica salvo neste site. A mensagem só vai quando você toca em enviar.</span></div></li>
-          <li><span class="ic" aria-hidden="true"><svg><use href="#i-laptop"/></svg></span><div><b>Presencial ou on-line</b><span>Diga como prefere e o restante é combinado pelo WhatsApp.</span></div></li>
-          <li><span class="ic" aria-hidden="true"><svg><use href="#i-sprout"/></svg></span><div><b>Cada família é uma</b><span>Os temas abaixo são um resumo geral. O que entra na sua consulta é definido com a Dra. Dayanna.</span></div></li>
+  <section class="sel" id="sua-fase">
+    <div class="wrap sel-grid">
+      <div class="rv">
+        <span class="eyebrow">Em que fase você está?</span>
+        <h2 class="h2">Escolha o seu momento. <em>A mensagem sai pronta.</em></h2>
+        <p class="lead">Veja o que a consulta costuma abordar na sua fase. Depois é só conferir o texto e enviar pelo WhatsApp.</p>
+        <ul class="side">
+          <li><b>Sem cadastro</b><span>Nada fica salvo neste site. A mensagem só vai quando você toca em enviar.</span></li>
+          <li><b>Presencial ou on-line</b><span>Diga como prefere e o restante é combinado pelo WhatsApp.</span></li>
+          <li><b>Cada família é uma</b><span>Os temas são um resumo geral. O que entra na sua consulta é definido com a Dra. Dayanna.</span></li>
         </ul>
       </div>
 
-      <form class="card" id="fase-form" aria-labelledby="fase-titulo" novalidate>
-        <h3 id="fase-titulo">Minha fase agora</h3>
-
-        <fieldset class="fs">
-          <legend>Eu estou…</legend>
-          <div class="big-choices">
-            <label><input type="radio" name="fase" value="gestante"><span class="opt"><svg aria-hidden="true"><use href="#i-belly"/></svg>Gestante<small>esperando o bebê</small></span></label>
-            <label><input type="radio" name="fase" value="posparto"><span class="opt"><svg aria-hidden="true"><use href="#i-mom"/></svg>No pós-parto<small>o bebê já chegou</small></span></label>
-            <label><input type="radio" name="fase" value="bebe"><span class="opt"><svg aria-hidden="true"><use href="#i-bowl"/></svg>Com bebê começando a comer<small>introdução alimentar</small></span></label>
+      <form class="card rv" style="--i:1" id="fase-form" aria-label="Minha fase agora" novalidate>
+        <fieldset>
+          <legend class="sr">Eu estou</legend>
+          <div class="seg" id="seg">
+            <label><input type="radio" name="fase" value="gestante" checked><span>Gestante<small>esperando o bebê</small></span></label>
+            <label><input type="radio" name="fase" value="posparto"><span>Pós-parto<small>o bebê chegou</small></span></label>
+            <label><input type="radio" name="fase" value="bebe"><span>Introdução<small>alimentar</small></span></label>
           </div>
         </fieldset>
 
-        <div class="fs extra" id="x-semanas" hidden>
-          <label class="lbl" for="semanas">Semanas de gestação <span>(opcional)</span></label>
-          <input class="txt num" id="semanas" type="number" inputmode="numeric" min="1" max="42" placeholder="Ex.: 20">
+        <div class="panel" data-p="gestante">
+          <div class="p-head">
+            <div><h3>Na <em>gestação</em></h3><p>A consulta costuma abordar:</p></div>
+            <svg viewBox="0 0 140 150" aria-hidden="true"><use href="#v-gest"/></svg>
+          </div>
+          <ul>
+            <li><span>Alimentação ao longo dos trimestres, dentro da sua rotina</span></li>
+            <li><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
+            <li><span>Enjoos, azia e outros desconfortos comuns</span></li>
+            <li><span>Orientação alimentar quando há diabetes na gravidez, junto com o pré-natal</span></li>
+          </ul>
+          <div class="fld">
+            <label class="fld-l" for="semanas">Semanas de gestação <span>(opcional)</span></label>
+            <input class="txt num" id="semanas" type="number" inputmode="numeric" min="1" max="42" placeholder="Ex.: 20">
+            <span class="tri" id="tri"></span>
+          </div>
         </div>
-        <div class="fs extra" id="x-meses" hidden>
-          <label class="lbl" for="meses">Idade do bebê, em meses <span>(opcional)</span></label>
-          <input class="txt num" id="meses" type="number" inputmode="numeric" min="0" max="36" placeholder="Ex.: 6">
+
+        <div class="panel" data-p="posparto">
+          <div class="p-head">
+            <div><h3>No <em>pós-parto</em></h3><p>A consulta costuma abordar:</p></div>
+            <svg viewBox="0 0 140 150" aria-hidden="true"><use href="#v-pos"/></svg>
+          </div>
+          <ul>
+            <li><span>Alimentação que cabe na rotina com o bebê</span></li>
+            <li><span>Nutrição durante a amamentação</span></li>
+            <li><span>Energia e bem-estar no puerpério</span></li>
+            <li><span>Retomar a sua alimentação com calma, no seu tempo</span></li>
+          </ul>
+        </div>
+
+        <div class="panel" data-p="bebe">
+          <div class="p-head">
+            <div><h3>Na <em>introdução alimentar</em></h3><p>A consulta costuma abordar:</p></div>
+            <svg viewBox="0 0 140 150" aria-hidden="true"><use href="#v-prato"/></svg>
+          </div>
+          <ul>
+            <li><span>Como começar a introdução alimentar de forma responsiva</span></li>
+            <li><span>Sinais de fome e de saciedade do bebê</span></li>
+            <li><span>Variedade de alimentos, cores e texturas</span></li>
+            <li><span>Receitinhas práticas para o dia a dia da família</span></li>
+          </ul>
+          <div class="fld">
+            <label class="fld-l" for="meses">Idade do bebê, em meses <span>(opcional)</span></label>
+            <input class="txt num" id="meses" type="number" inputmode="numeric" min="0" max="36" placeholder="Ex.: 6">
+            <p class="tip" id="tip"></p>
+          </div>
         </div>
 
         <div class="row2">
-          <fieldset class="fs">
-            <legend>Prefiro consulta</legend>
-            <div class="chips">
-              <label class="chip"><input type="radio" name="modo" value="presencial, no Liv Mall"><span>Presencial</span></label>
-              <label class="chip"><input type="radio" name="modo" value="on-line"><span>On-line</span></label>
-              <label class="chip"><input type="radio" name="modo" value=""><span>Ainda não sei</span></label>
+          <fieldset class="fld">
+            <legend class="fld-l">Prefiro consulta</legend>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="modo" value="presencial, no Liv Mall"><span>Presencial</span></label>
+              <label class="pill"><input type="radio" name="modo" value="on-line"><span>On-line</span></label>
+              <label class="pill"><input type="radio" name="modo" value=""><span>Ainda não sei</span></label>
             </div>
           </fieldset>
-          <div class="fs">
-            <label class="lbl" for="nome">Seu nome <span>(opcional)</span></label>
+          <div class="fld">
+            <label class="fld-l" for="nome">Seu nome <span>(opcional)</span></label>
             <input class="txt" id="nome" type="text" maxlength="40" autocomplete="off" placeholder="Ex.: Mariana">
           </div>
         </div>
 
-        <div class="result empty" id="resultado" aria-live="polite">Escolha uma fase acima para ver o que a consulta costuma abordar.</div>
-
-        <div class="preview" id="preview" aria-live="polite"></div>
+        <div class="preview" id="preview" aria-live="polite"><b>Sua mensagem</b>Olá, Dra. Dayanna! Vim pelo seu site e gostaria de agendar uma consulta.</div>
         <div class="card-actions">
-          <a class="btn btn-wa" id="enviar" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar pelo WhatsApp</a>
+          <a class="btn btn-wa mag" id="enviar" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar pelo WhatsApp</a>
           <button class="linkbtn" type="button" id="limpar">Recomeçar</button>
         </div>
-        <p class="disclaimer">Este resumo é informativo e não substitui a consulta.</p>
+        <p class="disc">Este resumo é informativo e não substitui a consulta.</p>
       </form>
     </div>
   </section>
 
   <section id="consulta">
-    <div class="wrap">
-      <span class="eyebrow"><svg aria-hidden="true"><use href="#i-heart"/></svg>Consulta</span>
-      <h2 class="h2">Presencial no Liv Mall <em>ou on-line</em></h2>
-      <p class="lead">Você escolhe o formato que funciona melhor para a sua rotina, para a barriga ou para o bebê no colo.</p>
-
+    <div class="wrap cons-grid">
+      <div>
+        <div class="rv">
+          <span class="eyebrow">A primeira consulta</span>
+          <h2 class="h2">Como funciona, <em>passo a passo</em></h2>
+          <p class="lead">Você escolhe o formato que funciona melhor para a sua rotina, para a barriga ou para o bebê no colo.</p>
+        </div>
+        <ol class="steps rv" style="--i:1">
+          <li><span class="n">1</span><div><h3>Você chama no WhatsApp</h3><p>Conte a sua fase e se prefere presencial ou on-line.</p></div></li>
+          <li><span class="n">2</span><div><h3>Combinamos dia e horário</h3><p>Dia, horário, valores e demais detalhes são combinados por lá.</p></div></li>
+          <li><span class="n">3</span><div><h3>A consulta</h3><p>Um tempo para falar da sua rotina, das suas dúvidas e do seu bebê, e montar junto um caminho possível para a sua família.</p></div></li>
+        </ol>
+        <p class="note rv" style="--i:2">Os detalhes eu explico pelo WhatsApp.</p>
+      </div>
       <div class="modes">
-        <article class="mode mode-in">
-          <svg class="deco" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+        <article class="mode rv">
           <span class="tag">Presencial</span>
           <h3>No consultório, em João Pessoa</h3>
-          <p>Atendimento no Liv Mall, no Jardim Oceania.</p>
-          <p class="addr">Av. Gov. Flávio Ribeiro Coutinho, 500<br>Sala 421, 4º andar · Jardim Oceania</p>
-          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+          <p class="addr">Liv Mall · Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar · Jardim Oceania</p>
+          <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener">Como chegar<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </article>
-        <article class="mode mode-on">
+        <article class="mode rv" style="--i:1">
           <span class="tag">On-line</span>
           <h3>De onde você estiver</h3>
           <p>Para quem mora em outra cidade, está nas últimas semanas da gestação ou prefere não sair com o bebê pequeno.</p>
-          <svg class="screen" viewBox="0 0 300 150" aria-hidden="true">
-            <rect x="40" y="8" width="220" height="118" rx="12" fill="var(--bg-2)" stroke="var(--line-art)" stroke-width="3"/>
-            <rect x="54" y="22" width="122" height="90" rx="8" fill="var(--pink-soft)"/>
-            <circle cx="115" cy="58" r="14" fill="var(--skin)"/>
-            <path d="M101 52a14 14 0 0 1 26-6c-6 3-16 3-26 6Z" fill="var(--hair)"/>
-            <path d="M90 112c2-20 12-30 25-30s23 10 25 30Z" fill="var(--pink)"/>
-            <rect x="186" y="22" width="60" height="42" rx="8" fill="var(--leaf-soft)"/>
-            <circle cx="216" cy="38" r="8" fill="var(--skin)"/>
-            <path d="M204 64c1-9 6-14 12-14s11 5 12 14Z" fill="var(--leaf)"/>
-            <rect x="186" y="72" width="60" height="8" rx="4" fill="var(--line)"/>
-            <rect x="186" y="86" width="42" height="8" rx="4" fill="var(--line)"/>
-            <path d="M20 134h260" stroke="var(--line-art)" stroke-width="5" stroke-linecap="round"/>
-          </svg>
         </article>
-      </div>
-
-      <ol class="how">
-        <li><h3>Chame no WhatsApp</h3><p>Conte a sua fase e se prefere presencial ou on-line.</p></li>
-        <li><h3>Combine o horário</h3><p>Dia, horário e demais detalhes são combinados pelo WhatsApp.</p></li>
-        <li><h3>Consulta</h3><p>Um tempo para falar da sua rotina, das suas dúvidas e do seu bebê.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="ng" id="nutrir-geracoes">
-    <div class="wrap">
-      <div class="ng-head">
-        <div>
-          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sprout"/></svg>Nutrir Gerações</span>
-          <h2 class="h2">Tudo o que eu compartilho, <em>num lugar só</em></h2>
-          <p class="lead">Além da consulta, tem comunidade, podcast, e-book de receitas e indicações. Para receber qualquer um deles, é só pedir no WhatsApp.</p>
+        <div class="when rv" style="--i:2">
+          <h3>Quando <em>procurar</em></h3>
+          <ul>
+            <li><span>Você está grávida e quer orientação para comer bem ao longo dos trimestres</span></li>
+            <li><span>Há diabetes na gravidez e você quer orientação alimentar junto com o pré-natal</span></li>
+            <li><span>O bebê chegou e você quer cuidar da sua alimentação na amamentação</span></li>
+            <li><span>O bebê está chegando aos 6 meses e a família quer se preparar para a introdução alimentar</span></li>
+          </ul>
         </div>
-        <p class="hand" aria-hidden="true">comunidade, receitas e conversa boa</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="eco" id="nutrir-geracoes">
+    <div class="wrap">
+      <div class="eco-head">
+        <div class="rv">
+          <span class="eyebrow">Nutrir Gerações</span>
+          <h2 class="h2">Consulta, pós, podcast e <span style="white-space:nowrap">e-book.</span> <em>Tudo num lugar só.</em></h2>
+        </div>
+        <p class="lead rv" style="--i:1">Além do consultório, a Dra. Dayanna ensina, conversa e compartilha receitas. Aqui você encontra cada frente e pede o que quiser pelo WhatsApp.</p>
       </div>
 
-      <div class="ng-grid">
-        <article class="ng-card ng-ebook">
-          <svg class="book" viewBox="0 0 220 260" aria-hidden="true">
-            <rect x="34" y="20" width="160" height="220" rx="14" fill="var(--deep)" opacity=".18" transform="translate(8 8)"/>
-            <rect x="34" y="20" width="160" height="220" rx="14" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <rect x="34" y="20" width="20" height="220" rx="8" fill="var(--pink)"/>
-            <text x="124" y="72" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="44" fill="var(--pink-ink)">100</text>
-            <text x="124" y="96" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="13" letter-spacing="2" fill="var(--ink)">RECEITAS</text>
-            <path d="M80 164h88a44 44 0 0 1-88 0Z" fill="var(--pink-soft)" stroke="var(--line-art)" stroke-width="3"/>
-            <circle cx="104" cy="158" r="9" fill="var(--food-orange)"/>
-            <circle cx="122" cy="154" r="8" fill="var(--food-green)"/>
-            <circle cx="132" cy="160" r="6" fill="var(--food-green)"/>
-            <circle cx="146" cy="158" r="8" fill="var(--food-red)"/>
-            <circle cx="114" cy="162" r="5" fill="var(--food-yellow)"/>
-            <path d="M174 134l-20 28" stroke="var(--line-art)" stroke-width="4" stroke-linecap="round"/>
-            <ellipse cx="177" cy="129" rx="6" ry="9" transform="rotate(35 177 129)" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3"/>
-            <text x="124" y="226" text-anchor="middle" font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="20" fill="var(--leaf-ink)">introdução alimentar</text>
-          </svg>
-          <div class="txt-col">
-            <span class="eyebrow" style="color:var(--pink-ink)">E-book</span>
-            <h3>100 receitas para iniciar a introdução alimentar</h3>
-            <p>Ideias de pratinhos para os primeiros meses de comida de verdade. Pergunte pelo e-book no WhatsApp e receba as informações.</p>
-            <a class="btn btn-wa" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber mais sobre o e-book 100 receitas para iniciar a introdução alimentar." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir o e-book no WhatsApp</a>
-          </div>
-        </article>
+      <svg class="eco-link rv" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+        <path pathLength="1" d="M0 30C80 30 100 50 166 50S250 10 500 10 834 50 834 50 920 30 1000 30"/>
+        <circle cx="166" cy="50" r="6"/><circle cx="500" cy="10" r="6"/><circle cx="834" cy="50" r="6"/>
+      </svg>
 
-        <article class="ng-card ng-com">
-          <span class="ico" aria-hidden="true"><svg><use href="#i-users"/></svg></span>
-          <h3>Comunidade Nutrir Gerações</h3>
-          <p>A comunidade da Dra. Dayanna está com lista de espera. Peça para entrar e ser avisada.</p>
+      <div class="eco-grid">
+        <div class="rv">
+          <article class="tilt">
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 120 100"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 60 18l50 22-50 22Z"/><path d="M28 48v20c9 8 20 11 32 11s23-3 32-11V48"/><path d="M110 40v26" stroke="var(--accent)"/><circle cx="110" cy="70" r="3" stroke="var(--accent)"/></g></svg>
+            </div>
+            <span class="tag">Para profissionais</span>
+            <h3>Pós-graduação em Nutrição <em>Materno Infantil</em></h3>
+            <p>Coordenação de pós-graduação na área pelo INADES.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero informações sobre a pós-graduação em Nutrição Materno Infantil (INADES)." target="_blank" rel="noopener">Perguntar sobre turmas<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+        <div class="rv" style="--i:1">
+          <article class="tilt dark">
+            <div class="bars-w" aria-hidden="true"><i style="animation-delay:-.2s"></i><i style="animation-delay:-.9s"></i><i style="animation-delay:-.5s"></i><i style="animation-delay:-1.3s"></i><i style="animation-delay:-.1s"></i><i style="animation-delay:-.7s"></i><i style="animation-delay:-1.1s"></i><i style="animation-delay:-.4s"></i><i style="animation-delay:-1.5s"></i><i style="animation-delay:-.6s"></i><i style="animation-delay:-1s"></i><i style="animation-delay:-.3s"></i></div>
+            <span class="tag">Áudio e vídeo</span>
+            <h3>Podcast <em>Nutrir Gerações</em></h3>
+            <p>O Nutrir Gerações também vira conversa em áudio e vídeo, no podcast e no YouTube.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero o link do podcast e do canal Nutrir Gerações no YouTube." target="_blank" rel="noopener">Pedir o link do canal<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+        <div class="rv" style="--i:2">
+          <article class="tilt">
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 120 100"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="6" width="68" height="88" rx="4"/><path d="M34 6v88" stroke="var(--accent)"/><path d="M46 60h38a19 19 0 0 1-38 0Z"/><circle cx="58" cy="56" r="4"/><circle cx="70" cy="54" r="3" stroke="var(--accent)"/><path d="M50 26h36M54 34h28"/></g></svg>
+            </div>
+            <span class="tag">E-book de receitas</span>
+            <h3>100 receitas para iniciar a <em>introdução alimentar</em></h3>
+            <p>Ideias de pratinhos para os primeiros meses de comida de verdade.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber mais sobre o e-book 100 receitas para iniciar a introdução alimentar." target="_blank" rel="noopener">Pedir o e-book<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+
+      <div class="more">
+        <div class="rv">
+          <h4>Comunidade Nutrir Gerações</h4>
+          <p>Está com lista de espera. Peça para entrar e ser avisada.</p>
           <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero entrar na lista de espera da comunidade Nutrir Gerações." target="_blank" rel="noopener">Entrar na lista de espera<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </article>
-
-        <article class="ng-card ng-pod">
-          <span class="ico" aria-hidden="true"><svg><use href="#i-mic"/></svg></span>
-          <h3>Podcast e YouTube</h3>
-          <div class="wave" aria-hidden="true"><i style="height:10px"></i><i style="height:22px"></i><i style="height:14px"></i><i style="height:28px"></i><i style="height:18px"></i><i style="height:24px"></i><i style="height:9px"></i><i style="height:20px"></i><i style="height:13px"></i><i style="height:26px"></i><i style="height:11px"></i></div>
-          <p>O “Nutrir Gerações” também vira conversa em áudio e vídeo. Peça o link do canal.</p>
-          <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero o link do podcast e do canal Nutrir Gerações no YouTube." target="_blank" rel="noopener">Pedir o link do canal<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </article>
-
-        <article class="ng-card ng-shop">
-          <span class="ico" aria-hidden="true"><svg><use href="#i-bag"/></svg></span>
-          <h3>Indicações na Shopee</h3>
-          <p>Produtos que a Dra. Dayanna indica, reunidos numa lista. Peça as indicações pelo WhatsApp.</p>
+        </div>
+        <div class="rv" style="--i:1">
+          <h4>Indicações na Shopee</h4>
+          <p>Produtos que a Dra. Dayanna indica, reunidos numa lista.</p>
           <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero as suas indicações da Shopee." target="_blank" rel="noopener">Pedir as indicações<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </article>
-
-        <article class="ng-card ng-insta">
-          <span class="ico" aria-hidden="true"><svg><use href="#i-camera"/></svg></span>
-          <h3>No Instagram</h3>
+        </div>
+        <div class="rv" style="--i:2">
+          <h4>No Instagram</h4>
           <p>No @dradayannaqueiroz tem conteúdo sobre gestação, pós-parto e introdução alimentar.</p>
-          <div class="tags"><span>receitinhas</span><span>a partir dos 6 meses</span><span>cálcio</span><span>diabetes na gravidez</span><span>congressos</span></div>
           <a class="go" href="https://www.instagram.com/dradayannaqueiroz/" target="_blank" rel="noopener">Ver o Instagram<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </article>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <section id="profissionais">
-    <div class="wrap pro-grid">
-      <div>
-        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-cap"/></svg>Para profissionais</span>
-        <h2 class="h2">Também ensino quem <em>cuida de mães e bebês</em></h2>
-        <p class="lead">Além do consultório, a Dra. Dayanna leva a nutrição materno infantil para a sala de aula, para os palcos e para a mentoria de outros profissionais.</p>
+      <div class="pro rv">
         <div class="titles"><span>PhD</span><span>Docente</span><span>Palestrante</span><span>Mentora</span></div>
+        <p>Além do consultório, a Dra. Dayanna leva a nutrição materno-infantil para a sala de aula, para os palcos e para a mentoria de outros profissionais. Convites para eventos e palestras: <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e gostaria de conversar sobre um convite para palestra." target="_blank" rel="noopener">fale pelo WhatsApp</a>. Sobre a mentoria: <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber sobre a sua mentoria para profissionais." target="_blank" rel="noopener">pergunte aqui</a>.</p>
       </div>
-      <ul class="pro-list">
-        <li><span class="ic" aria-hidden="true"><svg><use href="#i-cap"/></svg></span><div><h3>Pós-graduação em Nutrição Materno Infantil</h3><p>Coordenação de pós-graduação na área pelo INADES. Para saber sobre turmas, <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero informações sobre a pós-graduação em Nutrição Materno Infantil (INADES)." target="_blank" rel="noopener">pergunte pelo WhatsApp</a>.</p></div></li>
-        <li><span class="ic" aria-hidden="true"><svg><use href="#i-board"/></svg></span><div><h3>Docência</h3><p>Atuação como docente, levando a nutrição materno infantil para a formação de novos profissionais.</p></div></li>
-        <li><span class="ic" aria-hidden="true"><svg><use href="#i-speak"/></svg></span><div><h3>Palestras e congressos</h3><p>Convites para eventos, congressos e palestras: <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e gostaria de conversar sobre um convite para palestra." target="_blank" rel="noopener">fale pelo WhatsApp</a>.</p></div></li>
-        <li><span class="ic" aria-hidden="true"><svg><use href="#i-sprout"/></svg></span><div><h3>Mentoria</h3><p>Quer saber como funciona e para quem é? <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber sobre a sua mentoria para profissionais." target="_blank" rel="noopener">Pergunte sobre a mentoria</a>.</p></div></li>
-      </ul>
     </div>
   </section>
 
-  <section class="rev" id="avaliacoes">
+  <section id="avaliacoes">
     <div class="wrap rev-grid">
-      <div>
-        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-star"/></svg>O que as mães destacam</span>
-        <h2 class="h2">Nota máxima no Google</h2>
+      <div class="rv" id="score">
+        <span class="eyebrow">O que as mães destacam</span>
+        <h2 class="h2">Nota máxima <em>no Google</em></h2>
         <div class="score">
-          <span class="n num">5,0</span>
-          <span class="t"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span class="num">191 avaliações</span></span>
+          <span class="big num" data-count="5" data-dec="1" data-late>5,0</span>
+          <span class="t"><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b class="num" data-count="191" data-late>191</b>avaliações</span>
         </div>
         <p class="quote-sum">Acolhimento e um atendimento diferenciado são os pontos que mais aparecem nas avaliações.</p>
       </div>
-      <div>
-        <h3 style="font-size:1.25rem">Temas mais citados nas avaliações</h3>
-        <div class="bars" style="margin-top:20px">
-          <div class="bar"><span>Gestação</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="v num">22</span></div>
-          <div class="bar"><span>Filha</span><span class="track"><span class="fill" style="width:68%"></span></span><span class="v num">15</span></div>
-          <div class="bar"><span>Bebê</span><span class="track"><span class="fill" style="width:64%"></span></span><span class="v num">14</span></div>
-          <div class="bar"><span>Dieta</span><span class="track"><span class="fill" style="width:41%"></span></span><span class="v num">9</span></div>
+      <div class="rv" style="--i:1">
+        <h3 class="bars-t">Temas mais citados</h3>
+        <div class="bars">
+          <div class="bar"><span>Gestação</span><span class="track"><span class="fill" style="--w:1;--i:0"></span></span><span class="v num">22</span></div>
+          <div class="bar"><span>Filha</span><span class="track"><span class="fill" style="--w:.68;--i:1"></span></span><span class="v num">15</span></div>
+          <div class="bar"><span>Bebê</span><span class="track"><span class="fill" style="--w:.64;--i:2"></span></span><span class="v num">14</span></div>
+          <div class="bar"><span>Dieta</span><span class="track"><span class="fill" style="--w:.41;--i:3"></span></span><span class="v num">9</span></div>
         </div>
         <p class="source">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
-        <div class="badges">
-          <span class="badge"><svg aria-hidden="true"><use href="#i-heart"/></svg>Empresa de empreendedoras</span>
-          <span class="badge"><svg aria-hidden="true"><use href="#i-rainbow"/></svg>Acolhe a comunidade LGBTQ+</span>
-        </div>
+        <div class="badges"><span class="badge">Empresa de empreendedoras</span><span class="badge">Acolhe a comunidade LGBTQ+</span></div>
       </div>
     </div>
   </section>
 
-  <section id="onde">
+  <section id="onde" style="padding-top:0">
     <div class="wrap">
-      <div class="where-card">
+      <div class="where rv">
         <div class="where-info">
-          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-pin"/></svg>Onde fica</span>
+          <span class="eyebrow">Onde fica</span>
           <h2 class="h2">Liv Mall, <em>4º andar</em></h2>
-          <ul class="info-list">
-            <li><span class="ic" aria-hidden="true"><svg><use href="#i-pin"/></svg></span><div><b>Endereço</b><span class="val">Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar<small>Liv Mall · Jardim Oceania, João Pessoa – PB · CEP 58037-005</small></span></div></li>
-            <li><span class="ic" aria-hidden="true"><svg><use href="#i-clock"/></svg></span><div><b>Horário</b><span class="val">Fecha às 18h<small>Conforme a ficha do Google. Confirme dias e horários pelo WhatsApp.</small></span></div></li>
-            <li><span class="ic" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><div><b>WhatsApp</b><span class="val phone num">(83) 99629-6511</span></div></li>
-            <li><span class="ic" aria-hidden="true"><svg><use href="#i-laptop"/></svg></span><div><b>Também on-line</b><span class="val">Consulta on-line para quem não pode vir<small>Combine pelo WhatsApp.</small></span></div></li>
+          <ul class="info">
+            <li><b>Endereço</b><span>Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar<small>Liv Mall · Jardim Oceania, João Pessoa – PB · CEP 58037-005</small></span></li>
+            <li><b>Horário</b><span>Fecha às 18h<small>Conforme a ficha do Google. Confirme dias e horários pelo WhatsApp.</small></span></li>
+            <li><b>WhatsApp</b><span class="phone num">(83) 99629-6511</span></li>
+            <li><b>On-line</b><span>Consulta on-line para quem não pode vir<small>Combine pelo WhatsApp.</small></span></li>
           </ul>
           <div class="where-cta">
-            <a class="btn btn-wa" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+            <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
             <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
           </div>
         </div>
         <div class="where-art" aria-hidden="true">
-          <svg viewBox="0 0 400 360" preserveAspectRatio="xMidYMid slice">
-            <rect width="400" height="360" fill="var(--pink-soft)"/>
-            <circle cx="320" cy="70" r="34" fill="var(--surface)" opacity=".7"/>
-            <path d="M0 300h400v60H0Z" fill="var(--bg-2)"/>
-            <path d="M0 322h400" stroke="var(--surface)" stroke-width="4" stroke-dasharray="22 16"/>
-            <rect x="96" y="70" width="208" height="232" rx="10" fill="var(--surface)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <rect x="96" y="70" width="208" height="30" rx="10" fill="var(--pink)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <text x="200" y="91" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="17" fill="var(--on-btn)">Liv Mall</text>
-            <g fill="var(--bg-2)">
-              <rect x="114" y="116" width="34" height="26" rx="5"/><rect x="160" y="116" width="34" height="26" rx="5"/><rect x="206" y="116" width="34" height="26" rx="5"/><rect x="252" y="116" width="34" height="26" rx="5"/>
-              <rect x="114" y="160" width="34" height="26" rx="5"/><rect x="160" y="160" width="34" height="26" rx="5"/><rect x="206" y="160" width="34" height="26" rx="5"/><rect x="252" y="160" width="34" height="26" rx="5"/>
-              <rect x="114" y="204" width="34" height="26" rx="5"/><rect x="160" y="204" width="34" height="26" rx="5"/><rect x="206" y="204" width="34" height="26" rx="5"/><rect x="252" y="204" width="34" height="26" rx="5"/>
-            </g>
-            <rect x="206" y="116" width="34" height="26" rx="5" fill="var(--pink)" stroke="var(--line-art)" stroke-width="2.5"/>
-            <path d="M176 302v-46a24 24 0 0 1 48 0v46" fill="var(--bg-2)" stroke="var(--line-art)" stroke-width="3.5"/>
-            <path d="M223 108c34-30 72-26 86-6" fill="none" stroke="var(--line-art)" stroke-width="2.5" stroke-dasharray="3 6" stroke-linecap="round"/>
-            <g transform="translate(300 80)">
-              <rect x="0" y="0" width="86" height="40" rx="20" fill="var(--deep)"/>
-              <text x="43" y="26" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="15" fill="var(--on-deep)">sala 421</text>
-            </g>
-            <g transform="translate(40 228)" fill="var(--leaf)">
-              <path d="M20 74V30"  stroke="var(--leaf-ink)" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="20" cy="26" r="20"/><circle cx="8" cy="40" r="12"/><circle cx="32" cy="40" r="12"/>
-            </g>
-            <g transform="translate(330 236)" fill="var(--leaf)">
-              <path d="M16 66V26" stroke="var(--leaf-ink)" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="16" cy="22" r="16"/><circle cx="6" cy="34" r="10"/><circle cx="26" cy="34" r="10"/>
-            </g>
-            <text x="200" y="40" text-anchor="middle" font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="26" fill="var(--pink-ink)">4º andar, Jardim Oceania</text>
-          </svg>
+          <svg viewBox="0 0 340 280"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 250h320"/><rect x="80" y="60" width="180" height="190"/><path d="M80 90h180"/><g opacity=".55"><path d="M100 110h30v22h-30ZM155 110h30v22h-30ZM210 110h30v22h-30ZM100 150h30v22h-30ZM155 150h30v22h-30ZM210 150h30v22h-30ZM100 190h30v22h-30ZM210 190h30v22h-30Z"/></g><path d="M155 250v-38a15 15 0 0 1 30 0v38"/><path d="M210 110h30v22h-30Z" stroke="var(--accent)"/><path d="M225 104c-8-26 30-50 50-30 14 14 4 34-14 42" stroke="var(--accent)" stroke-dasharray="2 5"/><path d="M262 116c0 0-14-12-14-22a14 14 0 0 1 28 0c0 10-14 22-14 22Z" stroke="var(--accent)"/><circle cx="262" cy="94" r="5" stroke="var(--accent)"/><path d="M40 250v-34M40 216c-12-4-14-18-4-24 2 10 6 16 4 24ZM40 226c10-4 14-16 6-22-4 8-8 14-6 22Z"/><path d="M300 250v-28M300 222c-10-4-12-14-4-20 2 8 6 12 4 20Z"/></g><text x="170" y="80" text-anchor="middle" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="16" fill="currentColor">Liv Mall</text></svg>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="duvidas">
+  <section id="duvidas" style="padding-top:0">
     <div class="wrap faq-grid">
-      <div>
-        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-heart"/></svg>Dúvidas frequentes</span>
+      <div class="rv">
+        <span class="eyebrow">Dúvidas frequentes</span>
         <h2 class="h2">Antes de <em>marcar</em></h2>
-        <p class="lead">Não achou a sua pergunta? Mande no WhatsApp: <span class="phone num" style="font-size:1.05rem">(83) 99629-6511</span></p>
+        <p class="lead">Não achou a sua pergunta? Mande no WhatsApp: <span class="phone num">(83) 99629-6511</span></p>
       </div>
-      <div>
+      <div class="rv" style="--i:1">
         <details>
           <summary>A partir de quando posso marcar na gestação?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
           <p>Cada gestação tem o seu momento. Conte com quantas semanas você está pelo <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site. Estou gestante e queria saber a partir de quando posso marcar a consulta." target="_blank" rel="noopener">WhatsApp</a> e receba a orientação sobre o melhor momento.</p>
@@ -959,14 +911,14 @@ footer .fbrand i{color:var(--pink-ink);font-weight:500}
   </section>
 
   <section class="final">
-    <svg class="deco" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sprout"/></svg>
+    <svg class="final-art" viewBox="0 0 140 150" aria-hidden="true"><use href="#v-prato"/></svg>
     <div class="wrap">
-      <div>
+      <div class="rv">
         <h2>Vamos cuidar dessa <em>nova geração</em> juntas?</h2>
         <p>Gestação, pós-parto ou primeiros pratinhos: chame no WhatsApp e agende a sua consulta, presencial no Liv Mall ou on-line.</p>
       </div>
-      <div class="final-cta">
-        <a class="btn btn-wa" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+      <div class="final-cta rv" style="--i:1">
+        <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
         <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
       </div>
     </div>
@@ -977,7 +929,7 @@ footer .fbrand i{color:var(--pink-ink);font-weight:500}
   <div class="wrap">
     <div>
       <span class="fbrand">Dayanna <i>Queiroz</i></span><br>
-      Nutricionista materno infantil, PhD · Liv Mall, sala 421 · João Pessoa – PB · <span class="num">(83) 99629-6511</span>
+      Nutricionista materno-infantil, PhD · Liv Mall, sala 421 · João Pessoa – PB · <span class="num">(83) 99629-6511</span>
     </div>
     <span class="seal">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
   </div>
@@ -989,110 +941,157 @@ footer .fbrand i{color:var(--pink-ink);font-weight:500}
 (function(){
   var NUM = '5583996296511';
   var BASE = 'Olá, Dra. Dayanna! Vim pelo seu site e gostaria de agendar uma consulta.';
-  function wa(text){ return 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(text); }
-
+  function wa(t){ return 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(t); }
   var links = document.querySelectorAll('a[data-wa]');
-  for (var i = 0; i < links.length; i++) { links[i].href = wa(links[i].getAttribute('data-wa')); }
+  for (var i = 0; i < links.length; i++) links[i].href = wa(links[i].getAttribute('data-wa'));
 
-  var FASES = {
-    gestante: {
-      titulo: 'Na gestação, a consulta costuma abordar',
-      rotulo: 'Gestante',
-      itens: [
-        'Alimentação ao longo dos trimestres, dentro da sua rotina',
-        'Nutrientes que pedem atenção na gravidez, como o cálcio',
-        'Enjoos, azia e outros desconfortos comuns',
-        'Orientação alimentar quando há diabetes na gravidez, junto com o pré-natal'
-      ]
-    },
-    posparto: {
-      titulo: 'No pós-parto, a consulta costuma abordar',
-      rotulo: 'No pós-parto',
-      itens: [
-        'Alimentação que cabe na rotina com o bebê',
-        'Nutrição durante a amamentação',
-        'Energia e bem-estar no puerpério',
-        'Retomar a sua alimentação com calma, no seu tempo'
-      ]
-    },
-    bebe: {
-      titulo: 'Na introdução alimentar, a consulta costuma abordar',
-      rotulo: 'Com bebê começando a comer',
-      itens: [
-        'Como começar a introdução alimentar de forma responsiva',
-        'Sinais de fome e de saciedade do bebê',
-        'Variedade de alimentos, cores e texturas',
-        'Receitinhas práticas para o dia a dia da família'
-      ]
-    }
-  };
+  var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var fine = !!(window.matchMedia && window.matchMedia('(pointer: fine)').matches);
 
+  /* seletor de fase */
   var form = document.getElementById('fase-form');
-  var res = document.getElementById('resultado');
+  var seg = document.getElementById('seg');
+  var panels = form.querySelectorAll('.panel');
   var prev = document.getElementById('preview');
   var btn = document.getElementById('enviar');
   var semanas = document.getElementById('semanas');
   var meses = document.getElementById('meses');
   var nome = document.getElementById('nome');
-  var xS = document.getElementById('x-semanas');
-  var xM = document.getElementById('x-meses');
-  var check = '<svg aria-hidden="true"><use href="#i-check"/></svg>';
+  var triEl = document.getElementById('tri');
+  var tipEl = document.getElementById('tip');
+  var ORDEM = ['gestante','posparto','bebe'];
+  var ROTULO = {gestante:'Gestante', posparto:'No pós-parto', bebe:'Com bebê começando a comer'};
+  var atual = null;
 
-  function val(name){ var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : null; }
-  function num(el, min, max){ var n = parseInt(el.value, 10); if (isNaN(n) || n < min || n > max) return null; return n; }
+  function val(n){ var el = form.querySelector('input[name="' + n + '"]:checked'); return el ? el.value : null; }
+  function num(el, a, b){ var n = parseInt(el.value, 10); return (isNaN(n) || n < a || n > b) ? null : n; }
   function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
 
-  function update(){
-    var fase = val('fase');
-    var modo = val('modo');
-    xS.hidden = fase !== 'gestante';
-    xM.hidden = fase !== 'bebe';
-
-    var msg = BASE;
-    var n = nome.value.trim();
-    if (n) msg = 'Olá, Dra. Dayanna! Meu nome é ' + n + '. Vim pelo seu site e gostaria de agendar uma consulta.';
-
-    if (!fase) {
-      res.className = 'result empty';
-      res.textContent = 'Escolha uma fase acima para ver o que a consulta costuma abordar.';
-    } else {
-      var f = FASES[fase];
-      var tri = '', tip = '', detalhe = '';
-      if (fase === 'gestante') {
-        var s = num(semanas, 1, 42);
-        if (s !== null) {
-          var t = s <= 13 ? '1º' : (s <= 27 ? '2º' : '3º');
-          tri = 'Você está no ' + t + ' trimestre';
-          detalhe = ' (' + s + (s === 1 ? ' semana' : ' semanas') + ')';
-        }
-      }
-      if (fase === 'bebe') {
-        var m = num(meses, 0, 36);
-        if (m !== null) {
-          detalhe = ' (bebê com ' + m + (m === 1 ? ' mês' : ' meses') + ')';
-          if (m < 6) tip = 'Em geral, a introdução alimentar começa por volta dos 6 meses, sempre conversando também com o pediatra. Dá para se preparar antes: leve as suas dúvidas para a consulta.';
-        }
-      }
-      var html = '<h4>' + f.titulo + ':</h4>';
-      html += '<span class="tri">' + esc(tri) + '</span>';
-      html += '<ul>';
-      for (var i = 0; i < f.itens.length; i++) html += '<li>' + check + '<span>' + esc(f.itens[i]) + '</span></li>';
-      html += '</ul><p class="tip">' + esc(tip) + '</p>';
-      res.className = 'result';
-      res.innerHTML = html;
-      msg += '\nFase: ' + f.rotulo + detalhe + '.';
+  function show(f, anim){
+    for (var i = 0; i < panels.length; i++) {
+      var p = panels[i], on = p.getAttribute('data-p') === f;
+      p.hidden = !on;
+      if (on && anim && !reduce) { p.classList.remove('play'); void p.offsetWidth; p.classList.add('play'); }
     }
-    if (modo) msg += '\nPrefiro consulta ' + modo + '.';
+    seg.style.setProperty('--idx', Math.max(0, ORDEM.indexOf(f)));
+  }
 
+  function update(){
+    var fase = val('fase') || 'gestante';
+    if (fase !== atual) { show(fase, atual !== null); atual = fase; }
+    var modo = val('modo');
+    var n = nome.value.trim();
+    var msg = n ? 'Olá, Dra. Dayanna! Meu nome é ' + n + '. Vim pelo seu site e gostaria de agendar uma consulta.' : BASE;
+    var det = '';
+    triEl.textContent = ''; tipEl.textContent = '';
+    if (fase === 'gestante') {
+      var s = num(semanas, 1, 42);
+      if (s !== null) {
+        triEl.textContent = 'Você está no ' + (s <= 13 ? '1º' : (s <= 27 ? '2º' : '3º')) + ' trimestre';
+        det = ' (' + s + (s === 1 ? ' semana' : ' semanas') + ')';
+      }
+    }
+    if (fase === 'bebe') {
+      var m = num(meses, 0, 36);
+      if (m !== null) {
+        det = ' (bebê com ' + m + (m === 1 ? ' mês' : ' meses') + ')';
+        if (m < 6) tipEl.textContent = 'Em geral, a introdução alimentar começa por volta dos 6 meses, sempre conversando também com o pediatra. Dá para se preparar antes: leve as suas dúvidas para a consulta.';
+      }
+    }
+    msg += '\nFase: ' + ROTULO[fase] + det + '.';
+    if (modo) msg += '\nPrefiro consulta ' + modo + '.';
     prev.innerHTML = '<b>Sua mensagem</b>' + esc(msg);
     btn.href = wa(msg);
   }
-
   form.addEventListener('input', update);
   form.addEventListener('change', update);
   form.addEventListener('submit', function(e){ e.preventDefault(); });
   document.getElementById('limpar').addEventListener('click', function(){ form.reset(); update(); });
   update();
+
+  /* contadores */
+  function fmt(v, dec){ return dec ? v.toFixed(dec).replace('.', ',') : String(Math.round(v)); }
+  function count(el){
+    var to = parseFloat(el.getAttribute('data-count')), dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+    if (reduce || !window.requestAnimationFrame) { el.textContent = fmt(to, dec); return; }
+    var t0 = null, dur = 1700;
+    el.textContent = fmt(0, dec);
+    function step(t){
+      if (t0 === null) t0 = t;
+      var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = fmt(to * e, dec);
+      if (k < 1) requestAnimationFrame(step); else el.textContent = fmt(to, dec);
+    }
+    requestAnimationFrame(step);
+  }
+  var heroCounts = document.querySelectorAll('.hero [data-count]');
+  for (var h = 0; h < heroCounts.length; h++) count(heroCounts[h]);
+
+  /* revelar ao rolar */
+  try {
+    var items = document.querySelectorAll('.rv');
+    if (!reduce && 'IntersectionObserver' in window) {
+      document.documentElement.classList.add('js');
+      var io = new IntersectionObserver(function(es){
+        es.forEach(function(en){
+          if (!en.isIntersecting) return;
+          en.target.classList.add('in');
+          var cs = en.target.querySelectorAll('[data-late]');
+          for (var c = 0; c < cs.length; c++) count(cs[c]);
+          io.unobserve(en.target);
+        });
+      }, {threshold: 0.12, rootMargin: '0px 0px -6% 0px'});
+      for (var r = 0; r < items.length; r++) io.observe(items[r]);
+    } else {
+      for (var q = 0; q < items.length; q++) items[q].classList.add('in');
+    }
+  } catch (err) { document.documentElement.classList.remove('js'); }
+
+  /* fio que se desenha + barra de leitura */
+  var fio = document.getElementById('fio');
+  var fioWrap = document.getElementById('fio-wrap');
+  var bar = document.getElementById('progress');
+  var ticking = false;
+  function onScroll(){
+    ticking = false;
+    var vh = window.innerHeight, de = document.documentElement;
+    var max = de.scrollHeight - vh;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, window.scrollY / max) : 0) + ')';
+    if (!reduce) {
+      var r = fioWrap.getBoundingClientRect();
+      var p = (vh * 0.7 - r.top) / r.height;
+      p = Math.max(0, Math.min(1, p));
+      fio.style.strokeDashoffset = String(1 - p);
+    }
+  }
+  function req(){ if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }
+  window.addEventListener('scroll', req, {passive: true});
+  window.addEventListener('resize', req);
+  onScroll();
+
+  /* cards com inclinação e botões magnéticos */
+  if (fine && !reduce) {
+    var tilts = document.querySelectorAll('.tilt');
+    for (var t = 0; t < tilts.length; t++) (function(el){
+      el.addEventListener('pointermove', function(e){
+        var b = el.getBoundingClientRect(), x = (e.clientX - b.left) / b.width, y = (e.clientY - b.top) / b.height;
+        el.style.setProperty('--ry', ((x - .5) * 9).toFixed(2) + 'deg');
+        el.style.setProperty('--rx', ((.5 - y) * 7).toFixed(2) + 'deg');
+        el.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+        el.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+      });
+      el.addEventListener('pointerleave', function(){ el.style.setProperty('--rx', '0deg'); el.style.setProperty('--ry', '0deg'); });
+    })(tilts[t]);
+    var mags = document.querySelectorAll('.mag');
+    for (var g = 0; g < mags.length; g++) (function(el){
+      el.addEventListener('pointermove', function(e){
+        var b = el.getBoundingClientRect();
+        el.style.setProperty('--tx', ((e.clientX - b.left - b.width / 2) * .18).toFixed(1) + 'px');
+        el.style.setProperty('--ty', ((e.clientY - b.top - b.height / 2) * .3).toFixed(1) + 'px');
+      });
+      el.addEventListener('pointerleave', function(){ el.style.setProperty('--tx', '0px'); el.style.setProperty('--ty', '0px'); });
+    })(mags[g]);
+  }
 })();
 </script>
 </body>

@@ -5,345 +5,495 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Mateus Capistrano</title>
-<meta name="description" content="Prévia do site de Mateus Capistrano, psicólogo, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta name="description" content="Prévia do site de Mateus Capistrano, feita por Natã Lira, desenvolvedor em João Pessoa.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mateus Capistrano, psicólogo – prévia do site">
-<meta property="og:description" content="Prévia do site de Mateus Capistrano, psicólogo, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:title" content="Mateus Capistrano – prévia do site">
+<meta property="og:description" content="Prévia do site de Mateus Capistrano, feita por Natã Lira, desenvolvedor em João Pessoa.">
 <meta property="og:image" content="https://nathanlira01.github.io/mateus-capistrano/capa.png">
 <meta property="og:url" content="https://nathanlira01.github.io/mateus-capistrano/">
 </head>
 <body>
 <meta name="description" content="Mateus Capistrano, psicólogo em João Pessoa. Escuta ativa e possibilidades do viver. Atendimento presencial no Delta Center, em Bancários, e on-line.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
 <style>
 :root{
-  color-scheme: dark;
-  --bg:#0e2420;
-  --bg-2:#112b26;
-  --panel:#15332d;
-  --panel-2:#1a3c35;
-  --line:#244a41;
-  --line-2:#335c51;
-  --text:#f1ead9;
-  --muted:#b7c2b4;
-  --dim:#8b9c90;
-  --peach:#eeae8c;
-  --peach-hi:#f7c9ad;
-  --peach-soft:rgba(238,174,140,.11);
-  --peach-ink:#1a1512;
-  --lamp:#f3c37c;
-  --paper:#f2e9d7;
-  --paper-2:#e9ddc6;
-  --paper-ink:#1c2925;
-  --paper-muted:#56605a;
-  --paper-line:#d6c7ab;
-  --paper-accent:#9b5536;
+  color-scheme: light;
+  --bg:#f3ece0;
+  --bg-2:#ece3d3;
+  --card:#fbf7ef;
+  --ink:#16302c;
+  --ink-2:#2c4440;
+  --muted:#56645f;
+  --dim:#7c8682;
+  --line:rgba(22,48,44,.14);
+  --line-2:rgba(22,48,44,.26);
+  --accent:#b55d3d;
+  --accent-2:#d98a68;
+  --accent-soft:rgba(217,138,104,.14);
+  --glow:rgba(240,176,128,.38);
+  --btn:#16302c;
+  --btn-ink:#f6efe2;
+  --btn-hover:#234640;
+  --head-bg:rgba(243,236,224,.82);
+  --band:#123a35;
+  --band-2:#0f312d;
+  --band-ink:#efe6d6;
+  --band-muted:#a8bab3;
+  --band-line:rgba(239,230,214,.16);
+  --band-accent:#f0b393;
   --wa:#1fae5b;
-  --f-title:'Cormorant Garamond','Cormorant',Garamond,'Times New Roman',serif;
-  --f-body:'Karla','Segoe UI',system-ui,sans-serif;
-  --pad-x:max(16px, env(safe-area-inset-left, 0px));
-  --pad-x-r:max(16px, env(safe-area-inset-right, 0px));
+  --shadow:0 24px 60px -24px rgba(22,48,44,.35);
+  --f-d:'Fraunces','Iowan Old Style',Georgia,'Times New Roman',serif;
+  --f-b:'Hanken Grotesk','Segoe UI',system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --pad-l:max(16px, env(safe-area-inset-left, 0px));
+  --pad-r:max(16px, env(safe-area-inset-right, 0px));
 }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#0b211f;--bg-2:#0f2a27;--card:#132f2b;--ink:#efe6d6;--ink-2:#d9d0bf;--muted:#a7b5ae;--dim:#7f908a;
+    --line:rgba(239,230,214,.12);--line-2:rgba(239,230,214,.24);--accent:#eeae8c;--accent-2:#f5c3a6;--accent-soft:rgba(238,174,140,.12);--glow:rgba(238,174,140,.13);
+    --btn:#eeae8c;--btn-ink:#1a1512;--btn-hover:#f5c3a6;--head-bg:rgba(11,33,31,.82);
+    --band:#123733;--band-2:#0e2d29;--band-ink:#efe6d6;--band-muted:#a8bab3;--band-line:rgba(239,230,214,.14);--band-accent:#f0b393;
+    --shadow:0 24px 60px -24px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#0b211f;--bg-2:#0f2a27;--card:#132f2b;--ink:#efe6d6;--ink-2:#d9d0bf;--muted:#a7b5ae;--dim:#7f908a;
+  --line:rgba(239,230,214,.12);--line-2:rgba(239,230,214,.24);--accent:#eeae8c;--accent-2:#f5c3a6;--accent-soft:rgba(238,174,140,.12);--glow:rgba(238,174,140,.13);
+  --btn:#eeae8c;--btn-ink:#1a1512;--btn-hover:#f5c3a6;--head-bg:rgba(11,33,31,.82);
+  --band:#123733;--band-2:#0e2d29;--band-ink:#efe6d6;--band-muted:#a8bab3;--band-line:rgba(239,230,214,.14);--band-accent:#f0b393;
+  --shadow:0 24px 60px -24px rgba(0,0,0,.7);
+}
+
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-main,header,footer{position:relative;z-index:1}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-b);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.06;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--peach-hi);outline-offset:3px;border-radius:3px}
-h1,h2,h3{font-family:var(--f-title);font-weight:600;line-height:1.04;text-wrap:balance;overflow-wrap:break-word;margin:0}
-h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--peach)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--f-d);font-weight:350;line-height:1.04;letter-spacing:-.015em;text-wrap:balance;overflow-wrap:break-word;margin:0}
+h1,h2{font-variation-settings:"opsz" 144}
+h3{letter-spacing:-.005em}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:300;color:var(--accent)}
 p{margin:0}
 .num{font-variant-numeric:tabular-nums lining-nums}
-.wrap{max-width:1140px;margin:0 auto;padding-left:var(--pad-x);padding-right:var(--pad-x-r)}
-.kicker{font-size:12.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--peach);display:flex;align-items:center;gap:12px}
-.kicker::before{content:"";width:28px;height:1px;background:currentColor}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--pad-l);padding-right:var(--pad-r)}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:14px}
+.kicker::before{content:"";width:32px;height:1px;background:currentColor;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font-family:var(--f-body);font-weight:600;font-size:16px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s ease,background-color .2s ease,border-color .2s ease,color .2s ease;line-height:1.2;text-align:center}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font-family:var(--f-b);font-weight:600;font-size:16px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background-color .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease),transform .5s var(--ease);line-height:1.2;text-align:center}
 .btn svg{width:20px;height:20px;flex:none}
-.btn-peach{background:var(--peach);color:var(--peach-ink)}
-.btn-peach:hover{background:var(--peach-hi);transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:var(--text);border-color:var(--line-2)}
-.btn-ghost:hover{border-color:var(--peach);color:var(--peach-hi);transform:translateY(-2px)}
+.btn-main{background:var(--btn);color:var(--btn-ink)}
+.btn-main:hover{background:var(--btn-hover)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-line:hover{border-color:var(--accent);color:var(--accent)}
+.btn .arr{width:16px;height:16px;transition:transform .4s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
 
-/* topo */
-.top{position:sticky;top:0;z-index:20;background:rgba(14,36,32,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.progress{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:50;pointer-events:none}
+
+.top{position:sticky;top:0;z-index:40;background:var(--head-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .4s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px}
 .brand{display:flex;flex-direction:column;text-decoration:none;min-width:0;line-height:1}
-.brand-name{font-family:var(--f-title);font-size:27px;font-weight:600;white-space:nowrap}
-.brand-name i{color:var(--peach);font-weight:500}
-.brand small{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-.top nav{display:flex;gap:24px;font-size:15px}
-.top nav a{text-decoration:none;color:var(--muted);transition:color .2s}
-.top nav a:hover{color:var(--peach-hi)}
+.brand-name{font-family:var(--f-d);font-size:25px;font-weight:400;white-space:nowrap;letter-spacing:-.01em}
+.brand-name i{color:var(--accent);font-weight:300}
+.brand small{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:7px;white-space:nowrap}
+.top nav{display:flex;gap:26px;font-size:15px}
+.top nav a{text-decoration:none;color:var(--muted);position:relative;padding-block:4px}
+.top nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.top nav a:hover{color:var(--ink)}
+.top nav a:hover::after{transform:scaleX(1);transform-origin:left}
 .top .btn{min-height:44px;font-size:15px;padding:0 18px}
-@media (max-width:960px){.top nav{display:none}}
-@media (max-width:440px){.top .btn span{display:none}.top .btn{padding:0;width:44px}.brand-name{font-size:23px}.brand small{letter-spacing:.2em}}
+@media (max-width:1000px){.top nav{display:none}}
+@media (max-width:460px){.top .btn span{display:none}.top .btn{padding:0;width:46px}.brand-name{font-size:22px}.brand small{letter-spacing:.16em}}
 
-/* hero */
-.hero{padding-block:64px 84px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
-.hero::before{content:"";position:absolute;right:-8%;top:-20%;width:62%;height:130%;background:radial-gradient(closest-side,rgba(243,195,124,.16),transparent 72%);pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;position:relative}
+.hero{position:relative;padding-block:56px 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-10%;top:-10%;width:70%;height:110%;background:radial-gradient(closest-side,var(--glow),transparent 72%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative}
 .hero-grid > *{min-width:0}
-.hero-tag{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
-.hero-tag span{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line-2);border-radius:999px;padding:6px 14px}
-.hero h1{font-size:clamp(44px,7.2vw,90px);line-height:.98}
-.hero-lead{margin-top:24px;font-size:clamp(17px,1.9vw,19.5px);color:var(--muted);max-width:32em}
-.hero-lead strong{color:var(--text);font-weight:500}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.rating{display:flex;align-items:center;gap:18px;margin-top:38px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
-.rating-n{font-family:var(--f-title);font-weight:600;font-size:64px;line-height:.8;color:var(--peach-hi)}
-.stars{display:flex;gap:3px;color:var(--peach)}
-.stars svg{width:17px;height:17px}
-.rating small{display:block;color:var(--muted);font-size:14.5px;margin-top:5px}
-.hero-art{margin:0}
-.hero-art svg{display:block;width:100%;height:auto}
-.hero-art figcaption{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);text-align:center;margin-top:6px}
-@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:26px}.hero{padding-block:40px 60px}.hero-art{max-width:500px;margin-inline:auto;width:100%}}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:30px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.hero-meta span{display:inline-flex;align-items:center;gap:10px}
+.hero-meta span + span::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--accent)}
+.hero h1{font-size:clamp(46px,8.2vw,112px);line-height:.98;font-weight:300}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.hero h1 .ln > span{display:block}
+.hero h1 em{font-weight:300}
+.hero-lead{margin-top:28px;font-size:clamp(17px,1.8vw,19.5px);color:var(--muted);max-width:31em}
+.hero-lead strong{color:var(--ink);font-weight:500}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.rating{display:flex;align-items:center;gap:20px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.rating-n{font-family:var(--f-d);font-weight:300;font-size:66px;line-height:.8;color:var(--accent);font-variation-settings:"opsz" 144}
+.stars{display:flex;gap:3px;color:var(--accent)}
+.stars svg{width:15px;height:15px}
+.rating small{display:block;color:var(--muted);font-size:14.5px;margin-top:6px}
+.hero-art{margin:0;position:relative}
+.hero-art svg{display:block;width:100%;height:auto;overflow:visible}
+.hero-art figcaption{font-family:var(--f-d);font-style:italic;font-size:15px;color:var(--dim);text-align:right;margin-top:4px}
+.la{fill:none;stroke:var(--ink);stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.la-a{stroke:var(--accent);stroke-width:1.5}
+.la-thin{stroke-width:.9;opacity:.55}
+.lightfill{fill:var(--accent-2);opacity:.16}
+.sunfill{fill:var(--glow)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:16px}.hero{padding-block:38px 56px}.hero-art{max-width:440px;width:100%;margin-inline:auto}}
 
-@media (prefers-reduced-motion:no-preference){
-  .hero-copy > *{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
-  .hero-copy > *:nth-child(2){animation-delay:.07s}
-  .hero-copy > *:nth-child(3){animation-delay:.14s}
-  .hero-copy > *:nth-child(4){animation-delay:.21s}
-  .hero-copy > *:nth-child(5){animation-delay:.28s}
-  .glow{animation:breathe 6s ease-in-out infinite}
-  .steam{animation:drift 7s ease-in-out infinite}
-  .page-turn{animation:turn 9s ease-in-out infinite;transform-origin:300px 392px}
-}
-@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
-@keyframes breathe{0%,100%{opacity:.75}50%{opacity:1}}
-@keyframes drift{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(-6px);opacity:.9}}
-@keyframes turn{0%,80%,100%{transform:none}88%{transform:skewY(-2deg) scaleX(.97)}}
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding-block:20px;white-space:nowrap}
+.marquee-track{display:inline-flex;gap:0;will-change:transform}
+.marquee-track span{font-family:var(--f-d);font-size:clamp(26px,3.4vw,40px);font-weight:300;padding-inline:26px;display:inline-flex;align-items:center;gap:52px;color:var(--ink-2)}
+.marquee-track span::after{content:"";width:7px;height:7px;border-radius:50%;border:1px solid var(--accent)}
+.marquee-track span:nth-child(even){font-style:italic;color:var(--accent)}
 
-section{padding-block:92px}
-.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;margin-bottom:48px}
+section{padding-block:110px;position:relative}
+@media (max-width:820px){section{padding-block:76px}}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
 .sec-head > *{min-width:0}
-.sec-head h2{font-size:clamp(36px,5.3vw,60px);margin-top:14px}
-.sec-head p{color:var(--muted);max-width:32em}
-@media (max-width:820px){.sec-head{grid-template-columns:1fr;gap:16px}section{padding-block:68px}}
+.sec-head h2{font-size:clamp(38px,5.6vw,68px);margin-top:18px}
+.sec-head p{color:var(--muted);max-width:30em}
+@media (max-width:820px){.sec-head{grid-template-columns:1fr;gap:18px;margin-bottom:40px}}
 
-/* papel */
-.paper{background:var(--paper);color:var(--paper-ink);position:relative}
-.paper::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background:repeating-linear-gradient(0deg,transparent 0 33px,rgba(155,85,54,.05) 33px 34px)}
-.paper > .wrap{position:relative}
-.paper .kicker{color:var(--paper-accent)}
-.paper h2 em,.paper h3 em{color:var(--paper-accent)}
-.paper .sec-head p{color:var(--paper-muted)}
-.paper .btn-peach{background:var(--paper-ink);color:var(--paper)}
-.paper .btn-peach:hover{background:#2e403a}
-.paper :focus-visible{outline-color:var(--paper-accent)}
-
-/* sobre a escuta */
-.escuta-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.escuta-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}
 .escuta-grid > *{min-width:0}
-.escuta h2{font-size:clamp(38px,5.4vw,62px);margin-top:14px}
-.margin-notes{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
-.margin-notes span{font-family:var(--f-title);font-style:italic;font-size:21px;color:var(--paper-accent);border-bottom:1px solid var(--paper-line);padding:0 4px 2px}
-.margin-notes small{width:100%;font-size:13px;color:var(--paper-muted);letter-spacing:.04em}
-.escuta-text{display:grid;gap:20px;font-size:18px;color:#2f3b37}
-.escuta-text p:first-child::first-letter{font-family:var(--f-title);font-size:4.2em;float:left;line-height:.82;padding:.06em .1em 0 0;color:var(--paper-accent);font-weight:600}
-.escuta-quote{margin:12px 0 0;padding:22px 0 0;border-top:1px solid var(--paper-line);font-family:var(--f-title);font-size:clamp(25px,3vw,32px);line-height:1.25;font-style:italic;color:var(--paper-ink)}
-@media (max-width:860px){.escuta-grid{grid-template-columns:1fr;gap:30px}}
+.escuta h2{font-size:clamp(38px,5.4vw,64px);margin-top:18px}
+.notes{margin-top:30px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
+.notes span{font-family:var(--f-d);font-style:italic;font-size:22px;color:var(--accent)}
+.notes small{width:100%;font-size:13px;color:var(--dim);margin-top:4px}
+.waves{margin-top:44px;max-width:460px}
+.waves svg{display:block;width:100%;height:auto;overflow:visible}
+.waves-cap{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-top:10px}
+.escuta-text{display:grid;gap:22px;font-size:18px;color:var(--ink-2)}
+.escuta-text p:first-child::first-letter{font-family:var(--f-d);font-size:4.4em;float:left;line-height:.8;padding:.06em .12em 0 0;color:var(--accent);font-weight:300}
+@media (max-width:880px){.escuta-grid{grid-template-columns:1fr;gap:34px}}
 
-/* como funciona */
-.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
-.steps > li{min-width:0;padding:30px 24px 10px 0}
-.steps > li + li{padding-left:24px;border-left:1px solid var(--line)}
-.step-n{font-family:var(--f-title);font-style:italic;font-weight:500;font-size:72px;line-height:.8;color:var(--peach);display:block;margin-bottom:18px}
-.steps h3{font-size:27px}
-.steps p{color:var(--muted);margin-top:10px;font-size:16px}
-.how-foot{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.how-foot > *{min-width:0}
-.how-box{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:24px 22px}
-.how-box svg{width:30px;height:30px;color:var(--peach);display:block;margin-bottom:14px}
-.how-box h3{font-size:24px}
-.how-box p{color:var(--muted);font-size:15.5px;margin-top:6px}
-@media (max-width:960px){.steps{grid-template-columns:1fr 1fr}.steps > li:nth-child(3){padding-left:0;border-left:0}.steps > li:nth-child(n+3){border-top:1px solid var(--line)}}
-@media (max-width:600px){.steps{grid-template-columns:1fr}.steps > li,.steps > li + li{padding:26px 0 16px;border-left:0}.steps > li + li{border-top:1px solid var(--line)}.step-n{font-size:60px}}
-@media (max-width:860px){.how-foot{grid-template-columns:1fr}}
+.band{background:var(--band);color:var(--band-ink)}
+.band .kicker{color:var(--band-accent)}
+.band h2 em,.band h3 em{color:var(--band-accent)}
+.band .btn-main{background:var(--band-accent);color:#1a1512}
+.band .btn-main:hover{background:#f6c9ad}
+.band .btn-line{color:var(--band-ink);border-color:var(--band-line)}
+.band .btn-line:hover{border-color:var(--band-accent);color:var(--band-accent)}
+.band :focus-visible{outline-color:var(--band-accent)}
 
-/* modalidades */
-.modal-sec{background:var(--bg-2);border-block:1px solid var(--line)}
-.mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.quote{padding-block:130px;overflow:hidden}
+.quote-mark{font-family:var(--f-d);font-style:italic;font-size:140px;line-height:.5;color:var(--band-accent);opacity:.8;display:block;height:60px}
+.quote-text{font-family:var(--f-d);font-weight:300;font-size:clamp(34px,5.6vw,76px);line-height:1.1;letter-spacing:-.02em;max-width:15em;text-wrap:balance;font-variation-settings:"opsz" 144}
+.quote-text em{font-style:italic;color:var(--band-accent)}
+.quote-text .w{transition:opacity .35s linear}
+.quote-foot{margin-top:40px;display:flex;align-items:center;gap:16px;color:var(--band-muted);font-size:15px}
+.quote-foot::before{content:"";width:48px;height:1px;background:var(--band-accent)}
+
+.quando-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.quando-list li{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line);position:relative}
+.quando-list li > *{min-width:0}
+.quando-list li::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+.quando-list li:hover::after{transform:scaleX(1)}
+.q-n{font-family:var(--f-d);font-style:italic;font-size:18px;color:var(--accent)}
+.q-t{font-family:var(--f-d);font-weight:300;font-size:clamp(28px,3.8vw,46px);line-height:1.1;transition:transform .6s var(--ease)}
+.quando-list li:hover .q-t{transform:translateX(10px)}
+.q-d{color:var(--muted);font-size:15.5px;max-width:20em;text-align:right}
+.quando-foot{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.quando-foot p{color:var(--muted);max-width:34em}
+@media (max-width:760px){.quando-list li{grid-template-columns:44px 1fr;gap:6px 14px;padding:22px 0}.q-d{grid-column:2;text-align:left}}
+
+.how{background:var(--bg-2)}
+.how-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.how-grid > *{min-width:0}
+.how-pin{position:sticky;top:120px}
+.how-pin h2{font-size:clamp(38px,5.4vw,64px);margin-top:18px}
+.how-pin > p{color:var(--muted);margin-top:20px;max-width:26em}
+.how-dial{margin-top:40px;display:flex;align-items:flex-end;gap:22px}
+.how-num{position:relative;height:150px;width:150px;overflow:hidden;flex:none}
+.how-num span{position:absolute;inset:0;font-family:var(--f-d);font-style:italic;font-weight:300;font-size:150px;line-height:1;color:var(--accent);transform:translateY(100%);opacity:0;transition:transform .9s var(--ease),opacity .9s var(--ease);font-variation-settings:"opsz" 144}
+.how-num span.on{transform:none;opacity:1}
+.how-num span.out{transform:translateY(-100%);opacity:0}
+.how-label{padding-bottom:22px}
+.how-label small{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+.how-label b{display:block;font-family:var(--f-d);font-weight:400;font-size:26px;margin-top:4px}
+.steps{list-style:none;margin:0;padding:0 0 0 34px;position:relative}
+.steps::before,.steps .rail{content:"";position:absolute;left:6px;top:10px;bottom:10px;width:1px;background:var(--line-2)}
+.steps .rail{background:var(--accent);transform-origin:top;transform:scaleY(0)}
+.step{padding:6px 0 70px;position:relative;opacity:.42;transition:opacity .7s var(--ease)}
+.step:last-child{padding-bottom:6px}
+.step::before{content:"";position:absolute;left:-34px;top:16px;width:13px;height:13px;border-radius:50%;background:var(--bg-2);border:1px solid var(--line-2);transition:background-color .5s,border-color .5s}
+.step.on{opacity:1}
+.step.on::before{background:var(--accent);border-color:var(--accent)}
+.step small{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.step h3{font-size:clamp(30px,3.4vw,40px);margin-top:8px}
+.step p{color:var(--muted);margin-top:12px;max-width:30em}
+.how-boxes{margin-top:80px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.how-boxes > div{min-width:0;padding:30px 28px 6px 0}
+.how-boxes > div + div{padding-left:28px;border-left:1px solid var(--line)}
+.how-boxes svg{width:28px;height:28px;color:var(--accent);display:block;margin-bottom:16px}
+.how-boxes h3{font-size:26px}
+.how-boxes p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.how-boxes .wa-line{margin-top:44px;font-family:var(--f-d);font-style:italic;font-size:clamp(22px,2.6vw,28px);grid-column:1/-1;border:0;padding:0}
+@media (max-width:900px){.how-grid{grid-template-columns:1fr;gap:40px}.how-pin{position:static}.how-dial{display:none}.step{padding-bottom:48px;opacity:1}.how-boxes{grid-template-columns:1fr;margin-top:56px}.how-boxes > div,.how-boxes > div + div{padding:26px 0 14px;border-left:0}.how-boxes > div + div{border-top:1px solid var(--line)}}
+
+.mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .mod-grid > *{min-width:0}
-.mod{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:34px 30px;transition:border-color .25s,transform .25s}
-.mod:hover{border-color:var(--line-2);transform:translateY(-3px)}
-.mod svg{width:48px;height:48px;color:var(--peach);display:block;margin-bottom:20px}
-.mod h3{font-size:clamp(30px,3.4vw,40px)}
-.mod p{color:var(--muted);margin-top:12px}
-.mod ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
-.mod li{display:flex;gap:12px;align-items:baseline;font-size:16px}
-.mod li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--peach);flex:none;transform:translateY(-2px)}
-.vinculo{margin-top:16px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding:34px 30px;border:1px solid var(--line-2);border-radius:4px;background:linear-gradient(110deg,var(--peach-soft),transparent 70%)}
+.mod-grid > div > .mod{height:100%}
+.mod{position:relative;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:40px 34px 34px;overflow:hidden;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .6s var(--ease),border-color .4s}
+.mod::before{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--mx,50%) var(--my,0%),var(--accent-soft),transparent 60%);opacity:0;transition:opacity .5s;pointer-events:none}
+.mod:hover{border-color:var(--line-2)}
+.mod:hover::before{opacity:1}
+.mod > *{position:relative}
+.mod-ill{width:88px;height:88px;display:block;margin-bottom:26px}
+.mod h3{font-size:clamp(34px,3.6vw,46px)}
+.mod > p{color:var(--muted);margin-top:12px}
+.mod ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:0;border-top:1px solid var(--line)}
+.mod li{padding:12px 0;border-bottom:1px solid var(--line);font-size:15.5px;display:flex;gap:14px;align-items:baseline}
+.mod li::before{content:"";width:14px;height:1px;background:var(--accent);flex:none;transform:translateY(-4px)}
+.vinculo{margin-top:18px;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;padding:44px 40px;border-radius:22px}
 .vinculo > *{min-width:0}
-.vinculo-q{font-family:var(--f-title);font-size:clamp(30px,4vw,46px);font-weight:600;line-height:1.05;max-width:9em}
-.vinculo-q em{color:var(--peach);font-weight:500}
-.vinculo p{color:var(--muted)}
+.vinculo-q{font-family:var(--f-d);font-weight:300;font-size:clamp(32px,4.2vw,52px);line-height:1.05}
+.vinculo-q em{font-style:italic;color:var(--band-accent)}
+.vinculo p{color:var(--band-muted)}
 .vinculo p + p{margin-top:12px}
-@media (max-width:820px){.mod-grid{grid-template-columns:1fr}.vinculo{grid-template-columns:1fr;gap:16px;padding:28px 20px}.mod{padding:28px 20px}}
+@media (max-width:820px){.mod-grid{grid-template-columns:1fr}.vinculo{grid-template-columns:1fr;gap:18px;padding:32px 22px}.mod{padding:32px 22px 26px}}
 
-/* antes da primeira conversa */
-.pc-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:start}
-.pc-grid > *{min-width:0}
-.pc-form{display:grid;gap:28px}
-.pc-group{border:0;margin:0;padding:0;min-width:0}
-.pc-group legend{font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding:0}
-.pc-opts{display:flex;flex-wrap:wrap;gap:10px}
-.pc-opt{position:relative;cursor:pointer}
+.pc-shell{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
+.pc-shell > *{min-width:0}
+.pc-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 34px 30px;position:relative;overflow:hidden}
+.pc-top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:600}
+.pc-bar{height:1px;background:var(--line-2);margin-top:14px;position:relative;overflow:hidden}
+.pc-bar i{position:absolute;inset:0;background:var(--accent);transform-origin:left;transform:scaleX(.25);transition:transform .8s var(--ease)}
+.pc-steps{margin-top:30px;position:relative}
+.pc-step{border:0;margin:0;padding:0;min-width:0}
+.pc-step + .pc-step{margin-top:34px}
+.pc-step legend{font-family:var(--f-d);font-weight:350;font-size:clamp(28px,3.2vw,38px);line-height:1.1;padding:0;margin-bottom:8px}
+.pc-step legend em{font-style:italic;color:var(--accent);font-weight:300}
+.pc-help{color:var(--muted);font-size:15px;margin-bottom:20px}
+.pc-opts{display:grid;gap:10px}
+.pc-opt{position:relative;cursor:pointer;display:block}
 .pc-opt input{position:absolute;opacity:0;width:1px;height:1px}
-.pc-opt span{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 20px;border:1px solid var(--line-2);border-radius:999px;background:var(--panel);font-size:16px;transition:border-color .2s,background-color .2s,color .2s}
-.pc-opt span svg{width:20px;height:20px;color:var(--dim);flex:none;transition:color .2s}
-.pc-opt:hover span{border-color:var(--peach)}
-.pc-opt input:checked + span{background:var(--peach);border-color:var(--peach);color:var(--peach-ink)}
-.pc-opt input:checked + span svg{color:var(--peach-ink)}
-.pc-opt input:focus-visible + span{outline:2px solid var(--peach-hi);outline-offset:3px}
-.pc-text label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-.pc-text textarea{width:100%;min-height:96px;padding:14px 16px;background:var(--panel);border:1px solid var(--line-2);border-radius:4px;color:var(--text);font:inherit;font-size:16px;resize:vertical}
-.pc-text textarea::placeholder{color:var(--dim)}
-.pc-text small{display:flex;justify-content:space-between;gap:12px;color:var(--dim);font-size:13.5px;margin-top:8px}
-.pc-out{background:var(--paper);color:var(--paper-ink);border-radius:4px;position:sticky;top:96px;box-shadow:0 22px 50px rgba(0,0,0,.35)}
-.pc-out-head{padding:16px 20px;border-bottom:1px dashed var(--paper-line);font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--paper-muted)}
-.pc-msg{margin:0;padding:20px;font-family:var(--f-title);font-size:20px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word;min-height:170px}
-.pc-actions{padding:0 20px 20px;display:grid;gap:8px}
-.pc-actions .btn{width:100%;background:var(--paper-ink);color:var(--paper)}
-.pc-actions .btn:hover{background:#2e403a;transform:translateY(-2px)}
-.pc-actions :focus-visible{outline-color:var(--paper-accent)}
-.pc-clear{background:none;border:0;color:var(--paper-muted);font:inherit;font-size:14.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px;justify-self:center}
-.pc-note{margin-top:22px;display:flex;gap:12px;font-size:14.5px;color:var(--muted);padding:14px 18px;border-left:2px solid var(--peach);background:var(--peach-soft)}
-.pc-note svg{width:20px;height:20px;flex:none;color:var(--peach);margin-top:2px}
-.pc-note strong{color:var(--text);font-weight:600}
-@media (max-width:900px){.pc-grid{grid-template-columns:1fr}.pc-out{position:static}}
+.pc-opt span{display:flex;align-items:center;gap:14px;min-height:58px;padding:0 20px;border:1px solid var(--line-2);border-radius:14px;background:var(--bg);font-size:16.5px;transition:border-color .3s,background-color .3s,color .3s}
+.pc-opt span svg{width:22px;height:22px;color:var(--accent);flex:none}
+.pc-opt span::after{content:"";margin-left:auto;width:18px;height:18px;border-radius:50%;border:1px solid var(--line-2);flex:none;transition:border-color .3s,box-shadow .3s}
+.pc-opt:hover span{border-color:var(--accent)}
+.pc-opt input:checked + span{border-color:var(--accent);background:var(--accent-soft)}
+.pc-opt input:checked + span::after{border-color:var(--accent);box-shadow:inset 0 0 0 4px var(--card),inset 0 0 0 10px var(--accent)}
+.pc-opt input:focus-visible + span{outline:2px solid var(--accent);outline-offset:3px}
+.pc-step textarea{width:100%;min-height:120px;padding:16px 18px;background:var(--bg);border:1px solid var(--line-2);border-radius:14px;color:var(--ink);font:inherit;font-size:16px;resize:vertical;transition:border-color .3s}
+.pc-step textarea:focus{border-color:var(--accent);outline:none}
+.pc-step textarea::placeholder{color:var(--dim)}
+.pc-count{display:flex;justify-content:space-between;gap:12px;color:var(--dim);font-size:13.5px;margin-top:8px}
+.pc-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:28px}
+.pc-back,.pc-next{font:inherit;cursor:pointer;border-radius:999px;min-height:48px;padding:0 22px;font-weight:600;font-size:15px}
+.pc-back{background:none;border:1px solid transparent;color:var(--muted);text-decoration:underline;text-underline-offset:4px}
+.pc-back[disabled]{visibility:hidden}
+.pc-next{background:var(--btn);color:var(--btn-ink);border:0;display:inline-flex;align-items:center;gap:10px;transition:background-color .3s}
+.pc-next:hover{background:var(--btn-hover)}
+.pc-next svg{width:16px;height:16px}
+.pc-done-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pc-done-list li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.pc-done-list li > *{min-width:0}
+.pc-done-list span{color:var(--dim)}
+.pc-done-list b{font-weight:500;text-align:right;overflow-wrap:anywhere}
+.js .pc-step{display:none}
+.js .pc-step.on{display:block}
+.js .pc-step + .pc-step{margin-top:0}
+.js .pc-nav{display:flex}
+.pc-nav{display:none}
+.js .pc-step.on.enter-f{animation:pcf .7s var(--ease) both}
+.js .pc-step.on.enter-b{animation:pcb .7s var(--ease) both}
+@keyframes pcf{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+@keyframes pcb{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
+.pc-out{background:var(--band);color:var(--band-ink);border-radius:22px;padding:30px 28px 26px;position:sticky;top:110px;box-shadow:var(--shadow)}
+.pc-out-head{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--band-muted);font-weight:600}
+.pc-out-head i{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 4px rgba(31,174,91,.18)}
+.pc-bubble{margin-top:18px;background:var(--band-2);border:1px solid var(--band-line);border-radius:18px 18px 18px 4px;padding:18px 20px}
+.pc-msg{margin:0;font-family:var(--f-d);font-weight:350;font-size:19px;line-height:1.45;white-space:pre-wrap;overflow-wrap:break-word;min-height:120px}
+.pc-msg.flash{animation:flash .6s var(--ease)}
+@keyframes flash{from{opacity:.35;transform:translateY(4px)}to{opacity:1;transform:none}}
+.pc-out .btn{width:100%;margin-top:18px;background:var(--band-accent);color:#1a1512}
+.pc-out .btn:hover{background:#f6c9ad}
+.pc-clear{display:block;margin:10px auto 0;background:none;border:0;color:var(--band-muted);font:inherit;font-size:14px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px}
+.pc-out :focus-visible{outline-color:var(--band-accent)}
+.pc-note{margin-top:22px;display:flex;gap:14px;font-size:14.5px;color:var(--muted);padding:16px 20px;border-left:1px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0}
+.pc-note svg{width:20px;height:20px;flex:none;color:var(--accent);margin-top:2px}
+.pc-note strong{color:var(--ink);font-weight:600}
+@media (max-width:900px){.pc-shell{grid-template-columns:1fr}.pc-out{position:static}.pc-card{padding:28px 20px 24px}.pc-out{padding:26px 20px 22px}}
 
-/* reflexões */
 .refl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .refl-grid > *{min-width:0}
-.refl{background:#fbf5e8;color:var(--paper-ink);border-radius:2px 2px 2px 14px;padding:30px 26px 26px;position:relative;box-shadow:0 1px 0 var(--paper-line),0 14px 30px rgba(60,40,20,.12);transition:transform .25s}
-.refl:nth-child(2){transform:translateY(22px)}
-.refl:hover{transform:translateY(-4px)}
-.refl:nth-child(2):hover{transform:translateY(18px)}
-.refl-n{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--paper-muted)}
-.refl h3{font-size:clamp(28px,2.8vw,34px);margin-top:14px}
-.refl p{margin-top:14px;font-size:16px;color:#3a4540}
-.refl-foot{margin-top:22px;padding-top:14px;border-top:1px solid var(--paper-line);font-family:var(--f-title);font-style:italic;font-size:18px;color:var(--paper-accent)}
-.refl-more{margin-top:56px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;color:var(--paper-muted)}
-.refl-more a{color:var(--paper-ink);font-weight:600;text-underline-offset:4px}
-@media (max-width:900px){.refl-grid{grid-template-columns:1fr}.refl:nth-child(2),.refl:nth-child(2):hover{transform:none}.refl-more{margin-top:32px}}
+.refl{background:var(--card);border:1px solid var(--line);border-radius:4px 4px 4px 28px;padding:34px 30px 28px;display:flex;flex-direction:column;transition:transform .7s var(--ease),border-color .4s}
+.refl:hover,.js .refl.reveal.in:hover{transform:translateY(-6px);border-color:var(--line-2)}
+.refl-n{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);display:flex;justify-content:space-between}
+.refl h3{font-size:clamp(28px,2.8vw,34px);margin-top:18px}
+.refl p{margin-top:16px;font-size:16px;color:var(--muted)}
+.refl-foot{margin-top:auto;padding-top:22px}
+.refl-foot span{display:block;padding-top:16px;border-top:1px solid var(--line);font-family:var(--f-d);font-style:italic;font-size:19px;color:var(--accent)}
+.refl-more{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;color:var(--muted)}
+.refl-more a{color:var(--ink);font-weight:600;text-underline-offset:5px;text-decoration-color:var(--accent)}
+@media (max-width:900px){.refl-grid{grid-template-columns:1fr}}
 
-/* avaliações */
-.rep-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.rep-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
 .rep-grid > *{min-width:0}
-.big-score{font-family:var(--f-title);font-weight:600;font-size:clamp(120px,19vw,200px);line-height:.8;color:var(--peach-hi);display:flex;align-items:flex-start;gap:8px;margin-top:22px}
-.big-score sup{font-size:.2em;color:var(--muted);line-height:1;margin-top:.35em;font-weight:500}
-.rep-meta{margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--muted)}
-.rep-meta .stars svg{width:21px;height:21px}
-.rep-meta b{color:var(--text);font-weight:600}
-.rep-title{font-size:clamp(32px,4vw,46px);margin-bottom:30px}
-.bars{display:grid;gap:24px}
-.bar-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:9px}
-.bar-top b{font-family:var(--f-title);font-size:30px;font-weight:600}
-.bar-top span{font-size:14.5px;color:var(--muted)}
-.bar-track{height:6px;background:var(--panel-2);border-radius:999px;overflow:hidden}
-.bar-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#b8735a,var(--peach-hi))}
-.rep-also{margin-top:30px;color:var(--muted)}
-.rep-also strong{color:var(--text);font-weight:500}
-.rep-note{margin-top:18px;font-size:13px;color:var(--dim);line-height:1.5}
-@media (max-width:860px){.rep-grid{grid-template-columns:1fr;gap:38px}}
+.big-score{font-family:var(--f-d);font-weight:300;font-size:clamp(130px,20vw,230px);line-height:.8;color:var(--band-accent);display:flex;align-items:flex-start;gap:10px;margin-top:26px;font-variation-settings:"opsz" 144;letter-spacing:-.03em}
+.big-score sup{font-size:.18em;color:var(--band-muted);line-height:1;margin-top:.4em;font-style:italic;letter-spacing:0}
+.rep-meta{margin-top:26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;color:var(--band-muted)}
+.rep-meta .stars{color:var(--band-accent)}
+.rep-meta .stars svg{width:18px;height:18px}
+.rep-meta b{color:var(--band-ink);font-weight:600}
+.rep-title{font-size:clamp(34px,4.2vw,50px);margin-bottom:34px}
+.bars{display:grid;gap:26px}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.bar-top b{font-family:var(--f-d);font-size:30px;font-weight:350}
+.bar-top span{font-size:14.5px;color:var(--band-muted)}
+.bar-track{height:2px;background:var(--band-line);position:relative;overflow:hidden}
+.bar-fill{position:absolute;left:0;top:0;bottom:0;background:var(--band-accent);transform-origin:left}
+.js .bar-fill{transform:scaleX(0);transition:transform 1.4s var(--ease)}
+.js .bars.in .bar-fill{transform:scaleX(1)}
+.rep-also{margin-top:34px;color:var(--band-muted)}
+.rep-also strong{color:var(--band-ink);font-weight:500}
+.rep-note{margin-top:18px;font-size:13px;color:var(--band-muted);opacity:.8;line-height:1.5}
+@media (max-width:860px){.rep-grid{grid-template-columns:1fr;gap:44px}}
 
-/* onde */
-.loc-sec{background:var(--bg-2);border-block:1px solid var(--line)}
-.loc-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .loc-grid > *{min-width:0}
-.loc-info{padding:36px 32px;display:grid;gap:28px;background:var(--panel)}
-.loc-row{display:grid;grid-template-columns:28px 1fr;gap:16px}
+.loc-info{display:grid;gap:0;align-content:start;border-top:1px solid var(--line)}
+.loc-row{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:24px 0;border-bottom:1px solid var(--line)}
 .loc-row > *{min-width:0}
-.loc-row > svg{width:24px;height:24px;color:var(--peach);margin-top:3px}
-.loc-row h3{font-family:var(--f-body);font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.loc-row > svg{width:22px;height:22px;color:var(--accent);margin-top:4px}
+.loc-row h3{font-family:var(--f-b);font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:8px}
 .loc-row p{font-size:17.5px}
 .loc-row small{display:block;color:var(--muted);font-size:14.5px;margin-top:4px}
-.phone{font-family:var(--f-title);font-size:30px;font-weight:600;color:var(--peach-hi);user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums lining-nums;line-height:1.1}
-.loc-actions{display:flex;flex-wrap:wrap;gap:12px}
-.loc-map{position:relative;min-height:400px;background:#102923;overflow:hidden}
+.phone{font-family:var(--f-d);font-size:32px;font-weight:350;color:var(--ink);user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums lining-nums;line-height:1.1}
+.loc-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.loc-map{position:relative;min-height:440px;border-radius:22px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
 .loc-map svg{position:absolute;inset:0;width:100%;height:100%}
-.pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%,28px);background:var(--peach);color:var(--peach-ink);font-family:var(--f-title);font-weight:600;font-size:19px;padding:5px 14px;border-radius:999px;white-space:nowrap}
-.map-note{position:absolute;left:14px;bottom:12px;font-size:12px;color:var(--dim)}
-@media (max-width:860px){.loc-grid{grid-template-columns:1fr}.loc-map{min-height:270px}.loc-info{padding:28px 20px}}
+.map-st{fill:none;stroke:var(--line-2);stroke-width:1}
+.map-road{fill:none;stroke:var(--line-2);stroke-width:7;stroke-linecap:round;opacity:.5}
+.map-route{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-dasharray:4 7}
+.map-pin{fill:var(--accent)}
+.map-ring{fill:none;stroke:var(--accent);stroke-width:1}
+.pin-label{position:absolute;left:58%;top:44%;transform:translate(-50%,-150%);background:var(--btn);color:var(--btn-ink);font-family:var(--f-d);font-size:17px;padding:6px 16px;border-radius:999px;white-space:nowrap}
+.map-note{position:absolute;left:18px;bottom:14px;font-size:12px;color:var(--dim)}
+@media (max-width:860px){.loc-grid{grid-template-columns:1fr}.loc-map{min-height:300px}}
 
-/* faq */
-.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
 .faq-grid > *{min-width:0}
-.faq-grid h2{font-size:clamp(36px,5vw,58px);margin-top:14px}
-.faq-grid .intro{color:var(--muted);margin-top:18px;max-width:26em}
+.faq-grid h2{font-size:clamp(38px,5.2vw,62px);margin-top:18px}
+.faq-grid .intro{color:var(--muted);margin-top:20px;max-width:24em}
+.faq-grid .intro + .btn{margin-top:28px}
 .faq{border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 2px;font-family:var(--f-title);font-size:clamp(22px,2.4vw,26px);font-weight:600;line-height:1.2}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:24px 2px;font-family:var(--f-d);font-size:clamp(21px,2.3vw,25px);font-weight:350;line-height:1.25;transition:color .3s}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary > span{min-width:0}
-.faq summary i{width:30px;height:30px;flex:none;border:1px solid var(--line-2);border-radius:50%;position:relative;transition:border-color .25s}
-.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--peach);transform:translate(-50%,-50%)}
-.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .2s}
-.faq details[open] summary i{border-color:var(--peach)}
-.faq details[open] summary i::after{opacity:0}
-.faq summary:hover{color:var(--peach-hi)}
-.faq .ans{padding:0 2px 24px;color:var(--muted);max-width:40em}
-@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:28px}}
+.faq summary i{width:34px;height:34px;flex:none;border:1px solid var(--line-2);border-radius:50%;position:relative;transition:border-color .4s,transform .6s var(--ease)}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1px;background:var(--accent);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i{border-color:var(--accent);transform:rotate(45deg)}
+.faq summary:hover{color:var(--accent)}
+.faq .ans{padding:0 2px 26px;color:var(--muted);max-width:40em}
+.faq details[open] .ans{animation:ans .6s var(--ease)}
+@keyframes ans{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:30px}}
 
-/* final */
-.final{padding-block:100px;position:relative;overflow:hidden;border-top:1px solid var(--line)}
-.final::before{content:"";position:absolute;left:50%;bottom:-70%;width:120%;height:150%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(243,195,124,.15),transparent 70%);pointer-events:none}
-.final .wrap{position:relative;display:grid;grid-template-columns:1.4fr auto;gap:36px;align-items:end}
-.final .wrap > *{min-width:0}
-.final h2{font-size:clamp(42px,6.8vw,84px);line-height:1}
-.final p{margin-top:18px;color:var(--muted);font-size:18px;max-width:34em}
-.final-cta{display:grid;gap:12px}
-@media (max-width:820px){.final .wrap{grid-template-columns:1fr}}
+.final{padding-block:140px 120px;overflow:hidden;text-align:center}
+.final-line{display:block;width:min(560px,100%);height:auto;margin:0 auto 40px;overflow:visible}
+.final h2{font-size:clamp(44px,7.4vw,104px);line-height:1;max-width:12em;margin:18px auto 0;font-weight:300}
+.final .kicker{justify-content:center}
+.final .kicker::after{content:"";width:32px;height:1px;background:currentColor}
+.final p{margin:24px auto 0;color:var(--band-muted);font-size:18px;max-width:32em}
+.final-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:40px}
 
-footer{border-top:1px solid var(--line);padding-block:30px 104px;color:var(--dim);font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px}
+footer{background:var(--band-2);color:var(--band-muted);padding-block:34px 110px;font-size:14px;border-top:1px solid var(--band-line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 28px}
 footer .wrap > *{min-width:0}
-.foot-name{font-family:var(--f-title);font-size:20px;color:var(--text)}
-.selo{font-size:12.5px;letter-spacing:.04em}
+.foot-name{font-family:var(--f-d);font-size:22px;color:var(--band-ink)}
+.selo{font-size:12.5px;letter-spacing:.03em;align-self:end}
 
-.wa-float{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.5);transition:transform .2s}
+.wa-float{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:45;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);transition:transform .5s var(--ease)}
 .wa-float:hover{transform:scale(1.07)}
 .wa-float svg{width:30px;height:30px}
 
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.draw{stroke-dasharray:1;stroke-dashoffset:0}
+
+@media (prefers-reduced-motion:no-preference){
+  .js .hero h1 .ln > span{animation:lineUp 1.1s var(--ease) both}
+  .js .hero h1 .ln:nth-child(2) > span{animation-delay:.12s}
+  .js .hero h1 .ln:nth-child(3) > span{animation-delay:.24s}
+  .js .hero-meta{animation:fadeUp .9s var(--ease) both}
+  .js .hero-lead{animation:fadeUp 1s var(--ease) .45s both}
+  .js .hero-cta{animation:fadeUp 1s var(--ease) .6s both}
+  .js .rating{animation:fadeUp 1s var(--ease) .75s both}
+  .js .hero-art .draw{stroke-dashoffset:1;animation:drawIn 2.2s var(--ease) both}
+  .js .hero-art .d2{animation-delay:.3s}
+  .js .hero-art .d3{animation-delay:.6s}
+  .js .hero-art .d4{animation-delay:.9s}
+  .js .hero-art .d5{animation-delay:1.2s}
+  .js .hero-art .lightfill{animation:fadeIn 1.6s ease .9s both,breathe 7s ease-in-out 2.5s infinite}
+  .js .hero-art .sunfill{animation:fadeIn 1.6s ease .5s both}
+  .js .hero-art .steam{animation:steam 5s ease-in-out 2s infinite}
+  .js .hero-art .wv{animation:drawIn 2.4s var(--ease) 1s both,float 8s ease-in-out 3.4s infinite}
+  .js .hero-art .wv2{animation:drawIn 2.4s var(--ease) 1.3s both,float 9s ease-in-out 3.7s infinite reverse}
+  .js .hero-art figcaption{animation:fadeIn 1s ease 1.6s both}
+  .js .reveal{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1.1s var(--ease);transition-delay:calc(var(--i,0) * 110ms)}
+  .js .reveal.in{opacity:1;transform:none}
+  .js .reveal-clip{clip-path:inset(0 0 100% 0);transition:clip-path 1.2s var(--ease);transition-delay:calc(var(--i,0) * 110ms)}
+  .js .reveal-clip.in{clip-path:inset(0 0 0 0)}
+  .js .sdraw .draw{stroke-dashoffset:1;transition:stroke-dashoffset 2.2s var(--ease)}
+  .js .sdraw .draw:nth-of-type(2){transition-delay:.25s}
+  .js .sdraw .draw:nth-of-type(3){transition-delay:.5s}
+  .js .sdraw.in .draw{stroke-dashoffset:0}
+  .js .pin-pulse{animation:pulse 3s ease-out infinite;transform-origin:center;transform-box:fill-box}
+}
+@keyframes lineUp{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes drawIn{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes breathe{0%,100%{opacity:.16}50%{opacity:.26}}
+@keyframes steam{0%,100%{transform:translateY(0);opacity:.35}50%{transform:translateY(-6px);opacity:.85}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.4);opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .marquee-track{transform:none!important}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.47 15.02L2.5 21.5l4.6-1.05A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.03l-.3-.18-2.73.62.64-2.64-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.06 3.3 5.1 4.5 2.53 1 3.04.8 3.6.75.55-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.66-1.63-.92-2.22-.23-.55-.47-.56-.68-.57h-.57Z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
-    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-    <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 21V4h10v17M4 21h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="12.5" r="1" fill="currentColor"/></symbol>
-    <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6M12 16.5V20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
-    <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="16.8" r=".9" fill="currentColor"/></symbol>
-    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
-    <symbol id="i-sunset" viewBox="0 0 24 24"><path d="M6.5 16a5.5 5.5 0 0 1 11 0M2.5 16h19M5 20h14M12 4v3M4.6 8.6l1.8 1.8M19.4 8.6l-1.8 1.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
-    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 21V4h10v17M4 21h16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="12.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9 20h6M12 16.5V20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="12" cy="16.8" r=".9" fill="currentColor"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-sunset" viewBox="0 0 24 24"><path d="M6.5 16a5.5 5.5 0 0 1 11 0M2.5 16h19M5 20h14M12 4v3M4.6 8.6l1.8 1.8M19.4 8.6l-1.8 1.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
 
-<header class="top">
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="top" id="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Mateus Capistrano, psicólogo – início">
       <span class="brand-name">Mateus <i>Capistrano</i></span>
-      <small>Psicólogo · João Pessoa</small>
+      <small>Psicólogo · CRP 13/10023</small>
     </a>
     <nav aria-label="Seções">
       <a href="#escuta">A escuta</a>
-      <a href="#atendimento">Atendimento</a>
+      <a href="#como-funciona">Como funciona</a>
       <a href="#modalidades">Presencial e on-line</a>
-      <a href="#reflexoes">Reflexões</a>
+      <a href="#primeira-conversa">Primeira conversa</a>
       <a href="#onde">Onde fica</a>
       <a href="#perguntas">Perguntas</a>
     </nav>
-    <a class="btn btn-peach" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener" aria-label="Conversar com Mateus pelo WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Conversar no WhatsApp</span></a>
+    <a class="btn btn-main mag" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener" aria-label="Conversar com Mateus pelo WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
   </div>
 </header>
 
@@ -352,179 +502,169 @@ footer .wrap > *{min-width:0}
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="hero-tag"><span>Psicologia</span><span>Presencial · Bancários</span><span>On-line</span></div>
-      <h1>Escuta ativa e <em>possibilidades</em> do viver.</h1>
+      <div class="hero-meta"><span>Psicologia</span><span>Presencial · Bancários</span><span>On-line</span></div>
+      <h1><span class="ln"><span>Escuta ativa</span></span><span class="ln"><span>e <em>possibilidades</em></span></span><span class="ln"><span>do viver.</span></span></h1>
       <p class="hero-lead">Sou <strong>Mateus Capistrano, psicólogo</strong>. Atendo presencialmente no Delta Center, em Bancários, João Pessoa, e também on-line. Um espaço para falar com calma, ser ouvido de verdade e olhar para a própria vida com outros olhos.</p>
       <div class="hero-cta">
-        <a class="btn btn-peach" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Conversar pelo WhatsApp</a>
-        <a class="btn btn-ghost" href="#atendimento">Como funciona o atendimento</a>
+        <a class="btn btn-main mag" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Conversar pelo WhatsApp</a>
+        <a class="btn btn-line" href="#como-funciona">Como funciona<svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
       <div class="rating">
-        <span class="rating-n num">5,0</span>
+        <span class="rating-n num" data-count="5" data-dec="1">5,0</span>
         <div>
           <div class="stars" role="img" aria-label="Nota 5,0 de 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
-          <small><span class="num">211</span> avaliações no Google</small>
+          <small><span class="num" data-count="211">211</span> avaliações no Google</small>
         </div>
       </div>
     </div>
 
-    <figure class="hero-art">
-      <svg viewBox="0 0 600 520" role="img" aria-label="Ilustração: estante de livros à luz de um abajur, com um livro aberto sobre a mesa e uma xícara ao lado">
+    <figure class="hero-art" id="hero-art">
+      <svg viewBox="0 0 520 560" role="img" aria-label="Ilustração em traço fino: uma poltrona perto de uma janela com luz, um livro aberto sobre a mesa e duas linhas onduladas como uma conversa">
         <defs>
-          <radialGradient id="g-lamp" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f3c37c" stop-opacity=".55"/><stop offset=".45" stop-color="#f3c37c" stop-opacity=".16"/><stop offset="1" stop-color="#f3c37c" stop-opacity="0"/></radialGradient>
-          <linearGradient id="g-cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d39a" stop-opacity=".42"/><stop offset="1" stop-color="#f6d39a" stop-opacity="0"/></linearGradient>
-          <linearGradient id="g-page" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9dcc2"/><stop offset=".85" stop-color="#f7efdf"/><stop offset="1" stop-color="#d9c8a8"/></linearGradient>
-          <linearGradient id="g-page2" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#e9dcc2"/><stop offset=".85" stop-color="#f7efdf"/><stop offset="1" stop-color="#d9c8a8"/></linearGradient>
-          <linearGradient id="g-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a4a42"/><stop offset="1" stop-color="#14302a"/></linearGradient>
+          <radialGradient id="g-sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f3c37c" stop-opacity=".55"/><stop offset="1" stop-color="#f3c37c" stop-opacity="0"/></radialGradient>
         </defs>
-
-        <rect x="40" y="30" width="520" height="350" rx="6" fill="#123029"/>
-        <circle class="glow" cx="440" cy="150" r="230" fill="url(#g-lamp)"/>
-
-        <g stroke="#2d554b" stroke-width="3">
-          <path d="M60 140h480M60 255h480"/>
+        <g class="par" data-speed="-0.06">
+          <circle cx="380" cy="130" r="150" fill="url(#g-sun)" class="sunfill"/>
+          <path class="lightfill" d="M300 252 L460 252 L516 470 L262 470 Z"/>
+        </g>
+        <g class="par" data-speed="-0.03">
+          <path class="la draw" pathLength="1" d="M300 252 V122 A80 80 0 0 1 460 122 V252 Z"/>
+          <path class="la la-thin draw d2" pathLength="1" d="M380 42 V252 M300 168 H460"/>
+          <path class="la draw d2" pathLength="1" d="M286 252 H474 M292 262 H468"/>
+          <path class="la la-a draw d3" pathLength="1" d="M318 252 V226 H330 V252 M332 252 V218 H342 V252 M346 252 V232 L360 228 L362 252"/>
         </g>
         <g>
-          <rect x="74" y="66" width="20" height="72" fill="#7d4a3a"/>
-          <rect x="96" y="58" width="16" height="80" fill="#c98d6c"/>
-          <rect x="114" y="74" width="24" height="64" fill="#2f5d52"/>
-          <rect x="140" y="62" width="14" height="76" fill="#e4d3b2"/>
-          <rect x="156" y="70" width="22" height="68" fill="#8f3f34"/>
-          <g transform="rotate(14 196 138)"><rect x="184" y="70" width="18" height="68" fill="#b9805f"/></g>
-          <rect x="226" y="80" width="40" height="58" rx="2" fill="#3b6a5d" opacity=".7"/>
-          <rect x="284" y="64" width="18" height="74" fill="#d8b89a"/>
-          <rect x="304" y="70" width="22" height="68" fill="#6f3b2f"/>
-          <rect x="328" y="60" width="14" height="78" fill="#efe2c6"/>
-          <rect x="344" y="76" width="20" height="62" fill="#c27c5f"/>
-          <rect x="366" y="66" width="16" height="72" fill="#25483f"/>
-          <rect x="384" y="72" width="22" height="66" fill="#9a5a45"/>
-          <rect x="430" y="118" width="70" height="10" fill="#d9c09d"/>
-          <rect x="434" y="106" width="62" height="12" fill="#8c4b3a"/>
-          <rect x="438" y="96" width="54" height="10" fill="#e6d7b9"/>
+          <path class="la draw d2" pathLength="1" d="M44 206 H88 L78 172 H54 Z"/>
+          <path class="la draw d3" pathLength="1" d="M66 206 V470 M50 470 H82"/>
+          <path class="la la-a la-thin draw d4" pathLength="1" d="M56 214 L40 300 M76 214 L92 300"/>
+          <path class="la draw d2" pathLength="1" d="M118 312 C116 262 134 236 172 232 H244 C282 236 298 262 296 312"/>
+          <path class="la draw d3" pathLength="1" d="M102 324 C102 314 110 308 122 308 H292 C304 308 312 314 312 324 V372 C312 380 306 384 298 384 H116 C108 384 102 380 102 372 Z"/>
+          <path class="la draw d3" pathLength="1" d="M86 318 C98 318 104 326 104 338 V392 H82 C76 392 72 388 72 382 V332 C72 324 78 318 86 318 Z"/>
+          <path class="la draw d3" pathLength="1" d="M328 318 C316 318 310 326 310 338 V392 H332 C338 392 342 388 342 382 V332 C342 324 336 318 328 318 Z"/>
+          <path class="la la-thin draw d4" pathLength="1" d="M124 340 H290"/>
+          <path class="la draw d4" pathLength="1" d="M92 392 L86 430 M322 392 L328 430 M150 384 V420 M264 384 V420"/>
+          <path class="la la-a la-thin draw d4" pathLength="1" d="M168 262 C190 270 224 270 246 262"/>
         </g>
         <g>
-          <rect x="78" y="186" width="18" height="67" fill="#e3cfa9"/>
-          <rect x="98" y="176" width="22" height="77" fill="#7a3f33"/>
-          <rect x="122" y="190" width="16" height="63" fill="#c9926f"/>
-          <rect x="140" y="180" width="20" height="73" fill="#335f54"/>
-          <rect x="162" y="184" width="14" height="69" fill="#f0e3c8"/>
-          <rect x="196" y="230" width="66" height="10" fill="#b7704f"/>
-          <rect x="200" y="240" width="58" height="13" fill="#e8dbc0"/>
-          <circle cx="229" cy="212" r="16" fill="none" stroke="#c98d6c" stroke-width="2" opacity=".75"/>
-          <path d="M229 212v-9M229 212l6 4" stroke="#c98d6c" stroke-width="2" stroke-linecap="round" opacity=".75"/>
-          <rect x="282" y="178" width="20" height="75" fill="#8d4a3a"/>
-          <rect x="304" y="186" width="18" height="67" fill="#d6b593"/>
-          <rect x="324" y="182" width="24" height="71" fill="#2a5247"/>
-          <g transform="rotate(-12 360 253)"><rect x="350" y="186" width="16" height="67" fill="#e6d4b0"/></g>
+          <path class="la draw d3" pathLength="1" d="M366 404 H466 M378 404 L372 470 M454 404 L460 470 M374 442 H458"/>
+          <path class="la la-a draw d4" pathLength="1" d="M384 402 C396 392 408 392 414 400 C420 392 432 392 444 402 M414 400 V403"/>
+          <path class="la la-thin draw d5" pathLength="1" d="M390 398 C398 394 404 394 409 397 M419 397 C424 394 430 394 438 398"/>
+          <path class="la draw d4" pathLength="1" d="M446 386 H460 V396 A7 7 0 0 1 446 396 Z M460 389 A4 4 0 0 1 460 396"/>
+          <path class="la la-a la-thin steam" d="M451 378 c-3 -5 3 -7 0 -12 M456 378 c-3 -5 3 -7 0 -12"/>
         </g>
-
-        <g>
-          <path d="M486 36v74" stroke="#c9a46e" stroke-width="2"/>
-          <path d="M452 110h68l-10 34h-48Z" fill="#e9a982"/>
-          <path d="M452 110h68l-3 10h-62Z" fill="#f4c6a4"/>
-          <path class="glow" d="M462 144h48l70 236H392Z" fill="url(#g-cone)"/>
-        </g>
-
-        <path d="M20 380h560v30H20Z" fill="url(#g-desk)"/>
-        <path d="M20 380h560" stroke="#3e6a5e" stroke-width="2"/>
-
-        <g class="page-turn">
-          <path d="M300 392C258 372 200 368 150 378l-6-74c52-10 112-6 156 16Z" fill="url(#g-page)"/>
-          <path d="M300 392c42-20 100-24 150-14l6-74c-52-10-112-6-156 16Z" fill="url(#g-page2)"/>
-          <path d="M300 320v72" stroke="#c4ae88" stroke-width="1.6"/>
-          <g stroke="#9a8a6d" stroke-width="2" stroke-linecap="round" opacity=".7">
-            <path d="M168 322c34-6 74-4 112 6"/><path d="M167 336c34-6 74-4 112 6"/><path d="M166 350c34-6 74-4 96 2"/><path d="M165 364c30-5 60-4 80 0"/>
-            <path d="M320 328c38-10 78-12 112-6"/><path d="M320 342c38-10 78-12 113-6"/><path d="M336 354c30-6 66-8 98-3"/>
-          </g>
-          <text x="388" y="372" text-anchor="middle" font-family="Cormorant Garamond, Garamond, serif" font-style="italic" font-size="19" fill="#b86f4f">escuta</text>
-        </g>
-        <path d="M146 398c50-12 112-10 154 8 42-18 104-20 154-8" fill="none" stroke="#0a1d19" stroke-opacity=".45" stroke-width="5" stroke-linecap="round"/>
-
-        <g>
-          <path d="M486 352h44v16a22 22 0 0 1-44 0Z" fill="#efe2c6"/>
-          <path d="M530 356a9 9 0 0 1 0 18" fill="none" stroke="#efe2c6" stroke-width="4"/>
-          <path class="steam" d="M500 338c-6-8 6-12 0-22M514 340c-6-8 6-12 0-22" fill="none" stroke="#f3c37c" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-        </g>
-        <g>
-          <path d="M80 380c-4-20 2-34 12-44" fill="none" stroke="#3e7a66" stroke-width="3" stroke-linecap="round"/>
-          <path d="M92 336c10-6 22-4 26 4-10 6-20 4-26-4ZM84 352c-12-4-22 0-24 8 10 4 20 2 24-8Z" fill="#4b8a73"/>
-          <path d="M66 380h36l-4-22H70Z" fill="#c98d6c"/>
-        </g>
-
-        <text x="300" y="460" text-anchor="middle" font-family="Karla, Segoe UI, sans-serif" font-size="11" letter-spacing="7" fill="#8b9c90">ESTUDOS · LEITURAS · OFÍCIO</text>
-        <path d="M200 480h200" stroke="#eeae8c" stroke-opacity=".5" stroke-width="1"/>
+        <path class="la draw" pathLength="1" d="M18 470 H502"/>
+        <path class="la la-a wv draw" pathLength="1" d="M20 512 C80 490 120 534 180 512 S280 490 340 512 S440 534 500 512"/>
+        <path class="la wv2 draw" style="opacity:.5" pathLength="1" d="M20 532 C90 516 130 548 200 532 S300 516 360 532 S450 544 500 530"/>
       </svg>
-      <figcaption>Ilustração · Mateus Capistrano</figcaption>
+      <figcaption>uma poltrona, uma janela, uma conversa</figcaption>
     </figure>
   </div>
 </section>
 
-<section class="paper escuta" id="escuta">
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee">
+    <span>escuta</span><span>estudos</span><span>leituras</span><span>ofício</span><span>presencial</span><span>on-line</span><span>possibilidades do viver</span>
+    <span>escuta</span><span>estudos</span><span>leituras</span><span>ofício</span><span>presencial</span><span>on-line</span><span>possibilidades do viver</span>
+  </div>
+</div>
+
+<section class="escuta" id="escuta">
   <div class="wrap escuta-grid">
     <div>
-      <div class="kicker">Sobre a escuta</div>
-      <h2>Um lugar para <em>falar</em> e ser ouvido com atenção</h2>
-      <div class="margin-notes">
-        <span>estudos</span><span>leituras</span><span>ofício</span>
+      <div class="kicker reveal">Sobre a escuta</div>
+      <h2 class="reveal" style="--i:1">Um lugar para <em>falar</em> e ser ouvido com atenção</h2>
+      <div class="notes reveal" style="--i:2">
+        <span>estudos,</span><span>leituras,</span><span>ofício.</span>
         <small>Os destaques do perfil @psicologiaem.pauta.</small>
+      </div>
+      <div class="waves sdraw" aria-hidden="true">
+        <svg viewBox="0 0 460 120">
+          <path class="la la-a draw" pathLength="1" d="M0 48 C40 20 70 76 110 48 S180 18 220 48 S300 80 340 48 S420 20 460 48"/>
+          <path class="la draw" pathLength="1" style="opacity:.55" d="M0 78 C50 64 80 92 130 78 S210 62 250 78 S330 96 380 78 S440 66 460 76"/>
+          <path class="la la-thin draw" pathLength="1" d="M0 104 H460"/>
+        </svg>
+        <div class="waves-cap"><span>quem fala</span><span>quem escuta</span></div>
       </div>
     </div>
     <div class="escuta-text">
-      <p>Psicoterapia é, antes de tudo, uma conversa com um propósito. Você traz o que está vivendo (uma dúvida, um cansaço, uma mudança, algo que nem tem nome ainda) e, sessão a sessão, essa fala ganha espaço, tempo e cuidado.</p>
-      <p>Escuta ativa é estar inteiro nessa conversa: prestar atenção ao que é dito, ao que se repete e ao que fica nas entrelinhas. Não é dar conselhos prontos nem dizer como a vida deveria ser. É ajudar você a perceber o que já está aí e abrir espaço para outras formas de olhar.</p>
-      <p>É daí que vêm as possibilidades do viver: não de uma resposta única, mas de um processo construído a dois, no seu ritmo.</p>
-      <p class="escuta-quote">Não é preciso chegar com tudo organizado. Dá para começar exatamente de onde você está.</p>
+      <p class="reveal">Psicoterapia é, antes de tudo, uma conversa com um propósito. Você traz o que está vivendo (uma dúvida, um cansaço, uma mudança, algo que nem tem nome ainda) e, sessão a sessão, essa fala ganha espaço, tempo e cuidado.</p>
+      <p class="reveal" style="--i:1">Escuta ativa é estar inteiro nessa conversa: prestar atenção ao que é dito, ao que se repete e ao que fica nas entrelinhas. Não é dar conselhos prontos nem dizer como a vida deveria ser. É ajudar você a perceber o que já está aí e abrir espaço para outras formas de olhar.</p>
+      <p class="reveal" style="--i:2">É daí que vêm as possibilidades do viver: não de uma resposta única, mas de um processo construído a dois, no seu ritmo.</p>
     </div>
   </div>
 </section>
 
-<section id="atendimento">
+<section class="band quote" aria-label="Citação">
+  <div class="wrap">
+    <span class="quote-mark" aria-hidden="true">“</span>
+    <p class="quote-text" id="quote">Não é preciso chegar com tudo organizado. Dá para começar <em>exatamente de onde você está.</em></p>
+    <p class="quote-foot">Sobre a primeira conversa</p>
+  </div>
+</section>
+
+<section id="quando">
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="kicker">Como funciona o atendimento</div>
-        <h2>Do primeiro contato <em>à primeira sessão</em></h2>
+        <div class="kicker reveal">Quando procurar</div>
+        <h2 class="reveal" style="--i:1">Não existe um motivo <em>grande o suficiente</em></h2>
       </div>
-      <p>As informações sobre o atendimento, reunidas em um só lugar. Qualquer dúvida que não estiver aqui, é só perguntar no WhatsApp.</p>
+      <p class="reveal" style="--i:2">Muita gente procura terapia sem estar em crise. Alguns pontos de partida comuns:</p>
     </div>
-    <ol class="steps">
-      <li><span class="step-n num">i.</span><h3>Primeiro contato</h3><p>Você manda uma mensagem pelo WhatsApp. Pode ser curta: só dizer que gostaria de saber sobre o atendimento já basta.</p></li>
-      <li><span class="step-n num">ii.</span><h3>Combinar os detalhes</h3><p>Nessa conversa você tira dúvidas, escolhe entre presencial e on-line e combina dia e horário da primeira sessão.</p></li>
-      <li><span class="step-n num">iii.</span><h3>Primeira sessão</h3><p>Um encontro para nos conhecermos: você conta o que te trouxe, do jeito que conseguir, e pergunta o que quiser sobre o processo.</p></li>
-      <li><span class="step-n num">iv.</span><h3>Continuidade</h3><p>A frequência dos encontros é combinada entre nós e pode ser revista ao longo do caminho, conforme o que fizer sentido para você.</p></li>
-    </ol>
-    <div class="how-foot">
-      <div class="how-box">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-        <h3>Sigilo</h3>
-        <p>O que é dito em sessão fica entre você e o psicólogo, como prevê o Código de Ética Profissional do Psicólogo.</p>
-      </div>
-      <div class="how-box">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clock"/></svg>
-        <h3>Valores e duração</h3>
-        <p>Informados no primeiro contato pelo WhatsApp, junto com os horários disponíveis.</p>
-      </div>
-      <div class="how-box">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-question"/></svg>
-        <h3>Ficou alguma dúvida?</h3>
-        <p>Pergunte antes de marcar. Saber como tudo funciona também faz parte de se sentir à vontade.</p>
-      </div>
+    <ul class="quando-list">
+      <li class="reveal"><span class="q-n">01</span><span class="q-t">Um momento</span><span class="q-d">que você quer entender melhor.</span></li>
+      <li class="reveal" style="--i:1"><span class="q-n">02</span><span class="q-t">Uma <em style="font-style:italic;color:var(--accent)">escolha</em></span><span class="q-d">que pede tempo para ser pensada.</span></li>
+      <li class="reveal" style="--i:2"><span class="q-n">03</span><span class="q-t">Um incômodo</span><span class="q-d">que se repete e você não sabe bem por quê.</span></li>
+      <li class="reveal" style="--i:3"><span class="q-n">04</span><span class="q-t">Um <em style="font-style:italic;color:var(--accent)">cansaço</em>, uma mudança</span><span class="q-d">ou algo que ainda nem tem nome.</span></li>
+      <li class="reveal" style="--i:4"><span class="q-n">05</span><span class="q-t">Um espaço só seu</span><span class="q-d">para falar, com calma.</span></li>
+    </ul>
+    <div class="quando-foot reveal">
+      <p>Se você se reconheceu em algum desses pontos, ou em nenhum deles, dá para conversar.</p>
+      <a class="btn btn-main mag" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar pelo WhatsApp</a>
     </div>
   </div>
 </section>
 
-<section class="modal-sec" id="modalidades">
+<section class="how" id="como-funciona">
+  <div class="wrap">
+    <div class="how-grid">
+      <div class="how-pin">
+        <div class="kicker reveal">Como funciona</div>
+        <h2 class="reveal" style="--i:1">Do primeiro contato <em>à primeira sessão</em></h2>
+        <p class="reveal" style="--i:2">As informações sobre o atendimento, reunidas em um só lugar. Os detalhes eu explico pelo WhatsApp.</p>
+        <div class="how-dial" aria-hidden="true">
+          <div class="how-num" id="how-num"><span class="on">i.</span><span>ii.</span><span>iii.</span><span>iv.</span></div>
+          <div class="how-label"><small>Etapa</small><b id="how-label">Primeiro contato</b></div>
+        </div>
+      </div>
+      <ol class="steps" id="steps">
+        <li class="rail" aria-hidden="true"></li>
+        <li class="step on" data-label="Primeiro contato"><small>Etapa i</small><h3>Primeiro contato</h3><p>Você manda uma mensagem pelo WhatsApp. Pode ser curta: só dizer que gostaria de saber sobre o atendimento já basta.</p></li>
+        <li class="step" data-label="Combinar os detalhes"><small>Etapa ii</small><h3>Combinar os detalhes</h3><p>Nessa conversa você tira dúvidas, escolhe entre presencial e on-line e combina dia e horário da primeira sessão.</p></li>
+        <li class="step" data-label="Primeira sessão"><small>Etapa iii</small><h3>Primeira sessão</h3><p>Um encontro para nos conhecermos: você conta o que te trouxe, do jeito que conseguir, e pergunta o que quiser sobre o processo.</p></li>
+        <li class="step" data-label="Continuidade"><small>Etapa iv</small><h3>Continuidade</h3><p>A frequência dos encontros é combinada entre nós e pode ser revista ao longo do caminho, conforme o que fizer sentido para você.</p></li>
+      </ol>
+    </div>
+    <div class="how-boxes">
+      <div class="reveal"><svg aria-hidden="true"><use href="#i-lock"/></svg><h3>Sigilo</h3><p>O que é dito em sessão fica entre você e o psicólogo, como prevê o Código de Ética Profissional do Psicólogo.</p></div>
+      <div class="reveal" style="--i:1"><svg aria-hidden="true"><use href="#i-clock"/></svg><h3>Valores e duração</h3><p>Informados no primeiro contato pelo WhatsApp, junto com os horários disponíveis.</p></div>
+      <div class="reveal" style="--i:2"><svg aria-hidden="true"><use href="#i-question"/></svg><h3>Ficou alguma dúvida?</h3><p>Pergunte antes de marcar. Saber como tudo funciona também faz parte de se sentir à vontade.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modalidades">
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="kicker">Presencial e on-line</div>
-        <h2>Duas formas de estar <em>presente</em></h2>
+        <div class="kicker reveal">Presencial e on-line</div>
+        <h2 class="reveal" style="--i:1">Duas formas de estar <em>presente</em></h2>
       </div>
-      <p>A escuta é a mesma nas duas. A escolha depende da sua rotina, de onde você está e de onde se sente mais à vontade para falar.</p>
+      <p class="reveal" style="--i:2">A escuta é a mesma nas duas. A escolha depende da sua rotina, de onde você está e de onde se sente mais à vontade para falar.</p>
     </div>
     <div class="mod-grid">
-      <article class="mod">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-door"/></svg>
+      <div class="reveal"><article class="mod tilt">
+        <svg class="mod-ill" viewBox="0 0 88 88" aria-hidden="true"><path class="la" d="M22 80 V14 H60 V80 M14 80 H74"/><path class="la la-a" d="M60 14 L70 20 V74 L60 80"/><circle cx="52" cy="48" r="2" fill="var(--accent)"/></svg>
         <h3>Presencial</h3>
         <p>No consultório do Delta Center, em Bancários, João Pessoa.</p>
         <ul>
@@ -532,9 +672,9 @@ footer .wrap > *{min-width:0}
           <li>Para quem prefere o encontro frente a frente</li>
           <li>Endereço e rota na seção "Onde fica"</li>
         </ul>
-      </article>
-      <article class="mod">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-screen"/></svg>
+      </article></div>
+      <div class="reveal" style="--i:1"><article class="mod tilt">
+        <svg class="mod-ill" viewBox="0 0 88 88" aria-hidden="true"><rect class="la" x="10" y="16" width="68" height="46" rx="4"/><path class="la" d="M32 76 H56 M44 62 V76"/><path class="la la-a" d="M22 40 C30 32 36 48 44 40 S58 32 66 40"/></svg>
         <h3>On-line</h3>
         <p>Por videochamada, de onde você estiver.</p>
         <ul>
@@ -542,174 +682,187 @@ footer .wrap > *{min-width:0}
           <li>Fones de ouvido ajudam a manter a privacidade</li>
           <li>Uma conexão estável deixa a conversa mais fluida</li>
         </ul>
-      </article>
+      </article></div>
     </div>
-    <div class="vinculo">
+    <div class="vinculo band reveal">
       <p class="vinculo-q">Dá para criar <em>vínculo</em> pela tela?</p>
       <div>
         <p>É uma pergunta comum, e justa. O vínculo na terapia não depende da sala: ele se constrói com presença, constância e a confiança de que aquele é um espaço seguro para falar. Isso pode acontecer na tela também.</p>
-        <p>Algumas pessoas se sentem mais à vontade em casa; outras preferem o consultório. Se estiver em dúvida, conte no primeiro contato e vocês conversam sobre o que faz mais sentido para você.</p>
+        <p>Algumas pessoas se sentem mais à vontade em casa; outras preferem o consultório. Se estiver em dúvida, conte no primeiro contato e a gente conversa sobre o que faz mais sentido para você.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="primeira-conversa">
+<section class="how" id="primeira-conversa">
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="kicker">Antes da primeira conversa</div>
-        <h2>Monte a sua <em>mensagem</em></h2>
+        <div class="kicker reveal">Antes da primeira conversa</div>
+        <h2 class="reveal" style="--i:1">Monte a sua <em>mensagem</em></h2>
       </div>
-      <p>Escolha a modalidade e o turno que prefere. Se quiser, escreva em poucas palavras o que te trouxe. A mensagem fica pronta para enviar no WhatsApp.</p>
+      <p class="reveal" style="--i:2">Três perguntas rápidas, no lugar de um formulário. No fim, a mensagem fica pronta para enviar no WhatsApp. Nada é salvo nem enviado sem você tocar no botão.</p>
     </div>
 
-    <div class="pc-grid">
-      <form class="pc-form" id="pc-form" autocomplete="off">
-        <fieldset class="pc-group">
-          <legend>Modalidade</legend>
-          <div class="pc-opts">
-            <label class="pc-opt"><input type="radio" name="modo" value="presencial, no Delta Center"><span><svg aria-hidden="true"><use href="#i-door"/></svg>Presencial</span></label>
-            <label class="pc-opt"><input type="radio" name="modo" value="on-line"><span><svg aria-hidden="true"><use href="#i-screen"/></svg>On-line</span></label>
-            <label class="pc-opt"><input type="radio" name="modo" value="ainda não sei, gostaria de conversar sobre isso"><span><svg aria-hidden="true"><use href="#i-question"/></svg>Ainda não sei</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="pc-group">
-          <legend>Turno de preferência</legend>
-          <div class="pc-opts">
-            <label class="pc-opt"><input type="radio" name="turno" value="manhã"><span><svg aria-hidden="true"><use href="#i-sun"/></svg>Manhã</span></label>
-            <label class="pc-opt"><input type="radio" name="turno" value="tarde"><span><svg aria-hidden="true"><use href="#i-sunset"/></svg>Tarde</span></label>
-            <label class="pc-opt"><input type="radio" name="turno" value="noite"><span><svg aria-hidden="true"><use href="#i-moon"/></svg>Noite</span></label>
-          </div>
-        </fieldset>
-        <div class="pc-text">
-          <label for="pc-obs">O que te trouxe (opcional)</label>
-          <textarea id="pc-obs" maxlength="200" placeholder="Em poucas palavras, se quiser. Ex.: ando muito cansado com o trabalho."></textarea>
-          <small><span>Escreva só o que se sentir à vontade. Também dá para deixar para a conversa.</span><span class="num" id="pc-count">0/200</span></small>
+    <div class="pc-shell">
+      <form class="pc-card reveal" id="pc-form" autocomplete="off">
+        <div class="pc-top"><span id="pc-stage">Etapa 1 de 4</span><span id="pc-stage-name">Modalidade</span></div>
+        <div class="pc-bar" aria-hidden="true"><i id="pc-bar"></i></div>
+        <div class="pc-steps">
+          <fieldset class="pc-step on" data-name="Modalidade">
+            <legend>Como você prefere <em>conversar</em>?</legend>
+            <p class="pc-help">Dá para mudar depois, sem problema.</p>
+            <div class="pc-opts">
+              <label class="pc-opt"><input type="radio" name="modo" value="presencial, no Delta Center" data-short="Presencial"><span><svg aria-hidden="true"><use href="#i-door"/></svg>Presencial, no Delta Center</span></label>
+              <label class="pc-opt"><input type="radio" name="modo" value="on-line" data-short="On-line"><span><svg aria-hidden="true"><use href="#i-screen"/></svg>On-line, por videochamada</span></label>
+              <label class="pc-opt"><input type="radio" name="modo" value="ainda não sei, gostaria de conversar sobre isso" data-short="Ainda não sei"><span><svg aria-hidden="true"><use href="#i-question"/></svg>Ainda não sei</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="pc-step" data-name="Turno">
+            <legend>Qual turno costuma <em>funcionar</em> melhor?</legend>
+            <p class="pc-help">Só uma preferência. Os horários disponíveis são combinados na conversa.</p>
+            <div class="pc-opts">
+              <label class="pc-opt"><input type="radio" name="turno" value="manhã" data-short="Manhã"><span><svg aria-hidden="true"><use href="#i-sun"/></svg>Manhã</span></label>
+              <label class="pc-opt"><input type="radio" name="turno" value="tarde" data-short="Tarde"><span><svg aria-hidden="true"><use href="#i-sunset"/></svg>Tarde</span></label>
+              <label class="pc-opt"><input type="radio" name="turno" value="noite" data-short="Noite"><span><svg aria-hidden="true"><use href="#i-moon"/></svg>Noite</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="pc-step" data-name="Em poucas palavras">
+            <legend>Quer contar o que te <em>trouxe</em>?</legend>
+            <p class="pc-help">É opcional. Escreva só o que se sentir à vontade; também dá para deixar para a conversa.</p>
+            <label class="sr" for="pc-obs">O que te trouxe (opcional)</label>
+            <textarea id="pc-obs" maxlength="200" placeholder="Ex.: ando muito cansado com o trabalho."></textarea>
+            <div class="pc-count"><span>Opcional</span><span class="num" id="pc-count">0/200</span></div>
+          </fieldset>
+          <fieldset class="pc-step" data-name="Pronto">
+            <legend>Sua mensagem está <em>pronta</em>.</legend>
+            <p class="pc-help">Confira o resumo. Se quiser mudar algo, é só voltar.</p>
+            <ul class="pc-done-list">
+              <li><span>Modalidade</span><b id="sum-modo">Não informado</b></li>
+              <li><span>Turno</span><b id="sum-turno">Não informado</b></li>
+              <li><span>O que te trouxe</span><b id="sum-obs">Fica para a conversa</b></li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="pc-nav">
+          <button type="button" class="pc-back" id="pc-back" disabled>Voltar</button>
+          <button type="button" class="pc-next" id="pc-next">Continuar<svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
         </div>
       </form>
 
-      <aside class="pc-out" aria-live="polite">
-        <div class="pc-out-head">Sua mensagem</div>
-        <p class="pc-msg" id="pc-msg">Olá, Mateus! Vim pelo seu site e gostaria de saber sobre o atendimento.</p>
-        <div class="pc-actions">
-          <a class="btn" id="pc-send" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar no WhatsApp</a>
-          <button type="button" class="pc-clear" id="pc-clear">Limpar escolhas</button>
-        </div>
+      <aside class="pc-out reveal" style="--i:1" aria-live="polite">
+        <div class="pc-out-head"><i aria-hidden="true"></i>Prévia da mensagem</div>
+        <div class="pc-bubble"><p class="pc-msg" id="pc-msg">Olá, Mateus! Vim pelo seu site e gostaria de saber sobre o atendimento.</p></div>
+        <a class="btn" id="pc-send" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar no WhatsApp</a>
+        <button type="button" class="pc-clear" id="pc-clear">Começar de novo</button>
       </aside>
     </div>
     <p class="pc-note"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Este contato não é atendimento de emergência. Se você estiver em sofrimento intenso ou pensando em se machucar, ligue para o <strong>CVV, no 188</strong> (gratuito, 24 horas) ou procure o serviço de urgência mais próximo. Em caso de emergência médica, ligue para o SAMU, no 192.</span></p>
   </div>
 </section>
 
-<section class="paper" id="reflexoes">
+<section id="reflexoes">
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="kicker">Reflexões</div>
-        <h2>Perguntas para levar <em>na bolsa</em></h2>
+        <div class="kicker reveal">Reflexões</div>
+        <h2 class="reveal" style="--i:1">Perguntas para levar <em>na bolsa</em></h2>
       </div>
-      <p>Pequenos textos sobre temas que também aparecem no perfil: trabalho, vínculo e o jeito de olhar para a própria história.</p>
+      <p class="reveal" style="--i:2">Pequenos textos sobre temas que também aparecem no perfil: trabalho, vínculo e o jeito de olhar para a própria história.</p>
     </div>
     <div class="refl-grid">
-      <article class="refl">
-        <span class="refl-n">Reflexão · 01</span>
+      <article class="refl reveal">
+        <span class="refl-n"><span>Reflexão</span><span>01</span></span>
         <h3>Trabalho é só <em>produtividade</em>?</h3>
         <p>Medimos o dia pelo que entregamos e, às vezes, esquecemos de perguntar o que aquilo significa para nós. O trabalho ocupa boa parte da vida; vale olhar também para o sentido que ele tem, e não só para o quanto rende.</p>
-        <p class="refl-foot">E para você, o que faz um dia valer?</p>
+        <div class="refl-foot"><span>E para você, o que faz um dia valer?</span></div>
       </article>
-      <article class="refl">
-        <span class="refl-n">Reflexão · 02</span>
+      <article class="refl reveal" style="--i:1">
+        <span class="refl-n"><span>Reflexão</span><span>02</span></span>
         <h3>Dá para criar <em>vínculo</em> pela tela?</h3>
         <p>Uma tela no meio não impede que uma conversa seja verdadeira. O que sustenta o vínculo é a presença de quem escuta e a confiança de quem fala, e isso se constrói encontro após encontro.</p>
-        <p class="refl-foot">Presença é mais do que estar na mesma sala.</p>
+        <div class="refl-foot"><span>Presença é mais do que estar na mesma sala.</span></div>
       </article>
-      <article class="refl">
-        <span class="refl-n">Reflexão · 03</span>
+      <article class="refl reveal" style="--i:2">
+        <span class="refl-n"><span>Reflexão</span><span>03</span></span>
         <h3>Felicidade é questão de <em>perspectiva</em>?</h3>
         <p>Nem tudo se resolve mudando o ponto de vista, e algumas dores pedem tempo. Mas olhar a mesma história de outro lugar pode revelar caminhos que antes pareciam fechados.</p>
-        <p class="refl-foot">De onde você está olhando?</p>
+        <div class="refl-foot"><span>De onde você está olhando?</span></div>
       </article>
     </div>
-    <div class="refl-more">
+    <div class="refl-more reveal">
       <span>Mais reflexões, trechos de livros e notas de estudo no Instagram:</span>
       <a href="https://www.instagram.com/psicologiaem.pauta/" target="_blank" rel="noopener">@psicologiaem.pauta</a>
     </div>
   </div>
 </section>
 
-<section id="avaliacoes">
+<section class="band" id="avaliacoes">
   <div class="wrap rep-grid">
     <div>
-      <div class="kicker">Avaliações no Google</div>
-      <div class="big-score num">5,0<sup>/5</sup></div>
-      <div class="rep-meta">
+      <div class="kicker reveal">Avaliações no Google</div>
+      <div class="big-score num reveal" style="--i:1"><span data-count="5" data-dec="1" data-scroll>5,0</span><sup>/5</sup></div>
+      <div class="rep-meta reveal" style="--i:2">
         <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-        <span><b class="num">211</b> avaliações</span>
+        <span><b class="num" data-count="211" data-scroll>211</b> avaliações</span>
       </div>
     </div>
     <div>
-      <h2 class="rep-title">O que os pacientes <em>destacam</em></h2>
-      <div class="bars">
+      <h2 class="rep-title reveal">O que os pacientes <em>destacam</em></h2>
+      <div class="bars" id="bars">
         <div class="bar">
           <div class="bar-top"><b>Terapia</b><span class="num">14 avaliações</span></div>
           <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div>
         </div>
         <div class="bar">
           <div class="bar-top"><b>Ético</b><span class="num">10 avaliações</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:71.4%"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:71.4%;transition-delay:.12s"></div></div>
         </div>
         <div class="bar">
           <div class="bar-top"><b>Processo</b><span class="num">9 avaliações</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:64.3%"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:64.3%;transition-delay:.24s"></div></div>
         </div>
         <div class="bar">
           <div class="bar-top"><b>Inteligente</b><span class="num">6 avaliações</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:42.9%"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:42.9%;transition-delay:.36s"></div></div>
         </div>
       </div>
-      <p class="rep-also">Nas avaliações, quem foi atendido também comenta sobre um <strong>ambiente seguro e confortável</strong> desde a primeira sessão.</p>
+      <p class="rep-also reveal">Nas avaliações, quem foi atendido também comenta sobre um <strong>ambiente seguro e confortável</strong> desde a primeira sessão.</p>
       <p class="rep-note">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
     </div>
   </div>
 </section>
 
-<section class="loc-sec" id="onde">
+<section id="onde">
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="kicker">Onde fica</div>
-        <h2>Delta Center, <em>Bancários</em></h2>
+        <div class="kicker reveal">Onde fica</div>
+        <h2 class="reveal" style="--i:1">Delta Center, <em>Bancários</em></h2>
       </div>
-      <p>Para as sessões presenciais. Os horários são combinados pelo WhatsApp antes de você ir.</p>
+      <p class="reveal" style="--i:2">Para as sessões presenciais. Os horários são combinados pelo WhatsApp antes de você ir.</p>
     </div>
     <div class="loc-grid">
-      <div class="loc-info">
-        <div class="loc-row"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h3>Endereço</h3><p>Delta Center<br>R. Empresário João Rodrigues Alves, <span class="num">125</span><br>Bancários, João Pessoa – PB<br><span class="num">58051-022</span></p></div></div>
-        <div class="loc-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><h3>Horários</h3><p>Combinados pelo WhatsApp</p><small>Presencial ou on-line, conforme a disponibilidade de agenda.</small></div></div>
-        <div class="loc-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><div><h3>WhatsApp</h3><p class="phone">(83) 99832-5999</p><small>Toque no número para selecionar e copiar.</small></div></div>
-        <div class="loc-actions">
-          <a class="btn btn-peach" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Psic%C3%B3logo+Mateus+Capistrano+Delta+Center+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+      <div>
+        <div class="loc-info">
+          <div class="loc-row reveal"><svg aria-hidden="true"><use href="#i-pin"/></svg><div><h3>Endereço</h3><p>Delta Center<br>R. Empresário João Rodrigues Alves, <span class="num">125</span><br>Bancários, João Pessoa – PB<br><span class="num">58051-022</span></p></div></div>
+          <div class="loc-row reveal" style="--i:1"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><h3>Horários</h3><p>Combinados pelo WhatsApp</p><small>Presencial ou on-line, conforme a disponibilidade de agenda.</small></div></div>
+          <div class="loc-row reveal" style="--i:2"><svg aria-hidden="true"><use href="#i-phone"/></svg><div><h3>WhatsApp</h3><p class="phone">(83) 99832-5999</p><small>Toque no número para selecionar e copiar.</small></div></div>
+        </div>
+        <div class="loc-actions reveal">
+          <a class="btn btn-main mag" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Psic%C3%B3logo+Mateus+Capistrano+Delta+Center+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
         </div>
       </div>
-      <div class="loc-map" aria-hidden="true">
-        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-          <rect width="400" height="400" fill="#102923"/>
-          <g fill="#14332c">
-            <rect x="20" y="24" width="120" height="96" rx="4"/><rect x="160" y="24" width="90" height="96" rx="4"/><rect x="270" y="24" width="110" height="96" rx="4"/>
-            <rect x="20" y="146" width="120" height="96" rx="4"/><rect x="270" y="146" width="110" height="96" rx="4"/>
-            <rect x="20" y="268" width="120" height="110" rx="4"/><rect x="160" y="268" width="90" height="110" rx="4"/><rect x="270" y="268" width="110" height="110" rx="4"/>
-          </g>
-          <rect x="160" y="146" width="90" height="96" rx="4" fill="#1c4038" stroke="#eeae8c" stroke-opacity=".5"/>
-          <g stroke="#24493f" stroke-width="10" stroke-linecap="round">
-            <path d="M0 133h400M0 255h400M150 0v400M260 0v400"/>
-          </g>
-          <path d="M0 133h400" stroke="#2e5a4f" stroke-width="2" stroke-dasharray="8 10"/>
-          <circle cx="205" cy="194" r="70" fill="#eeae8c" fill-opacity=".07"/>
-          <circle cx="205" cy="194" r="38" fill="#eeae8c" fill-opacity=".1"/>
-          <path d="M205 196s-17-15-17-28a17 17 0 0 1 34 0c0 13-17 28-17 28Z" fill="#eeae8c" transform="translate(0 -4)"/>
-          <circle cx="205" cy="164" r="6" fill="#102923"/>
+      <div class="loc-map sdraw reveal" style="--i:1" aria-hidden="true">
+        <svg viewBox="0 0 400 440" preserveAspectRatio="xMidYMid slice">
+          <path class="map-road" d="M-10 140 C120 150 260 120 410 136 M-10 330 C140 320 250 350 410 334 M120 -10 C130 140 110 300 126 450 M300 -10 C290 160 310 300 296 450"/>
+          <path class="map-st" d="M-10 80 H410 M-10 240 C100 236 300 246 410 240 M-10 400 H410 M60 -10 V450 M210 -10 C214 120 206 320 212 450 M360 -10 V450"/>
+          <path class="map-route draw" pathLength="1" d="M330 450 C322 392 302 344 298 304 C294 266 266 250 244 238 C236 228 233 212 232 194"/>
+          <circle class="map-ring pin-pulse" cx="232" cy="194" r="18"/>
+          <circle class="map-ring" cx="232" cy="194" r="34" style="opacity:.35"/>
+          <path class="map-pin" d="M232 196s-14-12-14-23a14 14 0 0 1 28 0c0 11-14 23-14 23Z" transform="translate(0 -4)"/>
+          <circle cx="232" cy="169" r="5" fill="var(--card)"/>
         </svg>
         <span class="pin-label">Delta Center</span>
         <span class="map-note">Mapa ilustrativo, fora de escala</span>
@@ -718,52 +871,52 @@ footer .wrap > *{min-width:0}
   </div>
 </section>
 
-<section id="perguntas">
+<section class="how" id="perguntas">
   <div class="wrap faq-grid">
     <div>
-      <div class="kicker">Perguntas frequentes</div>
-      <h2>Antes de <em>começar</em></h2>
-      <p class="intro">Respostas curtas para dúvidas comuns. O que não estiver aqui pode ser perguntado no primeiro contato.</p>
+      <div class="kicker reveal">Perguntas frequentes</div>
+      <h2 class="reveal" style="--i:1">Antes de <em>começar</em></h2>
+      <p class="intro reveal" style="--i:2">Respostas curtas para dúvidas comuns. O que não estiver aqui pode ser perguntado no primeiro contato.</p>
+      <a class="btn btn-line reveal" style="--i:3" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar no WhatsApp</a>
     </div>
     <div class="faq">
-      <details>
+      <details class="reveal">
         <summary><span>Preciso estar em crise para começar a terapia?</span><i aria-hidden="true"></i></summary>
         <p class="ans">Não. Muita gente procura terapia para entender melhor um momento, uma escolha, um incômodo que se repete, ou simplesmente para ter um espaço próprio de fala. Não existe um "motivo grande o suficiente".</p>
       </details>
-      <details>
+      <details class="reveal" style="--i:1">
         <summary><span>Não sei o que dizer na primeira sessão. Tudo bem?</span><i aria-hidden="true"></i></summary>
-        <p class="ans">Tudo bem. A primeira sessão é para se conhecerem; você fala do jeito que conseguir, e a conversa vai encontrando o próprio caminho. Também é um bom momento para tirar dúvidas sobre o processo.</p>
+        <p class="ans">Tudo bem. A primeira sessão é para nos conhecermos; você fala do jeito que conseguir, e a conversa vai encontrando o próprio caminho. Também é um bom momento para tirar dúvidas sobre o processo.</p>
       </details>
-      <details>
+      <details class="reveal" style="--i:2">
         <summary><span>O que eu falar fica em sigilo?</span><i aria-hidden="true"></i></summary>
         <p class="ans">Sim. O sigilo é um dever do psicólogo, previsto no Código de Ética Profissional da categoria, e vale tanto para o atendimento presencial quanto para o on-line.</p>
       </details>
-      <details>
+      <details class="reveal" style="--i:3">
         <summary><span>Terapia on-line é reconhecida?</span><i aria-hidden="true"></i></summary>
         <p class="ans">Sim. O atendimento psicológico on-line é regulamentado pelo Conselho Federal de Psicologia. Para aproveitar bem, escolha um lugar reservado e, se possível, use fones de ouvido.</p>
       </details>
-      <details>
+      <details class="reveal" style="--i:4">
         <summary><span>Quanto custa e quanto tempo dura cada sessão?</span><i aria-hidden="true"></i></summary>
         <p class="ans">Valores e duração são informados no primeiro contato pelo WhatsApp, junto com os horários disponíveis.</p>
       </details>
-      <details>
+      <details class="reveal" style="--i:5">
         <summary><span>Por quanto tempo vou fazer terapia?</span><i aria-hidden="true"></i></summary>
-        <p class="ans">Não há um prazo fixo. Cada processo tem o seu ritmo, e a continuidade é conversada entre vocês ao longo do caminho.</p>
+        <p class="ans">Não há um prazo fixo. Cada processo tem o seu ritmo, e a continuidade é conversada entre nós ao longo do caminho.</p>
       </details>
     </div>
   </div>
 </section>
 
-<section class="final">
+<section class="band final">
   <div class="wrap">
-    <div>
-      <div class="kicker">Primeiro passo</div>
-      <h2 style="margin-top:14px">Quando quiser, <em>a conversa começa</em> por aqui.</h2>
-      <p>Mande uma mensagem pelo WhatsApp para saber sobre o atendimento, presencial no Delta Center ou on-line.</p>
-    </div>
-    <div class="final-cta">
-      <a class="btn btn-peach" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Conversar pelo WhatsApp</a>
-      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Psic%C3%B3logo+Mateus+Capistrano+Delta+Center+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+    <svg class="final-line sdraw" viewBox="0 0 560 60" aria-hidden="true"><path class="la draw" pathLength="1" style="stroke:var(--band-accent)" d="M0 30 C50 6 90 54 140 30 S230 6 280 30 S370 54 420 30 S510 6 560 30"/><path class="la draw" pathLength="1" style="stroke:var(--band-ink);opacity:.4" d="M0 44 C60 34 100 56 160 44 S260 32 320 44 S440 56 560 42"/></svg>
+    <div class="kicker reveal">Primeiro passo</div>
+    <h2 class="reveal" style="--i:1">Quando quiser, <em>a conversa começa</em> por aqui.</h2>
+    <p class="reveal" style="--i:2">Mande uma mensagem pelo WhatsApp para saber sobre o atendimento, presencial no Delta Center ou on-line.</p>
+    <div class="final-cta reveal" style="--i:3">
+      <a class="btn btn-main mag" href="https://wa.me/5583998325999?text=Ol%C3%A1%2C%20Mateus!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20o%20atendimento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Conversar pelo WhatsApp</a>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Psic%C3%B3logo+Mateus+Capistrano+Delta+Center+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
     </div>
   </div>
 </section>
@@ -785,29 +938,181 @@ footer .wrap > *{min-width:0}
 
 <script>
 (function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer=window.matchMedia&&window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  root.classList.add('js');
+
+  function fmt(v,dec){return dec?v.toFixed(1).replace('.',','):String(Math.round(v));}
+  function countUp(el,delay){
+    var to=parseFloat(el.getAttribute('data-count')),dec=el.hasAttribute('data-dec');
+    if(reduce){el.textContent=fmt(to,dec);return;}
+    el.textContent=fmt(0,dec);
+    var start=null,dur=1600;
+    setTimeout(function(){
+      function tick(t){if(start===null)start=t;var p=Math.min((t-start)/dur,1);var e=1-Math.pow(1-p,3);el.textContent=fmt(to*e,dec);if(p<1)requestAnimationFrame(tick);else el.textContent=fmt(to,dec);}
+      requestAnimationFrame(tick);
+    },delay||0);
+  }
+  document.querySelectorAll('.rating [data-count]').forEach(function(el){countUp(el,800);});
+
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting)return;
+        var t=en.target;
+        t.classList.add('in');
+        t.querySelectorAll&&t.querySelectorAll('[data-scroll]').forEach(function(c){if(!c.dataset.go){c.dataset.go='1';countUp(c,200);}});
+        io.unobserve(t);
+      });
+    },{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.reveal,.sdraw,#bars').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal,.sdraw,#bars').forEach(function(el){el.classList.add('in');});
+  }
+
+  var quote=document.getElementById('quote');
+  var words=[];
+  if(quote && !reduce){
+    (function split(node){
+      [].slice.call(node.childNodes).forEach(function(ch){
+        if(ch.nodeType===3){
+          var frag=document.createDocumentFragment();
+          ch.textContent.split(/(\s+)/).forEach(function(part){
+            if(!part)return;
+            if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(part));return;}
+            var s=document.createElement('span');s.className='w';s.textContent=part;frag.appendChild(s);words.push(s);
+          });
+          node.replaceChild(frag,ch);
+        }else if(ch.nodeType===1){split(ch);}
+      });
+    })(quote);
+  }
+
+  var progress=document.getElementById('progress');
+  var top=document.getElementById('top');
+  var marquee=document.getElementById('marquee');
+  var steps=[].slice.call(document.querySelectorAll('#steps .step'));
+  var stepsBox=document.getElementById('steps');
+  var rail=stepsBox?stepsBox.querySelector('.rail'):null;
+  var nums=[].slice.call(document.querySelectorAll('#how-num span'));
+  var howLabel=document.getElementById('how-label');
+  var pars=[].slice.call(document.querySelectorAll('.par'));
+  var current=0, mq=0, ticking=false, lastY=window.scrollY;
+
+  function setStep(i){
+    if(i===current)return;
+    steps.forEach(function(s,k){s.classList.toggle('on',k<=i);});
+    nums.forEach(function(n,k){n.classList.remove('on','out');if(k===i)n.classList.add('on');else if(k<i)n.classList.add('out');});
+    if(howLabel&&steps[i])howLabel.textContent=steps[i].getAttribute('data-label');
+    current=i;
+  }
+
+  function onScroll(){
+    ticking=false;
+    var y=window.scrollY,vh=window.innerHeight,docH=document.documentElement.scrollHeight-vh;
+    if(progress)progress.style.transform='scaleX('+(docH>0?Math.min(y/docH,1):0)+')';
+    if(top)top.classList.toggle('scrolled',y>10);
+    if(reduce)return;
+    pars.forEach(function(p){var s=parseFloat(p.getAttribute('data-speed'))||0;p.style.transform='translateY('+(y*s)+'px)';});
+    if(words.length){
+      var r=quote.getBoundingClientRect();
+      var p=(vh*0.85-r.top)/(r.height+vh*0.35);
+      p=Math.max(0,Math.min(1,p));
+      var lit=p*words.length;
+      for(var i=0;i<words.length;i++){var o=Math.max(0,Math.min(1,lit-i));words[i].style.opacity=(0.16+o*0.84).toFixed(3);}
+    }
+    if(stepsBox&&steps.length){
+      var b=stepsBox.getBoundingClientRect();
+      var pr=(vh*0.55-b.top)/b.height;pr=Math.max(0,Math.min(1,pr));
+      if(rail)rail.style.transform='scaleY('+pr.toFixed(4)+')';
+      var idx=0;
+      steps.forEach(function(s,k){if(s.getBoundingClientRect().top<vh*0.55)idx=k;});
+      setStep(idx);
+    }
+    var d=y-lastY;lastY=y;
+    mq+=Math.max(-30,Math.min(30,d))*0.15;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
+
+  if(marquee && !reduce){
+    var x=0,half=0;
+    function loop(){
+      half=marquee.scrollWidth/2;
+      x-=0.35+mq;mq*=0.92;
+      if(half>0){if(x<=-half)x+=half;if(x>0)x-=half;}
+      marquee.style.transform='translate3d('+x.toFixed(2)+'px,0,0)';
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  if(finePointer && !reduce){
+    document.querySelectorAll('.mag').forEach(function(b){
+      b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();var dx=(e.clientX-r.left-r.width/2)/r.width,dy=(e.clientY-r.top-r.height/2)/r.height;b.style.transform='translate('+(dx*10).toFixed(1)+'px,'+(dy*8).toFixed(1)+'px)';});
+      b.addEventListener('mouseleave',function(){b.style.transform='';});
+    });
+    document.querySelectorAll('.tilt').forEach(function(c){
+      c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();var px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;c.style.setProperty('--mx',(px*100)+'%');c.style.setProperty('--my',(py*100)+'%');c.style.setProperty('--ry',((px-.5)*5).toFixed(2)+'deg');c.style.setProperty('--rx',((.5-py)*5).toFixed(2)+'deg');});
+      c.addEventListener('mouseleave',function(){c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg');});
+    });
+  }
+
   var form=document.getElementById('pc-form');
+  if(!form)return;
   var obs=document.getElementById('pc-obs');
   var out=document.getElementById('pc-msg');
   var send=document.getElementById('pc-send');
   var count=document.getElementById('pc-count');
+  var fsteps=[].slice.call(form.querySelectorAll('.pc-step'));
+  var back=document.getElementById('pc-back');
+  var next=document.getElementById('pc-next');
+  var bar=document.getElementById('pc-bar');
+  var stage=document.getElementById('pc-stage');
+  var stageName=document.getElementById('pc-stage-name');
+  var at=0,autoT=null;
   var base='Olá, Mateus! Vim pelo seu site e gostaria de saber sobre o atendimento.';
-  function pick(name){var el=form.querySelector('input[name="'+name+'"]:checked');return el?el.value:'';}
-  function build(){
+  function pick(name){return form.querySelector('input[name="'+name+'"]:checked');}
+  function build(flash){
     var lines=[base];
-    var modo=pick('modo'), turno=pick('turno'), txt=obs.value.trim().replace(/\s+/g,' ');
-    if(modo) lines.push('Modalidade de interesse: '+modo+'.');
-    if(turno) lines.push('Turno de preferência: '+turno+'.');
-    if(txt) lines.push('O que me trouxe: '+txt);
+    var m=pick('modo'),t=pick('turno'),txt=obs.value.trim().replace(/\s+/g,' ');
+    if(m)lines.push('Modalidade de interesse: '+m.value+'.');
+    if(t)lines.push('Turno de preferência: '+t.value+'.');
+    if(txt)lines.push('O que me trouxe: '+txt);
     var msg=lines.join('\n');
-    out.textContent=msg;
+    if(out.textContent!==msg){out.textContent=msg;if(flash&&!reduce){out.classList.remove('flash');void out.offsetWidth;out.classList.add('flash');}}
     send.href='https://wa.me/5583998325999?text='+encodeURIComponent(msg);
     count.textContent=obs.value.length+'/200';
+    document.getElementById('sum-modo').textContent=m?m.getAttribute('data-short'):'Não informado';
+    document.getElementById('sum-turno').textContent=t?t.getAttribute('data-short'):'Não informado';
+    document.getElementById('sum-obs').textContent=txt||'Fica para a conversa';
   }
-  form.addEventListener('change',build);
-  obs.addEventListener('input',build);
+  function go(i,focus){
+    if(i<0||i>=fsteps.length)return;
+    var dir=i>at?'enter-f':'enter-b';
+    fsteps.forEach(function(s,k){s.classList.remove('on','enter-f','enter-b');if(k===i){s.classList.add('on',dir);}});
+    at=i;
+    bar.style.transform='scaleX('+((i+1)/fsteps.length)+')';
+    stage.textContent='Etapa '+(i+1)+' de '+fsteps.length;
+    stageName.textContent=fsteps[i].getAttribute('data-name');
+    back.disabled=i===0;
+    next.style.display=i===fsteps.length-1?'none':'';
+    next.firstChild.textContent=i===fsteps.length-2?'Ver mensagem':'Continuar';
+    if(focus){var f=fsteps[i].querySelector('input:checked,input,textarea');if(i===fsteps.length-1)f=send;if(f)f.focus({preventScroll:true});}
+  }
+  form.addEventListener('change',function(e){
+    build(true);
+    if(e.target.type==='radio'){clearTimeout(autoT);autoT=setTimeout(function(){if(fsteps[at].contains(e.target))go(at+1,true);},450);}
+  });
+  obs.addEventListener('input',function(){build(false);});
   form.addEventListener('submit',function(e){e.preventDefault();});
-  document.getElementById('pc-clear').addEventListener('click',function(){form.reset();build();});
-  build();
+  next.addEventListener('click',function(){go(at+1,true);});
+  back.addEventListener('click',function(){go(at-1,true);});
+  document.getElementById('pc-clear').addEventListener('click',function(){form.reset();build(true);go(0,true);});
+  build(false);
+  go(0,false);
 })();
 </script>
 </body>
