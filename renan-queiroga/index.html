@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Renan Queiroga Nutri</title>
+<meta name="description" content="Prévia do site de Renan Queiroga, nutricionista, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Renan Queiroga, nutricionista – prévia do site">
+<meta property="og:description" content="Prévia do site de Renan Queiroga, nutricionista, feita por Natã Lira, desenvolvedor em João Pessoa.">
+<meta property="og:image" content="https://nathanlira01.github.io/renan-queiroga/capa.png">
+<meta property="og:url" content="https://nathanlira01.github.io/renan-queiroga/">
+</head>
+<body>
+<meta name="description" content="Renan Queiroga, nutricionista em João Pessoa. Emagrecimento pra quem já tentou de tudo, com acompanhamento on-line ou presencial em João Pessoa/PB. Nota 5,0 no Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#ffffff;
+  --bg-2:#f3f3f1;
+  --panel:#ffffff;
+  --panel-2:#f6f6f4;
+  --line:#e4e4e0;
+  --line-2:#cfcfca;
+  --text:#0c0c0c;
+  --muted:#4d4d4d;
+  --dim:#767676;
+  --ink:#0c0c0c;
+  --on-ink:#ffffff;
+  --hl:#ffe600;
+  --hl-soft:rgba(255,230,0,.35);
+  --on-hl:#0c0c0c;
+  --red:#e0231a;
+  --red-soft:rgba(224,35,26,.08);
+  --green:#0f9a4a;
+  --green-soft:rgba(15,154,74,.09);
+  --wa:#1fae5b;
+  --food-rice:#ffffff;
+  --shadow:0 1px 0 rgba(0,0,0,.04), 0 14px 34px -22px rgba(0,0,0,.35);
+  --f:'Plus Jakarta Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b0b0b;--bg-2:#141414;--panel:#161616;--panel-2:#1d1d1d;--line:#2a2a2a;--line-2:#3a3a3a;
+    --text:#f4f4f2;--muted:#b5b5b0;--dim:#8b8b86;
+    --ink:#f4f4f2;--on-ink:#0b0b0b;
+    --hl:#ffe600;--hl-soft:rgba(255,230,0,.16);--on-hl:#0c0c0c;
+    --red:#ff5a50;--red-soft:rgba(255,90,80,.12);--green:#3ddc84;--green-soft:rgba(61,220,132,.12);
+    --food-rice:#f1f1ec;
+    --shadow:0 14px 34px -22px rgba(0,0,0,.8);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b0b0b;--bg-2:#141414;--panel:#161616;--panel-2:#1d1d1d;--line:#2a2a2a;--line-2:#3a3a3a;
+  --text:#f4f4f2;--muted:#b5b5b0;--dim:#8b8b86;
+  --ink:#f4f4f2;--on-ink:#0b0b0b;
+  --hl:#ffe600;--hl-soft:rgba(255,230,0,.16);--on-hl:#0c0c0c;
+  --red:#ff5a50;--red-soft:rgba(255,90,80,.12);--green:#3ddc84;--green-soft:rgba(61,220,132,.12);
+  --food-rice:#f1f1ec;
+  --shadow:0 14px 34px -22px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--text);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-weight:800;line-height:1.02;letter-spacing:-.035em;text-wrap:balance;overflow-wrap:break-word;margin:0}
+p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.mk{background:linear-gradient(180deg,transparent 14%,var(--hl) 14%,var(--hl) 90%,transparent 90%);color:var(--on-hl);padding:0 .14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--text)}
+.kicker::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--hl);box-shadow:0 0 0 2px var(--text)}
+.x,.ok{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;flex:none}
+.x{background:var(--red-soft);color:var(--red)}
+.ok{background:var(--green-soft);color:var(--green)}
+.x svg,.ok svg{width:16px;height:16px}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font-family:var(--f);font-weight:800;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .18s ease, background-color .18s ease, border-color .18s ease;line-height:1.15;text-align:center}
+.btn svg{width:21px;height:21px;flex:none}
+.btn-ink{background:var(--ink);color:var(--on-ink)}
+.btn-ink:hover{transform:translateY(-2px)}
+.btn-hl{background:var(--hl);color:var(--on-hl);border-color:var(--hl)}
+.btn-hl:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--text);transform:translateY(-2px)}
+
+/* topo */
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.av{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:50%;background:var(--hl);color:var(--on-hl);font-weight:800;font-size:15px;letter-spacing:-.02em;box-shadow:0 0 0 2px var(--text)}
+.brand-t{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.brand-t b{font-weight:800;font-size:17px;letter-spacing:-.02em;white-space:nowrap}
+.brand-t small{font-size:13px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top nav{display:flex;gap:22px;font-size:15px;font-weight:600}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--text)}
+.top .btn{min-height:44px;padding:0 16px;font-size:15px}
+@media (max-width:960px){.top nav{display:none}}
+@media (max-width:420px){.top .btn span{display:none}.top .btn{padding:0 13px}}
+
+/* hero */
+.hero{padding-block:48px 70px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.hero-grid > *{min-width:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:7px 13px;border-radius:999px;border:2px solid var(--text)}
+.pill.on{background:var(--ink);color:var(--on-ink)}
+.hero h1{font-size:clamp(40px,7.4vw,84px)}
+.hero-lead{margin-top:22px;font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:32em}
+.hero-lead strong{color:var(--text)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.g-line{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:28px;font-size:15px;color:var(--muted)}
+.g-line b{font-size:26px;font-weight:800;color:var(--text);letter-spacing:-.03em}
+.stars{display:inline-flex;gap:2px;color:var(--text)}
+.stars svg{width:17px;height:17px}
+
+/* card estilo post */
+.post{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:18px 20px 16px;box-shadow:var(--shadow);min-width:0}
+.post-h{display:flex;align-items:center;gap:11px;min-width:0}
+.post-h .av{width:44px;height:44px;font-size:16px}
+.post-h div{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.post-h b{font-weight:800;font-size:16px;letter-spacing:-.01em}
+.post-h small{color:var(--dim);font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.post-t{margin-top:12px;font-size:19px;font-weight:700;line-height:1.35;letter-spacing:-.015em}
+.post-f{display:flex;gap:22px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+.post-f span{display:inline-flex;align-items:center;gap:6px}
+.post-f svg{width:17px;height:17px}
+
+.hero-post{position:relative;max-width:500px;margin-left:auto}
+.hero-post .art{margin-top:14px;border-radius:14px;overflow:hidden;background:var(--hl);border:1px solid var(--line)}
+.hero-post .art svg{display:block;width:100%;height:auto}
+.sticker{position:absolute;left:-26px;bottom:72px;background:var(--hl);color:var(--on-hl);border:2px solid var(--text);border-radius:14px;padding:10px 14px;font-weight:800;line-height:1.1;transform:rotate(-4deg);box-shadow:4px 4px 0 var(--text)}
+.sticker b{display:block;font-size:30px;letter-spacing:-.03em}
+.sticker small{font-size:12.5px;font-weight:700}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;gap:34px}.hero{padding-block:30px 56px}.hero-post{margin:0 auto}.sticker{left:auto;right:-6px;bottom:auto;top:-18px}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-copy > *{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .hero-copy > *:nth-child(2){animation-delay:.05s}
+  .hero-copy > *:nth-child(3){animation-delay:.1s}
+  .hero-copy > *:nth-child(4){animation-delay:.15s}
+  .hero-copy > *:nth-child(5){animation-delay:.2s}
+  .hero-post{animation:rise .8s .12s cubic-bezier(.2,.7,.2,1) both}
+}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+
+/* seções */
+section{padding-block:84px}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:40px}
+.sec-head > *{min-width:0}
+.sec-head h2{font-size:clamp(32px,5.2vw,58px);margin-top:12px}
+.sec-head p{color:var(--muted);max-width:32em}
+@media (max-width:820px){.sec-head{grid-template-columns:1fr;gap:14px}section{padding-block:62px}}
+
+/* formas */
+.formas{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.formas > *{min-width:0}
+.forma{border-radius:24px;padding:30px 28px;display:flex;flex-direction:column;gap:16px;border:2px solid var(--text);position:relative;overflow:hidden}
+.forma-on{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+.forma-pr{background:var(--panel)}
+.forma .tag{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.forma h3{font-size:clamp(32px,4.4vw,48px)}
+.forma p{font-size:16.5px;max-width:30em}
+.forma-on p{opacity:.85}
+.forma-pr p{color:var(--muted)}
+.forma ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.forma li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15.5px}
+.forma li svg{width:20px;height:20px;flex:none;margin-top:2px}
+.forma-on li svg{color:var(--hl)}
+.forma-pr li svg{color:var(--green)}
+.forma .btn{margin-top:auto;align-self:flex-start}
+.forma-on .btn-hl{border-color:var(--hl)}
+.forma-ico{position:absolute;right:-18px;top:-18px;width:150px;height:150px;opacity:.12}
+.forma-on .forma-ico{color:var(--hl);opacity:.22}
+.formas-note{margin-top:18px;color:var(--dim);font-size:14.5px}
+@media (max-width:820px){.formas{grid-template-columns:1fr}.forma{padding:24px 20px}.forma .btn{align-self:stretch}}
+
+/* como funciona */
+.como{background:var(--bg-2);border-block:1px solid var(--line)}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.steps > li{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px 22px;position:relative}
+.step-n{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-weight:800;font-size:16px;margin-bottom:16px}
+.steps li:nth-child(2) .step-n{background:var(--hl);color:var(--on-hl);box-shadow:0 0 0 2px var(--text)}
+.steps h3{font-size:24px}
+.steps p{color:var(--muted);margin-top:8px;font-size:16px}
+.steps small{display:block;margin-top:12px;font-size:13px;color:var(--dim)}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+
+/* comida de verdade (faixa amarela) */
+.real{background:var(--hl);color:var(--on-hl)}
+.real .kicker{color:var(--on-hl)}
+.real .kicker::before{background:var(--on-hl);box-shadow:none}
+.real-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.real-grid > *{min-width:0}
+.real h2{font-size:clamp(40px,7.6vw,92px);margin-top:14px;letter-spacing:-.045em}
+.real h2 i{font-style:italic}
+.real-lead{margin-top:18px;font-size:18px;max-width:30em;font-weight:500}
+.real-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.real-list li{background:#ffffff;color:#0c0c0c;border:2px solid #0c0c0c;border-radius:18px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;box-shadow:4px 4px 0 #0c0c0c}
+.real-list li > *{min-width:0}
+.real-list b{display:block;font-size:17px;font-weight:800;letter-spacing:-.01em}
+.real-list span{font-size:15px;color:#3d3d3d}
+.real-list .ok{background:rgba(15,154,74,.12);color:#0f9a4a}
+.real-src{margin-top:16px;font-size:13.5px;font-weight:600;opacity:.8}
+@media (max-width:860px){.real-grid{grid-template-columns:1fr;gap:30px}}
+
+/* trocas */
+.trocas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.trocas > *{min-width:0}
+.vs{display:grid;gap:10px;margin-top:14px}
+.vs-row{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:center;padding:11px 12px;border-radius:12px;font-weight:700;font-size:16px;line-height:1.3}
+.vs-row > *{min-width:0}
+.vs-row.no{background:var(--red-soft)}
+.vs-row.no span:last-child{text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px}
+.vs-row.yes{background:var(--green-soft)}
+.vs-x{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--dim);text-transform:uppercase}
+.vs-x::before,.vs-x::after{content:"";flex:1;height:1px;background:var(--line)}
+.trocas .post-t{font-size:17px}
+.trocas-note{margin-top:22px;display:flex;gap:12px;padding:14px 16px;border-left:4px solid var(--text);background:var(--panel-2);border-radius:0 12px 12px 0;font-size:15px;color:var(--muted)}
+.trocas-note svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--text)}
+.trocas-note b{color:var(--text)}
+@media (max-width:980px){.trocas{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.trocas{grid-template-columns:1fr}}
+
+/* quiz */
+.quiz{background:var(--ink);color:var(--on-ink)}
+.quiz .kicker{color:var(--on-ink)}
+.quiz .kicker::before{box-shadow:none}
+.quiz .sec-head p{color:var(--on-ink);opacity:.8}
+.quiz-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start}
+.quiz-grid > *{min-width:0}
+.qform{display:grid;gap:14px}
+.q{border:0;margin:0;padding:22px 22px 20px;border-radius:20px;background:var(--bg);color:var(--text);min-width:0}
+.q legend{float:left;width:100%;font-weight:800;font-size:19px;letter-spacing:-.015em;margin-bottom:14px;padding:0}
+.q legend span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--hl);color:var(--on-hl);font-size:14px;margin-right:10px;vertical-align:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;clear:both}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 17px;border-radius:999px;border:2px solid var(--line-2);font-weight:700;font-size:15.5px;cursor:pointer;transition:background-color .15s,border-color .15s}
+.chip input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
+.chip input:focus-visible + span{outline:3px solid var(--hl);outline-offset:2px}
+.chip:hover span{border-color:var(--text)}
+.result{position:sticky;top:86px;background:var(--bg);color:var(--text);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.result .post-h small{white-space:normal}
+.res-label{font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.res-big{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
+.res-text{color:var(--muted);font-size:15.5px}
+.res-tip{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:12px 14px;border-radius:12px;background:var(--hl-soft);font-size:15px}
+.res-tip > *{min-width:0}
+.res-tip svg{width:20px;height:20px;margin-top:2px}
+.res-tip[hidden]{display:none}
+.bubble{background:var(--green-soft);border:1px solid var(--line);border-radius:16px 16px 4px 16px;padding:12px 14px;font-size:15px;line-height:1.45;white-space:pre-line}
+.bubble-l{font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:-6px}
+.result .btn{width:100%}
+.quiz-foot{margin-top:18px;font-size:14px;opacity:.7}
+@media (max-width:900px){.quiz-grid{grid-template-columns:1fr}.result{position:static}.q{padding:20px 16px}}
+
+/* avaliações */
+.rep-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center}
+.rep-grid > *{min-width:0}
+.score{border:2px solid var(--text);border-radius:24px;padding:28px 26px;background:var(--panel);box-shadow:6px 6px 0 var(--text)}
+.big{font-size:clamp(110px,17vw,180px);font-weight:800;letter-spacing:-.06em;line-height:.85;margin-top:14px;display:flex;align-items:flex-start;gap:8px}
+.big sup{font-size:.2em;letter-spacing:-.02em;margin-top:.4em;color:var(--dim)}
+.score .stars{margin-top:16px}
+.score .stars svg{width:24px;height:24px}
+.score-meta{margin-top:14px;font-weight:600;color:var(--muted)}
+.score-meta b{color:var(--text);font-size:22px;font-weight:800}
+.bars{display:grid;gap:16px;margin-top:6px}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:7px}
+.bar-top b{font-size:22px;font-weight:800;letter-spacing:-.02em;text-transform:lowercase}
+.bar-top span{font-size:14px;color:var(--muted);font-weight:600}
+.bar-track{height:14px;background:var(--panel-2);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.bar-fill{height:100%;background:var(--ink);border-radius:99px;min-width:6px}
+.bar:first-child .bar-fill{background:var(--hl);box-shadow:inset 0 0 0 2px var(--text)}
+.rep-sub{color:var(--muted);margin:14px 0 26px}
+.rep-note{margin-top:22px;font-size:13px;line-height:1.5;color:var(--dim)}
+@media (max-width:860px){.rep-grid{grid-template-columns:1fr;gap:34px}}
+
+/* local */
+.visit{background:var(--bg-2);border-block:1px solid var(--line)}
+.loc{display:grid;grid-template-columns:1.05fr .95fr;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:var(--panel)}
+.loc > *{min-width:0}
+.loc-map{position:relative;min-height:300px;background:var(--panel-2)}
+.loc-map svg{position:absolute;inset:0;width:100%;height:100%}
+.pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%,16px);background:var(--ink);color:var(--on-ink);font-weight:800;font-size:15px;padding:6px 12px;white-space:nowrap;border-radius:999px}
+.map-note{position:absolute;left:12px;bottom:10px;font-size:11.5px;color:var(--dim)}
+.loc-info{padding:28px 26px;display:grid;gap:20px;align-content:start}
+.loc-row{display:grid;grid-template-columns:26px 1fr;gap:12px}
+.loc-row > *{min-width:0}
+.loc-row > svg{width:24px;height:24px;margin-top:2px}
+.loc-row h4{margin:0 0 4px;font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.loc-row p{font-weight:600}
+.phone{font-weight:800;font-size:20px;letter-spacing:-.01em;user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums}
+.loc-row small{display:block;color:var(--dim);font-size:13.5px;margin-top:3px}
+.loc-actions{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:860px){.loc{grid-template-columns:1fr}.loc-map{min-height:240px}.loc-info{padding:22px 18px}}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}
+.faq-grid > *{min-width:0}
+.faq-grid h2{font-size:clamp(32px,5.2vw,58px);margin-top:12px}
+.faq-grid > div > p{color:var(--muted);margin-top:16px;max-width:26em}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 2px;font-weight:800;font-size:18px;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:14px;height:14px;flex:none;background:linear-gradient(var(--text),var(--text)) center/14px 3px no-repeat,linear-gradient(var(--text),var(--text)) center/3px 14px no-repeat;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 2px 20px;color:var(--muted);max-width:40em}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:20px}}
+
+/* final */
+.final{background:var(--ink);color:var(--on-ink);padding-block:84px}
+.final .wrap{display:grid;grid-template-columns:1.4fr auto;gap:30px;align-items:end}
+.final .wrap > *{min-width:0}
+.final h2{font-size:clamp(38px,6.6vw,80px);letter-spacing:-.045em}
+.final p{margin-top:16px;font-size:18px;opacity:.85;max-width:34em}
+.final-cta{display:grid;gap:12px}
+.final .btn-ghost{color:var(--on-ink);border-color:var(--dim)}
+.final .btn-ghost:hover{border-color:var(--on-ink)}
+@media (max-width:800px){.final .wrap{grid-template-columns:1fr}}
+
+footer{padding-block:28px 104px;color:var(--dim);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+footer .wrap > *{min-width:0}
+.selo{font-size:12.5px}
+
+.wa-float{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:transform .18s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.47 15.02L2.5 21.5l4.6-1.05A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.03l-.3-.18-2.73.62.64-2.64-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.06 3.3 5.1 4.5 2.53 1 3.04.8 3.6.75.55-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.66-1.63-.92-2.22-.23-.55-.47-.56-.68-.57h-.57Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-ok" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M4 12v7h16v-7M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-screen" viewBox="0 0 48 48"><rect x="4" y="8" width="40" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M17 42h14M24 34v8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-door" viewBox="0 0 48 48"><path d="M10 44V6h22v38M6 44h36" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="27" cy="26" r="2.4" fill="currentColor"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Renan Queiroga Nutri – início">
+      <span class="av" aria-hidden="true">RQ</span>
+      <span class="brand-t"><b>Renan Queiroga</b><small>Nutricionista · João Pessoa</small></span>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#formas">On-line ou presencial</a>
+      <a href="#como">Como funciona</a>
+      <a href="#trocas">Trocas</a>
+      <a href="#quiz">Qual combina</a>
+      <a href="#onde">Onde fica</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-ink" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento." target="_blank" rel="noopener" aria-label="Chamar o Renan no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="pills"><span class="pill on">On-line</span><span class="pill">Presencial em JP</span></div>
+      <h1>Emagrecimento pra quem <span class="mk">já tentou de tudo</span>.</h1>
+      <p class="hero-lead">Sou o Renan Queiroga, nutricionista em João Pessoa. Faço <strong>acompanhamento on-line ou presencial aqui em João Pessoa/PB</strong>, com plano alimentar de comida de verdade e conversa direta, sem frescura.</p>
+      <div class="hero-cta">
+        <a class="btn btn-ink" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Quero saber do acompanhamento</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Nutricionista+Renan+Queiroga+Jardim+Oceania+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+      </div>
+      <div class="g-line">
+        <b class="num">5,0</b>
+        <span class="stars" role="img" aria-label="Nota 5,0 de 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+        <span><span class="num">194</span> avaliações no Google</span>
+      </div>
+    </div>
+
+    <div class="hero-post">
+      <article class="post" aria-label="Destaque no formato de post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">Arroz, feijão, salada e até <span class="mk">hambúrguer feito em casa</span>. Plano alimentar é com comida de verdade.</p>
+        <div class="art">
+          <svg viewBox="0 0 480 330" role="img" aria-label="Ilustração em traço simples de um prato com arroz, feijão, salada e carne, ao lado de um hambúrguer caseiro e um copo de água com limão">
+            <g fill="none" stroke="#0c0c0c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="24" y="36" width="300" height="262" rx="22" fill="#fff6a8" stroke-dasharray="2 10"/>
+              <path d="M44 92v52M36 92v26a8 8 0 0 0 16 0V92M44 144v120" />
+              <circle cx="186" cy="168" r="112" fill="#ffffff"/>
+              <circle cx="186" cy="168" r="90" fill="#ffffff" stroke-width="2.5" opacity=".55"/>
+              <path d="M110 150c-6-30 18-56 48-56 20 0 30 10 36 22 6 14-2 26-12 34-18 14-66 26-72 0Z" fill="#ffffff"/>
+              <g stroke-width="2.6">
+                <path d="M128 124l6 3M146 112l6 2M160 128l6-2M138 142l5 3M172 112l4 4M152 146l6-1M120 140l3 5M178 136l5 2"/>
+              </g>
+              <path d="M200 112c22-14 58-8 70 16 10 22-6 44-30 46-26 2-46-14-48-32-1-12 2-24 8-30Z" fill="#6b3a22"/>
+              <g fill="#3f1f10" stroke="none">
+                <ellipse cx="226" cy="132" rx="7" ry="4.5" transform="rotate(-20 226 132)"/>
+                <ellipse cx="246" cy="146" rx="7" ry="4.5" transform="rotate(25 246 146)"/>
+                <ellipse cx="232" cy="158" rx="7" ry="4.5" transform="rotate(-10 232 158)"/>
+                <ellipse cx="256" cy="126" rx="6" ry="4" transform="rotate(40 256 126)"/>
+                <ellipse cx="214" cy="148" rx="6" ry="4" transform="rotate(10 214 148)"/>
+              </g>
+              <path d="M118 196c10-12 30-14 42-4 6-12 26-14 34-2 10 14 0 34-20 40-24 8-52 2-58-14-2-8-1-14 2-20Z" fill="#3fb36b"/>
+              <path d="M132 206c10 4 22 4 30-2M162 196c8 8 18 12 28 10" stroke-width="2.6"/>
+              <circle cx="146" cy="220" r="12" fill="#e0231a"/>
+              <path d="M140 220h12M146 214v12" stroke="#ffffff" stroke-width="2"/>
+              <circle cx="174" cy="226" r="10" fill="#e0231a"/>
+              <path d="M208 196c18-10 52-8 62 8 8 14-4 30-28 32-24 2-44-8-44-22 0-8 4-14 10-18Z" fill="#b5652d"/>
+              <path d="M222 204l34 14M224 220l26 8" stroke-width="2.6" opacity=".6"/>
+            </g>
+            <g transform="translate(332 150)" fill="none" stroke="#0c0c0c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="66" cy="118" rx="70" ry="10" fill="#0c0c0c" opacity=".12" stroke="none"/>
+              <path d="M8 46c0-30 26-46 58-46s58 16 58 46Z" fill="#f2b84b"/>
+              <g fill="#ffffff" stroke="none"><ellipse cx="40" cy="22" rx="4" ry="2.4"/><ellipse cx="62" cy="14" rx="4" ry="2.4"/><ellipse cx="86" cy="22" rx="4" ry="2.4"/><ellipse cx="72" cy="32" rx="4" ry="2.4"/><ellipse cx="50" cy="34" rx="4" ry="2.4"/></g>
+              <path d="M2 54c12-8 20 6 32-2s20 6 32-2 20 6 32-2 20 6 30-2" fill="none" stroke="#2c9a55" stroke-width="6"/>
+              <path d="M10 60h112l-10 10H20Z" fill="#ffe600"/>
+              <rect x="6" y="68" width="120" height="20" rx="10" fill="#6b3a22"/>
+              <path d="M8 94h116c0 12-10 18-20 18H28C18 112 8 106 8 94Z" fill="#f2b84b"/>
+            </g>
+            <g transform="translate(372 30)" fill="none" stroke="#0c0c0c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M0 18h64l-8 92H8Z" fill="#ffffff"/>
+              <path d="M5 46h54l-5 60H10Z" fill="#cfefff" stroke="none"/>
+              <path d="M5 46h54" stroke-width="2.5"/>
+              <circle cx="22" cy="70" r="3" fill="#ffffff" stroke-width="2"/><circle cx="38" cy="86" r="2.5" fill="#ffffff" stroke-width="2"/><circle cx="44" cy="62" r="2" fill="#ffffff" stroke-width="2"/>
+              <path d="M44 18a18 18 0 0 1 32 4Z" fill="#9bd64a"/>
+              <path d="M50 18l10-8M60 18v-12M66 20l8-8" stroke-width="2"/>
+            </g>
+            <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <circle cx="300" cy="66" r="18" fill="#0f9a4a"/>
+              <path d="M291 66l6 6 12-12" stroke="#ffffff" stroke-width="4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="post-f" aria-hidden="true"><span><svg><use href="#i-chat"/></svg>comentar</span><span><svg><use href="#i-share"/></svg>enviar</span><span><svg><use href="#i-heart"/></svg>salvar</span></div>
+      </article>
+      <div class="sticker"><b class="num">5,0</b><small>no Google · <span class="num">194</span> avaliações</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="formas">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Duas formas de acompanhar</div>
+        <h2>On-line, de onde você estiver. Ou <span class="mk">presencial em JP</span>.</h2>
+      </div>
+      <p>Escolha o formato que cabe na sua rotina e me chame direto no WhatsApp do jeito certo. Cada botão já leva a mensagem pronta para o formato escolhido.</p>
+    </div>
+    <div class="formas">
+      <article class="forma forma-on">
+        <svg class="forma-ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-screen"/></svg>
+        <span class="tag">Formato 01</span>
+        <h3>On-line</h3>
+        <p>Para quem não tem tempo de ir ao consultório ou não mora em João Pessoa. A conversa e o acompanhamento acontecem à distância.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-ok"/></svg>Sem deslocamento e sem trânsito</li>
+          <li><svg aria-hidden="true"><use href="#i-ok"/></svg>Bom para rotina corrida</li>
+          <li><svg aria-hidden="true"><use href="#i-ok"/></svg>Como funciona e valores: pergunte no WhatsApp</li>
+        </ul>
+        <a class="btn btn-hl" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento%20on-line." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Quero o acompanhamento on-line</a>
+      </article>
+      <article class="forma forma-pr">
+        <svg class="forma-ico" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-door"/></svg>
+        <span class="tag">Formato 02</span>
+        <h3>Presencial em João Pessoa</h3>
+        <p>Consulta no consultório do Jardim Oceania, na R. Profa. Severina de Sousa Souto, 152.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-ok"/></svg>Conversa olho no olho</li>
+          <li><svg aria-hidden="true"><use href="#i-ok"/></svg>No Jardim Oceania, em João Pessoa</li>
+          <li><svg aria-hidden="true"><use href="#i-ok"/></svg>Dias e horários: combine pelo WhatsApp</li>
+        </ul>
+        <a class="btn btn-ink" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento%20presencial%20em%20Jo%C3%A3o%20Pessoa." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Quero o presencial em JP</a>
+      </article>
+    </div>
+    <p class="formas-note">Não sabe qual escolher? Responda as 3 perguntas rápidas <a href="#quiz">mais abaixo</a>.</p>
+  </div>
+</section>
+
+<section class="como" id="como">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Como funciona</div>
+        <h2>Da primeira conversa ao plano na sua mão</h2>
+      </div>
+      <p>Sem fórmula pronta. O ponto de partida é a sua rotina de verdade, com o que você já come e o que já tentou.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="step-n">1</span><h3>Consulta</h3><p>Você conta sua rotina, seus horários, o que costuma comer e o que já tentou antes. É a base para montar o plano.</p></li>
+      <li><span class="step-n">2</span><h3>Plano na hora</h3><p>O plano alimentar sai na própria consulta, montado com itens básicos do dia a dia.</p><small>Pacientes destacam isso nas avaliações do Google.</small></li>
+      <li><span class="step-n">3</span><h3>Acompanhamento</h3><p>A rotina muda, o plano acompanha. Os ajustes são feitos ao longo do acompanhamento, conforme o que funcionar para você.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="real" id="comida">
+  <div class="wrap real-grid">
+    <div>
+      <div class="kicker">Comida de verdade</div>
+      <h2>Sem frescura. <i>Com o que já tem em casa.</i></h2>
+      <p class="real-lead">Plano alimentar não precisa de ingrediente difícil de achar nem de prato que ninguém da casa come. A ideia é caber na sua mesa e no seu dia.</p>
+    </div>
+    <div>
+      <ul class="real-list">
+        <li><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><div><b>Itens básicos da despensa</b><span>Pacientes contam que o plano usou o que eles já tinham em casa.</span></div></li>
+        <li><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><div><b>Plano entregue na consulta</b><span>Você sai da consulta já sabendo o que fazer.</span></div></li>
+        <li><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><div><b>Acompanhamento direto, sem frescura</b><span>Conversa clara, com comida de verdade no prato.</span></div></li>
+      </ul>
+      <p class="real-src">Temas que aparecem nas avaliações do Google, resumidos com outras palavras.</p>
+    </div>
+  </div>
+</section>
+
+<section id="trocas">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Troca inteligente</div>
+        <h2>Isso <span style="color:var(--red)">✗</span> aquilo <span style="color:var(--green)">✓</span></h2>
+      </div>
+      <p>Pequenas trocas do dia a dia, no formato que você já conhece do Instagram. São ideias gerais para começar a pensar nas escolhas, não uma dieta.</p>
+    </div>
+    <div class="trocas">
+      <article class="post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">O refrigerante <span class="mk">de todo dia</span>:</p>
+        <div class="vs">
+          <div class="vs-row no"><span class="x"><svg aria-hidden="true"><use href="#i-x"/></svg></span><span>Refrigerante no almoço e no jantar</span></div>
+          <div class="vs-x">troca por</div>
+          <div class="vs-row yes"><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><span>Água com gás, gelo e limão</span></div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">Hambúrguer <span class="mk">pode</span>. O jeito muda:</p>
+        <div class="vs">
+          <div class="vs-row no"><span class="x"><svg aria-hidden="true"><use href="#i-x"/></svg></span><span>Combo de lanchonete com batata e refri</span></div>
+          <div class="vs-x">troca por</div>
+          <div class="vs-row yes"><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><span>Hambúrguer feito em casa, com salada</span></div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">Pular refeição <span class="mk">não é estratégia</span>:</p>
+        <div class="vs">
+          <div class="vs-row no"><span class="x"><svg aria-hidden="true"><use href="#i-x"/></svg></span><span>Pular o almoço e atacar tudo à noite</span></div>
+          <div class="vs-x">troca por</div>
+          <div class="vs-row yes"><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><span>Almoço de verdade: arroz, feijão, proteína e salada</span></div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">Na hora do lanche da tarde:</p>
+        <div class="vs">
+          <div class="vs-row no"><span class="x"><svg aria-hidden="true"><use href="#i-x"/></svg></span><span>Pacote de biscoito recheado</span></div>
+          <div class="vs-x">troca por</div>
+          <div class="vs-row yes"><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><span>Fruta com iogurte natural</span></div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">Suco também conta:</p>
+        <div class="vs">
+          <div class="vs-row no"><span class="x"><svg aria-hidden="true"><use href="#i-x"/></svg></span><span>Suco de caixinha adoçado</span></div>
+          <div class="vs-x">troca por</div>
+          <div class="vs-row yes"><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><span>A fruta inteira, com bagaço e tudo</span></div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Renan Queiroga Nutri</b><small>@renanqueiroganutri</small></div></div>
+        <p class="post-t">Petisco do <span class="mk">fim de semana</span>:</p>
+        <div class="vs">
+          <div class="vs-row no"><span class="x"><svg aria-hidden="true"><use href="#i-x"/></svg></span><span>Porção de fritura beliscada a tarde toda</span></div>
+          <div class="vs-x">troca por</div>
+          <div class="vs-row yes"><span class="ok"><svg aria-hidden="true"><use href="#i-ok"/></svg></span><span>Pipoca feita em casa, com pouco óleo</span></div>
+        </div>
+      </article>
+    </div>
+    <p class="trocas-note"><svg aria-hidden="true"><use href="#i-info"/></svg><span><b>Ideias gerais, não prescrição.</b> O que entra no seu plano, e em que quantidade, depende de você, da sua rotina e da sua saúde. Isso se define na consulta.</span></p>
+  </div>
+</section>
+
+<section class="quiz" id="quiz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">3 perguntas rápidas</div>
+        <h2>Qual acompanhamento <span class="mk">combina com você?</span></h2>
+      </div>
+      <p>Marque as respostas. O resultado aparece ao lado, junto com a mensagem pronta para mandar no WhatsApp.</p>
+    </div>
+    <div class="quiz-grid">
+      <form class="qform" id="qform" autocomplete="off" novalidate>
+        <fieldset class="q">
+          <legend><span>1</span>Como você prefere ser atendido?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="modo" value="online"><span>On-line</span></label>
+            <label class="chip"><input type="radio" name="modo" value="presencial"><span>Presencial em João Pessoa</span></label>
+            <label class="chip"><input type="radio" name="modo" value="tanto"><span>Tanto faz</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="q">
+          <legend><span>2</span>Já tentou dieta antes?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="tentou" value="sim"><span>Sim, várias vezes</span></label>
+            <label class="chip"><input type="radio" name="tentou" value="nao"><span>Não, é a primeira vez</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="q">
+          <legend><span>3</span>Qual a sua maior dificuldade hoje?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="dif" value="rotina"><span>Rotina corrida</span></label>
+            <label class="chip"><input type="radio" name="dif" value="noite"><span>Fome à noite</span></label>
+            <label class="chip"><input type="radio" name="dif" value="fora"><span>Comer fora</span></label>
+            <label class="chip"><input type="radio" name="dif" value="outra"><span>Outra</span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="result" aria-live="polite">
+        <div class="post-h"><span class="av" aria-hidden="true">RQ</span><div><b>Seu resultado</b><small id="res-sub">Responda as 3 perguntas</small></div></div>
+        <div>
+          <div class="res-label">Formato indicado</div>
+          <div class="res-big" id="res-big">—</div>
+        </div>
+        <p class="res-text" id="res-text">Marque as opções ao lado para ver qual formato combina mais com a sua rotina.</p>
+        <div class="res-tip" id="res-tip" hidden><svg aria-hidden="true"><use href="#i-bulb"/></svg><span id="res-tip-t"></span></div>
+        <div class="bubble-l">Mensagem que vai no WhatsApp</div>
+        <div class="bubble" id="res-msg">Olá, Renan! Vim pelo seu site e quero saber sobre o acompanhamento.</div>
+        <a class="btn btn-ink" id="res-send" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Mandar esta mensagem</a>
+      </div>
+    </div>
+    <p class="quiz-foot">As respostas ficam só nesta página e servem apenas para montar a mensagem. Nada é enviado sem você tocar no botão.</p>
+  </div>
+</section>
+
+<section id="avaliacoes">
+  <div class="wrap rep-grid">
+    <div class="score">
+      <div class="kicker">Nota no Google</div>
+      <div class="big num">5,0<sup>/5</sup></div>
+      <span class="stars" role="img" aria-label="Nota 5,0 de 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></span>
+      <p class="score-meta"><b class="num">194</b> avaliações de pacientes</p>
+    </div>
+    <div>
+      <div class="kicker">O que os pacientes destacam</div>
+      <h2 style="font-size:clamp(30px,4.4vw,48px);margin-top:12px">“Dieta” é, de longe, o <span class="mk">tema mais citado</span></h2>
+      <p class="rep-sub">Os comentários falam do plano alimentar com itens do dia a dia, da dieta entregue na consulta e de um acompanhamento direto, com comida de verdade.</p>
+      <div class="bars">
+        <div class="bar"><div class="bar-top"><b>dieta</b><span class="num">82 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>resultado</b><span class="num">8 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:9.8%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>olhos</b><span class="num">8 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:9.8%"></div></div></div>
+        <div class="bar"><div class="bar-top"><b>realidade</b><span class="num">6 avaliações</span></div><div class="bar-track"><div class="bar-fill" style="width:7.3%"></div></div></div>
+      </div>
+      <p class="rep-note">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="onde">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Onde fica</div>
+        <h2>Consultório no Jardim Oceania</h2>
+      </div>
+      <p>Para o atendimento presencial em João Pessoa. Se for on-line, você nem precisa sair de casa.</p>
+    </div>
+    <div class="loc">
+      <div class="loc-map">
+        <svg viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="340" fill="var(--panel-2)"/>
+          <g stroke="var(--panel)" stroke-width="16" stroke-linecap="round" fill="none">
+            <path d="M-10 90 H500"/><path d="M-10 250 H520"/><path d="M120 -10 V360"/><path d="M300 -10 V360"/><path d="M440 -10 V360"/>
+          </g>
+          <g stroke="var(--line-2)" stroke-width="1.5" fill="none" stroke-dasharray="6 8">
+            <path d="M-10 90 H500"/><path d="M-10 250 H520"/><path d="M120 -10 V360"/><path d="M300 -10 V360"/><path d="M440 -10 V360"/>
+          </g>
+          <g stroke="var(--panel)" stroke-width="7" fill="none"><path d="M-10 170 H500"/><path d="M210 -10 V360"/><path d="M370 -10 V360"/></g>
+          <g fill="var(--line)">
+            <rect x="140" y="110" width="52" height="44" rx="6"/><rect x="228" y="110" width="56" height="44" rx="6"/><rect x="320" y="186" width="34" height="48" rx="6"/><rect x="388" y="110" width="36" height="44" rx="6"/><rect x="140" y="186" width="52" height="48" rx="6"/><rect x="20" y="110" width="80" height="44" rx="6"/><rect x="458" y="186" width="40" height="48" rx="6"/><rect x="20" y="270" width="80" height="50" rx="6"/>
+          </g>
+          <text x="140" y="80" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700" fill="var(--dim)">JARDIM OCEANIA</text>
+          <circle cx="300" cy="170" r="34" fill="var(--hl)" opacity=".55"/>
+          <path d="M300 172 c-14 -16 -22 -26 -22 -36 a22 22 0 0 1 44 0 c0 10 -8 20 -22 36Z" fill="var(--ink)"/>
+          <circle cx="300" cy="135" r="8" fill="var(--hl)"/>
+        </svg>
+        <span class="pin-label">Renan Queiroga Nutri</span>
+        <span class="map-note">Mapa ilustrativo · use o botão Como chegar</span>
+      </div>
+      <div class="loc-info">
+        <div class="loc-row">
+          <svg aria-hidden="true"><use href="#i-pin"/></svg>
+          <div><h4>Endereço</h4><p>R. Profa. Severina de Sousa Souto, 152 – Jardim Oceania, João Pessoa – PB, <span class="num">58037-070</span></p></div>
+        </div>
+        <div class="loc-row">
+          <svg aria-hidden="true"><use href="#i-clock"/></svg>
+          <div><h4>Dias e horários</h4><p>Combine pelo WhatsApp o melhor dia para a sua consulta.</p></div>
+        </div>
+        <div class="loc-row">
+          <svg aria-hidden="true"><use href="#i-phone"/></svg>
+          <div><h4>WhatsApp</h4><span class="phone">(83) 99311-1962</span><small>Se o botão não abrir, copie o número acima.</small></div>
+        </div>
+        <div class="loc-actions">
+          <a class="btn btn-ink" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento%20presencial%20em%20Jo%C3%A3o%20Pessoa." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Marcar pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Nutricionista+Renan+Queiroga+Jardim+Oceania+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap faq-grid">
+    <div>
+      <div class="kicker">Dúvidas</div>
+      <h2>Dúvidas comuns antes de começar</h2>
+      <p>Não achou a sua? Mande no WhatsApp <span class="num" style="user-select:all;-webkit-user-select:all">(83) 99311-1962</span>.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Já tentei de tudo e nada deu certo. Vale tentar de novo?</summary>
+        <p>É justamente para quem já tentou de tudo que o acompanhamento existe. Em vez de mais uma dieta pronta, o plano parte da sua rotina e do que você já come. Conte na primeira conversa o que você já tentou e onde costuma travar.</p>
+      </details>
+      <details>
+        <summary>Qual a diferença entre o on-line e o presencial?</summary>
+        <p>O presencial é no consultório do Jardim Oceania, em João Pessoa. O on-line é feito à distância, bom para quem tem rotina corrida ou não mora em JP. Pergunte pelo WhatsApp como funciona cada formato.</p>
+      </details>
+      <details>
+        <summary>Vou sair da consulta com o plano?</summary>
+        <p>Nas avaliações do Google, pacientes contam que receberam a dieta na própria consulta. Confirme pelo WhatsApp como fica no formato que você escolher.</p>
+      </details>
+      <details>
+        <summary>Vou ter que comprar um monte de coisa diferente?</summary>
+        <p>A proposta é comida de verdade. Pacientes contam nas avaliações que o plano usou itens básicos que eles já tinham em casa.</p>
+      </details>
+      <details>
+        <summary>Quantos quilos vou perder?</summary>
+        <p>Não dá para prometer um número: cada corpo responde de um jeito. O que existe é um plano feito para a sua rotina e acompanhamento para ajustar no caminho.</p>
+      </details>
+      <details>
+        <summary>Quanto custa e como pago?</summary>
+        <p>Valores e formas de pagamento são passados pelo WhatsApp, de acordo com o formato escolhido.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div>
+      <h2>Já tentou de tudo? <span class="mk">Então vamos conversar.</span></h2>
+      <p>Me chame no WhatsApp, diga se prefere on-line ou presencial em João Pessoa e conte o que já tentou. A partir daí a gente vê o próximo passo.</p>
+    </div>
+    <div class="final-cta">
+      <a class="btn btn-hl" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Chamar o Renan no WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Nutricionista+Renan+Queiroga+Jardim+Oceania+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Renan Queiroga · Nutricionista · R. Profa. Severina de Sousa Souto, 152 – Jardim Oceania, João Pessoa – PB · WhatsApp <span class="num" style="user-select:all;-webkit-user-select:all">(83) 99311-1962</span> · Instagram @renanqueiroganutri</span>
+    <span class="selo">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5583993111962?text=Ol%C3%A1%2C%20Renan!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20sobre%20o%20acompanhamento." target="_blank" rel="noopener" aria-label="Falar com o Renan no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<script>
+(function(){
+  var WA = 'https://wa.me/5583993111962?text=';
+  var form = document.getElementById('qform');
+  var big = document.getElementById('res-big');
+  var sub = document.getElementById('res-sub');
+  var text = document.getElementById('res-text');
+  var tip = document.getElementById('res-tip');
+  var tipT = document.getElementById('res-tip-t');
+  var msgEl = document.getElementById('res-msg');
+  var send = document.getElementById('res-send');
+
+  var MODOS = {
+    online: { t: 'On-line', d: 'Você faz o acompanhamento de onde estiver, sem deslocamento.', m: 'on-line' },
+    presencial: { t: 'Presencial em João Pessoa', d: 'Consulta no consultório do Jardim Oceania, com conversa olho no olho.', m: 'presencial em João Pessoa' },
+    tanto: { t: '', d: '', m: '' }
+  };
+  var DIFS = {
+    rotina: { l: 'a rotina corrida', tip: 'Leve para a conversa os seus horários de um dia comum: a que horas acorda, almoça, janta e quanto tempo sobra para cozinhar.' },
+    noite: { l: 'a fome à noite', tip: 'Repare a que horas a fome aperta e o que você costuma comer nesse momento. Isso ajuda a montar o plano.' },
+    fora: { l: 'comer fora', tip: 'Anote onde você costuma comer fora durante a semana: trabalho, delivery, fim de semana. Dá para planejar em cima disso.' },
+    outra: { l: '', tip: 'Escreva com as suas palavras na mensagem qual é a dificuldade. Quanto mais concreto, melhor a conversa.' }
+  };
+
+  function val(n){ var el = form.querySelector('input[name="' + n + '"]:checked'); return el ? el.value : ''; }
+
+  function update(){
+    var modo = val('modo'), tentou = val('tentou'), dif = val('dif');
+    var falta = [modo, tentou, dif].filter(function(v){ return !v; }).length;
+    sub.textContent = falta ? ('Falta' + (falta > 1 ? 'm ' : ' ') + falta + ' resposta' + (falta > 1 ? 's' : '')) : 'Pronto: confira e mande a mensagem';
+
+    var titulo = '—', desc = 'Marque as opções ao lado para ver qual formato combina mais com a sua rotina.';
+    var modoMsg = '';
+    if (modo === 'tanto') {
+      if (dif === 'rotina') { titulo = 'On-line'; desc = 'Com rotina corrida, o on-line poupa o tempo do deslocamento.'; modoMsg = 'on-line'; }
+      else { titulo = 'Os dois servem'; desc = 'On-line ou presencial no Jardim Oceania: o Renan te ajuda a escolher pelo WhatsApp.'; }
+    } else if (modo) {
+      titulo = MODOS[modo].t; desc = MODOS[modo].d; modoMsg = MODOS[modo].m;
+      if (modo === 'online' && dif === 'rotina') desc += ' Combina com a rotina corrida.';
+    }
+    if (tentou === 'sim') desc += (modo ? ' ' : '') + (modo ? 'E se você já tentou de tudo, é exatamente para você que esse acompanhamento foi pensado.' : '');
+    big.textContent = titulo;
+    text.textContent = desc;
+
+    if (dif) { tip.hidden = false; tipT.textContent = DIFS[dif].tip; } else { tip.hidden = true; }
+
+    var msg = 'Olá, Renan! Vim pelo seu site e quero saber sobre o acompanhamento' + (modoMsg ? ' ' + modoMsg : '') + '.';
+    if (modo === 'tanto' && !modoMsg) msg += ' Pode ser on-line ou presencial, ainda não decidi.';
+    if (tentou === 'sim') msg += '\nJá tentei dieta outras vezes.';
+    if (tentou === 'nao') msg += '\nVai ser a primeira vez que faço acompanhamento.';
+    if (dif && dif !== 'outra') msg += '\nMinha maior dificuldade hoje é ' + DIFS[dif].l + '.';
+    if (dif === 'outra') msg += '\nMinha maior dificuldade hoje é: ';
+    msgEl.textContent = msg;
+    send.href = WA + encodeURIComponent(msg);
+  }
+
+  form.addEventListener('change', update);
+  form.addEventListener('submit', function(e){ e.preventDefault(); });
+  update();
+})();
+</script>
+</body>
+</html>
