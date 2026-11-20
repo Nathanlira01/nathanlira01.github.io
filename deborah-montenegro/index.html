@@ -15,488 +15,615 @@
 <body>
 <meta name="description" content="Déborah Montenegro, fonoaudióloga em João Pessoa. Especialista em distúrbios alimentares na infância. Supervisão e cursos para profissionais. Agende pelo WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,300..700,100&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Caveat:wght@500;700&display=swap">
 <style>
 :root{
-  --bg:#f5efe3;
-  --bg-2:#efe6d3;
-  --surface:#fbf8f1;
-  --ink:#38281c;
-  --muted:#6f5e4d;
-  --line:#e0d3bc;
-  --line-strong:#38281c;
-  --butter:#efd48a;
-  --butter-soft:#f6e9c3;
-  --butter-pale:#faf2dc;
-  --accent:#8a6414;
-  --olive:#6b6a45;
-  --band:#33251a;
-  --band-2:#3e2e21;
-  --band-line:#55432f;
-  --on-band:#f4ecdc;
-  --on-band-muted:#c3b29a;
-  --btn:#38281c;
-  --btn-ink:#fbf8f1;
-  --btn-hover:#4a3726;
-  --wa:#2f6f4b;
+  --bg:#f8f0df;
+  --paper:#fffaf0;
+  --paper-2:#f3e7cf;
+  --ink:#2b1f17;
+  --muted:#6b5949;
+  --line:#e2d1b2;
+  --butter:#f4d77e;
+  --butter-band:#f4d77e;
+  --butter-2:#f9e7b0;
+  --butter-3:#fcf2d4;
+  --butter-deep:#d9a92e;
+  --butter-ink:#7a5609;
+  --on-butter:#2b1f17;
+  --coffee:#3d2b20;
+  --coffee-2:#4b372a;
+  --coffee-line:#644a39;
+  --on-coffee:#f8ecd6;
+  --on-coffee-muted:#d2bea4;
+  --carrot:#e9803c;
+  --tomato:#d6553c;
+  --leaf:#6e9a48;
+  --aqua:#93cfc3;
+  --aqua-deep:#4f8f84;
+  --aqua-soft:#dff1ec;
+  --rose:#f2b7a6;
+  --rose-soft:#fbe3da;
+  --note:#fffcf3;
+  --note-line:#dfe8ef;
+  --note-margin:#eab4a6;
+  --i-plate:#fffaf0;
+  --i-plate-2:#f6ecd8;
+  --i-arch:#fbe7a9;
+  --i-arch-2:#fdf3d8;
+  --i-ging-a:#fff7df;
+  --i-floor:#ead9b9;
+  --card-hi:#fffaf0;
+  --wa:#1f7a4a;
   --wa-ink:#ffffff;
-  --grain:.07;
-  --shadow:0 30px 60px -40px rgba(70,48,20,.45);
+  --shadow:0 26px 50px -30px rgba(70,45,15,.55);
+  --shadow-s:0 12px 24px -16px rgba(70,45,15,.5);
   --focus:#9a6f0a;
-  --ease:cubic-bezier(.2,.7,.2,1);
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#17120d;
-    --bg-2:#1e1812;
-    --surface:#221b14;
-    --ink:#f2e8d7;
-    --muted:#bba98f;
-    --line:#3a2f23;
-    --line-strong:#f2e8d7;
-    --butter:#e5c873;
-    --butter-soft:#3a2f18;
-    --butter-pale:#2a2216;
-    --accent:#ecd08a;
-    --olive:#b9b88d;
-    --band:#0f0b08;
-    --band-2:#1b1510;
-    --band-line:#342a1f;
-    --on-band:#f2e8d7;
-    --on-band-muted:#ab9b82;
-    --btn:#efd48a;
-    --btn-ink:#22180f;
-    --btn-hover:#f7e2a8;
-    --wa:#2f8a58;
-    --wa-ink:#ffffff;
-    --grain:.05;
-    --shadow:0 30px 60px -36px rgba(0,0,0,.85);
-    --focus:#ecd08a;
+    --bg:#17120e;
+    --paper:#221a13;
+    --paper-2:#2b2119;
+    --ink:#f4e9d6;
+    --muted:#bdaa90;
+    --line:#3d3025;
+    --butter:#e6c565;
+    --butter-band:#d8b65a;
+    --butter-2:#3a2f19;
+    --butter-3:#2b2216;
+    --butter-deep:#ecc356;
+    --butter-ink:#f1d78e;
+    --on-butter:#21180f;
+    --coffee:#2c1f16;
+    --coffee-2:#3a2a1f;
+    --coffee-line:#5a4433;
+    --on-coffee:#f4e9d6;
+    --on-coffee-muted:#bba78d;
+    --aqua-soft:#1b2c29;
+    --rose-soft:#33221d;
+    --note:#261e16;
+    --note-line:#3a3129;
+    --note-margin:#7a4a3e;
+    --i-plate:#f6ecd8;
+    --i-plate-2:#e5d6b8;
+    --i-arch:#3a2e18;
+    --i-arch-2:#2c2316;
+    --i-ging-a:#4a3b1f;
+    --i-floor:#2a2017;
+    --card-hi:#f3e7cf;
+    --wa:#2a9d61;
+    --shadow:0 26px 50px -30px rgba(0,0,0,.8);
+    --shadow-s:0 12px 24px -16px rgba(0,0,0,.8);
+    --focus:#f1d78e;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#17120d;
-  --bg-2:#1e1812;
-  --surface:#221b14;
-  --ink:#f2e8d7;
-  --muted:#bba98f;
-  --line:#3a2f23;
-  --line-strong:#f2e8d7;
-  --butter:#e5c873;
-  --butter-soft:#3a2f18;
-  --butter-pale:#2a2216;
-  --accent:#ecd08a;
-  --olive:#b9b88d;
-  --band:#0f0b08;
-  --band-2:#1b1510;
-  --band-line:#342a1f;
-  --on-band:#f2e8d7;
-  --on-band-muted:#ab9b82;
-  --btn:#efd48a;
-  --btn-ink:#22180f;
-  --btn-hover:#f7e2a8;
-  --wa:#2f8a58;
-  --wa-ink:#ffffff;
-  --grain:.05;
-  --shadow:0 30px 60px -36px rgba(0,0,0,.85);
-  --focus:#ecd08a;
+  --bg:#17120e;
+  --paper:#221a13;
+  --paper-2:#2b2119;
+  --ink:#f4e9d6;
+  --muted:#bdaa90;
+  --line:#3d3025;
+  --butter:#e6c565;
+  --butter-band:#d8b65a;
+  --butter-2:#3a2f19;
+  --butter-3:#2b2216;
+  --butter-deep:#ecc356;
+  --butter-ink:#f1d78e;
+  --on-butter:#21180f;
+  --coffee:#2c1f16;
+  --coffee-2:#3a2a1f;
+  --coffee-line:#5a4433;
+  --on-coffee:#f4e9d6;
+  --on-coffee-muted:#bba78d;
+  --aqua-soft:#1b2c29;
+  --rose-soft:#33221d;
+  --note:#261e16;
+  --note-line:#3a3129;
+  --note-margin:#7a4a3e;
+  --i-plate:#f6ecd8;
+  --i-plate-2:#e5d6b8;
+  --i-arch:#3a2e18;
+  --i-arch-2:#2c2316;
+  --i-ging-a:#4a3b1f;
+  --i-floor:#2a2017;
+    --card-hi:#f3e7cf;
+  --wa:#2a9d61;
+  --shadow:0 26px 50px -30px rgba(0,0,0,.8);
+  --shadow-s:0 12px 24px -16px rgba(0,0,0,.8);
+  --focus:#f1d78e;
   color-scheme:dark;
 }
-
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 'DM Sans',system-ui,sans-serif;overflow-x:clip;position:relative}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:var(--grain);mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
 img,svg{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-weight:400;line-height:1.04;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.01em}
-h1 em,h2 em,h3 em{font-style:italic;color:var(--accent)}
+h1,h2,h3{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-weight:500;line-height:1.08;letter-spacing:-.015em;margin:0;text-wrap:balance;overflow-wrap:break-word;font-variation-settings:"SOFT" 100}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400}
 p{margin:0}
-.num{font-variant-numeric:tabular-nums}
-:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.num,.tab{font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{position:relative}
+.hand{font-family:'Caveat','Segoe Print',cursive;font-weight:700}
 
-.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
-section{padding-block:clamp(72px,10vw,128px);position:relative}
-.eyebrow{display:inline-flex;align-items:center;gap:12px;font:500 .74rem/1.2 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.eyebrow::before{content:"";width:26px;height:9px;flex:none;background:repeating-linear-gradient(90deg,var(--accent) 0 1px,transparent 1px 4px)}
-.h2{font-size:clamp(2.3rem,5.6vw,4rem);margin-top:18px}
-.lead{color:var(--muted);font-size:1.08rem;max-width:56ch;margin-top:18px}
-.small-note{font-size:.86rem;color:var(--muted);margin-top:18px}
-.rule{height:1px;background:var(--line)}
+.awning{position:relative;z-index:31;height:40px;background:repeating-linear-gradient(90deg,var(--butter) 0 32px,var(--paper) 32px 64px);-webkit-mask:radial-gradient(circle at 50% 0,#000 15.5px,#0000 16px) 0 100%/32px 16px repeat-x,linear-gradient(#000,#000) 0 0/100% calc(100% - 15px) no-repeat;mask:radial-gradient(circle at 50% 0,#000 15.5px,#0000 16px) 0 100%/32px 16px repeat-x,linear-gradient(#000,#000) 0 0/100% calc(100% - 15px) no-repeat;transform-origin:50% 0}
+.awning-sh{height:40px;position:relative;z-index:30;filter:drop-shadow(0 6px 6px rgba(70,45,15,.18))}
+.awning::before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:var(--coffee);opacity:.9}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:500 .98rem/1.15 'DM Sans',system-ui,sans-serif;text-decoration:none;border:1px solid transparent;transition:transform .5s var(--ease),background-color .3s,border-color .3s,color .3s;cursor:pointer;text-align:center;will-change:transform}
-.btn svg{width:19px;height:19px;flex:none}
-.btn-main{background:var(--btn);color:var(--btn-ink)}
-.btn-main:hover{background:var(--btn-hover)}
-.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
-.btn-ghost:hover{background:var(--butter-pale)}
-.btn-butter{background:var(--butter);color:#2a1d12}
-.btn-butter:hover{background:#f4dea0}
-.btn-wa{background:var(--wa);color:var(--wa-ink)}
-.btn-line-band{background:transparent;color:var(--on-band);border-color:var(--band-line)}
-.btn-line-band:hover{border-color:var(--butter);color:var(--butter)}
-.arrow{display:inline-block;transition:transform .5s var(--ease)}
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background-color .6s ease}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:6px;padding-bottom:6px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.05;min-width:0}
+.brand b{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:1.28rem;letter-spacing:-.01em}
+.brand small{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a.l{text-decoration:none;font-size:.92rem;font-weight:500;position:relative;padding:4px 0}
+.nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--butter-deep);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.nav a.l:hover::after{transform:scaleX(1)}
+.prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:repeating-linear-gradient(90deg,var(--butter-deep) 0 10px,var(--carrot) 10px 20px);transform:scaleX(0);transform-origin:left}
+@media (max-width:900px){.nav a.l{display:none}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;line-height:1.2;border:2px solid transparent;cursor:pointer;transition:transform .45s cubic-bezier(.2,.7,.2,1),background-color .3s,color .3s;text-align:center;position:relative}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:var(--wa-ink);box-shadow:0 10px 22px -12px rgba(20,90,50,.75)}
+.btn-wa:hover{background:#18653c}
+.btn-ghost{border-color:currentColor;background:transparent}
+.btn-ghost:hover{background:var(--butter-3)}
+.on-coffee .btn-ghost:hover{background:var(--coffee-2)}
+.btn-sm{min-height:42px;padding:8px 16px;font-size:.92rem}
+.arrow{display:inline-block;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
 a:hover .arrow{transform:translateX(4px)}
 
-.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb, var(--bg) 86%, transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px}
-.brand{display:flex;flex-direction:column;text-decoration:none;min-width:0;line-height:1}
-.brand-name{font:italic 400 1.5rem/1 'Instrument Serif',Georgia,serif;white-space:nowrap}
-.brand small{font:500 .6rem/1.4 'DM Sans',sans-serif;letter-spacing:.24em;color:var(--muted);text-transform:uppercase;margin-top:5px}
-.top-nav{display:flex;align-items:center;gap:24px}
-.top-nav a.l{text-decoration:none;color:var(--muted);font-size:.92rem;position:relative}
-.top-nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
-.top-nav a.l:hover{color:var(--ink)}
-.top-nav a.l:hover::after{transform:scaleX(1);transform-origin:left}
-.top .btn{min-height:42px;padding:0 18px;font-size:.92rem}
-.prog{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--butter);transform:scaleX(0);transform-origin:left}
-@media (max-width:940px){.top-nav a.l{display:none}}
-@media (max-width:420px){.top .btn span{display:none}.top .btn{padding:0 13px}.brand-name{font-size:1.3rem}}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:8px 14px 8px 24px;background:var(--butter);color:#2b1f17;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);position:relative;line-height:1.2}
+.tag::before{content:"";position:absolute;left:13px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--bg)}
+.on-butter .tag{background:#2b1f17;color:#f4d77e}
+.on-butter .tag::before{background:#f4d77e}
+[hidden]{display:none!important}
+.on-coffee .tag{background:var(--butter);color:var(--on-butter);border-color:var(--butter)}
+.on-coffee .tag::before{background:var(--on-butter)}
+.h2{font-size:clamp(2rem,6.4vw,3.6rem)}
+.lead{font-size:1.08rem;color:var(--muted);max-width:56ch}
+.on-coffee{background:var(--coffee);color:var(--on-coffee)}
+.on-coffee .lead{color:var(--on-coffee-muted)}
+.on-butter{background:var(--butter-band);color:var(--on-butter)}
+.on-butter .lead{color:#4d3b2a}
+.sw{position:relative;display:inline-block;white-space:nowrap}
+.sw svg{position:absolute;left:-2%;width:104%;bottom:-.18em;height:.42em;overflow:visible}
+.sw path{fill:none;stroke:var(--carrot);stroke-width:5;stroke-linecap:round}
 
-.hero{padding-block:clamp(40px,6vw,84px) clamp(64px,8vw,104px);overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,72px);align-items:center}
-.hero-grid>*{min-width:0}
-.hero h1{font-size:clamp(2.7rem,7vw,5.4rem);margin-top:24px;line-height:1}
-.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
-.w>span{display:inline-block;animation:wordUp 1.1s var(--ease) both;animation-delay:calc(var(--i) * 55ms + 150ms)}
-@keyframes wordUp{from{transform:translateY(105%)}to{transform:none}}
-.in-seq{animation:fadeUp 1s var(--ease) both}
-@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.hero .lead{margin-top:24px}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.hero-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
-.rate{display:flex;align-items:center;gap:14px}
-.rate strong{font:400 2.6rem/1 'Instrument Serif',Georgia,serif;font-variant-numeric:tabular-nums}
-.stars{display:flex;gap:3px}
-.stars svg{width:13px;height:13px;fill:var(--accent)}
-.rate small{display:block;font-size:.84rem;color:var(--muted);margin-top:4px;line-height:1.2}
-.doors-mini{display:flex;flex-wrap:wrap;gap:8px}
-.doors-mini a{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;text-decoration:none;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);transition:border-color .3s,background-color .3s}
-.doors-mini a:hover{border-color:var(--line-strong);background:var(--butter-pale)}
+.scal-t::before{content:"";position:absolute;left:0;right:0;top:-15px;height:16px;background:inherit;-webkit-mask:radial-gradient(circle at 50% 100%,#000 15.5px,#0000 16px) 0 0/32px 16px repeat-x;mask:radial-gradient(circle at 50% 100%,#000 15.5px,#0000 16px) 0 0/32px 16px repeat-x}
+.scal-b::after{content:"";position:absolute;left:0;right:0;bottom:-15px;height:16px;background:inherit;z-index:2;-webkit-mask:radial-gradient(circle at 50% 0,#000 15.5px,#0000 16px) 0 0/32px 16px repeat-x;mask:radial-gradient(circle at 50% 0,#000 15.5px,#0000 16px) 0 0/32px 16px repeat-x}
+.ging-edge{height:22px;background:linear-gradient(90deg,rgba(255,255,255,.0) 50%,rgba(255,250,240,.55) 50%) 0 0/22px 22px,linear-gradient(rgba(255,250,240,.0) 50%,rgba(255,250,240,.55) 50%) 0 0/22px 22px,var(--butter-deep);opacity:.9}
 
-.art{position:relative;border-radius:240px 240px 26px 26px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;aspect-ratio:480/540;max-width:520px;margin-inline:auto;width:100%;transform-style:preserve-3d;transition:transform .8s var(--ease)}
-.art-in{position:absolute;inset:0;animation:fadeUp 1.2s var(--ease) .2s both}
-.cloth{position:absolute;left:0;right:0;bottom:0;height:30%;overflow:hidden;border-top:1px solid var(--ink)}
-.cloth i{position:absolute;inset:0 -60px 0 -60px;background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 9px);opacity:.55;animation:slide 14s linear infinite}
-@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50px)}}
-.halo{position:absolute;left:50%;top:39%;width:72%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--butter) 0%,var(--butter-soft) 58%,transparent 72%);transform:translate(-50%,-50%);animation:halo 1.6s var(--ease) .1s both}
-@keyframes halo{from{transform:translate(-50%,-50%) scale(.6);opacity:0}to{transform:translate(-50%,-50%) scale(1);opacity:1}}
-.art svg.plate{position:absolute;inset:0;width:100%;height:100%}
-.ln{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
-.ln.thin{stroke-width:1}
-.ln.acc{stroke:var(--accent)}
-.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s var(--ease) forwards;animation-delay:var(--dl,0s)}
-@keyframes draw{to{stroke-dashoffset:0}}
-.pfill{fill:var(--surface);animation:fadeIn .9s ease .9s both}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-.steam{animation:steam 4.5s ease-in-out 2.4s infinite}
-.steam:nth-of-type(2){animation-delay:3.2s}
-@keyframes steam{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.spoon{transform-box:fill-box;transform-origin:20% 80%;animation:spoon 6s ease-in-out 2.6s infinite}
-@keyframes spoon{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
-.art-tag{position:absolute;left:50%;top:9%;transform:translateX(-50%);font:italic 400 1.15rem/1 'Instrument Serif',Georgia,serif;color:var(--muted);white-space:nowrap}
-.art-badge{position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);color:var(--ink);font:500 .84rem/1.2 'DM Sans',sans-serif;padding:10px 16px;border-radius:999px;animation:fadeUp 1s var(--ease) 1.4s both}
-.art-badge b{font:400 1.25rem/1 'Instrument Serif',Georgia,serif}
-.art-badge svg{width:13px;height:13px;fill:var(--accent)}
-@media (max-width:880px){.hero-grid{grid-template-columns:1fr}.art{max-width:440px}}
+.hero{padding:34px 0 64px;overflow:hidden;background:radial-gradient(120% 70% at 85% 30%,var(--butter-3) 0,transparent 60%),var(--bg)}
+.hero::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none;opacity:.9}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:28px;align-items:center;position:relative}
+.hero-copy{min-width:0;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.25rem,6.2vw,4.25rem);margin:20px 0 18px;font-weight:450}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .w>span{display:inline-block}
+.hero h1 em{color:var(--butter-ink)}
+.hero .lead{font-size:1.1rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;margin-top:26px}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font-family:'Fraunces',Georgia,serif;font-size:2.6rem;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.stars{display:flex;gap:2px;color:var(--butter-deep)}
+.stars svg{width:16px;height:16px;fill:currentColor}
+.rate small{display:block;font-size:.86rem;color:var(--muted)}
+.where{font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+.where svg{width:18px;height:18px;color:var(--carrot)}
 
-.marquee{background:var(--band);color:var(--on-band);overflow:hidden;border-block:1px solid var(--band-line)}
-.marquee .track{display:flex;width:max-content;animation:marq 48s linear infinite}
-.marquee ul{list-style:none;margin:0;padding:20px 0;display:flex;gap:44px;padding-right:44px;font:italic 400 1.45rem/1.2 'Instrument Serif',Georgia,serif;white-space:nowrap}
-.marquee li{display:flex;align-items:center;gap:44px}
-.marquee li::after{content:"";width:22px;height:8px;background:repeating-linear-gradient(90deg,var(--butter) 0 1px,transparent 1px 4px)}
-@keyframes marq{to{transform:translateX(-50%)}}
+.scene{position:relative;min-width:0;z-index:1}
+.scene-in{position:relative;transition:transform .8s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
+.scene svg.art{width:100%;height:auto;overflow:visible}
+.ly{transform-box:fill-box;transform-origin:50% 100%}
+.fl{transform-box:fill-box;transform-origin:50% 50%}
+.c-arch{fill:var(--i-arch)}
+.c-arch2{fill:var(--i-arch-2)}
+.c-floor{fill:var(--i-floor)}
+.c-plate{fill:var(--i-plate)}
+.c-plate2{fill:var(--i-plate-2)}
+.c-butter{fill:var(--butter)}
+.c-cloth{fill:var(--i-plate)}
+.c-coffee{fill:#3d2b20}
+.c-sh{fill:#3d2b20;opacity:.14}
+.g-a{fill:var(--i-ging-a)}
+.st-coffee{stroke:#3d2b20}
+.hang{position:absolute;top:4%;left:20%;z-index:3;transform-origin:50% 0}
+.hang .str{display:block;width:2px;height:46px;margin:0 auto;background:var(--ink);opacity:.5}
+.hang .lbl{display:block;font-family:'Caveat',cursive;font-weight:700;font-size:1.35rem;line-height:1;background:var(--paper);border:1.5px solid var(--ink);padding:8px 14px 8px 16px;border-radius:4px;transform:rotate(-6deg);box-shadow:var(--shadow-s);position:relative}
+.hang .lbl::before{content:"";position:absolute;left:50%;top:5px;width:7px;height:7px;margin-left:-3.5px;border-radius:50%;border:1.5px solid var(--ink);background:var(--bg)}
+.hang .lbl{padding-top:16px}
+.stamp{position:absolute;right:2%;bottom:6%;width:clamp(96px,22%,132px);aspect-ratio:1;z-index:3}
+.stamp svg{width:100%;height:100%;overflow:visible}
+.stamp .ring{transform-origin:50% 50%;transform-box:view-box}
+.stamp text{font-family:'Figtree',sans-serif;font-weight:700;font-size:13.5px;letter-spacing:.12em;fill:var(--on-butter)}
+.stamp .big{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:40px;font-weight:500;letter-spacing:0}
+.stamp .sm{font-size:10px;letter-spacing:.18em}
 
-.doors-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
-.doors-head>*{min-width:0}
-.doors{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,2vw,24px);margin-top:44px}
-.door{position:relative;overflow:hidden;text-align:left;cursor:pointer;border:1px solid var(--line-strong);border-radius:220px 220px 18px 18px;background:var(--surface);color:var(--ink);padding:clamp(56px,8vw,96px) clamp(18px,3vw,36px) clamp(22px,3vw,32px);font:inherit;min-width:0;transition:color .5s var(--ease)}
-.door::before{content:"";position:absolute;inset:0;background:var(--butter);transform:scaleY(0);transform-origin:bottom;transition:transform .8s var(--ease);z-index:0}
-.door::after{content:"";position:absolute;left:50%;top:18px;width:46px;height:9px;transform:translateX(-50%);background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 4px);opacity:.5}
-.door>*{position:relative;z-index:1;display:block}
-.door .k{font:500 .72rem/1.2 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.door .t{font:italic 400 clamp(1.9rem,4.6vw,3.2rem)/1 'Instrument Serif',Georgia,serif;margin-top:12px}
-.door .d{color:var(--muted);margin-top:10px;font-size:.98rem;max-width:30ch}
-.door[aria-selected="true"]{color:#2a1d12}
-.door[aria-selected="true"]::before{transform:scaleY(1)}
-.door[aria-selected="true"] .k,.door[aria-selected="true"] .d{color:#5a4632}
-.door[aria-selected="true"]::after{background:repeating-linear-gradient(90deg,#2a1d12 0 1px,transparent 1px 4px)}
-.door:hover:not([aria-selected="true"])::before{transform:scaleY(.06)}
-@media (max-width:560px){.doors{grid-template-columns:1fr 1fr;gap:10px}.door{border-radius:160px 160px 14px 14px;padding:48px 14px 18px}.door .d{display:none}.door .t{font-size:1.65rem}}
-.panel{margin-top:clamp(36px,5vw,56px);padding-top:clamp(28px,4vw,44px);border-top:1px solid var(--line-strong)}
-.panel.enter{animation:panelIn .9s var(--ease) both}
-@keyframes panelIn{from{opacity:0;transform:translateY(22px);clip-path:inset(0 0 14% 0)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0)}}
-.panel[hidden]{display:none}
-.pgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,72px);align-items:start}
-.pgrid>*{min-width:0}
-.pgrid h3{font-size:clamp(2rem,4.4vw,3rem)}
-.signs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.signs li{display:grid;grid-template-columns:3rem 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line)}
-.signs li>*{min-width:0}
-.signs .n{font:italic 400 1.8rem/1 'Instrument Serif',Georgia,serif;color:var(--accent)}
-.signs b{display:block;font:400 1.45rem/1.15 'Instrument Serif',Georgia,serif}
-.signs span{display:block;color:var(--muted);font-size:.96rem;margin-top:6px}
-.note{display:flex;gap:12px;align-items:flex-start;margin-top:24px;border:1px dashed var(--line);border-radius:16px;padding:14px 16px;font-size:.9rem;color:var(--muted)}
-.note svg{width:20px;height:20px;flex:none;stroke:var(--accent);fill:none;stroke-width:1.6;stroke-linecap:round;margin-top:2px}
-.pctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.offer{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.offer li{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;align-items:baseline}
-.offer li>*{min-width:0}
-.offer b{font:italic 400 clamp(1.8rem,4vw,2.4rem)/1 'Instrument Serif',Georgia,serif}
-.offer span{color:var(--muted);font-size:.95rem;text-align:right;max-width:30ch}
-@media (max-width:860px){.pgrid{grid-template-columns:1fr}}
-@media (max-width:520px){.offer li{flex-direction:column;gap:6px}.offer span{text-align:left}}
+.ribbon{background:var(--coffee);color:var(--on-coffee);overflow:hidden;position:relative;z-index:3;transform:rotate(-1.2deg);margin:-14px -10px 0;box-shadow:var(--shadow-s)}
+.ribbon::before,.ribbon::after{content:"";position:absolute;left:0;right:0;height:5px;background:repeating-linear-gradient(90deg,var(--butter) 0 10px,transparent 10px 20px)}
+.ribbon::before{top:5px}.ribbon::after{bottom:5px}
+.track{display:flex;width:max-content;animation:mq 38s linear infinite}
+.track ul{display:flex;list-style:none;margin:0;padding:22px 0;gap:0}
+.track li{display:flex;align-items:center;gap:22px;padding-right:22px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.3rem;white-space:nowrap}
+.track li svg{width:22px;height:22px;color:var(--butter)}
+@keyframes mq{to{transform:translateX(-50%)}}
 
-.diary{background:var(--bg-2);border-block:1px solid var(--line)}
-.diary-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
-.diary-head>*{min-width:0}
-.dcard{margin-top:44px;display:grid;grid-template-columns:1.15fr .85fr;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:var(--surface)}
-.dcard>*{min-width:0}
-.page{position:relative;padding:clamp(26px,4vw,44px) clamp(18px,4vw,40px) clamp(26px,4vw,44px) clamp(52px,7vw,84px);display:grid;gap:30px;background-image:repeating-linear-gradient(180deg,transparent 0 37px,var(--line) 37px 38px)}
-.page::before{content:"";position:absolute;top:0;bottom:0;left:clamp(36px,5vw,58px);width:1px;background:var(--butter)}
-.page::after{content:"";position:absolute;top:24px;bottom:24px;left:clamp(10px,1.6vw,20px);width:12px;background:radial-gradient(circle at 6px 6px,var(--bg-2) 5px,var(--line) 5.5px,transparent 6.5px) 0 0/12px 72px repeat-y}
-.page-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-.page-top .date{font:italic 400 1.35rem/1 'Instrument Serif',Georgia,serif}
-.page-top .cnt{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.q{border:0;margin:0;padding:0;min-width:0}
-.q legend{display:flex;align-items:baseline;gap:12px;padding:0;margin-bottom:14px;font:400 1.5rem/1.15 'Instrument Serif',Georgia,serif}
-.q legend .n{font-style:italic;color:var(--accent)}
-.opts{display:flex;flex-wrap:wrap;gap:8px}
-.opts input{position:absolute;opacity:0;width:1px;height:1px}
-.opts label{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:var(--bg);cursor:pointer;line-height:1.2;font-size:.95rem;transition:border-color .3s,background-color .3s,color .3s}
-.opts label:hover{border-color:var(--line-strong)}
-.opts input:checked + label{background:var(--ink);border-color:var(--ink);color:var(--bg);animation:pop .5s var(--ease)}
-@keyframes pop{40%{transform:scale(.95)}100%{transform:none}}
-.opts input[type=checkbox] + label::before{content:"";width:13px;height:13px;border:1px solid currentColor;border-radius:3px;flex:none;transition:background-color .3s}
-.opts input[type=checkbox]:checked + label::before{background:var(--butter);border-color:var(--butter)}
-.opts input:focus-visible + label{outline:2px solid var(--focus);outline-offset:2px}
-.other{margin-top:10px;width:100%;min-height:46px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit;padding:10px 14px}
-.other[hidden],.other-l[hidden]{display:none}
-.other-l{display:block}
-.dside{background:var(--band);color:var(--on-band);padding:clamp(24px,4vw,38px);display:flex;flex-direction:column;gap:16px}
-.dside .k{font:500 .7rem/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--on-band-muted)}
-.meter{display:flex;align-items:center;gap:16px}
-.meter svg{width:76px;height:76px;flex:none}
-.m-bg{fill:none;stroke:var(--band-line);stroke-width:1}
-.m-seg{fill:none;stroke:var(--butter);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1s var(--ease)}
-.m-seg.on{stroke-dashoffset:0}
-.m-in{fill:none;stroke:var(--on-band-muted);stroke-width:1}
-.meter p{font-size:.92rem;color:var(--on-band-muted)}
-.meter p b{display:block;font:italic 400 1.6rem/1 'Instrument Serif',Georgia,serif;color:var(--on-band);margin-bottom:4px}
-.dside h3{font-size:clamp(1.7rem,3.2vw,2.2rem);color:var(--on-band)}
-.dside h3 em{color:var(--butter)}
-.guide{color:var(--on-band-muted);font-size:.96rem;display:grid;gap:8px}
-.swap{animation:swapIn .7s var(--ease) both}
-@keyframes swapIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.msg{background:var(--band-2);border:1px solid var(--band-line);border-radius:16px 16px 16px 4px;padding:14px 16px;font-size:.9rem;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--on-band)}
-.dside .btn{width:100%}
-.dnote{padding:14px clamp(20px,4vw,40px);border-top:1px solid var(--line);font-size:.86rem;color:var(--muted);grid-column:1/-1;background:var(--surface)}
-@media (max-width:900px){.dcard{grid-template-columns:1fr}}
+.doors-sec{padding:96px 0 90px;background-color:var(--butter-band)}
+.doors-sec .ging-bg{position:absolute;inset:0;background:linear-gradient(90deg,transparent 50%,rgba(255,250,235,.28) 50%) 0 0/36px 36px,linear-gradient(transparent 50%,rgba(255,250,235,.28) 50%) 0 0/36px 36px;pointer-events:none}
+.doors-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:24px;align-items:end;margin-bottom:40px;position:relative}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:26px;position:relative}
+.door{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:end;text-decoration:none;background:var(--card-hi);color:#2b1f17;border-radius:28px 28px 18px 18px;padding:30px 26px 26px;box-shadow:var(--shadow);transition:transform .6s cubic-bezier(.2,.7,.2,1);overflow:hidden;min-width:0}
+.door::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:repeating-linear-gradient(90deg,#f4d77e 0 14px,transparent 14px 28px)}
+.door.pro{background:var(--coffee);color:var(--on-coffee)}
+.door.pro::before{background:repeating-linear-gradient(90deg,var(--butter) 0 14px,var(--coffee-2) 14px 28px)}
+.door:hover{transform:translateY(-8px) rotate(-.6deg)}
+.door .k{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#7a5609}
+.door.pro .k{color:var(--butter)}
+.door .t{display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(1.6rem,3.6vw,2.2rem);line-height:1.08;margin:10px 0 12px}
+.door .t em{font-style:italic;font-weight:400}
+.door ul{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:6px;font-size:.96rem}
+.door li{display:flex;gap:8px;align-items:baseline}
+.door li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--carrot);transform:translateY(-1px)}
+.door .go{display:inline-flex;gap:8px;align-items:center;font-weight:700;border-bottom:2px solid currentColor;padding-bottom:2px}
+.door .pic{align-self:end;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.door:hover .pic{transform:translateY(-6px) rotate(3deg)}
+.door .pic svg{width:100%;height:auto}
 
-.how-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,96px);align-items:start}
-.how-grid>*{min-width:0}
-.how-side{position:sticky;top:110px}
-.tl{padding:0 0 0 54px;position:relative}
-.tl ol{list-style:none;margin:0;padding:0}
-.tl::before{content:"";position:absolute;left:17px;top:8px;bottom:8px;width:1px;background:var(--line)}
-.tl-fill{position:absolute;left:17px;top:8px;bottom:8px;width:1px;background:var(--ink);transform-origin:top;transform:scaleY(var(--p,1))}
-.tl li{position:relative;padding-bottom:clamp(40px,6vw,72px)}
-.tl li:last-child{padding-bottom:0}
-.tl .dot{position:absolute;left:-54px;top:0;width:35px;height:35px;border-radius:50%;border:1px solid var(--line-strong);background:var(--bg);display:grid;place-items:center;font:italic 400 1.05rem/1 'Instrument Serif',Georgia,serif;transition:background-color .6s var(--ease),color .6s}
-.tl li.on .dot{background:var(--butter);color:#2a1d12;border-color:var(--butter)}
-.tl h3{font-size:clamp(1.8rem,3.6vw,2.4rem)}
-.tl p{color:var(--muted);margin-top:10px;max-width:50ch}
-.tl ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:.95rem}
-.tl ul li{padding:0 0 0 22px;position:relative}
-.tl ul li::before{content:"";position:absolute;left:0;top:.8em;width:12px;height:1px;background:var(--accent)}
-@media (max-width:860px){.how-grid{grid-template-columns:1fr}.how-side{position:static}}
+.chap{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.chap .no{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:3.4rem;line-height:.9;color:var(--butter-deep)}
+.on-coffee .chap .no{color:var(--butter)}
+.chap .lb{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor;padding:5px 0}
 
-.explains{background:var(--butter-pale);border-block:1px solid var(--line);overflow:hidden}
-.quote{font:italic 400 clamp(2.6rem,8.4vw,6.4rem)/.98 'Instrument Serif',Georgia,serif;letter-spacing:-.02em;text-wrap:balance;overflow-wrap:break-word;max-width:14ch}
-.quote .pre{display:block;font:400 .74rem/1.2 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:1.6rem;font-style:normal}
-.quote .lw{transition:opacity .5s ease,color .5s ease}
-.js .quote .lw{opacity:.18}
-.js .quote .lw.lit{opacity:1}
-.quote .lw.acc{color:var(--accent)}
-.ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);margin-top:clamp(40px,6vw,72px);align-items:start}
-.ex-grid>*{min-width:0}
-.ex-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-strong);grid-column:1/-1}
-.ex-list li{padding:22px 22px 6px 0;min-width:0}
-.ex-list li+li{padding-left:22px;border-left:1px solid var(--line)}
-.ex-list b{display:block;font:400 1.5rem/1.15 'Instrument Serif',Georgia,serif}
-.ex-list span{display:block;color:var(--muted);font-size:.95rem;margin-top:8px}
-@media (max-width:860px){.ex-grid{grid-template-columns:1fr}.ex-list{grid-template-columns:1fr}.ex-list li,.ex-list li+li{padding:20px 0;border-left:0;border-bottom:1px solid var(--line)}}
+.signs-sec{padding:100px 0 96px}
+.signs-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:30px 50px;align-items:end;margin-bottom:46px}
+.note{display:flex;gap:10px;align-items:flex-start;font-size:.94rem;color:var(--muted);background:var(--butter-3);border-left:4px solid var(--butter-deep);padding:12px 14px;border-radius:0 12px 12px 0;margin-top:16px}
+.note svg{width:20px;height:20px;flex:none;margin-top:2px;fill:none;stroke:var(--butter-ink);stroke-width:1.8;stroke-linecap:round}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;list-style:none;padding:0;margin:0}
+.card{position:relative;background:var(--paper);border-radius:18px;padding:22px 20px 24px;box-shadow:var(--shadow-s);transition:transform .6s cubic-bezier(.2,.7,.2,1);min-width:0;border:1px solid var(--line)}
+.card:nth-child(1){--tint:var(--butter-3);transform:rotate(-1.2deg)}
+.card:nth-child(2){--tint:var(--aqua-soft);transform:rotate(.9deg) translateY(14px)}
+.card:nth-child(3){--tint:var(--rose-soft);transform:rotate(-.6deg)}
+.card:nth-child(4){--tint:var(--butter-3);transform:rotate(1.2deg) translateY(14px)}
+.card:hover{transform:rotate(0) translateY(-8px)}
+.card .ico{height:112px;border-radius:12px;background:var(--tint);display:grid;place-items:center;margin-bottom:16px;position:relative;overflow:hidden}
+.card .ico::after{content:"";position:absolute;inset:auto 0 0 0;height:10px;background:repeating-linear-gradient(90deg,rgba(61,43,32,.12) 0 8px,transparent 8px 16px)}
+.card .ico svg{width:92px;height:92px}
+.card .n{position:absolute;top:-12px;right:14px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1rem;background:var(--coffee);color:var(--on-coffee);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;box-shadow:var(--shadow-s)}
+.card h3{font-size:1.32rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.signs-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:58px;align-items:center}
 
-.cbfa{background:var(--band);color:var(--on-band);overflow:hidden}
-.cbfa .eyebrow{color:var(--on-band-muted)}
-.cbfa .eyebrow::before{background:repeating-linear-gradient(90deg,var(--butter) 0 1px,transparent 1px 4px)}
-.cb-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(32px,6vw,96px);align-items:center}
-.cb-grid>*{min-width:0}
-.seal-ring{position:relative;width:clamp(200px,26vw,280px);aspect-ratio:1;margin-inline:auto}
-.seal-ring svg{width:100%;height:100%}
-.ring{transform-box:fill-box;transform-origin:center;animation:spin 36s linear infinite}
+.diary-sec{padding:104px 0 100px;background-color:var(--butter-band);color:var(--on-butter)}
+.diary-sec .ging-bg{position:absolute;inset:0;background:linear-gradient(90deg,transparent 50%,rgba(255,250,235,.3) 50%) 0 0/28px 28px,linear-gradient(transparent 50%,rgba(255,250,235,.3) 50%) 0 0/28px 28px;pointer-events:none}
+.diary-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:20px 40px;align-items:end;margin-bottom:40px;position:relative}
+.dcard{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:30px;position:relative;align-items:start}
+.page{position:relative;background-color:var(--note);color:var(--ink);background-image:linear-gradient(90deg,transparent 52px,var(--note-margin) 52px,var(--note-margin) 54px,transparent 54px),repeating-linear-gradient(to bottom,transparent 0 33px,var(--note-line) 33px 34px);background-position:0 0,0 70px;border-radius:6px 18px 18px 6px;padding:62px 24px 30px 70px;box-shadow:var(--shadow);transform:rotate(-.8deg);min-width:0}
+.page::before{content:"";position:absolute;left:18px;right:18px;top:16px;height:22px;background:radial-gradient(circle at 11px 11px,var(--butter-band) 0 6px,transparent 6.5px) 0 0/30px 22px repeat-x;opacity:.95}
+.page::after{content:"";position:absolute;left:18px;right:18px;top:8px;height:16px;background:repeating-linear-gradient(90deg,transparent 0 7px,#8b7a68 7px 9px,transparent 9px 30px);border-radius:8px;opacity:.6}
+.tape{position:absolute;width:110px;height:30px;background:repeating-linear-gradient(45deg,rgba(233,128,60,.55) 0 8px,rgba(255,250,240,.6) 8px 16px);top:-10px;right:30px;transform:rotate(6deg);z-index:2}
+.tape.b{top:auto;bottom:-12px;left:28px;right:auto;transform:rotate(-8deg);background:repeating-linear-gradient(-45deg,rgba(147,207,195,.7) 0 8px,rgba(255,250,240,.6) 8px 16px)}
+.page-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.page-top .date{font-family:'Caveat',cursive;font-weight:700;font-size:1.9rem;line-height:1.1;color:var(--ink)}
+.page-top .cnt{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+fieldset.q{border:0;margin:0;padding:12px 0 12px;min-width:0}
+fieldset.q legend{padding:0;font-family:'Fraunces',Georgia,serif;font-size:1.22rem;font-style:italic;margin-bottom:10px;display:flex;gap:8px;align-items:baseline}
+fieldset.q legend .n{font-family:'Caveat',cursive;font-style:normal;font-weight:700;font-size:1.6rem;color:var(--carrot);line-height:1}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.opts label{position:relative;display:inline-flex;align-items:center;min-height:42px;padding:6px 16px;font-family:'Caveat',cursive;font-weight:700;font-size:1.45rem;line-height:1;cursor:pointer;border-radius:999px;border:1.5px dashed var(--line);background:var(--paper);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .3s;user-select:none;z-index:0}
+.opts label::before{content:"";position:absolute;inset:6px 6px 4px;background:var(--butter);border-radius:4px 10px 6px 12px;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.7,.2,1);z-index:-1;opacity:.85}
+.opts label::after{content:"";position:absolute;inset:-5px -6px;border:2px solid var(--carrot);border-radius:58% 42% 55% 45%/52% 60% 40% 48%;transform:scale(.6) rotate(-8deg);opacity:0;transition:transform .45s cubic-bezier(.2,.7,.2,1),opacity .3s}
+.opts label:hover{transform:translateY(-2px)}
+.opts input:checked+label{border-color:transparent;color:#2b1f17}
+.opts input:checked+label::before{transform:scaleX(1)}
+.opts input:checked+label::after{transform:scale(1) rotate(-3deg);opacity:1}
+.opts input:focus-visible+label{outline:3px solid var(--focus);outline-offset:4px}
+.other{width:100%;margin-top:12px;font:inherit;font-family:'Caveat',cursive;font-size:1.4rem;padding:8px 12px;border:0;border-bottom:2px solid var(--carrot);background:transparent;color:var(--ink)}
+.other:focus{outline:none;background:var(--butter-3)}
+.other-l{display:block;font-size:.85rem;color:var(--muted);margin-top:10px}
+.dside{position:relative;display:grid;gap:18px;min-width:0}
+.meter{display:flex;align-items:center;gap:14px;background:var(--coffee);color:var(--on-coffee);border-radius:18px;padding:14px 18px;box-shadow:var(--shadow-s)}
+.plates{display:flex;gap:8px}
+.plates svg{width:40px;height:40px}
+.plates .pl-f{fill:var(--butter);transform-origin:50% 50%;transform-box:fill-box;transform:scale(0);transition:transform .55s cubic-bezier(.3,1.5,.5,1)}
+.plates .on .pl-f{transform:scale(1)}
+.meter p{font-size:.9rem;line-height:1.3;color:var(--on-coffee-muted)}
+.meter b{display:block;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.3rem;color:var(--on-coffee);font-weight:500}
+.postit{position:relative;background:var(--paper);color:var(--ink);padding:26px 22px 22px;border-radius:4px;box-shadow:var(--shadow);transform:rotate(1.2deg)}
+.postit::before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:26px;margin-left:-45px;background:repeating-linear-gradient(90deg,rgba(244,215,126,.9) 0 10px,rgba(255,250,240,.75) 10px 20px);transform:rotate(-3deg)}
+.postit .k{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--butter-ink)}
+.postit h3{font-size:1.5rem;margin:6px 0 10px}
+.postit h3 em{color:var(--carrot)}
+.guide p{font-size:.96rem;color:var(--muted)}
+.guide p+p{margin-top:8px}
+.bubble{position:relative;background:var(--aqua-soft);color:var(--ink);border-radius:18px 18px 18px 4px;padding:16px 18px;font-size:.95rem;white-space:pre-line;border:1px solid var(--line)}
+.bubble-k{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#4d3b2a;margin-bottom:-8px}
+.dnote{grid-column:1/-1;font-size:.86rem;color:#4d3b2a;max-width:80ch;margin-top:6px}
+.swap{animation:swap .6s cubic-bezier(.2,.7,.2,1)}
+@keyframes swap{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.how-sec{padding:110px 0 110px}
+.how-head{max-width:720px;margin-bottom:56px}
+.steps-box{position:relative}
+.steps{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;list-style:none;margin:0;padding:0}
+.track-line{position:absolute;left:8%;right:8%;top:58px;height:4px;background:repeating-linear-gradient(90deg,var(--coffee-line) 0 10px,transparent 10px 18px)}
+.track-line i{position:absolute;inset:0;background:var(--butter);transform-origin:left;transform:scaleX(var(--p,0))}
+.step{position:relative;min-width:0;text-align:left}
+.plate-n{position:relative;width:120px;height:120px;margin-bottom:22px;z-index:1}
+.plate-n svg{width:100%;height:100%}
+.plate-n b{position:absolute;inset:0;display:grid;place-items:center;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:2.6rem;color:#2b1f17}
+.step h3{font-size:1.55rem;margin-bottom:8px}
+.step p{color:var(--on-coffee-muted)}
+.step ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.step ul li{font-size:.84rem;font-weight:600;padding:5px 12px;border-radius:999px;border:1px dashed var(--on-coffee-muted);color:var(--on-coffee)}
+.step .pl-ring{transform-origin:50% 50%;transform-box:fill-box;transition:transform .9s cubic-bezier(.3,1.4,.5,1)}
+.step.on .pl-ring{transform:rotate(180deg)}
+.how-cta{margin-top:50px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.how-cta p{color:var(--on-coffee-muted);font-size:.95rem}
+
+.look-sec{padding:110px 0 100px;overflow-x:clip}
+.quote{font-family:'Fraunces',Georgia,serif;font-size:clamp(2.1rem,7vw,5rem);line-height:1.04;letter-spacing:-.02em;max-width:15ch;font-weight:450;position:relative}
+.quote .pre{display:block;font-family:'Figtree',sans-serif;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:22px}
+.lw{transition:opacity .5s,color .5s}
+.js .lw{opacity:.2}
+.js .lw.lit{opacity:1}
+.lw.acc{font-style:italic;color:var(--carrot)}
+.look-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:40px;margin-top:44px;align-items:start}
+.principles{display:grid;gap:16px;list-style:none;padding:0;margin:0}
+.principles li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow-s);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.principles li:hover{transform:translateX(6px)}
+.principles .pi{width:64px;height:64px;border-radius:14px;background:var(--butter-3);display:grid;place-items:center}
+.principles .pi svg{width:44px;height:44px}
+.principles b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.2rem;font-weight:500;margin-bottom:2px}
+.principles span{font-size:.95rem;color:var(--muted)}
+.floaty{position:absolute;pointer-events:none;z-index:0}
+.floaty svg{width:100%;height:100%}
+
+.pro-sec{padding:100px 0 110px;overflow-x:clip}
+.pro-sec .stripes-bg{position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 60px,rgba(255,240,200,.03) 60px 120px);pointer-events:none}
+.pro-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:start;position:relative}
+.offer{display:grid;gap:14px;list-style:none;padding:0;margin:30px 0 0}
+.offer li{position:relative;background:var(--coffee-2);border:1px solid var(--coffee-line);border-radius:16px;padding:18px 20px 18px 74px;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.offer li:hover{transform:translateX(6px)}
+.offer li .oi{position:absolute;left:16px;top:16px;width:44px;height:44px;border-radius:12px;background:var(--butter);display:grid;place-items:center}
+.offer li .oi svg{width:28px;height:28px}
+.offer b{display:block;font-family:'Fraunces',Georgia,serif;font-size:1.3rem;font-weight:500;color:var(--on-coffee)}
+.offer span{color:var(--on-coffee-muted);font-size:.95rem}
+.pro-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn-butter{background:var(--butter);color:var(--on-butter)}
+.btn-butter:hover{background:var(--paper);color:var(--ink)}
+.stage{position:relative;display:flex;flex-direction:column;align-items:center}
+.lanyard{position:absolute;top:-100px;left:50%;width:220px;height:250px;margin-left:-110px;pointer-events:none}
+.badge-swing{position:relative;margin-top:120px;transform-origin:50% -120px;width:min(300px,86%);animation:swing 5.5s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.badge-cord{position:absolute;left:50%;bottom:100%;width:200px;height:122px;margin-left:-100px}
+.badge-cord svg{width:100%;height:100%;overflow:visible}
+.clip{position:absolute;left:50%;top:-22px;width:34px;height:30px;margin-left:-17px;border-radius:6px 6px 10px 10px;background:linear-gradient(#cfc6b8,#9c9182);box-shadow:inset 0 -3px 0 rgba(0,0,0,.18);z-index:2}
+.badge{position:relative;background:#fffaf0;color:#2b1f17;border-radius:20px;overflow:hidden;box-shadow:0 40px 60px -30px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.04);transition:transform .2s}
+.badge::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.55) 45%,transparent 60%);transform:translateX(-120%);animation:shine 6s ease-in-out infinite 2s;pointer-events:none}
+@keyframes shine{0%,60%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+.b-top{height:92px;background:repeating-linear-gradient(90deg,#f4d77e 0 18px,#fff3d1 18px 36px);position:relative}
+.b-top .slot{position:absolute;left:50%;top:14px;width:54px;height:10px;margin-left:-27px;border-radius:6px;background:#3d2b20;opacity:.85}
+.b-top .ev{position:absolute;left:18px;right:18px;bottom:12px;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#3d2b20;background:#fffaf0;padding:5px 9px;border-radius:6px;text-align:center;line-height:1.3}
+.b-body{padding:22px 22px 18px;text-align:center}
+.b-big{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:3.4rem;line-height:.95;letter-spacing:-.03em;font-weight:500}
+.b-big span{display:block;font-style:normal;font-size:1.5rem;letter-spacing:.2em;color:#b9831b;margin-top:4px}
+.b-line{height:0;border-top:2px dotted #d8c7a8;margin:16px 0}
+.b-name{font-family:'Fraunces',Georgia,serif;font-size:1.5rem;font-weight:500;line-height:1.1}
+.b-role{font-size:.82rem;color:#6b5949;margin-top:2px}
+.b-pill{display:inline-block;margin-top:12px;background:#3d2b20;color:#f4d77e;font-weight:700;letter-spacing:.2em;font-size:.76rem;padding:7px 16px;border-radius:999px}
+.b-theme{font-size:.84rem;color:#6b5949;margin-top:12px;line-height:1.4}
+.b-bar{height:30px;margin:16px 18px 0;background:repeating-linear-gradient(90deg,#3d2b20 0 2px,transparent 2px 4px,#3d2b20 4px 5px,transparent 5px 9px,#3d2b20 9px 12px,transparent 12px 14px);opacity:.7}
+.b-foot{height:14px;margin-top:14px;background:repeating-linear-gradient(90deg,#e9803c 0 12px,#f4d77e 12px 24px)}
+.cb-note{position:relative;margin-top:34px;max-width:440px;text-align:center}
+.forms{margin-top:44px;padding-top:30px;border-top:1px dashed var(--coffee-line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;position:relative}
+.forms h3{font-size:1.6rem}
+.forms p{color:var(--on-coffee-muted);font-size:.95rem;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip-st{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.15rem;padding:8px 18px;border:2px solid var(--butter);color:var(--butter);border-radius:10px;transform:rotate(var(--r,-2deg));position:relative}
+.chip-st::after{content:"";position:absolute;inset:3px;border:1px solid var(--butter);border-radius:7px;opacity:.5}
+
+.rate-sec{padding:100px 0 96px;background-color:var(--butter-band);color:var(--on-butter)}
+.rate-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:center}
+.big-rate{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.seal{width:190px;height:190px;flex:none;position:relative}
+.seal svg{width:100%;height:100%;overflow:visible}
+.seal .ring{transform-origin:50% 50%;transform-box:view-box;animation:spin 30s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.ring text{font:500 12.5px/1 'DM Sans',sans-serif;letter-spacing:.18em;fill:var(--on-band-muted);text-transform:uppercase}
-.seal-c{fill:none;stroke:var(--band-line)}
-.seal-in{fill:var(--butter)}
-.seal-yr{font:italic 400 46px/1 'Instrument Serif',Georgia,serif;fill:#2a1d12}
-.seal-sm{font:500 9px/1 'DM Sans',sans-serif;letter-spacing:.2em;fill:#5a4632}
-.cb-big{font:italic 400 clamp(3.6rem,13vw,9.5rem)/.9 'Instrument Serif',Georgia,serif;letter-spacing:-.03em;margin-top:18px;color:var(--on-band);white-space:nowrap}
-.cb-big span{color:var(--butter)}
-.wipe{transition:clip-path 1.4s var(--ease)}
-.js .wipe{clip-path:inset(0 100% 0 0)}
-.js .wipe.in{clip-path:inset(0 0 0 0)}
-.cbfa h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:16px;color:var(--on-band)}
-.cbfa h2 em{color:var(--butter)}
-.cbfa p.t{color:var(--on-band-muted);margin-top:12px;max-width:52ch}
-.cbfa .stripes-run{position:absolute;left:0;right:0;bottom:0;height:12px;overflow:hidden;opacity:.4}
-.cbfa .stripes-run i{position:absolute;inset:0 -60px;background:repeating-linear-gradient(90deg,var(--on-band) 0 1px,transparent 1px 7px);animation:slide 10s linear infinite}
-@media (max-width:820px){.cb-grid{grid-template-columns:1fr}}
+.seal text{font-family:'Figtree',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.16em;fill:#2b1f17}
+.seal .sn{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:54px;letter-spacing:0;font-weight:500}
+.big-rate .stars{color:#2b1f17}
+.big-rate .stars svg{width:22px;height:22px}
+.big-rate p{font-size:1rem;margin-top:8px}
+.themes{background:var(--paper);color:var(--ink);border-radius:24px;padding:28px 26px;box-shadow:var(--shadow);position:relative}
+.themes::before{content:"";position:absolute;left:24px;right:24px;top:-8px;height:16px;border-radius:8px;background:repeating-linear-gradient(90deg,var(--coffee) 0 12px,var(--paper) 12px 24px);opacity:.9}
+.themes h3{font-size:1.6rem;margin-bottom:6px}
+.themes .sub{color:var(--muted);font-size:.95rem;margin-bottom:20px}
+.tbars{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.tbars li{display:grid;grid-template-columns:120px minmax(0,1fr) 34px;gap:12px;align-items:center}
+.tbars .lb{font-weight:600}
+.tbars .bar{height:22px;border-radius:999px;background:var(--paper-2);overflow:hidden;position:relative}
+.tbars .bar i{position:absolute;inset:0;border-radius:999px;background:repeating-linear-gradient(45deg,var(--butter-deep) 0 8px,var(--butter) 8px 16px);transform-origin:left;transform:scaleX(var(--w))}
+.js .tbars .bar i{transform:scaleX(0);transition:transform 1.3s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.js .tbars.in .bar i{transform:scaleX(var(--w))}
+.tbars .c{font-family:'Fraunces',Georgia,serif;font-size:1.3rem;text-align:right}
+.src{font-size:.82rem;color:var(--muted);margin-top:18px}
 
-.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
-.tags li{font:italic 400 clamp(1.7rem,4vw,2.6rem)/1 'Instrument Serif',Georgia,serif;padding:16px 28px;border:1px solid var(--line-strong);border-radius:999px;transition:background-color .4s,color .4s}
-.tags li:hover{background:var(--butter);color:#2a1d12;border-color:var(--butter)}
-.tags li.wide{font:400 .98rem/1.4 'DM Sans',sans-serif;border-style:dashed;border-color:var(--line);color:var(--muted);flex-basis:100%;border-radius:16px;padding:14px 20px}
-.tags li.wide:hover{background:transparent;color:var(--muted)}
-.form-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,5vw,72px);align-items:center}
-.form-wrap>*{min-width:0}
-@media (max-width:860px){.form-wrap{grid-template-columns:1fr}}
+.where-sec{padding:110px 0 100px}
+.where-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
+.ticket{position:relative;background:var(--paper);border-radius:22px;padding:30px 28px;box-shadow:var(--shadow);border:1px solid var(--line);-webkit-mask:radial-gradient(circle at 0 62%,#0000 14px,#000 14.5px) left/51% 100% no-repeat,radial-gradient(circle at 100% 62%,#0000 14px,#000 14.5px) right/51% 100% no-repeat;mask:radial-gradient(circle at 0 62%,#0000 14px,#000 14.5px) left/51% 100% no-repeat,radial-gradient(circle at 100% 62%,#0000 14px,#000 14.5px) right/51% 100% no-repeat}
+.ticket dl{margin:0;display:grid;gap:18px}
+.ticket dt{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--butter-ink);margin-bottom:3px}
+.ticket dd{margin:0}
+.ticket .phone{font-family:'Fraunces',Georgia,serif;font-size:1.6rem;user-select:all}
+.ticket .cut{border-top:2px dashed var(--line);margin:4px -28px 0}
+.where-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.facade{position:relative}
+.facade svg{width:100%;height:auto;overflow:visible}
 
-.rep{background:var(--bg-2);border-block:1px solid var(--line)}
-.rep-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,80px);align-items:center}
-.rep-grid>*{min-width:0}
-.score{background:var(--surface);border:1px solid var(--line);border-radius:200px 200px 22px 22px;padding:clamp(56px,7vw,80px) clamp(22px,4vw,40px) clamp(26px,4vw,40px);text-align:center;position:relative;overflow:hidden}
-.score .k{font:500 .7rem/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.score .big{font:400 clamp(5rem,15vw,8.5rem)/1 'Instrument Serif',Georgia,serif;letter-spacing:-.03em;margin-top:10px;font-variant-numeric:tabular-nums}
-.score .stars{justify-content:center;margin-top:6px;gap:5px}
-.score .stars svg{width:18px;height:18px}
-.score p{margin-top:16px;color:var(--muted)}
-.score p b{color:var(--ink);font-weight:500}
-.score .st{position:absolute;left:0;right:0;bottom:0;height:10px;background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 6px);opacity:.35}
-.bars{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:20px}
-.bars li{display:grid;grid-template-columns:minmax(0,8.6rem) 1fr 1.6rem;align-items:center;gap:16px}
-.bars .lbl{font:400 1.4rem/1.1 'Instrument Serif',Georgia,serif}
-.bars .track{height:6px;background:var(--line);border-radius:999px;overflow:hidden}
-.bars .fill{display:block;height:100%;width:100%;background:var(--accent);border-radius:999px;transform-origin:left;transform:scaleX(var(--w));transition:transform 1.4s var(--ease);transition-delay:var(--d,0s)}
-.js .bars:not(.in) .fill{transform:scaleX(0)}
-.bars .n{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
-@media (max-width:860px){.rep-grid{grid-template-columns:1fr}}
-@media (max-width:420px){.bars li{grid-template-columns:minmax(0,6.8rem) 1fr 1.4rem;gap:10px}}
-
-.where-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:stretch}
-.where-grid>*{min-width:0}
-.info{list-style:none;margin:30px 0 0;padding:0;display:grid;border-top:1px solid var(--line-strong)}
-.info li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);min-width:0}
-.info li>div{min-width:0}
-.info svg{width:22px;height:22px;flex:none;stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
-.info .k{display:block;font:500 .7rem/1 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.info .v{user-select:text}
-.info .v.tel{font:400 1.7rem/1.2 'Instrument Serif',Georgia,serif;user-select:all;font-variant-numeric:tabular-nums}
-.where-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.mapcard{position:relative;display:block;border-radius:200px 200px 22px 22px;overflow:hidden;background:var(--bg-2);border:1px solid var(--line);min-height:380px}
-.mapcard svg{position:absolute;inset:0;width:100%;height:100%}
-.m-road{fill:none;stroke:var(--surface);stroke-width:14;stroke-linecap:round}
-.m-road.thin{stroke-width:6}
-.m-sea{fill:var(--butter-pale)}
-.m-wave{fill:none;stroke:var(--accent);stroke-width:1;stroke-linecap:round;opacity:.6}
-.m-block{fill:none;stroke:var(--line);stroke-width:1}
-.m-mall{fill:var(--butter)}
-.m-route{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 2.2s var(--ease) .3s}
-.js .mapcard:not(.in) .m-route{stroke-dashoffset:1}
-.m-pin{fill:var(--ink)}
-.m-pin-in{fill:var(--butter)}
-.pin{transform-box:fill-box;transform-origin:bottom center;animation:bob 3.2s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.mapcard .lbl{position:absolute;left:14px;right:14px;bottom:14px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
-.mapcard .lbl b{display:block;font:italic 400 1.35rem/1.2 'Instrument Serif',Georgia,serif}
-.mapcard .lbl span{font-size:.88rem;color:var(--muted)}
-@media (max-width:860px){.where-grid{grid-template-columns:1fr}.mapcard{min-height:340px;border-radius:160px 160px 20px 20px}}
-
-.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(24px,5vw,72px)}
-.faq-grid>*{min-width:0}
-.faq-list{border-top:1px solid var(--line-strong)}
-.faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font:400 1.4rem/1.2 'Instrument Serif',Georgia,serif;transition:color .3s}
+.faq-sec{padding:100px 0 110px;background:var(--paper-2)}
+.faq-sec::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 40px,rgba(217,169,46,.06) 40px 80px);pointer-events:none}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;position:relative}
+.faq{display:grid;gap:12px}
+.faq details{background:var(--paper);border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow-s);overflow:hidden;position:relative}
+.faq details::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:repeating-linear-gradient(180deg,var(--butter) 0 8px,var(--carrot) 8px 16px);opacity:.85}
+.faq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 26px;font-family:'Fraunces',Georgia,serif;font-size:1.15rem;font-weight:500;position:relative;line-height:1.3}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary:hover{color:var(--accent)}
-.pm{width:32px;height:32px;flex:none;border:1px solid var(--line);border-radius:50%;position:relative;transition:background-color .4s,border-color .4s,transform .6s var(--ease)}
-.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1px;background:var(--ink);transform:translate(-50%,-50%)}
-.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
-.faq details[open] .pm{background:var(--butter);border-color:var(--butter);transform:rotate(135deg)}
-.faq details[open] .pm::before,.faq details[open] .pm::after{background:#2a1d12}
-.faq details p{color:var(--muted);padding:0 46px 24px 0;max-width:62ch}
-.faq details[open] p{animation:swapIn .6s var(--ease) both}
-@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
-@media (max-width:480px){.faq details p{padding-right:0}.faq summary{font-size:1.25rem}}
+.faq summary::after{content:"+";position:absolute;right:18px;top:50%;width:28px;height:28px;margin-top:-14px;border-radius:50%;background:var(--butter);color:#2b1f17;display:grid;place-items:center;font-family:'Figtree',sans-serif;font-weight:700;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 26px 20px;color:var(--muted)}
 
-.final{background:var(--butter);color:#2a1d12;overflow:hidden}
-.final .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:center}
-.final .wrap>*{min-width:0}
-.final h2{font-size:clamp(2.5rem,6.6vw,5rem);max-width:15ch}
-.final h2 em{color:#6a4c0e}
-.final p{margin-top:18px;max-width:50ch;font-size:1.06rem;color:#4a3826}
-.final .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.final .btn-dark{background:#2a1d12;color:#fbf8f1}
-.final .btn-dark:hover{background:#45321f}
-.final .btn-line{background:transparent;color:#2a1d12;border-color:#2a1d12}
-.final .btn-line:hover{background:rgba(42,29,18,.08)}
-.final svg.deco{width:100%;max-width:300px;margin-inline:auto}
-.final .fl{fill:none;stroke:#2a1d12;stroke-width:1.3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 2s var(--ease);transition-delay:var(--dl,0s)}
-.js .final:not(.in) .fl{stroke-dashoffset:1}
-@media (max-width:760px){.final .wrap{grid-template-columns:1fr}.final svg.deco{max-width:200px;margin-inline:0}}
+.final{padding:120px 0 120px;text-align:center;overflow-x:clip}
+.final h2{font-size:clamp(2.2rem,7vw,4.6rem);max-width:16ch;margin:18px auto 18px}
+.final h2 em{color:var(--butter)}
+.final .lead{margin:0 auto}
+.final .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.final .mini{width:min(360px,80%);margin:0 auto 10px}
 
-footer{background:var(--bg);padding-block:0 calc(100px + env(safe-area-inset-bottom, 0px))}
-.fstripes{height:10px;background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 6px);opacity:.35}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;color:var(--muted);font-size:.9rem;padding-top:34px}
-.foot>*{min-width:0}
-.foot b{color:var(--ink);font:italic 400 1.45rem/1.2 'Instrument Serif',Georgia,serif}
-.seal{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:6px 14px;align-self:flex-start}
+footer{padding:56px 0 110px;background:var(--bg);position:relative}
+footer::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:repeating-linear-gradient(90deg,var(--butter) 0 20px,var(--paper) 20px 40px)}
+.foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.foot b{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.6rem;font-weight:500}
+.foot p{color:var(--muted);font-size:.92rem;margin-top:6px}
+.made{font-size:.8rem;color:var(--muted);border:1px dashed var(--line);padding:8px 12px;border-radius:8px;display:inline-block}
 
-.fab{position:fixed;right:max(18px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:50;display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:var(--wa-ink);text-decoration:none;border-radius:999px;padding:0 20px 0 14px;min-height:56px;font-weight:500;box-shadow:0 14px 30px -12px rgba(0,0,0,.45);transition:transform .5s var(--ease);animation:fadeUp 1s var(--ease) 1.6s both}
-.fab:hover{transform:translateY(-3px)}
-.fab svg{width:26px;height:26px}
-@media (max-width:480px){.fab span{display:none}.fab{padding:0;width:58px;justify-content:center}}
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 14px 28px -10px rgba(20,90,50,.7);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.fab svg{width:30px;height:30px}
+.fab:hover{transform:scale(1.07)}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.7}to{transform:scale(1.55);opacity:0}}
 
-.rv{transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
-.js .rv:not(.in){opacity:0;transform:translateY(28px)}
-.rv-all .rv,.rv-all .wipe{opacity:1 !important;transform:none !important;clip-path:none !important}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .9s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.js .rv.in,.rv-all .rv{opacity:1;transform:none}
+.js .card.rv.in:nth-child(1){transform:rotate(-1.2deg)}
+.js .card.rv.in:nth-child(2){transform:rotate(.9deg) translateY(14px)}
+.js .card.rv.in:nth-child(3){transform:rotate(-.6deg)}
+.js .card.rv.in:nth-child(4){transform:rotate(1.2deg) translateY(14px)}
+.js .card.rv.in:hover{transform:rotate(0) translateY(-8px)}
+.js .page.rv.in{transform:rotate(-.8deg)}
+.js .postit.rv.in{transform:rotate(1.2deg)}
+.js .clipin{clip-path:inset(0 100% 0 0);transition:clip-path 1.2s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+.js .clipin.in,.rv-all .clipin{clip-path:inset(0 0 0 0)}
+.draw path,.draw ellipse,.draw circle{stroke-dasharray:1;stroke-dashoffset:0}
+.js .draw:not(.in) .dl{stroke-dashoffset:1}
+.dl{transition:stroke-dashoffset 1.4s cubic-bezier(.2,.7,.2,1) var(--d,.2s)}
 
+@keyframes aw{from{transform:translateY(-100%)}60%{transform:translateY(6%)}to{transform:none}}
+@keyframes wd{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes drop{from{opacity:0;transform:translateY(-60px) scale(.9)}70%{opacity:1;transform:translateY(5px) scale(1.01)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.3) rotate(-20deg)}70%{opacity:1;transform:scale(1.08)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(6deg)}}
+@keyframes bob2{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(8px) rotate(-8deg)}}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes steam{0%{opacity:0;transform:translateY(6px)}40%{opacity:.7}100%{opacity:0;transform:translateY(-14px)}}
+
+.awning{animation:aw 1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 .w>span{animation:wd .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.25s + var(--i) * .06s)}
+.seq{animation:fu .9s cubic-bezier(.2,.7,.2,1) both}
+.ly{animation:drop 1s cubic-bezier(.2,.7,.2,1) both}
+.ly.r{animation-name:rise}
+.fl-in{animation:pop .8s cubic-bezier(.2,.7,.2,1) both}
+.fl{animation:bob 5s ease-in-out infinite}
+.fl.b{animation:bob2 6s ease-in-out infinite}
+.hang{animation:sway 4.5s ease-in-out infinite}
+.stamp .ring{animation:spin 26s linear infinite}
+.steam{animation:steam 3s ease-in-out infinite}
+
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .scene{max-width:620px;margin:0 auto;width:100%}
+  .doors,.doors-head,.signs-top,.diary-head,.dcard,.look-grid,.pro-grid,.rate-grid,.where-grid,.faq-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .stage{min-height:0;padding-top:40px;flex-direction:column;align-items:center}
+  .cb-note{align-self:center}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .steps{grid-template-columns:1fr;gap:26px}
+  .track-line{left:58px;right:auto;top:20px;bottom:20px;width:4px;height:auto;background:repeating-linear-gradient(180deg,var(--coffee-line) 0 10px,transparent 10px 18px)}
+  .track-line i{transform-origin:top;transform:scaleY(var(--p,0))}
+  .step{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;align-items:start}
+  .plate-n{margin-bottom:0}
+  .forms{grid-template-columns:1fr}
+  .door{grid-template-columns:minmax(0,1fr) 104px;padding:28px 20px 22px}
+}
+@media (max-width:560px){
+  .cards{grid-template-columns:1fr;gap:26px}
+  .card:nth-child(n),.js .card.rv.in:nth-child(n){transform:none}
+  .card .ico{height:96px}
+  .page{padding:58px 16px 24px 46px;background-image:linear-gradient(90deg,transparent 32px,var(--note-margin) 32px,var(--note-margin) 34px,transparent 34px),repeating-linear-gradient(to bottom,transparent 0 33px,var(--note-line) 33px 34px)}
+  .opts label{font-size:1.3rem;padding:6px 13px}
+  .step{grid-template-columns:86px minmax(0,1fr)}
+  .plate-n{width:86px;height:86px}
+  .plate-n b{font-size:2rem}
+  .track-line{left:41px}
+  .tbars li{grid-template-columns:96px minmax(0,1fr) 26px;gap:10px}
+  .seal{width:150px;height:150px}
+  .door{grid-template-columns:1fr}
+  .door .pic{width:120px;justify-self:end;margin-top:-10px}
+  .foot{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%}
+  .brand b{font-size:1.08rem;white-space:nowrap}
+  .brand small{font-size:.62rem;letter-spacing:.12em}
+  .top .btn-sm span{display:none}
+  .top .btn-sm{padding:8px 12px}
+  .stamp{width:92px}
+  .hang .lbl{font-size:1.1rem}
+  .stamp{width:78px}
+  .floaty{display:none}
+  .stage{padding-top:70px}
+}
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
-  .draw,.m-seg,.m-route,.final .fl{stroke-dashoffset:0 !important}
-  .m-seg:not(.on){stroke-dashoffset:1 !important}
-  .js .rv,.js .wipe{opacity:1 !important;transform:none !important;clip-path:none !important}
-  .js .quote .lw{opacity:1 !important}
-  .js .bars .fill{transform:scaleX(var(--w)) !important}
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+  .js .clipin{clip-path:none}
+  .js .draw:not(.in) .dl{stroke-dashoffset:0}
+  .js .lw{opacity:1}
+  .js .tbars .bar i{transform:scaleX(var(--w))}
 }
 </style>
+
 <script>
 document.documentElement.classList.add('js');
 setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.add('rv-all'); }, 2500);
 </script>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.3l-5.8 3.1 1.2-6.5L2.6 9.4l6.5-.8z"/></symbol>
+    <symbol id="i-spoon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="16.5" cy="7.5" rx="4" ry="5.5" transform="rotate(40 16.5 7.5)"/><path d="M13.5 11 4 20.5"/></g></symbol>
+    <pattern id="pg" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" class="g-a"/><rect width="10" height="20" fill="#f4d77e" opacity=".55"/><rect width="20" height="10" fill="#f4d77e" opacity=".55"/></pattern>
+    <pattern id="pgs" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#fff6e6"/><rect width="6" height="12" fill="#93cfc3" opacity=".6"/><rect width="12" height="6" fill="#93cfc3" opacity=".6"/></pattern>
+    <pattern id="pst" width="52" height="10" patternUnits="userSpaceOnUse"><rect width="52" height="10" class="c-cloth"/><rect width="26" height="10" fill="#f4d77e"/></pattern>
+    <pattern id="paw" width="28" height="10" patternUnits="userSpaceOnUse"><rect width="28" height="10" fill="#fffaf0"/><rect width="14" height="10" fill="#e9803c"/></pattern>
   </defs>
 </svg>
 
-<header class="top">
+<div class="awning-sh" aria-hidden="true"><div class="awning"></div></div>
+
+<header class="top" id="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Déborah Montenegro, fonoaudióloga, início">
-      <span class="brand-name">Déborah Montenegro</span>
-      <small>Fonoaudióloga</small>
+      <b>Déborah Montenegro</b>
+      <small>Fonoaudióloga · infância</small>
     </a>
-    <nav class="top-nav" aria-label="Seções">
-      <a class="l" href="#portas" data-door-link="fam">Para famílias</a>
-      <a class="l" href="#portas" data-door-link="pro">Para profissionais</a>
+    <nav class="nav" aria-label="Seções">
+      <a class="l" href="#familias">Para famílias</a>
       <a class="l" href="#diario">Diário da refeição</a>
+      <a class="l" href="#profissionais">Para profissionais</a>
       <a class="l" href="#onde">Onde fica</a>
-      <a class="btn btn-main mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar</span></a>
+      <a class="btn btn-wa btn-sm mag" aria-label="Agendar pelo WhatsApp" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar</span></a>
     </nav>
   </div>
   <span class="prog" id="prog" aria-hidden="true"></span>
@@ -506,16 +633,16 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow in-seq" style="animation-delay:.05s">Fonoaudiologia infantil · Altiplano · João Pessoa</span>
+        <span class="tag seq" style="animation-delay:.15s">Fonoaudiologia infantil · Altiplano</span>
         <h1 aria-label="Ajudo seu filho a superar barreiras e construir uma vida saudável e feliz.">
           <span aria-hidden="true"><span class="w"><span style="--i:0">Ajudo</span></span> <span class="w"><span style="--i:1">seu</span></span> <span class="w"><span style="--i:2">filho</span></span> <span class="w"><span style="--i:3">a</span></span> <span class="w"><span style="--i:4">superar</span></span> <span class="w"><span style="--i:5">barreiras</span></span> <span class="w"><span style="--i:6">e</span></span> <span class="w"><span style="--i:7">construir</span></span> <span class="w"><span style="--i:8">uma</span></span> <span class="w"><span style="--i:9">vida</span></span> <span class="w"><span style="--i:10"><em>saudável</em></span></span> <span class="w"><span style="--i:11"><em>e</em></span></span> <span class="w"><span style="--i:12"><em>feliz.</em></span></span></span>
         </h1>
-        <p class="lead in-seq" style="animation-delay:.75s">Sou Déborah Montenegro, fonoaudióloga especialista em distúrbios alimentares. Atendo crianças que têm dificuldade na hora de comer e caminho junto com a família. Também ofereço supervisão e cursos para profissionais.</p>
-        <div class="hero-ctas in-seq" style="animation-delay:.9s">
-          <a class="btn btn-main mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação pelo WhatsApp</a>
+        <p class="lead seq" style="animation-delay:1s">Sou Déborah Montenegro, fonoaudióloga especialista em distúrbios alimentares. Atendo crianças que têm dificuldade na hora de comer e caminho junto com a família. Também ofereço supervisão e cursos para profissionais.</p>
+        <div class="hero-ctas seq" style="animation-delay:1.15s">
+          <a class="btn btn-wa mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação pelo WhatsApp</a>
           <a class="btn btn-ghost mag" href="https://www.google.com/maps/search/?api=1&amp;query=Fonoaudi%C3%B3loga+D%C3%A9borah+Montenegro+P%C3%A1tio+Altiplano" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
         </div>
-        <div class="hero-row in-seq" style="animation-delay:1.05s">
+        <div class="hero-meta seq" style="animation-delay:1.3s">
           <div class="rate">
             <strong data-count="5" data-dec="1" data-now>5,0</strong>
             <div>
@@ -523,136 +650,287 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
               <small><span class="num" data-count="71" data-now>71</span> avaliações no Google</small>
             </div>
           </div>
-          <div class="doors-mini" aria-label="Escolha por onde começar">
-            <a href="#portas" data-door-link="fam">Para famílias <span class="arrow" aria-hidden="true">→</span></a>
-            <a href="#portas" data-door-link="pro">Para profissionais <span class="arrow" aria-hidden="true">→</span></a>
-          </div>
+          <span class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Shopping Pátio Altiplano · Sala 08, 1º andar</span>
         </div>
       </div>
 
-      <div class="art" id="art" role="img" aria-label="Ilustração em traço fino: prato com pequenas porções e uma colherzinha sobre uma toalha listrada">
-        <div class="art-in">
-          <span class="halo"></span>
-          <div class="cloth"><i></i></div>
-          <svg class="plate" viewBox="0 0 480 540" aria-hidden="true" data-par="0.03">
-            <path class="ln thin draw" style="--dl:.3s" pathLength="1" d="M240 92 a150 150 0 1 1 -0.1 0" stroke-dasharray="1" opacity=".35"/>
-            <path class="pfill" d="M62 360 a178 62 0 1 0 356 0 a178 62 0 1 0 -356 0Z"/>
-            <path class="ln draw" style="--dl:.4s" pathLength="1" d="M62 360 a178 62 0 1 0 356 0 a178 62 0 1 0 -356 0"/>
-            <path class="ln thin draw" style="--dl:.7s" pathLength="1" d="M108 356 a132 42 0 1 0 264 0 a132 42 0 1 0 -264 0"/>
-            <path class="ln thin acc draw" style="--dl:1s" pathLength="1" d="M156 350 c6 -22 52 -24 60 -4 c6 14 -10 22 -30 22 c-20 0 -34 -6 -30 -18"/>
-            <path class="ln thin acc draw" style="--dl:1.15s" pathLength="1" d="M170 346 c10 -8 24 -8 32 0"/>
-            <path class="ln draw" style="--dl:1.2s" pathLength="1" d="M240 330 l40 -12 M246 344 l42 -8"/>
-            <path class="ln draw" style="--dl:1.35s" pathLength="1" d="M246 372 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 M262 380 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 M278 370 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0"/>
-            <path class="ln draw" style="--dl:1.45s" pathLength="1" d="M314 352 v-14 M314 338 c-14 0 -16 -18 -4 -20 c0 -12 18 -12 20 0 c12 2 10 20 -4 20 z"/>
-            <g class="spoon">
-              <path class="ln draw" style="--dl:1.6s" pathLength="1" d="M402 452 L452 404"/>
-              <path class="ln draw" style="--dl:1.75s" pathLength="1" d="M446 396 c4 -14 22 -22 28 -16 c6 6 -2 24 -16 28 c-8 2 -14 -4 -12 -12z"/>
+      <div class="scene" id="scene" role="img" aria-label="Ilustração: mesa com toalha listrada amarela, cadeirão, pratinho com arroz, cenoura e brócolis, copo de transição, colherzinha, guardanapo xadrez e lancheira, com frutas flutuando">
+        <div class="scene-in" id="scene-in">
+          <svg class="art" viewBox="0 0 640 560" aria-hidden="true">
+            <g data-par="0.03"><g class="ly r" style="animation-delay:.1s">
+              <path class="c-arch" d="M70 560 V250 a250 230 0 0 1 500 0 V560Z"/>
+              <path class="c-arch2" d="M110 560 V262 a210 194 0 0 1 420 0 V560Z"/>
+              <path d="M110 262 a210 194 0 0 1 420 0" fill="none" stroke="#d9a92e" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" opacity=".7"/>
+              <ellipse cx="330" cy="530" rx="318" ry="30" class="c-floor"/>
+              <ellipse cx="350" cy="520" rx="300" ry="16" class="c-sh"/>
+            </g></g>
+            <g class="ly" style="animation-delay:.35s">
+              <g stroke-linecap="round" fill="none">
+                <path d="M62 330 L54 520" stroke="#6fb3a6" stroke-width="9"/>
+                <path d="M110 330 L120 520" stroke="#6fb3a6" stroke-width="9"/>
+                <path d="M48 340 L20 540" stroke="#4f8f84" stroke-width="11"/>
+                <path d="M120 340 L146 540" stroke="#4f8f84" stroke-width="11"/>
+                <path d="M34 470 H134" stroke="#4f8f84" stroke-width="8"/>
+              </g>
+              <path d="M38 324 V198 a44 44 0 0 1 88 0 V324Z" fill="#93cfc3"/>
+              <path d="M50 318 V204 a32 32 0 0 1 64 0 V318Z" fill="url(#pgs)"/>
+              <path d="M38 324 V198 a44 44 0 0 1 44 -44" fill="none" stroke="#fff" stroke-width="3" opacity=".35" stroke-linecap="round"/>
+              <rect x="26" y="316" width="112" height="24" rx="10" fill="#7fc2b5"/>
+              <rect x="26" y="316" width="112" height="8" rx="4" fill="#fff" opacity=".25"/>
+              <rect x="92" y="286" width="98" height="18" rx="9" class="c-plate"/>
+              <path d="M128 302 V318" stroke="#4f8f84" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="112" cy="282" r="5" fill="#f4d77e"/><circle cx="124" cy="280" r="4.5" fill="#f2c25a"/><circle cx="118" cy="275" r="4" fill="#f4d77e"/>
             </g>
-            <g class="steam"><path class="ln thin draw" style="--dl:1.9s" pathLength="1" d="M214 262 c-10 -14 10 -22 0 -38 c-8 -12 6 -22 0 -32"/></g>
-            <g class="steam"><path class="ln thin draw" style="--dl:2.05s" pathLength="1" d="M252 254 c-10 -14 10 -22 0 -38 c-8 -12 6 -22 0 -32"/></g>
+            <g class="ly" style="animation-delay:.55s">
+              <ellipse cx="360" cy="440" rx="270" ry="14" class="c-sh"/>
+              <path d="M170 300 H550 L620 430 H100Z" class="c-cloth"/>
+              <path d="M170 300 L208 300 L152 430 L100 430Z M246 300 L284 300 L256 430 L204 430Z M322 300 L360 300 L360 430 L308 430Z M398 300 L436 300 L464 430 L412 430Z M474 300 L512 300 L568 430 L516 430Z" fill="#f4d77e"/>
+              <path d="M170 300 H550 L620 430 H100Z" fill="#3d2b20" opacity=".05"/>
+              <path d="M100 430 H620 V496 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0 a13 11 0 0 1 -26 0Z" fill="url(#pst)"/>
+              <path d="M100 430 H620 V446 H100Z" fill="#3d2b20" opacity=".1"/>
+              <path d="M100 430 H620" stroke="#fff" stroke-width="2" opacity=".5"/>
+            </g>
+            <g class="ly" style="animation-delay:.8s">
+              <ellipse cx="520" cy="300" rx="54" ry="7" class="c-sh"/>
+              <path d="M496 236 v-12 a24 16 0 0 1 48 0 v12" fill="none" stroke="#3d2b20" stroke-width="6" stroke-linecap="round"/>
+              <rect x="470" y="232" width="100" height="68" rx="12" fill="#ef9f80"/>
+              <rect x="470" y="232" width="100" height="22" rx="10" fill="#d6553c"/>
+              <rect x="470" y="248" width="100" height="6" fill="#d6553c"/>
+              <rect x="512" y="246" width="16" height="16" rx="4" fill="#f4d77e"/>
+              <g transform="rotate(-6 520 280)"><rect x="486" y="266" width="58" height="24" rx="4" fill="#fffaf0"/><text x="515" y="284" text-anchor="middle" font-family="Caveat, cursive" font-weight="700" font-size="17" fill="#3d2b20">lanche</text></g>
+              <rect x="470" y="232" width="8" height="68" rx="4" fill="#fff" opacity=".2"/>
+            </g>
+            <g class="ly" style="animation-delay:.95s">
+              <ellipse cx="258" cy="306" rx="50" ry="8" class="c-sh"/>
+              <path d="M212 290 a46 30 0 0 0 92 0Z" fill="#93cfc3"/>
+              <path d="M222 302 a40 14 0 0 0 72 0" fill="none" stroke="#fff" stroke-width="3" opacity=".4" stroke-linecap="round"/>
+              <ellipse cx="258" cy="290" rx="46" ry="10" fill="#7fc2b5"/>
+              <circle cx="236" cy="282" r="9" fill="#6a5aa8"/><circle cx="246" cy="276" r="9" fill="#7a68b6"/><circle cx="240" cy="270" r="8" fill="#6a5aa8"/>
+              <path d="M266 266 c10 -4 18 4 15 14 c-3 9 -11 15 -15 17 c-4 -2 -12 -8 -15 -17 c-3 -10 5 -18 15 -14z" fill="#d6553c"/>
+              <path d="M258 266 l8 -8 l8 8 l-8 2z" fill="#6e9a48"/>
+              <circle cx="262" cy="276" r="1.3" fill="#f9e7b0"/><circle cx="270" cy="282" r="1.3" fill="#f9e7b0"/><circle cx="263" cy="287" r="1.3" fill="#f9e7b0"/>
+              <circle cx="286" cy="282" r="9" fill="#fbe9b6"/><circle cx="286" cy="282" r="5" fill="none" stroke="#e9cf8a" stroke-width="1.5"/>
+            </g>
+            <g class="ly" style="animation-delay:1.1s">
+              <ellipse cx="370" cy="384" rx="128" ry="44" class="c-sh"/>
+              <ellipse cx="362" cy="370" rx="126" ry="46" class="c-plate"/>
+              <ellipse cx="362" cy="370" rx="126" ry="46" fill="none" stroke="#f4d77e" stroke-width="7" opacity=".9"/>
+              <ellipse cx="362" cy="372" rx="96" ry="33" class="c-plate2"/>
+              <path d="M284 372 q8 -30 38 -30 q32 0 40 30 q-38 12 -78 0z" fill="#fff6e0"/>
+              <path d="M284 372 q8 -30 38 -30 q32 0 40 30" fill="none" stroke="#e7d6b0" stroke-width="2"/>
+              <g fill="#e2cfa3"><ellipse cx="306" cy="360" rx="3" ry="1.5"/><ellipse cx="320" cy="352" rx="3" ry="1.5" transform="rotate(30 320 352)"/><ellipse cx="334" cy="362" rx="3" ry="1.5" transform="rotate(-20 334 362)"/><ellipse cx="316" cy="366" rx="3" ry="1.5"/><ellipse cx="344" cy="356" rx="3" ry="1.5" transform="rotate(40 344 356)"/></g>
+              <g transform="rotate(-14 380 386)"><rect x="350" y="380" width="66" height="11" rx="5.5" fill="#e9803c"/><rect x="356" y="383" width="6" height="2" rx="1" fill="#f6b27c"/><rect x="380" y="386" width="7" height="2" rx="1" fill="#f6b27c"/></g>
+              <g transform="rotate(-4 384 396)"><rect x="352" y="392" width="62" height="11" rx="5.5" fill="#f08f46"/><rect x="372" y="395" width="7" height="2" rx="1" fill="#f8bf8c"/></g>
+              <rect x="410" y="350" width="7" height="22" rx="3" fill="#a9c97c"/>
+              <circle cx="402" cy="346" r="11" fill="#6e9a48"/><circle cx="416" cy="340" r="12" fill="#7fae55"/><circle cx="428" cy="350" r="10" fill="#6e9a48"/><circle cx="414" cy="352" r="9" fill="#86b862"/>
+              <circle cx="408" cy="342" r="2" fill="#a9d07f"/><circle cx="420" cy="336" r="2" fill="#a9d07f"/><circle cx="426" cy="348" r="1.8" fill="#a9d07f"/>
+              <circle cx="336" cy="392" r="5.5" fill="#8cc063"/><circle cx="326" cy="388" r="5.5" fill="#7fb257"/><circle cx="330" cy="398" r="5" fill="#8cc063"/>
+              <path class="steam" style="animation-delay:2.4s" d="M322 330 c-8 -10 8 -16 0 -28" fill="none" stroke="#c9b28a" stroke-width="2.5" stroke-linecap="round"/>
+              <path class="steam" style="animation-delay:3.2s" d="M340 326 c-8 -10 8 -16 0 -28" fill="none" stroke="#c9b28a" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+            <g class="ly" style="animation-delay:1.3s">
+              <path d="M160 392 L250 380 L268 424 L174 436Z" class="c-sh"/>
+              <path d="M156 386 L246 374 L262 418 L170 430Z" fill="url(#pg)"/>
+              <path d="M156 386 L246 374" stroke="#d9a92e" stroke-width="2"/>
+              <path d="M180 418 L236 386" stroke="#d6553c" stroke-width="8" stroke-linecap="round"/>
+              <ellipse cx="244" cy="381" rx="15" ry="10" transform="rotate(-30 244 381)" fill="#ef9f80"/>
+              <ellipse cx="243" cy="380" rx="9" ry="5" transform="rotate(-30 243 380)" fill="#fff" opacity=".35"/>
+            </g>
+            <g class="ly" style="animation-delay:1.45s">
+              <ellipse cx="530" cy="404" rx="38" ry="8" class="c-sh"/>
+              <path d="M504 344 c-18 0 -20 30 0 30" fill="none" stroke="#4f8f84" stroke-width="8" stroke-linecap="round"/>
+              <path d="M556 344 c18 0 20 30 0 30" fill="none" stroke="#4f8f84" stroke-width="8" stroke-linecap="round"/>
+              <path d="M502 330 h56 l-6 66 a9 9 0 0 1 -9 8 h-26 a9 9 0 0 1 -9 -8z" fill="#f2b7a6"/>
+              <path d="M510 334 l4 58" stroke="#fff" stroke-width="4" opacity=".35" stroke-linecap="round"/>
+              <path d="M520 360 h10 M520 372 h14 M520 384 h10" stroke="#d98b78" stroke-width="2" stroke-linecap="round"/>
+              <path d="M498 326 a32 9 0 0 1 64 0 v8 h-64z" fill="#4f8f84"/>
+              <path d="M522 318 q8 -22 22 -12 l-8 12z" fill="#93cfc3"/>
+            </g>
+            <g data-par="-0.06">
+              <g class="fl-in" style="animation-delay:1.7s"><g class="fl" style="animation-delay:-1s">
+                <g transform="translate(-74 -30)"><path d="M130 70 c14 -5 26 7 21 21 c-4 14 -16 23 -21 25 c-5 -2 -17 -11 -21 -25 c-5 -14 7 -26 21 -21z" fill="#d6553c"/>
+                <path d="M120 70 l10 -10 l10 10 l-10 3z" fill="#6e9a48"/>
+                <circle cx="124" cy="84" r="1.6" fill="#f9e7b0"/><circle cx="136" cy="90" r="1.6" fill="#f9e7b0"/><circle cx="128" cy="98" r="1.6" fill="#f9e7b0"/></g>
+              </g></g>
+              <g class="fl-in" style="animation-delay:1.85s"><g class="fl b">
+                <g transform="rotate(35 590 118)"><path d="M574 98 h32 l-12 70 a4 4 0 0 1 -8 0z" fill="#e9803c"/><path d="M582 112 h8 M584 128 h8 M586 144 h6" stroke="#f6b27c" stroke-width="2.5" stroke-linecap="round"/><path d="M590 98 c-4 -14 -14 -18 -16 -16 c2 6 8 12 16 16z M590 98 c2 -16 10 -20 13 -18 c-2 6 -6 14 -13 18z" fill="#6e9a48"/></g>
+              </g></g>
+              <g class="fl-in" style="animation-delay:2s"><g class="fl" style="animation-delay:-2.5s">
+                <rect x="268" y="74" width="8" height="22" rx="3" fill="#a9c97c"/>
+                <circle cx="262" cy="70" r="12" fill="#6e9a48"/><circle cx="276" cy="64" r="13" fill="#7fae55"/><circle cx="286" cy="74" r="10" fill="#6e9a48"/>
+              </g></g>
+              <g class="fl-in" style="animation-delay:2.1s"><g class="fl b" style="animation-delay:-1.5s">
+                <circle cx="448" cy="70" r="11" fill="#5a68a8"/><circle cx="466" cy="80" r="9" fill="#6a78b8"/>
+                <path d="M444 61 l4 3 l4 -3" fill="none" stroke="#3b4580" stroke-width="2" stroke-linecap="round"/>
+              </g></g>
+              <g class="fl-in" style="animation-delay:2.2s"><g class="fl" style="animation-delay:-3s">
+                <circle cx="372" cy="170" r="14" fill="#fbe9b6"/><circle cx="372" cy="170" r="8" fill="none" stroke="#e9cf8a" stroke-width="2"/><circle cx="372" cy="170" r="2" fill="#c9a24a"/>
+              </g></g>
+              <g class="fl-in" style="animation-delay:2.3s"><g class="fl b" style="animation-delay:-2s">
+                <path d="M604 206 a22 22 0 0 1 -30 22 l8 -20z" fill="#d6553c"/><path d="M600 208 a17 17 0 0 1 -22 16 l6 -15z" fill="#fff4dc"/><circle cx="590" cy="214" r="1.6" fill="#3d2b20"/>
+              </g></g>
+              <g class="fl-in" style="animation-delay:2.4s" fill="#d9a92e">
+                <path class="fl" d="M210 150 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3z"/>
+                <path class="fl b" d="M520 160 l2.5 7 l7 2.5 l-7 2.5 l-2.5 7 l-2.5 -7 l-7 -2.5 l7 -2.5z"/>
+                <path class="fl" style="animation-delay:-2s" d="M196 220 l2.5 7 l7 2.5 l-7 2.5 l-2.5 7 l-2.5 -7 l-7 -2.5 l7 -2.5z"/>
+              </g>
+            </g>
           </svg>
-          <span class="art-tag" aria-hidden="true">hora de comer</span>
-          <span class="art-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg><b>5,0</b> no Google</span>
+          <div class="hang seq" style="animation-delay:1.6s" aria-hidden="true"><span class="str"></span><span class="lbl">hora de comer</span></div>
+          <div class="stamp seq" style="animation-delay:1.9s" aria-hidden="true">
+            <svg viewBox="0 0 140 140">
+              <defs><path id="c-st" d="M70 70 m-54 0 a54 54 0 1 1 108 0 a54 54 0 1 1 -108 0"/></defs>
+              <circle cx="70" cy="70" r="68" fill="#f4d77e"/>
+              <circle cx="70" cy="70" r="64" fill="none" stroke="#3d2b20" stroke-width="1.5" stroke-dasharray="3 4"/>
+              <g class="ring"><text><textPath href="#c-st" textLength="335" lengthAdjust="spacing">GOOGLE · 71 AVALIAÇÕES · NOTA · </textPath></text></g>
+              <text class="big" x="70" y="84" text-anchor="middle">5,0</text>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="marquee" aria-label="Resumo">
+  <div class="ribbon" aria-label="Resumo">
     <div class="track">
       <ul>
-        <li>Distúrbios alimentares na infância</li>
-        <li>Família junto no processo</li>
-        <li>Supervisão e cursos</li>
-        <li>Palestrante no CBFa 2026</li>
-        <li>Altiplano · João Pessoa</li>
+        <li>Distúrbios alimentares na infância<svg aria-hidden="true"><use href="#i-spoon"/></svg></li>
+        <li>Família junto no processo<svg aria-hidden="true"><use href="#i-spoon"/></svg></li>
+        <li>Supervisão e cursos<svg aria-hidden="true"><use href="#i-spoon"/></svg></li>
+        <li>Palestrante no CBFa 2026<svg aria-hidden="true"><use href="#i-spoon"/></svg></li>
+        <li>Altiplano · João Pessoa<svg aria-hidden="true"><use href="#i-spoon"/></svg></li>
       </ul>
       <ul aria-hidden="true">
-        <li>Distúrbios alimentares na infância</li>
-        <li>Família junto no processo</li>
-        <li>Supervisão e cursos</li>
-        <li>Palestrante no CBFa 2026</li>
-        <li>Altiplano · João Pessoa</li>
+        <li>Distúrbios alimentares na infância<svg><use href="#i-spoon"/></svg></li>
+        <li>Família junto no processo<svg><use href="#i-spoon"/></svg></li>
+        <li>Supervisão e cursos<svg><use href="#i-spoon"/></svg></li>
+        <li>Palestrante no CBFa 2026<svg><use href="#i-spoon"/></svg></li>
+        <li>Altiplano · João Pessoa<svg><use href="#i-spoon"/></svg></li>
       </ul>
     </div>
   </div>
 
-  <section id="portas">
+  <section class="doors-sec on-butter" id="portas" data-tone="butter">
+    <span class="ging-bg" aria-hidden="true"></span>
     <div class="wrap">
       <div class="doors-head">
         <div>
-          <span class="eyebrow rv">Duas portas de entrada</span>
-          <h2 class="h2 rv">Por onde você <em>chega?</em></h2>
+          <span class="tag rv">Duas portas de entrada</span>
+          <h2 class="h2 rv" style="margin-top:16px">Por onde você <em>chega à mesa?</em></h2>
         </div>
-        <p class="lead rv" style="max-width:40ch">Atendo crianças e suas famílias, e também acompanho outros profissionais. Escolha a sua porta.</p>
+        <p class="lead rv">Atendo crianças e suas famílias, e também acompanho outros profissionais. Escolha a sua porta.</p>
       </div>
-
-      <div class="doors" role="tablist" aria-label="Para quem é">
-        <button class="door rv" type="button" role="tab" id="t-fam" aria-controls="p-fam" aria-selected="true" data-door="fam">
-          <span class="k">01 · Para famílias</span>
-          <span class="t">Meu filho tem dificuldade para comer</span>
-          <span class="d">Sinais para observar, o diário da refeição e como agendar a avaliação.</span>
-        </button>
-        <button class="door rv" type="button" role="tab" id="t-pro" aria-controls="p-pro" aria-selected="false" data-door="pro" style="--d:.12s">
-          <span class="k">02 · Para profissionais</span>
-          <span class="t">Quero supervisão ou cursos</span>
-          <span class="d">Supervisão, cursos e a palestra no CBFa 2026.</span>
-        </button>
-      </div>
-
-      <div class="panel" id="p-fam" role="tabpanel" aria-labelledby="t-fam">
-        <div class="pgrid">
+      <div class="doors">
+        <a class="door rv" href="#familias">
           <div>
-            <h3>Quando a hora de comer vira <em>uma luta</em> todos os dias</h3>
-            <p class="lead">Toda criança tem dias de recusa. O que chama atenção é quando a dificuldade se repete, aparece em várias refeições e começa a pesar na rotina da família.</p>
-            <p class="note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>São orientações gerais, não um diagnóstico. Na dúvida, converse com o pediatra e procure uma avaliação fonoaudiológica.</span></p>
-            <div class="pctas">
-              <a class="btn btn-main mag" href="#diario">Fazer o diário da refeição <span class="arrow" aria-hidden="true">→</span></a>
-              <a class="btn btn-ghost mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação</a>
-            </div>
+            <span class="k">Porta 01 · Para famílias</span>
+            <span class="t">Meu filho tem <em>dificuldade para comer</em></span>
+            <ul><li>Sinais para observar</li><li>Diário da refeição</li><li>Como agendar a avaliação</li></ul>
+            <span class="go">Entrar <span class="arrow" aria-hidden="true">→</span></span>
           </div>
-          <ol class="signs stg">
-            <li><span class="n">i.</span><div><b>Aceita poucos alimentos</b><span>O cardápio fica cada vez menor, sempre os mesmos itens, e alimentos novos quase nunca entram.</span></div></li>
-            <li><span class="n">ii.</span><div><b>Engasga com frequência</b><span>Tosse ou engasgo na hora de engolir aparece muitas vezes, não só de vez em quando.</span></div></li>
-            <li><span class="n">iii.</span><div><b>Dificuldade para mastigar</b><span>Mastiga pouco, segura o alimento na boca ou só aceita comida pastosa ou bem amassada.</span></div></li>
-            <li><span class="n">iv.</span><div><b>Refeições muito longas</b><span>Cada refeição se arrasta, com muita negociação, choro ou distração para a comida descer.</span></div></li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="panel" id="p-pro" role="tabpanel" aria-labelledby="t-pro">
-        <div class="pgrid">
+          <div class="pic" aria-hidden="true">
+            <svg viewBox="0 0 150 150">
+              <circle cx="75" cy="80" r="64" fill="#f9e7b0"/>
+              <ellipse cx="75" cy="100" rx="58" ry="22" fill="#3d2b20" opacity=".12"/>
+              <ellipse cx="72" cy="92" rx="56" ry="22" fill="#fffaf0"/>
+              <ellipse cx="72" cy="92" rx="56" ry="22" fill="none" stroke="#f4d77e" stroke-width="4"/>
+              <path d="M40 94 q4 -16 20 -16 q16 0 20 16 q-20 6 -40 0z" fill="#fff6e0" stroke="#e7d6b0" stroke-width="1.5"/>
+              <rect x="70" y="92" width="34" height="7" rx="3.5" fill="#e9803c" transform="rotate(-12 87 95)"/>
+              <circle cx="100" cy="80" r="7" fill="#6e9a48"/><circle cx="108" cy="76" r="7" fill="#7fae55"/>
+              <path d="M118 54 c-12 0 -13 20 0 20" fill="none" stroke="#4f8f84" stroke-width="5" stroke-linecap="round"/>
+              <path d="M120 40 h26 l-3 34 a5 5 0 0 1 -5 4 h-10 a5 5 0 0 1 -5 -4z" fill="#f2b7a6"/>
+              <path d="M118 38 a15 5 0 0 1 30 0 v4 h-30z" fill="#4f8f84"/>
+            </svg>
+          </div>
+        </a>
+        <a class="door pro rv" href="#profissionais" style="--d:.12s">
           <div>
-            <h3>Supervisão e cursos para <em>profissionais</em></h3>
-            <p class="lead">Além do atendimento às crianças e às famílias, ofereço supervisão e cursos para profissionais.</p>
-            <div class="pctas">
-              <a class="btn btn-main mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20supervis%C3%A3o%20e%20cursos." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar sobre supervisão e cursos</a>
-              <a class="btn btn-ghost mag" href="#cbfa">Ver a palestra no CBFa <span class="arrow" aria-hidden="true">→</span></a>
-            </div>
+            <span class="k">Porta 02 · Para profissionais</span>
+            <span class="t">Quero <em>supervisão ou cursos</em></span>
+            <ul><li>Supervisão</li><li>Cursos</li><li>A palestra no CBFa 2026</li></ul>
+            <span class="go">Entrar <span class="arrow" aria-hidden="true">→</span></span>
           </div>
-          <ul class="offer stg">
-            <li><b>Supervisão</b><span>Pergunte pelo WhatsApp sobre formatos e horários.</span></li>
-            <li><b>Cursos</b><span>Pergunte pelas próximas turmas e conteúdos disponíveis.</span></li>
-            <li><b>Formações</b><span>Bobath, DAP, capacitações e eventos no Brasil e no exterior.</span></li>
-          </ul>
-        </div>
+          <div class="pic" aria-hidden="true">
+            <svg viewBox="0 0 150 150">
+              <circle cx="75" cy="80" r="64" fill="#4b372a"/>
+              <path d="M50 0 L72 52 M100 0 L78 52" stroke="#f4d77e" stroke-width="8" stroke-linecap="round"/>
+              <rect x="66" y="46" width="18" height="14" rx="3" fill="#cfc6b8"/>
+              <g transform="rotate(-6 75 100)">
+                <rect x="38" y="56" width="74" height="94" rx="10" fill="#fffaf0"/>
+                <rect x="38" y="56" width="74" height="24" rx="10" fill="#f4d77e"/>
+                <rect x="38" y="70" width="74" height="10" fill="#f4d77e"/>
+                <text x="75" y="106" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="20" fill="#2b1f17">CBFa</text>
+                <text x="75" y="122" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="10" letter-spacing="3" fill="#b9831b">2026</text>
+                <rect x="52" y="130" width="46" height="8" rx="4" fill="#3d2b20"/>
+              </g>
+            </svg>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="diary" id="diario">
+  <section class="signs-sec" id="familias" data-tone="cream">
+    <div class="wrap">
+      <div class="chap rv"><span class="no">01</span><span class="lb">Porta para famílias</span></div>
+      <div class="signs-top">
+        <div>
+          <h2 class="h2 rv">Quando a hora de comer vira <span class="sw">uma luta<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true" class="draw"><path class="dl" pathLength="1" d="M4 14 C50 4 120 4 196 12"/></svg></span> todos os dias</h2>
+        </div>
+        <div>
+          <p class="lead rv">Toda criança tem dias de recusa. O que chama atenção é quando a dificuldade se repete, aparece em várias refeições e começa a pesar na rotina da família. Alguns sinais comuns:</p>
+          <p class="note rv"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span>São orientações gerais, não um diagnóstico. Na dúvida, converse com o pediatra e procure uma avaliação fonoaudiológica.</span></p>
+        </div>
+      </div>
+      <ol class="cards">
+        <li class="card rv">
+          <span class="n">i.</span>
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 92 92"><ellipse cx="46" cy="56" rx="38" ry="15" fill="#3d2b20" opacity=".1"/><ellipse cx="46" cy="52" rx="38" ry="15" fill="#fffaf0"/><ellipse cx="46" cy="52" rx="38" ry="15" fill="none" stroke="#f4d77e" stroke-width="3"/><ellipse cx="46" cy="52" rx="27" ry="9" fill="#f6ecd8"/><rect x="38" y="46" width="18" height="6" rx="3" fill="#e9803c" transform="rotate(-10 47 49)"/></svg></div>
+          <h3>Aceita poucos alimentos</h3>
+          <p>O cardápio fica cada vez menor, sempre os mesmos itens, e alimentos novos quase nunca entram.</p>
+        </li>
+        <li class="card rv">
+          <span class="n">ii.</span>
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 92 92"><ellipse cx="46" cy="80" rx="22" ry="5" fill="#3d2b20" opacity=".12"/><path d="M28 26 h36 l-5 50 a5 5 0 0 1 -5 4 h-16 a5 5 0 0 1 -5 -4z" fill="#fffaf0" stroke="#4f8f84" stroke-width="2.5"/><path d="M31 46 h30 l-3 30 a4 4 0 0 1 -4 3 h-16 a4 4 0 0 1 -4 -3z" fill="#93cfc3"/><path d="M33 46 q6 -4 13 0 t13 0" fill="none" stroke="#fffaf0" stroke-width="2"/><path d="M70 22 q4 6 0 9 q-4 -3 0 -9z M76 34 q3 5 0 7 q-3 -2 0 -7z" fill="#93cfc3"/></svg></div>
+          <h3>Engasga com frequência</h3>
+          <p>Tosse ou engasgo na hora de engolir aparece muitas vezes, não só de vez em quando.</p>
+        </li>
+        <li class="card rv">
+          <span class="n">iii.</span>
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 92 92"><ellipse cx="46" cy="80" rx="24" ry="5" fill="#3d2b20" opacity=".12"/><path d="M46 28 c-10 -6 -28 -2 -28 20 c0 18 14 30 22 30 c3 0 4 -2 6 -2 s3 2 6 2 c8 0 22 -12 22 -30 c0 -6 -2 -11 -5 -14 a7 7 0 0 1 -9 -9 c-6 -1 -10 1 -14 3z" fill="#d6553c"/><circle cx="68" cy="30" r="8" fill="#ffe4d6"/><path d="M46 28 c0 -8 4 -14 10 -16" fill="none" stroke="#6b4a2a" stroke-width="3" stroke-linecap="round"/><path d="M50 18 c6 -6 14 -4 16 -2 c-6 4 -12 4 -16 2z" fill="#6e9a48"/><path d="M28 44 c0 -6 4 -10 8 -11" fill="none" stroke="#fff" stroke-width="3" opacity=".4" stroke-linecap="round"/></svg></div>
+          <h3>Dificuldade para mastigar</h3>
+          <p>Mastiga pouco, segura o alimento na boca ou só aceita comida pastosa ou bem amassada.</p>
+        </li>
+        <li class="card rv">
+          <span class="n">iv.</span>
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 92 92"><ellipse cx="46" cy="82" rx="24" ry="5" fill="#3d2b20" opacity=".12"/><circle cx="46" cy="46" r="30" fill="#fffaf0" stroke="#3d2b20" stroke-width="3"/><circle cx="46" cy="46" r="24" fill="none" stroke="#f4d77e" stroke-width="5" stroke-dasharray="2 10.5"/><path d="M46 46 V26" stroke="#3d2b20" stroke-width="3" stroke-linecap="round"/><path d="M46 46 L62 54" stroke="#e9803c" stroke-width="3" stroke-linecap="round"/><circle cx="46" cy="46" r="3.5" fill="#3d2b20"/><path d="M30 12 h32" stroke="#3d2b20" stroke-width="4" stroke-linecap="round"/><path d="M46 12 v4" stroke="#3d2b20" stroke-width="4"/></svg></div>
+          <h3>Refeições muito longas</h3>
+          <p>Cada refeição se arrasta, com muita negociação, choro ou distração para a comida descer.</p>
+        </li>
+      </ol>
+      <div class="signs-cta rv">
+        <a class="btn btn-ghost mag" href="#diario">Fazer o diário da refeição <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-wa mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="diary-sec on-butter scal-t" id="diario" data-tone="butter">
+    <span class="ging-bg" aria-hidden="true"></span>
     <div class="wrap">
       <div class="diary-head">
         <div>
-          <span class="eyebrow rv">Diário de uma refeição</span>
-          <h2 class="h2 rv">Conte como foi a <em>última refeição</em></h2>
+          <span class="tag rv">Diário de uma refeição</span>
+          <h2 class="h2 rv" style="margin-top:16px">Conte como foi a <em>última refeição</em></h2>
         </div>
-        <p class="lead rv" style="max-width:44ch">Marque o que você observa no seu filho. O site mostra uma orientação geral e monta a mensagem para você mandar no WhatsApp.</p>
+        <p class="lead rv">Marque o que você observa no seu filho. O site mostra uma orientação geral e monta a mensagem para você mandar no WhatsApp.</p>
       </div>
 
-      <form class="dcard rv" id="diary-form" novalidate>
-        <div class="page">
-          <div class="page-top"><span class="date">Hoje, na hora de comer…</span><span class="cnt" id="cnt">0 de 3 respondidas</span></div>
+      <form class="dcard" id="diary-form" novalidate>
+        <div class="page rv">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="tape b" aria-hidden="true"></span>
+          <div class="page-top"><span class="date">Hoje, na hora de comer…</span><span class="cnt tab" id="cnt">0 de 3 respondidas</span></div>
           <fieldset class="q">
             <legend><span class="n">1.</span>Idade da criança</legend>
             <div class="opts">
@@ -680,369 +958,372 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
               <input type="checkbox" name="ev" id="c5" value="pastoso"><label for="c5">Só come pastoso</label>
               <input type="checkbox" name="ev" id="c6" value="outro"><label for="c6">Outro</label>
             </div>
-            <label for="other-txt" class="small-note other-l" id="other-l" hidden>Conte em poucas palavras</label>
+            <label for="other-txt" class="other-l" id="other-l" hidden>Conte em poucas palavras</label>
             <input class="other" type="text" id="other-txt" maxlength="120" placeholder="Ex.: chora quando vê a comida nova" hidden>
           </fieldset>
         </div>
 
         <div class="dside">
-          <div class="meter">
-            <svg viewBox="0 0 80 80" aria-hidden="true">
-              <circle class="m-bg" cx="40" cy="40" r="34"/>
-              <path class="m-seg" id="s1" pathLength="1" d="M40 6 A34 34 0 0 1 69.4 57"/>
-              <path class="m-seg" id="s2" pathLength="1" d="M69.4 57 A34 34 0 0 1 10.6 57"/>
-              <path class="m-seg" id="s3" pathLength="1" d="M10.6 57 A34 34 0 0 1 40 6"/>
-              <circle class="m-in" cx="40" cy="40" r="22"/>
-              <circle class="m-in" cx="40" cy="40" r="15" stroke-dasharray="2 3"/>
-            </svg>
-            <p><b id="m-txt">0 de 3</b>perguntas respondidas</p>
+          <div class="meter rv" style="--d:.1s">
+            <div class="plates" aria-hidden="true">
+              <svg viewBox="0 0 40 40" id="p1"><circle cx="20" cy="20" r="18" fill="#fffaf0"/><circle cx="20" cy="20" r="18" fill="none" stroke="#f4d77e" stroke-width="2.5"/><circle class="pl-f" cx="20" cy="20" r="10"/></svg>
+              <svg viewBox="0 0 40 40" id="p2"><circle cx="20" cy="20" r="18" fill="#fffaf0"/><circle cx="20" cy="20" r="18" fill="none" stroke="#f4d77e" stroke-width="2.5"/><circle class="pl-f" cx="20" cy="20" r="10"/></svg>
+              <svg viewBox="0 0 40 40" id="p3"><circle cx="20" cy="20" r="18" fill="#fffaf0"/><circle cx="20" cy="20" r="18" fill="none" stroke="#f4d77e" stroke-width="2.5"/><circle class="pl-f" cx="20" cy="20" r="10"/></svg>
+            </div>
+            <p><b id="m-txt" class="tab">0 de 3</b>perguntas respondidas</p>
           </div>
-          <span class="k">O que o diário mostra</span>
-          <h3 id="g-title">Marque as opções ao lado <em>para começar</em></h3>
-          <div class="guide" id="g-text" aria-live="polite"><p>Não existe resposta certa. É só um retrato da refeição para facilitar a primeira conversa.</p></div>
-          <span class="k">Sua mensagem</span>
-          <div class="msg" id="msg" aria-live="polite">Olá, Déborah! Vim pelo seu site e gostaria de agendar uma avaliação para meu filho(a).</div>
-          <a class="btn btn-wa" id="send-wa" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar no WhatsApp</a>
+          <div class="postit rv" style="--d:.2s">
+            <span class="k">O que o diário mostra</span>
+            <h3 id="g-title">Marque as opções ao lado <em>para começar</em></h3>
+            <div class="guide" id="g-text" aria-live="polite"><p>Não existe resposta certa. É só um retrato da refeição para facilitar a primeira conversa.</p></div>
+          </div>
+          <span class="bubble-k rv" style="--d:.25s">Sua mensagem</span>
+          <div class="bubble rv" id="msg" aria-live="polite" style="--d:.3s">Olá, Déborah! Vim pelo seu site e gostaria de agendar uma avaliação para meu filho(a).</div>
+          <a class="btn btn-wa rv" id="send-wa" style="--d:.35s" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar no WhatsApp</a>
         </div>
         <p class="dnote">Orientação geral, não é diagnóstico. Só a avaliação com a fonoaudióloga mostra o que está acontecendo com o seu filho. Nada do que você marca aqui é salvo ou enviado: a mensagem só sai se você tocar no botão.</p>
       </form>
     </div>
   </section>
 
-  <section id="como-funciona">
-    <div class="wrap how-grid">
-      <div class="how-side">
-        <span class="eyebrow rv">A primeira consulta</span>
-        <h2 class="h2 rv">Da primeira conversa ao <em>acompanhamento</em></h2>
-        <p class="lead rv">Um caminho feito no tempo da criança, com a família por perto. Os detalhes eu explico pelo WhatsApp.</p>
-        <div class="pctas rv">
-          <a class="btn btn-main mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Começar pelo WhatsApp</a>
-        </div>
+  <section class="how-sec on-coffee scal-t" id="como-funciona" data-tone="coffee">
+    <div class="wrap">
+      <div class="how-head">
+        <span class="tag rv">A primeira consulta</span>
+        <h2 class="h2 rv" style="margin-top:16px">Da primeira conversa ao <em>acompanhamento</em></h2>
+        <p class="lead rv" style="margin-top:14px">Um caminho feito no tempo da criança, com a família por perto. Os detalhes eu explico pelo WhatsApp.</p>
       </div>
-      <div class="tl" id="tl">
-        <span class="tl-fill" id="tl-fill" aria-hidden="true"></span>
-        <ol>
-        <li class="rv"><span class="dot" aria-hidden="true">1</span>
-          <h3>Conversa e agendamento</h3>
-          <p>Você chama no WhatsApp, conta o que tem observado e marca o horário da avaliação.</p>
+      <div class="steps-box" id="steps">
+      <span class="track-line" aria-hidden="true"><i id="tl-fill"></i></span>
+      <ol class="steps">
+        <li class="step rv">
+          <div class="plate-n" aria-hidden="true"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="#fffaf0"/><circle class="pl-ring" cx="60" cy="60" r="48" fill="none" stroke="#f4d77e" stroke-width="7" stroke-dasharray="14 6"/><circle cx="60" cy="60" r="38" fill="#f6ecd8"/></svg><b>1</b></div>
+          <div>
+            <h3>Conversa e agendamento</h3>
+            <p>Você chama no WhatsApp, conta o que tem observado e marca o horário da avaliação.</p>
+          </div>
         </li>
-        <li class="rv"><span class="dot" aria-hidden="true">2</span>
-          <h3>Avaliação</h3>
-          <p>Conhecemos a criança, a rotina da casa e como são as refeições. A brincadeira faz parte: é brincando que a criança se mostra.</p>
-          <ul><li>Conte o que acontece à mesa</li><li>Traga suas dúvidas e preocupações</li></ul>
+        <li class="step rv" style="--d:.12s">
+          <div class="plate-n" aria-hidden="true"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="#fffaf0"/><circle class="pl-ring" cx="60" cy="60" r="48" fill="none" stroke="#93cfc3" stroke-width="7" stroke-dasharray="14 6"/><circle cx="60" cy="60" r="38" fill="#f6ecd8"/></svg><b>2</b></div>
+          <div>
+            <h3>Avaliação</h3>
+            <p>Conhecemos a criança, a rotina da casa e como são as refeições. A brincadeira faz parte: é brincando que a criança se mostra.</p>
+            <ul><li>Conte o que acontece à mesa</li><li>Traga suas dúvidas e preocupações</li></ul>
+          </div>
         </li>
-        <li class="rv"><span class="dot" aria-hidden="true">3</span>
-          <h3>Acompanhamento</h3>
-          <p>A partir da avaliação, combinamos o acompanhamento. A família participa e leva orientações para o dia a dia em casa.</p>
-          <ul><li>Frequência definida depois da avaliação</li><li>Família envolvida no processo</li></ul>
+        <li class="step rv" style="--d:.24s">
+          <div class="plate-n" aria-hidden="true"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="#fffaf0"/><circle class="pl-ring" cx="60" cy="60" r="48" fill="none" stroke="#f2b7a6" stroke-width="7" stroke-dasharray="14 6"/><circle cx="60" cy="60" r="38" fill="#f6ecd8"/></svg><b>3</b></div>
+          <div>
+            <h3>Acompanhamento</h3>
+            <p>A partir da avaliação, combinamos o acompanhamento. A família participa e leva orientações para o dia a dia em casa.</p>
+            <ul><li>Frequência definida depois da avaliação</li><li>Família envolvida no processo</li></ul>
+          </div>
         </li>
       </ol>
       </div>
+      <div class="how-cta rv">
+        <a class="btn btn-butter mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Começar pelo WhatsApp</a>
+        <p>WhatsApp <span class="num" style="user-select:all">(83) 99936-2068</span></p>
+      </div>
     </div>
   </section>
 
-  <section class="explains" id="olhar">
-    <div class="wrap">
+  <section class="look-sec scal-t" id="olhar" data-tone="cream" style="background:var(--bg)">
+    <div class="floaty" style="right:4%;top:60px;width:110px;height:110px" data-par="0.12" aria-hidden="true"><svg viewBox="0 0 110 110"><g class="fl"><path d="M55 20 c18 -7 34 9 28 27 c-6 18 -21 30 -28 33 c-7 -3 -22 -15 -28 -33 c-6 -18 10 -34 28 -27z" fill="#d6553c"/><path d="M43 20 l12 -12 l12 12 l-12 4z" fill="#6e9a48"/><circle cx="48" cy="38" r="2" fill="#f9e7b0"/><circle cx="62" cy="46" r="2" fill="#f9e7b0"/><circle cx="54" cy="58" r="2" fill="#f9e7b0"/></g></svg></div>
+    <div class="floaty" style="left:-20px;bottom:40px;width:120px;height:120px" data-par="-0.1" aria-hidden="true"><svg viewBox="0 0 120 120"><g class="fl b"><circle cx="60" cy="60" r="40" fill="#fbe9b6"/><circle cx="60" cy="60" r="26" fill="none" stroke="#e9cf8a" stroke-width="4"/><circle cx="60" cy="60" r="6" fill="#c9a24a"/></g></svg></div>
+    <div class="wrap" style="position:relative">
       <p class="quote" id="quote"><span class="pre">O olhar começa pela criança</span><span class="lw">Na</span> <span class="lw">hora</span> <span class="lw">de</span> <span class="lw">comer,</span> <span class="lw">a</span> <span class="lw">criança</span> <span class="lw acc">nos</span> <span class="lw acc">explica.</span></p>
-      <div class="ex-grid">
-        <p class="lead rv" style="grid-column:1/-1;max-width:62ch">Cada recusa, cada careta e cada pedaço deixado no prato dizem alguma coisa. Antes de qualquer conduta, eu observo o que a própria criança mostra na hora de comer e brincar.</p>
-        <ul class="ex-list stg">
-          <li><b>Observar antes de concluir</b><span>O comportamento à mesa é uma forma de comunicação. Ele ajuda a entender o que está difícil.</span></li>
-          <li><b>Brincar faz parte</b><span>A sessão acontece num clima leve, em que a criança se sente à vontade para explorar.</span></li>
-          <li><b>A família junto</b><span>Pais e cuidadores entendem o processo e continuam o cuidado em casa.</span></li>
+      <div class="look-grid">
+        <p class="lead rv">Cada recusa, cada careta e cada pedaço deixado no prato dizem alguma coisa. Antes de qualquer conduta, eu observo o que a própria criança mostra na hora de comer e brincar.</p>
+        <ul class="principles">
+          <li class="rv"><span class="pi" aria-hidden="true"><svg viewBox="0 0 44 44"><circle cx="19" cy="19" r="11" fill="#fffaf0" stroke="#3d2b20" stroke-width="3"/><circle cx="19" cy="19" r="5" fill="#93cfc3"/><path d="M27 27 l9 9" stroke="#3d2b20" stroke-width="4" stroke-linecap="round"/></svg></span><div><b>Observar antes de concluir</b><span>O comportamento à mesa é uma forma de comunicação. Ele ajuda a entender o que está difícil.</span></div></li>
+          <li class="rv" style="--d:.1s"><span class="pi" aria-hidden="true"><svg viewBox="0 0 44 44"><rect x="6" y="24" width="15" height="14" rx="2" fill="#e9803c"/><rect x="23" y="24" width="15" height="14" rx="2" fill="#93cfc3"/><rect x="14" y="9" width="15" height="14" rx="2" fill="#f4d77e" transform="rotate(8 21 16)"/></svg></span><div><b>Brincar faz parte</b><span>A sessão acontece num clima leve, em que a criança se sente à vontade para explorar.</span></div></li>
+          <li class="rv" style="--d:.2s"><span class="pi" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M6 22 L22 8 L38 22 V38 H6Z" fill="#fffaf0" stroke="#3d2b20" stroke-width="3" stroke-linejoin="round"/><rect x="18" y="26" width="9" height="12" fill="#f2b7a6"/><path d="M6 22 L22 8 L38 22" fill="none" stroke="#e9803c" stroke-width="3" stroke-linejoin="round"/></svg></span><div><b>A família junto</b><span>Pais e cuidadores entendem o processo e continuam o cuidado em casa.</span></div></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="cbfa" id="cbfa">
-    <div class="wrap cb-grid">
-      <div class="seal-ring rv" aria-hidden="true">
-        <svg viewBox="0 0 240 240">
-          <defs><path id="circ" d="M120 120 m-96 0 a96 96 0 1 1 192 0 a96 96 0 1 1 -192 0"/></defs>
-          <circle class="seal-c" cx="120" cy="120" r="116"/>
-          <g class="ring"><text><textPath href="#circ" textLength="596" lengthAdjust="spacing">34º Congresso Brasileiro de Fonoaudiologia · CBFa 2026 · </textPath></text></g>
-          <circle class="seal-in" cx="120" cy="120" r="70"/>
-          <text class="seal-sm" x="120" y="100" text-anchor="middle">PALESTRANTE</text>
-          <text class="seal-yr" x="120" y="146" text-anchor="middle">2026</text>
-        </svg>
+  <section class="pro-sec on-coffee scal-t" id="profissionais" data-tone="coffee">
+    <span class="stripes-bg" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="pro-grid">
+        <div>
+          <div class="chap rv"><span class="no">02</span><span class="lb">Porta para profissionais</span></div>
+          <h2 class="h2 rv">Supervisão e cursos para <em>profissionais</em></h2>
+          <p class="lead rv" style="margin-top:14px">Além do atendimento às crianças e às famílias, ofereço supervisão e cursos para profissionais.</p>
+          <ul class="offer">
+            <li class="rv"><span class="oi" aria-hidden="true"><svg viewBox="0 0 28 28"><circle cx="10" cy="10" r="5" fill="#3d2b20"/><circle cx="19" cy="12" r="4" fill="#3d2b20" opacity=".6"/><path d="M2 24 c0 -6 4 -9 8 -9 s8 3 8 9z" fill="#3d2b20"/><path d="M14 24 c1 -5 3 -7 5 -7 s6 2 7 7z" fill="#3d2b20" opacity=".6"/></svg></span><b>Supervisão</b><span>Pergunte pelo WhatsApp sobre formatos e horários.</span></li>
+            <li class="rv" style="--d:.1s"><span class="oi" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M3 7 c4 -2 7 -2 11 1 c4 -3 7 -3 11 -1 v15 c-4 -2 -7 -2 -11 1 c-4 -3 -7 -3 -11 -1z" fill="#fffaf0" stroke="#3d2b20" stroke-width="2" stroke-linejoin="round"/><path d="M14 8 v15" stroke="#3d2b20" stroke-width="2"/></svg></span><b>Cursos</b><span>Pergunte pelas próximas turmas e conteúdos disponíveis.</span></li>
+            <li class="rv" style="--d:.2s"><span class="oi" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M14 4 L26 10 L14 16 L2 10Z" fill="#3d2b20"/><path d="M7 13 v6 c3 3 11 3 14 0 v-6" fill="none" stroke="#3d2b20" stroke-width="2"/><path d="M25 10 v8" stroke="#3d2b20" stroke-width="2" stroke-linecap="round"/></svg></span><b>Formações</b><span>Bobath, DAP, capacitações e eventos no Brasil e no exterior.</span></li>
+          </ul>
+          <div class="pro-ctas rv">
+            <a class="btn btn-butter mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20supervis%C3%A3o%20e%20cursos." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar sobre supervisão e cursos</a>
+          </div>
+        </div>
+
+        <div class="stage" id="cbfa">
+          <div class="badge-swing" id="badge" aria-hidden="true">
+            <div class="badge-cord"><svg viewBox="0 0 200 122" preserveAspectRatio="none"><path d="M50 0 L92 118" stroke="url(#paw)" stroke-width="16"/><path d="M150 0 L108 118" stroke="url(#paw)" stroke-width="16"/></svg></div>
+            <span class="clip"></span>
+            <div class="badge">
+              <div class="b-top"><span class="slot"></span><span class="ev">34º Congresso Brasileiro de Fonoaudiologia</span></div>
+              <div class="b-body">
+                <div class="b-big">CBFa<span>2026</span></div>
+                <div class="b-line"></div>
+                <div class="b-name">Déborah Montenegro</div>
+                <div class="b-role">Fonoaudióloga · João Pessoa</div>
+                <span class="b-pill">PALESTRANTE</span>
+                <p class="b-theme">Alimentação e deglutição na infância e Transtorno do Espectro do Autismo</p>
+              </div>
+              <div class="b-bar"></div>
+              <div class="b-foot"></div>
+            </div>
+          </div>
+          <div class="cb-note">
+            <span class="tag rv">Palestra · CBFa 2026</span>
+            <h3 class="rv" style="font-size:clamp(1.5rem,3.4vw,2rem);margin:14px 0 10px">Palestrante no <em>34º Congresso Brasileiro de Fonoaudiologia</em></h3>
+            <p class="lead rv" style="margin:0 auto">Participei como palestrante em sala sobre alimentação e deglutição na infância e Transtorno do Espectro do Autismo.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <span class="eyebrow rv">Para profissionais · palestra</span>
-        <p class="cb-big wipe" data-io aria-hidden="true">CBFa <span>2026</span></p>
-        <h2 class="rv">Palestrante no <em>34º Congresso Brasileiro de Fonoaudiologia</em></h2>
-        <p class="t rv">Participei como palestrante em sala sobre alimentação e deglutição na infância e Transtorno do Espectro do Autismo.</p>
-        <div class="pctas rv">
-          <a class="btn btn-butter mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20sobre%20supervis%C3%A3o%20e%20cursos." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Perguntar sobre supervisão e cursos</a>
+
+      <div class="forms">
+        <div class="rv">
+          <h3>Estudo contínuo, <em>aqui e lá fora</em></h3>
+          <p>Formações, capacitações e eventos no Brasil e no exterior fazem parte da minha rotina de atualização.</p>
+        </div>
+        <div class="chips rv" style="--d:.15s">
+          <span class="chip-st" style="--r:-3deg">Bobath</span>
+          <span class="chip-st" style="--r:2deg">DAP</span>
+          <span class="chip-st" style="--r:-1deg">Capacitações</span>
         </div>
       </div>
     </div>
-    <div class="stripes-run" aria-hidden="true"><i></i></div>
   </section>
 
-  <section id="formacoes">
-    <div class="wrap form-wrap">
-      <div>
-        <span class="eyebrow rv">Formações</span>
-        <h2 class="h2 rv">Estudo contínuo, <em>aqui e lá fora</em></h2>
-        <p class="lead rv">Formações, capacitações e eventos no Brasil e no exterior fazem parte da minha rotina de atualização.</p>
+  <section class="rate-sec on-butter scal-t" id="avaliacoes" data-tone="butter">
+    <div class="wrap rate-grid">
+      <div class="big-rate rv">
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="c-seal" d="M100 100 m-80 0 a80 80 0 1 1 160 0 a80 80 0 1 1 -160 0"/></defs>
+            <circle cx="100" cy="100" r="98" fill="#fffaf0"/>
+            <circle cx="100" cy="100" r="92" fill="none" stroke="#3d2b20" stroke-width="1.5" stroke-dasharray="3 5"/>
+            <g class="ring"><text><textPath href="#c-seal" textLength="496" lengthAdjust="spacing">GOOGLE MAPS · FICHA PÚBLICA · AVALIAÇÕES · </textPath></text></g>
+            <circle cx="100" cy="100" r="58" fill="#f4d77e"/>
+            <text class="sn" x="100" y="118" text-anchor="middle" data-count="5" data-dec="1">5,0</text>
+          </svg>
+        </div>
+        <div>
+          <span class="tag">Google Maps</span>
+          <div class="stars" aria-label="Nota 5,0 de 5" role="img" style="margin-top:14px"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          <p><b class="num" data-count="71">71</b> avaliações na ficha pública do consultório.</p>
+        </div>
       </div>
-      <ul class="tags stg">
-        <li>Bobath</li>
-        <li>DAP</li>
-        <li>Capacitações</li>
-        <li class="wide">Formações e eventos no Brasil e no exterior</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="rep" id="avaliacoes">
-    <div class="wrap rep-grid">
-      <div class="score rv">
-        <span class="k">Google Maps</span>
-        <div class="big" data-count="5" data-dec="1">5,0</div>
-        <div class="stars" aria-label="Nota 5,0 de 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
-        <p><b><span class="num" data-count="71">71</span> avaliações</b> na ficha pública do consultório.</p>
-        <span class="st" aria-hidden="true"></span>
-      </div>
-      <div>
-        <span class="eyebrow rv">O que as famílias destacam</span>
-        <h2 class="h2 rv">Competência, ambiente e <em>atendimento</em></h2>
-        <ul class="bars" data-io>
-          <li><span class="lbl">Competente</span><span class="track"><span class="fill" style="--w:1"></span></span><span class="n">3</span></li>
-          <li><span class="lbl">Ambiente</span><span class="track"><span class="fill" style="--w:1;--d:.12s"></span></span><span class="n">3</span></li>
-          <li><span class="lbl">Atendimento</span><span class="track"><span class="fill" style="--w:1;--d:.24s"></span></span><span class="n">3</span></li>
-          <li><span class="lbl">Crianças</span><span class="track"><span class="fill" style="--w:.667;--d:.36s"></span></span><span class="n">2</span></li>
+      <div class="themes rv" style="--d:.12s">
+        <h3>O que as famílias <em>destacam</em></h3>
+        <p class="sub">Competência, ambiente e atendimento</p>
+        <ul class="tbars" id="tbars">
+          <li><span class="lb">Competente</span><span class="bar"><i style="--w:1;--d:.1s"></i></span><span class="c num">3</span></li>
+          <li><span class="lb">Ambiente</span><span class="bar"><i style="--w:1;--d:.25s"></i></span><span class="c num">3</span></li>
+          <li><span class="lb">Atendimento</span><span class="bar"><i style="--w:1;--d:.4s"></i></span><span class="c num">3</span></li>
+          <li><span class="lb">Crianças</span><span class="bar"><i style="--w:.667;--d:.55s"></i></span><span class="c num">2</span></li>
         </ul>
-        <p class="small-note">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
+        <p class="src">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
       </div>
     </div>
   </section>
 
-  <section id="onde">
+  <section class="where-sec scal-t" id="onde" data-tone="cream" style="background:var(--bg)">
     <div class="wrap where-grid">
       <div>
-        <span class="eyebrow rv">Onde fica</span>
-        <h2 class="h2 rv">No Shopping <em>Pátio Altiplano</em></h2>
-        <ul class="info stg">
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6"/></svg>
-            <div><span class="k">Endereço</span><span class="v">Shopping Pátio Altiplano – R. Poeta Targino Teixeira, 251 – Sala 08, 1º andar – Altiplano Cabo Branco, João Pessoa – PB, 58046-090</span></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-            <div><span class="k">WhatsApp</span><span class="v tel">(83) 99936-2068</span></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <div><span class="k">Horários</span><span class="v">Consulte dias e horários disponíveis pelo WhatsApp.</span></div>
-          </li>
-        </ul>
+        <span class="tag rv">Onde fica</span>
+        <h2 class="h2 rv" style="margin:16px 0 26px">No Shopping <em>Pátio Altiplano</em></h2>
+        <div class="ticket rv">
+          <dl>
+            <div><dt>Endereço</dt><dd>Shopping Pátio Altiplano – R. Poeta Targino Teixeira, 251 – Sala 08, 1º andar – Altiplano Cabo Branco, João Pessoa – PB, 58046-090</dd></div>
+            <div class="cut" aria-hidden="true"></div>
+            <div><dt>WhatsApp</dt><dd class="phone num">(83) 99936-2068</dd></div>
+            <div><dt>Horários</dt><dd>Consulte dias e horários disponíveis pelo WhatsApp.</dd></div>
+          </dl>
+        </div>
         <div class="where-ctas rv">
-          <a class="btn btn-main mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+          <a class="btn btn-wa mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
           <a class="btn btn-ghost mag" href="https://www.google.com/maps/search/?api=1&amp;query=Fonoaudi%C3%B3loga+D%C3%A9borah+Montenegro+P%C3%A1tio+Altiplano" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
         </div>
       </div>
-      <a class="mapcard rv" data-io href="https://www.google.com/maps/search/?api=1&amp;query=Fonoaudi%C3%B3loga+D%C3%A9borah+Montenegro+P%C3%A1tio+Altiplano" target="_blank" rel="noopener" aria-label="Abrir a localização no Google Maps">
-        <svg viewBox="0 0 500 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <path class="m-sea" d="M410 0H500V420H380C400 310 370 250 400 170C420 110 395 50 410 0Z"/>
-          <path class="m-wave" d="M430 90c8-6 16 6 24 0M440 190c8-6 16 6 24 0M420 300c8-6 16 6 24 0"/>
-          <rect class="m-block" x="30" y="40" width="150" height="90" rx="10"/>
-          <rect class="m-block" x="210" y="40" width="140" height="90" rx="10"/>
-          <rect class="m-block" x="30" y="170" width="110" height="110" rx="10"/>
-          <rect class="m-block" x="30" y="310" width="150" height="80" rx="10"/>
-          <rect class="m-block" x="250" y="310" width="110" height="80" rx="10"/>
-          <path class="m-road" d="M-10 150H390"/>
-          <path class="m-road" d="M195 -10V430"/>
-          <path class="m-road thin" d="M-10 295H380"/>
-          <path class="m-road thin" d="M370 -10C360 130 350 270 370 430"/>
-          <rect class="m-mall" x="220" y="172" width="130" height="100" rx="12"/>
-          <path class="m-route" pathLength="1" d="M-10 295H195V150H285V185"/>
-          <g class="pin"><g transform="translate(285 168)">
-            <path class="m-pin" d="M0 0c-14-18-22-28-22-40a22 22 0 0 1 44 0c0 12-8 22-22 40Z"/>
-            <circle class="m-pin-in" cx="0" cy="-40" r="8"/>
-          </g></g>
+      <a class="facade rv" style="--d:.15s" href="https://www.google.com/maps/search/?api=1&amp;query=Fonoaudi%C3%B3loga+D%C3%A9borah+Montenegro+P%C3%A1tio+Altiplano" target="_blank" rel="noopener" aria-label="Abrir a localização no Google Maps">
+        <svg viewBox="0 0 480 400" aria-hidden="true">
+          <circle cx="240" cy="210" r="180" class="c-arch"/>
+          <ellipse cx="240" cy="364" rx="236" ry="26" class="c-floor"/>
+          <ellipse cx="240" cy="356" rx="200" ry="10" class="c-sh"/>
+          <rect x="70" y="120" width="340" height="236" rx="8" fill="#fffaf0"/>
+          <rect x="70" y="120" width="340" height="236" rx="8" fill="none" stroke="#3d2b20" stroke-width="2" opacity=".15"/>
+          <rect x="60" y="102" width="360" height="26" rx="6" fill="#3d2b20"/>
+          <text x="240" y="120" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="11" letter-spacing="3" fill="#f4d77e">PÁTIO ALTIPLANO</text>
+          <path d="M70 236 H410" stroke="#e2d1b2" stroke-width="3"/>
+          <g fill="#dff1ec"><rect x="94" y="146" width="62" height="66" rx="4"/><rect x="170" y="146" width="62" height="66" rx="4"/><rect x="324" y="146" width="62" height="66" rx="4"/></g>
+          <rect x="246" y="140" width="66" height="74" rx="4" fill="#f9e7b0"/>
+          <path d="M240 138 h78 v14 a6.5 6.5 0 0 1 -13 0 a6.5 6.5 0 0 1 -13 0 a6.5 6.5 0 0 1 -13 0 a6.5 6.5 0 0 1 -13 0 a6.5 6.5 0 0 1 -13 0 a6.5 6.5 0 0 1 -13 0z" fill="url(#paw)"/>
+          <text x="279" y="196" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="22" fill="#3d2b20">08</text>
+          <text x="279" y="208" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="7.5" letter-spacing="1.5" fill="#7a5609">SALA</text>
+          <g fill="#dff1ec"><rect x="94" y="260" width="62" height="66" rx="4"/><rect x="324" y="260" width="62" height="66" rx="4"/></g>
+          <rect x="184" y="262" width="112" height="94" rx="4" fill="#93cfc3"/>
+          <path d="M240 262 V356" stroke="#fffaf0" stroke-width="3"/>
+          <text x="420" y="196" font-family="Caveat, cursive" font-weight="700" font-size="22" fill="#3d2b20" transform="rotate(-8 420 196)">1º andar</text>
+          <path d="M416 204 q-30 10 -46 -10" fill="none" stroke="#3d2b20" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+          <g class="fl" style="animation-duration:3.6s">
+            <path d="M279 24 c-22 0 -36 16 -36 34 c0 26 36 56 36 56 s36 -30 36 -56 c0 -18 -14 -34 -36 -34z" fill="#d6553c"/>
+            <circle cx="279" cy="58" r="13" fill="#fffaf0"/>
+          </g>
         </svg>
-        <span class="lbl"><b>Shopping Pátio Altiplano</b><span>Sala 08, 1º andar · Altiplano Cabo Branco · Abrir no Google Maps</span></span>
       </a>
     </div>
   </section>
 
-  <section class="faq" id="duvidas" style="border-top:1px solid var(--line)">
+  <section class="faq-sec" id="duvidas" data-tone="cream">
     <div class="wrap faq-grid">
       <div>
-        <span class="eyebrow rv">Dúvidas frequentes</span>
-        <h2 class="h2 rv">Perguntas que os pais <em>costumam fazer</em></h2>
+        <span class="tag rv">Dúvidas frequentes</span>
+        <h2 class="h2 rv" style="margin:16px 0 14px">Perguntas que os pais <em>costumam fazer</em></h2>
         <p class="lead rv">Não achou a sua? Mande no WhatsApp.</p>
       </div>
-      <div class="faq-list stg">
-        <details>
-          <summary>Meu filho come pouco. Isso já é motivo para avaliação?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Depende do quanto isso se repete e de como afeta a rotina. Se a recusa é frequente, se o cardápio está cada vez menor ou se a refeição virou um momento de tensão em casa, vale conversar. Use o Diário de uma refeição acima para organizar o que você observa.</p>
-        </details>
-        <details>
-          <summary>Como agendar a avaliação?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Pelo WhatsApp (83) 99936-2068. Conte um pouco sobre a criança e o que tem acontecido nas refeições, e combinamos o melhor horário.</p>
-        </details>
-        <details>
-          <summary>A família participa das sessões?<span class="pm" aria-hidden="true"></span></summary>
-          <p>A família faz parte do processo. Como isso acontece em cada caso é combinado depois da avaliação, junto com as orientações para casa.</p>
-        </details>
-        <details>
-          <summary>Atende plano de saúde? Quais as formas de pagamento?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Pergunte pelo WhatsApp sobre as condições de atendimento e as formas de pagamento.</p>
-        </details>
-        <details>
-          <summary>Sou profissional. Como funcionam a supervisão e os cursos?<span class="pm" aria-hidden="true"></span></summary>
-          <p>Chame no WhatsApp contando sua área e o que procura. Você recebe as informações sobre formatos, datas e próximas turmas.</p>
-        </details>
-        <details>
-          <summary>Onde fica o consultório?<span class="pm" aria-hidden="true"></span></summary>
-          <p>No Shopping Pátio Altiplano, sala 08, 1º andar, na R. Poeta Targino Teixeira, 251, Altiplano Cabo Branco, em João Pessoa.</p>
-        </details>
+      <div class="faq">
+        <details class="rv"><summary>Meu filho come pouco. Isso já é motivo para avaliação?</summary><p class="a">Depende do quanto isso se repete e de como afeta a rotina. Se a recusa é frequente, se o cardápio está cada vez menor ou se a refeição virou um momento de tensão em casa, vale conversar. Use o Diário de uma refeição acima para organizar o que você observa.</p></details>
+        <details class="rv"><summary>Como agendar a avaliação?</summary><p class="a">Pelo WhatsApp <span class="num" style="user-select:all">(83) 99936-2068</span>. Conte um pouco sobre a criança e o que tem acontecido nas refeições, e combinamos o melhor horário.</p></details>
+        <details class="rv"><summary>A família participa das sessões?</summary><p class="a">A família faz parte do processo. Como isso acontece em cada caso é combinado depois da avaliação, junto com as orientações para casa.</p></details>
+        <details class="rv"><summary>Atende plano de saúde? Quais as formas de pagamento?</summary><p class="a">Pergunte pelo WhatsApp sobre as condições de atendimento e as formas de pagamento.</p></details>
+        <details class="rv"><summary>Sou profissional. Como funcionam a supervisão e os cursos?</summary><p class="a">Chame no WhatsApp contando sua área e o que procura. Você recebe as informações sobre formatos, datas e próximas turmas.</p></details>
+        <details class="rv"><summary>Onde fica o consultório?</summary><p class="a">No Shopping Pátio Altiplano, sala 08, 1º andar, na R. Poeta Targino Teixeira, 251, Altiplano Cabo Branco, em João Pessoa.</p></details>
       </div>
     </div>
   </section>
 
-  <section class="final" data-io>
+  <section class="final on-coffee scal-t" data-tone="coffee">
     <div class="wrap">
-      <div>
-        <h2 class="rv">Vamos entender juntos o que a <em>hora de comer</em> está dizendo?</h2>
-        <p class="rv">Mande uma mensagem contando um pouco sobre o seu filho. A avaliação é o primeiro passo.</p>
-        <div class="ctas rv">
-          <a class="btn btn-dark mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação pelo WhatsApp</a>
-          <a class="btn btn-line mag" href="https://www.google.com/maps/search/?api=1&amp;query=Fonoaudi%C3%B3loga+D%C3%A9borah+Montenegro+P%C3%A1tio+Altiplano" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
-        </div>
+      <div class="mini rv" aria-hidden="true">
+        <svg viewBox="0 0 360 150">
+          <ellipse cx="180" cy="132" rx="150" ry="10" fill="#000" opacity=".25"/>
+          <path d="M40 120 L320 120 L300 96 L60 96Z" fill="#f4d77e"/>
+          <path d="M60 96 L80 96 L68 120 L40 120Z M110 96 L130 96 L124 120 L96 120Z M160 96 L180 96 L180 120 L152 120Z M210 96 L230 96 L236 120 L208 120Z M260 96 L280 96 L292 120 L264 120Z" fill="#fffaf0"/>
+          <ellipse cx="180" cy="98" rx="62" ry="16" fill="#fffaf0"/>
+          <ellipse cx="180" cy="98" rx="62" ry="16" fill="none" stroke="#e9803c" stroke-width="3"/>
+          <path d="M150 98 q6 -14 18 -14 q12 0 16 14 q-17 5 -34 0z" fill="#fff6e0"/>
+          <rect x="186" y="92" width="26" height="6" rx="3" fill="#e9803c" transform="rotate(-10 199 95)"/>
+          <circle cx="206" cy="86" r="6" fill="#6e9a48"/><circle cx="214" cy="82" r="6" fill="#7fae55"/>
+          <path d="M84 104 L114 84" stroke="#d6553c" stroke-width="6" stroke-linecap="round"/>
+          <ellipse cx="119" cy="80" rx="10" ry="7" transform="rotate(-34 119 80)" fill="#ef9f80"/>
+          <path d="M256 72 c-12 0 -13 20 0 20" fill="none" stroke="#4f8f84" stroke-width="6" stroke-linecap="round"/>
+          <path d="M290 72 c12 0 13 20 0 20" fill="none" stroke="#4f8f84" stroke-width="6" stroke-linecap="round"/>
+          <path d="M256 62 h34 l-4 42 a6 6 0 0 1 -6 5 h-14 a6 6 0 0 1 -6 -5z" fill="#f2b7a6"/>
+          <path d="M253 60 a20 6 0 0 1 40 0 v5 h-40z" fill="#4f8f84"/>
+          <g class="fl" fill="#f4d77e"><path d="M60 40 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3z"/></g>
+          <g class="fl b" fill="#f4d77e"><path d="M310 30 l2.5 7 l7 2.5 l-7 2.5 l-2.5 7 l-2.5 -7 l-7 -2.5 l7 -2.5z"/></g>
+        </svg>
       </div>
-      <svg class="deco" viewBox="0 0 240 200" aria-hidden="true">
-        <path class="fl" pathLength="1" d="M20 130 a100 36 0 1 0 200 0 a100 36 0 1 0 -200 0"/>
-        <path class="fl" style="--dl:.3s" pathLength="1" d="M52 128 a68 22 0 1 0 136 0 a68 22 0 1 0 -136 0"/>
-        <path class="fl" style="--dl:.6s" pathLength="1" d="M100 124 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 M116 130 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0"/>
-        <path class="fl" style="--dl:.7s" pathLength="1" d="M136 122 l24 -6 M140 130 l24 -4"/>
-        <path class="fl" style="--dl:.9s" pathLength="1" d="M104 94 c-8 -10 8 -16 0 -28 c-6 -8 4 -16 0 -24 M128 90 c-8 -10 8 -16 0 -28 c-6 -8 4 -16 0 -24"/>
-        <path class="fl" style="--dl:1s" pathLength="1" d="M196 176 L226 146 M222 140 c3 -10 15 -15 19 -11 c4 4 -2 16 -11 19 c-6 1 -10 -2 -8 -8z"/>
-      </svg>
+      <span class="tag rv">Primeiro passo</span>
+      <h2 class="rv">Vamos entender juntos o que a hora de comer <em>está dizendo?</em></h2>
+      <p class="lead rv">Mande uma mensagem contando um pouco sobre o seu filho. A avaliação é o primeiro passo.</p>
+      <div class="ctas rv">
+        <a class="btn btn-wa mag" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar avaliação pelo WhatsApp</a>
+        <a class="btn btn-ghost mag" href="https://www.google.com/maps/search/?api=1&amp;query=Fonoaudi%C3%B3loga+D%C3%A9borah+Montenegro+P%C3%A1tio+Altiplano" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="fstripes" aria-hidden="true"></div>
   <div class="wrap foot">
     <div>
-      <b>Déborah Montenegro</b><br>
-      Fonoaudióloga · Esp. em Distúrbios Alimentares<br>
-      Shopping Pátio Altiplano, Sala 08, 1º andar · João Pessoa – PB<br>
-      WhatsApp <span class="num" style="user-select:all">(83) 99936-2068</span> · Instagram @fgadeborahmontenegro
+      <b>Déborah Montenegro</b>
+      <p>Fonoaudióloga · Esp. em Distúrbios Alimentares<br>Shopping Pátio Altiplano, Sala 08, 1º andar · João Pessoa – PB<br>WhatsApp <span class="num" style="user-select:all">(83) 99936-2068</span> · Instagram @fgadeborahmontenegro</p>
     </div>
-    <span class="seal">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
+    <span class="made">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar</span></a>
+<a class="fab" href="https://wa.me/5583999362068?text=Ol%C3%A1%2C%20D%C3%A9borah!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20meu%20filho(a)." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
 
 <script>
 (function(){
-  var root = document.documentElement;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var fine = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
-
   function fmt(v, dec){ return dec ? v.toFixed(dec).replace('.', ',') : String(Math.round(v)); }
   function countUp(el){
     if (el.dataset.done) return;
     el.dataset.done = '1';
     var to = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec || '0', 10);
     if (reduce) { el.textContent = fmt(to, dec); return; }
-    var t0 = null, dur = 1600;
+    var t0 = null, dur = 1500;
     el.textContent = fmt(0, dec);
     function step(t){
       if (!t0) t0 = t;
       var p = Math.min(1, (t - t0) / dur);
-      var e = 1 - Math.pow(1 - p, 3);
-      el.textContent = fmt(to * e, dec);
+      el.textContent = fmt(to * (1 - Math.pow(1 - p, 3)), dec);
       if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(to, dec);
     }
     requestAnimationFrame(step);
   }
+  var nowCounts = document.querySelectorAll('[data-now]');
+  for (var n = 0; n < nowCounts.length; n++){ (function(el){ setTimeout(function(){ countUp(el); }, 1300); })(nowCounts[n]); }
 
-  var stg = document.querySelectorAll('.stg');
-  for (var i = 0; i < stg.length; i++){
-    var kids = stg[i].children;
-    for (var k = 0; k < kids.length; k++){ kids[k].classList.add('rv'); kids[k].style.setProperty('--d', (k * 0.1) + 's'); }
-  }
-
-  var watched = document.querySelectorAll('.rv, [data-io], [data-count]');
+  var watched = document.querySelectorAll('.rv, .draw, .clipin, #tbars, .big-rate');
   function show(el){
     el.classList.add('in');
-    if (el.hasAttribute('data-count')) countUp(el);
-    var inner = el.querySelectorAll ? el.querySelectorAll('[data-count]') : [];
+    var inner = el.querySelectorAll('[data-count]');
     for (var j = 0; j < inner.length; j++) countUp(inner[j]);
+    var dr = el.querySelectorAll('.draw');
+    for (var k = 0; k < dr.length; k++) dr[k].classList.add('in');
   }
-  var nowCounts = document.querySelectorAll('[data-now]');
-  for (var n = 0; n < nowCounts.length; n++){ (function(el){ setTimeout(function(){ countUp(el); }, 1100); })(nowCounts[n]); }
-
   if (reduce || !('IntersectionObserver' in window)){
     for (var a = 0; a < watched.length; a++) show(watched[a]);
   } else {
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if (en.isIntersecting){ show(en.target); io.unobserve(en.target); } });
     }, {threshold: 0.12, rootMargin: '0px 0px -6% 0px'});
-    for (var b = 0; b < watched.length; b++){ if (!watched[b].hasAttribute('data-now')) io.observe(watched[b]); }
-  }
-
-  var tabs = document.querySelectorAll('[role="tab"][data-door]');
-  var panels = {fam: document.getElementById('p-fam'), pro: document.getElementById('p-pro')};
-  function selectDoor(key, focus){
-    for (var t = 0; t < tabs.length; t++){
-      var on = tabs[t].dataset.door === key;
-      tabs[t].setAttribute('aria-selected', on ? 'true' : 'false');
-      tabs[t].tabIndex = on ? 0 : -1;
-      if (on && focus) tabs[t].focus();
-    }
-    for (var p in panels){
-      var pan = panels[p];
-      if (p === key){
-        pan.hidden = false;
-        pan.classList.remove('enter'); void pan.offsetWidth; pan.classList.add('enter');
-        var r = pan.querySelectorAll('.rv'); for (var q = 0; q < r.length; q++) r[q].classList.add('in');
-      } else { pan.hidden = true; }
-    }
-  }
-  for (var d = 0; d < tabs.length; d++){
-    tabs[d].addEventListener('click', function(){ selectDoor(this.dataset.door); });
-    tabs[d].addEventListener('keydown', function(e){
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft'){ e.preventDefault(); selectDoor(this.dataset.door === 'fam' ? 'pro' : 'fam', true); }
-    });
-  }
-  panels.pro.hidden = true;
-  tabs[1].tabIndex = -1;
-  var links = document.querySelectorAll('[data-door-link]');
-  for (var l = 0; l < links.length; l++){
-    links[l].addEventListener('click', function(){ selectDoor(this.getAttribute('data-door-link')); });
+    for (var b = 0; b < watched.length; b++) io.observe(watched[b]);
   }
 
   var prog = document.getElementById('prog');
-  var art = document.getElementById('art');
   var pars = document.querySelectorAll('[data-par]');
-  var tl = document.getElementById('tl'), tlFill = document.getElementById('tl-fill');
-  var tlSteps = tl.querySelectorAll(':scope > ol > li');
+  var steps = document.getElementById('steps'), tlFill = document.getElementById('tl-fill');
+  var stepItems = steps.querySelectorAll('.step');
   var quote = document.getElementById('quote'), words = quote.querySelectorAll('.lw');
+  var top = document.getElementById('top');
+  var tones = document.querySelectorAll('[data-tone]');
+  var TONE = {cream:'', butter:'color-mix(in srgb, var(--butter-band) 92%, transparent)', coffee:'color-mix(in srgb, var(--coffee) 92%, transparent)'};
+  var INK = {cream:'', butter:'var(--on-butter)', coffee:'var(--on-coffee)'};
   if (reduce){ for (var w = 0; w < words.length; w++) words[w].classList.add('lit'); }
-  var ticking = false;
+  var ticking = false, lastTone = '';
   function onScroll(){
     ticking = false;
     var vh = window.innerHeight, sy = window.scrollY, docH = document.documentElement.scrollHeight - vh;
     prog.style.transform = 'scaleX(' + (docH > 0 ? Math.min(1, sy / docH) : 0) + ')';
-    if (reduce) return;
-    if (sy < vh * 1.2){
-      for (var i = 0; i < pars.length; i++) pars[i].style.transform = (pars[i].classList.contains('halo') ? 'translate(-50%,-50%) ' : '') + 'translateY(' + (sy * parseFloat(pars[i].dataset.par)) + 'px)';
+    var tone = 'cream';
+    for (var t = 0; t < tones.length; t++){
+      var tr = tones[t].getBoundingClientRect();
+      if (tr.top <= 40 && tr.bottom > 40){ tone = tones[t].dataset.tone; }
     }
-    var r = tl.getBoundingClientRect();
-    var p = Math.max(0, Math.min(1, (vh * 0.6 - r.top) / r.height));
+    if (tone !== lastTone){
+      lastTone = tone;
+      top.style.backgroundColor = TONE[tone];
+      top.style.color = INK[tone];
+      top.style.borderBottomColor = tone === 'cream' ? '' : 'transparent';
+    }
+    if (reduce) return;
+    for (var i = 0; i < pars.length; i++){
+      var el = pars[i], host = el.closest('section') || document.body;
+      var hr = host.getBoundingClientRect();
+      if (hr.bottom < -200 || hr.top > vh + 200) continue;
+      var off = (vh / 2 - (hr.top + hr.height / 2));
+      el.style.transform = 'translate3d(0,' + (off * parseFloat(el.dataset.par)).toFixed(1) + 'px,0)';
+    }
+    var r = steps.getBoundingClientRect();
+    var p = Math.max(0, Math.min(1, (vh * 0.65 - r.top) / r.height));
     tlFill.style.setProperty('--p', p.toFixed(3));
-    for (var s = 0; s < tlSteps.length; s++){
-      var sr = tlSteps[s].getBoundingClientRect();
-      tlSteps[s].classList.toggle('on', sr.top < vh * 0.62);
+    for (var s = 0; s < stepItems.length; s++){
+      stepItems[s].classList.toggle('on', stepItems[s].getBoundingClientRect().top < vh * 0.62);
     }
     var qr = quote.getBoundingClientRect();
     var qp = Math.max(0, Math.min(1, (vh * 0.85 - qr.top) / (qr.height + vh * 0.3)));
@@ -1054,18 +1335,26 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
   onScroll();
 
   if (fine && !reduce){
-    art.addEventListener('pointermove', function(e){
-      var r = art.getBoundingClientRect();
+    var scene = document.getElementById('scene'), sin = document.getElementById('scene-in');
+    scene.addEventListener('pointermove', function(e){
+      var r = scene.getBoundingClientRect();
       var x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
-      art.style.transform = 'perspective(900px) rotateY(' + (x * 6) + 'deg) rotateX(' + (-y * 6) + 'deg)';
+      sin.style.transform = 'perspective(1000px) rotateY(' + (x * 5) + 'deg) rotateX(' + (-y * 4) + 'deg)';
     });
-    art.addEventListener('pointerleave', function(){ art.style.transform = ''; });
+    scene.addEventListener('pointerleave', function(){ sin.style.transform = ''; });
+    var badge = document.getElementById('badge');
+    var stage = document.getElementById('cbfa');
+    stage.addEventListener('pointermove', function(e){
+      var r = stage.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      badge.querySelector('.badge').style.transform = 'perspective(800px) rotateY(' + (x * 14) + 'deg)';
+    });
+    stage.addEventListener('pointerleave', function(){ badge.querySelector('.badge').style.transform = ''; });
     var mags = document.querySelectorAll('.mag');
     for (var m = 0; m < mags.length; m++){
       mags[m].addEventListener('pointermove', function(e){
         var r = this.getBoundingClientRect();
-        var x = e.clientX - r.left - r.width / 2, y = e.clientY - r.top - r.height / 2;
-        this.style.transform = 'translate(' + (x * 0.14) + 'px,' + (y * 0.22) + 'px)';
+        this.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * 0.14) + 'px,' + ((e.clientY - r.top - r.height / 2) * 0.22) + 'px)';
       });
       mags[m].addEventListener('pointerleave', function(){ this.style.transform = ''; });
     }
@@ -1081,43 +1370,35 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
   var other = document.getElementById('other-txt');
   var otherL = document.getElementById('other-l');
   var cnt = document.getElementById('cnt'), mTxt = document.getElementById('m-txt');
-  var segs = [document.getElementById('s1'), document.getElementById('s2'), document.getElementById('s3')];
+  var plates = [document.getElementById('p1'), document.getElementById('p2'), document.getElementById('p3')];
   var NAMES = {recusa:'recusa a comida', engasgo:'engasga', 'vômito':'vomita', demora:'demora muito para comer', pastoso:'só come alimentos pastosos'};
   var lastTitle = '';
-
   function val(name){ var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : ''; }
   function joinList(arr){ if (arr.length < 2) return arr.join(''); return arr.slice(0, -1).join(', ') + ' e ' + arr[arr.length - 1]; }
   function swap(el){ if (reduce) return; el.classList.remove('swap'); void el.offsetWidth; el.classList.add('swap'); }
   function setTitle(main, em){
-    var key = main + em;
     gTitle.textContent = main + ' ';
     var e = document.createElement('em'); e.textContent = em; gTitle.appendChild(e);
-    if (key !== lastTitle){ lastTitle = key; swap(gTitle); }
+    if (main + em !== lastTitle){ lastTitle = main + em; swap(gTitle); }
   }
   function setGuide(lines){
     gText.innerHTML = '';
     for (var i = 0; i < lines.length; i++){ var p = document.createElement('p'); p.textContent = lines[i]; gText.appendChild(p); }
   }
-
   function build(ev){
     var idade = val('idade'), qtd = val('qtd'), evs = [];
     var boxes = form.querySelectorAll('input[name="ev"]:checked');
     for (var i = 0; i < boxes.length; i++) evs.push(boxes[i].value);
     var hasOther = evs.indexOf('outro') > -1;
     other.hidden = !hasOther; otherL.hidden = !hasOther;
-
     var done = (idade ? 1 : 0) + (qtd ? 1 : 0) + (evs.length ? 1 : 0);
     cnt.textContent = done + ' de 3 respondidas';
     mTxt.textContent = done + ' de 3';
-    segs[0].classList.toggle('on', done > 0);
-    segs[1].classList.toggle('on', done > 1);
-    segs[2].classList.toggle('on', done > 2);
-
+    for (var q = 0; q < 3; q++) plates[q].classList.toggle('on', done > q);
     var parts = [];
     for (var j = 0; j < evs.length; j++){ if (NAMES[evs[j]]) parts.push(NAMES[evs[j]]); }
     var otherTxt = hasOther ? other.value.trim() : '';
     if (otherTxt) parts.push(otherTxt); else if (hasOther) parts.push('outra situação que gostaria de explicar');
-
     var m = BASE, info = [];
     if (idade) info.push('Ele(a) tem ' + idade + '.');
     if (qtd) info.push('Aceita ' + qtd + ' alimentos.');
@@ -1126,7 +1407,6 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
     msg.textContent = m;
     send.href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(m);
     if (ev && ev.type === 'change') swap(msg);
-
     var safety = evs.indexOf('engasgo') > -1 || evs.indexOf('vômito') > -1;
     var signal = qtd === 'poucos' || evs.length > 0;
     if (!idade && !qtd && !evs.length){
@@ -1153,12 +1433,10 @@ setTimeout(function(){ if (!window.dmReady) document.documentElement.classList.a
     setGuide(lines);
     if (ev && ev.type === 'change') swap(gText);
   }
-
   form.addEventListener('change', build);
   other.addEventListener('input', build);
   form.addEventListener('submit', function(e){ e.preventDefault(); });
   build();
-
   window.dmReady = true;
 })();
 </script>

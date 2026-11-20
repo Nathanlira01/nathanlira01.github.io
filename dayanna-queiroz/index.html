@@ -15,427 +15,759 @@
 <body>
 <meta name="description" content="Dra. Dayanna Queiroz, nutricionista materno-infantil, PhD. Gestação, pós-parto e introdução alimentar responsiva. Consulta presencial no Liv Mall, em João Pessoa, ou on-line.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..800,100,1;1,9..144,400..700,100,1&family=Figtree:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
 <style>
 :root{
-  --bg:#fbf6f2;
-  --bg-2:#f4e8e3;
-  --surface:#fffbf8;
-  --ink:#2b1520;
-  --muted:#6f5762;
-  --line:#e7d5d3;
-  --rose:#ecd3d2;
-  --nude:#e9d6c8;
-  --accent:#b8135f;
-  --accent-ink:#a1104f;
-  --accent-soft:#f6dde6;
-  --on-accent:#fffaf7;
-  --deep:#2a1120;
-  --on-deep:#f8eaf0;
-  --on-deep-muted:#d4b4c3;
-  --deep-accent:#f07fb0;
-  --deep-line:rgba(248,234,240,.16);
-  --final:#9d1554;
-  --shadow:0 1px 0 rgba(43,21,32,.04),0 30px 60px -40px rgba(43,21,32,.45);
+  --cream:#fff6ec;
+  --cream-2:#fdecdc;
+  --blush:#ffe6ef;
+  --blush-2:#ffd0e2;
+  --surface:#ffffff;
+  --ink:#3a0e25;
+  --muted:#7a4a62;
+  --line:#f2cddc;
+  --pink:#e0167c;
+  --pink-ink:#ad0c5a;
+  --pink-bg:#d81273;
+  --pink-bg-2:#b80d61;
+  --on-pink:#fff8fb;
+  --on-pink-muted:#ffd7e8;
+  --card-peach:#ffd9c2;
+  --card-sage:#dfecd8;
+  --card-butter:#fff0b8;
+  --card-pink:#ffd6e6;
+  --sage-ink:#3c6b3f;
+  --peach-ink:#9a4a22;
+  --plum:#3a0e25;
+  --on-plum:#ffeef6;
+  --on-plum-muted:#e2b5ca;
+  --arch:#ffc8a8;
+  --blob:#ffd0e2;
+  --rug:#ffd6e4;
+  --sky:#ffe3ec;
+  --dots:rgba(224,22,124,.14);
+  --leafpat:rgba(224,22,124,.11);
+  --shadow:0 2px 0 rgba(58,14,37,.04),0 24px 44px -26px rgba(58,14,37,.45);
   --grain:.05;
+  --il-pink:#e0167c;
+  --il-pink-d:#a90b58;
+  --il-pink-l:#ff9cc7;
+  --il-peach:#ffb48c;
+  --il-coral:#ff8a6b;
+  --il-sage:#a9c8a0;
+  --il-sage-d:#6f9a6c;
+  --il-sage-l:#cfe3c7;
+  --il-butter:#ffd96b;
+  --il-butter-d:#f2b93b;
+  --il-cream:#fffaf2;
+  --il-plum:#5b1f3f;
+  --il-skin1:#f6c3a2;
+  --il-skin1s:#e2a27f;
+  --il-skin2:#b9774f;
+  --il-skin2s:#9c6040;
+  --il-hair1:#4a1d2b;
+  --il-hair2:#26111a;
+  --il-hair3:#8a4b2a;
+  --il-wood:#eeb07f;
+  --il-wood-d:#c98454;
+  --f-orange:#f58b34;
+  --f-red:#e5484d;
+  --f-green:#4f9a4c;
+  --f-yellow:#f7c63e;
+  --f-purple:#8e2f68;
   --ease:cubic-bezier(.2,.7,.2,1);
+  --spring:cubic-bezier(.34,1.45,.5,1);
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#170e12;
-    --bg-2:#20141a;
-    --surface:#261820;
-    --ink:#f6e9ee;
-    --muted:#c6aab6;
-    --line:#3c2a33;
-    --rose:#3e2630;
-    --nude:#3a2b28;
-    --accent:#ee6aa4;
-    --accent-ink:#f490bd;
-    --accent-soft:#3d1c2c;
-    --on-accent:#1e0d15;
-    --deep:#0e080b;
-    --on-deep:#f8eaf0;
-    --on-deep-muted:#c8a9b7;
-    --deep-accent:#f07fb0;
-    --deep-line:rgba(248,234,240,.12);
-    --final:#5e0c33;
-    --shadow:0 1px 0 rgba(0,0,0,.3),0 30px 60px -36px rgba(0,0,0,.8);
+    --cream:#1d0d16;
+    --cream-2:#26121e;
+    --blush:#2a1220;
+    --blush-2:#3a182c;
+    --surface:#2c1522;
+    --ink:#ffeef5;
+    --muted:#d8afc2;
+    --line:#4b2539;
+    --pink:#ff5aa6;
+    --pink-ink:#ff8cc1;
+    --pink-bg:#9c0f58;
+    --pink-bg-2:#7e0b46;
+    --on-pink:#fff0f6;
+    --on-pink-muted:#ffc6dd;
+    --card-peach:#3f241b;
+    --card-sage:#1f2e1f;
+    --card-butter:#3a3117;
+    --card-pink:#3e1730;
+    --sage-ink:#b2dcab;
+    --peach-ink:#ffbe98;
+    --plum:#12060c;
+    --on-plum:#ffeef6;
+    --on-plum-muted:#d6a9bd;
+    --arch:#4a2a22;
+    --blob:#3d1a2e;
+    --rug:#36172a;
+    --sky:#2e1524;
+    --dots:rgba(255,90,166,.12);
+    --leafpat:rgba(255,90,166,.08);
+    --shadow:0 2px 0 rgba(0,0,0,.3),0 24px 44px -24px rgba(0,0,0,.85);
     --grain:.07;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#170e12;
-  --bg-2:#20141a;
-  --surface:#261820;
-  --ink:#f6e9ee;
-  --muted:#c6aab6;
-  --line:#3c2a33;
-  --rose:#3e2630;
-  --nude:#3a2b28;
-  --accent:#ee6aa4;
-  --accent-ink:#f490bd;
-  --accent-soft:#3d1c2c;
-  --on-accent:#1e0d15;
-  --deep:#0e080b;
-  --on-deep:#f8eaf0;
-  --on-deep-muted:#c8a9b7;
-  --deep-accent:#f07fb0;
-  --deep-line:rgba(248,234,240,.12);
-  --final:#5e0c33;
-  --shadow:0 1px 0 rgba(0,0,0,.3),0 30px 60px -36px rgba(0,0,0,.8);
+  --cream:#1d0d16;
+  --cream-2:#26121e;
+  --blush:#2a1220;
+  --blush-2:#3a182c;
+  --surface:#2c1522;
+  --ink:#ffeef5;
+  --muted:#d8afc2;
+  --line:#4b2539;
+  --pink:#ff5aa6;
+  --pink-ink:#ff8cc1;
+  --pink-bg:#9c0f58;
+  --pink-bg-2:#7e0b46;
+  --on-pink:#fff0f6;
+  --on-pink-muted:#ffc6dd;
+  --card-peach:#3f241b;
+  --card-sage:#1f2e1f;
+  --card-butter:#3a3117;
+  --card-pink:#3e1730;
+  --sage-ink:#b2dcab;
+  --peach-ink:#ffbe98;
+  --plum:#12060c;
+  --on-plum:#ffeef6;
+  --on-plum-muted:#d6a9bd;
+  --arch:#4a2a22;
+  --blob:#3d1a2e;
+  --rug:#36172a;
+  --sky:#2e1524;
+  --dots:rgba(255,90,166,.12);
+  --leafpat:rgba(255,90,166,.08);
+  --shadow:0 2px 0 rgba(0,0,0,.3),0 24px 44px -24px rgba(0,0,0,.85);
   --grain:.07;
   color-scheme:dark;
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-h1,h2,h3{font-family:'Instrument Serif',Georgia,'Times New Roman',serif;font-weight:400;line-height:1.04;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.01em}
-h1 em,h2 em,h3 em{font-style:italic;color:var(--accent-ink)}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:70;opacity:var(--grain);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:650;line-height:1.04;margin:0;text-wrap:balance;overflow-wrap:break-word;letter-spacing:-.02em}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--pink-ink)}
 p{margin:0}
 a{color:inherit}
-a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:10px}
 .num{font-variant-numeric:tabular-nums}
-.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
-section{padding-block:clamp(72px,10vw,136px)}
-.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent)}
-.h2{font-size:clamp(2.3rem,5.6vw,4.2rem);margin-top:18px}
-.lead{color:var(--muted);font-size:1.06rem;max-width:56ch;margin-top:18px}
+.hand{font-family:'Caveat','Segoe Print',cursive;font-weight:700}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+section{position:relative;padding-block:clamp(72px,9vw,124px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--pink-ink)}
+.eyebrow svg{width:18px;height:18px;flex:none}
+.h2{font-size:clamp(2.2rem,5.4vw,4rem);margin-top:14px}
+.lead{color:var(--muted);font-size:1.07rem;max-width:56ch;margin-top:16px}
 
-.btn{--tx:0px;--ty:0px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:600;font-size:.98rem;text-decoration:none;border-radius:999px;padding:15px 26px;min-height:52px;border:1px solid transparent;cursor:pointer;text-align:center;transform:translate(var(--tx),var(--ty));transition:transform .5s var(--ease),background-color .3s,border-color .3s,color .3s}
-.btn svg{width:19px;height:19px;flex:none}
-.btn-wa{background:var(--accent);color:var(--on-accent)}
-.btn-wa:hover{background:var(--accent-ink)}
-.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn-ghost:hover{border-color:var(--ink)}
-.go{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--accent-ink);text-decoration:none;font-size:.96rem}
-.go svg{width:18px;height:18px;transition:transform .5s var(--ease)}
+.s-cream{background:var(--cream)}
+.s-blush{background:var(--blush)}
+.s-pink{background:var(--pink-bg);color:var(--on-pink)}
+.s-pink .eyebrow{color:var(--on-pink-muted)}
+.s-pink h2 em{color:var(--il-butter)}
+.s-pink .lead{color:var(--on-pink-muted)}
+.pat-dots::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,var(--dots) 2.2px,transparent 2.8px) 0 0/26px 26px;pointer-events:none}
+.pat-leaves::before{content:"";position:absolute;inset:0;background:var(--leafpat);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cpath d='M20 34c-2-12 6-20 18-20 2 12-6 20-18 20Z'/%3E%3Cpath d='M64 76c-12 0-18-8-16-18 12 0 18 8 16 18Z'/%3E%3Ccircle cx='70' cy='22' r='3'/%3E%3Ccircle cx='18' cy='70' r='2.4'/%3E%3C/svg%3E") 0 0/90px 90px repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cpath d='M20 34c-2-12 6-20 18-20 2 12-6 20-18 20Z'/%3E%3Cpath d='M64 76c-12 0-18-8-16-18 12 0 18 8 16 18Z'/%3E%3Ccircle cx='70' cy='22' r='3'/%3E%3Ccircle cx='18' cy='70' r='2.4'/%3E%3C/svg%3E") 0 0/90px 90px repeat;pointer-events:none}
+.s-pink.pat-dots::before{background:radial-gradient(circle,rgba(255,255,255,.12) 2.2px,transparent 2.8px) 0 0/26px 26px}
+.wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(28px,5vw,70px);display:block;pointer-events:none;z-index:2}
+.wave.flip{top:-1px;bottom:auto}
+
+.btn{--tx:0px;--ty:0px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:inherit;font-weight:800;font-size:1rem;text-decoration:none;border-radius:999px;padding:15px 26px;min-height:54px;border:2px solid transparent;cursor:pointer;text-align:center;transform:translate(var(--tx),var(--ty));transition:transform .45s var(--ease),background-color .25s,border-color .25s,color .25s,box-shadow .25s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--pink-bg);color:var(--on-pink);box-shadow:0 14px 26px -14px var(--pink-bg),inset 0 -3px 0 rgba(0,0,0,.14)}
+.btn-wa:hover{background:var(--pink-bg-2)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--pink)}
+.s-pink .btn-wa{background:var(--on-pink);color:var(--il-pink-d);box-shadow:0 14px 26px -14px rgba(0,0,0,.5),inset 0 -3px 0 rgba(0,0,0,.08)}
+.s-pink .btn-wa:hover{background:var(--il-butter);color:var(--il-plum)}
+.s-pink .card .btn-wa{background:var(--pink-bg);color:var(--on-pink);box-shadow:0 14px 26px -14px var(--pink-bg),inset 0 -3px 0 rgba(0,0,0,.14)}
+.s-pink .card .btn-wa:hover{background:var(--pink-bg-2);color:var(--on-pink)}
+.s-pink .btn-ghost{background:transparent;color:var(--on-pink);border-color:rgba(255,255,255,.5)}
+.s-pink .btn-ghost:hover{border-color:var(--on-pink)}
+.go{display:inline-flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;color:var(--pink-ink);font-size:.97rem}
+.go svg{width:18px;height:18px;transition:transform .45s var(--ease)}
 .go:hover svg{transform:translateX(5px)}
 
-.progress{position:fixed;top:0;left:0;right:0;height:2px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:40;pointer-events:none}
+.progress{position:fixed;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--il-pink),var(--il-peach),var(--il-butter),var(--il-sage));transform-origin:0 50%;transform:scaleX(0);z-index:50;pointer-events:none}
 
-.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb, var(--bg) 84%, transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px}
-.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1;min-width:0}
-.brand-name{font-family:'Instrument Serif',Georgia,serif;font-size:1.6rem;white-space:nowrap}
-.brand-name i{color:var(--accent-ink)}
-.brand small{font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:5px}
-.top-nav{display:flex;gap:28px;font-size:.92rem}
-.top-nav a{text-decoration:none;color:var(--muted);transition:color .3s}
-.top-nav a:hover{color:var(--ink)}
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--cream) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1;min-width:0}
+.brand-name{font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:700;font-size:1.36rem;letter-spacing:-.02em;white-space:nowrap}
+.brand-name i{font-weight:500;color:var(--pink-ink)}
+.brand small{font-size:.6rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-nav{display:flex;gap:24px;font-weight:600;font-size:.94rem}
+.top-nav a{text-decoration:none;color:var(--muted);transition:color .25s}
+.top-nav a:hover{color:var(--pink-ink)}
 .top .btn{padding:10px 18px;min-height:44px;font-size:.92rem}
-@media (max-width:980px){.top-nav{display:none}}
-@media (max-width:440px){.top .btn span{display:none}.top .btn{padding:10px 13px}.brand-name{font-size:1.38rem}.brand small{font-size:.56rem;letter-spacing:.14em}}
+@media (max-width:1020px){.top-nav{display:none}}
+@media (max-width:600px){.top .btn span{display:none}.top .btn{padding:10px 12px}.brand-name{font-size:1.18rem}.brand small{font-size:.52rem;letter-spacing:.1em}.brand-mark{width:34px;height:34px}}
 
-/* hero */
-.hero{position:relative;padding-block:clamp(40px,7vw,96px) clamp(56px,8vw,110px);overflow:hidden}
-.hero::before{content:"";position:absolute;width:min(900px,140vw);aspect-ratio:1;right:-30%;top:-40%;border-radius:50%;background:radial-gradient(closest-side,var(--rose),transparent);opacity:.7;pointer-events:none}
-.hero-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero{padding-block:clamp(28px,5vw,64px) clamp(70px,9vw,120px);background:var(--cream);overflow:hidden}
+.hero::after{content:"";position:absolute;width:min(760px,130vw);aspect-ratio:1;left:-22%;top:-38%;border-radius:47% 53% 60% 40%/50% 42% 58% 50%;background:var(--blush);opacity:.9;pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.12fr;grid-template-areas:"t art" "b art";column-gap:clamp(24px,4vw,56px);row-gap:0;align-items:center}
 .hero-grid > *{min-width:0}
-.hero h1{font-size:clamp(3.6rem,13vw,8rem);line-height:.92;margin-top:26px;letter-spacing:-.02em}
-.mask{display:block;overflow:hidden;padding:0 .1em .14em;margin:0 -.1em -.14em}
-.mask > span{display:inline-block;animation:wordUp 1.2s var(--ease) both}
+.hero-t{grid-area:t;align-self:end}
+.hero-b{grid-area:b;align-self:start}
+.hero-art{grid-area:art;position:relative}
+.chip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 12px;border-radius:999px;padding:6px 16px 6px 6px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);font-weight:700;font-size:.9rem;max-width:100%}
+.chip b{display:inline-flex;align-items:center;gap:6px;background:var(--pink-bg);color:var(--on-pink);border-radius:999px;padding:4px 12px;font-weight:800}
+.chip .stars{display:inline-flex;gap:2px;color:var(--il-butter-d)}
+.chip .stars svg{width:15px;height:15px}
+.hero h1{font-size:clamp(3.1rem,12.5vw,6.6rem);line-height:.9;margin-top:22px;letter-spacing:-.035em;font-weight:700}
+.hero h1 em{font-weight:500}
+.mask{display:block;overflow:hidden;padding:0 .12em .16em;margin:0 -.12em -.16em}
+.mask > span{display:inline-block;animation:wordUp 1.1s var(--ease) both}
 .mask:nth-child(2) > span{animation-delay:.14s}
-.who{margin-top:26px;font-size:1.05rem}
-.who b{font-weight:600}
-.who span{color:var(--muted)}
-.hero .lead{font-size:clamp(1.05rem,1.5vw,1.16rem)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.chip{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px 12px;border:1px solid var(--line);background:color-mix(in srgb, var(--surface) 70%, transparent);border-radius:999px;padding:7px 16px 7px 8px;font-size:.88rem;color:var(--muted);max-width:100%}
-.chip b{display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--bg);border-radius:999px;padding:3px 11px;font-weight:600}
-.chip b svg{width:13px;height:13px;color:var(--deep-accent)}
-.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+.hero h1 .squig{display:block;width:min(330px,72%);height:auto;margin-top:6px;overflow:visible}
+.squig path{stroke-dasharray:1;animation:draw 1.4s var(--ease) .8s both}
+.who{margin-top:18px;font-size:1.05rem;font-weight:700}
+.who span{color:var(--muted);font-weight:500}
+.hero .lead{font-size:clamp(1.04rem,1.5vw,1.15rem);margin-top:10px}
+.phase-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.phase-pills span{display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:999px;font-weight:700;font-size:.9rem}
+.phase-pills i{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--surface)}
+.phase-pills svg{width:16px;height:16px}
+.pp1{background:var(--card-pink);color:var(--pink-ink)}
+.pp2{background:var(--card-peach);color:var(--peach-ink)}
+.pp3{background:var(--card-sage);color:var(--sage-ink)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;font-size:.92rem;color:var(--muted);font-weight:600}
 .facts span{display:inline-flex;align-items:center;gap:8px;min-width:0}
-.facts svg{width:16px;height:16px;color:var(--accent-ink);flex:none}
-.phone{user-select:all;-webkit-user-select:all;color:var(--ink);font-weight:600}
-.seq{animation:fadeUp 1s var(--ease) both}
-.hero-art{position:relative}
-.hero-art svg{display:block;width:100%;height:auto;overflow:visible}
-.ring{transform-box:fill-box;transform-origin:center;animation:spin 60s linear infinite}
-.ring.r2{animation-duration:80s;animation-direction:reverse}
-.dr{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.8s var(--ease) both;animation-delay:var(--d,0s)}
-.lbl-art{animation:fadeIn 1s var(--ease) both;animation-delay:var(--d,0s)}
-.floaty{animation:floaty 7s ease-in-out infinite}
-.floaty.f2{animation-delay:-2.3s}.floaty.f3{animation-delay:-4.6s}
-@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:540px;width:100%;margin:8px auto 0}}
+.facts svg{width:18px;height:18px;color:var(--pink-ink);flex:none}
+.phone{white-space:nowrap;user-select:all;-webkit-user-select:all;color:var(--ink);font-weight:800}
+.seq{animation:fadeUp .9s var(--ease) both}
+.scene{display:block;width:100%;height:auto;overflow:visible}
+.stamp{position:absolute;right:-4px;top:-14px;width:clamp(86px,13vw,128px);height:auto;z-index:2;animation:popIn .9s var(--spring) 1.5s both}
+.stamp .rot{transform-box:fill-box;transform-origin:center;animation:spin 26s linear infinite}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;grid-template-areas:"t" "art" "b"}
+  .hero-art{max-width:600px;width:100%;margin:18px auto 8px}
+}
 
-@keyframes wordUp{from{transform:translateY(105%)}to{transform:none}}
+.pop{transform-box:fill-box;transform-origin:50% 100%;animation:popUp 1s var(--spring) both;animation-delay:var(--d,0s)}
+.fadein{animation:fadeIn 1s var(--ease) both;animation-delay:var(--d,0s)}
+.grow{transform-box:fill-box;transform-origin:center;animation:popIn .9s var(--spring) both;animation-delay:var(--d,0s)}
+.drawn{stroke-dasharray:1;animation:draw 2s var(--ease) both;animation-delay:var(--d,0s)}
+.sway{transform-box:fill-box;transform-origin:50% 0%;animation:sway 5s ease-in-out infinite}
+.sway.s2{animation-delay:-1.6s}.sway.s3{animation-delay:-3.1s}
+.bob{animation:bob 5.5s ease-in-out infinite}
+.bob.b2{animation-delay:-1.8s}.bob.b3{animation-delay:-3.6s}.bob.b4{animation-delay:-2.6s}
+.twinkle{transform-box:fill-box;transform-origin:center;animation:twinkle 3.2s ease-in-out infinite}
+.twinkle.t2{animation-delay:-1.1s}.twinkle.t3{animation-delay:-2.2s}
+.par{will-change:transform}
+
+@keyframes wordUp{from{transform:translateY(108%)}to{transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes popUp{from{opacity:0;transform:translateY(40px) scale(.86)}to{opacity:1;transform:none}}
+@keyframes popIn{from{opacity:0;transform:scale(.4) rotate(-12deg)}to{opacity:1;transform:none}}
 @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 @keyframes spin{to{transform:rotate(360deg)}}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes twinkle{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.55);opacity:.55}}
 @keyframes marquee{to{transform:translateX(-50%)}}
-@keyframes wave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@keyframes marqueeR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes wave{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
+@keyframes swing{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes steam{0%{transform:translateY(6px);opacity:0}40%{opacity:.8}100%{transform:translateY(-14px);opacity:0}}
 @keyframes swapIn{from{opacity:0;transform:translateY(16px);clip-path:inset(0 0 30% 0)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0)}}
+@keyframes ping{0%{transform:scale(.6);opacity:.7}100%{transform:scale(1.8);opacity:0}}
+@keyframes playbar{from{transform:scaleX(.12)}to{transform:scaleX(.78)}}
 
-/* marquee */
-.marquee{border-block:1px solid var(--line);padding-block:20px;overflow:hidden;background:var(--bg)}
-.mq-track{display:flex;width:max-content;animation:marquee 60s linear infinite}
-.mq-track span{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem);white-space:nowrap;padding-right:28px;display:inline-flex;align-items:center;gap:28px}
-.mq-track span i{color:var(--accent-ink)}
-.mq-track span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);opacity:.7}
-
-/* reveal */
-.js .rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--i,0) * 110ms)}
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0) * 110ms)}
 .js .rv.in{opacity:1;transform:none}
+.js .rv-tilt{opacity:0;transform:translateY(40px) rotate(-3deg) scale(.96);transition:opacity .9s var(--ease),transform 1s var(--spring);transition-delay:calc(var(--i,0) * 120ms)}
+.js .rv-tilt.in{opacity:1;transform:none}
 
-/* fases + fio */
-.fases-head{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
-.fases-head > *{min-width:0}
-.thread-wrap{position:relative;margin-top:64px}
-.thread{position:absolute;left:0;top:0;width:80px;height:100%;overflow:visible}
-.thread path{fill:none;vector-effect:non-scaling-stroke}
-.thread .t-bg{stroke:var(--line);stroke-width:1}
-.thread .t-fg{stroke:var(--accent);stroke-width:1.6;stroke-dasharray:1;stroke-dashoffset:0;stroke-linecap:round}
-.fase-list{list-style:none;margin:0;padding:0 0 0 120px;display:grid;gap:clamp(56px,8vw,110px)}
-.fase{position:relative;display:grid;grid-template-columns:auto 1fr 180px;gap:clamp(18px,3vw,44px);align-items:start}
-.fase > *{min-width:0}
-.node{position:absolute;left:-88px;top:22px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:1px solid var(--accent);transition:background-color .8s var(--ease) .3s}
-.fase.in .node{background:var(--accent)}
-.fase-num{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(3.4rem,7vw,5.6rem);line-height:.8;color:var(--accent-ink)}
-.fase h3{font-size:clamp(2rem,4vw,3rem)}
-.fase .sub{color:var(--muted);margin-top:10px;max-width:46ch}
-.fase ul{list-style:none;padding:0;margin:22px 0 0;display:grid}
-.fase li{padding:12px 0;border-top:1px solid var(--line);font-size:.98rem;display:grid;grid-template-columns:18px 1fr;gap:12px}
-.fase li > *{min-width:0}
-.fase li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:10px}
-.fase-art{width:100%;color:var(--ink)}
-.fase-art svg{display:block;width:100%;height:auto}
-.resp{margin-top:22px;border-left:1px solid var(--accent);padding:4px 0 4px 20px}
-.resp b{display:block;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-style:italic;font-size:1.5rem;color:var(--accent-ink)}
-.resp p{color:var(--muted);margin-top:6px;font-size:.97rem;max-width:56ch}
-@media (max-width:900px){.fases-head{grid-template-columns:1fr}.fase{grid-template-columns:1fr}.fase-art{max-width:150px;order:-1}.fase-num{font-size:3.2rem}}
-@media (max-width:640px){.thread{width:36px}.fase-list{padding-left:50px}.node{left:-42px;top:16px;width:13px;height:13px}}
+.ribbons{position:relative;z-index:3;margin-block:-38px -10px;padding-block:24px;overflow:hidden}
+.ribbon{display:flex;overflow:hidden;padding-block:14px;white-space:nowrap}
+.ribbon.r1{background:var(--pink-bg);color:var(--on-pink);transform:rotate(-2.2deg);margin-inline:-20px;position:relative;z-index:2;box-shadow:0 18px 30px -20px rgba(58,14,37,.6)}
+.ribbon.r2{background:var(--il-sage);color:var(--il-plum);transform:rotate(1.6deg);margin-inline:-20px;margin-top:-16px}
+.rb-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.ribbon.r2 .rb-track{animation:marqueeR 60s linear infinite}
+.rb-track span{display:inline-flex;align-items:center;gap:22px;padding-right:22px;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:600;font-size:clamp(1.25rem,2.6vw,1.9rem)}
+.rb-track span em{font-style:italic;font-weight:500}
+.rb-track svg{width:22px;height:22px;flex:none}
+.r1 .rb-track svg{color:var(--il-butter)}
+.r2 .rb-track span{font-size:clamp(1rem,2vw,1.35rem);font-family:'Figtree',sans-serif;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.r2 .rb-track svg{color:var(--il-pink-d);width:16px;height:16px}
 
-/* seletor */
-.sel{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden}
-.sel::before{content:"";position:absolute;width:900px;aspect-ratio:1;left:-300px;bottom:-500px;border-radius:50%;background:radial-gradient(closest-side,rgba(240,127,176,.16),transparent);pointer-events:none}
-.sel .eyebrow{color:var(--on-deep-muted)}
-.sel .eyebrow::before{background:var(--deep-accent)}
-.sel h2 em{color:var(--deep-accent)}
-.sel .lead{color:var(--on-deep-muted)}
-.sel-grid{position:relative;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,72px);align-items:start}
+.fases{padding-top:clamp(90px,11vw,150px)}
+.sec-head{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:end;position:relative;z-index:1}
+.sec-head > *{min-width:0}
+.note-hand{font-family:'Caveat','Segoe Print',cursive;font-weight:700;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.1;color:var(--sage-ink);transform:rotate(-3deg);display:flex;align-items:center;gap:10px}
+.note-hand svg{width:60px;height:40px;flex:none;color:var(--pink)}
+.tl{position:relative;margin-top:56px;padding-left:84px;z-index:1}
+.tl-vine{position:absolute;left:0;top:10px;bottom:10px;width:64px}
+.tl-vine svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.tl-vine path{fill:none;stroke-linecap:round}
+.tl-vine .v-bg{stroke:var(--line);stroke-width:3;stroke-dasharray:2 10;vector-effect:non-scaling-stroke}
+.tl-vine .v-fg{stroke:var(--il-sage-d);stroke-width:4;stroke-dasharray:1;stroke-dashoffset:0}
+.vleaf{position:absolute;width:30px;height:30px;color:var(--il-sage-d)}
+.vleaf svg{width:100%;height:100%}
+.vleaf.l{left:-2px}.vleaf.r{left:34px}
+.stations{list-style:none;margin:0;padding:0;display:grid;gap:clamp(40px,6vw,80px)}
+.station{position:relative;display:grid;grid-template-columns:clamp(200px,24vw,280px) 1fr;gap:clamp(20px,4vw,48px);align-items:center}
+.station > *{min-width:0}
+.station:nth-child(2){grid-template-columns:1fr clamp(200px,24vw,280px)}
+.station:nth-child(2) .vig{order:2}
+.node{position:absolute;left:-74px;top:50%;margin-top:-22px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:3px solid var(--il-sage-d);color:var(--pink-ink);z-index:1;transition:transform .8s var(--spring),background-color .6s}
+.node svg{width:20px;height:20px}
+.station.in .node{background:var(--card-butter)}
+.js .station:not(.in) .node{transform:scale(.3)}
+.vig{position:relative}
+.vig svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 22px 22px rgba(58,14,37,.16))}
+.js .station .vig{transform:scale(.7) rotate(-10deg);opacity:0;transition:transform 1.1s var(--spring),opacity .7s var(--ease)}
+.js .station.in .vig{transform:none;opacity:1}
+.vig .tagv{position:absolute;right:4%;bottom:6%;font-family:'Caveat','Segoe Print',cursive;font-weight:700;font-size:1.4rem;line-height:1;background:var(--surface);color:var(--pink-ink);padding:6px 14px 8px;border-radius:999px;box-shadow:var(--shadow);transform:rotate(-6deg)}
+.st-card{position:relative;border-radius:34px 34px 34px 10px;padding:clamp(22px,3.4vw,40px);box-shadow:var(--shadow);overflow:hidden}
+.st-card::after{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.55) 2px,transparent 2.6px) 0 0/14px 14px;opacity:.7;pointer-events:none}
+.station:nth-child(1) .st-card{background:var(--card-pink)}
+.station:nth-child(2) .st-card{background:var(--card-peach);border-radius:34px 34px 10px 34px}
+.station:nth-child(3) .st-card{background:var(--card-sage)}
+.st-num{display:inline-flex;align-items:center;gap:10px;font-family:'Caveat','Segoe Print',cursive;font-weight:700;font-size:1.35rem;color:var(--pink-ink)}
+.st-num b{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--pink-bg);color:var(--on-pink);font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;font-size:1.3rem;transform:rotate(-8deg)}
+.station:nth-child(2) .st-num b{background:var(--il-coral);color:var(--il-plum)}
+.station:nth-child(3) .st-num b{background:var(--il-sage-d);color:#fff}
+.st-card h3{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-top:12px}
+.st-card .sub{color:var(--muted);margin-top:8px;max-width:48ch}
+.ticks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.ticks li{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;font-size:.98rem;font-weight:500}
+.ticks li > *{min-width:0}
+.ticks svg{width:24px;height:24px;color:var(--il-pink-d);margin-top:1px}
+.station:nth-child(3) .ticks svg{color:var(--il-sage-d)}
+.postit{position:relative;margin-top:22px;background:var(--card-butter);border-radius:6px 6px 22px 6px;padding:22px 22px 20px;transform:rotate(-1.2deg);box-shadow:0 14px 24px -18px rgba(58,14,37,.5)}
+.postit::before{content:"";position:absolute;top:-12px;left:50%;width:92px;height:24px;margin-left:-46px;background:color-mix(in srgb,var(--il-pink-l) 70%,transparent);transform:rotate(-3deg);border-radius:3px}
+.postit b{display:block;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-size:1.35rem;font-weight:650}
+.postit p{margin-top:6px;color:var(--muted);font-size:.97rem}
+@media (max-width:900px){
+  .sec-head{grid-template-columns:1fr}
+  .station,.station:nth-child(2){grid-template-columns:1fr}
+  .station:nth-child(2) .vig{order:0}
+  .vig{max-width:230px}
+  .node{top:40px;margin-top:0}
+}
+@media (max-width:640px){
+  .tl{padding-left:50px}
+  .tl-vine{width:40px}
+  .vleaf{width:22px;height:22px}
+  .vleaf.r{left:20px}
+  .node{left:-48px;width:36px;height:36px}
+  .node svg{width:17px;height:17px}
+  .vig{max-width:200px}
+}
+
+.sel{overflow:hidden}
+.sel::after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-160px;border-radius:50%;background:var(--pink-bg-2);opacity:.6;pointer-events:none}
+.sel-grid{position:relative;z-index:1;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,72px);align-items:start}
 .sel-grid > *{min-width:0}
-.side{list-style:none;padding:0;margin:36px 0 0;display:grid}
-.side li{padding:16px 0;border-top:1px solid var(--deep-line)}
-.side b{display:block;font-weight:600}
-.side span{color:var(--on-deep-muted);font-size:.95rem}
-.card{background:var(--bg);color:var(--ink);border-radius:28px;padding:clamp(18px,3vw,34px);box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
-.seg{--idx:0;position:relative;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;padding:4px;background:var(--bg-2)}
-.seg::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc((100% - 8px) / 3);border-radius:14px;background:var(--surface);box-shadow:0 8px 20px -12px rgba(43,21,32,.4);transform:translateX(calc(var(--idx) * 100%));transition:transform .7s var(--ease)}
+.side{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:12px}
+.side li{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:12px 16px 12px 12px}
+.side li > *{min-width:0}
+.side .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--il-butter);color:var(--il-plum);transform:rotate(-4deg)}
+.side li:nth-child(2) .ic{background:var(--il-sage-l);transform:rotate(3deg)}
+.side li:nth-child(3) .ic{background:var(--il-peach)}
+.side .ic svg{width:22px;height:22px}
+.side b{display:block;font-weight:800}
+.side span{color:var(--on-pink-muted);font-size:.94rem}
+.sel-art{display:block;width:150px;margin-top:26px;color:var(--il-butter)}
+.card{position:relative;background:var(--cream);color:var(--ink);border-radius:32px;padding:clamp(18px,3vw,34px);box-shadow:0 40px 70px -36px rgba(30,0,15,.75)}
+.card::before,.card::after{content:"";position:absolute;top:-12px;width:84px;height:26px;background:color-mix(in srgb,var(--il-butter) 85%,transparent);border-radius:3px}
+.card::before{left:28px;transform:rotate(-6deg)}
+.card::after{right:28px;transform:rotate(5deg);background:color-mix(in srgb,var(--il-sage) 85%,transparent)}
+.card-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.card-title h3{font-size:1.5rem}
+.card-title .hand{color:var(--pink-ink);font-size:1.3rem;transform:rotate(-4deg)}
+.seg{--idx:0;position:relative;display:grid;grid-template-columns:repeat(3,1fr);border-radius:22px;padding:5px;background:var(--blush)}
+.seg::before{content:"";position:absolute;top:5px;bottom:5px;left:5px;width:calc((100% - 10px) / 3);border-radius:18px;background:var(--surface);box-shadow:0 10px 20px -12px rgba(58,14,37,.45);transform:translateX(calc(var(--idx) * 100%));transition:transform .7s var(--spring)}
 .seg label{position:relative;display:flex;min-width:0}
 .seg input{position:absolute;opacity:0;width:1px;height:1px}
-.seg span{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;min-height:62px;padding:8px 6px;border-radius:14px;cursor:pointer;font-weight:600;font-size:.92rem;line-height:1.15;color:var(--muted);transition:color .4s}
-.seg span small{font-weight:500;font-size:.74rem;opacity:.85}
-.seg input:checked + span{color:var(--accent-ink)}
-.seg input:focus-visible + span{outline:2px solid var(--accent);outline-offset:-2px}
-.panel{margin-top:24px}
-.panel.play{animation:swapIn .8s var(--ease) both}
-.p-head{display:grid;grid-template-columns:1fr 92px;gap:16px;align-items:center}
-.p-head > *{min-width:0}
-.p-head h3{font-size:clamp(1.6rem,3vw,2.1rem)}
-.p-head p{color:var(--muted);font-size:.95rem;margin-top:4px}
-.p-head svg{width:92px;height:92px;color:var(--ink)}
-.panel ul{list-style:none;padding:0;margin:16px 0 0;display:grid}
-.panel li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:.95rem}
+.seg span{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;min-height:92px;padding:8px 4px;border-radius:18px;cursor:pointer;font-weight:800;font-size:.92rem;line-height:1.1;color:var(--muted);transition:color .3s}
+.seg span i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;transition:transform .5s var(--spring)}
+.seg label:nth-child(1) span i{background:var(--card-pink);color:var(--pink-ink)}
+.seg label:nth-child(2) span i{background:var(--card-peach);color:var(--peach-ink)}
+.seg label:nth-child(3) span i{background:var(--card-sage);color:var(--sage-ink)}
+.seg span i svg{width:20px;height:20px}
+.seg span small{font-weight:500;font-size:.74rem;opacity:.9}
+.seg input:checked + span{color:var(--ink)}
+.seg input:checked + span i{transform:scale(1.12) rotate(-6deg)}
+.seg input:focus-visible + span{outline:3px solid var(--pink);outline-offset:-3px}
+.panel{margin-top:20px}
+.panel.play{animation:swapIn .7s var(--ease) both}
+.panel h4{font-size:1.5rem}
+.panel h4 em{font-style:italic;font-weight:500;color:var(--pink-ink)}
+.panel > p{color:var(--muted);font-size:.94rem;margin-top:2px}
+.panel ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+.panel li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:.95rem}
 .panel li > *{min-width:0}
-.panel li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:9px}
-.fld{margin-top:16px;min-width:0}
-.fld-l{display:block;font-weight:600;font-size:.88rem;margin-bottom:8px}
-.fld-l span{font-weight:400;color:var(--muted)}
-.txt{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
-.txt:focus{border-color:var(--accent);outline:none}
-.tri{display:inline-block;margin-top:10px;font-size:.84rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:3px 12px}
-.tri:empty,.tip:empty{display:none}
-.tip{margin-top:10px;font-size:.9rem;color:var(--muted);background:var(--bg-2);border-radius:12px;padding:10px 12px}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
-.row2 > *{min-width:0}
+.panel li svg{width:20px;height:20px;color:var(--il-sage-d);margin-top:2px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
 legend{padding:0}
+.fld{margin-top:16px;min-width:0}
+.fld-l{display:block;font-weight:800;font-size:.9rem;margin-bottom:8px}
+.fld-l span{font-weight:500;color:var(--muted)}
+.txt{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:14px;border:2px solid var(--line);background:var(--surface);color:var(--ink)}
+.txt:focus{border-color:var(--pink);outline:none}
+.tri{display:inline-block;margin-top:10px;font-size:.86rem;font-weight:800;color:var(--sage-ink);background:var(--card-sage);border-radius:999px;padding:4px 12px}
+.tri:empty,.tip:empty{display:none}
+.tip{margin-top:10px;font-size:.9rem;color:var(--muted);background:var(--card-butter);border-radius:14px;padding:10px 12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px}
+.row2 > *{min-width:0}
 .pills{display:flex;flex-wrap:wrap;gap:6px}
 .pill{position:relative;display:inline-flex}
 .pill input{position:absolute;opacity:0;width:1px;height:1px}
-.pill span{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.9rem;font-weight:500;cursor:pointer;transition:background-color .3s,border-color .3s,color .3s}
-.pill span:hover{border-color:var(--accent)}
-.pill input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.pill input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
-.preview{margin-top:18px;background:var(--bg-2);border-radius:16px;padding:14px 16px;font-size:.9rem;white-space:pre-wrap;color:var(--muted);overflow-wrap:anywhere}
-.preview b{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:6px;white-space:normal;font-weight:600}
+.pill span{display:inline-flex;padding:9px 14px;border-radius:999px;border:2px solid var(--line);background:var(--surface);font-size:.9rem;font-weight:700;cursor:pointer;transition:background-color .25s,border-color .25s,color .25s}
+.pill span:hover{border-color:var(--pink)}
+.pill input:checked + span{background:var(--pink-bg);border-color:var(--pink-bg);color:var(--on-pink)}
+.pill input:focus-visible + span{outline:3px solid var(--pink);outline-offset:2px}
+.preview{position:relative;margin-top:18px;background:var(--card-sage);border-radius:18px 18px 18px 4px;padding:14px 16px;font-size:.92rem;white-space:pre-wrap;color:var(--ink);overflow-wrap:anywhere}
+.preview b{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage-ink);margin-bottom:6px;white-space:normal;font-weight:800}
 .card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px}
 .linkbtn{background:none;border:0;font:inherit;color:var(--muted);text-decoration:underline;cursor:pointer;padding:6px}
 .disc{margin-top:12px;font-size:.82rem;color:var(--muted)}
-@media (max-width:920px){.sel-grid{grid-template-columns:1fr}}
-@media (max-width:520px){.row2{grid-template-columns:1fr}.p-head{grid-template-columns:1fr 70px}.p-head svg{width:70px;height:70px}.seg span{font-size:.84rem;min-height:58px;padding:6px 4px}}
+@media (max-width:920px){.sel-grid{grid-template-columns:1fr}.sel-art{display:none}}
+@media (max-width:520px){.row2{grid-template-columns:1fr}.seg span{font-size:.82rem;min-height:86px}.seg span small{font-size:.68rem}}
 
-/* consulta */
-.cons-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
-.cons-grid > *{min-width:0}
-.steps{list-style:none;padding:0;margin:40px 0 0;position:relative;display:grid;gap:30px}
-.steps::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:1px;background:var(--accent);transform-origin:top;transform:scaleY(var(--s,1));transition:transform 1.6s var(--ease) .2s}
-.js .steps.rv:not(.in){--s:0}
-.steps li{display:grid;grid-template-columns:44px 1fr;gap:18px;position:relative}
-.steps li > *{min-width:0}
-.steps .n{width:44px;height:44px;border-radius:50%;border:1px solid var(--accent);background:var(--bg);display:grid;place-items:center;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.3rem;color:var(--accent-ink)}
-.steps h3{font-size:1.6rem;margin-top:6px}
-.steps p{color:var(--muted);margin-top:4px;font-size:.97rem}
-.note{margin-top:28px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.5rem;color:var(--accent-ink)}
-.modes{display:grid;gap:14px}
-.mode{border:1px solid var(--line);border-radius:24px;padding:clamp(20px,3vw,30px);background:var(--surface)}
-.mode .tag{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.mode h3{font-size:1.9rem;margin-top:8px}
-.mode p{color:var(--muted);margin-top:8px;font-size:.97rem}
-.mode .addr{color:var(--ink);font-weight:500}
-.mode .go{margin-top:16px}
-.when{margin-top:14px;border-radius:24px;padding:clamp(20px,3vw,30px);background:var(--bg-2)}
-.when h3{font-size:1.7rem}
-.when ul{list-style:none;padding:0;margin:14px 0 0;display:grid}
-.when li{padding:10px 0;border-top:1px solid var(--line);font-size:.96rem;display:grid;grid-template-columns:18px 1fr;gap:10px}
+.how-grid{display:grid;grid-template-columns:1fr;gap:28px}
+.steps{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+.steps > li{min-width:0;position:relative;background:var(--surface);border-radius:26px;padding:26px 22px 24px;box-shadow:var(--shadow);border-top:10px solid var(--il-pink)}
+.steps > li:nth-child(2){border-top-color:var(--il-peach);transform:translateY(18px)}
+.steps > li:nth-child(3){border-top-color:var(--il-sage-d);transform:translateY(36px)}
+.steps .n{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:4rem;line-height:.8;color:var(--pink-ink)}
+.steps > li:nth-child(2) .n{color:var(--peach-ink)}
+.steps > li:nth-child(3) .n{color:var(--sage-ink)}
+.steps h3{font-size:1.5rem;margin-top:10px}
+.steps p{color:var(--muted);margin-top:6px;font-size:.97rem}
+.steps .ill{position:absolute;right:14px;top:14px;width:62px;height:62px}
+.js .steps.rv:not(.in) > li{transform:translateY(40px);opacity:0}
+.steps.rv > li{transition:transform 1s var(--spring),opacity .8s var(--ease)}
+.steps.rv > li:nth-child(2){transition-delay:.15s}
+.steps.rv > li:nth-child(3){transition-delay:.3s}
+.note{margin-top:60px;font-family:'Caveat','Segoe Print',cursive;font-weight:700;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--pink-ink);transform:rotate(-2deg);display:flex;align-items:center;gap:10px}
+.note svg{width:30px;height:30px;color:var(--il-sage-d)}
+.modes{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:22px}
+.modes > *{min-width:0}
+.mode{position:relative;border-radius:32px;padding:clamp(22px,3vw,34px);overflow:hidden;min-height:260px;display:flex;flex-direction:column}
+.mode .tag{align-self:flex-start;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;border-radius:999px;padding:5px 12px}
+.mode h3{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px;max-width:16ch;position:relative;z-index:1}
+.mode p{margin-top:10px;max-width:34ch;position:relative;z-index:1}
+.mode .go{margin-top:auto;padding-top:18px;position:relative;z-index:1}
+.mode-in{background:var(--pink-bg);color:var(--on-pink)}
+.mode-in .tag{background:var(--il-butter);color:var(--il-plum)}
+.mode-in h3 em{color:var(--il-butter)}
+.mode-in p{color:var(--on-pink-muted)}
+.mode-in .go{color:var(--on-pink)}
+.mode-on{background:var(--card-sage)}
+.mode-on .tag{background:var(--surface);color:var(--sage-ink)}
+.mode-on p{color:var(--muted)}
+.mode-ill{position:absolute;right:-6px;bottom:-6px;width:min(40%,220px);height:auto;pointer-events:none}
+.mode p{max-width:30ch}
+@media (max-width:640px){.mode-ill{position:relative;right:auto;bottom:auto;align-self:flex-end;width:190px;margin:8px -14px -16px 0}.mode{min-height:0}}
+.when{margin-top:18px;position:relative;background:var(--card-butter);border-radius:32px;padding:clamp(22px,3.4vw,40px);display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:start;overflow:hidden}
+.when > *{min-width:0}
+.when h3{font-size:clamp(1.8rem,3.2vw,2.5rem)}
+.when ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.when li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;background:var(--surface);border-radius:18px;padding:10px 14px 10px 10px;font-size:.97rem;font-weight:500}
 .when li > *{min-width:0}
-.when li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:9px}
-@media (max-width:900px){.cons-grid{grid-template-columns:1fr}}
+.when li i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--card-pink);color:var(--pink-ink)}
+.when li:nth-child(2) i{background:var(--card-peach);color:var(--peach-ink)}
+.when li:nth-child(3) i{background:var(--card-sage);color:var(--sage-ink)}
+.when li:nth-child(4) i{background:var(--card-butter);color:var(--peach-ink)}
+.when li i svg{width:18px;height:18px}
+@media (max-width:900px){.steps{grid-template-columns:1fr}.steps > li:nth-child(2),.steps > li:nth-child(3){transform:none}.modes{grid-template-columns:1fr}.when{grid-template-columns:1fr}.note{margin-top:28px}}
 
-/* ecossistema */
-.eco{background:var(--bg-2);position:relative;overflow:hidden}
-.eco-head{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
+.eco{overflow:hidden;transition:background-color 1.4s var(--ease)}
+.eco.warm{background:var(--blush)}
+.blobby{position:absolute;pointer-events:none;border-radius:50%}
+.eco .b1{width:420px;height:420px;left:-160px;top:120px;background:var(--card-peach);opacity:.6;border-radius:58% 42% 50% 50%/45% 55% 45% 55%}
+.eco .b2{width:360px;height:360px;right:-140px;bottom:80px;background:var(--card-sage);opacity:.7;border-radius:42% 58% 60% 40%/55% 45% 55% 45%}
+.eco-head{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
 .eco-head > *{min-width:0}
-.eco-link{display:block;width:100%;height:60px;margin-top:48px;overflow:visible}
-.eco-link path{fill:none;stroke:var(--accent);stroke-width:1.2;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 2s var(--ease)}
-.js .eco-link.rv:not(.in) path{stroke-dashoffset:1}
-.eco-link circle{fill:var(--bg-2);stroke:var(--accent);stroke-width:1.2;vector-effect:non-scaling-stroke}
-.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.eco-grid > *{min-width:0}
-.tilt{--rx:0deg;--ry:0deg;--mx:50%;--my:50%;position:relative;height:100%;display:flex;flex-direction:column;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3vw,32px);transform:perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));transition:transform .6s var(--ease);overflow:hidden;will-change:transform}
-.tilt::after{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at var(--mx) var(--my),color-mix(in srgb, var(--accent) 12%, transparent),transparent 60%);opacity:0;transition:opacity .5s;pointer-events:none}
-.tilt:hover::after{opacity:1}
-.tilt .tag{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.tilt h3{font-size:clamp(1.8rem,2.6vw,2.2rem)}
-.tilt p{color:var(--muted);font-size:.97rem}
-.tilt .go{margin-top:auto;padding-top:10px}
-.tilt .art{height:120px;display:flex;align-items:center;color:var(--ink)}
-.tilt .art svg{height:100%;width:auto}
-.tilt.dark{background:var(--deep);color:var(--on-deep);border-color:transparent}
-.tilt.dark .tag,.tilt.dark p{color:var(--on-deep-muted)}
-.tilt.dark h3 em{color:var(--deep-accent)}
-.tilt.dark .go{color:var(--deep-accent)}
-.bars-w{display:flex;align-items:center;gap:5px;height:120px}
-.bars-w i{display:block;width:4px;height:64px;border-radius:2px;background:var(--deep-accent);transform-origin:center;animation:wave 1.6s ease-in-out infinite}
-.more{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:1px solid var(--line)}
-.more > *{min-width:0;padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
-.more h4{margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:1.45rem}
-.more p{color:var(--muted);font-size:.93rem;margin:4px 0 10px}
-.pro{margin-top:44px;display:grid;grid-template-columns:auto 1fr;gap:20px 40px;align-items:start}
-.pro > *{min-width:0}
-.titles{display:flex;flex-wrap:wrap;gap:8px}
-.titles span{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.3rem;padding:4px 16px;border-radius:999px;border:1px solid var(--accent);color:var(--accent-ink)}
-.pro p{color:var(--muted);max-width:60ch}
-.pro p a{color:var(--accent-ink);font-weight:600}
-@media (max-width:900px){.eco-head{grid-template-columns:1fr}.eco-grid{grid-template-columns:1fr}.eco-link{display:none}.eco-grid{margin-top:40px}.more{grid-template-columns:1fr}.pro{grid-template-columns:1fr}}
+.bento{position:relative;z-index:1;display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:48px}
+.bento > *{min-width:0}
+.tile{--rx:0deg;--ry:0deg;--mx:50%;--my:50%;position:relative;border-radius:32px;padding:clamp(22px,3vw,32px);overflow:hidden;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow);transform:perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry));transition:transform .6s var(--ease)}
+.tile::after{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--mx) var(--my),rgba(255,255,255,.22),transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
+.tile:hover::after{opacity:1}
+.tile .tag{align-self:flex-start;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;border-radius:999px;background:var(--surface);color:var(--pink-ink)}
+.tile h3{font-size:clamp(1.6rem,2.7vw,2.2rem)}
+.tile p{color:var(--muted);font-size:.97rem}
+.tile .go{margin-top:auto;padding-top:6px}
+.t-book{grid-column:1 / 4;grid-row:span 2;background:var(--card-peach)}
+.t-book .tag{color:var(--peach-ink)}
+.t-book .bookwrap{flex:1;display:grid;place-items:center;padding:10px 0 4px}
+.t-book .book{width:min(330px,82%);height:auto;overflow:visible;animation:bob 6s ease-in-out infinite;transition:transform .7s var(--ease)}
+.t-book:hover .book{transform:rotate(-4deg) scale(1.04)}
+.t-book .btn{align-self:flex-start;margin-top:auto}
+.t-pod{grid-column:4 / 7;background:var(--plum);color:var(--on-plum)}
+.t-pod .tag{background:rgba(255,255,255,.1);color:var(--il-pink-l)}
+.t-pod h3 em{color:var(--il-pink-l)}
+.t-pod p{color:var(--on-plum-muted)}
+.t-pod .go{color:var(--il-pink-l)}
+.player{display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:14px}
+.player > *{min-width:0}
+.player .cover{width:88px;height:88px;border-radius:16px;display:block}
+.p-meta small{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--il-pink-l)}
+.p-meta b{display:block;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:600;font-size:1.25rem;line-height:1.1;margin-top:3px}
+.p-meta span{display:block;font-size:.84rem;color:var(--on-plum-muted)}
+.eq{display:flex;align-items:center;gap:3px;height:44px;margin-top:4px}
+.eq i{flex:1;max-width:5px;height:100%;border-radius:3px;background:linear-gradient(var(--il-pink-l),var(--il-pink));transform-origin:center;animation:wave 1.3s ease-in-out infinite}
+.p-bar{grid-column:1 / -1;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:.76rem;color:var(--on-plum-muted)}
+.p-track{height:6px;border-radius:999px;background:rgba(255,255,255,.14);overflow:hidden}
+.p-track i{display:block;height:100%;border-radius:999px;background:var(--il-pink-l);transform-origin:left;animation:playbar 14s linear infinite alternate}
+.p-ctrl{grid-column:1 / -1;display:flex;justify-content:center;align-items:center;gap:22px;color:var(--on-plum)}
+.p-ctrl svg{width:22px;height:22px}
+.p-ctrl .pl{width:52px;height:52px;border-radius:50%;background:var(--il-pink);display:grid;place-items:center;color:#fff;box-shadow:0 10px 20px -8px var(--il-pink)}
+.p-ctrl .pl svg{width:22px;height:22px}
+.t-cert{grid-column:4 / 7;background:var(--card-sage);display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+.t-cert > *{min-width:0}
+.t-cert .tag{color:var(--sage-ink)}
+.t-cert .go{color:var(--sage-ink)}
+.t-cert .txtc{display:flex;flex-direction:column;gap:10px;height:100%}
+.t-cert .cert{width:100%;height:auto;transform:rotate(-4deg);transition:transform .7s var(--spring);filter:drop-shadow(0 18px 18px rgba(58,14,37,.18))}
+.t-cert:hover .cert{transform:rotate(0) scale(1.03)}
+.t-badge{grid-column:1 / 3;background:var(--card-butter);align-items:flex-start}
+.t-badge .tag{color:var(--peach-ink)}
+.badge-ill{width:150px;height:auto;align-self:center;transform-origin:50% 0;animation:swing 4.5s ease-in-out infinite;filter:drop-shadow(0 16px 14px rgba(58,14,37,.18))}
+.titles{display:flex;flex-wrap:wrap;gap:6px}
+.titles span{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:1.05rem;padding:3px 12px;border-radius:999px;border:1.5px solid var(--pink);color:var(--pink-ink)}
+.t-com{grid-column:3 / 5;background:var(--surface);border:2px dashed var(--line)}
+.ticket{position:relative;background:var(--pink-bg);color:var(--on-pink);border-radius:18px;padding:18px 18px 16px;margin-bottom:4px;-webkit-mask:radial-gradient(circle at 0 62%,transparent 11px,#000 12px) left/51% 100% no-repeat,radial-gradient(circle at 100% 62%,transparent 11px,#000 12px) right/51% 100% no-repeat;mask:radial-gradient(circle at 0 62%,transparent 11px,#000 12px) left/51% 100% no-repeat,radial-gradient(circle at 100% 62%,transparent 11px,#000 12px) right/51% 100% no-repeat}
+.ticket small{display:block;font-size:.66rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--on-pink-muted)}
+.ticket b{display:block;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:600;font-size:1.35rem;line-height:1.1;margin-top:4px}
+.ticket .stub{margin-top:12px;padding-top:10px;border-top:2px dashed rgba(255,255,255,.4);display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.78rem;font-weight:700}
+.ticket .stub i{font-style:normal;font-family:'Caveat','Segoe Print',cursive;font-size:1.3rem;background:var(--il-butter);color:var(--il-plum);padding:0 10px;border-radius:6px;transform:rotate(-5deg)}
+.t-mini{grid-column:5 / 7;display:grid;gap:18px;background:none;padding:0;box-shadow:none;border-radius:0;overflow:visible}
+.t-mini::after{display:none}
+.mini{position:relative;border-radius:28px;padding:20px 22px;display:grid;grid-template-columns:48px 1fr;gap:6px 14px;align-items:start;box-shadow:var(--shadow)}
+.mini > *{min-width:0}
+.mini > :not(.ic){grid-column:2}
+.mini .ic{grid-row:1 / span 4;grid-column:1;width:48px;height:48px;border-radius:16px;display:grid;place-items:center}
+.mini .ic svg{width:24px;height:24px}
+.mini h4{font-size:1.3rem}
+.mini p{color:var(--muted);font-size:.92rem}
+.mini.shop{background:var(--card-pink)}
+.mini.shop .ic{background:var(--pink-bg);color:var(--on-pink)}
+.mini.insta{background:var(--surface)}
+.mini.insta .ic{background:linear-gradient(135deg,var(--il-butter),var(--il-pink),var(--il-pink-d));color:#fff}
+.mini .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+.mini .tags span{font-size:.76rem;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--card-sage);color:var(--sage-ink)}
+@media (max-width:980px){
+  .eco-head{grid-template-columns:1fr}
+  .t-book,.t-pod,.t-cert{grid-column:1 / -1;grid-row:auto}
+  .t-badge{grid-column:1 / 4}.t-com{grid-column:4 / 7}.t-mini{grid-column:1 / -1;grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .bento{grid-template-columns:1fr}
+  .t-book,.t-pod,.t-cert,.t-badge,.t-com,.t-mini{grid-column:1 / -1}
+  .t-mini{grid-template-columns:1fr}
+  .t-cert{grid-template-columns:1fr}
+  .t-cert .cert{max-width:300px}
+  .player{grid-template-columns:72px 1fr}
+  .player .cover{width:72px;height:72px}
+}
 
-/* avaliacoes */
-.rev-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,6vw,96px);align-items:center}
+.fichas-sec{overflow:hidden;padding-bottom:clamp(70px,8vw,100px)}
+.eco{padding-top:clamp(40px,5vw,72px)}
+.fichas-sec .gingham{position:absolute;left:0;right:0;top:0;height:34px;background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--il-pink) 30%,transparent) 0 17px,transparent 17px 34px),repeating-linear-gradient(0deg,color-mix(in srgb,var(--il-pink) 30%,transparent) 0 17px,transparent 17px 34px);opacity:.9}
+.f-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
+.f-head > *{min-width:0}
+.f-nav{display:flex;gap:10px}
+.f-nav button{width:52px;height:52px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:transform .4s var(--spring),border-color .25s}
+.f-nav button:hover{transform:scale(1.08);border-color:var(--pink)}
+.f-nav svg{width:20px;height:20px}
+.f-nav .prev svg{transform:scaleX(-1)}
+.fichas{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(260px,30%,340px);gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:34px 6px 34px;margin-top:10px;scrollbar-width:thin;scrollbar-color:var(--line) transparent;-webkit-overflow-scrolling:touch}
+.ficha{scroll-snap-align:start;position:relative;background:var(--surface);border-radius:10px 10px 26px 26px;box-shadow:var(--shadow);display:flex;flex-direction:column;transform:rotate(var(--r,-1.2deg));transition:transform .6s var(--spring)}
+.ficha:nth-child(even){--r:1.4deg}
+.ficha:hover{transform:rotate(0) translateY(-6px)}
+.ficha .pinm{position:absolute;top:-14px;left:50%;margin-left:-15px;width:30px;height:30px;border-radius:50%;background:var(--il-pink);box-shadow:inset -4px -5px 0 rgba(0,0,0,.18),0 6px 10px -4px rgba(0,0,0,.4);z-index:1}
+.ficha:nth-child(3n+2) .pinm{background:var(--il-sage-d)}
+.ficha:nth-child(3n) .pinm{background:var(--il-butter-d)}
+.f-top{height:92px;border-radius:10px 10px 0 0;position:relative;overflow:hidden}
+.pt-ging{background:repeating-linear-gradient(90deg,rgba(255,255,255,.4) 0 12px,transparent 12px 24px),repeating-linear-gradient(0deg,rgba(255,255,255,.4) 0 12px,transparent 12px 24px),var(--il-pink)}
+.pt-dots{background:radial-gradient(circle,rgba(255,255,255,.7) 3px,transparent 3.6px) 0 0/18px 18px,var(--il-peach)}
+.pt-leaf{background:var(--il-sage)}
+.pt-leaf::before{content:"";position:absolute;inset:0;background:var(--il-sage-d);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M8 20c-1-8 4-13 12-13 1 8-4 13-12 13Z'/%3E%3Cpath d='M34 38c-8 0-12-5-11-12 8 0 12 5 11 12Z'/%3E%3C/svg%3E") 0 0/44px 44px repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M8 20c-1-8 4-13 12-13 1 8-4 13-12 13Z'/%3E%3Cpath d='M34 38c-8 0-12-5-11-12 8 0 12 5 11 12Z'/%3E%3C/svg%3E") 0 0/44px 44px repeat;opacity:.55}
+.pt-stripe{background:repeating-linear-gradient(-45deg,rgba(255,255,255,.55) 0 8px,transparent 8px 18px),var(--il-butter)}
+.f-top .fi{position:absolute;right:14px;bottom:-22px;width:76px;height:76px;border-radius:50%;background:var(--il-cream);display:grid;place-items:center;box-shadow:0 8px 16px -8px rgba(0,0,0,.35)}
+.f-top .fi svg{width:52px;height:52px}
+.f-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1;background-image:repeating-linear-gradient(transparent 0 30px,var(--line) 30px 31px);background-position:0 10px}
+.f-no{font-family:'Caveat','Segoe Print',cursive;font-weight:700;font-size:1.2rem;color:var(--pink-ink);line-height:1}
+.f-body h3{font-size:1.55rem;max-width:12ch}
+.f-meta{display:flex;flex-wrap:wrap;gap:6px}
+.f-meta span{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:6px;background:var(--blush);color:var(--pink-ink)}
+.f-body p{color:var(--muted);font-size:.96rem}
+.f-body .go{margin-top:auto;padding-top:6px;font-size:.92rem}
+.f-foot{font-size:.86rem;color:var(--muted);margin-top:4px}
+
+.rev{overflow:hidden}
+.rev-grid{position:relative;z-index:1;display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,6vw,90px);align-items:center}
 .rev-grid > *{min-width:0}
-.score{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:26px}
-.score .big{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(6rem,18vw,11rem);line-height:.8;color:var(--accent-ink);letter-spacing:-.03em}
-.score .t{padding-bottom:10px;color:var(--muted)}
-.score .t b{display:block;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:2rem;color:var(--ink);line-height:1}
-.stars{display:flex;gap:3px;color:var(--accent);margin-bottom:8px}
-.stars svg{width:16px;height:16px}
-.quote-sum{margin-top:30px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.6rem;line-height:1.25;border-left:1px solid var(--accent);padding-left:20px;max-width:30ch}
-.bars{display:grid;gap:18px;margin-top:22px}
-.bar{display:grid;grid-template-columns:90px 1fr 34px;gap:14px;align-items:center;font-size:.98rem}
+.score{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-top:18px}
+.score .big{font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:700;font-size:clamp(6.4rem,22vw,12rem);line-height:.78;letter-spacing:-.05em;color:var(--il-butter)}
+.score .t{padding-bottom:10px;font-weight:700;color:var(--on-pink-muted)}
+.score .t b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:650;font-size:2.4rem;line-height:1;color:var(--on-pink)}
+.score .stars{display:flex;gap:3px;color:var(--il-butter);margin-bottom:8px}
+.score .stars svg{width:22px;height:22px}
+.quote-sum{margin-top:26px;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-style:italic;font-weight:450;font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.25;max-width:26ch;position:relative;padding-left:22px;border-left:4px solid var(--il-butter)}
+.rev-card{background:var(--cream);color:var(--ink);border-radius:32px;padding:clamp(22px,3.4vw,40px);box-shadow:0 40px 70px -36px rgba(30,0,15,.7);position:relative}
+.rev-card h3{font-size:1.7rem}
+.bars{display:grid;gap:16px;margin-top:22px}
+.bar{display:grid;grid-template-columns:86px 1fr 34px;gap:12px;align-items:center;font-weight:700}
 .bar > *{min-width:0}
-.track{height:6px;border-radius:999px;background:var(--line);overflow:hidden}
-.fill{display:block;height:100%;border-radius:999px;background:var(--accent);transform-origin:left;transform:scaleX(var(--w));transition:transform 1.4s var(--ease);transition-delay:calc(var(--i,0) * 120ms + .2s)}
+.track{height:26px;border-radius:999px;background:var(--blush);overflow:hidden}
+.fill{display:block;height:100%;border-radius:999px;background:radial-gradient(circle,rgba(255,255,255,.4) 2px,transparent 2.6px) 0 0/12px 12px,var(--il-pink);transform-origin:left;transform:scaleX(var(--w));transition:transform 1.4s var(--spring);transition-delay:calc(var(--i,0) * 140ms + .2s)}
+.bar:nth-child(2) .fill{background-color:var(--il-coral)}
+.bar:nth-child(3) .fill{background-color:var(--il-sage-d)}
+.bar:nth-child(4) .fill{background-color:var(--il-butter-d)}
 .js .rv:not(.in) .fill{transform:scaleX(0)}
 .bar .v{text-align:right;color:var(--muted)}
-.bars-t{font-size:1.6rem}
-.source{font-size:.8rem;color:var(--muted);margin-top:18px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
-.badge{font-size:.86rem;padding:6px 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.source{font-size:.82rem;color:var(--muted);margin-top:16px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.86rem;padding:7px 14px;border-radius:999px;background:var(--card-sage);color:var(--sage-ink)}
+.badge:nth-child(2){background:var(--card-pink);color:var(--pink-ink)}
+.badge svg{width:17px;height:17px;flex:none}
+.rev .spark{position:absolute;color:var(--il-butter);pointer-events:none}
 @media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
 
-/* onde */
-.where{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line);border-radius:32px;overflow:hidden;background:var(--surface)}
+.where{display:grid;grid-template-columns:1.05fr .95fr;border-radius:36px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow);position:relative;z-index:1}
 .where > *{min-width:0}
 .where-info{padding:clamp(22px,4vw,48px)}
-.info{list-style:none;padding:0;margin:26px 0 0;display:grid}
-.info li{padding:14px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:110px 1fr;gap:12px}
+.info{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.info li{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}
 .info li > *{min-width:0}
-.info b{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:4px}
-.info small{display:block;color:var(--muted);font-size:.88rem}
-.where-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.where-art{background:var(--rose);display:grid;place-items:center;padding:24px;min-height:300px;color:var(--ink)}
-.where-art svg{width:100%;max-width:340px;height:auto}
-@media (max-width:860px){.where{grid-template-columns:1fr}.where-art{min-height:240px}}
-@media (max-width:420px){.info li{grid-template-columns:1fr;gap:2px}}
+.info .ic{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;background:var(--card-pink);color:var(--pink-ink)}
+.info li:nth-child(2) .ic{background:var(--card-butter);color:var(--peach-ink)}
+.info li:nth-child(3) .ic{background:var(--card-sage);color:var(--sage-ink)}
+.info li:nth-child(4) .ic{background:var(--card-peach);color:var(--peach-ink)}
+.info .ic svg{width:22px;height:22px}
+.info b{display:block;font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.info .val{font-weight:700;line-height:1.45}
+.info small{display:block;color:var(--muted);font-weight:500;font-size:.88rem}
+.info .phone{font-size:1.25rem}
+.where-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.where-art{background:var(--sky);display:grid;place-items:center;padding:20px;min-height:320px}
+.where-art svg{width:100%;max-width:440px;height:auto;overflow:visible}
+@media (max-width:860px){.where{grid-template-columns:1fr}.where-art{min-height:0}}
 
-/* faq */
-.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px)}
+.faq-grid{position:relative;z-index:1;display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,64px)}
 .faq-grid > *{min-width:0}
-details{border-bottom:1px solid var(--line)}
-details:first-of-type{border-top:1px solid var(--ink)}
-summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:'Instrument Serif',Georgia,serif;font-size:1.45rem;line-height:1.2}
+.faq-ill{width:min(260px,70%);height:auto;margin-top:26px;display:block}
+.faqs{display:grid;gap:12px}
+details{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;transition:background-color .3s}
+details[open]{background:var(--cream)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:600;font-size:1.18rem;line-height:1.25}
 summary::-webkit-details-marker{display:none}
-summary .pm{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--accent-ink);transition:transform .5s var(--ease),background-color .3s}
-summary .pm svg{width:13px;height:13px}
-details[open] summary .pm{transform:rotate(45deg);background:var(--accent-soft)}
-details p{color:var(--muted);padding:0 0 22px;max-width:60ch}
-details[open] p{animation:fadeUp .6s var(--ease) both}
-details p a{color:var(--accent-ink);font-weight:600}
+summary .pm{flex:none;width:36px;height:36px;border-radius:50%;background:var(--card-pink);display:grid;place-items:center;color:var(--pink-ink);transition:transform .5s var(--spring),background-color .3s}
+details:nth-child(3n+2) summary .pm{background:var(--card-sage);color:var(--sage-ink)}
+details:nth-child(3n) summary .pm{background:var(--card-peach);color:var(--peach-ink)}
+summary .pm svg{width:14px;height:14px}
+details[open] summary .pm{transform:rotate(135deg)}
+details p{color:var(--muted);padding:0 20px 20px;max-width:62ch}
+details[open] p{animation:fadeUp .5s var(--ease) both}
+details p a{color:var(--pink-ink);font-weight:800}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}.faq-ill{display:none}}
 
-/* final */
-.final{background:var(--final);color:#fff6f9;position:relative;overflow:hidden}
-.final .wrap{position:relative;display:grid;grid-template-columns:1.2fr auto;gap:32px;align-items:end}
-.final .wrap > *{min-width:0}
-.final h2{font-size:clamp(2.6rem,7vw,5.2rem)}
-.final h2 em{color:#ffc7de}
-.final p{margin-top:16px;max-width:46ch;color:#f6d6e3}
-.final-cta{display:flex;flex-wrap:wrap;gap:12px}
-.final .btn-wa{background:#fff6f9;color:#8a1149}
-.final .btn-wa:hover{background:#ffe3ee}
-.final .btn-ghost{color:#fff6f9;border-color:rgba(255,246,249,.45)}
-.final .btn-ghost:hover{border-color:#fff6f9}
-.final-art{position:absolute;right:-60px;top:-40px;width:420px;opacity:.22;pointer-events:none;color:#fff6f9}
-@media (max-width:760px){.final .wrap{grid-template-columns:1fr}.final-art{width:280px;right:-80px}}
+.final{overflow:hidden;padding-block:clamp(90px,11vw,140px)}
+.final-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.final-grid > *{min-width:0}
+.final h2{font-size:clamp(2.6rem,7vw,5.4rem)}
+.final p{margin-top:16px;max-width:46ch;color:var(--on-pink-muted);font-size:1.08rem}
+.final-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.final-ill{width:100%;max-width:380px;height:auto;justify-self:center;overflow:visible}
+.final-ill .spin{transform-box:fill-box;transform-origin:center;animation:spin 50s linear infinite}
+@media (max-width:760px){.final-grid{grid-template-columns:1fr}.final-ill{max-width:240px;order:-1}}
 
-footer{padding-block:36px 110px;font-size:.88rem;color:var(--muted)}
+footer{background:var(--cream);padding-block:36px 112px;font-size:.9rem;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-between;align-items:center}
-.fbrand{font-family:'Instrument Serif',Georgia,serif;font-size:1.4rem;color:var(--ink)}
-.fbrand i{color:var(--accent-ink)}
-.seal{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.fbrand{font-family:'Fraunces',Georgia,serif;font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:700;font-size:1.3rem;color:var(--ink)}
+.fbrand i{color:var(--pink-ink);font-weight:500}
+.seal{font-size:.8rem;border:1px dashed var(--line);border-radius:999px;padding:6px 14px}
 
-.fab{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:35;width:58px;height:58px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;box-shadow:0 16px 30px -12px rgba(43,21,32,.55);transition:transform .5s var(--ease)}
-.fab:hover{transform:translateY(-3px)}
-.fab svg{width:28px;height:28px}
+.fab{position:fixed;right:max(16px, env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:45;width:62px;height:62px;border-radius:50%;background:var(--pink-bg);color:var(--on-pink);display:grid;place-items:center;box-shadow:0 16px 30px -10px rgba(58,14,37,.6);transition:transform .45s var(--spring)}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--pink-bg);animation:ping 2.6s ease-out infinite;z-index:-1}
+.fab:hover{transform:translateY(-3px) scale(1.05)}
+.fab svg{width:30px;height:30px}
 
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .js .rv{opacity:1;transform:none}
+  .js .rv,.js .rv-tilt{opacity:1;transform:none}
   .js .rv:not(.in) .fill{transform:scaleX(var(--w))}
-  .js .steps.rv:not(.in){--s:1}
-  .js .eco-link.rv:not(.in) path{stroke-dashoffset:0}
+  .js .station .vig{opacity:1;transform:none}
+  .js .station:not(.in) .node{transform:none}
+  .js .steps.rv:not(.in) > li{opacity:1;transform:none}
+  .steps > li:nth-child(2){transform:translateY(18px)}
+  .steps > li:nth-child(3){transform:translateY(36px)}
+  .fab::before{display:none}
+  .tl-vine .v-fg{stroke-dasharray:none}
 }
+@media (prefers-reduced-motion: reduce) and (max-width:900px){.steps > li:nth-child(2),.steps > li:nth-child(3){transform:none}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.7L2.3 21.7l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.2Z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
-    <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><rect x="4" y="5" width="16" height="10" rx="1.5"/><path d="M2 19h20"/></g></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9Z"/></symbol>
-    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="v-gest" viewBox="-70 -78 140 150"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="-2" cy="-52" r="12"/><path d="M-13 -57C-14 -70 4 -73 9 -62"/><circle cx="-15" cy="-63" r="5.5"/><path d="M-10 -40C-16 -20-20 6-14 30C-10 46-12 56-14 66"/><path d="M5 -41C6 -34 10 -28 14 -22C10 -16 8 -12 10 -6C30 2 38 24 30 40C24 50 12 52 6 54C6 58 6 62 6 66"/><path d="M-8 -30C-4 -10 2 4 18 14"/><path d="M24 22c-3-4-9-1-5 4l5 4 5-4c4-5-2-8-5-4Z" stroke="var(--accent)"/></g></symbol>
-    <symbol id="v-pos" viewBox="-70 -78 140 150"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="-16" cy="-50" r="12"/><path d="M-28 -50C-30 -66-6 -70-4 -54C-2 -44-2 -34 4 -28"/><path d="M-30 -38C-38 -10-38 30-32 66"/><path d="M-6 -36C2 -30 6 -22 6 -14"/><circle cx="14" cy="-14" r="9" stroke="var(--accent)"/><path d="M6 -6C18 -4 34 2 34 14C34 26 14 30 -4 24"/><path d="M-30 -24C-26 6-6 26 18 26C28 26 36 20 38 12"/><path d="M-4 24C0 40 4 54 6 66"/></g></symbol>
-    <symbol id="v-prato" viewBox="-70 -78 140 150"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="8" r="48"/><circle cx="0" cy="8" r="34" stroke="var(--accent)" stroke-dasharray="2 5"/><path d="M-16 6C-16 -6-4 -10 2 -8C2 4-8 10-16 6Z"/><path d="M-16 6L-4 -4"/><circle cx="12" cy="16" r="6"/><circle cx="-4" cy="24" r="5"/><circle cx="16" cy="0" r="4" stroke="var(--accent)"/><path d="M48 -30L28 -8"/><ellipse cx="52" cy="-36" rx="6" ry="9" transform="rotate(40 52 -36)"/></g></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="4" y="5" width="16" height="10" rx="1.5"/><path d="M2 19h20"/></g></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5s-8-4.9-8-10.8A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.7c0 5.9-8 10.8-8 10.8Z" fill="currentColor"/></symbol>
+    <symbol id="i-heart-o" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4 20C3 10 9 4 21 3c1 11-6 17-17 17Z" fill="currentColor"/><path d="M4 20 14 10" stroke="rgba(255,255,255,.55)" stroke-width="1.6" stroke-linecap="round" fill="none"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="m7.6 12.4 3 3 5.8-6.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-belly" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4.5" r="2"/><path d="M9.5 8c-1 4-1.3 8-1.5 13M12 8.5c4 1 6 3.5 6 6.3 0 2.7-2.4 3.7-5.5 3.7"/></g></symbol>
+    <symbol id="i-mom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="4.5" r="2"/><path d="M6.5 21c0-5 .5-9 2.5-12.5"/><path d="M8 11c2 3 6 3.5 9 1.5"/><circle cx="16.5" cy="9.5" r="2.2"/></g></symbol>
+    <symbol id="i-bowl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18a9 9 0 0 1-18 0Z"/><path d="M9 8c0-2 2-2 2-4M14 8c0-2 2-2 2-4"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="10" width="14" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></g></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 12C12 7 9 5 4 5c0 5 3 7 8 7Z"/><path d="M12 14c0-4 2.5-6 7-6 0 4-2.5 6-7 6Z"/></g></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 8h14l-1 13H6Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></g></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17" cy="7" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-rainbow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 18a9.5 9.5 0 0 1 19 0"/><path d="M6 18a6 6 0 0 1 12 0"/><path d="M9.5 18a2.5 2.5 0 0 1 5 0"/></g></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 2.3-5.7"/><path d="M4 4v4h4"/></g></symbol>
+    <symbol id="i-fwd" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></g></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 1c.9 6 4 9.1 11 11-7 1.9-10.1 5-11 11-.9-6-4-9.1-11-11 7-1.9 10.1-5 11-11Z" fill="currentColor"/></symbol>
+    <symbol id="s-plate" viewBox="0 0 200 200">
+      <circle cx="100" cy="104" r="86" fill="#000" opacity=".1"/>
+      <circle cx="100" cy="100" r="86" fill="var(--il-cream)"/>
+      <circle cx="100" cy="100" r="70" fill="var(--il-pink-l)" opacity=".35"/>
+      <circle cx="100" cy="100" r="70" fill="none" stroke="var(--il-pink)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+      <g>
+        <path d="M70 100 L 74 76" stroke="var(--f-green)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="64" cy="70" r="12" fill="var(--f-green)"/><circle cx="78" cy="64" r="12" fill="#5fae58"/><circle cx="84" cy="76" r="10" fill="var(--f-green)"/><circle cx="70" cy="60" r="8" fill="#6dbb63"/>
+        <circle cx="66" cy="68" r="2.4" fill="#fff" opacity=".35"/><circle cx="80" cy="62" r="2.4" fill="#fff" opacity=".35"/>
+      </g>
+      <g>
+        <circle cx="122" cy="64" r="12" fill="var(--f-orange)"/><circle cx="122" cy="64" r="7" fill="#ffb067"/><path d="M122 57v14M115 64h14" stroke="var(--f-orange)" stroke-width="1.6"/>
+        <circle cx="142" cy="84" r="11" fill="var(--f-orange)"/><circle cx="142" cy="84" r="6" fill="#ffb067"/>
+      </g>
+      <path d="M118 112c10-8 30-6 34 6s-6 26-20 26-24-20-14-32Z" fill="var(--f-yellow)"/>
+      <path d="M126 118c6-3 14-2 18 2" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".5" fill="none"/>
+      <g>
+        <circle cx="72" cy="128" r="12" fill="var(--f-red)"/><path d="M64 128a8 8 0 0 0 16 0" fill="#ff7a7e"/><circle cx="70" cy="126" r="1.4" fill="#ffe9a8"/><circle cx="75" cy="127" r="1.4" fill="#ffe9a8"/>
+      </g>
+      <g fill="#7cc46f"><circle cx="96" cy="140" r="5"/><circle cx="106" cy="146" r="5"/><circle cx="92" cy="152" r="5"/><circle cx="104" cy="134" r="4.5"/></g>
+      <circle cx="98" cy="102" r="12" fill="var(--f-purple)"/><circle cx="98" cy="102" r="7" fill="#b9508c"/>
+      <circle cx="40" cy="44" r="0" fill="none"/>
+    </symbol>
   </defs>
 </svg>
 
@@ -443,9 +775,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#inicio" aria-label="Dayanna Queiroz, início">
-      <span class="brand-name">Dayanna <i>Queiroz</i></span>
-      <small>Nutrição materno-infantil · PhD</small>
+    <a class="brand" href="#inicio" aria-label="Dra. Dayanna Queiroz, início">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="var(--pink-bg)"/><path d="M20 30s-9-5.4-9-11.6A4.8 4.8 0 0 1 20 15.4a4.8 4.8 0 0 1 9 3c0 6.2-9 11.6-9 11.6Z" fill="var(--il-butter)"/><path d="M20 15c0-4 2-6.5 6-7-0.4 4-2.4 6.4-6 7Z" fill="var(--il-sage)"/></svg>
+      <span class="brand-txt"><span class="brand-name">Dayanna <i>Queiroz</i></span><small>Dra. · Nutrição materno-infantil · PhD</small></span>
     </a>
     <nav class="top-nav" aria-label="Seções">
       <a href="#fases">Fases</a>
@@ -459,194 +791,396 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
 </header>
 
 <main id="inicio">
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="wrap hero-grid">
-      <div>
-        <span class="chip seq" style="animation-delay:.1s"><b><svg aria-hidden="true"><use href="#i-star"/></svg><span class="num" data-count="5" data-dec="1">5,0</span></b><span><span class="num" data-count="191">191</span> avaliações no Google</span></span>
-        <h1><span class="mask"><span>Nutrindo</span></span><span class="mask"><span><em>gerações.</em></span></span></h1>
-        <p class="who seq" style="animation-delay:.5s"><b>Dra. Dayanna Queiroz</b> <span>· nutricionista materno-infantil, PhD</span></p>
-        <p class="lead seq" style="animation-delay:.65s">Cuido da alimentação da mulher e do bebê nos momentos que mais pedem acolhimento: da barriga crescendo ao primeiro pratinho. Presencial no Liv Mall, em João Pessoa, ou on-line, de onde você estiver.</p>
-        <div class="hero-cta seq" style="animation-delay:.8s">
+      <div class="hero-t">
+        <span class="chip seq" style="animation-delay:.1s"><b><svg width="14" height="14" aria-hidden="true"><use href="#i-star"/></svg><span class="num" data-count="5" data-dec="1">5,0</span></b><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><span><span class="num" data-count="191">191</span> avaliações no Google</span></span>
+        <h1><span class="mask"><span>Nutrindo</span></span><span class="mask"><span><em>gerações.</em></span></span>
+          <svg class="squig" viewBox="0 0 330 22" aria-hidden="true"><path pathLength="1" d="M4 14C40 4 70 20 108 12S176 4 214 12 290 18 326 8" fill="none" stroke="var(--il-sage-d)" stroke-width="5" stroke-linecap="round"/></svg>
+        </h1>
+        <p class="who seq" style="animation-delay:.45s">Dra. Dayanna Queiroz <span>· nutricionista materno-infantil, PhD</span></p>
+      </div>
+
+      <div class="hero-art">
+        <svg class="stamp" viewBox="0 0 140 140" aria-hidden="true">
+          <defs><path id="stampPath" d="M70 70m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs>
+          <circle cx="70" cy="70" r="68" fill="var(--il-butter)"/>
+          <circle cx="70" cy="70" r="62" fill="none" stroke="var(--il-plum)" stroke-width="1.2" stroke-dasharray="2 4"/>
+          <g class="rot"><text font-family="Figtree, sans-serif" font-weight="800" font-size="11" letter-spacing="1.3" fill="var(--il-plum)"><textPath href="#stampPath" textLength="312" lengthAdjust="spacing">NUTRIR GERAÇÕES • DA BARRIGA AO PRATINHO • </textPath></text></g>
+          <path d="M70 92s-15-9-15-19.6A8 8 0 0 1 70 67a8 8 0 0 1 15 5.4C85 83 70 92 70 92Z" fill="var(--il-pink)"/>
+          <path d="M70 66c0-7 3.6-11.5 10.6-12.4-.6 7-4.2 11.2-10.6 12.4Z" fill="var(--il-sage-d)"/>
+        </svg>
+        <svg class="scene" viewBox="0 0 600 560" role="img" aria-label="Ilustração colorida: uma gestante com a mão na barriga, uma mãe sentada com o bebê no colo e uma criança na cadeirinha com um pratinho colorido de legumes e frutas, sob um arco cor de pêssego com ramos de folhas.">
+          <defs>
+            <pattern id="pd-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2" fill="#fff" opacity=".4"/></pattern>
+            <pattern id="pd-dots-pink" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.8" fill="var(--il-pink)" opacity=".45"/></pattern>
+            <pattern id="pd-stripe" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><rect width="4" height="10" fill="#fff" opacity=".22"/></pattern>
+            <pattern id="pd-arch" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="2.2" fill="#fff" opacity=".28"/></pattern>
+            <clipPath id="clipArch"><path d="M96 560V280a204 204 0 0 1 408 0v280Z"/></clipPath>
+          </defs>
+
+          <g class="par" data-depth="-0.05">
+            <path class="grow" style="--d:.05s" d="M28 182c-6-60 58-98 118-74 44 18 52 82 18 116-30 30-128 30-136-42Z" fill="var(--blob)"/>
+            <g class="grow" style="--d:.25s">
+              <circle cx="478" cy="118" r="62" fill="var(--il-butter)"/>
+              <circle cx="478" cy="118" r="78" fill="none" stroke="var(--il-butter-d)" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+              <circle cx="478" cy="118" r="62" fill="url(#pd-dots)"/>
+            </g>
+            <g class="twinkle" fill="var(--il-butter-d)"><use href="#i-spark" x="246" y="128" width="22" height="22"/></g>
+            <g class="twinkle t2" fill="var(--il-pink-l)"><use href="#i-spark" x="40" y="380" width="18" height="18"/></g>
+            <g class="twinkle t3" fill="var(--il-sage-d)"><use href="#i-spark" x="560" y="300" width="16" height="16"/></g>
+          </g>
+
+          <g class="par" data-depth="0.03">
+            <path class="grow" style="--d:.15s" d="M96 560V280a204 204 0 0 1 408 0v280Z" fill="var(--arch)"/>
+            <g clip-path="url(#clipArch)">
+              <rect x="96" y="70" width="408" height="490" fill="url(#pd-arch)" class="fadein" style="--d:.5s"/>
+              <path class="fadein" style="--d:.6s" d="M96 300c80-30 140 10 210-6s120-60 198-30v300H96Z" fill="#fff" opacity=".14"/>
+            </g>
+            <ellipse class="grow" style="--d:.35s" cx="300" cy="534" rx="290" ry="24" fill="var(--rug)"/>
+            <ellipse cx="300" cy="534" rx="290" ry="24" fill="url(#pd-dots-pink)" class="fadein" style="--d:.6s"/>
+          </g>
+
+          <g class="par" data-depth="0.07">
+            <path class="drawn" style="--d:.3s" pathLength="1" d="M0 46C100 120 210 30 312 70S500 110 600 34" fill="none" stroke="var(--il-sage-d)" stroke-width="3.5" stroke-linecap="round"/>
+            <g fill="var(--il-sage-d)">
+              <path class="sway" d="M64 84c-12 2-22-6-22-18 12-2 22 6 22 18Z"/>
+              <path class="sway s2" d="M150 86c2 12-6 22-18 22-2-12 6-22 18-22Z" fill="var(--il-sage)"/>
+              <path class="sway s3" d="M232 62c-10-6-12-18-6-28 10 6 12 18 6 28Z"/>
+              <path class="sway" d="M372 84c4 12-2 22-14 26-4-12 2-22 14-26Z" fill="var(--il-sage)"/>
+              <path class="sway s2" d="M448 86c-12 0-20-8-20-20 12 0 20 8 20 20Z"/>
+              <path class="sway s3" d="M548 64c6 10 2 22-8 28-6-10-2-22 8-28Z" fill="var(--il-sage)"/>
+            </g>
+            <g class="bob b2"><use href="#i-heart" x="182" y="78" width="20" height="20" fill="var(--il-pink)"/></g>
+            <g class="bob b3"><use href="#i-heart" x="404" y="96" width="16" height="16" fill="var(--il-coral)"/></g>
+          </g>
+
+          <g class="pop" style="--d:.55s">
+            <ellipse cx="160" cy="530" rx="64" ry="9" fill="var(--il-plum)" opacity=".16"/>
+            <circle cx="126" cy="184" r="17" fill="var(--il-hair1)"/>
+            <rect x="143" y="220" width="17" height="30" rx="7" fill="var(--il-skin1s)"/>
+            <path d="M128 262C120 300 118 332 122 372" stroke="var(--il-skin1s)" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M124 250C114 300 112 380 100 520H204C200 486 204 452 218 418 240 378 232 324 190 304 182 288 180 266 178 250 160 240 140 240 124 250Z" fill="var(--il-pink)"/>
+            <path d="M124 250C114 300 112 380 100 520H204C200 486 204 452 218 418 240 378 232 324 190 304 182 288 180 266 178 250 160 240 140 240 124 250Z" fill="url(#pd-dots)"/>
+            <path d="M124 250C114 300 112 380 100 520H130C134 420 138 330 146 246Z" fill="var(--il-pink-d)" opacity=".45"/>
+            <path d="M198 326c22 18 26 54 10 84" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none" opacity=".35"/>
+            <path d="M132 252c14 10 34 10 46 0" stroke="var(--il-butter)" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <ellipse cx="128" cy="522" rx="17" ry="6" fill="var(--il-plum)"/>
+            <ellipse cx="180" cy="522" rx="17" ry="6" fill="var(--il-plum)"/>
+            <circle cx="152" cy="200" r="28" fill="var(--il-skin1)"/>
+            <path d="M124 198C120 168 150 156 174 170c8 6 10 14 6 20-14-8-32-6-44 6-2 8-8 12-12 2Z" fill="var(--il-hair1)"/>
+            <path d="M160 203q4 3 8 0" stroke="var(--il-plum)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+            <circle cx="168" cy="213" r="6" fill="var(--il-pink)" opacity=".3"/>
+            <path d="M170 220q4 2 7-1" stroke="var(--il-plum)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <circle cx="139" cy="214" r="3.4" fill="var(--il-butter)"/>
+            <path d="M176 262C186 290 196 320 208 344" stroke="var(--il-skin1)" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <ellipse cx="211" cy="350" rx="11" ry="8.5" fill="var(--il-skin1)"/>
+          </g>
+
+          <g class="pop" style="--d:.75s">
+            <ellipse cx="330" cy="530" rx="96" ry="10" fill="var(--il-plum)" opacity=".16"/>
+            <ellipse cx="320" cy="490" rx="86" ry="38" fill="var(--il-sage-d)"/>
+            <ellipse cx="320" cy="474" rx="86" ry="30" fill="var(--il-sage)"/>
+            <path d="M246 478q74 20 148 0" stroke="#fff" stroke-width="2.4" stroke-dasharray="3 7" stroke-linecap="round" fill="none" opacity=".6"/>
+            <g fill="var(--il-hair2)"><circle cx="302" cy="276" r="18"/><circle cx="316" cy="260" r="20"/><circle cx="337" cy="258" r="19"/><circle cx="353" cy="273" r="17"/><circle cx="298" cy="296" r="14"/><circle cx="357" cy="294" r="14"/><circle cx="327" cy="250" r="16"/></g>
+            <rect x="319" y="304" width="18" height="24" rx="7" fill="var(--il-skin2s)"/>
+            <path d="M290 336C284 380 286 420 292 462H362C368 420 368 380 360 336 346 318 304 318 290 336Z" fill="var(--il-coral)"/>
+            <path d="M290 336C284 380 286 420 292 462H362C368 420 368 380 360 336 346 318 304 318 290 336Z" fill="url(#pd-stripe)"/>
+            <path d="M286 446H392Q412 450 408 474L296 478Q276 470 286 446Z" fill="var(--il-plum)"/>
+            <path d="M396 470C400 490 402 506 404 520" stroke="var(--il-plum)" stroke-width="22" stroke-linecap="round" fill="none"/>
+            <ellipse cx="414" cy="525" rx="17" ry="7" fill="var(--il-pink-d)"/>
+            <circle cx="328" cy="290" r="25" fill="var(--il-skin2)"/>
+            <path d="M303 286C306 262 346 258 354 284 342 274 318 274 303 286Z" fill="var(--il-hair2)"/>
+            <path d="M316 293q4 3 8 0M334 293q4 3 8 0" stroke="var(--il-hair2)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+            <circle cx="314" cy="303" r="5" fill="var(--il-pink)" opacity=".35"/><circle cx="344" cy="303" r="5" fill="var(--il-pink)" opacity=".35"/>
+            <path d="M325 305q4 3 8 0" stroke="var(--il-hair2)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <circle cx="304" cy="306" r="3.4" fill="var(--il-butter)"/>
+            <g transform="rotate(-14 336 384)">
+              <ellipse cx="336" cy="384" rx="50" ry="27" fill="var(--il-butter)"/>
+              <ellipse cx="336" cy="384" rx="50" ry="27" fill="url(#pd-dots-pink)"/>
+              <path d="M298 386q38 14 84-4" stroke="var(--il-butter-d)" stroke-width="3" stroke-linecap="round" fill="none"/>
+            </g>
+            <circle cx="296" cy="371" r="17" fill="var(--il-skin1)"/>
+            <path d="M290 356q7-7 12 2" stroke="var(--il-hair3)" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M289 373q3 2.4 6 0" stroke="var(--il-plum)" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="300" cy="379" r="3.6" fill="var(--il-pink)" opacity=".35"/>
+            <path d="M296 340C280 372 292 404 330 404 350 404 370 398 382 388" stroke="var(--il-skin2)" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <path d="M356 340C378 360 376 382 352 386" stroke="var(--il-skin2)" stroke-width="13" stroke-linecap="round" fill="none"/>
+          </g>
+
+          <g class="pop" style="--d:.95s">
+            <ellipse cx="492" cy="530" rx="66" ry="9" fill="var(--il-plum)" opacity=".16"/>
+            <path d="M462 420 446 524M522 420 538 524" stroke="var(--il-wood-d)" stroke-width="8" stroke-linecap="round"/>
+            <path d="M452 488H532" stroke="var(--il-wood-d)" stroke-width="6" stroke-linecap="round"/>
+            <rect x="456" y="314" width="72" height="112" rx="28" fill="var(--il-wood)"/>
+            <rect x="466" y="324" width="52" height="92" rx="22" fill="var(--il-sage-l)"/>
+            <path d="M468 410V374c0-14 48-14 48 0v36Z" fill="var(--il-sage)"/>
+            <circle cx="492" cy="338" r="24" fill="var(--il-skin1)"/>
+            <path d="M470 334C470 312 514 310 515 334 505 322 482 322 470 334Z" fill="var(--il-hair3)"/>
+            <path d="M486 314q6-14 16-4" stroke="var(--il-hair3)" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <path d="M481 341q3-3.4 6 0M497 341q3-3.4 6 0" stroke="var(--il-plum)" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+            <path d="M487 350q5 7 10 0Z" fill="var(--il-pink-d)"/>
+            <circle cx="476" cy="350" r="4.6" fill="var(--il-pink)" opacity=".35"/><circle cx="508" cy="350" r="4.6" fill="var(--il-pink)" opacity=".35"/>
+            <path d="M474 364Q492 374 510 364L506 394Q492 404 478 394Z" fill="var(--il-cream)"/>
+            <path d="M474 364Q492 374 510 364L506 394Q492 404 478 394Z" fill="url(#pd-dots-pink)"/>
+            <path d="M472 378C460 370 454 358 452 346" stroke="var(--il-skin1)" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <circle cx="452" cy="343" r="6.5" fill="var(--il-skin1)"/>
+            <path d="M452 340 446 320" stroke="var(--il-pink-l)" stroke-width="4" stroke-linecap="round"/>
+            <ellipse cx="444" cy="314" rx="7" ry="9" fill="var(--il-pink-l)"/>
+            <circle cx="444" cy="312" r="4.4" fill="var(--f-orange)"/>
+            <path d="M512 380C522 390 524 400 522 410" stroke="var(--il-skin1)" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <rect x="424" y="420" width="136" height="7" rx="3.5" fill="var(--il-wood-d)" opacity=".5"/>
+            <rect x="424" y="408" width="136" height="16" rx="8" fill="var(--il-cream)"/>
+            <ellipse cx="498" cy="408" rx="42" ry="10" fill="#fff"/>
+            <ellipse cx="498" cy="408" rx="42" ry="10" fill="none" stroke="var(--il-pink)" stroke-width="2"/>
+            <g class="grow" style="--d:1.5s">
+              <path d="M478 404v-8" stroke="var(--f-green)" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="473" cy="394" r="7" fill="var(--f-green)"/><circle cx="482" cy="390" r="7" fill="#5fae58"/><circle cx="480" cy="398" r="5" fill="var(--f-green)"/>
+            </g>
+            <g class="grow" style="--d:1.62s"><ellipse cx="496" cy="401" rx="7" ry="5" fill="var(--f-orange)"/><ellipse cx="496" cy="401" rx="3.4" ry="2.4" fill="#ffb067"/></g>
+            <g class="grow" style="--d:1.74s"><circle cx="511" cy="398" r="7" fill="var(--f-red)"/><circle cx="509" cy="396" r="1.6" fill="#fff" opacity=".6"/></g>
+            <g class="grow" style="--d:1.86s" fill="#7cc46f"><circle cx="524" cy="403" r="3.4"/><circle cx="529" cy="400" r="3.4"/><circle cx="520" cy="399" r="3"/></g>
+            <g class="grow" style="--d:1.96s"><circle cx="490" cy="404" r="4" fill="var(--f-yellow)"/></g>
+          </g>
+
+          <g class="par" data-depth="0.12">
+            <g class="bob"><use href="#i-heart" x="346" y="216" width="26" height="26" fill="var(--il-pink)"/></g>
+            <g class="bob b4"><use href="#i-heart" x="226" y="300" width="18" height="18" fill="var(--il-pink-l)"/></g>
+            <g class="bob b2">
+              <circle cx="566" cy="232" r="19" fill="var(--f-orange)"/><circle cx="566" cy="232" r="14" fill="#ffc07a"/>
+              <path d="M566 218v28M552 232h28M556 222l20 20M576 222l-20 20" stroke="#fff" stroke-width="1.6" opacity=".7"/>
+            </g>
+            <g class="bob b3">
+              <ellipse cx="54" cy="300" rx="18" ry="24" fill="#6aa84f" transform="rotate(-20 54 300)"/>
+              <ellipse cx="54" cy="302" rx="13" ry="18" fill="#cfe59a" transform="rotate(-20 54 302)"/>
+              <circle cx="52" cy="308" r="7" fill="#9a5a34"/>
+            </g>
+            <g class="bob b4">
+              <path d="M548 360c-6 0-12 6-10 14 2 10 10 16 14 18 4-2 12-8 14-18 2-8-4-14-10-14-3 0-5 2-4 2s-1-2-4-2Z" fill="var(--f-red)"/>
+              <path d="M546 358c2-6 8-8 12-6M552 352v8" stroke="var(--f-green)" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <g fill="#ffe9a8"><circle cx="546" cy="368" r="1.3"/><circle cx="553" cy="374" r="1.3"/><circle cx="558" cy="366" r="1.3"/></g>
+            </g>
+          </g>
+
+          <g font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="25" text-anchor="middle">
+            <g class="grow" style="--d:1.65s"><rect x="62" y="118" width="108" height="36" rx="18" fill="var(--il-cream)"/><rect x="62" y="118" width="108" height="36" rx="18" fill="none" stroke="var(--il-pink)" stroke-width="2"/><text x="116" y="143" fill="var(--il-pink-d)">gestação</text></g>
+            <g class="grow" style="--d:1.85s"><rect x="252" y="180" width="106" height="36" rx="18" fill="var(--il-cream)"/><rect x="252" y="180" width="106" height="36" rx="18" fill="none" stroke="var(--il-sage-d)" stroke-width="2"/><text x="305" y="205" fill="#3c6b3f">pós-parto</text></g>
+            <g class="grow" style="--d:2.05s"><rect x="420" y="258" width="164" height="36" rx="18" fill="var(--il-cream)"/><rect x="420" y="258" width="164" height="36" rx="18" fill="none" stroke="var(--il-butter-d)" stroke-width="2"/><text x="502" y="283" fill="#9a4a22">primeiro pratinho</text></g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-b">
+        <p class="lead seq" style="animation-delay:.6s">Cuido da alimentação da mulher e do bebê nos momentos que mais pedem acolhimento: da barriga crescendo ao primeiro pratinho. Presencial no Liv Mall, em João Pessoa, ou on-line, de onde você estiver.</p>
+        <div class="phase-pills seq" style="animation-delay:.72s" aria-label="Fases atendidas">
+          <span class="pp1"><i><svg aria-hidden="true"><use href="#i-belly"/></svg></i>Gestação</span>
+          <span class="pp2"><i><svg aria-hidden="true"><use href="#i-mom"/></svg></i>Pós-parto</span>
+          <span class="pp3"><i><svg aria-hidden="true"><use href="#i-bowl"/></svg></i>Introdução alimentar responsiva</span>
+        </div>
+        <div class="hero-cta seq" style="animation-delay:.85s">
           <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
           <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
         </div>
-        <div class="facts seq" style="animation-delay:.95s">
+        <div class="facts seq" style="animation-delay:1s">
           <span><svg aria-hidden="true"><use href="#i-pin"/></svg>Liv Mall · sala 421 · Jardim Oceania</span>
           <span><svg aria-hidden="true"><use href="#i-laptop"/></svg>Presencial ou on-line</span>
           <span><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="phone num">(83) 99629-6511</span></span>
         </div>
       </div>
-
-      <div class="hero-art">
-        <svg viewBox="0 0 560 490" role="img" aria-label="Ilustração em traço fino: um fio contínuo liga três momentos, uma gestante, uma mãe com o bebê no colo e o primeiro pratinho do bebê.">
-          <path class="dr" style="--d:.2s" pathLength="1" d="M6 440C60 446 50 330 128 318S200 160 290 150S380 330 448 322S540 230 556 190" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-linecap="round"/>
-          <g transform="translate(128 318)">
-            <circle r="92" fill="var(--bg-2)" stroke="var(--line)"/>
-            <circle class="ring" r="80" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="1 9" stroke-linecap="round" opacity=".7"/>
-            <g transform="scale(1.12)" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-              <circle class="dr" style="--d:.7s" pathLength="1" cx="-2" cy="-52" r="12"/>
-              <path class="dr" style="--d:.8s" pathLength="1" d="M-13 -57C-14 -70 4 -73 9 -62"/>
-              <circle class="dr" style="--d:.8s" pathLength="1" cx="-15" cy="-63" r="5.5"/>
-              <path class="dr" style="--d:.9s" pathLength="1" d="M-10 -40C-16 -20-20 6-14 30C-10 46-12 56-14 66"/>
-              <path class="dr" style="--d:.9s" pathLength="1" d="M5 -41C6 -34 10 -28 14 -22C10 -16 8 -12 10 -6C30 2 38 24 30 40C24 50 12 52 6 54C6 58 6 62 6 66"/>
-              <path class="dr" style="--d:1.1s" pathLength="1" d="M-8 -30C-4 -10 2 4 18 14"/>
-              <path class="dr" style="--d:1.4s" pathLength="1" d="M24 22c-3-4-9-1-5 4l5 4 5-4c4-5-2-8-5-4Z" stroke="var(--accent)"/>
-            </g>
-          </g>
-          <g transform="translate(290 150)">
-            <circle r="100" fill="var(--bg-2)" stroke="var(--line)"/>
-            <circle class="ring r2" r="88" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="1 9" stroke-linecap="round" opacity=".7"/>
-            <g transform="scale(1.2)" fill="none" stroke="var(--ink)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-              <circle class="dr" style="--d:1.1s" pathLength="1" cx="-16" cy="-50" r="12"/>
-              <path class="dr" style="--d:1.2s" pathLength="1" d="M-28 -50C-30 -66-6 -70-4 -54C-2 -44-2 -34 4 -28"/>
-              <path class="dr" style="--d:1.3s" pathLength="1" d="M-30 -38C-38 -10-38 30-32 66"/>
-              <path class="dr" style="--d:1.3s" pathLength="1" d="M-6 -36C2 -30 6 -22 6 -14"/>
-              <circle class="dr" style="--d:1.5s" pathLength="1" cx="14" cy="-14" r="9" stroke="var(--accent)"/>
-              <path class="dr" style="--d:1.5s" pathLength="1" d="M6 -6C18 -4 34 2 34 14C34 26 14 30 -4 24"/>
-              <path class="dr" style="--d:1.6s" pathLength="1" d="M-30 -24C-26 6-6 26 18 26C28 26 36 20 38 12"/>
-              <path class="dr" style="--d:1.7s" pathLength="1" d="M-4 24C0 40 4 54 6 66"/>
-            </g>
-          </g>
-          <g transform="translate(448 322)">
-            <circle r="92" fill="var(--bg-2)" stroke="var(--line)"/>
-            <circle class="ring" r="80" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="1 9" stroke-linecap="round" opacity=".7"/>
-            <g transform="scale(1.08)" fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-              <circle class="dr" style="--d:1.5s" pathLength="1" cx="0" cy="8" r="48"/>
-              <circle class="dr" style="--d:1.7s" pathLength="1" cx="0" cy="8" r="34" stroke="var(--accent)" stroke-dasharray="2 5"/>
-              <path class="dr" style="--d:1.8s" pathLength="1" d="M-16 6C-16 -6-4 -10 2 -8C2 4-8 10-16 6Z"/>
-              <path class="dr" style="--d:1.9s" pathLength="1" d="M-16 6L-4 -4"/>
-              <circle class="dr" style="--d:1.9s" pathLength="1" cx="12" cy="16" r="6"/>
-              <circle class="dr" style="--d:2s" pathLength="1" cx="-4" cy="24" r="5"/>
-              <circle class="dr" style="--d:2s" pathLength="1" cx="16" cy="0" r="4" stroke="var(--accent)"/>
-              <path class="dr" style="--d:2.1s" pathLength="1" d="M48 -30L28 -8"/>
-              <ellipse class="dr" style="--d:2.1s" pathLength="1" cx="52" cy="-36" rx="6" ry="9" transform="rotate(40 52 -36)"/>
-            </g>
-          </g>
-          <g font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="25" fill="var(--accent-ink)" text-anchor="middle">
-            <text class="lbl-art" style="--d:1.6s" x="128" y="440">gestação</text>
-            <text class="lbl-art" style="--d:1.9s" x="290" y="282">pós-parto</text>
-            <text class="lbl-art" style="--d:2.3s" x="448" y="444">primeiro pratinho</text>
-          </g>
-          <g fill="var(--accent)">
-            <circle class="floaty" cx="470" cy="80" r="4" opacity=".6"/>
-            <circle class="floaty f2" cx="60" cy="150" r="3" opacity=".5"/>
-            <circle class="floaty f3" cx="230" cy="420" r="3.5" opacity=".5"/>
-          </g>
-        </svg>
-      </div>
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="mq-track">
-      <span>Gestação</span><span><i>Pós-parto</i></span><span>Introdução alimentar responsiva</span><span><i>Pós-graduação</i></span><span>Podcast Nutrir Gerações</span><span><i>E-book de receitas</i></span>
-      <span>Gestação</span><span><i>Pós-parto</i></span><span>Introdução alimentar responsiva</span><span><i>Pós-graduação</i></span><span>Podcast Nutrir Gerações</span><span><i>E-book de receitas</i></span>
-    </div>
+  <div class="ribbons" aria-hidden="true">
+    <div class="ribbon r1"><div class="rb-track">
+      <span>Gestação <svg><use href="#i-heart"/></svg></span><span><em>Pós-parto</em> <svg><use href="#i-leaf"/></svg></span><span>Introdução alimentar responsiva <svg><use href="#i-heart"/></svg></span><span><em>Podcast Nutrir Gerações</em> <svg><use href="#i-leaf"/></svg></span><span>E-book de receitas <svg><use href="#i-heart"/></svg></span><span><em>Pós-graduação</em> <svg><use href="#i-leaf"/></svg></span>
+      <span>Gestação <svg><use href="#i-heart"/></svg></span><span><em>Pós-parto</em> <svg><use href="#i-leaf"/></svg></span><span>Introdução alimentar responsiva <svg><use href="#i-heart"/></svg></span><span><em>Podcast Nutrir Gerações</em> <svg><use href="#i-leaf"/></svg></span><span>E-book de receitas <svg><use href="#i-heart"/></svg></span><span><em>Pós-graduação</em> <svg><use href="#i-leaf"/></svg></span>
+    </div></div>
+    <div class="ribbon r2"><div class="rb-track">
+      <span>Comunidade <svg><use href="#i-spark"/></svg></span><span>Mentoria <svg><use href="#i-spark"/></svg></span><span>Palestras <svg><use href="#i-spark"/></svg></span><span>Docência <svg><use href="#i-spark"/></svg></span><span>Liv Mall · João Pessoa <svg><use href="#i-spark"/></svg></span><span>On-line <svg><use href="#i-spark"/></svg></span>
+      <span>Comunidade <svg><use href="#i-spark"/></svg></span><span>Mentoria <svg><use href="#i-spark"/></svg></span><span>Palestras <svg><use href="#i-spark"/></svg></span><span>Docência <svg><use href="#i-spark"/></svg></span><span>Liv Mall · João Pessoa <svg><use href="#i-spark"/></svg></span><span>On-line <svg><use href="#i-spark"/></svg></span>
+    </div></div>
   </div>
 
-  <section id="fases">
+  <section class="s-blush pat-leaves fases" id="fases">
     <div class="wrap">
-      <div class="fases-head">
+      <div class="sec-head">
         <div class="rv">
-          <span class="eyebrow">Três momentos, um fio</span>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sprout"/></svg>A linha do tempo da família</span>
           <h2 class="h2">Da barriga ao <em>primeiro pratinho</em></h2>
+          <p class="lead">Cada fase tem perguntas próprias. Na consulta, a gente olha para a sua rotina, o seu momento e o seu bebê, e monta junto um caminho possível para a sua família.</p>
         </div>
-        <p class="lead rv" style="--i:1">Cada fase tem perguntas próprias. Na consulta, a gente olha para a sua rotina, o seu momento e o seu bebê, e monta junto um caminho possível para a sua família.</p>
+        <p class="note-hand rv" style="--i:1" aria-hidden="true"><svg viewBox="0 0 60 40"><path d="M4 8c18 0 34 6 44 24m0 0-10-3m10 3 1-11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>uma fase puxa a outra</p>
       </div>
 
-      <div class="thread-wrap" id="fio-wrap">
-        <svg class="thread" viewBox="0 0 80 1000" preserveAspectRatio="none" aria-hidden="true">
-          <path class="t-bg" d="M40 0C52 120 28 220 40 340S52 560 40 680S28 900 40 1000"/>
-          <path class="t-fg" id="fio" pathLength="1" d="M40 0C52 120 28 220 40 340S52 560 40 680S28 900 40 1000"/>
-        </svg>
-        <ol class="fase-list">
-          <li class="fase rv">
-            <span class="node" aria-hidden="true"></span>
-            <span class="fase-num">01</span>
-            <div>
+      <div class="tl" id="tl">
+        <div class="tl-vine" aria-hidden="true">
+          <svg viewBox="0 0 64 1000" preserveAspectRatio="none">
+            <path class="v-bg" d="M32 0C50 120 14 220 32 340S50 560 32 680 14 900 32 1000"/>
+            <path class="v-fg" id="vine" pathLength="1" d="M32 0C50 120 14 220 32 340S50 560 32 680 14 900 32 1000"/>
+          </svg>
+          <span class="vleaf l sway" style="top:12%"><svg><use href="#i-leaf"/></svg></span>
+          <span class="vleaf r sway s2" style="top:26%;transform:scaleX(-1)"><svg><use href="#i-leaf"/></svg></span>
+          <span class="vleaf l sway s3" style="top:45%"><svg><use href="#i-leaf"/></svg></span>
+          <span class="vleaf r sway" style="top:61%"><svg><use href="#i-leaf"/></svg></span>
+          <span class="vleaf l sway s2" style="top:80%"><svg><use href="#i-leaf"/></svg></span>
+        </div>
+
+        <ol class="stations">
+          <li class="station rvs">
+            <span class="node" aria-hidden="true"><svg><use href="#i-belly"/></svg></span>
+            <div class="vig" aria-hidden="true">
+              <svg viewBox="0 0 220 220">
+                <defs><clipPath id="cv1"><circle cx="110" cy="110" r="100"/></clipPath></defs>
+                <circle cx="110" cy="110" r="104" fill="var(--il-peach)"/>
+                <g clip-path="url(#cv1)">
+                  <circle cx="110" cy="110" r="100" fill="url(#pd-arch)"/>
+                  <path d="M150 230c40-20 70-60 60-110" fill="none" stroke="#fff" stroke-width="18" opacity=".18"/>
+                  <path d="M76 20C70 70 64 120 60 240H150C148 210 158 186 170 160 186 126 172 92 130 80 122 64 120 44 120 20Z" fill="var(--il-pink)"/>
+                  <path d="M76 20C70 70 64 120 60 240H150C148 210 158 186 170 160 186 126 172 92 130 80 122 64 120 44 120 20Z" fill="url(#pd-dots)"/>
+                  <path d="M76 20C70 70 64 120 60 240H84C86 160 92 90 98 20Z" fill="var(--il-pink-d)" opacity=".4"/>
+                  <path d="M118 36C126 80 146 112 158 128" stroke="var(--il-skin1)" stroke-width="16" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="160" cy="132" rx="12" ry="9" fill="var(--il-skin1)"/>
+                  <rect x="24" y="132" width="28" height="44" rx="5" fill="#fff" opacity=".92"/>
+                  <rect x="24" y="146" width="28" height="30" rx="5" fill="var(--il-cream)"/>
+                  <path d="M24 146h28" stroke="var(--il-butter-d)" stroke-width="2"/>
+                </g>
+                <circle cx="110" cy="110" r="104" fill="none" stroke="var(--il-cream)" stroke-width="5"/>
+                <circle cx="110" cy="110" r="96" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="2 7" opacity=".8"/>
+                <g class="bob"><use href="#i-heart" x="170" y="56" width="28" height="28" fill="var(--il-pink-d)"/></g>
+                <g fill="var(--il-sage-d)"><path class="sway" d="M14 176c-4-14 4-26 18-28 4 14-4 26-18 28Z"/><path class="sway s2" d="M196 182c-14 2-24-6-26-20 14-2 24 6 26 20Z"/></g>
+              </svg>
+              <span class="tagv">gestação</span>
+            </div>
+            <div class="st-card">
+              <span class="st-num"><b>01</b>a barriga crescendo</span>
               <h3>Gestação</h3>
               <p class="sub">Comer bem enquanto o bebê cresce, com orientação clara para cada etapa.</p>
-              <ul>
-                <li><span>Alimentação ao longo dos trimestres, adaptada à sua rotina</span></li>
-                <li><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
-                <li><span>Orientação alimentar quando há diabetes na gravidez, junto com o seu pré-natal</span></li>
-                <li><span>Enjoos, azia e outros desconfortos comuns da fase</span></li>
+              <ul class="ticks">
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alimentação ao longo dos trimestres, adaptada à sua rotina</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Orientação alimentar quando há diabetes na gravidez, junto com o seu pré-natal</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Enjoos, azia e outros desconfortos comuns da fase</span></li>
               </ul>
             </div>
-            <div class="fase-art" aria-hidden="true"><svg viewBox="0 0 140 150"><use href="#v-gest"/></svg></div>
           </li>
-          <li class="fase rv">
-            <span class="node" aria-hidden="true"></span>
-            <span class="fase-num">02</span>
-            <div>
+
+          <li class="station rvs">
+            <span class="node" aria-hidden="true"><svg><use href="#i-mom"/></svg></span>
+            <div class="vig" aria-hidden="true">
+              <svg viewBox="0 0 220 220">
+                <defs><clipPath id="cv2"><circle cx="110" cy="110" r="100"/></clipPath></defs>
+                <circle cx="110" cy="110" r="104" fill="var(--il-sage)"/>
+                <g clip-path="url(#cv2)">
+                  <circle cx="110" cy="110" r="100" fill="url(#pd-arch)"/>
+                  <path d="M-10 240C10 180 60 150 120 150S200 130 230 100V240Z" fill="var(--il-coral)"/>
+                  <path d="M-10 240C10 180 60 150 120 150S200 130 230 100V240Z" fill="url(#pd-stripe)"/>
+                  <g transform="rotate(-22 116 118)">
+                    <ellipse cx="116" cy="118" rx="66" ry="36" fill="var(--il-butter)"/>
+                    <ellipse cx="116" cy="118" rx="66" ry="36" fill="url(#pd-dots-pink)"/>
+                    <path d="M66 122q50 20 110-6" stroke="var(--il-butter-d)" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+                  </g>
+                  <circle cx="64" cy="104" r="26" fill="var(--il-skin1)"/>
+                  <path d="M56 80q10-10 18 3" stroke="var(--il-hair3)" stroke-width="4" stroke-linecap="round" fill="none"/>
+                  <path d="M54 106q4 3 8 0M68 104q4 3 8 0" stroke="var(--il-plum)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+                  <circle cx="58" cy="116" r="5" fill="var(--il-pink)" opacity=".35"/>
+                  <path d="M20 200C50 170 110 168 168 142" stroke="var(--il-skin2)" stroke-width="22" stroke-linecap="round" fill="none"/>
+                  <ellipse cx="170" cy="140" rx="14" ry="11" fill="var(--il-skin2)"/>
+                </g>
+                <g>
+                  <rect x="150" y="34" width="38" height="36" rx="8" fill="var(--il-pink)"/>
+                  <path d="M188 42c12 0 12 20 0 20" stroke="var(--il-pink)" stroke-width="5" fill="none"/>
+                  <rect x="150" y="34" width="38" height="8" rx="4" fill="var(--il-pink-d)"/>
+                  <path class="steam" d="M160 26c-4-6 4-10 0-16" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" style="animation:steam 2.6s ease-in-out infinite"/>
+                  <path d="M176 26c-4-6 4-10 0-16" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" style="animation:steam 2.6s ease-in-out -1.3s infinite"/>
+                </g>
+                <circle cx="110" cy="110" r="104" fill="none" stroke="var(--il-cream)" stroke-width="5"/>
+                <circle cx="110" cy="110" r="96" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="2 7" opacity=".8"/>
+                <g class="bob b2"><use href="#i-heart" x="24" y="40" width="26" height="26" fill="var(--il-pink)"/></g>
+              </svg>
+              <span class="tagv">pós-parto</span>
+            </div>
+            <div class="st-card">
+              <span class="st-num"><b>02</b>o bebê chegou</span>
               <h3>Pós-parto</h3>
               <p class="sub">O bebê chegou e a sua alimentação também merece cuidado. Sem cobrança, sem dieta da moda.</p>
-              <ul>
-                <li><span>Alimentação que cabe na rotina com um recém-nascido</span></li>
-                <li><span>Nutrição durante a amamentação</span></li>
-                <li><span>Energia e bem-estar no puerpério</span></li>
-                <li><span>Retomar a sua alimentação com calma, respeitando o seu tempo</span></li>
+              <ul class="ticks">
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alimentação que cabe na rotina com um recém-nascido</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nutrição durante a amamentação</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Energia e bem-estar no puerpério</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Retomar a sua alimentação com calma, respeitando o seu tempo</span></li>
               </ul>
             </div>
-            <div class="fase-art" aria-hidden="true"><svg viewBox="0 0 140 150"><use href="#v-pos"/></svg></div>
           </li>
-          <li class="fase rv">
-            <span class="node" aria-hidden="true"></span>
-            <span class="fase-num">03</span>
-            <div>
+
+          <li class="station rvs">
+            <span class="node" aria-hidden="true"><svg><use href="#i-bowl"/></svg></span>
+            <div class="vig" aria-hidden="true">
+              <svg viewBox="0 0 220 220">
+                <circle cx="110" cy="110" r="104" fill="var(--il-butter)"/>
+                <circle cx="110" cy="110" r="100" fill="url(#pd-arch)"/>
+                <use href="#s-plate" x="22" y="22" width="176" height="176"/>
+                <g transform="rotate(38 186 70)"><rect x="180" y="20" width="12" height="70" rx="6" fill="var(--il-sage-d)"/><ellipse cx="186" cy="104" rx="14" ry="20" fill="var(--il-sage-d)"/><ellipse cx="186" cy="104" rx="9" ry="14" fill="var(--il-sage)"/></g>
+                <circle cx="110" cy="110" r="104" fill="none" stroke="var(--il-cream)" stroke-width="5"/>
+                <g class="twinkle"><use href="#i-spark" x="26" y="30" width="22" height="22" fill="var(--il-pink)"/></g>
+                <g class="twinkle t2"><use href="#i-spark" x="178" y="168" width="18" height="18" fill="var(--il-pink-d)"/></g>
+              </svg>
+              <span class="tagv">primeiro pratinho</span>
+            </div>
+            <div class="st-card">
+              <span class="st-num"><b>03</b>a partir dos 6 meses</span>
               <h3>Introdução alimentar <em>responsiva</em></h3>
               <p class="sub">A partir dos 6 meses, o bebê começa a descobrir a comida. A família aprende junto.</p>
-              <ul>
-                <li><span>Como começar e o que oferecer nos primeiros pratinhos</span></li>
-                <li><span>Variedade de alimentos, cores e texturas</span></li>
-                <li><span>Receitinhas práticas para o dia a dia da família</span></li>
-                <li><span>Momento da refeição mais tranquilo para todo mundo</span></li>
+              <ul class="ticks">
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Como começar e o que oferecer nos primeiros pratinhos</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Variedade de alimentos, cores e texturas</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Receitinhas práticas para o dia a dia da família</span></li>
+                <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Momento da refeição mais tranquilo para todo mundo</span></li>
               </ul>
-              <div class="resp">
+              <div class="postit">
                 <b>O que é ser “responsiva”?</b>
                 <p>É olhar para os sinais do bebê: perceber quando ele tem fome e quando está satisfeito, sem forçar e sem pressa. A refeição vira um momento de descoberta e de vínculo, e não uma briga à mesa.</p>
               </div>
             </div>
-            <div class="fase-art" aria-hidden="true"><svg viewBox="0 0 140 150"><use href="#v-prato"/></svg></div>
           </li>
         </ol>
       </div>
     </div>
   </section>
 
-  <section class="sel" id="sua-fase">
+  <section class="s-pink pat-dots sel" id="sua-fase">
+    <svg class="wave flip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V30C1200 80 960 10 720 40S240 80 0 30Z" fill="var(--blush)"/></svg>
     <div class="wrap sel-grid">
       <div class="rv">
-        <span class="eyebrow">Em que fase você está?</span>
+        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-heart"/></svg>Em que fase você está?</span>
         <h2 class="h2">Escolha o seu momento. <em>A mensagem sai pronta.</em></h2>
         <p class="lead">Veja o que a consulta costuma abordar na sua fase. Depois é só conferir o texto e enviar pelo WhatsApp.</p>
         <ul class="side">
-          <li><b>Sem cadastro</b><span>Nada fica salvo neste site. A mensagem só vai quando você toca em enviar.</span></li>
-          <li><b>Presencial ou on-line</b><span>Diga como prefere e o restante é combinado pelo WhatsApp.</span></li>
-          <li><b>Cada família é uma</b><span>Os temas são um resumo geral. O que entra na sua consulta é definido com a Dra. Dayanna.</span></li>
+          <li><span class="ic" aria-hidden="true"><svg><use href="#i-lock"/></svg></span><div><b>Sem cadastro</b><span>Nada fica salvo neste site. A mensagem só vai quando você toca em enviar.</span></div></li>
+          <li><span class="ic" aria-hidden="true"><svg><use href="#i-laptop"/></svg></span><div><b>Presencial ou on-line</b><span>Diga como prefere e o restante é combinado pelo WhatsApp.</span></div></li>
+          <li><span class="ic" aria-hidden="true"><svg><use href="#i-sprout"/></svg></span><div><b>Cada família é uma</b><span>Os temas são um resumo geral. O que entra na sua consulta é definido com a Dra. Dayanna.</span></div></li>
         </ul>
+        <svg class="sel-art" viewBox="0 0 150 60" aria-hidden="true"><path d="M4 30c20-24 40-24 56 0s36 24 56 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M118 18l20 12-22 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
 
-      <form class="card rv" style="--i:1" id="fase-form" aria-label="Minha fase agora" novalidate>
+      <form class="card rv-tilt" style="--i:1" id="fase-form" aria-label="Minha fase agora" novalidate>
+        <div class="card-title"><h3>Minha fase agora</h3><span class="hand">toque e veja</span></div>
         <fieldset>
           <legend class="sr">Eu estou</legend>
           <div class="seg" id="seg">
-            <label><input type="radio" name="fase" value="gestante" checked><span>Gestante<small>esperando o bebê</small></span></label>
-            <label><input type="radio" name="fase" value="posparto"><span>Pós-parto<small>o bebê chegou</small></span></label>
-            <label><input type="radio" name="fase" value="bebe"><span>Introdução<small>alimentar</small></span></label>
+            <label><input type="radio" name="fase" value="gestante" checked><span><i><svg aria-hidden="true"><use href="#i-belly"/></svg></i>Gestante<small>esperando o bebê</small></span></label>
+            <label><input type="radio" name="fase" value="posparto"><span><i><svg aria-hidden="true"><use href="#i-mom"/></svg></i>Pós-parto<small>o bebê chegou</small></span></label>
+            <label><input type="radio" name="fase" value="bebe"><span><i><svg aria-hidden="true"><use href="#i-bowl"/></svg></i>Introdução<small>alimentar</small></span></label>
           </div>
         </fieldset>
 
         <div class="panel" data-p="gestante">
-          <div class="p-head">
-            <div><h3>Na <em>gestação</em></h3><p>A consulta costuma abordar:</p></div>
-            <svg viewBox="0 0 140 150" aria-hidden="true"><use href="#v-gest"/></svg>
-          </div>
+          <h4>Na <em>gestação</em></h4>
+          <p>A consulta costuma abordar:</p>
           <ul>
-            <li><span>Alimentação ao longo dos trimestres, dentro da sua rotina</span></li>
-            <li><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
-            <li><span>Enjoos, azia e outros desconfortos comuns</span></li>
-            <li><span>Orientação alimentar quando há diabetes na gravidez, junto com o pré-natal</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alimentação ao longo dos trimestres, dentro da sua rotina</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nutrientes que pedem atenção na gravidez, como o cálcio</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Enjoos, azia e outros desconfortos comuns</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Orientação alimentar quando há diabetes na gravidez, junto com o pré-natal</span></li>
           </ul>
           <div class="fld">
             <label class="fld-l" for="semanas">Semanas de gestação <span>(opcional)</span></label>
@@ -656,28 +1190,24 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
         </div>
 
         <div class="panel" data-p="posparto">
-          <div class="p-head">
-            <div><h3>No <em>pós-parto</em></h3><p>A consulta costuma abordar:</p></div>
-            <svg viewBox="0 0 140 150" aria-hidden="true"><use href="#v-pos"/></svg>
-          </div>
+          <h4>No <em>pós-parto</em></h4>
+          <p>A consulta costuma abordar:</p>
           <ul>
-            <li><span>Alimentação que cabe na rotina com o bebê</span></li>
-            <li><span>Nutrição durante a amamentação</span></li>
-            <li><span>Energia e bem-estar no puerpério</span></li>
-            <li><span>Retomar a sua alimentação com calma, no seu tempo</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Alimentação que cabe na rotina com o bebê</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nutrição durante a amamentação</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Energia e bem-estar no puerpério</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Retomar a sua alimentação com calma, no seu tempo</span></li>
           </ul>
         </div>
 
         <div class="panel" data-p="bebe">
-          <div class="p-head">
-            <div><h3>Na <em>introdução alimentar</em></h3><p>A consulta costuma abordar:</p></div>
-            <svg viewBox="0 0 140 150" aria-hidden="true"><use href="#v-prato"/></svg>
-          </div>
+          <h4>Na <em>introdução alimentar</em></h4>
+          <p>A consulta costuma abordar:</p>
           <ul>
-            <li><span>Como começar a introdução alimentar de forma responsiva</span></li>
-            <li><span>Sinais de fome e de saciedade do bebê</span></li>
-            <li><span>Variedade de alimentos, cores e texturas</span></li>
-            <li><span>Receitinhas práticas para o dia a dia da família</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Como começar a introdução alimentar de forma responsiva</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sinais de fome e de saciedade do bebê</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Variedade de alimentos, cores e texturas</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Receitinhas práticas para o dia a dia da família</span></li>
           </ul>
           <div class="fld">
             <label class="fld-l" for="meses">Idade do bebê, em meses <span>(opcional)</span></label>
@@ -709,126 +1239,327 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
         <p class="disc">Este resumo é informativo e não substitui a consulta.</p>
       </form>
     </div>
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C240 0 480 70 720 40S1200 0 1440 40V80H0Z" fill="var(--cream)"/></svg>
   </section>
 
-  <section id="consulta">
-    <div class="wrap cons-grid">
-      <div>
+  <section class="s-cream" id="consulta">
+    <div class="wrap">
+      <div class="sec-head">
         <div class="rv">
-          <span class="eyebrow">A primeira consulta</span>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-cal"/></svg>A primeira consulta</span>
           <h2 class="h2">Como funciona, <em>passo a passo</em></h2>
-          <p class="lead">Você escolhe o formato que funciona melhor para a sua rotina, para a barriga ou para o bebê no colo.</p>
         </div>
-        <ol class="steps rv" style="--i:1">
-          <li><span class="n">1</span><div><h3>Você chama no WhatsApp</h3><p>Conte a sua fase e se prefere presencial ou on-line.</p></div></li>
-          <li><span class="n">2</span><div><h3>Combinamos dia e horário</h3><p>Dia, horário, valores e demais detalhes são combinados por lá.</p></div></li>
-          <li><span class="n">3</span><div><h3>A consulta</h3><p>Um tempo para falar da sua rotina, das suas dúvidas e do seu bebê, e montar junto um caminho possível para a sua família.</p></div></li>
-        </ol>
-        <p class="note rv" style="--i:2">Os detalhes eu explico pelo WhatsApp.</p>
+        <p class="lead rv" style="--i:1">Você escolhe o formato que funciona melhor para a sua rotina, para a barriga ou para o bebê no colo.</p>
       </div>
+
+      <ol class="steps rv">
+        <li>
+          <svg class="ill" viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="31" fill="var(--card-pink)"/><path d="M16 18h30v20H26l-10 8Z" fill="var(--il-pink)"/><circle cx="24" cy="28" r="2.6" fill="#fff"/><circle cx="31" cy="28" r="2.6" fill="#fff"/><circle cx="38" cy="28" r="2.6" fill="#fff"/></svg>
+          <span class="n">1</span><h3>Você chama no WhatsApp</h3><p>Conte a sua fase e se prefere presencial ou on-line.</p>
+        </li>
+        <li>
+          <svg class="ill" viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="31" fill="var(--card-peach)"/><rect x="15" y="18" width="32" height="28" rx="6" fill="var(--il-cream)"/><rect x="15" y="18" width="32" height="9" rx="4" fill="var(--il-coral)"/><circle cx="36" cy="37" r="5" fill="var(--il-pink)"/><path d="M22 14v8M40 14v8" stroke="var(--il-plum)" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="n">2</span><h3>Combinamos dia e horário</h3><p>Dia, horário, valores e demais detalhes são combinados por lá.</p>
+        </li>
+        <li>
+          <svg class="ill" viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="31" fill="var(--card-sage)"/><path d="M31 46s-14-8.4-14-18A7.4 7.4 0 0 1 31 23.6 7.4 7.4 0 0 1 45 28c0 9.6-14 18-14 18Z" fill="var(--il-sage-d)"/><path d="M31 23c0-7 4-11 11-12-1 7-5 11-11 12Z" fill="var(--il-butter-d)"/></svg>
+          <span class="n">3</span><h3>A consulta</h3><p>Um tempo para falar da sua rotina, das suas dúvidas e do seu bebê, e montar junto um caminho possível para a sua família.</p>
+        </li>
+      </ol>
+      <p class="note rv"><svg aria-hidden="true"><use href="#i-heart"/></svg>Os detalhes eu explico pelo WhatsApp.</p>
+
       <div class="modes">
-        <article class="mode rv">
+        <article class="mode mode-in rv">
           <span class="tag">Presencial</span>
-          <h3>No consultório, em João Pessoa</h3>
-          <p class="addr">Liv Mall · Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar · Jardim Oceania</p>
+          <h3>No consultório, <em>em João Pessoa</em></h3>
+          <p>Liv Mall · Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar · Jardim Oceania</p>
           <a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener">Como chegar<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <svg class="mode-ill" viewBox="0 0 250 200" aria-hidden="true">
+            <circle cx="170" cy="120" r="90" fill="#fff" opacity=".1"/>
+            <rect x="96" y="40" width="130" height="170" rx="12" fill="var(--il-cream)"/>
+            <rect x="96" y="40" width="130" height="28" rx="12" fill="var(--il-butter)"/>
+            <g fill="var(--il-pink-l)" opacity=".7"><rect x="110" y="82" width="22" height="18" rx="4"/><rect x="140" y="82" width="22" height="18" rx="4"/><rect x="170" y="82" width="22" height="18" rx="4"/><rect x="200" y="82" width="14" height="18" rx="4"/><rect x="110" y="110" width="22" height="18" rx="4"/><rect x="140" y="110" width="22" height="18" rx="4"/><rect x="200" y="110" width="14" height="18" rx="4"/><rect x="110" y="138" width="22" height="18" rx="4"/><rect x="140" y="138" width="22" height="18" rx="4"/><rect x="170" y="138" width="22" height="18" rx="4"/></g>
+            <rect x="170" y="110" width="22" height="18" rx="4" fill="var(--il-pink-d)"/>
+            <g class="bob"><path d="M181 102s-14-12-14-22a14 14 0 0 1 28 0c0 10-14 22-14 22Z" fill="var(--il-butter)"/><circle cx="181" cy="79" r="5" fill="var(--il-pink-d)"/></g>
+            <path d="M40 210V160" stroke="var(--il-sage-d)" stroke-width="5" stroke-linecap="round"/><circle cx="40" cy="150" r="22" fill="var(--il-sage)"/><circle cx="28" cy="164" r="13" fill="var(--il-sage-d)"/>
+          </svg>
         </article>
-        <article class="mode rv" style="--i:1">
+        <article class="mode mode-on rv" style="--i:1">
           <span class="tag">On-line</span>
-          <h3>De onde você estiver</h3>
+          <h3>De onde você <em>estiver</em></h3>
           <p>Para quem mora em outra cidade, está nas últimas semanas da gestação ou prefere não sair com o bebê pequeno.</p>
+          <svg class="mode-ill" viewBox="0 0 250 200" aria-hidden="true">
+            <rect x="52" y="54" width="180" height="116" rx="14" fill="var(--il-plum)"/>
+            <rect x="62" y="64" width="160" height="96" rx="8" fill="var(--il-pink-l)"/>
+            <circle cx="120" cy="104" r="18" fill="var(--il-skin2)"/>
+            <path d="M102 100c0-22 36-22 36 0-8-8-28-8-36 0Z" fill="var(--il-hair2)"/>
+            <path d="M92 160c2-22 14-32 28-32s26 10 28 32Z" fill="var(--il-pink)"/>
+            <rect x="166" y="72" width="48" height="36" rx="6" fill="var(--il-butter)"/>
+            <circle cx="190" cy="86" r="8" fill="var(--il-skin1)"/>
+            <path d="M178 108c1-9 6-13 12-13s11 4 12 13Z" fill="var(--il-sage-d)"/>
+            <path d="M36 176h212" stroke="var(--il-plum)" stroke-width="8" stroke-linecap="round"/>
+            <g class="bob b2"><use href="#i-heart" x="196" y="122" width="22" height="22" fill="var(--il-pink)"/></g>
+          </svg>
         </article>
-        <div class="when rv" style="--i:2">
-          <h3>Quando <em>procurar</em></h3>
-          <ul>
-            <li><span>Você está grávida e quer orientação para comer bem ao longo dos trimestres</span></li>
-            <li><span>Há diabetes na gravidez e você quer orientação alimentar junto com o pré-natal</span></li>
-            <li><span>O bebê chegou e você quer cuidar da sua alimentação na amamentação</span></li>
-            <li><span>O bebê está chegando aos 6 meses e a família quer se preparar para a introdução alimentar</span></li>
-          </ul>
+      </div>
+
+      <div class="when rv">
+        <div>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sprout"/></svg>Para quem é</span>
+          <h3 style="margin-top:12px">Quando <em>procurar</em></h3>
         </div>
+        <ul>
+          <li><i aria-hidden="true"><svg><use href="#i-belly"/></svg></i><span>Você está grávida e quer orientação para comer bem ao longo dos trimestres</span></li>
+          <li><i aria-hidden="true"><svg><use href="#i-heart-o"/></svg></i><span>Há diabetes na gravidez e você quer orientação alimentar junto com o pré-natal</span></li>
+          <li><i aria-hidden="true"><svg><use href="#i-mom"/></svg></i><span>O bebê chegou e você quer cuidar da sua alimentação na amamentação</span></li>
+          <li><i aria-hidden="true"><svg><use href="#i-bowl"/></svg></i><span>O bebê está chegando aos 6 meses e a família quer se preparar para a introdução alimentar</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="eco" id="nutrir-geracoes">
+  <section class="s-cream eco" id="nutrir-geracoes">
+    <span class="blobby b1" aria-hidden="true"></span><span class="blobby b2" aria-hidden="true"></span>
     <div class="wrap">
       <div class="eco-head">
         <div class="rv">
-          <span class="eyebrow">Nutrir Gerações</span>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-sprout"/></svg>O universo Nutrir Gerações</span>
           <h2 class="h2">Consulta, pós, podcast e <span style="white-space:nowrap">e-book.</span> <em>Tudo num lugar só.</em></h2>
         </div>
         <p class="lead rv" style="--i:1">Além do consultório, a Dra. Dayanna ensina, conversa e compartilha receitas. Aqui você encontra cada frente e pede o que quiser pelo WhatsApp.</p>
       </div>
 
-      <svg class="eco-link rv" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 30C80 30 100 50 166 50S250 10 500 10 834 50 834 50 920 30 1000 30"/>
-        <circle cx="166" cy="50" r="6"/><circle cx="500" cy="10" r="6"/><circle cx="834" cy="50" r="6"/>
-      </svg>
+      <div class="bento">
+        <article class="tile t-book rv">
+          <span class="tag">E-book de receitas</span>
+          <div class="bookwrap">
+            <svg class="book" viewBox="0 0 260 300" aria-hidden="true">
+              <ellipse cx="132" cy="288" rx="96" ry="10" fill="var(--il-plum)" opacity=".18"/>
+              <path d="M44 52 56 44V278L44 284Z" fill="var(--il-pink-d)"/>
+              <path d="M192 30 210 40V264L192 266Z" fill="var(--il-cream)"/>
+              <path d="M195 36 207 43M195 60 207 66M195 90 207 95M195 120 207 124M195 150 207 153M195 180 207 182M195 210 207 211M195 240 207 240" stroke="var(--il-wood)" stroke-width="1.2" opacity=".7"/>
+              <path d="M56 44 192 30V266L56 278Z" fill="var(--il-pink)"/>
+              <path d="M56 44 192 30V266L56 278Z" fill="url(#pd-dots)"/>
+              <path d="M56 44 76 42V276L56 278Z" fill="#fff" opacity=".14"/>
+              <g transform="translate(56 44) skewY(-5.9)">
+                <text x="18" y="28" font-family="Figtree, sans-serif" font-weight="800" font-size="9.5" letter-spacing="2" fill="var(--il-butter)">E-BOOK</text>
+                <text x="16" y="82" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="56" fill="#fff">100</text>
+                <text x="18" y="106" font-family="Caveat, cursive" font-weight="700" font-size="27" fill="var(--il-butter)">receitas</text>
+                <text x="18" y="126" font-family="Figtree, sans-serif" font-weight="700" font-size="10.5" fill="#fff">para iniciar a</text>
+                <text x="18" y="140" font-family="Figtree, sans-serif" font-weight="700" font-size="10.5" fill="#fff">introdução alimentar</text>
+                <use href="#s-plate" x="54" y="146" width="74" height="74"/>
+                <text x="18" y="228" font-family="Figtree, sans-serif" font-weight="600" font-size="9" fill="#fff" opacity=".9">Dra. Dayanna Queiroz</text>
+              </g>
+              <g class="bob b3"><path d="M226 120c10 0 16 8 14 18-10 2-18-6-14-18Z" fill="var(--il-sage-d)"/></g>
+              <g class="bob"><circle cx="30" cy="160" r="12" fill="var(--f-orange)"/><circle cx="30" cy="160" r="7" fill="#ffb067"/></g>
+              <g class="twinkle"><use href="#i-spark" x="214" y="8" width="24" height="24" fill="var(--il-butter-d)"/></g>
+            </svg>
+          </div>
+          <h3>100 receitas para iniciar a <em>introdução alimentar</em></h3>
+          <p>Ideias de pratinhos para os primeiros meses de comida de verdade. Pergunte pelo e-book e receba as informações.</p>
+          <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber mais sobre o e-book 100 receitas para iniciar a introdução alimentar." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir o e-book</a>
+        </article>
 
-      <div class="eco-grid">
-        <div class="rv">
-          <article class="tilt">
-            <div class="art" aria-hidden="true">
-              <svg viewBox="0 0 120 100"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40 60 18l50 22-50 22Z"/><path d="M28 48v20c9 8 20 11 32 11s23-3 32-11V48"/><path d="M110 40v26" stroke="var(--accent)"/><circle cx="110" cy="70" r="3" stroke="var(--accent)"/></g></svg>
+        <article class="tile t-pod rv" style="--i:1">
+          <span class="tag">Áudio e vídeo</span>
+          <div class="player" aria-hidden="true">
+            <svg class="cover" viewBox="0 0 88 88">
+              <rect width="88" height="88" rx="16" fill="var(--il-pink)"/>
+              <circle cx="70" cy="18" r="26" fill="var(--il-butter)" opacity=".9"/>
+              <rect width="88" height="88" rx="16" fill="url(#pd-dots)"/>
+              <rect x="36" y="22" width="16" height="30" rx="8" fill="#fff"/>
+              <path d="M28 42a16 16 0 0 0 32 0M44 58v8M36 66h16" stroke="#fff" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+              <text x="44" y="82" text-anchor="middle" font-family="Caveat, cursive" font-weight="700" font-size="12" fill="#fff">nutrir gerações</text>
+            </svg>
+            <div class="p-meta">
+              <small>Podcast</small>
+              <b>Nutrir Gerações</b>
+              <span>no podcast e no YouTube</span>
+              <div class="eq"><i style="animation-delay:-.2s"></i><i style="animation-delay:-.9s"></i><i style="animation-delay:-.5s"></i><i style="animation-delay:-1.1s"></i><i style="animation-delay:-.1s"></i><i style="animation-delay:-.7s"></i><i style="animation-delay:-1.2s"></i><i style="animation-delay:-.4s"></i><i style="animation-delay:-.8s"></i><i style="animation-delay:-.3s"></i><i style="animation-delay:-1s"></i><i style="animation-delay:-.6s"></i><i style="animation-delay:-.15s"></i><i style="animation-delay:-.95s"></i><i style="animation-delay:-.45s"></i><i style="animation-delay:-1.25s"></i><i style="animation-delay:-.05s"></i><i style="animation-delay:-.75s"></i></div>
             </div>
+            <div class="p-bar"><span class="num">ep.</span><span class="p-track"><i></i></span><span>áudio e vídeo</span></div>
+            <div class="p-ctrl"><svg><use href="#i-back"/></svg><span class="pl"><svg><use href="#i-play"/></svg></span><svg><use href="#i-fwd"/></svg></div>
+          </div>
+          <h3>Podcast <em>Nutrir Gerações</em></h3>
+          <p>O Nutrir Gerações também vira conversa em áudio e vídeo, no podcast e no YouTube.</p>
+          <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero o link do podcast e do canal Nutrir Gerações no YouTube." target="_blank" rel="noopener">Pedir o link do canal<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="tile t-cert rv" style="--i:2">
+          <div class="txtc">
             <span class="tag">Para profissionais</span>
             <h3>Pós-graduação em Nutrição <em>Materno Infantil</em></h3>
             <p>Coordenação de pós-graduação na área pelo INADES.</p>
             <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero informações sobre a pós-graduação em Nutrição Materno Infantil (INADES)." target="_blank" rel="noopener">Perguntar sobre turmas<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </article>
-        </div>
-        <div class="rv" style="--i:1">
-          <article class="tilt dark">
-            <div class="bars-w" aria-hidden="true"><i style="animation-delay:-.2s"></i><i style="animation-delay:-.9s"></i><i style="animation-delay:-.5s"></i><i style="animation-delay:-1.3s"></i><i style="animation-delay:-.1s"></i><i style="animation-delay:-.7s"></i><i style="animation-delay:-1.1s"></i><i style="animation-delay:-.4s"></i><i style="animation-delay:-1.5s"></i><i style="animation-delay:-.6s"></i><i style="animation-delay:-1s"></i><i style="animation-delay:-.3s"></i></div>
-            <span class="tag">Áudio e vídeo</span>
-            <h3>Podcast <em>Nutrir Gerações</em></h3>
-            <p>O Nutrir Gerações também vira conversa em áudio e vídeo, no podcast e no YouTube.</p>
-            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero o link do podcast e do canal Nutrir Gerações no YouTube." target="_blank" rel="noopener">Pedir o link do canal<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </article>
-        </div>
-        <div class="rv" style="--i:2">
-          <article class="tilt">
-            <div class="art" aria-hidden="true">
-              <svg viewBox="0 0 120 100"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="6" width="68" height="88" rx="4"/><path d="M34 6v88" stroke="var(--accent)"/><path d="M46 60h38a19 19 0 0 1-38 0Z"/><circle cx="58" cy="56" r="4"/><circle cx="70" cy="54" r="3" stroke="var(--accent)"/><path d="M50 26h36M54 34h28"/></g></svg>
-            </div>
-            <span class="tag">E-book de receitas</span>
-            <h3>100 receitas para iniciar a <em>introdução alimentar</em></h3>
-            <p>Ideias de pratinhos para os primeiros meses de comida de verdade.</p>
-            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber mais sobre o e-book 100 receitas para iniciar a introdução alimentar." target="_blank" rel="noopener">Pedir o e-book<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </article>
-        </div>
-      </div>
+          </div>
+          <svg class="cert" viewBox="0 0 300 220" aria-hidden="true">
+            <rect x="8" y="8" width="284" height="196" rx="8" fill="var(--il-cream)"/>
+            <rect x="18" y="18" width="264" height="176" rx="4" fill="none" stroke="var(--il-pink)" stroke-width="2"/>
+            <rect x="24" y="24" width="252" height="164" rx="2" fill="none" stroke="var(--il-pink)" stroke-width=".8" stroke-dasharray="3 3"/>
+            <path d="M18 40c10 0 22-12 22-22M282 40c-10 0-22-12-22-22M18 172c10 0 22 12 22 22M282 172c-10 0-22 12-22 22" stroke="var(--il-sage-d)" stroke-width="2" fill="none"/>
+            <text x="150" y="58" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="11" letter-spacing="3" fill="var(--il-pink-d)">PÓS-GRADUAÇÃO</text>
+            <text x="150" y="88" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600" font-size="19" fill="var(--il-plum)">Nutrição Materno Infantil</text>
+            <path d="M84 102h132" stroke="var(--il-pink-l)" stroke-width="2"/>
+            <text x="150" y="124" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="14" letter-spacing="2" fill="var(--il-plum)">INADES</text>
+            <text x="110" y="166" text-anchor="middle" font-family="Caveat, cursive" font-weight="700" font-size="19" fill="var(--il-pink-d)">Dayanna Queiroz</text>
+            <path d="M54 172h112" stroke="var(--il-plum)" stroke-width="1" opacity=".4"/>
+            <text x="110" y="184" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="700" font-size="8" letter-spacing="1.6" fill="var(--il-plum)" opacity=".7">COORDENAÇÃO</text>
+            <g transform="translate(232 158)">
+              <path d="M-12 10-20 44-6 36 2 48 6 14Z" fill="var(--il-pink)"/>
+              <path d="M12 10 20 44 6 36-2 48-6 14Z" fill="var(--il-pink-d)"/>
+              <circle r="24" fill="var(--il-sage-d)"/>
+              <circle r="18" fill="none" stroke="#fff" stroke-width="1.4" stroke-dasharray="2 3"/>
+              <use href="#i-spark" x="-10" y="-10" width="20" height="20" fill="var(--il-butter)"/>
+            </g>
+          </svg>
+        </article>
 
-      <div class="more">
-        <div class="rv">
-          <h4>Comunidade Nutrir Gerações</h4>
+        <article class="tile t-badge rv">
+          <span class="tag">Palestras e mentoria</span>
+          <svg class="badge-ill" viewBox="0 0 160 220" aria-hidden="true">
+            <path d="M44 0 74 70M116 0 86 70" stroke="var(--il-pink)" stroke-width="10" stroke-linecap="round"/>
+            <rect x="68" y="62" width="24" height="18" rx="4" fill="var(--il-plum)"/>
+            <rect x="20" y="74" width="120" height="140" rx="16" fill="var(--il-cream)"/>
+            <rect x="20" y="74" width="120" height="40" rx="16" fill="var(--il-pink)"/>
+            <rect x="20" y="98" width="120" height="16" fill="var(--il-pink)"/>
+            <rect x="66" y="82" width="28" height="8" rx="4" fill="var(--il-cream)"/>
+            <circle cx="80" cy="128" r="22" fill="var(--il-butter)"/>
+            <text x="80" y="135" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600" font-size="20" fill="var(--il-plum)">DQ</text>
+            <text x="80" y="168" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="11" textLength="106" lengthAdjust="spacingAndGlyphs" fill="var(--il-plum)">Dra. Dayanna Queiroz</text>
+            <rect x="34" y="178" width="92" height="20" rx="10" fill="var(--il-sage-d)"/>
+            <text x="80" y="192" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="9" letter-spacing="1.6" fill="#fff">PALESTRANTE</text>
+          </svg>
+          <div class="titles"><span>PhD</span><span>Docente</span><span>Palestrante</span><span>Mentora</span></div>
+          <p>A nutrição materno-infantil também vai para a sala de aula, para os palcos e para a mentoria de outros profissionais.</p>
+          <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e gostaria de conversar sobre um convite para palestra." target="_blank" rel="noopener">Convidar para palestra<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber sobre a sua mentoria para profissionais." target="_blank" rel="noopener">Saber da mentoria<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="tile t-com rv" style="--i:1">
+          <span class="tag">Comunidade</span>
+          <div class="ticket" aria-hidden="true">
+            <small>Nutrir Gerações</small>
+            <b>Comunidade</b>
+            <div class="stub"><span>lista de espera</span><i>aberta</i></div>
+          </div>
+          <h3>Comunidade <em>Nutrir Gerações</em></h3>
           <p>Está com lista de espera. Peça para entrar e ser avisada.</p>
           <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero entrar na lista de espera da comunidade Nutrir Gerações." target="_blank" rel="noopener">Entrar na lista de espera<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="rv" style="--i:1">
-          <h4>Indicações na Shopee</h4>
-          <p>Produtos que a Dra. Dayanna indica, reunidos numa lista.</p>
-          <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero as suas indicações da Shopee." target="_blank" rel="noopener">Pedir as indicações<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="rv" style="--i:2">
-          <h4>No Instagram</h4>
-          <p>No @dradayannaqueiroz tem conteúdo sobre gestação, pós-parto e introdução alimentar.</p>
-          <a class="go" href="https://www.instagram.com/dradayannaqueiroz/" target="_blank" rel="noopener">Ver o Instagram<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
+        </article>
 
-      <div class="pro rv">
-        <div class="titles"><span>PhD</span><span>Docente</span><span>Palestrante</span><span>Mentora</span></div>
-        <p>Além do consultório, a Dra. Dayanna leva a nutrição materno-infantil para a sala de aula, para os palcos e para a mentoria de outros profissionais. Convites para eventos e palestras: <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e gostaria de conversar sobre um convite para palestra." target="_blank" rel="noopener">fale pelo WhatsApp</a>. Sobre a mentoria: <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero saber sobre a sua mentoria para profissionais." target="_blank" rel="noopener">pergunte aqui</a>.</p>
+        <div class="tile t-mini">
+          <article class="mini shop rv" style="--i:2">
+            <span class="ic" aria-hidden="true"><svg><use href="#i-bag"/></svg></span>
+            <h4>Indicações na Shopee</h4>
+            <p>Produtos que a Dra. Dayanna indica, reunidos numa lista.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero as suas indicações da Shopee." target="_blank" rel="noopener">Pedir as indicações<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="mini insta rv" style="--i:3">
+            <span class="ic" aria-hidden="true"><svg><use href="#i-camera"/></svg></span>
+            <h4>No Instagram</h4>
+            <p>No @dradayannaqueiroz tem conteúdo sobre gestação, pós-parto e introdução alimentar.</p>
+            <div class="tags"><span>receitinhas</span><span>a partir dos 6 meses</span><span>cálcio</span><span>congressos</span></div>
+            <a class="go" href="https://www.instagram.com/dradayannaqueiroz/" target="_blank" rel="noopener">Ver o Instagram<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="avaliacoes">
+  <section class="s-blush fichas-sec" id="fichas">
+    <span class="gingham" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="f-head">
+        <div class="rv">
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-bowl"/></svg>Fichas para a geladeira</span>
+          <h2 class="h2">Temas que aparecem <em>à mesa</em></h2>
+          <p class="lead">Lembretes gerais dos assuntos que a Dra. Dayanna trata por aqui. O que vale para a sua família, a gente conversa na consulta.</p>
+        </div>
+        <div class="f-nav rv" style="--i:1">
+          <button class="prev" type="button" id="f-prev" aria-label="Ficha anterior"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <button class="next" type="button" id="f-next" aria-label="Próxima ficha"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+      <div class="fichas" id="fichas-list" tabindex="0" aria-label="Fichas de temas">
+        <article class="ficha rv" style="--i:0">
+          <span class="pinm" aria-hidden="true"></span>
+          <div class="f-top pt-ging"><span class="fi" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#s-plate"/></svg></span></div>
+          <div class="f-body">
+            <span class="f-no">ficha nº 01</span>
+            <div class="f-meta"><span>Introdução alimentar</span></div>
+            <h3>Pratinho colorido</h3>
+            <p>Variedade de alimentos, cores e texturas nos primeiros pratinhos do bebê.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero conversar sobre os primeiros pratinhos do meu bebê na introdução alimentar." target="_blank" rel="noopener">Levar para a consulta<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="ficha rv" style="--i:1">
+          <span class="pinm" aria-hidden="true"></span>
+          <div class="f-top pt-leaf"><span class="fi" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="22" r="11" fill="var(--il-skin1)"/><path d="M20 21q2.4 2 4.8 0M28 21q2.4 2 4.8 0" stroke="var(--il-plum)" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M23 27q3 2.4 6 0" stroke="var(--il-plum)" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M10 46c2-8 8-12 16-12s14 4 16 12Z" fill="var(--il-sage-d)"/><use href="#i-heart" x="34" y="4" width="12" height="12" fill="var(--il-pink)"/></svg></span></div>
+          <div class="f-body">
+            <span class="f-no">ficha nº 02</span>
+            <div class="f-meta"><span>Responsiva</span></div>
+            <h3>Fome e saciedade</h3>
+            <p>Perceber quando o bebê tem fome e quando está satisfeito, sem forçar e sem pressa.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero entender melhor a introdução alimentar responsiva e os sinais de fome e saciedade do bebê." target="_blank" rel="noopener">Levar para a consulta<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="ficha rv" style="--i:2">
+          <span class="pinm" aria-hidden="true"></span>
+          <div class="f-top pt-dots"><span class="fi" aria-hidden="true"><svg viewBox="0 0 52 52"><path d="M16 10h20l-3 34H19Z" fill="#fff" stroke="var(--il-plum)" stroke-width="1.6" stroke-linejoin="round"/><path d="M17.4 22h17.2l-1.8 22H19.2Z" fill="var(--il-cream)"/><path d="M18 22c4 3 12 3 17 0" stroke="var(--il-butter-d)" stroke-width="1.6" fill="none"/><circle cx="40" cy="14" r="5" fill="var(--il-pink)"/></svg></span></div>
+          <div class="f-body">
+            <span class="f-no">ficha nº 03</span>
+            <div class="f-meta"><span>Gestação</span></div>
+            <h3>Cálcio na gravidez</h3>
+            <p>Um dos nutrientes que pedem atenção na gestação, dentro da sua rotina.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site. Estou gestante e quero conversar sobre a minha alimentação e os nutrientes da gravidez." target="_blank" rel="noopener">Levar para a consulta<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="ficha rv" style="--i:3">
+          <span class="pinm" aria-hidden="true"></span>
+          <div class="f-top pt-stripe"><span class="fi" aria-hidden="true"><svg viewBox="0 0 52 52"><rect x="10" y="12" width="32" height="30" rx="6" fill="#fff" stroke="var(--il-plum)" stroke-width="1.6"/><rect x="10" y="12" width="32" height="9" rx="4" fill="var(--il-pink)"/><path d="M17 30h18M17 36h12" stroke="var(--il-sage-d)" stroke-width="2.4" stroke-linecap="round"/><path d="M18 8v8M34 8v8" stroke="var(--il-plum)" stroke-width="2.4" stroke-linecap="round"/></svg></span></div>
+          <div class="f-body">
+            <span class="f-no">ficha nº 04</span>
+            <div class="f-meta"><span>Gestação</span></div>
+            <h3>Diabetes na gravidez</h3>
+            <p>Orientação alimentar feita junto com o seu pré-natal.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site. Tenho diabetes na gravidez e gostaria de orientação alimentar junto com o meu pré-natal." target="_blank" rel="noopener">Levar para a consulta<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="ficha rv" style="--i:4">
+          <span class="pinm" aria-hidden="true"></span>
+          <div class="f-top pt-ging"><span class="fi" aria-hidden="true"><svg viewBox="0 0 52 52"><rect x="12" y="18" width="22" height="22" rx="5" fill="var(--il-coral)"/><path d="M34 22c8 0 8 13 0 13" stroke="var(--il-coral)" stroke-width="3.4" fill="none"/><path d="M18 12c-2-3 2-5 0-8M26 12c-2-3 2-5 0-8" stroke="var(--il-sage-d)" stroke-width="2.2" stroke-linecap="round" fill="none"/><use href="#i-heart" x="17" y="23" width="12" height="12" fill="#fff"/></svg></span></div>
+          <div class="f-body">
+            <span class="f-no">ficha nº 05</span>
+            <div class="f-meta"><span>Pós-parto</span></div>
+            <h3>Comer bem amamentando</h3>
+            <p>A sua alimentação também merece cuidado enquanto você amamenta, sem cobrança e sem dieta da moda.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site. Estou no pós-parto e quero cuidar da minha alimentação durante a amamentação." target="_blank" rel="noopener">Levar para a consulta<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="ficha rv" style="--i:5">
+          <span class="pinm" aria-hidden="true"></span>
+          <div class="f-top pt-leaf"><span class="fi" aria-hidden="true"><svg viewBox="0 0 52 52"><ellipse cx="26" cy="38" rx="20" ry="6" fill="var(--il-wood)"/><circle cx="16" cy="24" r="7" fill="var(--il-skin2)"/><circle cx="36" cy="24" r="7" fill="var(--il-skin1)"/><circle cx="26" cy="30" r="5" fill="var(--il-skin1)"/><use href="#i-heart" x="20" y="6" width="12" height="12" fill="var(--il-pink)"/></svg></span></div>
+          <div class="f-body">
+            <span class="f-no">ficha nº 06</span>
+            <div class="f-meta"><span>Família</span></div>
+            <h3>Mesa tranquila</h3>
+            <p>A refeição como momento de descoberta e de vínculo, e não uma briga à mesa.</p>
+            <a class="go" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site e quero deixar o momento da refeição mais tranquilo aqui em casa." target="_blank" rel="noopener">Levar para a consulta<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+      <p class="f-foot">Orientações gerais, sem substituir a consulta. Arraste para o lado para ver todas as fichas.</p>
+    </div>
+  </section>
+
+  <section class="s-pink pat-dots rev" id="avaliacoes">
+    <svg class="wave flip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V40C1200 0 960 70 720 40S240 0 0 40Z" fill="var(--blush)"/></svg>
+    <svg class="spark" style="left:6%;top:18%;width:34px" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-spark" fill="currentColor"/></svg>
+    <svg class="spark" style="right:8%;bottom:14%;width:26px" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-spark" fill="currentColor"/></svg>
     <div class="wrap rev-grid">
       <div class="rv" id="score">
-        <span class="eyebrow">O que as mães destacam</span>
+        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-star"/></svg>O que as mães destacam</span>
         <h2 class="h2">Nota máxima <em>no Google</em></h2>
         <div class="score">
           <span class="big num" data-count="5" data-dec="1" data-late>5,0</span>
@@ -836,31 +1567,32 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
         </div>
         <p class="quote-sum">Acolhimento e um atendimento diferenciado são os pontos que mais aparecem nas avaliações.</p>
       </div>
-      <div class="rv" style="--i:1">
-        <h3 class="bars-t">Temas mais citados</h3>
-        <div class="bars">
+      <div class="rev-card rv-tilt" style="--i:1">
+        <h3>Temas mais citados</h3>
+        <div class="bars rv">
           <div class="bar"><span>Gestação</span><span class="track"><span class="fill" style="--w:1;--i:0"></span></span><span class="v num">22</span></div>
           <div class="bar"><span>Filha</span><span class="track"><span class="fill" style="--w:.68;--i:1"></span></span><span class="v num">15</span></div>
           <div class="bar"><span>Bebê</span><span class="track"><span class="fill" style="--w:.64;--i:2"></span></span><span class="v num">14</span></div>
           <div class="bar"><span>Dieta</span><span class="track"><span class="fill" style="--w:.41;--i:3"></span></span><span class="v num">9</span></div>
         </div>
         <p class="source">Contagem de avaliações por tema, conforme a ficha pública do Google Maps em 17/11/2026.</p>
-        <div class="badges"><span class="badge">Empresa de empreendedoras</span><span class="badge">Acolhe a comunidade LGBTQ+</span></div>
+        <div class="badges"><span class="badge"><svg aria-hidden="true"><use href="#i-heart-o"/></svg>Empresa de empreendedoras</span><span class="badge"><svg aria-hidden="true"><use href="#i-rainbow"/></svg>Acolhe a comunidade LGBTQ+</span></div>
       </div>
     </div>
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C240 80 480 10 720 40S1200 80 1440 30V80H0Z" fill="var(--cream)"/></svg>
   </section>
 
-  <section id="onde" style="padding-top:0">
+  <section class="s-cream" id="onde">
     <div class="wrap">
       <div class="where rv">
         <div class="where-info">
-          <span class="eyebrow">Onde fica</span>
+          <span class="eyebrow"><svg aria-hidden="true"><use href="#i-pin"/></svg>Onde fica</span>
           <h2 class="h2">Liv Mall, <em>4º andar</em></h2>
           <ul class="info">
-            <li><b>Endereço</b><span>Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar<small>Liv Mall · Jardim Oceania, João Pessoa – PB · CEP 58037-005</small></span></li>
-            <li><b>Horário</b><span>Fecha às 18h<small>Conforme a ficha do Google. Confirme dias e horários pelo WhatsApp.</small></span></li>
-            <li><b>WhatsApp</b><span class="phone num">(83) 99629-6511</span></li>
-            <li><b>On-line</b><span>Consulta on-line para quem não pode vir<small>Combine pelo WhatsApp.</small></span></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-pin"/></svg></span><span class="val">Av. Gov. Flávio Ribeiro Coutinho, 500 · Sala 421, 4º andar<small>Liv Mall · Jardim Oceania, João Pessoa – PB · CEP 58037-005</small></span></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-clock"/></svg></span><span class="val">Fecha às 18h<small>Conforme a ficha do Google. Confirme dias e horários pelo WhatsApp.</small></span></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><span class="val"><b>WhatsApp</b><span class="phone num">(83) 99629-6511</span></span></li>
+            <li><span class="ic" aria-hidden="true"><svg><use href="#i-laptop"/></svg></span><span class="val">Consulta on-line para quem não pode vir<small>Combine pelo WhatsApp.</small></span></li>
           </ul>
           <div class="where-cta">
             <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
@@ -868,20 +1600,55 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
           </div>
         </div>
         <div class="where-art" aria-hidden="true">
-          <svg viewBox="0 0 340 280"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 250h320"/><rect x="80" y="60" width="180" height="190"/><path d="M80 90h180"/><g opacity=".55"><path d="M100 110h30v22h-30ZM155 110h30v22h-30ZM210 110h30v22h-30ZM100 150h30v22h-30ZM155 150h30v22h-30ZM210 150h30v22h-30ZM100 190h30v22h-30ZM210 190h30v22h-30Z"/></g><path d="M155 250v-38a15 15 0 0 1 30 0v38"/><path d="M210 110h30v22h-30Z" stroke="var(--accent)"/><path d="M225 104c-8-26 30-50 50-30 14 14 4 34-14 42" stroke="var(--accent)" stroke-dasharray="2 5"/><path d="M262 116c0 0-14-12-14-22a14 14 0 0 1 28 0c0 10-14 22-14 22Z" stroke="var(--accent)"/><circle cx="262" cy="94" r="5" stroke="var(--accent)"/><path d="M40 250v-34M40 216c-12-4-14-18-4-24 2 10 6 16 4 24ZM40 226c10-4 14-16 6-22-4 8-8 14-6 22Z"/><path d="M300 250v-28M300 222c-10-4-12-14-4-20 2 8 6 12 4 20Z"/></g><text x="170" y="80" text-anchor="middle" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="16" fill="currentColor">Liv Mall</text></svg>
+          <svg viewBox="0 0 400 340">
+            <circle cx="320" cy="70" r="40" fill="var(--il-butter)"/>
+            <circle cx="320" cy="70" r="40" fill="url(#pd-dots)"/>
+            <path d="M0 290h400v50H0Z" fill="var(--il-plum)"/>
+            <path d="M10 316h380" stroke="var(--il-butter)" stroke-width="4" stroke-dasharray="20 16"/>
+            <rect x="96" y="80" width="208" height="210" rx="12" fill="var(--il-cream)"/>
+            <rect x="96" y="80" width="208" height="34" rx="12" fill="var(--il-pink)"/>
+            <rect x="96" y="100" width="208" height="14" fill="var(--il-pink)"/>
+            <text x="148" y="103" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="17" fill="#fff">Liv Mall</text>
+            <g fill="var(--il-pink-l)" opacity=".55">
+              <rect x="114" y="128" width="34" height="26" rx="5"/><rect x="160" y="128" width="34" height="26" rx="5"/><rect x="206" y="128" width="34" height="26" rx="5"/><rect x="252" y="128" width="34" height="26" rx="5"/>
+              <rect x="114" y="168" width="34" height="26" rx="5"/><rect x="160" y="168" width="34" height="26" rx="5"/><rect x="252" y="168" width="34" height="26" rx="5"/>
+              <rect x="114" y="208" width="34" height="26" rx="5"/><rect x="160" y="208" width="34" height="26" rx="5"/><rect x="206" y="208" width="34" height="26" rx="5"/><rect x="252" y="208" width="34" height="26" rx="5"/>
+            </g>
+            <rect x="206" y="168" width="34" height="26" rx="5" fill="var(--il-pink-d)"/>
+            <use href="#i-heart" x="215" y="173" width="16" height="16" fill="#fff"/>
+            <path d="M176 290v-36a24 24 0 0 1 48 0v36" fill="var(--il-sage-l)"/>
+            <g class="bob">
+              <circle cx="223" cy="148" r="14" fill="var(--il-pink)" opacity=".3" style="transform-box:fill-box;transform-origin:center;animation:ping 2.4s ease-out infinite"/>
+              <path d="M223 150s-22-18-22-34a22 22 0 0 1 44 0c0 16-22 34-22 34Z" fill="var(--il-pink-d)"/>
+              <circle cx="223" cy="116" r="8" fill="#fff"/>
+            </g>
+            <g transform="translate(272 46)"><rect width="104" height="34" rx="17" fill="var(--il-plum)"/><text x="52" y="22" text-anchor="middle" font-family="Figtree, sans-serif" font-weight="800" font-size="13" fill="#fff">sala 421 · 4º</text></g>
+            <g><path d="M48 290v-60" stroke="var(--il-sage-d)" stroke-width="6" stroke-linecap="round"/><circle cx="48" cy="216" r="26" fill="var(--il-sage)"/><circle cx="34" cy="232" r="16" fill="var(--il-sage-d)"/><circle cx="62" cy="234" r="14" fill="var(--il-sage-d)"/></g>
+            <g><path d="M352 290v-44" stroke="var(--il-sage-d)" stroke-width="5" stroke-linecap="round"/><circle cx="352" cy="236" r="20" fill="var(--il-sage)"/><circle cx="342" cy="248" r="12" fill="var(--il-sage-d)"/></g>
+            <text x="110" y="52" font-family="Caveat, 'Segoe Print', cursive" font-weight="700" font-size="26" fill="var(--il-pink-d)">Jardim Oceania</text>
+          </svg>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="duvidas" style="padding-top:0">
+  <section class="s-blush pat-leaves" id="duvidas">
     <div class="wrap faq-grid">
       <div class="rv">
-        <span class="eyebrow">Dúvidas frequentes</span>
+        <span class="eyebrow"><svg aria-hidden="true"><use href="#i-chat"/></svg>Dúvidas frequentes</span>
         <h2 class="h2">Antes de <em>marcar</em></h2>
         <p class="lead">Não achou a sua pergunta? Mande no WhatsApp: <span class="phone num">(83) 99629-6511</span></p>
+        <svg class="faq-ill" viewBox="0 0 260 200" aria-hidden="true">
+          <rect x="20" y="30" width="170" height="90" rx="26" fill="var(--il-pink)"/>
+          <path d="M60 120 46 150 92 120Z" fill="var(--il-pink)"/>
+          <text x="105" y="88" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600" font-size="44" fill="#fff">oi, Dra.!</text>
+          <rect x="120" y="110" width="124" height="66" rx="22" fill="var(--il-sage-d)"/>
+          <path d="M210 176 224 198 190 176Z" fill="var(--il-sage-d)"/>
+          <circle cx="160" cy="143" r="6" fill="#fff"/><circle cx="182" cy="143" r="6" fill="#fff"/><circle cx="204" cy="143" r="6" fill="#fff"/>
+          <g class="bob"><use href="#i-heart" x="200" y="20" width="34" height="34" fill="var(--il-coral)"/></g>
+        </svg>
       </div>
-      <div class="rv" style="--i:1">
+      <div class="faqs rv" style="--i:1">
         <details>
           <summary>A partir de quando posso marcar na gestação?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary>
           <p>Cada gestação tem o seu momento. Conte com quantas semanas você está pelo <a href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." data-wa="Olá, Dra. Dayanna! Vim pelo seu site. Estou gestante e queria saber a partir de quando posso marcar a consulta." target="_blank" rel="noopener">WhatsApp</a> e receba a orientação sobre o melhor momento.</p>
@@ -910,17 +1677,26 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
     </div>
   </section>
 
-  <section class="final">
-    <svg class="final-art" viewBox="0 0 140 150" aria-hidden="true"><use href="#v-prato"/></svg>
-    <div class="wrap">
+  <section class="s-pink pat-dots final">
+    <svg class="wave flip" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V36C1200 76 960 6 720 36S240 76 0 36Z" fill="var(--blush)"/></svg>
+    <div class="wrap final-grid">
       <div class="rv">
         <h2>Vamos cuidar dessa <em>nova geração</em> juntas?</h2>
         <p>Gestação, pós-parto ou primeiros pratinhos: chame no WhatsApp e agende a sua consulta, presencial no Liv Mall ou on-line.</p>
+        <div class="final-cta">
+          <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
+        </div>
       </div>
-      <div class="final-cta rv" style="--i:1">
-        <a class="btn btn-wa mag" href="https://wa.me/5583996296511?text=Ol%C3%A1%2C%20Dra.%20Dayanna!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Dayanna+Queiroz+Nutricionista+Liv+Mall+Jo%C3%A3o+Pessoa" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Como chegar</a>
-      </div>
+      <svg class="final-ill rv" style="--i:1" viewBox="0 0 300 300" aria-hidden="true">
+        <circle cx="150" cy="150" r="140" fill="#fff" opacity=".1"/>
+        <g class="spin"><circle cx="150" cy="150" r="128" fill="none" stroke="var(--il-butter)" stroke-width="2.4" stroke-dasharray="3 12" stroke-linecap="round"/></g>
+        <use href="#s-plate" x="40" y="40" width="220" height="220"/>
+        <g transform="rotate(-30 262 84)"><rect x="256" y="30" width="12" height="80" rx="6" fill="var(--il-butter)"/><ellipse cx="262" cy="124" rx="15" ry="21" fill="var(--il-butter)"/><ellipse cx="262" cy="124" rx="9" ry="14" fill="var(--il-butter-d)"/></g>
+        <g class="bob"><use href="#i-heart" x="20" y="34" width="44" height="44" fill="var(--il-butter)"/></g>
+        <g class="bob b3"><use href="#i-heart" x="250" y="236" width="28" height="28" fill="var(--il-pink-l)"/></g>
+        <g class="twinkle"><use href="#i-spark" x="30" y="230" width="26" height="26" fill="#fff"/></g>
+      </svg>
     </div>
   </section>
 </main>
@@ -928,7 +1704,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
 <footer>
   <div class="wrap">
     <div>
-      <span class="fbrand">Dayanna <i>Queiroz</i></span><br>
+      <span class="fbrand">Dra. Dayanna <i>Queiroz</i></span><br>
       Nutricionista materno-infantil, PhD · Liv Mall, sala 421 · João Pessoa – PB · <span class="num">(83) 99629-6511</span>
     </div>
     <span class="seal">Prévia feita por Natã Lira – desenvolvedor em João Pessoa</span>
@@ -948,7 +1724,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
   var reduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   var fine = !!(window.matchMedia && window.matchMedia('(pointer: fine)').matches);
 
-  /* seletor de fase */
   var form = document.getElementById('fase-form');
   var seg = document.getElementById('seg');
   var panels = form.querySelectorAll('.panel');
@@ -1009,12 +1784,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
   document.getElementById('limpar').addEventListener('click', function(){ form.reset(); update(); });
   update();
 
-  /* contadores */
   function fmt(v, dec){ return dec ? v.toFixed(dec).replace('.', ',') : String(Math.round(v)); }
   function count(el){
     var to = parseFloat(el.getAttribute('data-count')), dec = parseInt(el.getAttribute('data-dec') || '0', 10);
     if (reduce || !window.requestAnimationFrame) { el.textContent = fmt(to, dec); return; }
-    var t0 = null, dur = 1700;
+    var t0 = null, dur = 1600;
     el.textContent = fmt(0, dec);
     function step(t){
       if (t0 === null) t0 = t;
@@ -1027,9 +1801,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
   var heroCounts = document.querySelectorAll('.hero [data-count]');
   for (var h = 0; h < heroCounts.length; h++) count(heroCounts[h]);
 
-  /* revelar ao rolar */
+  var eco = document.getElementById('nutrir-geracoes');
   try {
-    var items = document.querySelectorAll('.rv');
+    var items = document.querySelectorAll('.rv, .rv-tilt, .rvs');
     if (!reduce && 'IntersectionObserver' in window) {
       document.documentElement.classList.add('js');
       var io = new IntersectionObserver(function(es){
@@ -1040,45 +1814,65 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-bet
           for (var c = 0; c < cs.length; c++) count(cs[c]);
           io.unobserve(en.target);
         });
-      }, {threshold: 0.12, rootMargin: '0px 0px -6% 0px'});
+      }, {threshold: 0.14, rootMargin: '0px 0px -6% 0px'});
       for (var r = 0; r < items.length; r++) io.observe(items[r]);
+      var io2 = new IntersectionObserver(function(es){
+        es.forEach(function(en){ eco.classList.toggle('warm', en.isIntersecting); });
+      }, {threshold: 0.25});
+      io2.observe(eco);
     } else {
       for (var q = 0; q < items.length; q++) items[q].classList.add('in');
     }
   } catch (err) { document.documentElement.classList.remove('js'); }
 
-  /* fio que se desenha + barra de leitura */
-  var fio = document.getElementById('fio');
-  var fioWrap = document.getElementById('fio-wrap');
+  var vine = document.getElementById('vine');
+  var tl = document.getElementById('tl');
   var bar = document.getElementById('progress');
+  var hero = document.getElementById('hero');
+  var pars = document.querySelectorAll('.par');
   var ticking = false;
   function onScroll(){
     ticking = false;
-    var vh = window.innerHeight, de = document.documentElement;
+    var vh = window.innerHeight, de = document.documentElement, y = window.scrollY;
     var max = de.scrollHeight - vh;
-    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, window.scrollY / max) : 0) + ')';
-    if (!reduce) {
-      var r = fioWrap.getBoundingClientRect();
-      var p = (vh * 0.7 - r.top) / r.height;
-      p = Math.max(0, Math.min(1, p));
-      fio.style.strokeDashoffset = String(1 - p);
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
+    if (reduce) return;
+    var r = tl.getBoundingClientRect();
+    var p = (vh * 0.72 - r.top) / r.height;
+    p = Math.max(0, Math.min(1, p));
+    vine.style.strokeDashoffset = String(1 - p);
+    if (y < hero.offsetHeight + 200) {
+      for (var k = 0; k < pars.length; k++) {
+        var d = parseFloat(pars[k].getAttribute('data-depth')) || 0;
+        pars[k].style.transform = 'translate3d(0,' + (y * d * 1.6).toFixed(1) + 'px,0)';
+      }
     }
   }
   function req(){ if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }
   window.addEventListener('scroll', req, {passive: true});
   window.addEventListener('resize', req);
+  if (reduce) { vine.style.strokeDasharray = 'none'; vine.style.strokeDashoffset = '0'; }
   onScroll();
 
-  /* cards com inclinação e botões magnéticos */
+  var list = document.getElementById('fichas-list');
+  function slide(dir){
+    var card = list.querySelector('.ficha');
+    var w = card ? card.getBoundingClientRect().width + 22 : 300;
+    list.scrollBy({left: dir * w, behavior: reduce ? 'auto' : 'smooth'});
+  }
+  document.getElementById('f-prev').addEventListener('click', function(){ slide(-1); });
+  document.getElementById('f-next').addEventListener('click', function(){ slide(1); });
+
   if (fine && !reduce) {
-    var tilts = document.querySelectorAll('.tilt');
+    var tilts = document.querySelectorAll('.tile');
     for (var t = 0; t < tilts.length; t++) (function(el){
+      if (el.classList.contains('t-mini')) return;
       el.addEventListener('pointermove', function(e){
-        var b = el.getBoundingClientRect(), x = (e.clientX - b.left) / b.width, y = (e.clientY - b.top) / b.height;
-        el.style.setProperty('--ry', ((x - .5) * 9).toFixed(2) + 'deg');
-        el.style.setProperty('--rx', ((.5 - y) * 7).toFixed(2) + 'deg');
+        var b = el.getBoundingClientRect(), x = (e.clientX - b.left) / b.width, yy = (e.clientY - b.top) / b.height;
+        el.style.setProperty('--ry', ((x - .5) * 8).toFixed(2) + 'deg');
+        el.style.setProperty('--rx', ((.5 - yy) * 6).toFixed(2) + 'deg');
         el.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
-        el.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+        el.style.setProperty('--my', (yy * 100).toFixed(1) + '%');
       });
       el.addEventListener('pointerleave', function(){ el.style.setProperty('--rx', '0deg'); el.style.setProperty('--ry', '0deg'); });
     })(tilts[t]);
